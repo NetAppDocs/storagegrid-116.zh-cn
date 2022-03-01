@@ -1,0 +1,75 @@
+---
+permalink: maintain/linux-exporting-node-from-source-host.html 
+sidebar: sidebar 
+keywords: storagegrid, recover, linux, export node, linux source host 
+summary: 关闭网格节点并将其从源 Linux 主机导出。 
+---
+= Linux ：从源主机导出节点
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+关闭网格节点并将其从源 Linux 主机导出。
+
+在源 Linux 主机上运行以下命令。
+
+. 获取源主机上当前正在运行的所有节点的状态。
++
+[listing]
+----
+sudo storagegrid node status all
+----
++
+`名称 Config-State Run-State`
+
++
+`dC1-ADM1 配置为运行`
+
++
+`dC1-ARC1 已配置为运行`
+
++
+`dC1-GW1 已配置为运行`
+
++
+`dC1-S1 已配置为运行`
+
++
+`dC1-S2 配置为运行`
+
++
+`dC1-S3 已配置为运行`
+
+. 确定要迁移的节点的名称，如果其运行状态为 `running` ，则将其停止。
++
+[listing]
+----
+sudo storagegrid node stop DC1-S3
+----
++
+`s顶部节点 DC1-S3`
+
++
+`等待长达 630 秒以关闭节点`
+
+. 从源主机导出节点。
++
+[listing]
+----
+sudo storagegrid node export DC1-S3
+----
++
+`已将节点 DC1-S3 导出到 /dev/mapper/sgws-DC1-s3-var-local 。`
+
++
+`如果您` ，请使用 StorageGRID 节点导入 /dev/mapper/sgws-DC1-s3-var-local
+
++
+`希望重新导入。`
+
+. 记下 `export` 命令输出中建议的 `import 命令。
++
+您将在下一步的目标主机上运行此命令。
+
+

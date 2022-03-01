@@ -1,0 +1,15 @@
+---
+permalink: s3/separation-of-http-connection-pools-for-read-and-write-operations.html 
+sidebar: sidebar 
+keywords: separate http connection pools read write 
+summary: 您可以使用单独的 HTTP 连接池执行读写操作，并控制每个连接池要使用的池容量。通过单独的 HTTP 连接池，您可以更好地控制事务并平衡负载。 
+---
+= 为读取和写入操作分隔 HTTP 连接池
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用单独的 HTTP 连接池执行读写操作，并控制每个连接池要使用的池容量。通过单独的 HTTP 连接池，您可以更好地控制事务并平衡负载。
+
+客户端应用程序可以创建检索占主导地位（读取）或存储占主导地位（写入）的负载。由于读取和写入事务使用单独的 HTTP 连接池，因此您可以调整每个池中用于读取或写入事务的数量。

@@ -1,0 +1,152 @@
+---
+section: sg5600
+title: SG5600 存储设备
+entries:
+- title: 概述
+  pdf-filename: StorageGRID SG5600 存储设备
+  url: "/sg5600/index.html"
+  entries:
+  - title: StorageGRID 设备功能
+    url: "/sg5600/storagegrid-appliance-features.html"
+  - title: 硬件示意图
+    url: "/sg5600/hardware-diagrams.html"
+- title: 安装和部署概述
+  url: "/sg5600/installation-and-deployment-overview.html"
+- title: 准备安装（ SG5600 ）
+  url: "/sg5600/preparing-for-installation.html"
+  entries:
+  - title: 准备站点（ SG5600 ）
+    url: "/sg5600/preparing-site-sg5600.html"
+  - title: 打开包装箱（ SG5600 ）
+    url: "/sg5600/unpacking-boxes-sg5600.html"
+  - title: 获取其他设备和工具（ SG5600 ）
+    url: "/sg5600/obtaining-additional-equipment-and-tools-sg5600.html"
+  - title: 服务笔记本电脑要求
+    url: "/sg5600/service-laptop-requirements-sg5600.html"
+  - title: 查看设备网络连接（ SG5600 ）
+    url: "/sg5600/reviewing-appliance-network-connections-sg5600.html"
+    entries:
+    - title: E5600SG 控制器端口的端口绑定模式
+      url: "/sg5600/port-bond-modes-for-e5600sg-controller-ports.html"
+      entries:
+      - title: 10-GbE 端口的网络绑定模式
+        url: "/sg5600/network-bond-modes-for-10-gbe-ports.html"
+      - title: 1-GbE 管理端口的网络绑定模式
+        url: "/sg5600/network-bond-modes-for-1-gbe-managment-ports.html"
+  - title: 收集安装信息（ SG5600 ）
+    url: "/sg5600/gathering-installation-information-sg5600.html"
+- title: 安装硬件（ SG5600 ）
+  url: "/sg5600/installing-hardware.html"
+  entries:
+  - title: 注册硬件
+    url: "/sg5600/registering-hardware.html"
+  - title: 在机柜或机架中安装设备（ SG5600 ）
+    url: "/sg5600/installing-appliance-in-cabinet-or-rack-sg5600.html"
+  - title: 缆线设备（ SG5600 ）
+    url: "/sg5600/cabling-appliance-sg5600.html"
+  - title: 连接交流电源线（ SG5600 ）
+    url: "/sg5600/connecting-ac-power-cords-sg5600.html"
+  - title: 打开电源（ SG5600 ）
+    url: "/sg5600/turning-power-on-sg5600.html"
+  - title: 查看 SG5600 控制器的启动状态并查看错误代码
+    url: "/sg5600/viewing-boot-up-status-and-reviewing-error-codes-on-sg5600-controllers.html"
+    entries:
+    - title: E5600SG 控制器七段显示代码
+      url: "/sg5600/e5600sg-controller-seven-segment-display-codes.html"
+- title: 配置硬件（ SG5600 ）
+  url: "/sg5600/configuring-hardware.html"
+  entries:
+  - title: 配置 StorageGRID 连接（ SG5600 ）
+    url: "/sg5600/configuring-storagegrid-connections.html"
+    entries:
+    - title: 访问 StorageGRID 设备安装程序
+      url: "/sg5600/accessing-storagegrid-appliance-installer-sg5600.html"
+    - title: 验证并升级 StorageGRID 设备安装程序版本
+      url: "/sg5600/verifying-and-upgrading-storagegrid-appliance-installer-version.html"
+    - title: 配置网络链路（ SG5600 ）
+      url: "/sg5600/configuring-network-links-sg5600.html"
+    - title: 设置 IP 配置
+      url: "/sg5600/setting-ip-configuration-sg5600.html"
+    - title: 验证网络连接
+      url: "/sg5600/verifying-network-connections.html"
+    - title: 验证端口级别的网络连接
+      url: "/sg5600/verifying-port-level-network-connections.html"
+  - title: 配置 SANtricity 存储管理器
+    url: "/sg5600/configuring-santricity-storage-manager.html"
+    entries:
+    - title: 设置 E2700 控制器的 IP 地址
+      url: "/sg5600/setting-ip-address-for-e2700-controller.html"
+    - title: 将设备添加到 SANtricity 存储管理器
+      url: "/sg5600/adding-appliance-to-santricity-storage-manager.html"
+    - title: 设置 SANtricity 存储管理器
+      url: "/sg5600/setting-up-santricity-storage-manager.html"
+      entries:
+      - title: 配置 AutoSupport
+        url: "/sg5600/configuring-autosupport.html"
+      - title: 验证是否收到 AutoSupport
+        url: "/sg5600/verifying-receipt-of-autosupport.html"
+      - title: 配置电子邮件和 SNMP 陷阱警报通知
+        url: "/sg5600/configuring-email-and-snmp-trap-alert-notifications.html"
+      - title: 设置 SANtricity 存储管理器的密码
+        url: "/sg5600/setting-passwords-for-santricity-storage-manager.html"
+  - title: 可选：启用节点加密
+    url: "/sg5600/optional-enabling-node-encryption.html"
+  - title: 可选：更改为 RAID6 模式（仅限 SG5660 ）
+    url: "/sg5600/optional-changing-to-raid6-mode-sg5660-only.html"
+  - title: 可选：重新映射设备的网络端口
+    url: "/sg5600/optional-remapping-network-ports-for-appliance-sg5600-and-sg5700.html"
+- title: 部署设备存储节点
+  url: "/sg5600/deploying-appliance-storage-node.html"
+- title: 监控存储设备安装
+  url: "/sg5600/monitoring-storage-appliance-installation.html"
+- title: 自动化设备安装和配置（ SG5600 ）
+  url: "/sg5600/automating-appliance-installation-and-configuration.html"
+  entries:
+  - title: 使用 StorageGRID 设备安装程序自动配置设备
+    url: "/sg5600/automating-appliance-configuration-using-storagegrid-appliance-installer.html"
+  - title: 使用 configure-sga.py 脚本自动安装和配置设备节点
+    url: "/sg5600/automating-installation-configuration-appliance-nodes-configure-sga-py-script.html"
+  - title: 自动配置 StorageGRID
+    url: "/sg5600/automating-configuration-of-storagegrid.html"
+- title: 安装 REST API 概述
+  url: "/sg5600/overview-of-installation-rest-apis.html"
+- title: 硬件安装故障排除（ SG5600 ）
+  url: "/sg5600/troubleshooting-hardware-installation.html"
+  entries:
+  - title: 硬件设置似乎挂起（ SG5600 ）
+    url: "/sg5600/hardware-setup-progress-appears-to-hang.html"
+    entries:
+    - title: he error ： Error synchronating with SANtricity OS Software
+      url: "/sg5600/he-error-error-synchronizing-with-santricity-os-software.html"
+  - title: 对连接问题进行故障排除（ SG5600 ）
+    url: "/sg5600/troubleshooting-connection-issues.html"
+  - title: 在 StorageGRID 设备安装程序运行期间重新启动控制器
+    url: "/sg5600/rebooting-controller-while-storagegrid-appliance-installer-is-running.html"
+- title: 维护 SG5600 设备
+  url: "/sg5600/maintaining-sg5600-appliance.html"
+  entries:
+  - title: 将设备置于维护模式
+    url: "/sg5600/placing-appliance-into-maintenance-mode.html"
+  - title: 使用网格管理器升级存储控制器上的 SANtricity 操作系统
+    url: "/sg5600/upgrading-santricity-os-on-storage-controllers-using-grid-manager-sg5600.html"
+  - title: 使用维护模式升级 E2700 控制器上的 SANtricity 操作系统
+    url: "/sg5600/upgrading-santricity-os-on-e2700-controller-using-maintenance-mode.html"
+  - title: 使用 SANtricity 存储管理器升级驱动器固件
+    url: "/sg5600/upgrading-drive-firmware-using-santricity-storage-manager.html"
+  - title: 更换 E2700 控制器
+    url: "/sg5600/replacing-e2700-controller.html"
+  - title: 更换 E5600SG 控制器
+    url: "/sg5600/replacing-e5600sg-controller.html"
+  - title: 更换其他硬件组件
+    url: "/sg5600/replacing-other-hardware-components-sg5600.html"
+  - title: 更改 E5600SG 控制器的链路配置
+    url: "/sg5600/changing-link-configuration-of-e5600sg-controller.html"
+  - title: 更改 MTU 设置
+    url: "/sg5600/changing-mtu-setting.html"
+  - title: 检查 DNS 服务器配置
+    url: "/sg5600/checking-dns-server-configuration.html"
+  - title: 在维护模式下监控节点加密（ SG5600 ）
+    url: "/sg5600/monitoring-node-encryption-in-maintenance-mode.html"
+    entries:
+    - title: 清除密钥管理服务器配置
+      url: "/sg5600/clearing-key-management-server-configuration.html"

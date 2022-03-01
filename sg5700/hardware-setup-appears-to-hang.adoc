@@ -1,0 +1,58 @@
+---
+permalink: sg5700/hardware-setup-appears-to-hang.html 
+sidebar: sidebar 
+keywords: storagegrid, sg5700, storage node, storage appliance, troubleshoot, troubleshooting, hardware, setup, hang, hangs, fails, failure, stop, terminate, terminates, stuck 
+summary: 如果硬件故障或布线错误导致 E5700SG 控制器无法完成启动处理，则 StorageGRID 设备安装程序可能不可用。 
+---
+= 硬件设置似乎挂起（ SG5700 ）
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果硬件故障或布线错误导致 E5700SG 控制器无法完成启动处理，则 StorageGRID 设备安装程序可能不可用。
+
+.步骤
+. 查看七段显示器上的代码。
++
+在启动期间初始化硬件时，两个七段显示一系列代码。硬件成功启动后，七段显示会为每个控制器显示不同的代码。
+
+. 查看 E5700SG 控制器的七段显示屏上的代码。
++
+
+NOTE: 安装和配置需要一些时间。某些安装阶段在几分钟内不会向 StorageGRID 设备安装程序报告更新。
+
++
+如果发生错误，七段显示屏将按顺序闪烁，例如， "he" 。
+
+. 要了解这些代码的含义，请参见以下资源：
++
+|===
+| 控制器 | 参考 
+
+
+ a| 
+E5700SG 控制器
+ a| 
+** " `s5700SG 控制器上的状态指示符` "
+** "`错误：与 SANtricity OS 软件同步时出错` "
+
+
+
+
+ a| 
+E2800 控制器
+ a| 
+_E5700 和 E2800 系统监控指南 _
+
+* 注： * 为 E 系列 E5700 控制器描述的代码不适用于设备中的 E5700SG 控制器。
+
+|===
+. 如果无法解决问题描述 问题，请联系技术支持。
+
+
+xref:status-indicators-on-e5700sg-controller.adoc[E5700SG 控制器上的状态指示灯]
+
+xref:he-error-error-synchronizing-with-santricity-os-software.adoc[he error ： Error synchronating with SANtricity OS Software]
+
+http://mysupport.netapp.com/info/web/ECMP1658252.html["NetApp E 系列系统文档站点"^]

@@ -1,0 +1,312 @@
+---
+permalink: upgrade/whats-new.html 
+sidebar: sidebar 
+keywords: what is new in StorageGRID 11.6 
+summary: 此版本的 StorageGRID 引入了以下功能。 
+---
+= StorageGRID 11.6.
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+此版本的 StorageGRID 引入了以下功能。
+
+
+
+== 可用性增强功能
+
+网格管理器用户界面经过大幅重新设计，可改善用户体验。
+
+* 新的边栏取代了旧用户界面中的下拉菜单。
+* 我们对多个菜单进行了重新组织，以便将相关选项放在一起。例如， * 配置 * 菜单包含一个新的 * 安全性 * 部分，用于 " 证书 " ， " 密钥管理服务器 " ， " 代理 " 设置和 " 不可信客户端网络 " 选项。
+* 标题栏中的 * 搜索 * 字段可用于快速导航到网格管理器页面。
+* "* 节点 * " 页面上的摘要表提供了所有站点和节点的详细信息，例如使用的对象数据和使用的对象元数据，并包含一个新的搜索字段。警报图标会显示在任何具有活动警报的节点旁边。
+* 新向导将引导您完成更复杂的配置，例如管理组，管理员用户，租户，负载平衡器端点和高可用性（ HA ）组的工作流。
+* 所有 UI 页面都会重新显示更新后的字体，按钮样式和表格式。
++
+
+NOTE: 除非功能发生更改，否则 StorageGRID 11.6 文档站点中的屏幕截图不会进行更新，以反映新的网格管理器页面样式。
+
+
+
+请参见以下内容：
+
+* xref:../admin/index.adoc[管理 StorageGRID]
+* xref:../monitor/index.adoc[监控和故障排除]
+
+
+
+
+== 多个 VLAN 接口
+
+现在，您可以为管理节点和网关节点创建虚拟 LAN （ VLAN ）接口。您可以使用 HA 组和负载平衡器端点中的 VLAN 接口隔离客户端流量并对其进行分区，以提高安全性，灵活性和性能。
+
+* 新的 * 创建 VLAN 接口 * 向导将指导您完成输入 VLAN ID 以及在一个或多个节点上选择父接口的过程。父接口可以是网格网络，客户端网络，也可以是 VM 或裸机主机的附加中继接口。请参见 xref:../admin/configure-vlan-interfaces.html[配置 VLAN 接口]。
+* 现在，您可以向节点添加额外的中继或访问接口。如果添加中继接口，则必须配置 VLAN 接口。如果添加访问接口，则可以将该接口直接添加到 HA 组；而无需配置 VLAN 接口。请参见以下内容：
++
+** * Linux （安装节点之前） * ： <<Installation enhancements>>
+** * Linux （安装节点后） * ： xref:../maintain/linux-adding-trunk-or-access-interfaces-to-node.adoc[Linux ：向节点添加中继或访问接口]
+** * VMware （安装节点后） * ： xref:../vmware/collecting-information-about-your-deployment-environment.adoc[收集有关部署环境的信息]
+
+
+
+
+
+
+== 可以使用 Azure AD 进行身份联合
+
+现在，在为网格管理器或租户管理器配置身份联合时，您可以选择 Azure Active Directory （ Azure AD ）作为身份源。请参见 xref:../admin/using-identity-federation.adoc[使用身份联合]。
+
+
+
+== 可以使用 Azure AD 和 PingFederate 进行 SSO
+
+现在，在为网格配置单点登录（ SSO ）时，您可以选择 Azure AD 或 PingFederate 作为 SSO 类型。然后，您可以使用沙盒模式配置和测试 Azure AD 企业应用程序或 PingFederate 服务提供商（ SP ）与每个 StorageGRID 管理节点的连接。请参见 xref:../admin/configuring-sso.adoc[配置单点登录]。
+
+
+
+== 集中式证书管理
+
+* 新的 " 证书 " 页面（ * 配置 * > * 安全性 * > * 证书 * ）将有关所有 StorageGRID 安全证书的信息整合到一个位置。您可以从新页面管理 StorageGRID 全局证书，网格 CA 证书和客户端证书，也可以查看有关其他证书的信息，例如用于负载平衡器端点，租户和身份联合的证书。请参见 xref:../admin/using-storagegrid-security-certificates.adoc[关于安全证书]。
+* 在此更改中，以下全局证书已重命名：
++
+** 现在， * 管理接口服务器证书 * 是 * 管理接口证书 * 。
+** 对象存储 API 服务端点服务器证书 * （也称为存储 API 服务器证书）现在是 * S3 和 Swift API 证书 * 。
+** 现在， * 内部 CA 证书 * ， * 系统 CA 证书 * ， * CA 证书 * 和 * 默认 CA 证书 * 始终称为 * 网格 CA 证书 * 。
+
+
+
+
+
+
+== 其他 Grid Manager 增强功能
+
+* * 更新高可用性（ HA ）组 * 。现在，向导将指导您完成创建 HA 组的过程。请参见 xref:../admin/configure-high-availability-group.html[配置高可用性组]。
++
+** 除了选择网格网络（ eth0 ）或客户端网络（ eth2 ）上的接口之外，现在您还可以选择 VLAN 接口或已添加到节点的任何访问接口。
+** 现在，您可以为接口指定优先级顺序。您可以选择主接口并按顺序对每个备份接口进行排名。
+** 如果任何 S3 ， Swift ，管理或租户客户端要从其他子网访问 HA 组的 VIP 地址，您现在可以为此网关提供 IP 地址。
+
+
+* * 更新负载平衡器端点 * 。新向导将指导您完成创建负载平衡器端点的过程。请参见 xref:../admin/configuring-load-balancer-endpoints.adoc[配置负载平衡器端点]。
++
+** 现在，您可以在首次创建端点时选择客户端类型（ S3 或 Swift ），而不是在创建端点后添加此详细信息。
+** 现在，您可以对负载平衡器端点使用全局 * StorageGRID S3 和 Swift 证书 * ，而不是上传或生成单独的证书。
++
+
+NOTE: 此全局证书以前用于连接到已弃用的 CLB 服务和存储节点。如果要对负载平衡器端点使用全局证书，则必须在 S3 和 Swift API 证书页面上上传自定义证书。
+
+
+
+
+
+
+
+== 新增租户管理器功能
+
+* * 全新的试验性 S3 控制台 * 。新的试验性 S3 控制台可通过租户管理器中的 " 分段 " 页面提供的链接来使 S3 租户用户查看和管理其分段中的对象。请参见 xref:../tenant/use-s3-console.adoc[使用试验性 S3 控制台]。
+
+
+
+IMPORTANT: 试验性 S3 控制台尚未经过全面测试，不适用于对象批量管理或生产环境。只有在为少数对象执行功能时，或者在使用概念验证网格或非生产网格时，租户才应使用 S3 控制台。
+
+* * 可以删除多个 S3 存储分段 * 。租户用户现在可以一次删除多个 S3 存储分段。要删除的每个存储分段必须为空。请参见 xref:../tenant/deleting-s3-bucket.adoc[删除 S3 存储分段]。
+* * 更新租户帐户权限 * 。现在，属于具有租户帐户权限的组的管理员用户可以查看现有流量分类策略。以前，用户必须具有 root 访问权限才能查看这些指标。
+
+
+
+
+== 新的升级和修复过程
+
+* 重新设计了 * StorageGRID Upgrade* 页面（ * 维护 * > * 系统 * > * 软件更新 * > * StorageGRID upgrade* ）。
+* 升级到 StorageGRID 11.6 后，您可以使用网格管理器升级到未来版本，并同时应用该版本的修补程序。StorageGRID 升级页面将显示建议的升级路径，并直接链接到正确的下载页面。
+* 通过 AutoSupport 页面（ * 支持 * > * 工具 * > * AutoSupport * ）上的一个新 * 检查软件更新 * 复选框，您可以控制此功能。如果您的系统无法访问 WAN ，则可以禁用对可用软件更新的检查。请参见 xref:../admin/configure-autosupport-grid-manager.adoc#disable-checks-for-software-updates[配置 AutoSupport 并禁用软件更新检查]。
++
+
+NOTE: 要升级到 StorageGRID 11.6 ，您可以选择使用脚本同时升级和应用修补程序。请参见 https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/StorageGRID/How_to_run_combined_major_upgrade_and_hotfix_script_for_StorageGRID["NetApp 知识库：如何为 StorageGRID 运行组合式主要升级和修补程序脚本"^]。
+
+* 现在，如果需要稍后完成升级，您可以暂停 SANtricity 操作系统升级并跳过升级某些节点。请参见适用于您的存储设备的说明：
++
+** xref:../sg5600/upgrading-santricity-os-on-storage-controllers-using-grid-manager-sg5600.adoc[使用网格管理器升级存储控制器上的 SANtricity 操作系统（ SG5600 ）]
+** xref:../sg5700/upgrading-santricity-os-on-storage-controllers-using-grid-manager-sg5700.adoc[使用网格管理器升级存储控制器上的 SANtricity 操作系统（ SG5700 ）]
+** xref:../sg6000/upgrading-santricity-os-on-storage-controllers-using-grid-manager-sg6000.adoc[使用网格管理器升级存储控制器上的 SANtricity 操作系统（ SG6000 ）]
+
+
+
+
+
+
+== 外部系统日志服务器支持
+
+* 现在，如果要远程保存和管理审核消息以及部分 StorageGRID 日志（ * 配置 * > * 监控 * > * 审核和系统日志服务器 * ），则可以配置外部系统日志服务器。配置外部系统日志服务器后，您可以在本地，远程或同时保存审核消息和某些日志文件。通过配置审核信息的目标，您可以减少管理节点上的网络流量。请参见 xref:../monitor/configure-audit-messages.adoc[配置审核消息和日志目标]。
+* 与此功能相关的是，日志页面（ * 支持 * > * 工具 * > * 日志 * ）上的新复选框可用于指定要收集的日志类型，例如某些应用程序日志，审核日志，用于网络调试的日志以及 Prometheus 数据库日志。请参见 xref:../monitor/collecting-log-files-and-system-data.adoc[收集日志文件和系统数据]。
+
+
+
+
+== S3 Select
+
+现在，您可以选择允许 S3 租户对单个对象发出问题描述 SelectObjectContent 请求。S3 Select 可以高效地搜索大量数据，而无需部署数据库和相关资源即可启用搜索。它还可以降低检索数据的成本和延迟。请参见 xref:../admin/manage-s3-select-for-tenant-accounts.adoc[管理租户帐户的 S3 Select] 和 xref:../s3/use-s3-select.adoc[使用 S3 Select]。
+
+此外，还为 S3 Select 操作添加了 Grafana 图表。请参见 xref:../monitor/reviewing-support-metrics.adoc[查看支持指标]。
+
+
+
+== S3 对象锁定默认存储分段保留期限
+
+现在，在使用 S3 对象锁定时，您可以为存储分段指定默认保留期限。默认保留期限适用场景 添加到存储分段中但没有自己保留设置的任何对象。请参见 xref:../s3/using-s3-object-lock.adoc[使用 S3 对象锁定]。
+
+
+
+== Google Cloud Platform 支持
+
+现在，您可以使用 Google Cloud Platform （ GCP ）作为云存储池和 CloudMirror 平台服务的端点。请参见 xref:../tenant/specifying-urn-for-platform-services-endpoint.adoc[指定平台服务端点的 URN] 和 xref:../ilm/creating-cloud-storage-pool.adoc[创建云存储池]。
+
+
+
+== AWS C2S 支持
+
+现在，您可以使用 AWS Commercial Cloud Services （ C2S ）端点进行 CloudMirror 复制。请参见 xref:../tenant/creating-platform-services-endpoint.adoc[创建平台服务端点]。
+
+
+
+== 其他 S3 更改
+
+* * 获取多部分对象的对象和头对象支持 * 。以前， StorageGRID 在 GET 对象或 HEAD 对象请求中不支持 `partnumber` request 参数。现在，您可以通过问题描述 GET 和 HEAD 请求检索多部件对象的特定部分。GET 和 HEAD 对象还支持 `x-AMZ-MP-parts-count` 响应元素，以指示对象包含的部件数。
+* * 对 " 可用 " 一致性控制的更改 * 。现在， " 可用 " 一致性控制与 " 读后写 " 一致性级别相同，但可为 head 和 get 操作提供最终一致性。如果存储节点不可用，则 " 可用 " 一致性控制可以为 head 和 get 操作提供比 " 读后写入 " 更高的可用性。与 Amazon S3 对机头和 GET 操作的一致性保证不同。
++
+xref:../s3/index.adoc[使用 S3]
+
+
+
+
+
+== 性能增强
+
+* * 存储节点可支持 20 亿个对象 * 。存储节点上的底层目录结构经过优化，可提高可扩展性和性能。现在，存储节点可以使用额外的子目录来存储多达 20 亿个复制对象，并最大限度地提高性能。升级到 StorageGRID 11.6 时，节点子目录会进行修改，但现有对象不会重新分布到新目录中。
+* * 对于高性能设备， ILM 驱动的删除性能提高 * 。现在，用于执行 ILM 删除操作的资源和吞吐量可根据每个 StorageGRID 设备节点的大小和功能进行调整。对于 SG5600 设备，吞吐量与 StorageGRID 11.5 相同。对于 SG5700 设备， ILM 删除性能略有提高。对于 RAM 较多且 CPU 较多的 SG6000 设备，现在处理 ILM 删除的速度更快。这些改进在全闪存 SGF6024 设备上尤为明显。
+* * 存储卷水印已优化 * 。在先前版本中，三个存储卷水印的设置会应用于每个存储节点上的每个存储卷。现在， StorageGRID 可以根据存储节点的大小和卷的相对容量为每个存储卷优化这些水印。请参见 xref:../admin/what-storage-volume-watermarks-are.adoc[什么是存储卷水印]。
++
+优化的水印会自动应用于所有新的和升级最广泛的 StorageGRID 11.6 系统。优化的水印将大于先前的默认设置。
+
++
+如果使用自定义水印，则升级后可能会触发 * 低只读水印覆盖 * 警报。通过此警报，您可以了解自定义水印设置是否太小。请参见 xref:../monitor/troubleshoot-low-watermark-alert.adoc[对低只读水印覆盖警报进行故障排除]。
+
++
+在此更改中，添加了两个 Prometheus 指标：
+
++
+** `storagegRid_storage_volume_minimum_optimized_soft_readonly_slogm`
+** `storagegRid_storage_volume_max_optimized_soft_readonly_slogm`
+
+
+* * 允许的最大元数据空间增加 * 。对于容量较高的节点，存储节点允许的最大元数据空间已增加到 3.96 TB （从 2.64 TB 增加到 3.96 TB ），这些节点是指实际为元数据预留的空间超过 4 TB 的节点。此新值允许在某些存储节点上存储更多对象元数据，并可将 StorageGRID 元数据容量最多增加 50% 。
++
+
+NOTE: 如果您尚未执行此操作，并且存储节点在卷 0 上具有足够的 RAM 和空间，则可以执行此操作 xref:../upgrade/increasing-metadata-reserved-space-setting.adoc[安装或升级后，手动将元数据预留空间设置提高到 8 TB]。
+
++
+** xref:../admin/managing-object-metadata-storage.adoc#allowed-metadata-space[管理对象元数据存储和允许的元数据空间]
+** xref:../upgrade/increasing-metadata-reserved-space-setting.adoc[增加元数据预留空间设置]
+
+
+
+
+
+
+== 维护过程和支持工具的增强功能
+
+* * 可以更改节点控制台密码 * 。现在，您可以使用网格管理器更改节点控制台密码（ * 配置 * > * 访问控制 * > * 网格密码 * ）。这些密码用于通过 SSH 以 "admin" 身份登录到节点，或者通过 VM/ 物理控制台连接登录到 root 用户。请参见 xref:../admin/change-node-console-password.adoc[更改节点控制台密码]。
+* * 新建对象存在检查向导 * 。现在，您可以使用易于使用的对象存在检查向导（ * 维护 * > * 任务 * > * 对象存在检查 * ）来验证对象完整性，该向导将取代前台验证操作步骤 。新的操作步骤 所需时间不超过完成时间的三分之一，并且可以同时验证多个节点。请参见 xref:../monitor/verifying-object-integrity.html[验证对象完整性]。
+* "EC 重新平衡和 EC 修复作业的估计完成时间 " 图表 * 。现在，您可以查看当前 EC 重新平衡或 EC 修复作业的估计完成时间和完成百分比。
+* * 复制数据修复的估计完成百分比 * 。现在，您可以将 `show -repliced-repair-status` 选项添加到 `repair-data` 命令中，以查看复制修复的估计完成百分比。
++
+
+IMPORTANT: 在 StorageGRID 11.6 中，可以使用 `show -replicate-repair-status` 选项进行技术预览。此功能正在开发中，返回的值可能不正确或延迟。要确定修复是否已完成，请按照恢复过程中所述，继续使用 * 等待 - 全部 * ， * 尝试修复（ XRPA ）和 * 扫描期限 - 估计（ XSCM ） * 。
+
+* 诊断页面（ * 支持 * > * 工具 * > * 诊断 * ）上的结果现在按严重性排序，然后按字母顺序排序。
+* Prometheus 和 Grafana 已更新为更新版本，并修改了界面和图表。在此更改过程中，某些指标中的标签也发生了更改。
++
+** 如果您的自定义查询使用了 `node_network_up` 中的标签，则现在应改用 `node_network_info` 中的标签。
+** 如果您还使用了 `node_network` 指标中的标签名称 `interface` ，则现在应改用 `device` 标签。
+
+
+* 以前， Prometheus 指标存储在管理节点上 31 天。现在，指标会一直存储到为 Prometheus 数据预留的空间已满为止，这会显著延长历史指标的可用时间。
++
+当 ` /var/local/mysql_ibdata/` 卷达到容量时，首先删除最旧的指标。
+
+
+
+
+
+== 安装增强功能
+
+* 现在，您可以在安装 Red Hat Enterprise Linux 期间选择使用 Podman 作为容器。以前， StorageGRID 仅支持 Docker 容器。
+* 现在， RedHat Enterprise Linux/CentOS ， Ubuntu 或 Debian 和 VMware 平台的安装归档中包含了适用于 StorageGRID 的 API 架构。提取归档后，您可以在 ` /ExtrS/API-schemas` 文件夹中找到这些模式。
+* 对于裸机部署，节点配置文件中的 `block_device_RANGEDB` 密钥现在应包含三位数，而不是两位数。也就是说，您应指定 `block_device_RANGEDB_nn` ，而不是 `block_device_RANGEDB_nnn` 。
++
+为了与现有部署兼容，升级后的节点仍支持两位数的密钥。
+
+* 您可以选择将新的 `interfaces_target_nnnn` 密钥的一个或多个实例添加到节点配置文件中，以进行裸机部署。每个密钥都提供裸机主机上物理接口的名称和问题描述 ，此名称和将显示在 "VLAN interfaces" 页面和 "HA Groups" 页面上。
++
+** xref:../rhel/creating-node-configuration-files.adoc[为 Red Hat Enterprise Linux 或 CentOS 部署创建节点配置文件]
+** xref:../ubuntu/creating-node-configuration-files.adoc[为 Ubuntu 或 Debian 部署创建节点配置文件]
+
+
+
+
+
+
+== 新警报
+
+为 StorageGRID 11.6 添加了以下新警报：
+
+* 正在将审核日志添加到内存队列中
+* Cassandra 表损坏
+* EC 重新平衡失败
+* EC 修复失败
+* EC 修复已停止
+* S3 和 Swift API 的全局服务器证书到期
+* 外部系统日志 CA 证书到期
+* 外部系统日志客户端证书到期
+* 外部系统日志服务器证书到期
+* 外部系统日志服务器转发错误
+* 租户的身份联合同步失败
+* 检测到原有 CLB 负载平衡器活动
+* 正在将日志添加到磁盘队列中
+* 低只读水印覆盖
+* tmp 目录可用空间不足
+* 对象存在检查失败
+* 对象存在检查已停止
+* S3 PUT 对象大小太大
+
+
+请参见 xref:../monitor/alerts-reference.adoc[警报参考]。
+
+
+
+== 审核消息的更改
+
+* 已向 ORLM ：对象规则已满足审核消息添加一个新的 * BUID* 字段。"BUID* 字段显示用于内部操作的存储分段 ID 。只有当消息状态为 PRGD 时，才会显示新字段。
+* 在以下审核消息中添加了一个新的 * SGRP* 字段。只有在删除对象的站点与插入对象的站点不同时， * SGRP* 字段才会显示。
++
+** idel ： ILM 已启动删除
+** OVWR ：对象覆盖
+** SDEL ： S3 delete
+** WDEL ： Swift delete
+
+
+
+
+请参见 xref:../audit/index.adoc[查看审核日志]。
+
+
+
+== StorageGRID 文档更改
+
+StorageGRID 11.6 文档站点的外观已经过修改，现在使用 GitHub 作为底层平台。
+
+NetApp 非常感谢对内容的反馈，并鼓励用户利用产品文档每页上提供的新的 " 请求文档更改 " 功能。文档平台还为 GitHub 用户提供嵌入式内容贡献功能。
+
+请查看此文档并为其提供帮助。您可以编辑，请求更改或仅发送反馈。

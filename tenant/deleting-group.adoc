@@ -1,0 +1,34 @@
+---
+permalink: tenant/deleting-group.html 
+sidebar: sidebar 
+keywords: how to delete tenant group 
+summary: 您可以从系统中删除组。仅属于该组的任何用户将无法再登录到租户管理器或使用租户帐户。 
+---
+= 删除组
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以从系统中删除组。仅属于该组的任何用户将无法再登录到租户管理器或使用租户帐户。
+
+.您需要什么？ #8217 ；将需要什么
+* 您必须使用登录到租户管理器 xref:../admin/web-browser-requirements.adoc[支持的 Web 浏览器]。
+* 您必须属于具有 root 访问权限的用户组。请参见 xref:tenant-management-permissions.adoc[租户管理权限]。
+
+
+.步骤
+. 选择 * 访问管理 * > * 组 * 。
++
+image::../media/tenant_add_groups_example.png[访问控制 > 组页面的屏幕截图]
+
+. 选中要删除的组对应的复选框。
+. 选择 * 操作 * > * 删除组 * 。
++
+此时将显示一条确认消息。
+
+. 选择 * 删除组 * 确认要删除确认消息中指示的组。
++
+页面右上角将显示一条确认消息。由于缓存，更改可能需要长达 15 分钟才能生效。
+
+

@@ -1,0 +1,47 @@
+---
+permalink: upgrade/removed-or-deprecated-features.html 
+sidebar: sidebar 
+keywords: features, removed, deprecated 
+summary: 此版本已删除或弃用某些功能。查看这些项目，了解在升级之前是需要更新客户端应用程序还是修改配置。 
+---
+= 已删除或已弃用的功能
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+此版本已删除或弃用某些功能。查看这些项目，了解在升级之前是需要更新客户端应用程序还是修改配置。
+
+
+
+== 已弃用警报系统和基于警报的 API
+
+自 StorageGRID 11.6 版起，原有警报系统已弃用。旧警报系统的用户界面和 API 将在未来版本中删除。
+
+
+IMPORTANT: 如果您仍在使用传统警报，请计划在升级到 StorageGRID 11.6 后完全过渡到警报系统。请参见 xref:../monitor/managing-alerts-and-alarms.adoc[管理警报和警报：概述] 了解有关警报的更多信息。
+
+11.6 版本会弃用所有基于警报的 API 。以下 API 受此更改影响：
+
+* `GET /grid/alarms` ：完全弃用
+* `GET /grid/health/topology` ：完全弃用
+* `get /grid/health` ：响应的 `alarm-counts` 部分已弃用
+
+
+
+
+== 未来版本不支持 PUT 对象的最大对象大小为 5 TiB
+
+在未来的 StorageGRID 版本中，一个 PUT 对象操作的最大大小将为 5 GiB ，而不是 5 TiB 。您可以对大于 5 GiB 的对象使用多部分上传，最大上传量为 5 TiB （ 5 ， 497 ， 556 ， 138 ， 880 字节）。
+
+为了帮助您将客户端过渡到在 PUT 对象中使用较小的对象大小，如果 S3 客户端尝试上传超过 5 GiB 的对象，则在 StorageGRID 11.6 中将触发 * S3 PUT 对象大小过大 * 警报。
+
+
+
+== NAS 网桥功能已弃用
+
+NAS 网桥功能先前在 StorageGRID 11.4 版中进入了有限访问权限。NAS 网桥功能仍受限访问，自 StorageGRID 11.6 之日已弃用。
+
+NAS 网桥 11.4 仍为最终版本，并将继续与 StorageGRID 11.6 兼容。查看 https://mysupport.netapp.com/matrix["NetApp 互操作性表工具"^] 确保 NAS 网桥 11.4 和 StorageGRID 版本之间的持续兼容性。
+
+查看 NetApp 支持站点上的 https://mysupport.netapp.com/site/info/version-support["NAS 网桥的支持计划"^]。

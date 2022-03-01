@@ -1,0 +1,87 @@
+---
+permalink: admin/kms-viewing-details.html 
+sidebar: sidebar 
+keywords: view kms, view key management server 
+summary: 您可以查看有关 StorageGRID 系统中每个密钥管理服务器的信息，包括服务器和客户端证书的当前状态。 
+---
+= 查看 KMS 详细信息
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以查看有关 StorageGRID 系统中每个密钥管理服务器（ KMS ）的信息，包括服务器和客户端证书的当前状态。
+
+.步骤
+. 选择 * 配置 * > * 安全性 * > * 密钥管理服务器 * 。
++
+此时将显示密钥管理服务器页面。配置详细信息选项卡显示了已配置的任何密钥管理服务器。
+
++
+image::../media/kms_configuration_details_table.png[KMS 配置详细信息 KMS 表]
+
+. 查看每个 KMS 的表中的信息。
++
+[cols="1a,1a"]
+|===
+| 字段 | Description 
+
+
+ a| 
+Kms 显示名称
+ a| 
+KMS 的描述性名称。
+
+
+
+ a| 
+密钥名称
+ a| 
+KMS 中 StorageGRID 客户端的密钥别名。
+
+
+
+ a| 
+管理的密钥
+ a| 
+与 KMS 关联的 StorageGRID 站点。
+
+此字段显示特定 StorageGRID 站点的名称或 * 不由其他 KMS （默认 KMS ）管理的站点。 *
+
+
+
+ a| 
+主机名
+ a| 
+KMS 的完全限定域名或 IP 地址。
+
+如果集群包含两个密钥管理服务器，则会列出这两个服务器的完全限定域名或 IP 地址。如果集群中有两个以上的密钥管理服务器，则会列出第一个 KMS 的完全限定域名或 IP 地址以及集群中其他密钥管理服务器的数量。
+
+例如： `10.10.10.10 和 10.10.10.11` 或 `10.10.10.10 和其他 2` 。
+
+要查看集群中的所有主机名，请选择一个 KMS ，然后选择 * 编辑 * 。
+
+
+
+ a| 
+证书状态
+ a| 
+服务器证书，可选 CA 证书和客户端证书的当前状态：有效，已过期，即将到期或未知。
+
+* 注意： * StorageGRID 可能需要长达 30 分钟才能更新证书状态。您必须刷新 Web 浏览器才能查看当前值。
+
+|===
+. 如果证书状态为未知，请等待长达 30 分钟，然后刷新 Web 浏览器。
++
+
+NOTE: 添加 KMS 后，密钥管理服务器页面上的证书状态将立即显示为未知。StorageGRID 可能需要长达 30 分钟才能获取每个证书的实际状态。您必须刷新 Web 浏览器才能查看实际状态。
+
+. 如果证书状态列指示证书已过期或即将到期，请尽快解决问题描述 。
++
+请参见的说明中针对 * KMS CA 证书到期 * ， * KMS 客户端证书到期 * 和 * KMS 服务器证书到期 * 警报的建议操作 xref:../monitor/index.adoc[监控 StorageGRID 并对其进行故障排除]。
+
++
+
+IMPORTANT: 要保持数据访问，您必须尽快解决任何证书问题。
+
+

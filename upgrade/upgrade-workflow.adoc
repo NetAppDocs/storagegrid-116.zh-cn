@@ -1,0 +1,32 @@
+---
+permalink: upgrade/upgrade-workflow.html 
+sidebar: sidebar 
+keywords: upgrade workflow 
+summary: 开始升级之前，请查看常规工作流。StorageGRID 升级页面将指导您完成升级步骤。 
+---
+= 升级工作流
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+开始升级之前，请查看常规工作流。StorageGRID 升级页面将指导您完成每个升级步骤。
+
+image::../media/upgrade_workflow.png[软件升级步骤流程图]
+
+. 如果在 Linux 主机上部署了任何 StorageGRID 节点， xref:linux-installing-rpm-or-deb-package-on-all-hosts.adoc[在每个主机上安装 RPM 或 Deb 软件包] 开始升级之前。
+. 在主管理节点上，访问 StorageGRID 升级页面并上传升级文件。
+. 您也可以在开始实际升级之前运行升级预检来检测和解决任何问题。
+. 启动升级，此过程将自动运行预检并升级主管理节点。在升级主管理节点时，您无法访问网格管理器。审核日志也将不可用。此升级可能需要长达 30 分钟的时间。
+. 升级主管理节点后，清除 Web 浏览器的缓存，重新登录并返回 StorageGRID 升级页面。
+. 下载新的恢复软件包。
+. 批准网格节点。您可以批准单个网格节点，一组网格节点或所有网格节点。
++
+
+IMPORTANT: 除非您确定网格节点已准备好停止并重新启动，否则请勿批准网格节点的升级。
+
+. 恢复操作。升级完所有网格节点后，将启用新功能，您可以恢复操作。您必须等待执行停用或扩展操作步骤 ，直到后台 * 升级数据库 * 任务和 * 最终升级步骤 * 任务完成为止。
+. 升级完成后，确认软件版本并应用任何修补程序。
+
+
+xref:estimating-time-to-complete-upgrade.adoc[估计完成升级所需的时间]

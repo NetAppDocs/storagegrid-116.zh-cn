@@ -1,0 +1,80 @@
+---
+permalink: ilm/creating-cloud-storage-pool.html 
+sidebar: sidebar 
+keywords: how to create cloud storage pool 
+summary: 创建云存储池时，您需要指定 StorageGRID 用于存储对象的外部存储分段或容器的名称和位置，云提供程序类型（ Amazon S3 或 Azure Blob Storage\ ）以及 StorageGRID 访问外部存储分段或容器所需的信息。 
+---
+= 创建云存储池
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+创建云存储池时，您需要指定 StorageGRID 用于存储对象的外部存储分段或容器的名称和位置，云提供程序类型（ Amazon S3 或 Azure Blob Storage ）以及 StorageGRID 访问外部存储分段或容器所需的信息。
+
+.您需要什么？ #8217 ；将需要什么
+* 您将使用登录到网格管理器 xref:../admin/web-browser-requirements.adoc[支持的 Web 浏览器]。
+* 您具有特定的访问权限。
+* 您已查看配置云存储池的准则。
+* 云存储池引用的外部存储分段或容器已存在。
+* 您拥有访问存储分段或容器所需的所有身份验证信息。
+
+
+云存储池指定一个外部 S3 存储分段或 Azure Blob 存储容器。StorageGRID 会在您保存云存储池后立即对其进行验证，因此您必须确保云存储池中指定的存储分段或容器存在且可访问。
+
+.步骤
+. 选择 * ILM * > * 存储池 * 。
++
+此时将显示存储池页面。此页面包含两个部分：存储池和云存储池。
+
++
+image::../media/storage_pools_page_cloud_storage_pool.png[存储池页面云存储池]
+
+. 在页面的 Cloud Storage Pools 部分中，选择 * 创建 * 。
++
+此时将显示创建云存储池对话框。
+
++
+image::../media/cloud_storage_pool_create.png[创建云存储池]
+
+. 输入以下信息：
++
+[cols="1a,2a"]
+|===
+| 字段 | Description 
+
+
+ a| 
+显示名称
+ a| 
+一个名称，用于简要说明云存储池及其用途。在配置 ILM 规则时，请使用易于识别的名称。
+
+
+
+ a| 
+提供程序类型
+ a| 
+您将在此云存储池中使用哪个云提供商：
+
+** * Amazon S3* ：为 S3 ， C2S S3 或 Google Cloud Platform （ GCP ）端点选择此选项。
+** * Azure Blob 存储 *
+
+
+* 注： * 选择提供程序类型时，页面底部将显示服务端点，身份验证和服务器验证部分。
+
+
+
+ a| 
+存储分段或容器
+ a| 
+为云存储池创建的外部 S3 存储分段或 Azure 容器的名称。此处指定的名称必须与存储分段或容器的名称完全匹配，否则创建云存储池将失败。保存云存储池后，您无法更改此值。
+
+|===
+. 根据选定提供程序类型，完成页面的服务端点，身份验证和服务器验证部分。
++
+** xref:s3-authentication-details-for-cloud-storage-pool.adoc[S3 ：指定云存储池的身份验证详细信息]
+** xref:c2s-s3-authentication-details-for-cloud-storage-pool.adoc[C2S S3 ：指定云存储池的身份验证详细信息]
+** xref:azure-authentication-details-for-cloud-storage-pool.adoc[Azure ：指定云存储池的身份验证详细信息]
+
+
+

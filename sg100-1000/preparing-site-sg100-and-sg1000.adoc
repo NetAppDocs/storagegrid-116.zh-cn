@@ -1,0 +1,47 @@
+---
+permalink: sg100-1000/preparing-site-sg100-and-sg1000.html 
+sidebar: sidebar 
+keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gateway Node, admin node, install, installation, site prep, site preparating, preparing site, site requirements, requirements, site, dimensions, weight, weights, temperature, humidity, altitude, airflow, heat, wiring, power, grounding, facility 
+summary: 在安装设备之前，您必须确保要使用的站点和机柜或机架符合 StorageGRID 设备的规格。 
+---
+= 准备站点（ SG100 和 SG1000 ）
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在安装设备之前，您必须确保要使用的站点和机柜或机架符合 StorageGRID 设备的规格。
+
+.步骤
+. 确认站点满足温度，湿度，海拔范围，气流，散热， 布线，电源和接地。有关详细信息，请参见 NetApp Hardware Universe 。
+. 确认您所在位置的交流电源电压正确（介于 120 到 240 伏之间）。
+. 获取一个 19 英寸（ 48.3 厘米）的机柜或机架，以适合此大小的磁盘架（不带缆线）：
++
+|===
+| 高度 | 宽度 | 深度 | 最大重量 
+
+
+ a| 
+1.70 英寸
+
+（ 4.32 厘米）
+ a| 
+17.32 英寸
+
+（ 44.0 厘米）
+ a| 
+32.0 英寸
+
+（ 81.3 厘米）
+ a| 
+39 磅
+
+（ 17.7 千克）
+
+|===
+. 确定要在何处安装设备。
+
+
+https://hwu.netapp.com["NetApp Hardware Universe"^]
+
+https://mysupport.netapp.com/matrix["NetApp 互操作性表工具"^]

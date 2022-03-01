@@ -1,0 +1,20 @@
+---
+permalink: maintain/using-donotstart-file.html 
+sidebar: sidebar 
+keywords: storagegrid, recover, donotstart, do not start, donotstart file, do not start file 
+summary: 如果您在技术支持的指导下执行各种维护或配置过程，则可能会要求您使用 DoNotStart 文件来防止在启动或重新启动 Server Manager 时启动服务。 
+---
+= 使用 DoNotStart 文件
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果您在技术支持的指导下执行各种维护或配置过程，则可能会要求您使用 DoNotStart 文件来防止在启动或重新启动 Server Manager 时启动服务。
+
+
+IMPORTANT: 只有在技术支持要求您添加或删除 DoNotStart 文件时，才应添加或删除此文件。
+
+要阻止服务启动，请将 DoNotStart 文件置于要阻止启动的服务的目录中。启动时， Server Manager 将查找 DoNotStart 文件。如果文件存在，则会阻止服务（以及与之相关的任何服务）启动。删除 DoNotStart 文件后，先前停止的服务将在下次启动或重新启动 Server Manager 时启动。删除 DoNotStart 文件后，服务不会自动启动。
+
+阻止所有服务重新启动的最有效方法是阻止 NTP 服务启动。所有服务都依赖于 NTP 服务，如果 NTP 服务未运行，则无法运行。

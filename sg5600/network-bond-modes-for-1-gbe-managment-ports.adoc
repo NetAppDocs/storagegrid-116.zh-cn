@@ -1,0 +1,22 @@
+---
+permalink: sg5600/network-bond-modes-for-1-gbe-managment-ports.html 
+sidebar: sidebar 
+keywords: storagegrid, sg5600, storage node, storage appliance, Network bond, Network bonding, Network bond mode, Network-bond mode, independent, active-backup, active backup, 1-gbe, 1 gbe, e5600sg 
+summary: 对于 E5600SG 控制器上的两个 1-GbE 管理端口，您可以选择独立网络绑定模式或主动备份网络绑定模式来连接到可选的管理网络。 
+---
+= 1-GbE 管理端口的网络绑定模式
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+对于 E5600SG 控制器上的两个 1-GbE 管理端口，您可以选择独立网络绑定模式或主动备份网络绑定模式来连接到可选的管理网络。
+
+在独立模式下，只有管理端口 1 连接到管理网络。此模式不提供冗余路径。管理端口 2 未连接，可用于临时本地连接（使用 IP 地址 169.254.0.1 ）
+
+在主动备份模式下，管理端口 1 和 2 均连接到管理网络。一次只有一个端口处于活动状态。如果活动端口发生故障，其备份端口会自动提供故障转移连接。将这两个物理端口绑定到一个逻辑管理端口可提供指向管理网络的冗余路径。
+
+
+NOTE: 如果在将 1-GbE 管理端口配置为主动备份模式后需要临时本地连接到 E5600SG 控制器，请从两个管理端口拔下缆线，将临时缆线插入管理端口 2 ，然后使用 IP 地址 169.254.0.1 访问此设备。
+
+image::../media/e5600sg_aggregate_ports_bonded.gif[已绑定 E5600SG 聚合端口]

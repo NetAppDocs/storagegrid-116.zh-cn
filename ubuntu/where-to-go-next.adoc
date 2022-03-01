@@ -1,0 +1,83 @@
+---
+permalink: ubuntu/where-to-go-next.html 
+sidebar: sidebar 
+keywords: after installation 
+summary: 完成安装后，您必须执行一系列集成和配置步骤。某些步骤是必需的；其他步骤是可选的。 
+---
+= 下一步行动
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+完成安装后，您必须执行一系列集成和配置步骤。某些步骤是必需的；其他步骤是可选的。
+
+
+
+== 所需任务
+
+* 为要用于在 StorageGRID 系统上存储对象的每个客户端协议（ Swift 或 S3 ）创建一个租户帐户。
+* 通过配置组和用户帐户来控制系统访问。您也可以配置联合身份源（例如 Active Directory 或 OpenLDAP ），以便导入管理组和用户。或者，您也可以创建本地组和用户。
+* 集成并测试用于将对象上传到 StorageGRID 系统的 S3 或 Swift API 客户端应用程序。
+* 准备好后，配置要用于保护对象数据的信息生命周期管理（ ILM ）规则和 ILM 策略。
++
+
+NOTE: 安装 StorageGRID 时，默认 ILM 策略 " 基线 2 副本策略 " 处于活动状态。此策略包括常用 ILM 规则（创建 2 个副本），如果未激活任何其他策略，则此策略适用。
+
+* 如果您的安装包括设备存储节点，请使用 SANtricity 软件完成以下任务：
++
+** 连接到每个 StorageGRID 设备。
+** 验证是否收到 AutoSupport 数据。
+
+
+* 如果 StorageGRID 系统包含任何归档节点，请配置归档节点与目标外部归档存储系统的连接。
+
+
+
+NOTE: 如果任何归档节点将使用 Tivoli Storage Manager 作为外部归档存储系统，则还必须配置 Tivoli Storage Manager 。
+
+* 查看并遵循 StorageGRID 系统强化准则，以消除安全风险。
+* 为系统警报配置电子邮件通知。
+
+
+
+
+== 可选任务
+
+* 如果要从（原有）警报系统接收通知，请配置警报的邮件列表和电子邮件通知。
+* 如果自规划部署并生成恢复包以来网格节点 IP 地址发生了更改，请更新这些地址。请参见恢复和维护说明中有关更改 IP 地址的信息。
+* 根据需要配置存储加密。
+* 如果需要，配置存储压缩以减小存储对象的大小。
+* 配置审核客户端访问。您可以通过 NFS 或 CIFS 文件共享配置对系统的访问，以供审核使用。请参见有关管理 StorageGRID 的说明。
+
+
+
+NOTE: 已弃用通过 CIFS/Samba 进行审核导出，并将在未来的 StorageGRID 版本中删除。
+
+xref:../admin/index.adoc[管理 StorageGRID]
+
+xref:../s3/index.adoc[使用 S3]
+
+xref:../swift/index.adoc[使用 Swift]
+
+xref:../ilm/index.adoc[使用 ILM 管理对象]
+
+xref:../monitor/index.adoc[监控和故障排除]
+
+xref:../maintain/index.adoc[恢复和维护]
+
+xref:../sg100-1000/index.adoc[SG100 和 SG1000 服务设备]
+
+xref:../sg5600/index.adoc[SG5600 存储设备]
+
+xref:../sg5700/index.adoc[SG5700 存储设备]
+
+xref:../sg6000/index.adoc[SG6000 存储设备]
+
+xref:../release-notes/index.adoc[发行说明]
+
+xref:../harden/index.adoc[系统强化]
+
+xref:../audit/index.adoc[查看审核日志]
+
+xref:../upgrade/index.adoc[升级软件]

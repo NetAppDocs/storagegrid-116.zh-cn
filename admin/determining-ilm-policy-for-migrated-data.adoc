@@ -1,0 +1,24 @@
+---
+permalink: admin/determining-ilm-policy-for-migrated-data.html 
+sidebar: sidebar 
+keywords: determing ilm policy, ilm for migrated data 
+summary: StorageGRID 系统的 ILM 策略可确定创建的副本数，副本存储到的位置以及这些副本的保留时间。ILM 策略由一组 ILM 规则组成，这些规则介绍如何筛选对象以及如何随着时间的推移管理对象数据。 
+---
+= 确定已迁移数据的 ILM 策略
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+StorageGRID 系统的 ILM 策略可确定创建的副本数，副本存储到的位置以及这些副本的保留时间。ILM 策略由一组 ILM 规则组成，这些规则介绍如何筛选对象以及如何随着时间的推移管理对象数据。
+
+根据迁移数据的使用方式以及迁移数据的要求，您可能需要为迁移的数据定义与日常操作所使用的 ILM 规则不同的唯一 ILM 规则。例如，如果日常数据管理的法规要求与迁移中包含的数据的法规要求不同，则您可能需要在不同级别的存储上为迁移的数据创建不同数量的副本。
+
+如果可以唯一区分已迁移数据和通过日常操作保存的对象数据，则可以配置专用于已迁移数据的规则。
+
+如果您可以使用元数据条件之一可靠地区分数据类型，则可以使用此条件定义仅适用于已迁移数据的 ILM 规则。
+
+在开始数据迁移之前，请确保您了解 StorageGRID 系统的 ILM 策略及其如何应用于迁移的数据，并且已对 ILM 策略进行了更改并进行了测试。请参见 xref:../ilm/index.adoc[使用 ILM 管理对象]。
+
+
+CAUTION: 如果未正确指定 ILM 策略发生原因 ，则可能会导致无法恢复的数据丢失。在激活 ILM 策略之前，请仔细查看对该策略所做的所有更改，以确保该策略按预期运行。

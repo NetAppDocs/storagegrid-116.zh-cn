@@ -1,0 +1,31 @@
+---
+section: fabricpool
+title: 配置 FabricPool
+entries:
+- title: 概述
+  pdf-filename: 为 FabricPool 配置 StorageGRID
+  url: "/fabricpool/index.html"
+- title: 将 StorageGRID 附加为云层
+  entries:
+  - title: 将 StorageGRID 附加为云层所需的信息
+    url: "/fabricpool/information-needed-to-attach-storagegrid-as-cloud-tier.html"
+  - title: 负载平衡最佳实践
+    url: "/fabricpool/best-practices-for-load-balancing.html"
+  - title: HA 组的最佳实践
+    url: "/fabricpool/best-practices-for-high-availability-groups.html"
+  - title: 配置 DNS 服务器
+    url: "/fabricpool/configuring-dns-for-storagegrid-ip-addresses.html"
+  - title: 创建 HA 组
+    url: "/fabricpool/creating-ha-group-for-fabricpool.html"
+  - title: 创建负载平衡器端点
+    url: "/fabricpool/creating-load-balancer-endpoint-for-fabricpool.html"
+  - title: 创建租户帐户
+    url: "/fabricpool/creating-tenant-account-for-fabricpool.html"
+  - title: 创建 S3 存储分段并获取访问密钥
+    url: "/fabricpool/creating-s3-bucket-and-access-key.html"
+- title: 将 ILM 与 FabricPool 数据结合使用
+  url: "/fabricpool/using-storagegrid-ilm-with-fabricpool-data.html"
+- title: 创建流量分类策略
+  url: "/fabricpool/creating-traffic-classification-policy-for-fabricpool.html"
+- title: 其他最佳实践
+  url: "/fabricpool/other-best-practices-for-storagegrid-and-fabricpool.html"

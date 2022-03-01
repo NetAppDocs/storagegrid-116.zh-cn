@@ -1,0 +1,24 @@
+---
+permalink: maintain/consolidating-storage-nodes.html 
+sidebar: sidebar 
+keywords: storagegrid, storage node, consolidate storage node, consolidating storage node 
+summary: 您可以整合存储节点以减少站点或部署的存储节点数，同时增加存储容量。 
+---
+= 整合存储节点
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以整合存储节点以减少站点或部署的存储节点数，同时增加存储容量。
+
+整合存储节点时，您可以扩展 StorageGRID 系统以添加容量更大的新存储节点，然后停用容量较小的旧存储节点。在停用操作步骤 期间，对象会从旧存储节点迁移到新存储节点。
+
+
+NOTE: 如果您要将较旧的和较小的设备与新型号或容量较大的设备进行整合，则许多用户都使用节点克隆功能，或者如果不执行一对一更换，则使用节点克隆操作步骤 和停用操作步骤 。
+
+例如，您可以添加两个容量更大的新存储节点来替换三个旧存储节点。您应首先使用扩展操作步骤 添加两个更大的新存储节点，然后使用停用操作步骤 删除三个容量较小的旧存储节点。
+
+通过在删除现有存储节点之前添加新容量，您可以确保在 StorageGRID 系统中更平衡地分布数据。此外，还可以减少现有存储节点可能被推送到存储水印级别以外的可能性。
+
+xref:../expand/index.adoc[扩展网格]

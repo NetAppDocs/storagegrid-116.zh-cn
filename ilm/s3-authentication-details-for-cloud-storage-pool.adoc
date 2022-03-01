@@ -1,0 +1,163 @@
+---
+permalink: ilm/s3-authentication-details-for-cloud-storage-pool.html 
+sidebar: sidebar 
+keywords: cloud storage pool authentication, anonymous authentication, access key, secret access key 
+summary: 在为 S3 创建云存储池时，必须选择云存储池端点所需的身份验证类型。您可以指定匿名或输入访问密钥 ID 和机密访问密钥。 
+---
+= S3 ：指定云存储池的身份验证详细信息
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在为 S3 创建云存储池时，必须选择云存储池端点所需的身份验证类型。您可以指定匿名或输入访问密钥 ID 和机密访问密钥。
+
+.您需要什么？ #8217 ；将需要什么
+* 您已输入云存储池的基本信息并指定 * Amazon S3* 作为提供程序类型。
++
+image::../media/cloud_storage_pool_create_s3.png[云存储池创建 S3]
+
+* 如果您使用的是访问密钥身份验证，则知道外部 S3 存储分段的访问密钥 ID 和机密访问密钥。
+
+
+.步骤
+. 在 * 服务端点 * 部分中，提供以下信息：
++
+.. 选择要在连接到云存储池时使用的协议。
++
+默认协议为 HTTPS 。
+
+.. 输入云存储池的服务器主机名或 IP 地址。
++
+例如：
+
++
+`s3-_aws-region_.amazonaws.com`
+
++
+
+NOTE: 请勿在此字段中包含存储分段名称。您可以在 * 分段或容器 * 字段中包含分段名称。
+
+.. （可选）指定在连接到云存储池时应使用的端口。
++
+将此字段留空可使用默认端口：端口 443 用于 HTTPS ，端口 80 用于 HTTP 。
+
+.. 选择 Cloud Storage Pool 存储分段的 URL 模式：
++
+[cols="1a,2a"]
+|===
+| 选项 | Description 
+
+
+ a| 
+虚拟托管模式
+ a| 
+使用虚拟托管模式 URL 访问存储分段。虚拟托管模式 URL 会将存储分段名称包含在域名中，例如 ` + https://bucket-name.s3.company.com/key-name+` 。
+
+
+
+ a| 
+路径模式
+ a| 
+使用路径模式 URL 访问存储分段。路径模式 URL 的末尾包含分段名称，例如 ` +https://s3.company.com/bucket-name/key-name+` 。
+
+* 注： * 路径模式 URL 已弃用。
+
+
+
+ a| 
+自动检测
+ a| 
+尝试根据提供的信息自动检测要使用的 URL 模式。例如，如果指定 IP 地址， StorageGRID 将使用路径模式的 URL 。仅当您不知道要使用哪种特定模式时，才选择此选项。
+
+|===
+
+
+. 在 * 身份验证 * 部分中，选择云存储池端点所需的身份验证类型。
++
+[cols="1a,2a"]
+|===
+| 选项 | Description 
+
+
+ a| 
+访问密钥
+ a| 
+要访问云存储池存储分段，需要访问密钥 ID 和机密访问密钥。
+
+
+
+ a| 
+匿名
+ a| 
+每个人都有权访问云存储池存储分段。不需要访问密钥 ID 和机密访问密钥。
+
+
+
+ a| 
+CAP （ C2S 访问门户）
+ a| 
+仅用于 C2S S3 。转至 xref:c2s-s3-authentication-details-for-cloud-storage-pool.adoc[C2S S3 ：指定云存储池的身份验证详细信息]。
+
+|===
+. 如果选择了访问密钥，请输入以下信息：
++
+[cols="1a,2a"]
+|===
+| 选项 | Description 
+
+
+ a| 
+访问密钥 ID
+ a| 
+拥有外部存储分段的帐户的访问密钥 ID 。
+
+
+
+ a| 
+机密访问密钥
+ a| 
+关联的机密访问密钥。
+
+|===
+. 在服务器验证部分中，选择应使用哪种方法验证与云存储池的 TLS 连接的证书：
++
+[cols="1a,2a"]
+|===
+| 选项 | Description 
+
+
+ a| 
+使用操作系统 CA 证书
+ a| 
+使用操作系统上安装的默认网格 CA 证书来保护连接。
+
+
+
+ a| 
+使用自定义 CA 证书
+ a| 
+使用自定义 CA 证书。选择 * 选择新 * ，然后上传 PEM 编码的 CA 证书。
+
+
+
+ a| 
+请勿验证证书
+ a| 
+未验证用于 TLS 连接的证书。
+
+|===
+. 选择 * 保存 * 。
+
+
+保存云存储池时， StorageGRID 将执行以下操作：
+
+* 验证存储分段和服务端点是否存在，以及是否可以使用您指定的凭据访问它们。
+* 将标记文件写入存储分段，以将存储分段标识为云存储池。切勿删除名为 `x-ntap-sgws-cloud pool-uuid` 的文件。
+
+
+如果云存储池验证失败，您将收到一条错误消息，说明验证失败的原因。例如，如果存在证书错误或您指定的存储分段不存在，则可能会报告错误。
+
+image::../media/cloud_storage_pool_create_error.gif[云存储池创建错误]
+
+请参见的说明 xref:troubleshooting-cloud-storage-pools.adoc[对云存储池进行故障排除]，解析问题描述 ，然后再次尝试保存云存储池。

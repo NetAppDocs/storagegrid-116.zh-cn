@@ -1,0 +1,29 @@
+---
+permalink: admin/deleting-tenant-account.html 
+sidebar: sidebar 
+keywords: tenant, delete, remove tenant 
+summary: 如果要永久删除租户对系统的访问权限，可以删除租户帐户。 
+---
+= 删除租户帐户
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果要永久删除租户对系统的访问权限，可以删除租户帐户。
+
+.您需要什么？ #8217 ；将需要什么
+* 您必须使用登录到网格管理器 xref:../admin/web-browser-requirements.adoc[支持的 Web 浏览器]。
+* 您必须具有特定的访问权限。
+* 您必须已删除与租户帐户关联的所有分段（ S3 ），容器（ Swift ）和对象。
+
+
+.步骤
+. 选择 * 租户 * 。
+. 选择要删除的租户帐户。
++
+使用搜索框按名称或租户 ID 搜索租户帐户。
+
+. 从 * 操作 * 下拉列表中，选择 * 删除 * 。
+. 选择 * 确定 * 。
+

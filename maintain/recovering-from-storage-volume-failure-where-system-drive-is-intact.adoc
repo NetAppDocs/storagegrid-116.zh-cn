@@ -1,0 +1,19 @@
+---
+permalink: maintain/recovering-from-storage-volume-failure-where-system-drive-is-intact.html 
+sidebar: sidebar 
+keywords: storagegrid, recover, storage volume failure, volume failure, system drive intact 
+summary: 您必须完成一系列任务，才能恢复基于软件的存储节点，如果此存储节点上的一个或多个存储卷发生故障，但系统驱动器完好无损。如果只有存储卷发生故障，则存储节点仍可供 StorageGRID 系统使用。 
+---
+= 从系统驱动器完好无损的存储卷故障中恢复
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您必须完成一系列任务，才能恢复基于软件的存储节点，如果此存储节点上的一个或多个存储卷发生故障，但系统驱动器完好无损。如果只有存储卷发生故障，则存储节点仍可供 StorageGRID 系统使用。
+
+此恢复仅限基于 操作步骤 适用场景 软件的存储节点。如果设备存储节点上的存储卷发生故障，请使用操作步骤 执行 "`Recover appliance Storage Node" 。`
+
+image::../media/storage_node_recovery_storage_vol_only.gif[存储卷恢复流程图概述]
+
+xref:recovering-storagegrid-appliance-storage-node.adoc[恢复设备存储节点]

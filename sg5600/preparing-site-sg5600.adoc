@@ -1,0 +1,73 @@
+---
+permalink: sg5600/preparing-site-sg5600.html 
+sidebar: sidebar 
+keywords: storagegrid, sg5600, storage node, storage appliance, install, installation, site prep, site preparating, preparing site, site requirements, requirements, site, dimensions, weight, weights, temperature, humidity, altitude, airflow, heat, wiring, power, grounding, facility 
+summary: 在安装设备之前，您必须确保要使用的站点和机柜或机架符合 StorageGRID 设备的规格。 
+---
+= 准备站点（ SG5600 ）
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在安装设备之前，您必须确保要使用的站点和机柜或机架符合 StorageGRID 设备的规格。
+
+.步骤
+. 确认站点满足温度，湿度，海拔范围，气流，散热， 布线，电源和接地。有关详细信息，请参见 NetApp Hardware Universe 。
+. 获取一个 19 英寸（ 48.3 厘米）的机柜或机架，以适合此大小的磁盘架（不带缆线）：
++
+|===
+| 设备型号 | 高度 | 宽度 | 深度 | 最大重量 
+
+
+ a| 
+SG5612
+
+（ 12 个驱动器）
+ a| 
+3.40 英寸
+
+（ 8.64 厘米）
+ a| 
+19.0 英寸
+
+（ 48.26 厘米）
+ a| 
+21.75 英寸
+
+（ 55.25 厘米）
+ a| 
+59.5 磅
+
+（ 27 千克）
+
+
+
+ a| 
+SG5660
+
+（ 60 个驱动器）
+ a| 
+7.00 英寸
+
+（ 17.78 厘米）
+ a| 
+17.75 英寸
+
+（ 45.08 厘米）
+ a| 
+32.50 英寸
+
+（ 82.55 厘米）
+ a| 
+236.2 磅
+
+（ 107.1 千克）
+
+|===
+. 安装所需的任何网络交换机。有关兼容性信息，请参见 NetApp 互操作性表工具。
+
+
+https://hwu.netapp.com["NetApp Hardware Universe"^]
+
+https://mysupport.netapp.com/NOW/products/interoperability["NetApp 互操作性"^]

@@ -1,0 +1,31 @@
+---
+permalink: ilm/what-erasure-coding-is.html 
+sidebar: sidebar 
+keywords: what is erasure coding, what is ec 
+summary: 纠删编码是 StorageGRID 存储对象数据的第二种方法。如果 StorageGRID 将对象与配置为创建纠删编码副本的 ILM 规则匹配，则会将对象数据分段为数据片段，计算额外的奇偶校验片段，并将每个片段存储在不同的存储节点上。访问某个对象时，系统会使用存储的片段重新组合该对象。如果数据或奇偶校验片段损坏或丢失，则纠删编码算法可以使用剩余数据和奇偶校验片段的子集重新创建该片段。 
+---
+= 什么是纠删编码
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+纠删编码是 StorageGRID 存储对象数据的第二种方法。如果 StorageGRID 将对象与配置为创建纠删编码副本的 ILM 规则匹配，则会将对象数据分段为数据片段，计算额外的奇偶校验片段，并将每个片段存储在不同的存储节点上。访问某个对象时，系统会使用存储的片段重新组合该对象。如果数据或奇偶校验片段损坏或丢失，则纠删编码算法可以使用剩余数据和奇偶校验片段的子集重新创建该片段。
+
+以下示例说明了如何对对象数据使用纠删编码算法。在此示例中， ILM 规则使用 4+2 纠删编码方案。每个对象都会被划分为四个相等的数据片段，并根据对象数据计算两个奇偶校验片段。六个片段中的每个片段都存储在三个数据中心站点的不同节点上，以便为节点故障或站点丢失提供数据保护。
+
+image::../media/ec_three_sites_4_plus_2.png[对三个站点 4 加 2 进行纠删编码]
+
+4+2 纠删编码方案至少需要九个存储节点，三个不同站点中的每个站点各有三个存储节点。只要六个片段中的任意四个（数据或奇偶校验）仍然可用，就可以检索对象。最多可以丢失两个片段，而不会丢失对象数据。如果整个数据中心站点丢失，只要所有其他片段仍可访问，仍可检索或修复对象。
+
+image::../media/ec_recoverable_4_plus_2.png[纠删编码可恢复 4 加 2]
+
+如果丢失两个以上的存储节点，则无法检索此对象。
+
+image::../media/ec_unrecoverable_4_plus_2.png[纠删编码不可恢复 4 加 2]
+
+.相关信息
+* xref:what-storage-pool-is.adoc[什么是存储池]
+* xref:what-erasure-coding-schemes-are.adoc[什么是纠删编码方案]
+* xref:creating-erasure-coding-profile.adoc[创建擦除编码配置文件]
+

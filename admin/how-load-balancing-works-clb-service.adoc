@@ -1,0 +1,25 @@
+---
+permalink: admin/how-load-balancing-works-clb-service.html 
+sidebar: sidebar 
+keywords: clb service, connection load balancer 
+summary: 网关节点上的连接负载平衡器（ CLB\ ）服务已弃用。现在，建议使用负载平衡器服务。 
+---
+= 负载平衡的工作原理— CLB 服务（已弃用）
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+网关节点上的连接负载平衡器（ CLB ）服务已弃用。现在，建议使用负载平衡器服务。
+
+CLB 服务使用第 4 层负载平衡功能，根据可用性，系统负载和管理员配置的链路成本，将传入的 TCP 网络连接从客户端应用程序分发到最佳存储节点。选择最佳存储节点后， CLB 服务将建立双向网络连接，并将流量转发到选定节点和从选定节点转发流量。在定向传入网络连接时， CLB 不考虑网格网络配置。
+
+要查看有关 CLB 服务的信息，请选择 * 支持 * > * 工具 * > * 网格拓扑 * ，然后展开网关节点，直到可以选择 * CLB* 及其下方的选项为止。
+
+image::../media/gateway_node.gif[网格拓扑树中的 API 网关节点]
+
+如果您选择使用 CLB 服务，则应考虑为 StorageGRID 系统配置链路成本。
+
+* xref:what-link-costs-are.adoc[链路成本是多少]
+* xref:updating-link-costs.adoc[更新链路成本]
+

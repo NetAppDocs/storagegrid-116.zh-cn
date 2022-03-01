@@ -1,0 +1,17 @@
+---
+permalink: admin/confirming-capacity-of-storagegrid-system.html 
+sidebar: sidebar 
+keywords: data migration, data capacity for migration 
+summary: 在将大量数据迁移到 StorageGRID 系统之前，请确认 StorageGRID 系统具有处理预期卷所需的磁盘容量。 
+---
+= 确认 StorageGRID 系统的容量
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在将大量数据迁移到 StorageGRID 系统之前，请确认 StorageGRID 系统具有处理预期卷所需的磁盘容量。
+
+如果 StorageGRID 系统包含归档节点，并且已将迁移对象的副本保存到近线存储（例如磁带）中，请确保归档节点的存储具有足够的容量来容纳所迁移数据的预期卷。
+
+在容量评估过程中，请查看计划迁移的对象的数据配置文件，并计算所需的磁盘容量。有关监控 StorageGRID 系统磁盘容量的详细信息，请参见 xref:managing-storage-nodes.adoc[管理存储节点] 和 xref:../monitor/index.adoc[监控和故障排除]。

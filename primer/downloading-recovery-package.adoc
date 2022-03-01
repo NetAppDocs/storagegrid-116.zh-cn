@@ -1,0 +1,30 @@
+---
+permalink: primer/downloading-recovery-package.html 
+sidebar: sidebar 
+keywords: recovery package, download, encryption keys 
+summary: 恢复包是一个可下载的 .zip 文件，其中包含安装，扩展，升级和维护 StorageGRID 系统所需的部署专用文件和软件。 
+---
+= 下载恢复包
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+恢复包是一个可下载的 .zip 文件，其中包含安装，扩展，升级和维护 StorageGRID 系统所需的部署专用文件和软件。
+
+恢复软件包文件还包含系统专用的配置和集成信息，包括服务器主机名和 IP 地址以及系统维护，升级和扩展期间所需的高度机密的密码。要从主管理节点的故障中恢复，需要使用恢复包。
+
+安装 StorageGRID 系统时，您需要下载恢复软件包文件并确认可以成功访问此文件的内容。每次由于维护或升级过程而更改 StorageGRID 系统的网格拓扑时，您还应下载此文件。
+
+image::../media/recovery_package.png[恢复软件包页面]
+
+下载恢复软件包文件并确认可以提取其内容后，将恢复软件包文件复制到两个安全，安全和独立的位置。
+
+
+IMPORTANT: 恢复包文件必须受到保护，因为它包含可用于从 StorageGRID 系统获取数据的加密密钥和密码。
+
+.相关信息
+* xref:../upgrade/index.adoc[升级软件]
+* xref:../expand/index.adoc[扩展网格]
+* xref:../maintain/index.adoc[恢复和维护]
+

@@ -1,0 +1,13 @@
+---
+permalink: sg5600/configuring-hardware.html 
+sidebar: sidebar 
+keywords: storagegrid, sg5600, storage node, storage appliance, hardware, configure, configuration, set up, setup, network, networking 
+summary: 为设备接通电源后，您必须配置 SANtricity 存储管理器，该软件将用于监控硬件。您还必须配置 StorageGRID 要使用的网络连接。 
+---
+= 配置硬件（ SG5600 ）
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+为设备接通电源后，您必须配置 SANtricity 存储管理器，该软件将用于监控硬件。您还必须配置 StorageGRID 要使用的网络连接。

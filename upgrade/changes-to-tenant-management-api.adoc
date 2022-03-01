@@ -1,0 +1,24 @@
+---
+permalink: upgrade/changes-to-tenant-management-api.html 
+sidebar: sidebar 
+keywords: tenant management api, api, api version, swagger, rest api 
+summary: StorageGRID 11.6 使用租户管理 API 版本 3 。版本 3 已弃用版本 2 ；但版本 1 和版本 2 仍受支持。 
+---
+= 对租户管理 API 进行的更改
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+StorageGRID 11.6 使用租户管理 API 版本 3 。版本 3 已弃用版本 2 ；但版本 1 和版本 2 仍受支持。
+
+
+IMPORTANT: 您可以继续在 StorageGRID 11.6 中使用管理 API 版本 1 和版本 2 ；但是，在未来版本的 StorageGRID 中，对这些版本的 API 的支持将被删除。升级到 StorageGRID 11.6 后，可以使用 `put /grid/config/management` API 停用已弃用的 v1 和 v2 API 。
+
+要了解更多信息，请访问 xref:../tenant/understanding-tenant-management-api.adoc[了解租户管理 API]。
+
+
+
+== 已弃用修补方法
+
+此修补程序方法现已弃用，并将在未来版本中删除。根据需要，执行 PUT 操作以替换资源，而不是使用修补程序操作来修改资源。

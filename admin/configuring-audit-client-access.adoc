@@ -1,0 +1,20 @@
+---
+permalink: admin/configuring-audit-client-access.html 
+sidebar: sidebar 
+keywords: audit client, ams, audit management service 
+summary: 管理节点可通过审核管理系统 \ （ AMS \ ）服务将所有审核的系统事件记录到可通过审核共享访问的日志文件中，该文件会在安装时添加到每个管理节点中。为了便于访问审核日志，您可以配置客户端对 CIFS 和 NFS 的审核共享的访问权限。 
+---
+= 配置审核客户端访问
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+管理节点通过审核管理系统（ Audit Management System ， AMS ）服务将所有审核的系统事件记录到可通过审核共享访问的日志文件中，该文件会在安装时添加到每个管理节点中。为了便于访问审核日志，您可以配置客户端对 CIFS 和 NFS 的审核共享的访问权限。
+
+StorageGRID 系统会使用肯定确认来防止在将审核消息写入日志文件之前丢失这些消息。消息会一直在服务中排队，直到 AMS 服务或中间审核中继服务确认对其进行控制为止。
+
+有关详细信息，请参见 xref:../audit/index.adoc[查看审核日志]。
+
+
+NOTE: 已弃用通过 CIFS/Samba 进行审核导出，并将在未来的 StorageGRID 版本中删除。如果您可以选择使用 CIFS 或 NFS ，请选择 NFS 。

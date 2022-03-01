@@ -1,0 +1,118 @@
+= 查找存储节点的主机名
+
+
+
+
+== 查找存储节点的主机名
+
+. 登录到主管理节点：
++
+.. 输入以下命令： `ssh admin@ primary_Admin_Node_IP_`
+.. 输入 `passwords.txt` 文件中列出的密码。
+.. 输入以下命令切换到 root ： `su -`
+.. 输入 `passwords.txt` 文件中列出的密码。
++
+以 root 用户身份登录时，提示符将从 ` $` 更改为 ` #` 。
+
+
+
+. 使用 ` /etc/hosts` 文件查找已还原存储卷的存储节点的主机名。要查看网格中所有节点的列表，请输入以下内容： `cat /etc/hosts` 。
+
+
+
+
+== 如果所有卷都发生故障，请修复数据
+
+如果所有存储卷都发生故障，请修复整个节点。根据您是使用复制的数据，还是使用纠删编码（ Erasure-coded ， EC ）数据，或者同时使用这两者，按照有关 * 复制的数据 * ， * 纠删编码（ Erasure-Coded ， EC ）数据 * 或这两者的说明进行操作。
+
+如果只有部分卷发生故障，请转至 <<Repair data if only some volumes have failed>>。
+
+
+IMPORTANT: 您不能同时对多个节点运行 `repair-data` 操作。要恢复多个节点，请联系技术支持。
+
+[role="tabbed-block"]
+====
+.复制的数据
+--
+如果网格包含复制的数据，请使用 `repair-data start-replicated -node-repair` 命令和 ` -nodes` 选项修复整个存储节点。
+
+此命令将修复名为 SG-DC-SN3 的存储节点上复制的数据：
+
+`repair-data start-replicated -node-repair -nodes sg-DC-SN3`
+
+
+NOTE: 还原对象数据后，如果 StorageGRID 系统找不到复制的对象数据，则会触发 * 对象丢失 * 警报。可能会在整个系统的存储节点上触发警报。您应确定丢失的发生原因 以及是否可以恢复。请参见 xref:../monitor/index.adoc[监控和故障排除]。
+
+--
+.纠删编码（ Erasure Coded ， EC ）数据
+--
+如果网格包含擦除编码的数据，请使用 `repair-data start-EC-node-repair` 命令和 ` -nodes` 选项修复整个存储节点。
+
+此命令将修复名为 SG-DC-SN3 的存储节点上的擦除编码数据：
+
+`repair-data start-EC-node-repair -nodes sg-DC-SN3`
+
+此操作将返回唯一的 `repair ID` ，用于标识此 `repair_data` 操作。使用此 `repair ID` 跟踪 `repair_data` 操作的进度和结果。恢复过程完成后，不会返回任何其他反馈。
+
+
+NOTE: 在某些存储节点脱机时，可以开始修复经过擦除编码的数据。修复将在所有节点均可用后完成。
+
+--
+====
+
+
+== 如果只有部分卷出现故障，请修复数据
+
+如果只有部分卷出现故障，请修复受影响的卷。根据您是使用复制的数据，还是使用纠删编码（ Erasure-coded ， EC ）数据，或者同时使用这两者，按照有关 * 复制的数据 * ， * 纠删编码（ Erasure-Coded ， EC ）数据 * 或这两者的说明进行操作。
+
+如果所有卷都发生故障，请转至 <<Repair data if all volumes have failed>>。
+
+以十六进制格式输入卷 ID 。例如， `0000` 是第一个卷， `000f` 是第 16 个卷。您可以指定一个卷，一个卷范围或多个不属于一个序列的卷。
+
+所有卷必须位于同一个存储节点上。如果需要还原多个存储节点的卷，请联系技术支持。
+
+[role="tabbed-block"]
+====
+.复制的数据
+--
+如果网格包含复制的数据，请使用 `sSTART-replicated -volume-repair` 命令和 ` -nodes` 选项来标识节点。然后添加 ` -volumes` 或 ` -volume-range` 选项，如以下示例所示。
+
+* 单个卷 * ：此命令会将复制的数据还原到名为 SG-DC-SN3 的存储节点上的卷 `0002` ：
+
+`repair-data start-replicated -volume-repair -nodes sg-DC-SN3 -volumes 0002`
+
+* 卷范围 * ：此命令会将复制的数据还原到名为 SG-DC-SN3 的存储节点上介于 `0003` 到 `0009` 范围内的所有卷：
+
+`repair-data start-replicated -volume-repair -nodes sg-DC-SN3 -volume-range 0003-0009`
+
+* 不在序列中的多个卷 * ：此命令会将复制的数据还原到名为 SG-DC-SN3 的存储节点上的卷 `0001` ， `0005` 和 `0008` ：
+
+`repair-data start-replicated -volume-repair -nodes sg-DC-SN3 -volumes 0001 ， 0005 ， 0008`
+
+
+NOTE: 还原对象数据后，如果 StorageGRID 系统找不到复制的对象数据，则会触发 * 对象丢失 * 警报。可能会在整个系统的存储节点上触发警报。您应确定丢失的发生原因 以及是否可以恢复。请参见有关 StorageGRID 监控和故障排除的说明。
+
+--
+.纠删编码（ Erasure Coded ， EC ）数据
+--
+如果网格包含擦除编码的数据，请使用 `sSTART-EC-volume-repair` 命令和 ` -nodes` 选项来标识节点。然后添加 ` -volumes` 或 ` -volume-range` 选项，如以下示例所示。
+
+* 单个卷 * ：此命令会将经过擦除编码的数据还原到名为 SG-DC-SN3 的存储节点上的卷 `0007` ：
+
+`repair-data start-EC-volume-repair -nodes sg-DC-SN3 -volumes 0007`
+
+* 卷范围 * ：此命令会将经过擦除编码的数据还原到名为 SG-DC-SN3 的存储节点上介于 `0004` 到 `0006` 范围内的所有卷：
+
+`repair-data start-EC-volume-repair -nodes sg-DC-SN3 -volume-range 0004-0006`
+
+* 不在序列中的多个卷 * ：此命令会将经过纠删编码的数据还原到名为 SG-DC-SN3 的存储节点上的卷 `000a` ， `000c` 和 `000E` ：
+
+`repair-data start-EC-volume-repair -nodes sg-DC-SN3 -volumes 000a ， 000c ， 000E`
+
+`repair-data` 操作将返回唯一的 `repair ID` ，用于标识此 `repair_data` 操作。使用此 `repair ID` 跟踪 `repair_data` 操作的进度和结果。恢复过程完成后，不会返回任何其他反馈。
+
+
+NOTE: 在某些存储节点脱机时，可以开始修复经过擦除编码的数据。修复将在所有节点均可用后完成。
+
+--
+====

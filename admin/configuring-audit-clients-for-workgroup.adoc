@@ -1,0 +1,167 @@
+---
+permalink: admin/configuring-audit-clients-for-workgroup.html 
+sidebar: sidebar 
+keywords: audit client for workgroup 
+summary: 对 StorageGRID 部署中要从中检索审核消息的每个管理节点执行此操作步骤 。 
+---
+= 为工作组配置审核客户端
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+对 StorageGRID 部署中要从中检索审核消息的每个管理节点执行此操作步骤 。
+
+.您需要什么？ #8217 ；将需要什么
+* 您已拥有 `passwords.txt` 文件以及 root/admin 帐户密码（可从上述软件包中获取）。
+* 您已有 `Configuration.txt` 文件（可在上述软件包中找到）。
+
+
+已弃用通过 CIFS/Samba 进行审核导出，并将在未来的 StorageGRID 版本中删除。
+
+.步骤
+. 登录到主管理节点：
++
+.. 输入以下命令： `ssh admin@ primary_Admin_Node_IP_`
+.. 输入 `passwords.txt` 文件中列出的密码。
+.. 输入以下命令切换到 root ： `su -`
+.. 输入 `passwords.txt` 文件中列出的密码。
++
+以 root 用户身份登录时，提示符将从 ` $` 更改为 ` #` 。
+
+
+
+. 确认所有服务的状态均为 running 或 Verified ： `storagegRid-status`
++
+如果所有服务均未运行或未验证，请先解决问题，然后再继续。
+
+. 返回命令行，按 * 。 Ctrl+* 。 c* 。
+. 启动 CIFS 配置实用程序： `config_cifs.rb`
++
+[listing]
+----
+
+---------------------------------------------------------------------
+| Shares                 | Authentication         | Config          |
+---------------------------------------------------------------------
+| add-audit-share        | set-authentication     | validate-config |
+| enable-disable-share   | set-netbios-name       | help            |
+| add-user-to-share      | join-domain            | exit            |
+| remove-user-from-share | add-password-server    |                 |
+| modify-group           | remove-password-server |                 |
+|                        | add-wins-server        |                 |
+|                        | remove-wins-server     |                 |
+---------------------------------------------------------------------
+----
+. 为 Windows 工作组设置身份验证：
++
+如果已设置身份验证，则会显示一条建议消息。如果已设置身份验证，请转至下一步。
+
++
+.. 输入： `set-authentication`
+.. 当系统提示您安装 Windows 工作组或 Active Directory 时，输入： `workgroup`
+.. 出现提示时，输入工作组名称： ` _workgroup_name_`
+.. 出现提示时，创建有意义的 NetBIOS 名称： ` netbios_name_`
++
+或
+
++
+按 * 输入 * 以使用管理节点的主机名作为 NetBIOS 名称。
+
++
+此脚本将重新启动 Samba 服务器并应用更改。此操作需要不到一分钟的时间。设置身份验证后，添加审核客户端。
+
+.. 出现提示时，按 * 输入 * 。
++
+此时将显示 CIFS 配置实用程序。
+
+
+
+. 添加审核客户端：
++
+.. 输入： `add-audit-share`
++
+
+NOTE: 共享将自动添加为只读。
+
+.. 出现提示时，添加用户或组： ` _user_`
+.. 出现提示时，输入审核用户名： ` _audit_user_name_`
+.. 出现提示时，输入审核用户的密码： ` _password_`
+.. 出现提示时，重新输入相同的密码以进行确认： ` _password_`
+.. 出现提示时，按 * 输入 * 。
++
+此时将显示 CIFS 配置实用程序。
+
+
+
++
+
+NOTE: 无需输入目录。已预定义审核目录名称。
+
+. 如果允许多个用户或组访问审核共享，请添加其他用户：
++
+.. 输入： `add-user-on-share`
++
+此时将显示已启用共享的编号列表。
+
+.. 出现提示时，输入审核导出共享的编号： ` _share_number_`
+.. 出现提示时，添加用户或组： `user`
++
+或 `group`
+
+.. 出现提示时，输入审核用户或组的名称： ` _audit_user 或 audit_group_`
+.. 出现提示时，按 * 输入 * 。
++
+此时将显示 CIFS 配置实用程序。
+
+.. 对有权访问审核共享的每个其他用户或组重复这些子步骤。
+
+
+. （可选）验证您的配置： `validate-config`
++
+此时将检查并显示这些服务。您可以安全地忽略以下消息：
+
++
+[listing]
+----
+Can't find include file /etc/samba/includes/cifs-interfaces.inc
+Can't find include file /etc/samba/includes/cifs-filesystem.inc
+Can't find include file /etc/samba/includes/cifs-custom-config.inc
+Can't find include file /etc/samba/includes/cifs-shares.inc
+rlimit_max: increasing rlimit_max (1024) to minimum Windows limit (16384)
+----
++
+.. 出现提示时，按 * 输入 * 。
++
+此时将显示审核客户端配置。
+
+.. 出现提示时，按 * 输入 * 。
++
+此时将显示 CIFS 配置实用程序。
+
+
+
+. 关闭 CIFS 配置实用程序： `exit`
+. 启动 Samba 服务： `sservice smbd start`
+. 如果 StorageGRID 部署是单个站点，请转至下一步。
++
+或
+
++
+或者，如果 StorageGRID 部署包括其他站点的管理节点，则根据需要启用这些审核共享：
+
++
+.. 远程登录到站点的管理节点：
++
+... 输入以下命令： `ssh admin@ grid_node_ip_`
+... 输入 `passwords.txt` 文件中列出的密码。
+... 输入以下命令切换到 root ： `su -`
+... 输入 `passwords.txt` 文件中列出的密码。
+
+
+.. 重复上述步骤为每个附加管理节点配置审核共享。
+.. 关闭远程安全 Shell 登录到远程管理节点： `exit`
+
+
+. 注销命令 Shell ： `exit`
+

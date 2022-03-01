@@ -1,0 +1,72 @@
+---
+permalink: ilm/enabling-s3-object-lock-globally.html 
+sidebar: sidebar 
+keywords: enable s3 object lock, object lock 
+summary: 如果 S3 租户帐户在保存对象数据时需要遵守法规要求，则必须为整个 StorageGRID 系统启用 S3 对象锁定。启用全局 S3 对象锁定设置后，任何 S3 租户用户都可以使用 S3 对象锁定创建和管理存储分段和对象。 
+---
+= 全局启用 S3 对象锁定
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果 S3 租户帐户在保存对象数据时需要遵守法规要求，则必须为整个 StorageGRID 系统启用 S3 对象锁定。启用全局 S3 对象锁定设置后，任何 S3 租户用户都可以使用 S3 对象锁定创建和管理存储分段和对象。
+
+.您需要什么？ #8217 ；将需要什么
+* 您具有 root 访问权限。
+* 您将使用登录到网格管理器 xref:../admin/web-browser-requirements.adoc[支持的 Web 浏览器]。
+* 您已查看 S3 对象锁定工作流，必须了解注意事项。
+* 活动 ILM 策略中的默认规则合规。
++
+** xref:creating-default-ilm-rule.adoc[创建默认 ILM 规则]
+** xref:creating-ilm-policy.adoc[创建 ILM 策略]
+
+
+
+
+网格管理员必须启用全局 S3 对象锁定设置，以允许租户用户创建启用了 S3 对象锁定的新分段。启用此设置后，便无法将其禁用。
+
+
+NOTE: 如果您使用先前版本的 StorageGRID 启用了全局合规性设置，则 StorageGRID 11.6 中会启用 S3 对象锁定设置。您可以继续使用 StorageGRID 管理现有合规存储分段的设置；但是，您无法创建新的合规存储分段。请参见 https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/StorageGRID/How_to_manage_legacy_Compliant_buckets_in_StorageGRID_11.5["NetApp 知识库：如何在 StorageGRID 11.5 中管理原有的合规存储分段"^]。
+
+.步骤
+. 选择 * 配置 * > * 系统 * > * S3 对象锁定 * 。
++
+此时将显示 "S3 Object Lock Settings" 页面。
+
++
+image::../media/s3_object_lock_global_setting.png[S3 对象锁定全局设置]
+
++
+如果您已使用先前版本的 StorageGRID 启用了全局合规性设置，则此页面将包含以下注意事项：
+
++
+image::../media/s3_object_lock_global_setting_compliant_note.png[S3 对象锁定全局设置合规注]
+
+. 选择 * 启用 S3 对象锁定 * 。
+. 选择 * 应用 * 。
++
+此时将显示一个确认对话框，提醒您在启用 S3 对象锁定后无法禁用它。
+
++
+image::../media/s3_object_lock_global_setting_confirm.png[S3 对象锁定全局设置确认]
+
+. 如果确实要为整个系统永久启用 S3 对象锁定，请选择 * 确定 * 。
++
+选择 * 确定 * 时：
+
++
+** 如果活动 ILM 策略中的默认规则合规，则现在将为整个网格启用 S3 对象锁定，并且无法禁用。
+** 如果默认规则不符合要求，则会显示一个错误，指示您必须创建并激活一个新的 ILM 策略，其中包含一个合规规则作为其默认规则。选择 * 确定 * ，然后创建新的建议策略，对其进行模拟并激活。
++
+image::../media/s3_object_lock_global_setting_error.gif[S3 对象锁定全局设置错误]
+
+
+
+
+
+启用全局 S3 对象锁定设置后，您可能需要执行此操作 xref:../ilm/creating-default-ilm-rule.adoc[创建默认规则] 合规和 xref:creating-ilm-policy-after-s3-object-lock-is-enabled.adoc[创建 ILM 策略] 合规。启用此设置后， ILM 策略可以选择同时包含合规的默认规则和不合规的默认规则。例如，您可能希望使用一个不合规规则，该规则不会筛选未启用 S3 对象锁定的分段中的对象。
+
+.相关信息
+* xref:managing-objects-with-s3-object-lock.adoc#comparing-s3-object-lock-to-legacy-compliance[比较 S3 对象锁定与原有合规性]
+

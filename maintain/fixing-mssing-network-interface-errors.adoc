@@ -1,0 +1,25 @@
+---
+permalink: maintain/fixing-mssing-network-interface-errors.html 
+sidebar: sidebar 
+keywords: storagegrid, network interface, network interface error 
+summary: 如果主机网络配置不正确或名称拼写错误，则在 StorageGRID 检查 /etc/storagegRid/nodes/<node-name\>.conf 文件中指定的映射时会发生错误。 
+---
+= 修复缺少的网络接口错误
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果主机网络配置不正确或名称拼写错误，则在 StorageGRID 检查 ` /etc/storaggrid/nodes/_node-name_.conf` 文件中指定的映射时会发生错误。
+
+您可能会看到与此模式匹配的错误或警告：
+
+`正在检查节点 _node-name_ 的配置文件 ` /etc/storaggrid/nodes/_node-name_.conf` 。` `错误： _node-name_ ： grid_network_target = _host-interface-name_` ` _node-name_ ： interface '_host-interface-name_' does not exist`
+
+可能会报告网格网络，管理网络或客户端网络的错误。此错误表示 ` /etc/storaggrid/nodes/_node-name_.conf` 文件会将指示的 StorageGRID 网络映射到名为 ` 主机接口名称 _` 的主机接口，但当前主机上没有具有此名称的接口。
+
+如果收到此错误，请确认您已完成中的步骤 xref:deploying-new-linux-hosts.adoc[部署新的 Linux 主机]。对所有主机接口使用与原始主机相同的名称。
+
+如果您无法为主机接口命名以匹配节点配置文件，则可以编辑节点配置文件，并更改 grid_network_target ， admin_network_target 或 client_network_target 的值以匹配现有主机接口。
+
+确保主机接口提供对相应物理网络端口或 VLAN 的访问，并且该接口不直接引用绑定或网桥设备。您必须在主机上的绑定设备上配置 VLAN （或其他虚拟接口），或者使用网桥和虚拟以太网（ veth ）对。

@@ -1,0 +1,56 @@
+---
+permalink: upgrade/linux-installing-rpm-or-deb-package-on-all-hosts.html 
+sidebar: sidebar 
+keywords: upgrade, linux, rpm, deb, 
+summary: 如果在 Linux 主机上部署了任何 StorageGRID 节点，则在开始升级之前，必须在每个主机上安装一个额外的 RPM 或 Deb 软件包。 
+---
+= Linux ：在所有主机上安装 RPM 或 Deb 软件包
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果在 Linux 主机上部署了任何 StorageGRID 节点，则在开始升级之前，必须在每个主机上安装一个额外的 RPM 或 Deb 软件包。
+
+您必须已从 StorageGRID 的 "NetApp 下载 " 页面下载以下 ` .tgz` 或 ` .zip` 文件之一。
+
+
+NOTE: 如果您在服务笔记本电脑上运行 Windows ，请使用 ` .zip` 文件。
+
+[cols="1a,2a"]
+|===
+| Linux 平台 | 其他文件（选择一个） 
+
+
+ a| 
+Red Hat Enterprise Linux 或 CentOS
+ a| 
+* `storageGRID-Webscale -_version_-RPM-_uniqueID_.zip`
+* `storageGRID-Webscale -_version_-RPM-_uniqueID_.tgz`
+
+
+
+
+ a| 
+Ubuntu 或 Debian
+ a| 
+* `storageGRID-Webscale -_version_-Deb-_uniqueID_.zip`
+* `storageGRID-Webscale -_version_-Deb-_uniqueID_.tgz`
+
+
+|===
+.步骤
+. 从安装文件中提取 RPM 或 Deb 软件包。
+. 在所有 Linux 主机上安装 RPM 或 Deb 软件包。
++
+请参见适用于您的 Linux 平台的安装说明中有关安装 StorageGRID 主机服务的步骤。
+
++
+** xref:../rhel/index.adoc[安装 Red Hat Enterprise Linux 或 CentOS]
+** xref:../ubuntu/index.adoc[安装 Ubuntu 或 Debian]
+
+
++
+新软件包将作为附加软件包进行安装。请勿删除现有软件包。
+
+

@@ -1,0 +1,107 @@
+---
+permalink: admin/configuring-audit-client-for-nfs.html 
+sidebar: sidebar 
+keywords: audit client for NFS 
+summary: 审核共享会自动启用为只读共享。 
+---
+= 为 NFS 配置审核客户端
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+审核共享会自动启用为只读共享。
+
+.您需要什么？ #8217 ；将需要什么
+* 您已拥有 `passwords.txt` 文件以及 root/admin 密码（可在上述软件包中找到）。
+* 您已有 `Configuration.txt` 文件（可在上述软件包中找到）。
+* 审核客户端正在使用 NFS 版本 3 （ NFSv3 ）。
+
+
+对 StorageGRID 部署中要从中检索审核消息的每个管理节点执行此操作步骤 。
+
+.步骤
+. 登录到主管理节点：
++
+.. 输入以下命令： `ssh admin@ primary_Admin_Node_IP_`
+.. 输入 `passwords.txt` 文件中列出的密码。
+.. 输入以下命令切换到 root ： `su -`
+.. 输入 `passwords.txt` 文件中列出的密码。
++
+以 root 用户身份登录时，提示符将从 ` $` 更改为 ` #` 。
+
+
+
+. 确认所有服务的状态均为正在运行或已验证。输入： `storagegRid-status`
++
+如果任何服务未列为 "Running or Verifified （正在运行或已验证） " ，请先解决问题，然后再继续。
+
+. 返回到命令行。按 * 。 Ctrl+* 。
+. 启动 NFS 配置实用程序。输入： `config_nfs.rb`
++
+[listing]
+----
+
+-----------------------------------------------------------------
+| Shares               | Clients              | Config          |
+-----------------------------------------------------------------
+| add-audit-share      | add-ip-to-share      | validate-config |
+| enable-disable-share | remove-ip-from-share | refresh-config  |
+|                      |                      | help            |
+|                      |                      | exit            |
+-----------------------------------------------------------------
+----
+. 添加审核客户端： `add-audit-share`
++
+.. 出现提示时，输入审核共享的审核客户端 IP 地址或 IP 地址范围： `client_ip_address`
+.. 出现提示时，按 * 输入 * 。
+
+
+. 如果允许多个审核客户端访问审核共享，请添加其他用户的 IP 地址： `add-ip-o-share`
++
+.. 输入审核共享的编号： ` _audit_share_number_`
+.. 出现提示时，输入审核共享的审核客户端 IP 地址或 IP 地址范围： ` client_ip_address_`
+.. 出现提示时，按 * 输入 * 。
++
+此时将显示 NFS 配置实用程序。
+
+.. 对有权访问审核共享的其他每个审核客户端重复这些子步骤。
+
+
+. （可选）验证您的配置。
++
+.. 输入以下内容： `validate-config`
++
+此时将检查并显示这些服务。
+
+.. 出现提示时，按 * 输入 * 。
++
+此时将显示 NFS 配置实用程序。
+
+.. 关闭 NFS 配置实用程序： `exit`
+
+
+. 确定是否必须在其他站点启用审核共享。
++
+** 如果 StorageGRID 部署是单个站点，请转至下一步。
+** 如果 StorageGRID 部署包括其他站点的管理节点，请根据需要启用这些审核共享：
++
+... 远程登录到站点的管理节点：
++
+.... 输入以下命令： `ssh admin@ grid_node_ip_`
+.... 输入 `passwords.txt` 文件中列出的密码。
+.... 输入以下命令切换到 root ： `su -`
+.... 输入 `passwords.txt` 文件中列出的密码。
+
+
+... 重复上述步骤为每个附加管理节点配置审核共享。
+... 关闭远程安全 Shell 登录到远程管理节点。输入： `exit`
+
+
+
+
+. 注销命令 Shell ： `exit`
++
+NFS 审核客户端将根据其 IP 地址获得对审核共享的访问权限。通过将新 NFS 审核客户端的 IP 地址添加到共享中来向该客户端授予对审核共享的访问权限，或者通过删除现有审核客户端的 IP 地址来删除该客户端。
+
+

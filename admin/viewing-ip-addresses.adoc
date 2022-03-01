@@ -1,0 +1,28 @@
+---
+permalink: admin/viewing-ip-addresses.html 
+sidebar: sidebar 
+keywords: ip address, view ip addresses for nodes, what is node ip address 
+summary: 您可以查看 StorageGRID 系统中每个网格节点的 IP 地址。然后，您可以使用此 IP 地址通过命令行登录到网格节点并执行各种维护过程。 
+---
+= 查看 IP 地址
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以查看 StorageGRID 系统中每个网格节点的 IP 地址。然后，您可以使用此 IP 地址通过命令行登录到网格节点并执行各种维护过程。
+
+您将使用登录到网格管理器 xref:../admin/web-browser-requirements.adoc[支持的 Web 浏览器]。
+
+有关更改 IP 地址的信息，请参见 xref:../maintain/index.adoc[恢复和维护]。
+
+.步骤
+. 选择 * 节点 * > * 网格节点 _* > * 概述 * 。
+. 选择 IP 地址标题右侧的 * 显示更多 * 。
++
+此网格节点的 IP 地址会在表中列出。
+
++
+image::../media/nodes_page_overview_tab_extended.png[节点页面 IP 地址]
+
+

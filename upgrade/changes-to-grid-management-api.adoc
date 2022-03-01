@@ -1,0 +1,87 @@
+---
+permalink: upgrade/changes-to-grid-management-api.html 
+sidebar: sidebar 
+keywords: grid management api, api, api version, swagger, rest api 
+summary: StorageGRID 11.6 使用网格管理 API 版本 3 。版本 3 已弃用版本 2 ；但版本 1 和版本 2 仍受支持。 
+---
+= 对网格管理 API 进行的更改
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+StorageGRID 11.6 使用网格管理 API 版本 3 。版本 3 已弃用版本 2 ；但版本 1 和版本 2 仍受支持。
+
+
+IMPORTANT: 您可以继续在 StorageGRID 11.6 中使用管理 API 版本 1 和版本 2 ；但是，在未来版本的 StorageGRID 中，对这些版本的 API 的支持将被删除。升级到 StorageGRID 11.6 后，可以使用 `put /grid/config/management` API 停用已弃用的 v1 和 v2 API 。
+
+要了解更多信息，请访问 xref:../admin/using-grid-management-api.adoc[使用网格管理 API]。
+
+
+
+== 可以访问 Swagger 文档以执行专用 API 操作
+
+现在，您可以从网格管理器访问专用 API 的 Swagger 文档。要查看可用操作，请选择 Grid Manager 帮助图标并选择 * API Documentation" 。然后，从 StorageGRID 管理 API 页面中选择 * 转至专用 API 文档 * 。
+
+StorageGRID 专用 API 如有更改，恕不另行通知。StorageGRID 私有端点也会忽略此请求的 API 版本。
+
+
+
+== 已弃用基于警报的 API
+
+11.6 版本会弃用所有基于警报的 API 。以下 API 受此更改影响：
+
+* `GET /grid/alarms` ：完全弃用
+* `GET /grid/health/topology` ：完全弃用
+* `get /grid/health` ：响应的 `alarm-counts` 部分已弃用
+
+
+
+
+== 可以导入 S3 访问密钥
+
+现在，您可以使用网格管理 API 为租户用户导入 S3 访问密钥。例如，您可以将访问密钥从另一个 S3 提供程序迁移到 StorageGRID ，或者使用此功能在网格之间保持用户凭据相同。
+
+
+IMPORTANT: 启用此功能后，任何具有更改租户 root 密码权限的 Grid Manager 用户都可以完全访问租户数据。使用此功能后，请立即禁用此功能以保护租户数据。
+
+
+
+== 新帐户操作
+
+添加了三个新的 `网格 / 帐户` API 操作：
+
+* `post /m ü s/account-enable-s3-key-import grid​` ：此请求将启用导入 S3 凭据功能。要启用此功能，您必须具有 root 访问权限。
+* `post / grid​ / accounts​ / ｛ id ｝​ / users​ / ｛ user_id ｝​ /s3-access-keys` ：此请求将为租户帐户中的给定用户导入 S3 凭据。您必须具有 root 访问权限或更改租户 root 密码权限，并且必须知道用户 ID 和租户帐户 ID 。
+* `post /m ü s/account-disable-s3-key-import grid​` ：此请求会禁用导入 S3 凭据功能。要禁用此功能，您必须具有 root 访问权限。
+
+
+
+
+== 已弃用修补方法
+
+此修补程序方法现已弃用，并将在未来版本中删除。根据需要，执行 PUT 操作以替换资源，而不是使用修补程序操作来修改资源。
+
+
+
+== 添加到网格 / 日志 / 收集端点
+
+已向 `grid/logs/Collect` 端点添加四个布尔值：
+
+* `applicationLogs` ：技术支持最常用于故障排除的应用程序特定日志。收集的日志是可用应用程序日志的一部分。默认值为 `true` 。
+* `auditLogs` ：包含在正常系统操作期间生成的审核消息的日志。默认值为 `true` 。
+* `network跟踪` ：用于网络调试的日志。默认值为 `false` 。
+* `prometheusDatabase` ：所有节点上的服务的时间序列指标。默认值为 `false` 。
+
+
+
+
+== 新的 ​node 详细信息 / grid​ /service-IDs 端点
+
+新的 `​ 或 grid​ /service-IDs` 端点可将节点 UUID 映射到关联节点名称，服务 ID 和服务类型。
+
+
+
+== 可以检索网格节点控制台密码
+
+现在，您可以使用 `POST ​ /node-console 密码 grid​` 来检索网格节点及其关联控制台密码的列表。

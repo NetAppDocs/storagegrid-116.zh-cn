@@ -1,0 +1,23 @@
+---
+permalink: sg5600/storagegrid-appliance-features.html 
+sidebar: sidebar 
+keywords: storagegrid, sg5600, storage node, storage appliance, features 
+summary: StorageGRID SG5600 设备提供了一个集成的存储解决方案 ，用于创建新的 StorageGRID 系统或扩展现有系统的容量。 
+---
+= StorageGRID 设备功能
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+StorageGRID SG5600 设备提供了一个集成的存储解决方案 ，用于创建新的 StorageGRID 系统或扩展现有系统的容量。
+
+StorageGRID 设备可提供以下功能：
+
+* 将 StorageGRID 存储节点计算和存储要素组合为一个高效的集成解决方案
+* 简化存储节点的安装和配置，自动执行所需的大部分流程
+* 提供具有两个机箱选项的高密度存储解决方案 ：一个是 2U ，一个是 4U
+* 直接使用连接到存储节点的 10-GbE IP 接口，而无需使用 FC 或 iSCSI 等中间存储接口
+* 可以在使用 StorageGRID 设备和虚拟（基于软件）存储节点的混合网格环境中使用
+* 包括预配置的存储，并预加载了 StorageGRID 设备安装程序（在 E5600SG 控制器上），用于现场部署和集成软件
+

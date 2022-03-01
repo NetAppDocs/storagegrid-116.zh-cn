@@ -1,0 +1,66 @@
+---
+permalink: admin/editing-tenant-account.html 
+sidebar: sidebar 
+keywords: edit tenant account, change tenant name, allow platform services, tenant quota 
+summary: 您可以编辑租户帐户以更改显示名称，更改身份源设置，允许或禁止平台服务或输入存储配额。 
+---
+= 编辑租户帐户
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以编辑租户帐户以更改显示名称，更改身份源设置，允许或禁止平台服务或输入存储配额。
+
+.您需要什么？ #8217 ；将需要什么
+* 您将使用登录到网格管理器 xref:../admin/web-browser-requirements.adoc[支持的 Web 浏览器]。
+* 您具有特定的访问权限。
+
+
+.步骤
+. 选择 * 租户 * 。
++
+image::../media/tenant_accounts_page.png[租户帐户页面]
+
+. 选择要编辑的租户帐户。
++
+使用搜索框按名称或租户 ID 搜索租户帐户。
+
+. 从操作下拉列表中，选择 * 编辑 * 。
++
+此示例适用于不使用单点登录（ SSO ）的网格。此租户帐户未配置其自己的身份源。
+
++
+image::../media/edit_tenant_account.png[编辑租户帐户]
+
+. 根据需要更改这些字段的值：
++
+** * 名称 *
+** * 问题描述 *
+** * 客户端类型 *
+** * 存储配额 *
+
+
+. 选择 * 继续 * 。
+. 选择或取消选择租户帐户的权限。
++
+** 如果对已在使用 * 平台服务 * 的租户禁用此服务，则其为 S3 分段配置的服务将停止工作。不会向租户发送任何错误消息。例如，如果租户已为 S3 存储分段配置了 CloudMirror 复制，则他们仍可将对象存储在存储分段中，但这些对象的副本将不再创建在已配置为端点的外部 S3 存储分段中。
+** 更改 * 使用自己的身份源 * 复选框的设置，以确定租户帐户是使用自己的身份源还是使用为网格管理器配置的身份源。
++
+如果 * 使用自己的身份源 * 复选框为：
+
++
+*** 已禁用并选中租户已启用其自己的身份源。租户必须先禁用其身份源，然后才能使用为网格管理器配置的身份源。
+*** 已禁用并取消选中，已为 StorageGRID 系统启用 SSO 。租户必须使用为网格管理器配置的身份源。
+
+
+** 根据需要启用或禁用 * S3 Select* 。请参见 xref:manage-s3-select-for-tenant-accounts.adoc[管理租户帐户的 S3 Select]。
+
+
+. 选择 * 保存 * 。
+
+
+.相关信息
+* xref:manage-platform-services-for-tenants.adoc[管理 S3 租户帐户的平台服务]
+* xref:../tenant/index.adoc[使用租户帐户]
+

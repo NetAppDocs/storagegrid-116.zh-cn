@@ -1,0 +1,45 @@
+---
+permalink: sg5600/adding-appliance-to-santricity-storage-manager.html 
+sidebar: sidebar 
+keywords: storagegrid, sg5600, storage node, storage appliance, Adding, add, appliance, SANtricity Storage Manager, SANtricity 
+summary: 将设备中的 E2700 控制器连接到 SANtricity 存储管理器，然后将设备添加为存储阵列。 
+---
+= 将设备添加到 SANtricity 存储管理器
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+将设备中的 E2700 控制器连接到 SANtricity 存储管理器，然后将设备添加为存储阵列。
+
+您正在使用 xref:../admin/web-browser-requirements.adoc[支持的 Web 浏览器]。
+
+有关详细说明，请参见 SANtricity 存储管理器文档。
+
+.步骤
+. 打开 Web 浏览器，然后输入 IP 地址作为 SANtricity 存储管理器的 URL ： + ` * https://_E2700_Controller_IP_*`
++
+此时将显示 SANtricity 存储管理器的登录页面。
+
+. 在 * 选择添加方法 * 页面上，选择 * 手动 * ，然后单击 * 确定 * 。
+. 选择 * 编辑 * > * 添加存储阵列 * 。
++
+此时将显示 "Add New Storage Array - Manual" 页面。
+
++
+image::../media/sanricity_add_new_storage_array_out_of_band.gif[SANtricity 添加新存储阵列页面]
+
+. 在 * 带外管理 * 框中，输入以下值之一：
++
+** * 使用 DHCP ： * DHCP 服务器分配给 E2700 控制器上管理端口 1 的 IP 地址
+** * 未使用 DHCP ： * `192.168.128.101`
++
+
+NOTE: 只有一个设备的控制器连接到 SANtricity 存储管理器，因此您只需要输入一个 IP 地址。
+
+
+
+. 单击 * 添加 * 。
+
+
+http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=61197["NetApp 文档： SANtricity 存储管理器"^]

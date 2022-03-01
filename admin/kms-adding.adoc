@@ -1,0 +1,174 @@
+---
+permalink: admin/kms-adding.html 
+sidebar: sidebar 
+keywords: add kms, key management server 
+summary: 您可以使用 StorageGRID 密钥管理服务器向导添加每个 KMS 或 KMS 集群。 
+---
+= 添加密钥管理服务器（ KMS ）
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 StorageGRID 密钥管理服务器向导添加每个 KMS 或 KMS 集群。
+
+.您需要什么？ #8217 ；将需要什么
+* 您已查看 xref:kms-considerations-and-requirements.adoc[使用密钥管理服务器的注意事项和要求]。
+* 您已拥有 xref:kms-configuring-storagegrid-as-client.adoc[已在 KMS 中将 StorageGRID 配置为客户端]和您具有每个 KMS 或 KMS 集群所需的信息。
+* 您将使用登录到网格管理器 xref:../admin/web-browser-requirements.adoc[支持的 Web 浏览器]。
+* 您具有 root 访问权限。
+
+
+如果可能，请先配置任何站点特定的密钥管理服务器，然后再配置一个默认 KMS ，以便对所有不受另一个 KMS 管理的站点进行适用场景 。如果首先创建默认 KMS ，则网格中所有节点加密的设备都将使用默认 KMS 进行加密。如果要稍后创建站点专用的 KMS ，则必须先将当前版本的加密密钥从默认 KMS 复制到新的 KMS 。请参见 xref:kms-considerations-for-changing-for-site.adoc[更改站点的 KMS 的注意事项] 了解详细信息。
+
+
+
+== 第 1 步：输入 KMS 详细信息
+
+在添加密钥管理服务器向导的步骤 1 （输入 KMS 详细信息）中，您可以提供有关 KMS 或 KMS 集群的详细信息。
+
+.步骤
+. 选择 * 配置 * > * 安全性 * > * 密钥管理服务器 * 。
++
+此时将显示密钥管理服务器页面，并选中配置详细信息选项卡。
+
++
+image::../media/kms_configuration_details_no_kms.png[KMS 配置详细信息无 KMS]
+
+. 选择 * 创建 * 。
++
+此时将显示添加密钥管理服务器向导的第 1 步（输入 KMS 详细信息）。
+
++
+image::../media/kms_step_1_enter_kms_details.png[KMS 步骤 1 输入 KMS 详细信息]
+
+. 为 KMS 和您在该 KMS 中配置的 StorageGRID 客户端输入以下信息。
++
+[cols="1a,1a"]
+|===
+| 字段 | Description 
+
+
+ a| 
+Kms 显示名称
+ a| 
+一个描述性名称，可帮助您标识此 KMS 。必须介于 1 到 64 个字符之间。
+
+
+
+ a| 
+密钥名称
+ a| 
+StorageGRID 客户端在 KMS 中的确切密钥别名。必须介于 1 到 255 个字符之间。
+
+
+
+ a| 
+管理的密钥
+ a| 
+将与此 KMS 关联的 StorageGRID 站点。如果可能，您应先配置任何站点特定的密钥管理服务器，然后再配置一个默认 KMS ，以便对不受另一个 KMS 管理的所有站点进行适用场景 。
+
+** 如果此 KMS 将管理特定站点上设备节点的加密密钥，请选择一个站点。
+** 选择 * 不受其他 KMS 管理的站点（默认 KMS ） * 可配置一个默认 KMS ，该 KMS 将应用于没有专用 KMS 的任何站点以及您在后续扩展中添加的任何站点。
++
+* 注意： * 如果您选择的站点先前已被默认 KMS 加密，但未向新 KMS 提供当前版本的原始加密密钥，则保存 KMS 配置时将发生验证错误。
+
+
+
+
+
+ a| 
+Port
+ a| 
+KMS 服务器用于密钥管理互操作性协议（ Key Management Interoperability Protocol ， KMIP ）通信的端口。默认为 5696 ，即 KMIP 标准端口。
+
+
+
+ a| 
+主机名
+ a| 
+KMS 的完全限定域名或 IP 地址。
+
+* 注： * 服务器证书的 SAN 字段必须包含您在此处输入的 FQDN 或 IP 地址。否则， StorageGRID 将无法连接到 KMS 或 KMS 集群中的所有服务器。
+
+|===
+. 如果您使用的是 KMS 集群，请选择加号 image:../media/icon_plus_sign_black_on_white_old.png["图标加号"] 为集群中的每个服务器添加主机名。
+. 选择 * 下一步 * 。
+
+
+
+
+== 第 2 步：上传服务器证书
+
+在添加密钥管理服务器向导的第 2 步（上传服务器证书）中，您可以上传 KMS 的服务器证书（或证书包）。通过服务器证书，外部 KMS 可以向 StorageGRID 进行身份验证。
+
+.步骤
+. 从 * 步骤 2 （上传服务器证书） * 中，浏览到保存的服务器证书或证书包的位置。
++
+image::../media/kms_step_2_upload_server_certificate.png[Kms 步骤 2 上传服务器证书]
+
+. 上传证书文件。
++
+此时将显示服务器证书元数据。
+
++
+image::../media/kms_step_2_server_certificate_metadata.png[kms 步骤 2 服务器证书元数据]
+
++
+
+NOTE: 如果您上传的是证书捆绑包，则每个证书的元数据将显示在其自己的选项卡上。
+
+. 选择 * 下一步 * 。
+
+
+
+
+== 第 3 步：上传客户端证书
+
+在添加密钥管理服务器向导的第 3 步（上传客户端证书）中，您可以上传客户端证书和客户端证书专用密钥。客户端证书允许 StorageGRID 向 KMS 进行身份验证。
+
+.步骤
+. 从 * 步骤 3 （上传客户端证书） * 中，浏览到客户端证书的位置。
++
+image::../media/kms_step_3_upload_client_certificate.png[Kms 步骤 3 上传客户端证书]
+
+. 上传客户端证书文件。
++
+此时将显示客户端证书元数据。
+
+. 浏览到客户端证书的专用密钥位置。
+. 上传私钥文件。
++
+此时将显示客户端证书和客户端证书专用密钥的元数据。
+
++
+image::../media/kms_step_3_client_certificate_metadata.png[Kms 步骤 3 客户端证书元数据]
+
+. 选择 * 保存 * 。
++
+测试密钥管理服务器与设备节点之间的连接。如果所有连接均有效，并且在 KMS 上找到正确的密钥，则新的密钥管理服务器将添加到密钥管理服务器页面上的表中。
+
++
+
+NOTE: 添加 KMS 后，密钥管理服务器页面上的证书状态将立即显示为未知。StorageGRID 可能需要长达 30 分钟才能获取每个证书的实际状态。您必须刷新 Web 浏览器才能查看当前状态。
+
+. 如果选择 * 保存 * 时显示错误消息，请查看消息详细信息，然后选择 * 确定 * 。
++
+例如，如果连接测试失败，您可能会收到 422 ： Unprocessable Entity 错误。
+
+. 如果需要保存当前配置而不测试外部连接，请选择 * 强制保存 * 。
++
+image::../media/kms_force_save.png[Kms 强制保存]
+
++
+
+IMPORTANT: 选择 * 强制保存 * 可保存 KMS 配置，但不会测试每个设备与该 KMS 的外部连接。如果具有此配置的问题描述 ，则可能无法重新启动受影响站点上已启用节点加密的设备节点。在问题解决之前，您可能无法访问数据。
+
+. 查看确认警告，如果确实要强制保存配置，请选择 * 确定 * 。
++
+image::../media/kms_force_save_warning.png[Kms 强制保存警告]
+
++
+已保存 KMS 配置，但未测试与 KMS 的连接。
+
+

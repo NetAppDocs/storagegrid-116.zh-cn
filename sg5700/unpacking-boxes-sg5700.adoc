@@ -1,0 +1,68 @@
+---
+permalink: sg5700/unpacking-boxes-sg5700.html 
+sidebar: sidebar 
+keywords: storagegrid, sg5700, storage node, storage appliance, install, installation, unpack, unbox, prepare, inventory, components, contents 
+summary: 安装 StorageGRID 设备之前，请打开所有包装箱的包装，并将包装箱上的物品与包装清单上的物品进行比较。 
+---
+= 打开包装箱（ SG5700 ）
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+安装 StorageGRID 设备之前，请打开所有包装箱的包装，并将包装箱上的物品与包装清单上的物品进行比较。
+
+* * 已安装 12 个驱动器的 SG5712 设备 *
++
+image::../media/de212c_table_size.gif[SG5712 2U 设备]
+
+* * 未安装驱动器的 SG5760 设备 *
++
+image::../media/de460c_table_size.gif[SG5760 4U 设备]
+
+* * 设备前挡板 *
++
+image::../media/sg5700_front_bezels.gif[SG5712 和 SG5760 的挡板]
+
+* * 导轨套件及说明 *
++
+image::../media/rail_kit.gif[导轨套件]
+
+* * SG5760 ： 60 个驱动器 *
++
+image::../media/sg5760_drive.gif[驱动器]
+
+* * SG5760 ：句柄 *
++
+image::../media/handles.gif[SG5760 句柄]
+
+* * SG5760 ：用于方孔机架安装的背面支架和固定框架螺母 *
++
+image::../media/back_brackets_table_size.gif[SG5760 的背面支架和锁紧螺母]
+
+
+
+
+
+== 缆线和连接器
+
+StorageGRID 设备的发货包括以下缆线和连接器：
+
+* * 您所在国家或地区有两条电源线 *
++
+image::../media/power_cords.gif[电源线]
+
++
+您的机柜可能使用专用电源线，而不是设备随附的电源线。
+
+* * 光缆和 SFP 收发器 *
++
+image::../media/fc_cable_and_sfp.gif[光缆和 SFP]
+
++
+用于 FC 互连端口的两根光缆
+
++
+八个 SFP+ 收发器，与四个 16Gb/s FC 互连端口和四个 10-GbE 网络端口兼容
+
+

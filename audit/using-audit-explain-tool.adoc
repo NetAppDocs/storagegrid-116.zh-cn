@@ -1,0 +1,100 @@
+---
+permalink: audit/using-audit-explain-tool.html 
+sidebar: sidebar 
+keywords: storagegrid, audit, tool, audit-explain, audit explain, translate audit messages, translate messages, translate audit message, translate message 
+summary: 您可以使用审核解释工具将审核日志中的审核消息转换为易于阅读的格式。 
+---
+= 使用审核解释工具
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 `audit-explain` 工具将审核日志中的审核消息转换为易于阅读的格式。
+
+.您需要什么？ #8217 ；将需要什么
+* 您必须具有特定的访问权限。
+* 您必须具有 `passwords.txt` 文件。
+* 您必须知道主管理节点的 IP 地址。
+
+
+主管理节点上提供的 `audit-explain` 工具可在审核日志中简化审核消息的摘要。
+
+
+IMPORTANT: `audit-explain` 工具主要供技术支持在故障排除操作期间使用。处理 `审核 - 解释` 查询可能会占用大量 CPU 资源，这可能会影响 StorageGRID 操作。
+
+此示例显示了 `audit-explain` 工具的典型输出。当帐户 ID 为 92484777680322627870 的 S3 租户使用 S3 PUT 请求创建名为 "Bucket1" 的存储分段并向该存储分段添加三个对象时，会生成这四条 SPUT 审核消息。
+
+[listing]
+----
+SPUT S3 PUT bucket bucket1 account:92484777680322627870 usec:124673
+SPUT S3 PUT object bucket1/part1.txt tenant:92484777680322627870  cbid:9DCB157394F99FE5 usec:101485
+SPUT S3 PUT object bucket1/part2.txt tenant:92484777680322627870  cbid:3CFBB07AB3D32CA9 usec:102804
+SPUT S3 PUT object bucket1/part3.txt tenant:92484777680322627870  cbid:5373D73831ECC743 usec:93874
+----
+`audit-explain` 工具可以处理简单或压缩的审核日志。例如：
+
+[listing]
+----
+audit-explain audit.log
+----
+[listing]
+----
+audit-explain 2019-08-12.txt.gz
+----
+`audit-explain` 工具还可以同时处理多个文件。例如：
+
+[listing]
+----
+audit-explain audit.log 2019-08-12.txt.gz 2019-08-13.txt.gz
+----
+[listing]
+----
+audit-explain /var/local/audit/export/*
+----
+最后， `audit-explain` 工具可以接受来自管道的输入，这样，您可以使用 `grep` 命令或其他方法筛选和预处理输入。例如：
+
+[listing]
+----
+grep SPUT audit.log | audit-explain
+----
+[listing]
+----
+grep bucket-name audit.log | audit-explain
+----
+由于审核日志可能非常大且解析速度较慢，因此您可以通过筛选要查看的部分并在这些部分（而不是整个文件）上运行 `audit-explain` 来节省时间。
+
+
+NOTE: `audit-explain` 工具不接受将压缩文件作为管道输入。要处理压缩的文件，请将其文件名作为命令行参数提供，或者使用 `zcat` 工具先解压缩这些文件。例如：
+
+[listing]
+----
+zcat audit.log.gz | audit-explain
+----
+使用 `help （ -h ）` 选项查看可用选项。例如：
+
+[listing]
+----
+ $ audit-explain -h
+----
+.步骤
+. 登录到主管理节点：
++
+.. 输入以下命令： `ssh admin@ primary_Admin_Node_IP_`
+.. 输入 `passwords.txt` 文件中列出的密码。
+
+
+. 输入以下命令，其中 ` /var/local/audit/export/audit.log` 表示要分析的一个或多个文件的名称和位置：
++
+` $ audit-explain /var/local/audit/export/audit.log`
+
++
+`audit-explain` 工具可为指定文件中的所有消息输出可供用户读取的解释。
+
++
+
+NOTE: 为了缩短行长度并提高可读性，默认情况下不会显示时间戳。如果要查看时间戳，请使用 timestamp （` -t` ）选项。
+
+
+
+xref:sput-s3-put.adoc[SPUT ： S3 PUT]

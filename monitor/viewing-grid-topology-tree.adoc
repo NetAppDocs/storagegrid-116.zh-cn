@@ -1,0 +1,19 @@
+---
+permalink: monitor/viewing-grid-topology-tree.html 
+sidebar: sidebar 
+keywords: how to view the Grid Topology tree 
+summary: 通过网格拓扑树，您可以访问有关 StorageGRID 系统元素的详细信息，包括站点，网格节点，服务和组件。在大多数情况下，只有在文档中说明或与技术支持合作时，您才需要访问网格拓扑树。 
+---
+= 查看网格拓扑树
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+通过网格拓扑树，您可以访问有关 StorageGRID 系统元素的详细信息，包括站点，网格节点，服务和组件。在大多数情况下，只有在文档中说明或与技术支持合作时，您才需要访问网格拓扑树。
+
+要访问网格拓扑树，请选择 * 支持 * > * 工具 * > * 网格拓扑 * 。
+
+image::../media/grid_topology_tree.gif[网格拓扑树的各个部分]
+
+要展开或折叠网格拓扑树，请单击 image:../media/nms_tree_expand.gif["加号图标"] 或 image:../media/nms_tree_collapse.gif["减号图标"] 在站点，节点或服务级别。要展开或折叠整个站点或每个节点中的所有项，请按住 * 键 * 并单击。

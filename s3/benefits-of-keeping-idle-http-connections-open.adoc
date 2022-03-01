@@ -1,0 +1,25 @@
+---
+permalink: s3/benefits-of-keeping-idle-http-connections-open.html 
+sidebar: sidebar 
+keywords: idle connection benefits 
+summary: 即使客户端应用程序处于闲置状态，您也应保持 HTTP 连接处于打开状态，以允许客户端应用程序通过打开的连接执行后续事务。根据系统测量结果和集成经验，您应将闲置的 HTTP 连接保持打开状态最多 10 分钟。StorageGRID 可能会自动关闭保持打开和闲置超过 10 分钟的 HTTP 连接。 
+---
+= 保持空闲 HTTP 连接处于打开状态的优势
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+即使客户端应用程序处于闲置状态，您也应保持 HTTP 连接处于打开状态，以允许客户端应用程序通过打开的连接执行后续事务。根据系统测量结果和集成经验，您应将闲置的 HTTP 连接保持打开状态最多 10 分钟。StorageGRID 可能会自动关闭保持打开和闲置超过 10 分钟的 HTTP 连接。
+
+开放式和空闲 HTTP 连接具有以下优势：
+
+* 从 StorageGRID 系统确定必须执行 HTTP 事务的时间缩短到 StorageGRID 系统可以执行此事务的时间
++
+缩短延迟是主要优势，尤其是在建立 TCP/IP 和 TLS 连接所需的时间方面。
+
+* 通过在先前执行的传输中填充 TCP/IP 慢速启动算法来提高数据传输速率
+* 瞬时通知多种中断客户端应用程序与 StorageGRID 系统之间连接的故障情况
+
+
+‐保持闲置连接打开多长时间是对与现有连接相关的慢速启动优势与将连接分配给内部系统资源的理想平衡。

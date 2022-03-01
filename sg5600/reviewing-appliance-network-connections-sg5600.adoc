@@ -1,0 +1,127 @@
+---
+permalink: sg5600/reviewing-appliance-network-connections-sg5600.html 
+sidebar: sidebar 
+keywords: storagegrid, sg5600, storage node, storage appliance, network connections, network connection, network, connection, grid, admin, client, management, SANtricity System Manager, SANtricity 
+summary: 在安装 StorageGRID 设备之前，您应了解可以将哪些网络连接到设备，以及如何使用每个控制器上的端口。 
+---
+= 查看设备网络连接（ SG5600 ）
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在安装 StorageGRID 设备之前，您应了解可以将哪些网络连接到设备，以及如何使用每个控制器上的端口。
+
+
+
+== StorageGRID 设备网络
+
+将 StorageGRID 设备部署为存储节点时，您可以将其连接到以下网络：
+
+* * 适用于 StorageGRID 的网格网络 * ：网格网络用于所有内部 StorageGRID 流量。它可以在网格中的所有节点之间以及所有站点和子网之间建立连接。网格网络为必填项。
+* * 适用于 StorageGRID 的管理网络 * ：管理网络是一个用于系统管理和维护的封闭网络。管理网络通常是一个专用网络，不需要在站点之间进行路由。管理网络是可选的。
+* * 适用于 StorageGRID 的客户端网络 * ：客户端网络是一种开放网络，用于访问客户端应用程序，包括 S3 和 Swift 。客户端网络可提供对网格的客户端协议访问，从而可以隔离和保护网格网络。客户端网络是可选的。
+* * 适用于 SANtricity 存储管理器的管理网络 * （可选）： E2700 控制器连接到安装了 SANtricity 存储管理器的管理网络，可用于监控和管理设备中的硬件组件。此管理网络可以与 StorageGRID 的管理网络相同，也可以是一个独立的管理网络。
++
+如果未连接可选的 SANtricity 存储管理器网络，则可能无法使用某些 SANtricity 功能。
+
+
+
+
+NOTE: 有关 StorageGRID 网络的详细信息，请参见 _Grid Primer_ 。
+
+
+
+== StorageGRID 设备连接
+
+安装 StorageGRID 设备时，必须将两个控制器彼此连接并连接到所需的网络。此图显示了 SG5660 中的两个控制器，其中 E2700 控制器位于顶部， E5600SG 控制器位于底部。在 SG5612 中， E2700 控制器位于 E5600SG 控制器的左侧。
+
+image::../media/cabling_diagram.gif[显示连接的 SG5660 背面图]
+
+|===
+| 项目 | Port | 端口类型 | 功能 
+
+
+ a| 
+1.
+ a| 
+E2700 控制器上的管理端口 1
+ a| 
+1 Gb （ RJ-45 ）以太网
+ a| 
+将 E2700 控制器连接到安装 SANtricity 存储管理器的网络。
+
+
+
+ a| 
+2.
+ a| 
+E2700 控制器上的管理端口 2
+ a| 
+1 Gb （ RJ-45 ）以太网
+ a| 
+在安装期间将 E2700 控制器连接到服务笔记本电脑。
+
+
+
+ a| 
+3.
+ a| 
+每个控制器上有两个 SAS 互连端口，分别标记为通道 1 和通道 2
+ a| 
+E2700 控制器： mini-SAS-HD
+
+E5600SG 控制器：迷你 SAS
+ a| 
+将两个控制器彼此连接。
+
+
+
+ a| 
+4.
+ a| 
+E5600SG 控制器上的管理端口 1
+ a| 
+1 Gb （ RJ-45 ）以太网
+ a| 
+将 E5600SG 控制器连接到 StorageGRID 管理网络。
+
+
+
+ a| 
+5.
+ a| 
+E5600SG 控制器上的管理端口 2
+ a| 
+1 Gb （ RJ-45 ）以太网
+ a| 
+* 如果要与管理网络建立冗余连接，则可以与管理端口 1 绑定。
+* 可以保持未连接状态，并可用于临时本地访问（ IP 169.254.0.1 ）。
+* 如果 DHCP 分配的 IP 地址不可用，则可以在安装期间使用此 IP 地址将 E5600SG 控制器连接到服务笔记本电脑。
+
+
+
+
+ a| 
+6.
+ a| 
+E5600SG 控制器上的四个网络端口
+ a| 
+10-GbE （光纤）
+ a| 
+连接到网格网络和 StorageGRID 客户端网络。请参见 "`E5600SG 控制器的 10-GbE 端口连接 " 。`
+
+|===
+xref:port-bond-modes-for-e5600sg-controller-ports.adoc[E5600SG 控制器端口的端口绑定模式]
+
+xref:gathering-installation-information-sg5600.adoc[收集安装信息（ SG5600 ）]
+
+xref:cabling-appliance-sg5600.adoc[缆线设备（ SG5600 ）]
+
+xref:../network/index.adoc[网络连接准则]
+
+xref:../vmware/index.adoc[安装 VMware]
+
+xref:../rhel/index.adoc[安装 Red Hat Enterprise Linux 或 CentOS]
+
+xref:../ubuntu/index.adoc[安装 Ubuntu 或 Debian]

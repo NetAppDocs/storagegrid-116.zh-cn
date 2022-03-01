@@ -1,0 +1,126 @@
+---
+permalink: sg100-1000/deploying-services-appliance-as-gateway-or-non-primary-admin-node.html 
+sidebar: sidebar 
+keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gateway Node, admin node, deploy node, deploying node, node, deploy, deploying, non-primary admin node, non-primary 
+summary: 在将服务设备部署为网关节点或非主管理节点时，您可以使用该设备上随附的 StorageGRID 设备安装程序。 
+---
+= 将服务设备部署为网关或非主管理节点
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在将服务设备部署为网关节点或非主管理节点时，您可以使用该设备上随附的 StorageGRID 设备安装程序。
+
+.您需要什么？ #8217 ；将需要什么
+* 此设备已安装在机架或机柜中，并已连接到您的网络并已启动。
+* 已使用 StorageGRID 设备安装程序为此设备配置网络链路， IP 地址和端口重新映射（如果需要）。
++
+
+IMPORTANT: 如果已重新映射任何端口，则不能使用相同的端口配置负载平衡器端点。您可以使用重新映射的端口创建端点，但这些端点将重新映射到原始 CLB 端口和服务，而不是负载平衡器服务。按照中的步骤进行操作 xref:../maintain/removing-port-remaps.adoc[删除端口重新映射]。
+
++
+
+NOTE: CLB 服务已弃用。
+
+* 已部署 StorageGRID 系统的主管理节点。
+* StorageGRID 设备安装程序的 IP 配置页面上列出的所有网格网络子网均已在主管理节点上的网格网络子网列表中定义。
+* 您的服务笔记本电脑具有 xref:../admin/web-browser-requirements.adoc[支持的 Web 浏览器]。
+* 您知道分配给设备的 IP 地址。您可以对任何已连接的 StorageGRID 网络使用此 IP 地址。
+
+
+要在服务设备节点上安装 StorageGRID ，请执行以下操作：
+
+* 您可以指定或确认主管理节点的 IP 地址以及设备节点的名称。
+* 您开始安装，并等待软件安装完成。
++
+在完成设备网关节点安装任务后，安装将暂停。要恢复安装，请登录到网格管理器，批准所有网格节点并完成 StorageGRID 安装过程。安装非主管理节点不需要您的批准。
+
+
+
+
+IMPORTANT: 不要在同一站点中部署 SG100 和 SG1000 服务设备。可能会导致性能不可预测。
+
+
+NOTE: 如果您需要一次部署多个设备节点，则可以使用 `configure-sGa.py` Appliance Installation 脚本自动执行安装过程。您也可以使用设备安装程序上传包含配置信息的 JSON 文件。请参见 xref:automating-appliance-installation-and-configuration.adoc[自动化设备安装和配置（ SG100 和 SG1000 ）] 有关自动安装的详细信息，请参见。
+
+.步骤
+. 打开浏览器，然后输入设备的 IP 地址。
++
+` * https://_Controller_IP_:8443*`
+
++
+此时将显示 StorageGRID 设备安装程序主页页面。
+
+. 在主管理节点连接部分中，确定是否需要指定主管理节点的 IP 地址。
++
+如果先前已在此数据中心中安装了其他节点，则 StorageGRID 设备安装程序可以自动发现此 IP 地址，前提是主管理节点或至少一个配置了 admin_IP 的其他网格节点位于同一子网上。
+
+. 如果未显示此 IP 地址或您需要更改此 IP 地址，请指定地址：
++
+|===
+| 选项 | Description 
+
+
+ a| 
+手动输入 IP
+ a| 
+.. 取消选中 * 启用管理节点发现 * 复选框。
+.. 手动输入 IP 地址。
+.. 单击 * 保存 * 。
+.. 等待连接状态，使新 IP 地址准备就绪。
+
+
+
+
+ a| 
+自动发现所有已连接的主管理节点
+ a| 
+.. 选中 * 启用管理节点发现 * 复选框。
+.. 等待显示发现的 IP 地址列表。
+.. 为要部署此设备存储节点的网格选择主管理节点。
+.. 单击 * 保存 * 。
+.. 等待连接状态，使新 IP 地址准备就绪。
+
+
+|===
+. 在 * 节点名称 * 字段中，输入要用于此设备节点的名称，然后单击 * 保存 * 。
++
+节点名称将分配给 StorageGRID 系统中的此设备节点。它显示在网格管理器的节点页面（概述选项卡）上。如果需要，您可以在批准节点时更改名称。
+
+. 或者，要安装其他版本的 StorageGRID 软件，请执行以下步骤：
++
+.. 从 StorageGRID 的 "NetApp 下载 " 页面下载安装归档。
++
+https://mysupport.netapp.com/site/products/all/details/storagegrid/downloads-tab["NetApp 下载： StorageGRID"^]
+
+.. 提取归档。
+.. 从 StorageGRID 设备安装程序中，选择 * 高级 * > * 上传 StorageGRID 软件 * 。
+.. 单击 * 删除 * 以删除当前软件包。
++
+image::../media/appliance_installer_rmv_current_software.png[设备安装程序 - 删除当前软件]
+
+.. 单击 * 浏览 * 下载并提取的软件包，然后单击 * 浏览 * 获取校验和文件。
++
+image::../media/appliance_installer_upload_sg_software.png[设备安装程序—上传 SG 软件]
+
+.. 选择 * 主页 * 以返回到主页页面。
+
+
+. 在 Installation 部分中，确认当前状态为 "Ready to start installation of ` node_node name_` into grid with primary Admin Node ` _admin_IP_` " ，并且 * 开始安装 * 按钮已启用。
++
+如果未启用 * 开始安装 * 按钮，则可能需要更改网络配置或端口设置。有关说明，请参见设备的安装和维护说明。
+
+. 在 StorageGRID 设备安装程序主页中，单击 * 开始安装 * 。
++
+image::../media/appliance_installer_services_appliance_non_pan.png[设备安装程序主页—安装非主管理节点]
+
++
+当前状态将更改为 "`Installation is in progress ，` " ，此时将显示监控器安装页面。
+
++
+
+NOTE: 如果需要手动访问监控器安装页面，请单击菜单栏中的 * 监控器安装 * 。
+
+. 如果网格包含多个设备节点，请对每个设备重复上述步骤。
+

@@ -1,0 +1,38 @@
+---
+permalink: maintain/starting-storagegrid-host-service.html 
+sidebar: sidebar 
+keywords: storagegrid, recover, host service, start host service 
+summary: 要启动 StorageGRID 节点并确保它们在主机重新启动后重新启动，您必须启用并启动 StorageGRID 主机服务。 
+---
+= 启动 StorageGRID 主机服务
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+要启动 StorageGRID 节点并确保它们在主机重新启动后重新启动，您必须启用并启动 StorageGRID 主机服务。
+
+. 在每个主机上运行以下命令：
++
+[listing]
+----
+sudo systemctl enable storagegrid
+sudo systemctl start storagegrid
+----
+. 运行以下命令以确保部署正在进行：
++
+`sUdo StorageGRID node status _node-name_`
+
++
+对于返回未运行或已停止状态的任何节点，请运行以下命令：
+
++
+`sUdo StorageGRID node start _node-name_`
+
+. 如果您先前已启用并启动 StorageGRID 主机服务（或者不确定此服务是否已启用和启动），请同时运行以下命令：
++
+[listing]
+----
+sudo systemctl reload-or-restart storagegrid
+----
+

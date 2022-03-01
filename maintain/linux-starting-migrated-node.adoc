@@ -1,0 +1,37 @@
+---
+permalink: maintain/linux-starting-migrated-node.html 
+sidebar: sidebar 
+keywords: storagegrid, recover, linux, start node 
+summary: 验证迁移的节点后，您可以在目标 Linux 主机上运行命令来启动该节点。 
+---
+= Linux ：启动已迁移的节点
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+验证迁移的节点后，您可以在目标 Linux 主机上运行命令来启动该节点。
+
+.步骤
+. 在新主机上启动节点。
++
+[listing]
+----
+sudo storagegrid node start DC1-S3
+Starting node DC1-S3
+----
+. 在网格管理器中，验证节点的状态是否为绿色，并且未针对该节点发出任何警报。
++
+
+IMPORTANT: 验证节点的状态是否为绿色可确保已迁移的节点已完全重新启动并重新加入网格。如果状态不是绿色，请勿迁移任何其他节点，以免多个节点停止服务。
+
++
+如果无法访问网格管理器，请等待 10 分钟，然后运行以下命令：
+
++
+`sUdo StorageGRID 节点状态 * ； node-name_*`
+
++
+确认迁移的节点的运行状态为 `running` 。
+
+

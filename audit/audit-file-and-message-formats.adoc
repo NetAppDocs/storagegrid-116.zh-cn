@@ -1,0 +1,13 @@
+---
+permalink: audit/audit-file-and-message-formats.html 
+sidebar: sidebar 
+keywords: storagegrid, audit, log file formats, log formats, message formats, log file format, log format ,message format 
+summary: 您可以使用审核日志收集有关系统的信息并对问题进行故障排除。您应了解审核日志文件的格式以及审核消息使用的常规格式。 
+---
+= 审核日志文件和消息格式
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用审核日志收集有关系统的信息并对问题进行故障排除。您应了解审核日志文件的格式以及审核消息使用的常规格式。

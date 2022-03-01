@@ -1,0 +1,27 @@
+---
+permalink: maintain/installing-services-appliance-platform-change-only.html 
+sidebar: sidebar 
+keywords: storagegrid, recover services appliance, recover appliance, recovering appliance, recovering services appliance, install services appliance, installing services appliance, services appliance 
+summary: 如果要恢复 VMware 或 Linux 主机上托管的故障网格节点，并且要使用 SG100 或 SG1000 服务设备作为替代节点，则必须先使用与故障节点相同的节点名称安装新设备硬件。 
+---
+= 安装服务设备（仅限平台更改）
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果要恢复 VMware 或 Linux 主机上托管的故障网格节点，并且要使用 SG100 或 SG1000 服务设备作为替代节点，则必须先使用与故障节点相同的节点名称安装新设备硬件。
+
+您必须具有有关故障节点的以下信息：
+
+* * 节点名称 * ：必须使用与故障节点相同的节点名称安装服务设备。
+* * IP 地址 * ：您可以为服务设备分配与故障节点相同的 IP 地址，这是首选选项，也可以在每个网络上选择新的未使用的 IP 地址。
+
+
+只有在恢复 VMware 或 Linux 上托管的故障节点并将其替换为服务设备上托管的节点时，才执行此操作步骤 。
+
+. 按照说明安装新的 SG100 或 SG1000 服务设备。
+. 当系统提示您输入节点名称时，请使用故障节点的节点名称。
+
+
+xref:../sg100-1000/index.adoc[SG100 和 SG1000 服务设备]

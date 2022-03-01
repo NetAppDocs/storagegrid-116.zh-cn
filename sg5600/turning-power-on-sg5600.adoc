@@ -1,0 +1,45 @@
+---
+permalink: sg5600/turning-power-on-sg5600.html 
+sidebar: sidebar 
+keywords: storagegrid, sg5600, storage node, storage appliance, power on, power, start 
+summary: 打开机箱电源可为两个控制器供电。 
+---
+= 打开电源（ SG5600 ）
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+打开机箱电源可为两个控制器供电。
+
+.步骤
+. 打开机箱背面的两个电源开关。
++
+通电时，控制器上的 LED 会间歇性亮起和熄灭。
+
++
+启动过程可能需要长达十分钟才能完成。在初始启动序列期间，控制器会多次重新启动，从而导致风扇上升和下降，并且 LED 会闪烁。
+
+. 检查每个控制器上的电源 LED 和主机链路活动 LED ，确认电源已打开。
+. 等待所有驱动器显示持久绿色 LED ，指示它们已联机。
+. 检查机箱正面和背面是否有绿色 LED 。
++
+如果您看到任何琥珀色 LED ，请记下其位置。
+
+. 查看 E5600SG 控制器的七段显示屏。
++
+此显示内容将显示 * 。 HO* ，后跟两位数的重复序列。
+
++
+[listing]
+----
+HO -- IP address for Admin Network -- IP address for Grid Network HO
+----
++
+在此序列中，第一组数字是为控制器的管理端口 1 分配的 DHCP IP 地址。此地址用于将控制器连接到 StorageGRID 的管理网络。第二组数字是 DHCP 分配的 IP 地址，用于将设备连接到用于 StorageGRID 的网格网络。
+
++
+
+NOTE: 如果无法使用 DHCP 分配 IP 地址，则会显示 0.0.0.0 。
+
+

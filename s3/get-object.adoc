@@ -1,0 +1,133 @@
+---
+permalink: s3/get-object.html 
+sidebar: sidebar 
+keywords: get object 
+summary: 您可以使用 S3 GET 对象请求从 S3 存储分段检索对象。 
+---
+= 获取对象
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 S3 GET 对象请求从 S3 存储分段检索对象。
+
+
+
+== 获取对象和多部分对象
+
+您可以使用 `partnumber` request 参数检索多部分或分段对象的特定部分。`x-AMZ-MP-parts-count` 响应元素指示对象包含的部件数。
+
+对于已分段 / 多部分对象和未分段 / 非多部分对象，您可以将 `partnumber` 设置为 1 ；但是，仅对于已分段或多部分对象，才会返回 `x-AMZ-MP-parts-count` response 元素。
+
+
+
+== 使用客户提供的加密密钥（ SSI-C ）进行服务器端加密的请求标头
+
+如果使用您提供的唯一密钥对对象进行加密，请使用所有三个标头。
+
+* `x-AMZ-server-side encrypt-customer-all` ：指定 `AES256` 。
+* `x-AMZ-server-side encrypt-customer-key` ：指定对象的加密密钥。
+* `x-AMZ-server-side encrypt-customer-key-md5` ：指定对象加密密钥的 MD5 摘要。
+
+
+
+IMPORTANT: 您提供的加密密钥永远不会存储。如果丢失加密密钥，则会丢失相应的对象。在使用客户提供的密钥保护对象数据之前，请查看 "`使用服务器端加密 " 中的注意事项。`
+
+
+
+== 用户元数据中的 UTF-8 字符
+
+StorageGRID 不会解析或解释用户定义的元数据中的转义 UTF-8 字符。如果密钥名称或值包含不可打印的字符，则对用户定义的元数据中包含转义 UTF-8 字符的对象的获取请求不会返回 `x-AMZ-MISSING-meta` 标头。
+
+
+
+== 请求标头不受支持
+
+不支持以下请求标头，并返回 `XNotImplemented"` ：
+
+* `x-AMZ-website-redirect-location`
+
+
+
+
+== 版本控制
+
+如果未指定 `veversionId` Subresource ，则此操作将提取受版本控制的存储分段中的对象的最新版本。如果对象的当前版本为删除标记，则返回 "`not found` " 状态，并将 `x-AMZ-delete-marker` response 标头设置为 `true` 。
+
+
+
+== Cloud Storage Pool 对象的 GET 对象行为
+
+如果某个对象已存储在云存储池中（请参见有关通过信息生命周期管理来管理对象的说明），则 GET 对象请求的行为取决于对象的状态。有关详细信息，请参见 "`head Object` " 。
+
+
+NOTE: 如果某个对象存储在云存储池中，并且该对象的一个或多个副本也位于网格中，则获取对象请求将尝试从网格中检索数据，然后再从云存储池中检索数据。
+
+|===
+| 对象的状态 | GET 对象的行为 
+
+
+ a| 
+对象已载入 StorageGRID 但尚未通过 ILM 进行评估，或者存储在传统存储池中的对象或使用纠删编码
+ a| 
+`200 正常`
+
+检索对象的副本。
+
+
+
+ a| 
+云存储池中的对象，但尚未过渡到无法检索的状态
+ a| 
+`200 正常`
+
+检索对象的副本。
+
+
+
+ a| 
+对象已过渡到无法检索的状态
+ a| 
+`403 For禁用` ， `InvalidObjectState`
+
+使用 POST 对象还原请求将对象还原到可检索的状态。
+
+
+
+ a| 
+正在从不可检索状态还原的对象
+ a| 
+`403 For禁用` ， `InvalidObjectState`
+
+等待 POST 对象还原请求完成。
+
+
+
+ a| 
+对象已完全还原到云存储池
+ a| 
+`200 正常`
+
+检索对象的副本。
+
+|===
+
+
+== 云存储池中的多部分或分段对象
+
+如果您上传的是多部分对象或 StorageGRID 将一个大型对象拆分为多个区块，则 StorageGRID 会通过取样该对象的部分或区块来确定该对象是否在云存储池中可用。在某些情况下，如果对象的某些部分已过渡到不可检索的状态或对象的某些部分尚未还原，则获取对象请求可能会错误地返回 `200 正常` 。
+
+在这些情况下：
+
+* GET 对象请求可能会返回一些数据，但会在传输过程中停止。
+* 后续的 GET 对象请求可能会返回 `403 For禁用` 。
+
+
+xref:using-server-side-encryption.adoc[使用服务器端加密]
+
+xref:../ilm/index.adoc[使用 ILM 管理对象]
+
+xref:post-object-restore.adoc[后对象还原]
+
+xref:s3-operations-tracked-in-audit-logs.adoc[在审核日志中跟踪 S3 操作]

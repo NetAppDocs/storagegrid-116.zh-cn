@@ -1,0 +1,47 @@
+---
+permalink: monitor/managing-alerts.html 
+sidebar: sidebar 
+keywords: alert rules, managing alerts, alerts, alert notifications. edit alert rules 
+summary: 通过警报，您可以监控 StorageGRID 系统中的各种事件和状况。您可以通过创建自定义警报，编辑或禁用默认警报，设置警报电子邮件通知以及使警报通知静音来管理警报。 
+---
+= 管理警报：概述
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+通过警报，您可以监控 StorageGRID 系统中的各种事件和状况。您可以通过创建自定义警报，编辑或禁用默认警报，设置警报电子邮件通知以及使警报通知静音来管理警报。
+
+
+
+== 关于 StorageGRID 警报
+
+警报系统提供了一个易于使用的界面，用于检测，评估和解决 StorageGRID 运行期间可能发生的问题。
+
+* 警报系统侧重于系统中可操作的问题。对于需要您立即关注的事件，系统会触发警报，而对于可以安全忽略的事件，则不会触发警报。
+* " 当前警报 " 页面提供了一个便于用户查看当前问题的界面。您可以按各个警报和警报组对列表进行排序。例如，您可能希望按节点 / 站点对所有警报进行排序，以查看哪些警报正在影响特定节点。或者，您可能希望按触发时间对组中的警报进行排序，以查找特定警报的最新实例。
+* " 已解决警报 " 页面提供的信息与 " 当前警报 " 页面上的信息类似，但您可以搜索和查看已解决警报的历史记录，包括警报触发时间和解决时间。
+* 同一类型的多个警报会分组到一个电子邮件中，以减少通知数量。此外，同一类型的多个警报将在警报页面上显示为一个组。您可以展开和折叠警报组以显示或隐藏各个警报。例如，如果多个节点报告 "* 无法与节点 * 通信 " 警报大致同时出现，则只会发送一封电子邮件，并且警报会在警报页面上显示为一个组。
+* 警报使用直观的名称和说明来帮助您快速了解问题。警报通知包括有关受影响节点和站点的详细信息，警报严重性，触发警报规则的时间以及与警报相关的指标的当前值。
+* 警报电子邮件通知以及 " 当前警报 " 和 " 已解决警报 " 页面上的警报列表提供了解决警报的建议操作。这些建议操作通常包括直接链接到 StorageGRID 文档中心，以便于查找和访问更详细的故障排除过程。
+* 如果需要在一个或多个严重性级别临时禁止警报通知，您可以轻松地在指定持续时间内对整个网格，单个站点或单个节点静默特定警报规则。您还可以将所有警报规则静默，例如，在软件升级等计划内维护操作步骤 期间。
+* 您可以根据需要编辑默认警报规则。您可以完全禁用警报规则，也可以更改其触发条件和持续时间。
+* 您可以创建自定义警报规则，以确定与您的情况相关的特定条件，并提供您自己的建议操作。要定义自定义警报的条件，请使用网格管理 API 的 " 指标 " 部分提供的 Prometheus 指标创建表达式。
+
+
+
+
+== 了解更多信息。
+
+要了解更多信息，请查看以下视频：
+
+* https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=2680a74f-070c-41c2-bcd3-acc5013c9cdd["视频：警报概述"^]
++
+[link=https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=2680a74f-070c-41c2-bcd3-acc5013c9cdd]
+image::../media/video-screenshot-alert-overview.png[视频：警报概述]
+
+* https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=b35ac3f2-957b-4e79-b82b-acc5013c98d0["视频：使用指标创建自定义警报"^]
++
+image::../media/video-screenshot-alert-create-custom.png[链接 -"https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=b35ac3f2-957b-4e79-b82b-acc5013c98d0"[] Alt-Video ：使用指标创建自定义警报 "]
+
+

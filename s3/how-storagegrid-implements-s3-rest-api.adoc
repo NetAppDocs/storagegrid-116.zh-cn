@@ -1,0 +1,13 @@
+---
+permalink: s3/how-storagegrid-implements-s3-rest-api.html 
+sidebar: sidebar 
+keywords: implement s3 rest api 
+summary: 客户端应用程序可以使用 S3 REST API 调用连接到 StorageGRID 来创建，删除和修改存储分段以及存储和检索对象。 
+---
+= StorageGRID 如何实施 S3 REST API
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+客户端应用程序可以使用 S3 REST API 调用连接到 StorageGRID 来创建，删除和修改存储分段以及存储和检索对象。

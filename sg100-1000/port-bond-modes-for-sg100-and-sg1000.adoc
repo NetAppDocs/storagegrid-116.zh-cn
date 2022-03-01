@@ -1,0 +1,13 @@
+---
+permalink: sg100-1000/port-bond-modes-for-sg100-and-sg1000.html 
+sidebar: sidebar 
+keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gateway Node, admin node, port bond, port bonding, port bond mode, port-bond mode 
+summary: 在为 SG100 和 SG1000 设备配置网络链路时，您可以对连接到网格网络和可选客户端网络的端口以及连接到可选管理网络的 1-GbE 管理端口使用端口绑定。端口绑定可在 StorageGRID 网络和设备之间提供冗余路径，从而有助于保护数据。 
+---
+= SG100 和 SG1000 设备的端口绑定模式
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在为 SG100 和 SG1000 设备配置网络链路时，您可以对连接到网格网络和可选客户端网络的端口以及连接到可选管理网络的 1-GbE 管理端口使用端口绑定。端口绑定可在 StorageGRID 网络和设备之间提供冗余路径，从而有助于保护数据。

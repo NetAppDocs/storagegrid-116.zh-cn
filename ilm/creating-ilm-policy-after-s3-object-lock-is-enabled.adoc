@@ -1,0 +1,121 @@
+---
+permalink: ilm/creating-ilm-policy-after-s3-object-lock-is-enabled.html 
+sidebar: sidebar 
+keywords: how to create ILM policy, policy for S3 object lock 
+summary: 如果启用了全局 S3 对象锁定设置，则创建策略的步骤略有不同。您必须确保 ILM 策略符合已启用 S3 对象锁定的分段的要求。 
+---
+= 启用 S3 对象锁定后创建 ILM 策略
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果启用了全局 S3 对象锁定设置，则创建策略的步骤略有不同。您必须确保 ILM 策略符合已启用 S3 对象锁定的分段的要求。
+
+.您需要什么？ #8217 ；将需要什么
+* 您将使用登录到网格管理器 xref:../admin/web-browser-requirements.adoc[支持的 Web 浏览器]。
+* 您具有特定的访问权限。
+* 已为 StorageGRID 系统启用全局 S3 对象锁定设置。
++
+
+NOTE: 如果尚未启用全局 S3 对象锁定设置，请按照的常规说明进行操作 xref:creating-proposed-ilm-policy.adoc[创建建议的 ILM 策略]。
+
+* 您已创建要添加到建议策略的合规和不合规 ILM 规则。您可以根据需要保存建议的策略，创建其他规则，然后编辑建议的策略以添加新规则。请参见xref:example-7-compliant-ilm-policy-for-s3-object-lock.adoc[示例 7 ： S3 对象锁定的兼容 ILM 策略]。
+* 您已拥有 xref:creating-default-ilm-rule.adoc[已创建默认 ILM 规则] 合规策略。
+* 您也可以观看以下视频： https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=c929e94e-353a-4375-b112-acc5013c81c7["视频： StorageGRID ILM 策略"^]
++
+[link=https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=c929e94e-353a-4375-b112-acc5013c81c7]
+image::../media/video-screenshot-ilm-policies.png[视频： StorageGRID ILM 策略]
+
+
+
+.步骤
+. 选择 * ILM * > * 策略 * 。
++
+此时将显示 "ILM Policies" 页面。如果启用了全局 S3 对象锁定设置，则 "ILM Policies" 页面将指示符合哪些 ILM 规则。
+
++
+image::../media/ilm_policies_page_compliant.png[符合 ILM 策略页面要求]
+
+. 在 * 名称 * 字段中为建议的策略输入一个唯一名称。
++
+您必须输入至少 1 个字符，并且不能超过 64 个字符。
+
+. 在 * 更改原因 * 字段中输入创建新建议策略的原因。
++
+您必须输入至少 1 个字符，并且不能超过 128 个字符。
+
+. 要向策略中添加规则，请选择 * 选择规则 * 。
++
+此时将显示为策略选择规则对话框，其中列出了所有已定义的规则。
+
++
+** " 选择默认规则 " 部分列出了可作为合规策略的默认规则。它包括不使用筛选器或非当前参考时间的合规规则。
+** " 选择其他规则 " 部分列出了可为此策略选择的其他合规和不合规规则。
++
+image::../media/ilm_policy_select_rules_for_compliant_policy.png[ILM 策略为合规策略选择规则]
+
+
+
+. 选择规则名称或更多详细信息图标 image:../media/icon_nms_more_details.gif["更多详细信息图标"] 以查看该规则的设置。
+. 在 * 选择默认规则 * 部分中，为建议的策略选择一个默认规则。
++
+本节中的表仅列出了合规的规则，不使用任何筛选器。
+
++
+
+NOTE: 如果 " 选择默认规则 " 部分未列出任何规则，则必须退出 ILM 策略页面和 xref:creating-default-ilm-rule.adoc[创建默认 ILM 规则] 合规。
+
++
+
+IMPORTANT: 请勿使用 Make 2 copies 常用规则作为策略的默认规则。" 创建 2 个副本 " 规则使用一个存储池 " 所有存储节点 " ，其中包含所有站点。如果使用此规则，则一个对象的多个副本可能会放置在同一站点上。
+
+. 在 * 选择其他规则 * 部分中，选择要包含在策略中的任何其他规则。
++
+.. 如果您需要对不合规 S3 存储分段中的对象使用不同的 " 默认 `d` " 规则，则也可以选择一个不使用筛选器的不合规规则。
++
+例如，您可能希望使用云存储池或归档节点将对象存储在未启用 S3 对象锁定的存储分段中。
+
++
+
+NOTE: 您只能选择一个不使用筛选器的不合规规则。选择一个规则后，对于不带筛选器的任何其他不合规规则， * 是可选 * 列将显示 * 否 * 。
+
+.. 选择要在策略中使用的任何其他合规或不合规规则。
++
+其他规则必须至少使用一个筛选器（租户帐户，分段名称或高级筛选器，例如对象大小）。
+
+
+
+. 选择完规则后，请选择 * 应用 * 。
++
+此时将列出您选择的规则。默认规则位于末尾，上面有其他规则。如果您还选择了一个不合规的 " `default` " 规则，则该规则将添加为策略中的倒数第二规则。
+
++
+在此示例中，最后一条规则 2 copies 2 Data Center 是默认规则：它合规且不具有筛选器。第二个到最后一个规则 Cloud Storage Pool 也没有筛选器，但它不合规。
+
++
+image::../media/ilm_policies_selected_rules_compliant.png[ILM 策略选定规则合规]
+
+. 拖放非默认规则的行以确定评估这些规则的顺序。
++
+您不能移动默认规则或不合规的 " `default` " 规则。
+
++
+
+IMPORTANT: 您必须确认 ILM 规则的顺序正确。激活策略后，新对象和现有对象将按列出的顺序从顶部开始进行评估。
+
+. 根据需要选择删除图标 image:../media/icon_nms_delete_new.gif["删除图标"] 删除策略中不需要的任何规则，或者 * 选择规则 * 添加更多规则。
+. 完成后，选择 * 保存 * 。
++
+此时将更新 "ILM Policies" 页面：
+
++
+** 您保存的策略将显示为建议的策略。建议的策略没有开始日期和结束日期。
+** 此时将启用 * 模拟 * 和 * 激活 * 按钮。
++
+image::../media/ilm_policy_proposed_policy_s3_object_lock.png[ILM 策略建议的策略 S3 对象锁定]
+
+
+
+. 转至 xref:simulating-ilm-policy.adoc[模拟 ILM 策略]。
+

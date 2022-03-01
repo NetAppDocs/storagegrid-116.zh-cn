@@ -1,0 +1,33 @@
+---
+permalink: admin/updating-link-costs.html 
+sidebar: sidebar 
+keywords: link costs, latency between sites 
+summary: 您可以更新数据中心站点之间的链路成本，以反映站点之间的延迟。 
+---
+= 更新链路成本
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以更新数据中心站点之间的链路成本，以反映站点之间的延迟。
+
+.您需要什么？ #8217 ；将需要什么
+* 您将使用登录到网格管理器 xref:../admin/web-browser-requirements.adoc[支持的 Web 浏览器]。
+* 您具有网格拓扑页面配置权限。
+
+
+.步骤
+. 选择 * 配置 * > * 网络 * > * 链路成本 * 。
++
+image::../media/configuring_link_costs.png[链路成本]
+
+. 在 * 链路源 * 下选择一个站点，然后在 * 链路目标 * 下输入一个介于 0 和 100 之间的成本值。
++
+如果源与目标相同，则无法更改链路成本。
+
++
+要取消更改，请选择 image:../media/nms_revert.gif["撤消图标"]* 还原 * 。
+
+. 选择 * 应用更改 * 。
+

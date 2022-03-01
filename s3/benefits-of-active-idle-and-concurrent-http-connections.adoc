@@ -1,0 +1,20 @@
+---
+permalink: s3/benefits-of-active-idle-and-concurrent-http-connections.html 
+sidebar: sidebar 
+keywords: active http connection benefits, idle http connection benefits, concurrent http connection benefits 
+summary: 如何配置 HTTP 连接可能会影响 StorageGRID 系统的性能。根据 HTTP 连接是活动连接还是空闲连接，或者您有多个并发连接，配置会有所不同。 
+---
+= 活动，空闲和并发 HTTP 连接的优势
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如何配置 HTTP 连接可能会影响 StorageGRID 系统的性能。根据 HTTP 连接是活动连接还是空闲连接，或者您有多个并发连接，配置会有所不同。
+
+您可以确定以下类型的 HTTP 连接的性能优势：
+
+* 空闲 HTTP 连接
+* 活动 HTTP 连接
+* 并发 HTTP 连接
+

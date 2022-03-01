@@ -1,0 +1,41 @@
+---
+permalink: tenant/protecting-against-cross-site-request-forgery-csrf.html 
+sidebar: sidebar 
+keywords: how to protect against cross-site request forgery, csrf 
+summary: 您可以通过使用 CSRF 令牌增强使用 Cookie 的身份验证，帮助防止 StorageGRID 受到跨站点请求伪造 \ （ CSRF\ ）攻击。网格管理器和租户管理器会自动启用此安全功能；其他 API 客户端可以选择在登录时是否启用此功能。 
+---
+= 防止跨站点请求伪造（ CSRF ）
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以通过使用 CSRF 令牌增强使用 Cookie 的身份验证，帮助防止 StorageGRID 受到跨站点请求伪造（ CSRF ）攻击。网格管理器和租户管理器会自动启用此安全功能；其他 API 客户端可以选择在登录时是否启用此功能。
+
+如果攻击者可能触发对其他站点的请求（例如使用 HTTP 表单发布），则可以对使用已登录用户的 cookie 发出的某些请求进行发生原因 处理。
+
+StorageGRID 可通过使用 CSRF 令牌帮助防止 CSRF 攻击。启用后，特定 Cookie 的内容必须与特定标题或特定后处理正文参数的内容匹配。
+
+要启用此功能，请在身份验证期间将 `csrfToken` 参数设置为 `true` 。默认值为 `false` 。
+
+[listing]
+----
+curl -X POST --header "Content-Type: application/json" --header "Accept: application/json" -d "{
+  \"username\": \"MyUserName\",
+  \"password\": \"MyPassword\",
+  \"cookie\": true,
+  \"csrfToken\": true
+}" "https://example.com/api/v3/authorize"
+----
+如果为 true ，则使用随机值为 `GridCsrfToken` cookie 设置网格管理器登录，并使用随机值为 `AccountCsrfToken` cookie 设置为登录租户管理器。
+
+如果存在 Cookie ，则可以修改系统状态的所有请求（ POST ， PUT ， patch ， delete ）都必须包括以下项之一：
+
+* `X-CSRF-Token` 标头，标头的值设置为 CSRF 令牌 cookie 的值。
+* 对于接受表单编码正文的端点： a `csrfToken` form-enc编码 请求正文参数。
+
+
+要配置 CSRF 保护，请使用 xref:../admin/using-grid-management-api.adoc[网格管理 API] 或 xref:../tenant/understanding-tenant-management-api.adoc[租户管理 API]。
+
+
+NOTE: 设置了 CSRF 令牌 cookie 的请求还会对任何希望 JSON 请求正文作为额外保护来抵御 CSRF 攻击的请求强制使用 ` "Content-Type ： application/json"` 标头。

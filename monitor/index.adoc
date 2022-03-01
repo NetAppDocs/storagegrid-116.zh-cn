@@ -1,0 +1,23 @@
+---
+permalink: monitor/index.html 
+sidebar: sidebar 
+keywords: monitor StorageGRID 
+summary: 按照以下说明监控 StorageGRID 系统，并评估和解决可能发生的问题。 
+---
+= 监控和故障排除：概述
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+按照以下说明监控 StorageGRID 系统，并评估和解决可能发生的问题。
+
+
+
+== 关于这些说明
+
+以下说明介绍如何使用网格管理器监控 StorageGRID 系统。您将了解应定期监控哪些信息，如何管理警报和旧警报，如何使用 SNMP 进行监控以及如何获取其他 StorageGRID 数据，包括指标和诊断。
+
+这些说明还介绍如何对 StorageGRID 系统进行故障排除，并介绍所有系统警报，旧警报和日志文件。
+
+如果要在安装 StorageGRID 系统后对其进行监控和支持，请按照以下说明进行操作。

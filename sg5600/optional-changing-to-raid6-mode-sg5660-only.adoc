@@ -1,0 +1,40 @@
+---
+permalink: sg5600/optional-changing-to-raid6-mode-sg5660-only.html 
+sidebar: sidebar 
+keywords: storagegrid, sg5600, storage node, storage appliance, raid, raid mode, change, changing, modify, DDP, raid6 
+summary: 如果您的 SG5660 包含 60 个驱动器，则可以将卷配置从其默认和建议设置动态磁盘池（ DDP\ ）更改为 RAID6 。您只能在部署 StorageGRID 设备存储节点之前更改此模式。 
+---
+= 可选：更改为 RAID6 模式（仅限 SG5660 ）
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果您的 SG5660 包含 60 个驱动器，则可以将卷配置从其默认和建议设置动态磁盘池（ Dynamic Disk Pool ， DDP ）更改为 RAID6 。您只能在部署 StorageGRID 设备存储节点之前更改此模式。
+
+.您需要什么？ #8217 ；将需要什么
+* 您已安装 SG5660 。SG5612 不支持 RAID6 。如果您使用的是 SG5612 ，则必须使用 DDP 模式。
+
+
+
+IMPORTANT: 如果已配置任何卷或先前已安装 StorageGRID ，则更改 RAID 模式会删除和更换这些卷。这些卷上的所有数据都将丢失。
+
+在部署 StorageGRID 设备存储节点之前，您可以从两个卷配置选项中进行选择：
+
+* * 动态磁盘池（ DDP ） * —这是默认设置和建议设置。DDP 是一种增强型硬件数据保护方案，可提高系统性能，缩短驱动器发生故障后的重建时间以及简化管理。
+* *RAID6* —这是一种硬件保护方案，它在每个磁盘上使用奇偶校验条带，并允许在 RAID 集内发生两个磁盘故障，以免任何数据丢失。
++
+
+IMPORTANT: 建议不要在大多数 StorageGRID 环境中使用 RAID6 。虽然 RAID6 可以将存储效率提高到 88% （而 DDP 为 80% ），但 DDP 模式可以更高效地从驱动器故障中恢复。
+
+
+
+.步骤
+. 使用服务笔记本电脑打开 Web 浏览器并访问 StorageGRID 设备安装程序： + ` * https://_E5600SG_Controller_IP_:8443*`
++
+其中， ` _E5600SG_Controller_IP_` 是 E5600SG 控制器的任何 IP 地址。
+
+. 从菜单栏中，选择 * 高级 * > * RAID 模式 * 。
+. 在 * 配置 RAID 模式 * 页面上，从模式下拉列表中选择 * RAID6* 。
+. 单击 * 保存 * 。
+

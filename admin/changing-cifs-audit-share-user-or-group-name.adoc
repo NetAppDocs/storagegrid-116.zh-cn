@@ -1,0 +1,25 @@
+---
+permalink: admin/changing-cifs-audit-share-user-or-group-name.html 
+sidebar: sidebar 
+keywords: CIFS audit share, change group name, change use for CIFS 
+summary: 您可以通过添加新用户或组并删除旧用户或组来更改 CIFS 审核共享的用户或组名称。 
+---
+= 更改 CIFS 审核共享用户或组名称
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以通过添加新用户或组并删除旧用户或组来更改 CIFS 审核共享的用户或组名称。
+
+已弃用通过 CIFS/Samba 进行审核导出，并将在未来的 StorageGRID 版本中删除。
+
+.步骤
+. 将名称已更新的新用户或组添加到审核共享中。
+. 删除旧用户或组名称。
+
+
+.相关信息
+* xref:adding-user-or-group-to-cifs-audit-share.adoc[将用户或组添加到 CIFS 审核共享]
+* xref:removing-user-or-group-from-cifs-audit-share.adoc[从 CIFS 审核共享中删除用户或组]
+

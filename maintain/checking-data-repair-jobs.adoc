@@ -1,0 +1,59 @@
+---
+permalink: maintain/checking-data-repair-jobs.html 
+sidebar: sidebar 
+keywords: storagegrid, data repair 
+summary: 停用网格节点之前，您必须确认没有处于活动状态的数据修复作业。如果任何修复失败，您必须重新启动修复并让其完成，然后再执行停用操作步骤 。 
+---
+= 检查数据修复作业
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+停用网格节点之前，您必须确认没有处于活动状态的数据修复作业。如果任何修复失败，您必须重新启动修复并让其完成，然后再执行停用操作步骤 。
+
+如果您需要停用已断开连接的存储节点，则还需要在停用操作步骤 完成后完成这些步骤，以确保数据修复作业已成功完成。您必须确保已成功还原已删除节点上的任何经过擦除编码的片段。
+
+这些步骤仅适用于具有纠删编码对象的系统。
+
+. 登录到主管理节点：
++
+.. 输入以下命令： `ssh admin@ grid_node_ip_`
++
+以 root 用户身份登录时，提示符将从 ` $` 更改为 ` #` 。
+
+.. 输入 `passwords.txt` 文件中列出的密码。
+.. 输入以下命令切换到 root ： `su -`
+.. 输入 `passwords.txt` 文件中列出的密码。
+
+
+. 检查正在运行的修复： `repair-data show-EC-repair-status`
++
+** 如果您从未运行过数据修复作业，则输出为 `No job found` 。您无需重新启动任何修复作业。
+** 如果数据修复作业先前已运行或当前正在运行，则输出将列出要修复的信息。每个修复都有一个唯一的修复 ID 。继续执行下一步。
+
+
++
+[listing]
+----
+root@DC1-ADM1:~ # repair-data show-ec-repair-status
+
+Repair ID Scope Start Time End Time State Est/Affected Bytes Repaired Retry Repair
+===================================================================================
+949283 DC1-S-99-10(Volumes: 1,2) 2016-11-30T15:27:06.9 Success 17359 17359 No
+949292 DC1-S-99-10(Volumes: 1,2) 2016-11-30T15:37:06.9 Failure 17359 0     Yes
+949294 DC1-S-99-10(Volumes: 1,2) 2016-11-30T15:47:06.9 Failure 17359 0     Yes
+949299 DC1-S-99-10(Volumes: 1,2) 2016-11-30T15:57:06.9 Failure 17359 0     Yes
+----
+. `S所有修复的状态为 " 无 "` ，则无需重新启动任何修复作业。
+. 如果要进行任何修复的状态为 `failure` ，则必须重新启动此修复。
++
+.. 从输出中获取失败修复的修复 ID 。
+.. 运行 `repair-data start-EC-node-repair` 命令。
++
+使用 ` -repair-id` 选项指定修复 ID 。例如，如果要重试修复 ID 为 949292 的修复，请运行以下命令： `repair-data start-EC-node-repair -repair-id 949292`
+
+.. `S跟踪 EC 数据修复的状态，直到所有修复的状态为 " 无 "` 。
+
+
+

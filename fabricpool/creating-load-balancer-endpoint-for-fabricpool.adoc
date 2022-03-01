@@ -1,0 +1,91 @@
+---
+permalink: fabricpool/creating-load-balancer-endpoint-for-fabricpool.html 
+sidebar: sidebar 
+keywords: fabricPool, load balancer, endpoint, load balancing, create, creating, certificate 
+summary: 在配置 StorageGRID 以与 FabricPool 结合使用时，您必须配置负载平衡器端点并上传负载平衡器端点证书，此证书用于保护 ONTAP 和 StorageGRID 之间的连接。 
+---
+= 为 FabricPool 创建负载平衡器端点
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在配置 StorageGRID 以与 FabricPool 结合使用时，您必须配置负载平衡器端点并上传负载平衡器端点证书，此证书用于保护 ONTAP 和 StorageGRID 之间的连接。
+
+.您需要什么？ #8217 ；将需要什么
+* 您将使用登录到网格管理器 xref:../admin/web-browser-requirements.adoc[支持的 Web 浏览器]。
+* 您具有 root 访问权限。
+* 您具有以下文件：
++
+** Server Certificate ：自定义服务器证书文件。
+** 服务器证书专用密钥：自定义服务器证书专用密钥文件。
+** CA Bundle ：一个可选文件，其中包含来自每个中间颁发证书颁发机构（ CA ）的证书。此文件应包含 PEM 编码的每个 CA 证书文件，并按证书链顺序串联。
+
+
+
+
+有关此任务的详细信息，请参见 xref:../admin/configuring-load-balancer-endpoints.adoc[配置负载平衡器端点]。
+
+.步骤
+. 选择 * 配置 * > * 网络 * > * 负载平衡器端点 * 。
+. 选择 * 创建 * 。
++
+image::../media/load_balancer_endpoint_create_http.png[创建 LB 端点]
+
+. 输入端点详细信息。
++
+[cols="1a,2a"]
+|===
+| 字段 | Description 
+
+
+ a| 
+Name
+ a| 
+端点的描述性名称
+
+
+
+ a| 
+Port
+ a| 
+要用于负载平衡的 StorageGRID 端口。此字段默认为 10433 ，但您可以输入任何未使用的外部端口。如果输入 80 或 443 ，则仅会在网关节点上配置端点，因为这些端口是在管理节点上保留的。
+
+* 注： * 不允许使用其他网格服务使用的端口。请参见xref:../network/network-port-reference.adoc[网络端口参考]。
+
+在将 StorageGRID 附加为 FabricPool 云层时，您必须向 ONTAP 提供此相同端口号。
+
+
+
+ a| 
+客户端类型
+ a| 
+选择 * 。 s3* 。
+
+
+
+ a| 
+网络协议
+ a| 
+选择 * HTTPS * 。
+
+* 注 * ：支持使用 * HTTP * ，但不建议使用。
+
+|===
+. 选择 * 继续 * 。
+. 指定绑定模式。
++
+使用 * 全局 * 设置（建议）或将此端点的可访问性限制为以下选项之一：
+
++
+** 特定节点的特定网络接口。
+** 特定高可用性（ High Availability ， HA ）虚拟 IP 地址（ VIP ）。只有在需要更高级别的工作负载隔离时，才使用此选项。
+
+
+. 选择 * 继续 * 。
+. 选择 * 上传证书 * （建议），然后浏览到您的服务器证书，证书专用密钥和可选的 CA 捆绑包。
+. 选择 * 创建 * 。
+
+
+
+NOTE: 对端点证书所做的更改可能需要长达 15 分钟才能应用于所有节点。

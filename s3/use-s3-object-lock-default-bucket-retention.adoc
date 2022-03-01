@@ -1,0 +1,112 @@
+---
+permalink: s3/use-s3-object-lock-default-bucket-retention.html 
+sidebar: sidebar 
+keywords: s3 object lock, default bucket retention 
+summary: 如果存储分段启用了 S3 对象锁定，则可以指定应用于添加到存储分段中的每个对象的默认保留模式和默认保留期限。 
+---
+= 使用 S3 对象锁定默认存储分段保留
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果存储分段启用了 S3 对象锁定，则可以指定应用于添加到存储分段中的每个对象的默认保留模式和默认保留期限。
+
+* 在创建存储分段期间，可以为存储分段启用或禁用 S3 对象锁定。
+* 如果为存储分段启用了 S3 对象锁定，则可以为存储分段配置默认保留。
+* 默认保留配置指定：
++
+** 默认保留模式： StorageGRID 仅支持 " 合规 " 模式。
+** 默认保留期限，以天或年为单位。
+
+
+
+
+
+
+== 获取对象锁定配置
+
+通过获取对象锁定配置请求，您可以确定是否为存储分段启用了对象锁定，如果已启用，请查看是否为存储分段配置了默认保留模式和保留期限。
+
+将新对象版本载入存储分段后，如果未指定 `x-AMZ-object-lock-mode` ，则会应用默认保留模式。如果未指定 `x-AMZ-object-lock-retain-until date` ，则使用默认保留期限计算 retene-until 日期。
+
+要完成此操作，您必须具有 S3 ： GetBucketObjectLockConfiguration 权限或帐户 root 。
+
+
+
+=== 请求示例
+
+[listing, subs="specialcharacters,quotes"]
+----
+GET /bucket?object-lock HTTP/1.1
+Host: _host_
+Accept-Encoding: identity
+User-Agent: aws-cli/1.18.106 Python/3.8.2 Linux/4.4.0-18362-Microsoft botocore/1.17.29
+x-amz-date: _date_
+x-amz-content-sha256: _authorization string_
+Authorization: _authorization string_
+----
+
+
+=== 响应示例
+
+[listing]
+----
+HTTP/1.1 200 OK
+x-amz-id-2: iVmcB7OXXJRkRH1FiVq1151/T24gRfpwpuZrEG11Bb9ImOMAAe98oxSpXlknabA0LTvBYJpSIXk=
+x-amz-request-id: B34E94CACB2CEF6D
+Date: Fri, 04 Sep 2020 22:47:09 GMT
+Transfer-Encoding: chunked
+Server: AmazonS3
+
+<?xml version="1.0" encoding="UTF-8"?>
+<ObjectLockConfiguration xmlns="http://s3.amazonaws.com/doc/2006-03-01/">
+    <ObjectLockEnabled>Enabled</ObjectLockEnabled>
+    <Rule>
+        <DefaultRetention>
+            <Mode>COMPLIANCE</Mode>
+            <Years>6</Years>
+        </DefaultRetention>
+    </Rule>
+</ObjectLockConfiguration>
+----
+
+
+== PUT 对象锁定配置
+
+使用 PUT 对象锁定配置请求，您可以修改已启用对象锁定的存储分段的默认保留模式和默认保留期限。您还可以删除先前配置的默认保留设置。
+
+将新对象版本载入存储分段后，如果未指定 `x-AMZ-object-lock-mode` ，则会应用默认保留模式。如果未指定 `x-AMZ-object-lock-retain-until date` ，则使用默认保留期限计算 retene-until 日期。
+
+如果在载入对象版本后修改了默认保留期限，则对象版本的保留日期将保持不变，不会使用新的默认保留期限重新计算。
+
+要完成此操作，您必须具有 S3 ： PutBucketObjectLockConfiguration 权限或帐户 root 。
+
+必须在 PUT 请求中指定 `Content-MD5` 请求标头。
+
+
+
+=== 请求示例
+
+[listing, subs="specialcharacters,quotes"]
+----
+PUT /bucket?object-lock HTTP/1.1
+Accept-Encoding: identity
+Content-Length: 308
+Host: _host_
+Content-MD5: _request header_
+User-Agent: s3sign/1.0.0 requests/2.24.0 python/3.8.2
+X-Amz-Date: _date_
+X-Amz-Content-SHA256: _authorization string_
+Authorization: _authorization string_
+
+<ObjectLockConfiguration>
+    <ObjectLockEnabled>Enabled</ObjectLockEnabled>
+    <Rule>
+        <DefaultRetention>
+            <Mode>COMPLIANCE</Mode>
+            <Years>6</Years>
+        </DefaultRetention>
+    </Rule>
+</ObjectLockConfiguration>
+----

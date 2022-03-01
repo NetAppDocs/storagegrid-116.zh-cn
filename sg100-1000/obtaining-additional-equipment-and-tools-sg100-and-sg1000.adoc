@@ -1,0 +1,131 @@
+---
+permalink: sg100-1000/obtaining-additional-equipment-and-tools-sg100-and-sg1000.html 
+sidebar: sidebar 
+keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gateway Node, admin node, additional, equipment, tools 
+summary: 在安装 StorageGRID 设备之前，请确认您拥有所需的所有附加设备和工具。 
+---
+= 获取其他设备和工具（ SG100 和 SG1000 ）
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在安装 StorageGRID 设备之前，请确认您拥有所需的所有附加设备和工具。
+
+要安装和配置硬件，您需要使用以下附加设备：
+
+* * 螺丝刀 *
++
+image::../media/screwdrivers.gif[两个螺丝刀]
+
++
+十字线编号2 把螺丝刀
+
++
+中型平口螺丝刀
+
+* * ESD 腕带 *
++
+image::../media/appliance_wriststrap.gif[ESD 腕带]
+
+* * 光缆和收发器 *
++
+image::../media/fc_cable_and_sfp.gif[光缆和 QSF+ 收发器]
+
++
+** 缆线
++
+*** 双轴电缆 / 铜缆（ 1 到 4 ）
++
+或
+
+*** 光纤 / 光纤（ 1 到 4 ）
+
+
+** 根据链路速度，每个收发器 / 适配器 1 到 4 个（不支持混合速度）
++
+*** SG100 ：
++
+|===
+| 链路速度（ GbE ） | 所需设备 
+
+
+ a| 
+10
+ a| 
+SFP+ 收发器
+
+
+
+ a| 
+25.
+ a| 
+SFP28 收发器
+
+|===
+*** SG1000 ：
++
+|===
+| 链路速度（ GbE ） | 所需设备 
+
+
+ a| 
+10
+ a| 
+QSFP-SFP 适配器（ QSA ）和 SFP+ 收发器
+
+
+
+ a| 
+25.
+ a| 
+QSFP-SFP 适配器（ QSA ）和 SFP28 收发器
+
+
+
+ a| 
+40
+ a| 
+QSFP + 收发器
+
+
+
+ a| 
+100
+ a| 
+QSP28 收发器
+
+|===
+
+
+
+
+* * RJ-45 （ Cat5/Cat5e/Cat6/Cat6a ）以太网缆线 *
++
+image::../media/ethernet_cables.png[以太网缆线]
+
+* * 服务笔记本电脑 *
++
+image::../media/sam_management_client.gif[服务笔记本电脑]
+
++
+xref:../admin/web-browser-requirements.adoc[支持的 Web 浏览器]
+
++
+1 GbE （ RJ-45 ）端口
+
++
+
+NOTE: 某些端口可能不支持 10/100 以太网速度。
+
+* * 可选工具 *
++
+image::../media/optional_tools.gif[电钻和手电筒]
+
++
+带十字头的电钻
+
++
+Flashlight
+
+

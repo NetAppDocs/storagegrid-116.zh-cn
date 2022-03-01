@@ -1,0 +1,32 @@
+---
+permalink: expand/adding-grid-nodes-to-add-capabilities.html 
+sidebar: sidebar 
+keywords: grid nodes, expand, expansion, site, add 
+summary: 您可以通过向现有站点添加新的网格节点来为 StorageGRID 系统添加冗余或其他功能。 
+---
+= 添加网格节点以向系统添加功能
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以通过向现有站点添加新的网格节点来为 StorageGRID 系统添加冗余或其他功能。
+
+例如，您可以选择添加其他网关节点以支持创建网关节点的高可用性组，也可以在远程站点添加管理节点以允许使用本地节点进行监控。
+
+您可以通过单个扩展操作向一个或多个现有站点添加以下一种或多种类型的节点：
+
+* 非主管理节点
+* 存储节点
+* 网关节点
+* 归档节点
+
+
+准备添加网格节点时，请注意以下限制：
+
+* 主管理节点会在初始安装期间部署。在扩展期间，不能添加主管理节点。
+* 您可以在同一扩展中添加存储节点和其他类型的节点。
+* 添加存储节点时，必须仔细规划新节点的数量和位置。请参见 xref:../expand/guidelines-for-adding-object-capacity.adoc[添加对象容量的准则]。
+* 如果要添加归档节点，请注意，每个归档节点仅通过 Tivoli Storage Manager （ TSM ）中间件支持磁带。
+* 如果在不可信客户端网络页面上将 * 新节点客户端网络默认 * 选项设置为 * 不可信 * ，则使用客户端网络连接到扩展节点的客户端应用程序必须使用负载平衡器端点端口（ * 配置 * > * 网络 * > * 不可信客户端网络 * ）进行连接。请参见的说明 xref:../admin/index.adoc[管理 StorageGRID] 更改新节点的设置并配置负载平衡器端点。
+

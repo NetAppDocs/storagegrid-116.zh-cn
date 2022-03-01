@@ -1,0 +1,13 @@
+---
+permalink: sg6000/configuring-hardware.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6000, storage node, storage appliance, hardware, configure, configuration, set up, setup, network, networking 
+summary: 为设备接通电源后，您必须配置 StorageGRID 要使用的网络连接。您必须配置 SANtricity 系统管理器，该软件将用于监控控制器架中的存储控制器和其他硬件。此外，还必须确保可以访问 SG6000-CN 控制器的 BMC 接口。 
+---
+= 配置硬件（ SG6000 ）
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+为设备接通电源后，您必须配置 StorageGRID 要使用的网络连接。您必须配置 SANtricity 系统管理器，该软件将用于监控控制器架中的存储控制器和其他硬件。此外，还必须确保可以访问 SG6000-CN 控制器的 BMC 接口。

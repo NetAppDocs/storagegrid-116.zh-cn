@@ -1,0 +1,25 @@
+---
+permalink: sg5600/viewing-boot-up-status-and-reviewing-error-codes-on-sg5600-controllers.html 
+sidebar: sidebar 
+keywords: storagegrid, sg5600, storage node, storage appliance, status, boot codes, boot, error codes, error, code, start, startup, start up, start-up, progress, e5600sg 
+summary: 每个控制器上的七段显示会显示设备启动时，硬件初始化时以及硬件出现故障且必须退出初始化时的状态和错误代码。如果您要监控进度或进行故障排除，则应查看显示的代码顺序。 
+---
+= 查看 SG5600 控制器的启动状态并查看错误代码
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+每个控制器上的七段显示会显示设备启动时，硬件初始化时以及硬件出现故障且必须退出初始化时的状态和错误代码。如果您要监控进度或进行故障排除，则应查看显示的代码顺序。
+
+E5600SG 控制器的状态和错误代码与 E2700 控制器的状态和错误代码不同。
+
+.步骤
+. 在启动期间，查看七段显示器上显示的代码以监控进度。
+. 要查看 E5600SG 控制器的错误代码，请参见七段显示状态和错误代码信息。
+. 要查看 E2700 控制器的错误代码，请参见支持站点上的 E2700 控制器文档。
+
+
+xref:e5600sg-controller-seven-segment-display-codes.adoc[E5600SG 控制器七段显示代码]
+
+http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=61765["NetApp 文档： E2700 系列"^]

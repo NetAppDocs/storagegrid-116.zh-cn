@@ -1,0 +1,81 @@
+---
+permalink: sg5600/storagegrid-appliance-overview.html 
+sidebar: sidebar 
+keywords: storagegrid, sg5600, storage node, storage appliance, overview, models, features 
+summary: StorageGRID SG5600 设备是一个集成的存储和计算平台，作为 StorageGRID 网格中的存储节点运行。 
+---
+= StorageGRID SG5600 设备概述
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+StorageGRID SG5600 设备是一个集成的存储和计算平台，作为 StorageGRID 网格中的存储节点运行。
+
+StorageGRID SG5600 设备包括以下组件：
+
+|===
+| 组件 | Description 
+
+
+ a| 
+E5600SG 控制器
+ a| 
+计算服务器 E5600SG 控制器运行 Linux 操作系统和 StorageGRID 软件。
+
+此控制器连接到以下项：
+
+* StorageGRID 系统的管理网络，网格网络和客户端网络
+* E2700 控制器，使用双 SAS 路径（主动 / 主动），并将 E5600SG 控制器用作启动程序
+
+
+
+
+ a| 
+E2700 控制器
+ a| 
+存储控制器 E2700 控制器在单工模式下作为标准 E 系列存储阵列运行，并运行 SANtricity 操作系统（控制器固件）。
+
+此控制器连接到以下项：
+
+* 安装 SANtricity 存储管理器的管理网络
+* E5600SG 控制器，使用双 SAS 路径（主动 / 主动），以 E2700 控制器作为目标
+
+
+|===
+SG5600 设备还包括以下组件，具体取决于型号：
+
+|===
+| 组件 | 型号 SG5612 | 型号 SG5660 
+
+
+ a| 
+驱动器
+ a| 
+12 个 NL-SAS 驱动器
+ a| 
+60 个 NL-SAS 驱动器
+
+
+
+ a| 
+机箱
+ a| 
+DE1600 机箱，一种双机架单元（ 2U ）机箱，用于容纳驱动器和控制器
+ a| 
+DE6600 机箱，一种四机架单元（ 4U ）机箱，用于容纳驱动器和控制器
+
+
+
+ a| 
+电源和风扇
+ a| 
+两个电源风扇箱
+ a| 
+两个电源和两个风扇
+
+|===
+
+NOTE: E5600SG 控制器经过高度自定义，可在 StorageGRID 设备中使用。所有其他组件均按照 E 系列文档中所述的方式运行，除非这些说明中另有说明。
+
+每个 StorageGRID 设备存储节点上可用的最大原始存储空间是固定的，具体取决于设备型号和配置。您不能通过添加具有额外驱动器的磁盘架来扩展可用存储。

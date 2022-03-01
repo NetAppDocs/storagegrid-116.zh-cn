@@ -1,0 +1,36 @@
+---
+permalink: sg5600/connecting-ac-power-cords-sg5600.html 
+sidebar: sidebar 
+keywords: storagegrid, sg5600, storage node, storage appliance, wire, wiring, cabling, cable, Connecting, connect, power cords, power, ac, ac power 
+summary: 您必须将交流电源线连接到外部电源和每个控制器上的交流电源连接器。连接电源线后，您可以打开电源。 
+---
+= 连接交流电源线（ SG5600 ）
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您必须将交流电源线连接到外部电源和每个控制器上的交流电源连接器。连接电源线后，您可以打开电源。
+
+在连接电源之前，两个设备电源开关都必须关闭。
+
+
+CAUTION: * 电击风险 * —在连接电源线之前，请确保设备上的两个电源开关均已关闭。
+
+.关于此任务
+* 每个电源都应使用单独的电源。
++
+连接到独立电源可保持电源冗余。
+
+* 您可以使用控制器随附的电源线以及目标国家或地区使用的典型插座，例如无中断电源（ UPS ）的墙上插座。
++
+但是，这些电源线不适用于大多数符合环境影响评估的机柜。
+
+
+
+.步骤
+. 关闭机箱或机箱中的电源开关。
+. 关闭控制器上的电源开关。
+. 将机柜中的主电源线连接到外部电源。
+. 将电源线连接到每个控制器上的交流电源连接器。
+

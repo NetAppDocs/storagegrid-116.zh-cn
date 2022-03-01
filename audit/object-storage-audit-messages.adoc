@@ -1,0 +1,134 @@
+---
+permalink: audit/object-storage-audit-messages.html 
+sidebar: sidebar 
+keywords: storagegrid, audit, object storage, object management, object retrieval, node transfer, verification, APCT, ARCB, ARCE, ARCT, AREM, ASCE, ASCT, ATCE, AVCC, CBSE, CBRE, SCMT, SREM 
+summary: 您应熟悉属于对象存储审核类别的审核消息。这些事件与 StorageGRID 系统中对象的存储和管理相关。其中包括对象存储和检索，网格节点到网格节点的传输以及验证。 
+---
+= 对象存储审核消息
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您应熟悉属于对象存储审核类别的审核消息。这些事件与 StorageGRID 系统中对象的存储和管理相关。其中包括对象存储和检索，网格节点到网格节点的传输以及验证。
+
+|===
+| 代码 | Description | 请参见 
+
+
+ a| 
+APCT
+ a| 
+从云层清除归档：已归档的对象数据将从外部归档存储系统中删除，该系统通过 S3 API 连接到 StorageGRID 。
+ a| 
+xref:apct-archive-purge-from-cloud-tier.adoc[APCT ：从云层清除归档]
+
+
+
+ a| 
+ARCB
+ a| 
+归档对象检索开始： ARC-Service 开始从外部归档存储系统检索对象数据。
+ a| 
+xref:arcb-archive-object-retrieve-begin.adoc[ARCB ：开始归档对象检索]
+
+
+
+ a| 
+Arce
+ a| 
+归档对象检索结束：对象数据已从外部归档存储系统中检索，并且 ARC-Service 会报告检索操作的状态。
+ a| 
+xref:arce-archive-object-retrieve-end.adoc[Arce ：归档对象检索结束]
+
+
+
+ a| 
+ARCT
+ a| 
+从云层检索归档：归档对象数据从外部归档存储系统中检索，该系统通过 S3 API 连接到 StorageGRID 。
+ a| 
+xref:arct-archive-retrieve-from-cloud-tier.adoc[ARCT ：从云层检索归档]
+
+
+
+ a| 
+AREM
+ a| 
+归档对象删除：已从外部归档存储系统成功或未成功删除内容块。
+ a| 
+xref:arem-archive-object-remove.adoc[AREM ：归档对象删除]
+
+
+
+ a| 
+ASCE
+ a| 
+归档对象存储结束：已将内容块写入外部归档存储系统，并且 ARC-Service 会报告写入操作的状态。
+ a| 
+xref:asce-archive-object-store-end.adoc[ASCE ：归档对象存储结束]
+
+
+
+ a| 
+上一个月
+ a| 
+归档存储云层：对象数据存储到外部归档存储系统，该系统通过 S3 API 连接到 StorageGRID 。
+ a| 
+xref:asct-archive-store-cloud-tier.adoc[SCT ：归档存储云层]
+
+
+
+ a| 
+ATCE
+ a| 
+归档对象存储开始：已开始向外部归档存储写入内容块。
+ a| 
+xref:atce-archive-object-store-begin.adoc[ATCE ：开始归档对象存储]
+
+
+
+ a| 
+AVCC
+ a| 
+归档验证云层配置：提供的帐户和存储分段设置已成功验证或未成功验证。
+ a| 
+xref:avcc-archive-validate-cloud-tier-configuration.adoc[AVCC ：归档验证云层配置]
+
+
+
+ a| 
+CBSE
+ a| 
+对象发送结束：源实体完成了网格节点到网格节点的数据传输操作。
+ a| 
+xref:cbse-object-send-end.adoc[CBSE ：对象发送结束]
+
+
+
+ a| 
+CBRE
+ a| 
+对象接收结束：目标实体完成了网格节点到网格节点的数据传输操作。
+ a| 
+xref:cbre-object-receive-end.adoc[CBRE ：对象接收结束]
+
+
+
+ a| 
+SCMT
+ a| 
+对象存储提交：内容块已完全存储和验证，现在可以请求。
+ a| 
+xref:scmt-object-store-commit.adoc[SCMT ：对象存储提交]
+
+
+
+ a| 
+Srem
+ a| 
+对象存储删除：已从网格节点中删除内容块，无法再直接请求。
+ a| 
+xref:srem-object-store-remove.adoc[Srem ：对象存储删除]
+
+|===

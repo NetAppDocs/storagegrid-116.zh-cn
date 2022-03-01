@@ -1,0 +1,40 @@
+---
+permalink: upgrade/checking-systems-condition-before-upgrading-software.html 
+sidebar: sidebar 
+keywords: upgrade, grid tasks, firewall, ports 
+summary: 在升级 StorageGRID 系统之前，您必须验证系统是否已准备好进行升级。您必须确保系统正常运行，并且所有网格节点均正常运行。 
+---
+= 检查系统的状况
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在升级 StorageGRID 系统之前，您必须验证系统是否已准备好进行升级。您必须确保系统正常运行，并且所有网格节点均正常运行。
+
+.步骤
+. 使用登录到网格管理器 xref:../admin/web-browser-requirements.adoc[支持的 Web 浏览器]。
+. 检查并解决所有活动警报。
++
+有关特定警报的信息，请参见 xref:../monitor/alerts-reference.adoc[警报参考]。
+
+. 确认没有处于活动状态或待定状态的存在冲突的网格任务。
++
+.. 选择 * 支持 * > * 工具 * > * 网格拓扑 * 。
+.. 选择 * 站点 _* > * 主管理节点 _* > * CMN* > * 网格任务 * > * 配置 * 。
++
+信息生命周期管理评估（ ILME ）任务是唯一可与软件升级同时运行的网格任务。
+
+.. 如果任何其他网格任务处于活动状态或处于待定状态，请等待其完成或释放锁定。
++
+
+NOTE: 如果任务未完成或未解除锁定，请联系技术支持。
+
+
+
+. 请参见 xref:../network/internal-grid-node-communications.adoc[内部网格节点通信] 和 xref:../network/external-communications.adoc[外部通信] 确保在升级之前打开 StorageGRID 11.6 所需的所有端口。
++
+
+IMPORTANT: 如果您已打开任何自定义防火墙端口，则在升级预检期间会收到通知。在继续升级之前，您必须联系技术支持。
+
+

@@ -1,0 +1,60 @@
+---
+permalink: sg5600/hardware-setup-progress-appears-to-hang.html 
+sidebar: sidebar 
+keywords: storagegrid, sg5600, storage node, storage appliance, troubleshoot, troubleshooting, hardware, setup, hang, hangs, fails, failure, stop, terminate, terminates, stuck 
+summary: 如果硬件故障或布线错误导致 E5600SG 控制器无法完成启动处理，则 StorageGRID 设备安装程序可能不可用。 
+---
+= 硬件设置似乎挂起（ SG5600 ）
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果硬件故障或布线错误导致 E5600SG 控制器无法完成启动处理，则 StorageGRID 设备安装程序可能不可用。
+
+.步骤
+. 检查任一控制器上的 "Need Attention LED" ，并查找是否存在闪烁的错误代码。
++
+在启动期间，硬件初始化期间，允许服务操作和需要服务操作 LED 会亮起。较低位数的小数点上限（称为 _diagnostic LED_ ）也会亮起。七段式显示会显示两个控制器共有的一系列代码。这是正常的，并不表示出现错误。硬件成功启动后，服务操作 LED 将关闭，而显示内容将由固件驱动。
+
+. 查看 E5600SG 控制器的七段显示屏上的代码。
++
+
+NOTE: 安装和配置需要一些时间。某些安装阶段在几分钟内不会向 StorageGRID 设备安装程序报告更新。
+
++
+如果发生错误，七段显示屏将按顺序闪烁，例如， "he" 。
+
+. 要了解这些代码的含义，请参见以下资源：
++
+|===
+| 控制器 | 参考 
+
+
+ a| 
+E5600SG 控制器
+ a| 
+** "`错误：与 SANtricity OS 软件同步时出错` "
+** "`E5600SG 控制器七段显示代码` "
+
+
+
+
+ a| 
+E2700 控制器
+ a| 
+E 系列文档
+
+* 注： * 为 E 系列 E5600 控制器描述的代码不适用于设备中的 E5600SG 控制器。
+
+|===
+. 如果无法解决问题描述 问题，请联系技术支持。
+
+
+xref:e5600sg-controller-seven-segment-display-codes.adoc[E5600SG 控制器七段显示代码]
+
+xref:he-error-error-synchronizing-with-santricity-os-software.adoc[he error ： Error synchronating with SANtricity OS Software]
+
+https://library.netapp.com/ecm/ecm_download_file/ECMLP2344477["《 E2700 控制器驱动器托盘和相关驱动器托盘安装指南》"^]
+
+http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=61765["NetApp 文档： E2700 系列"^]

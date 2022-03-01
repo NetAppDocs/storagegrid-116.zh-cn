@@ -1,0 +1,325 @@
+---
+permalink: s3/configuring-tenant-accounts-and-connections.html 
+sidebar: sidebar 
+keywords: configuring, tenant, connections 
+summary: 要将 StorageGRID 配置为接受来自客户端应用程序的连接，需要创建一个或多个租户帐户并设置连接。 
+---
+= 配置租户帐户和连接
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+要将 StorageGRID 配置为接受来自客户端应用程序的连接，需要创建一个或多个租户帐户并设置连接。
+
+
+
+== 创建和配置 S3 租户帐户
+
+S3 API 客户端必须先具有 S3 租户帐户，然后才能在 StorageGRID 上存储和检索对象。每个租户帐户都有自己的帐户 ID ，组和用户以及容器和对象。
+
+S3 租户帐户由 StorageGRID 网格管理员使用网格管理器或网格管理 API 创建。创建 S3 租户帐户时，网格管理员会指定以下信息：
+
+* 租户的显示名称（租户的帐户 ID 会自动分配，不能更改）。
+* 是否允许租户帐户使用平台服务。如果允许使用平台服务，则必须对网格进行配置，以支持使用这些服务。
+* （可选）租户帐户的存储配额—租户对象可用的最大 GB ， TB 或 PB 数。租户的存储配额表示逻辑容量（对象大小），而不是物理容量（磁盘大小）。
+* 如果为 StorageGRID 系统启用了身份联合，则哪个联合组具有 " 根访问 " 权限来配置租户帐户。
+* 如果 StorageGRID 系统未使用单点登录（ SSO ），则表示租户帐户是使用自己的身份源还是共享网格的身份源，以及租户的本地 root 用户的初始密码。
+
+
+创建 S3 租户帐户后，租户用户可以访问租户管理器以执行如下任务：
+
+* 设置身份联合（除非身份源与网格共享），并创建本地组和用户
+* 管理 S3 访问密钥
+* 创建和管理 S3 存储分段，包括启用了 S3 对象锁定的存储分段
+* 使用平台服务（如果已启用）
+* 监控存储使用情况
+
+
+
+IMPORTANT: S3 租户用户可以使用租户管理器创建和管理 S3 存储分段，但他们必须具有 S3 访问密钥，并使用 S3 REST API 载入和管理对象。
+
+xref:../admin/index.adoc[管理 StorageGRID]
+
+xref:../tenant/index.adoc[使用租户帐户]
+
+
+
+== 如何配置客户端连接
+
+网格管理员可以选择影响 S3 客户端连接到 StorageGRID 以存储和检索数据的配置。建立连接所需的具体信息取决于所选的配置。
+
+客户端应用程序可以通过连接到以下任一项来存储或检索对象：
+
+* 管理节点或网关节点上的负载平衡器服务，或者也可以是管理节点或网关节点高可用性（ HA ）组的虚拟 IP 地址
+* 网关节点上的 CLB 服务，或者也可以是网关节点高可用性组的虚拟 IP 地址
++
+
+NOTE: CLB 服务已弃用。在 StorageGRID 11.3 版本之前配置的客户端可以继续在网关节点上使用 CLB 服务。所有其他依靠 StorageGRID 提供负载平衡的客户端应用程序都应使用负载平衡器服务进行连接。
+
+* 存储节点，具有或不具有外部负载平衡器
+
+
+配置 StorageGRID 时，网格管理员可以使用网格管理器或网格管理 API 执行以下步骤，所有这些步骤均为可选步骤：
+
+. 为负载平衡器服务配置端点。
++
+您必须配置端点才能使用负载平衡器服务。管理节点或网关节点上的负载平衡器服务会将传入的网络连接从客户端应用程序分发到存储节点。创建负载平衡器端点时， StorageGRID 管理员会指定端口号，端点是否接受 HTTP 或 HTTPS 连接，将使用此端点的客户端类型（ S3 或 Swift ）以及用于 HTTPS 连接的证书（如果适用）。
+
+. 配置不可信客户端网络。
++
+如果 StorageGRID 管理员将节点的客户端网络配置为不可信，则节点仅接受客户端网络上显式配置为负载平衡器端点的端口上的入站连接。
+
+. 配置高可用性组。
++
+如果管理员创建了一个 HA 组，则多个管理节点或网关节点的网络接口将置于主动备份配置中。客户端连接使用 HA 组的虚拟 IP 地址进行。
+
+
+
+有关每个选项的详细信息，请参见有关管理 StorageGRID 的说明。
+
+xref:../admin/index.adoc[管理 StorageGRID]
+
+
+
+=== 摘要：客户端连接的 IP 地址和端口
+
+客户端应用程序使用网格节点的 IP 地址以及该节点上服务的端口号连接到 StorageGRID 。如果配置了高可用性（ HA ）组，则客户端应用程序可以使用 HA 组的虚拟 IP 地址进行连接。
+
+
+
+==== 建立客户端连接所需的信息
+
+下表总结了客户端连接到 StorageGRID 的不同方式以及每种连接类型所使用的 IP 地址和端口。有关详细信息，请与 StorageGRID 管理员联系，或者参见有关管理问题描述 StorageGRID 的说明，了解如何在网格管理器中查找此信息。
+
+|===
+| 建立连接的位置 | 客户端连接到的服务 | IP 地址 | Port 
+
+
+ a| 
+HA 组
+ a| 
+负载平衡器
+ a| 
+HA 组的虚拟 IP 地址
+ a| 
+* 负载平衡器端点端口
+
+
+
+
+ a| 
+HA 组
+ a| 
+CLB
+
+* 注： * CLB 服务已弃用。
+ a| 
+HA 组的虚拟 IP 地址
+ a| 
+默认 S3 端口：
+
+* HTTPS ： 8082
+* HTTP ： 8084
+
+
+
+
+ a| 
+管理节点
+ a| 
+负载平衡器
+ a| 
+管理节点的 IP 地址
+ a| 
+* 负载平衡器端点端口
+
+
+
+
+ a| 
+网关节点
+ a| 
+负载平衡器
+ a| 
+网关节点的 IP 地址
+ a| 
+* 负载平衡器端点端口
+
+
+
+
+ a| 
+网关节点
+ a| 
+CLB
+
+* 注： * CLB 服务已弃用。
+ a| 
+网关节点的 IP 地址
+
+* 注： * 默认情况下， CLB 和 LDR 的 HTTP 端口未启用。
+ a| 
+默认 S3 端口：
+
+* HTTPS ： 8082
+* HTTP ： 8084
+
+
+
+
+ a| 
+存储节点
+ a| 
+LDR
+ a| 
+存储节点的 IP 地址
+ a| 
+默认 S3 端口：
+
+* HTTPS ： 18082
+* HTTP ： 18084
+
+
+|===
+
+
+==== 示例
+
+要将 S3 客户端连接到网关节点 HA 组的负载平衡器端点，请使用以下结构化 URL ：
+
+* `https://_VIP-of-HA-group_:_LB-endpoint-port_`
+
+
+例如，如果 HA 组的虚拟 IP 地址为 192.0.2.5 ，而 S3 负载平衡器端点的端口号为 10443 ，则 S3 客户端可以使用以下 URL 连接到 StorageGRID ：
+
+* `https://192.0.2.5:10443`
+
+
+可以为客户端用于连接到 StorageGRID 的 IP 地址配置 DNS 名称。请与本地网络管理员联系。
+
+xref:../admin/index.adoc[管理 StorageGRID]
+
+
+
+=== 决定使用 HTTPS 或 HTTP 连接
+
+使用负载平衡器端点建立客户端连接时，必须使用为此端点指定的协议（ HTTP 或 HTTPS ）进行连接。要使用 HTTP 连接到存储节点或网关节点上的 CLB 服务，必须启用 HTTP 。
+
+默认情况下，当客户端应用程序连接到存储节点或网关节点上的 CLB 服务时，它们必须对所有连接使用加密 HTTPS 。您也可以选择网格管理器中的 * 启用 HTTP 连接 * 网格选项来启用不太安全的 HTTP 连接。例如，在非生产环境中测试与存储节点的连接时，客户端应用程序可能会使用 HTTP 。
+
+
+IMPORTANT: 为生产网格启用 HTTP 时要小心，因为请求将以未加密方式发送。
+
+
+NOTE: CLB 服务已弃用。
+
+如果选择了 * 启用 HTTP 连接 * 选项，则客户端对 HTTP 使用的端口必须与对 HTTPS 使用的端口不同。请参见有关管理 StorageGRID 的说明。
+
+xref:../admin/index.adoc[管理 StorageGRID]
+
+xref:benefits-of-active-idle-and-concurrent-http-connections.adoc[活动，空闲和并发 HTTP 连接的优势]
+
+
+
+== S3 请求的端点域名
+
+在对客户端请求使用 S3 域名之前， StorageGRID 管理员必须将系统配置为接受在 S3 路径模式和 S3 虚拟托管模式请求中使用 S3 域名的连接。
+
+要使用 S3 虚拟托管模式请求，网格管理员必须执行以下任务：
+
+* 使用网格管理器将 S3 端点域名添加到 StorageGRID 系统。
+* 确保客户端用于与 StorageGRID 的 HTTPS 连接的证书已针对客户端所需的所有域名进行签名。
++
+例如，如果端点为 `s3.company.com` ，则网格管理员必须确保用于 HTTPS 连接的证书包含 `s3.company.com` 端点和端点的通配符使用者备用名称（ SAN ）： ` * .s3.company.com` 。
+
+* 配置客户端使用的 DNS 服务器，使其包含与端点域名匹配的 DNS 记录，包括任何所需的通配符记录。
+
+
+如果客户端使用负载平衡器服务进行连接，则网格管理员配置的证书是客户端使用的负载平衡器端点的证书。
+
+
+NOTE: 每个负载平衡器端点都有自己的证书，并且可以对每个端点进行配置以识别不同的端点域名。
+
+如果客户端连接到存储节点或网关节点上的 CLB 服务，则网格管理员配置的证书是用于网格的单个自定义服务器证书。
+
+
+NOTE: CLB 服务已弃用。
+
+有关详细信息，请参见有关管理 StorageGRID 的说明。
+
+完成这些步骤后，您可以使用虚拟托管模式请求（例如， `bucket.s3.company.com` ）。
+
+xref:../admin/index.adoc[管理 StorageGRID]
+
+xref:configuring-security-for-rest-api.adoc[配置 REST API 的安全性]
+
+
+
+== 测试 S3 REST API 配置
+
+您可以使用 Amazon Web Services 命令行界面（ AWS 命令行界面）测试与系统的连接，并验证是否可以向系统读取和写入对象。
+
+.您需要什么？ #8217 ；将需要什么
+* 您已从下载并安装 AWS 命令行界面 https://aws.amazon.com/cli["aws.amazon.com/cli"^]。
+* 您已在 StorageGRID 系统中创建 S3 租户帐户。
+
+
+.步骤
+. 配置 Amazon Web Services 设置以使用您在 StorageGRID 系统中创建的帐户：
++
+.. 进入配置模式： `AWS configure`
+.. 输入您创建的帐户的 AWS 访问密钥 ID 。
+.. 输入您创建的帐户的 AWS 机密访问密钥。
+.. 输入要使用的默认区域，例如 us-east-1 。
+.. 输入要使用的默认输出格式，或者按 * 输入 * 选择 JSON 。
+
+
+. 创建存储分段。
++
+[listing]
+----
+aws s3api --endpoint-url https://10.96.101.17:10443
+--no-verify-ssl create-bucket --bucket testbucket
+----
++
+如果已成功创建存储分段，则会返回存储分段的位置，如以下示例所示：
+
+
+
+[listing]
+----
+"Location": "/testbucket"
+----
+. 上传对象。
++
+[listing]
+----
+aws s3api --endpoint-url https://10.96.101.17:10443 --no-verify-ssl
+put-object --bucket testbucket --key s3.pdf --body C:\s3-test\upload\s3.pdf
+----
++
+如果对象上传成功，则返回一个 Etag ，该 Etag 是对象数据的哈希。
+
+. 列出存储分段的内容以验证是否已上传此对象。
++
+[listing]
+----
+aws s3api --endpoint-url https://10.96.101.17:10443 --no-verify-ssl
+list-objects --bucket testbucket
+----
+. 删除对象。
++
+[listing]
+----
+aws s3api --endpoint-url https://10.96.101.17:10443 --no-verify-ssl
+delete-object --bucket testbucket --key s3.pdf
+----
+. 删除存储分段。
++
+[listing]
+----
+aws s3api --endpoint-url https://10.96.101.17:10443 --no-verify-ssl
+delete-bucket --bucket testbucket
+----
+

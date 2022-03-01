@@ -1,0 +1,119 @@
+---
+permalink: swift/get-container-consistency-request.html 
+sidebar: sidebar 
+keywords: get container consistency request 
+summary: 一致性级别可以在对象的可用性与这些对象在不同存储节点和站点之间的一致性之间进行权衡。使用获取容器一致性请求，您可以确定应用于特定容器的一致性级别。 
+---
+= 获取容器一致性请求
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+一致性级别可以在对象的可用性与这些对象在不同存储节点和站点之间的一致性之间进行权衡。使用获取容器一致性请求，您可以确定应用于特定容器的一致性级别。
+
+
+
+== 请求
+
+|===
+| 请求 HTTP 标头 | Description 
+
+
+ a| 
+`X-Auth-Token`
+ a| 
+指定要用于请求的帐户的 Swift 身份验证令牌。
+
+
+
+ a| 
+`x-ntap-sg-consistency`
+ a| 
+指定请求的类型，其中 `true` = 获取容器一致性， `false` = 获取容器。
+
+
+
+ a| 
+`主机`
+ a| 
+请求所定向到的主机名。
+
+|===
+
+
+== 请求示例
+
+[listing]
+----
+GET /v1/28544923908243208806/Swift container
+X-Auth-Token: SGRD_3a877009a2d24cb1801587bfa9050f29
+x-ntap-sg-consistency: true
+Host: test.com
+----
+
+
+== 响应
+
+|===
+| 响应 HTTP 标头 | Description 
+
+
+ a| 
+`dATE`
+ a| 
+响应的日期和时间。
+
+
+
+ a| 
+`连接`
+ a| 
+与服务器的连接是打开还是关闭。
+
+
+
+ a| 
+`X-Trans-ID`
+ a| 
+请求的唯一事务标识符。
+
+
+
+ a| 
+`内容长度`
+ a| 
+响应正文的长度。
+
+
+
+ a| 
+`x-ntap-sg-consistency`
+ a| 
+应用于容器的一致性控制级别。支持以下值：
+
+* * 全部 * ：所有节点均立即接收数据，否则请求将失败。
+* * 强 - 全局 * ：保证所有站点中所有客户端请求的写入后读一致性。
+* * 强站点 * ：保证站点内所有客户端请求的写入后读一致性。
+* * 读后新写入 * ：为新对象提供读后写入一致性，并最终为对象更新提供一致性。提供高可用性和数据保护保证。
++
+* 注意 * ：如果应用程序对不存在的对象使用 head 请求，则在一个或多个存储节点不可用时，可能会收到大量 500 个内部服务器错误。要防止出现这些错误，请使用 "`Available` " 级别。
+
+* * 可用 * （机头操作的最终一致性）：与 `read-after-new-write` 一致性级别相同，但仅为机头操作提供最终一致性。如果存储节点不可用，则为机头操作提供的可用性比 " `read-after-new-write` " 更高。
+
+
+|===
+
+
+== 响应示例
+
+[listing]
+----
+HTTP/1.1 204 No Content
+Date: Sat, 29 Nov 2015 01:02:18 GMT
+Connection: CLOSE
+X-Trans-Id: 1936575373
+Content-Length: 0
+x-ntap-sg-consistency: strong-site
+----
+xref:../tenant/index.adoc[使用租户帐户]

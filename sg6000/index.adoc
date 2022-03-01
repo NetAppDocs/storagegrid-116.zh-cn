@@ -1,0 +1,29 @@
+---
+permalink: sg6000/index.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6000, storage node, storage appliance, overview, models, features 
+summary: StorageGRID SG6000 设备是一种集成的存储和计算平台，可作为 StorageGRID 系统中的存储节点运行。这些设备可以在混合网格环境中使用，该环境将设备存储节点和虚拟 \ （基于软件的 \ ）存储节点结合在一起。 
+---
+= SG6000 设备：概述
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+StorageGRID SG6000 设备是一种集成的存储和计算平台，可作为 StorageGRID 系统中的存储节点运行。这些设备可以在混合网格环境中使用，该环境将设备存储节点和虚拟（基于软件的）存储节点结合在一起。
+
+SG6000 设备提供以下功能：
+
+* 提供两种型号：
++
+** SG6060 ，包含 60 个驱动器并支持扩展架。
+** SGF6024 ，提供 24 个固态驱动器（ SSD ）。
+
+
+* 集成 StorageGRID 存储节点的存储和计算要素。
+* 包括 StorageGRID 设备安装程序，以简化存储节点的部署和配置。
+* 包括 SANtricity System Manager ，用于管理和监控存储控制器和驱动器。
+* 包括一个基板管理控制器（ BMC ），用于监控和诊断计算控制器中的硬件。
+* 最多支持四个连接到 StorageGRID 网格网络和客户端网络的 10-GbE 或 25-GbE 连接。
+* 支持联邦信息处理标准（ FIPS ）驱动器。如果将这些驱动器与 SANtricity 系统管理器中的驱动器安全功能结合使用，则会阻止未经授权的数据访问。
+

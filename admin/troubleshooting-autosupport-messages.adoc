@@ -1,0 +1,55 @@
+---
+permalink: admin/troubleshooting-autosupport-messages.html 
+sidebar: sidebar 
+keywords: troubleshoot autosupport, asup message 
+summary: 如果尝试发送 AutoSupport 消息失败， StorageGRID 系统将根据 AutoSupport 消息的类型采取不同的操作。您可以通过选择支持 >> 工具 >> AutoSupport >> 结果来检查 AutoSupport 消息的状态。 
+---
+= 对 AutoSupport 消息进行故障排除
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果尝试发送 AutoSupport 消息失败， StorageGRID 系统将根据 AutoSupport 消息的类型采取不同的操作。您可以通过选择 * 支持 * > * 工具 * > * AutoSupport * > * 结果 * 来检查 AutoSupport 消息的状态。
+
+
+NOTE: 如果在系统范围内禁止发送电子邮件通知，则会禁止显示事件触发的 AutoSupport 消息。（选择 * 配置 * > * 系统 * > * 显示选项 * 。然后，选择 * 通知禁止全部 * 。）
+
+如果 AutoSupport 消息无法发送，则 "`failed` " 将显示在 * AutoSupport * 页面的 * 结果 * 选项卡上。
+
+image::../media/autosupport_results_tab.png[AutoSupport Results 选项卡]
+
+
+
+== 每周 AutoSupport 消息失败
+
+如果每周 AutoSupport 消息无法发送， StorageGRID 系统将执行以下操作：
+
+. 更新最新的 result 属性以重试。
+. 尝试每四分钟重新发送 15 次 AutoSupport 消息，持续一小时。
+. 发送失败一小时后，将最新结果属性更新为 Failed 。
+. 尝试在下次计划的时间重新发送 AutoSupport 消息。
+. 如果消息因 NMS 服务不可用而失败，并且消息在七天之前发送，则会保留常规 AutoSupport 计划。
+. 当 NMS 服务再次可用时，如果消息在七天或更长时间内未发送，则会立即发送 AutoSupport 消息。
+
+
+
+
+== 用户触发或事件触发的 AutoSupport 消息失败
+
+如果用户触发或事件触发的 AutoSupport 消息无法发送， StorageGRID 系统将执行以下操作：
+
+. 如果已知错误，则显示错误消息。例如，如果用户选择 SMTP 协议而未提供正确的电子邮件配置设置，则会显示以下错误： `由于电子邮件服务器页面上的设置不正确，无法使用 SMTP 协议发送 AutoSupport 消息。`
+. 不会再次尝试发送消息。
+. 在 `NMS.log` 中记录此错误。
+
+
+如果发生故障且所选协议为 SMTP ，请验证 StorageGRID 系统的电子邮件服务器是否已正确配置且电子邮件服务器是否正在运行（ * 支持 * > * 警报（原有） * > * > 旧电子邮件设置 * ）。AutoSupport 页面可能会显示以下错误消息： `由于电子邮件服务器页面上的设置不正确，无法使用 SMTP 协议发送 AutoSupport 消息。`
+
+了解如何在中配置电子邮件服务器设置 xref:../monitor/index.adoc[监控和故障排除说明]。
+
+
+
+== 更正 AutoSupport 消息故障
+
+如果发生故障且所选协议为 SMTP ，请验证 StorageGRID 系统的电子邮件服务器是否已正确配置且您的电子邮件服务器是否正在运行。AutoSupport 页面可能会显示以下错误消息： `由于电子邮件服务器页面上的设置不正确，无法使用 SMTP 协议发送 AutoSupport 消息。`

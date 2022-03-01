@@ -1,0 +1,80 @@
+---
+permalink: admin/removing-nfs-audit-client-from-audit-share.html 
+sidebar: sidebar 
+keywords: nfs audit client, remove audit client 
+summary: NFS 审核客户端将根据其 IP 地址获得对审核共享的访问权限。您可以通过删除现有审核客户端的 IP 地址来删除此客户端。 
+---
+= 从审核共享中删除 NFS 审核客户端
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+NFS 审核客户端将根据其 IP 地址获得对审核共享的访问权限。您可以通过删除现有审核客户端的 IP 地址来删除此客户端。
+
+.您需要什么？ #8217 ；将需要什么
+* 您已拥有 `passwords.txt` 文件以及 root/admin 帐户密码（可从上述软件包中获取）。
+* 您已有 `Configuration.txt` 文件（可在上述软件包中找到）。
+
+
+您不能删除允许访问审核共享的最后一个 IP 地址。
+
+.步骤
+. 登录到主管理节点：
++
+.. 输入以下命令： `ssh admin@ primary_Admin_Node_IP_`
+.. 输入 `passwords.txt` 文件中列出的密码。
+.. 输入以下命令切换到 root ： `su -`
+.. 输入 `passwords.txt` 文件中列出的密码。
++
+以 root 用户身份登录时，提示符将从 ` $` 更改为 ` #` 。
+
+
+
+. 启动 NFS 配置实用程序： `config_nfs.rb`
++
+[listing]
+----
+
+-----------------------------------------------------------------
+| Shares               | Clients              | Config          |
+-----------------------------------------------------------------
+| add-audit-share      | add-ip-to-share      | validate-config |
+| enable-disable-share | remove-ip-from-share | refresh-config  |
+|                      |                      | help            |
+|                      |                      | exit            |
+-----------------------------------------------------------------
+----
+. 从审核共享中删除 IP 地址： `remove-ip-from-share`
++
+此时将显示服务器上配置的审核共享的编号列表。此审核共享列出为： ` /var/local/audit/export`
+
+. 输入与审核共享对应的数字： ` _audit_share_number_`
++
+此时将显示允许访问审核共享的 IP 地址的编号列表。
+
+. 输入与要删除的 IP 地址对应的数字。
++
+此时将更新审核共享，并且不再允许使用此 IP 地址的任何审核客户端进行访问。
+
+. 出现提示时，按 * 输入 * 。
++
+此时将显示 NFS 配置实用程序。
+
+. 关闭 NFS 配置实用程序： `exit`
+. 如果您的 StorageGRID 部署为多数据中心站点部署，而其他站点上有更多管理节点，请根据需要禁用这些审核共享：
++
+.. 远程登录到每个站点的管理节点：
++
+... 输入以下命令： `ssh admin@ grid_node_ip_`
+... 输入 `passwords.txt` 文件中列出的密码。
+... 输入以下命令切换到 root ： `su -`
+... 输入 `passwords.txt` 文件中列出的密码。
+
+
+.. 重复上述步骤为每个附加管理节点配置审核共享。
+.. 关闭远程安全 Shell 登录到远程管理节点： `exit`
+
+
+. 注销命令 Shell ： `exit`
+

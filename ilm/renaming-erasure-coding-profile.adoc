@@ -1,0 +1,51 @@
+---
+permalink: ilm/renaming-erasure-coding-profile.html 
+sidebar: sidebar 
+keywords: rename erasure coding profile, ec profile 
+summary: 您可能需要重命名纠删编码配置文件，以使其更明显地显示该配置文件的功能。 
+---
+= 重命名擦除编码配置文件
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可能需要重命名纠删编码配置文件，以使其更明显地显示该配置文件的功能。
+
+.您需要什么？ #8217 ；将需要什么
+* 您将使用登录到网格管理器 xref:../admin/web-browser-requirements.adoc[支持的 Web 浏览器]。
+* 您具有特定的访问权限。
+
+
+.步骤
+. 选择 * ILM * > * 擦除编码 * 。
++
+此时将显示擦除编码配置文件页面。* 重命名 * 和 * 停用 * 按钮均已禁用。
+
++
+image::../media/ec_profiles_rename_deactivate_disabled.png[已禁用擦除编码配置文件重命名停用]
+
+. 选择要重命名的配置文件。
++
+* 重命名 * 和 * 停用 * 按钮将变为启用状态。
+
+. 选择 * 重命名 * 。
++
+此时将显示重命名 EC 配置文件对话框。
+
++
+image::../media/ec_profile_rename.png[擦除编码配置文件重命名]
+
+. 为擦除编码配置文件输入一个唯一名称。
++
+Erasure Coding 配置文件名称会附加到 ILM 规则放置说明中的存储池名称中。
+
++
+image::../media/storage_pool_and_erasure_coding_profile.png[存储池和 EC 配置文件名称]
+
++
+
+NOTE: 纠删编码配置文件名称必须是唯一的。如果您使用现有配置文件的名称，则会发生验证错误，即使该配置文件已停用也是如此。
+
+. 选择 * 保存 * 。
+

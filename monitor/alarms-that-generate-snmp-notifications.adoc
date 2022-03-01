@@ -1,0 +1,524 @@
+---
+permalink: monitor/alarms-that-generate-snmp-notifications.html 
+sidebar: sidebar 
+keywords: alarms, monitor alarms, snmp notification, snmp 
+summary: 下表列出了生成 SNMP 通知的原有警报。与警报不同，并非所有警报都会生成 SNMP 通知。只有列出的警报才会生成 SNMP 通知，并且严重性仅为指示值或更高。 
+---
+= 生成 SNMP 通知的警报（旧系统）
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+下表列出了生成 SNMP 通知的原有警报。与警报不同，并非所有警报都会生成 SNMP 通知。只有列出的警报才会生成 SNMP 通知，并且严重性仅为指示值或更高。
+
+
+NOTE: 虽然传统警报系统仍受支持，但警报系统具有显著优势，并且更易于使用。
+
+[cols="1a,2a,1a"]
+|===
+| 代码 | Name | severity 
+
+
+ a| 
+ACMS
+ a| 
+可用元数据服务
+ a| 
+严重
+
+
+
+ a| 
+AITE
+ a| 
+检索状态
+ a| 
+次要
+
+
+
+ a| 
+AITU-A
+ a| 
+检索状态
+ a| 
+major
+
+
+
+ a| 
+AMQS
+ a| 
+已排队的审核消息
+ a| 
+通知
+
+
+
+ a| 
+AOTE
+ a| 
+存储状态
+ a| 
+次要
+
+
+
+ a| 
+AOTU
+ a| 
+存储状态
+ a| 
+major
+
+
+
+ a| 
+AROQ
+ a| 
+已排队的对象
+ a| 
+次要
+
+
+
+ a| 
+ARRF
+ a| 
+请求失败
+ a| 
+major
+
+
+
+ a| 
+ARRV
+ a| 
+验证失败
+ a| 
+major
+
+
+
+ a| 
+ARVF
+ a| 
+存储故障
+ a| 
+major
+
+
+
+ a| 
+ASXP
+ a| 
+审核共享
+ a| 
+次要
+
+
+
+ a| 
+AUMA
+ a| 
+AMS 状态
+ a| 
+次要
+
+
+
+ a| 
+AUXS
+ a| 
+审核导出状态
+ a| 
+次要
+
+
+
+ a| 
+BTOF
+ a| 
+Offset
+ a| 
+通知
+
+
+
+ a| 
+CAHP
+ a| 
+Java 堆使用量百分比
+ a| 
+major
+
+
+
+ a| 
+CAQH
+ a| 
+可用目标的数量
+ a| 
+通知
+
+
+
+ a| 
+CASA
+ a| 
+数据存储状态
+ a| 
+major
+
+
+
+ a| 
+CDLP
+ a| 
+元数据已用空间（百分比）
+ a| 
+major
+
+
+
+ a| 
+CLBE
+ a| 
+CLB 状态
+ a| 
+严重
+
+
+
+ a| 
+DNST
+ a| 
+DNS 状态
+ a| 
+严重
+
+
+
+ a| 
+ECST
+ a| 
+验证状态
+ a| 
+major
+
+
+
+ a| 
+HSTE
+ a| 
+HTTP 状态
+ a| 
+major
+
+
+
+ a| 
+HTA
+ a| 
+自动启动 HTTP
+ a| 
+通知
+
+
+
+ a| 
+已丢失
+ a| 
+对象丢失
+ a| 
+major
+
+
+
+ a| 
+分钟
+ a| 
+电子邮件通知已排队
+ a| 
+通知
+
+
+
+ a| 
+分钟
+ a| 
+电子邮件通知状态
+ a| 
+次要
+
+
+
+ a| 
+Nang
+ a| 
+网络自动协商设置
+ a| 
+通知
+
+
+
+ a| 
+NDUP
+ a| 
+网络双工设置
+ a| 
+次要
+
+
+
+ a| 
+NLNK
+ a| 
+网络链路检测
+ a| 
+次要
+
+
+
+ a| 
+NRER
+ a| 
+接收错误
+ a| 
+通知
+
+
+
+ a| 
+NSPD
+ a| 
+速度
+ a| 
+通知
+
+
+
+ a| 
+NTER
+ a| 
+传输错误
+ a| 
+通知
+
+
+
+ a| 
+NTFQ
+ a| 
+NTP 频率偏移
+ a| 
+次要
+
+
+
+ a| 
+NTLK
+ a| 
+NTP 锁定
+ a| 
+次要
+
+
+
+ a| 
+NTOF
+ a| 
+NTP 时间偏移
+ a| 
+次要
+
+
+
+ a| 
+NTSJ
+ a| 
+选定时间源抖动
+ a| 
+次要
+
+
+
+ a| 
+Ntlu
+ a| 
+NTP 状态
+ a| 
+major
+
+
+
+ a| 
+OPST
+ a| 
+整体电源状态
+ a| 
+major
+
+
+
+ a| 
+ORSU
+ a| 
+出站复制状态
+ a| 
+通知
+
+
+
+ a| 
+PSAS
+ a| 
+电源 A 状态
+ a| 
+major
+
+
+
+ a| 
+PSB
+ a| 
+电源 B 状态
+ a| 
+major
+
+
+
+ a| 
+RTTE
+ a| 
+Tivoli Storage Manager 状态
+ a| 
+通知
+
+
+
+ a| 
+RDTU
+ a| 
+Tivoli Storage Manager 状态
+ a| 
+major
+
+
+
+ a| 
+SAVP
+ a| 
+总可用空间（百分比）
+ a| 
+通知
+
+
+
+ a| 
+SHLH
+ a| 
+运行状况
+ a| 
+通知
+
+
+
+ a| 
+SLSA
+ a| 
+CPU 负载平均值
+ a| 
+通知
+
+
+
+ a| 
+SMTT
+ a| 
+事件总数
+ a| 
+通知
+
+
+
+ a| 
+SNST
+ a| 
+Status
+ a| 
+
+
+
+ a| 
+SOSS
+ a| 
+存储操作系统状态
+ a| 
+通知
+
+
+
+ a| 
+SST
+ a| 
+存储状态
+ a| 
+通知
+
+
+
+ a| 
+SVST
+ a| 
+Status
+ a| 
+通知
+
+
+
+ a| 
+TMEM
+ a| 
+已安装内存
+ a| 
+次要
+
+
+
+ a| 
+UMEM
+ a| 
+可用内存
+ a| 
+次要
+
+
+
+ a| 
+VMST
+ a| 
+Status
+ a| 
+次要
+
+
+
+ a| 
+VPRI.
+ a| 
+验证优先级
+ a| 
+通知
+
+
+
+ a| 
+VSTU
+ a| 
+对象验证状态
+ a| 
+通知
+
+|===

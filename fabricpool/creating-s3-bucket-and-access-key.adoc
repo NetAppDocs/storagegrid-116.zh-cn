@@ -1,0 +1,90 @@
+---
+permalink: fabricpool/creating-s3-bucket-and-access-key.html 
+sidebar: sidebar 
+keywords: fabricPool, S3 bucket, bucket, access key, secret access key 
+summary: 在将 StorageGRID 与 FabricPool 工作负载结合使用之前，您必须为 FabricPool 数据创建一个 S3 存储分段。您还需要为要用于 FabricPool 的租户帐户获取访问密钥和机密访问密钥。 
+---
+= 创建 S3 存储分段并获取访问密钥
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在将 StorageGRID 与 FabricPool 工作负载结合使用之前，您必须为 FabricPool 数据创建一个 S3 存储分段。您还需要为要用于 FabricPool 的租户帐户获取访问密钥和机密访问密钥。
+
+.您需要什么？ #8217 ；将需要什么
+* 您已创建一个租户帐户供 FabricPool 使用。
+
+
+以下说明介绍如何使用 StorageGRID 租户管理器创建存储分段并获取访问密钥。您也可以使用租户管理 API 或 StorageGRID S3 REST API 执行这些任务。或者，如果您使用的是 ONTAP 9.10 ，则可以改用 FabricPool 设置向导创建存储分段。
+
+了解更多信息：
+
+* xref:../tenant/index.adoc[使用租户帐户]
+* xref:../s3/index.adoc[使用 S3]
+
+
+.步骤
+. 登录到租户管理器。
++
+您可以执行以下任一操作：
+
++
+** 从网格管理器的租户帐户页面中，选择此租户的 * 登录 * 链接，然后输入您的凭据。
+** 在 Web 浏览器中输入租户帐户的 URL ，然后输入凭据。
+
+
+. 为 FabricPool 数据创建 S3 存储分段。
++
+您必须为计划使用的每个 ONTAP 集群创建一个唯一的存储分段。
+
++
+.. 选择 * 存储（ S3 ） * > * 分段 * 。
+.. 选择 * 创建存储分段 * 。
+.. 输入要与 FabricPool 结合使用的 StorageGRID 存储分段的名称。例如， `fabricpool-bucket` 。
++
+
+IMPORTANT: 创建存储分段后，您无法更改存储分段名称。
+
++
+存储分段名称必须符合以下规则：
+
++
+*** 每个 StorageGRID 系统必须是唯一的（而不仅仅是租户帐户中的唯一）。
+*** 必须符合 DNS 要求。
+*** 必须至少包含 3 个字符，并且不能超过 63 个字符。
+*** 可以是一个或多个标签的序列，并使用一个句点分隔相邻标签。每个标签必须以小写字母或数字开头和结尾，并且只能使用小写字母，数字和连字符。
+*** 不能与文本格式的 IP 地址类似。
+*** 不应在虚拟托管模式请求中使用句点。句点会在验证服务器通配符证书时出现发生原因 问题。
+
+
+.. 为此存储分段选择区域。
++
+默认情况下，所有分段都在 `us-east-1` 区域创建。
+
++
+image::../media/create_bucket_for_fabricpool.png[为 FabricPool 创建存储分段]
+
+.. 选择 * 创建存储分段 * 。
+
+
++
+
+NOTE: 对于 FabricPool 存储分段，建议的存储分段一致性级别为 `read-after-new-write 。` 不建议使用 "`Available` " 一致性级别。请参见 xref:../tenant/changing-consistency-level.adoc[更改一致性级别]。
+
+. 创建访问密钥和机密访问密钥。
++
+.. 选择 * 存储（ S3 ） * > * 我的访问密钥 * 。
+.. 选择 * 创建密钥 * 。
+.. 选择 * 创建访问密钥 * 。
+.. 将访问密钥 ID 和机密访问密钥复制到安全位置，或者选择 * 下载 .csv * 以保存包含访问密钥 ID 和机密访问密钥的电子表格文件。
++
+将 StorageGRID 配置为 FabricPool 云层时，您将在 ONTAP 中输入这些值。
+
++
+
+IMPORTANT: 如果您将来创建新的访问密钥和机密访问密钥，请务必立即更新 ONTAP 中的相应值，以确保 ONTAP 可以在 StorageGRID 中存储和检索数据，而不会造成中断。
+
+
+
+

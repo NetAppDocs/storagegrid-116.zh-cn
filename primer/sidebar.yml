@@ -1,0 +1,61 @@
+---
+section: primer
+title: 网格入门
+entries:
+- title: 概述
+  pdf-filename: StorageGRID 网格入门
+  url: "/primer/index.html"
+- title: 采用 StorageGRID 的混合云
+  url: "/primer/hybrid-clouds-with-storagegrid.html"
+- title: 架构和网络拓扑
+  url: "/primer/storagegrid-architecture-and-network-topology.html"
+- title: 对象管理
+  entries:
+  - title: StorageGRID 如何管理数据
+    url: "/primer/how-storagegrid-manages-data.html"
+  - title: 对象生命周期
+    entries:
+    - title: 对象的生命周期
+      url: "/primer/life-of-object.html"
+    - title: 载入数据流
+      url: "/primer/ingest-data-flow.html"
+    - title: 副本管理
+      url: "/primer/copy-management.html"
+    - title: 检索数据流
+      url: "/primer/retrieve-data-flow.html"
+    - title: 删除数据流
+      url: "/primer/delete-data-flow.html"
+- title: 如何使用 StorageGRID
+  entries:
+  - title: 了解 Grid Manager
+    url: "/primer/exploring-grid-manager.html"
+  - title: 了解租户管理器
+    url: "/primer/exploring-tenant-manager.html"
+  - title: 控制 StorageGRID 访问
+    url: "/primer/controlling-storagegrid-access.html"
+  - title: 管理租户和客户端连接
+    url: "/primer/managing-tenants-and-client-connections.html"
+  - title: 配置网络设置
+    url: "/primer/configuring-network-settings.html"
+  - title: 配置安全设置
+    url: "/primer/configuring-security-settings.html"
+  - title: 配置系统设置
+    url: "/primer/configuring-system-settings.html"
+  - title: 使用信息生命周期管理
+    url: "/primer/using-information-lifecycle-management.html"
+  - title: 监控操作
+    entries:
+    - title: 查看节点页面
+      url: "/primer/viewing-nodes-page.html"
+    - title: 监控和管理警报
+      url: "/primer/monitoring-and-managing-alerts.html"
+    - title: 使用 SNMP 监控
+      url: "/primer/using-snmp-monitoring.html"
+    - title: 查看审核消息
+      url: "/primer/reviewing-audit-messages.html"
+  - title: 执行维护
+    url: "/primer/performing-maintenance-procedures.html"
+  - title: 下载恢复包
+    url: "/primer/downloading-recovery-package.html"
+  - title: 使用支持选项
+    url: "/primer/using-storagegrid-support-options.html"

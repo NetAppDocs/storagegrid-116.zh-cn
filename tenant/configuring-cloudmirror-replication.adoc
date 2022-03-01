@@ -1,0 +1,97 @@
+---
+permalink: tenant/configuring-cloudmirror-replication.html 
+sidebar: sidebar 
+keywords: how to configure CloudMirror replication, replication xml 
+summary: CloudMirror 复制服务是三种 StorageGRID 平台服务之一。您可以使用 CloudMirror 复制将对象自动复制到外部 S3 存储分段。 
+---
+= 配置 CloudMirror 复制
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+。 xref:understanding-cloudmirror-replication-service.adoc[CloudMirror 复制服务] 是三种 StorageGRID 平台服务之一。您可以使用 CloudMirror 复制将对象自动复制到外部 S3 存储分段。
+
+.您需要什么？ #8217 ；将需要什么
+* StorageGRID 管理员必须为您的租户帐户启用平台服务。
+* 您必须已创建一个分段，才能用作复制源。
+* 要用作 CloudMirror 复制目标的端点必须已存在，并且必须具有其 URN 。
+* 您必须属于具有 " 管理所有分段 " 或 " 根访问 " 权限的用户组，此权限允许您管理租户帐户中所有 S3 分段的设置。使用租户管理器配置存储分段时，这些权限会覆盖组或存储分段策略中的权限设置。
+
+
+CloudMirror 复制会将对象从源存储分段复制到端点中指定的目标存储分段。要为存储分段启用 CloudMirror 复制，必须创建并应用有效的存储分段复制配置 XML 。复制配置 XML 必须对每个目标使用 S3 存储分段端点的 URN 。
+
+
+NOTE: 启用了 S3 对象锁定的源或目标分段不支持复制。
+
+有关存储分段复制以及如何配置的一般信息，请参见 Amazon Simple Storage Service （ S3 ）有关跨区域复制（ CRR ）的文档。有关 StorageGRID 如何实施 S3 存储分段复制配置 API 的信息，请参见 xref:../s3/index.adoc[有关实施 S3 客户端应用程序的说明]。
+
+如果在包含对象的存储分段上启用 CloudMirror 复制，则会复制添加到存储分段中的新对象，但不会复制存储分段中的现有对象。您必须更新现有对象才能触发复制。
+
+如果在复制配置 XML 中指定存储类，则 StorageGRID 在对目标 S3 端点执行操作时会使用该类。目标端点还必须支持指定的存储类。请务必遵循目标系统供应商提供的任何建议。
+
+.步骤
+. 为源存储分段启用复制：
++
+使用文本编辑器创建在 S3 复制 API 中指定的启用复制所需的复制配置 XML 。配置 XML 时：
+
++
+** 请注意， StorageGRID 仅支持复制配置的 V1 。这意味着， StorageGRID 不支持使用 `Filter` 元素作为规则，并遵循 V1 约定删除对象版本。有关详细信息，请参见有关复制配置的 Amazon 文档。
+** 使用 S3 存储分段端点的 URN 作为目标。
+** 也可以添加 ` <StorageClass>` 元素，并指定以下项之一：
++
+*** `standard` ：默认存储类。如果在上传对象时未指定存储类，则会使用 `Standard` storage class 。
+*** `standard_IA` ：（标准 - 不常访问。） 对于访问频率较低但仍需要在需要时快速访问的数据，请使用此存储类。
+*** `re介绍冗余` ：将此存储类用于非关键，可重现的数据，这些数据的存储冗余程度低于 `S` 标准存储类。
+
+
+** 如果在配置 XML 中指定 `role` ，则会忽略该角色。StorageGRID 不使用此值。
+
+
++
+[listing]
+----
+<ReplicationConfiguration>
+    <Role></Role>
+    <Rule>
+        <Status>Enabled</Status>
+        <Prefix>2020</Prefix>
+        <Destination>
+           <Bucket>urn:sgws:s3:::2017-records</Bucket>
+           <StorageClass>STANDARD</StorageClass>
+         </Destination>
+     </Rule>
+</ReplicationConfiguration>
+----
+. 在租户管理器中，选择 * 存储（ S3 ） * > * 分段 * 。
+. 选择源存储分段的名称。
++
+此时将显示存储分段详细信息页面。
+
+. 选择 * 平台服务 * > * 复制 * 。
+. 选中 * 启用复制 * 复选框。
+. 将复制配置 XML 粘贴到文本框中，然后选择 * 保存更改 * 。
++
+image::../media/tenant_bucket_replication_configuration.png[复制配置对话框的屏幕截图]
+
++
+
+NOTE: StorageGRID 管理员必须使用网格管理器或网格管理 API 为每个租户帐户启用平台服务。如果保存配置 XML 时发生错误，请联系 StorageGRID 管理员。
+
+. 验证复制配置是否正确：
++
+.. 向源存储分段添加一个对象，以满足复制配置中指定的复制要求。
++
+在前面显示的示例中，复制与前缀 "`2020` " 匹配的对象。
+
+.. 确认对象已复制到目标存储分段。
++
+对于小型对象，复制操作会快速进行。
+
+
+
+
+
+xref:../s3/index.adoc[使用 S3]
+
+xref:creating-platform-services-endpoint.adoc[创建平台服务端点]

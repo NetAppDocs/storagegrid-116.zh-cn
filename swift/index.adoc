@@ -1,0 +1,36 @@
+---
+permalink: swift/index.html 
+sidebar: sidebar 
+keywords: openstack swift api support 
+summary: 客户端应用程序可以使用 OpenStack Swift API 与 StorageGRID 系统相连接。 
+---
+= 使用 Swift ：概述
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+客户端应用程序可以使用 OpenStack Swift API 与 StorageGRID 系统相连接。
+
+StorageGRID 支持以下特定版本的 Swift 和 HTTP 。
+
+|===
+| 项目 | version 
+
+
+ a| 
+Swift 规格
+ a| 
+截至 2015 年 11 月的 OpenStack Swift 对象存储 API v1
+
+
+
+ a| 
+HTTP
+ a| 
+1.1 有关 HTTP 的详细信息，请参见 HTTP/1.1 （ RFC 7230-35 ）。
+
+* 注 * ： StorageGRID 不支持 HTTP/1.1 管道化。
+
+|===
+http://docs.openstack.org/developer/swift/api/object_api_v1_overview.html["OpenStack ：对象存储 API"^]

@@ -1,0 +1,89 @@
+---
+permalink: sg5600/replacing-other-hardware-components-sg5600.html 
+sidebar: sidebar 
+keywords: storagegrid, sg5600, storage node, storage appliance, Replacing, replace, hardware, components, remove, removing, removal, install, installing, installation, drive, fan, power supply, battery 
+summary: 您可能需要更换 StorageGRID 设备中的驱动器，风扇，电源或电池。 
+---
+= 更换其他硬件组件
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可能需要更换 StorageGRID 设备中的驱动器，风扇，电源或电池。
+
+.您需要什么？ #8217 ；将需要什么
+* 您已安装 E 系列硬件更换操作步骤 。
+* 此设备已运行 xref:placing-appliance-into-maintenance-mode.adoc[置于维护模式] 如果组件更换操作步骤 要求您关闭设备。
+
+
+更换驱动器，电源风扇箱，风扇箱，电源箱，电池 或驱动器抽盒，请参见 E2700 和 E5600 存储阵列的标准过程。重点介绍有关拆卸和更换硬件本身的分步说明；许多 SANtricity 存储管理器过程不适用于设备。
+
+
+
+== SG5612 组件更换说明
+
+|===
+| FRU | 请参见 
+
+
+ a| 
+驱动器
+ a| 
+按照 E 系列说明中的步骤更换 E2600 ， E2700 ， E5400 ， E5500 ， E5600 或 12 驱动器或 24 驱动器托盘中的驱动器。
+
+
+
+ a| 
+电源风扇箱
+ a| 
+按照 E 系列说明中的步骤更换 E5612 或 E5624 控制器驱动器托盘中发生故障的电源风扇箱
+
+
+
+ a| 
+E2700 控制器中的电池（需要卸下控制器）
+ a| 
+按照中的步骤进行操作 xref:replacing-e2700-controller.adoc[更换 E2700 控制器]，但请在现有控制器中安装新电池。
+
+|===
+
+
+== SG5660 组件更换说明
+
+|===
+| FRU | 请参见 
+
+
+ a| 
+驱动器
+ a| 
+按照 E 系列说明中的步骤更换 E2660 ， E2760 ， E5460 ， E5560 或 E5660 托盘中的驱动器。
+
+
+
+ a| 
+动力箱
+ a| 
+按照 E 系列说明中的步骤更换 E5660 控制器驱动器托盘中发生故障的电源箱
+
+
+
+ a| 
+风扇箱
+ a| 
+按照 E 系列说明中的步骤更换 E5660 控制器驱动器托盘中发生故障的风扇箱
+
+
+
+ a| 
+E2700 控制器中的电池（需要卸下控制器）
+ a| 
+按照中的步骤进行操作 xref:replacing-e2700-controller.adoc[更换 E2700 控制器]，但请在现有控制器中安装新电池。
+
+|===
+https://mysupport.netapp.com/info/web/ECMP11751516.html["NetApp E 系列和 EF 系列硬件更换过程"^]
+
+http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=61765["NetApp 文档： E2700 系列"^]
+
+http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=61893["NetApp 文档： E5600 系列"^]

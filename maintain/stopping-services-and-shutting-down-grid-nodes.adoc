@@ -1,0 +1,105 @@
+---
+permalink: maintain/stopping-services-and-shutting-down-grid-nodes.html 
+sidebar: sidebar 
+keywords: storagegrid, recover, stop services, shut down nodes, node shutdown 
+summary: 在关闭 StorageGRID 系统之前，必须先停止每个网格节点上运行的所有服务，然后关闭所有 VMware 虚拟机，容器引擎和 StorageGRID 设备。 
+---
+= 停止服务并关闭网格节点
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在关闭 StorageGRID 系统之前，必须先停止每个网格节点上运行的所有服务，然后关闭所有 VMware 虚拟机，容器引擎和 StorageGRID 设备。
+
+首先停止管理节点和 API 网关节点上的服务，然后停止存储节点上的服务。
+
+通过此方法，您可以使用主管理节点尽可能长时间地监控其他网格节点的状态。
+
+
+NOTE: 如果一个主机包含多个网格节点，请勿关闭该主机，直到停止该主机上的所有节点为止。如果主机包含主管理节点，请最后关闭该主机。
+
+
+NOTE: 如果需要，您可以 xref:linux-migrating-grid-node-to-new-host.adoc[将节点从一台 Linux 主机迁移到另一台 Linux 主机] 在不影响网格功能或可用性的情况下执行主机维护。
+
+.步骤
+. 停止所有客户端应用程序访问网格。
+. 【登录到每个网关节点】登录到每个网关节点：
++
+.. 输入以下命令： `ssh admin@ grid_node_ip_`
+.. 输入 `passwords.txt` 文件中列出的密码。
+.. 输入以下命令切换到 root ： `su -`
+.. 输入 `passwords.txt` 文件中列出的密码。
++
+以 root 用户身份登录时，提示符将从 ` $` 更改为 ` #` 。
+
+
+
+. 【 stop_all_services]] 停止节点上运行的所有服务： `service servermanager stop`
++
+服务可能需要长达 15 分钟才能关闭，您可能需要远程登录到系统以监控关闭过程。
+
+
+
+. 重复上述两个步骤，停止所有存储节点，归档节点和非主管理节点上的服务。
++
+您可以按任何顺序停止这些节点上的服务。
+
++
+
+NOTE: 如果问题描述 您使用 `sservice servermanager stop` 命令停止设备存储节点上的服务，则必须重新启动设备以重新启动节点。
+
+. 对于主管理节点，重复执行的步骤 <<log_in_to_gn,登录到节点>> 和 <<stop_all_services,停止节点上的所有服务>>。
+. 对于在 Linux 主机上运行的节点：
++
+.. 登录到主机操作系统。
+.. 停止节点： `StorageGRID node stop`
+.. 关闭主机操作系统。
+
+
+. 对于在 VMware 虚拟机上运行的节点以及设备存储节点，请使用问题描述 关闭命令： `shutdown -h now`
++
+执行此步骤，无论 `sservice servermanager stop` 命令的结果如何。
+
++
+对于设备，此命令将关闭计算控制器，但设备仍处于打开状态。您必须完成下一步。
+
+. 如果您有设备节点：
++
+** 对于 SG100 或 SG1000 服务设备
++
+... 关闭设备电源。
+... 等待蓝色电源 LED 熄灭。
+
+
+** 对于 SG6000 设备
++
+... 等待存储控制器背面的绿色缓存活动 LED 熄灭。
++
+当需要将缓存的数据写入驱动器时，此 LED 亮起。您必须等待此 LED 关闭，然后再关闭电源。
+
+... 关闭设备电源，然后等待蓝色电源 LED 熄灭。
+
+
+** 对于 SG5700 设备
++
+... 等待存储控制器背面的绿色缓存活动 LED 熄灭。
++
+当需要将缓存的数据写入驱动器时，此 LED 亮起。您必须等待此 LED 关闭，然后再关闭电源。
+
+... 关闭设备电源，等待所有 LED 和七段显示活动停止。
+
+
+
+
+. 如果需要，请注销命令 Shell ： `exit`
++
+此时， StorageGRID 网格已关闭。
+
+
+
+xref:../sg100-1000/index.adoc[SG100 和 SG1000 服务设备]
+
+xref:../sg6000/index.adoc[SG6000 存储设备]
+
+xref:../sg5700/index.adoc[SG5700 存储设备]

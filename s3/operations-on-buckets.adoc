@@ -1,0 +1,378 @@
+---
+permalink: s3/operations-on-buckets.html 
+sidebar: sidebar 
+keywords: bucket, buckets, operations on buckets 
+summary: 对于每个 S3 租户帐户， StorageGRID 系统最多支持 1 ， 000 个分段。 
+---
+= 对存储分段执行的操作
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+对于每个 S3 租户帐户， StorageGRID 系统最多支持 1 ， 000 个分段。
+
+存储分段名称限制遵循 AWS US 标准区域限制，但您应进一步将其限制为 DNS 命名约定，以便支持 S3 虚拟托管模式请求。
+
+https://docs.aws.amazon.com/AmazonS3/latest/dev/BucketRestrictions.html["Amazon Web Services （ AWS ）文档：存储分段限制"^]
+
+xref:../admin/configuring-s3-api-endpoint-domain-names.adoc[配置 S3 API 端点域名]
+
+获取分段（列出对象）和获取分段版本操作支持 StorageGRID 一致性控制。
+
+您可以检查是否已为各个存储分段启用上次访问时间更新。
+
+下表介绍了 StorageGRID 如何实施 S3 REST API 存储分段操作。要执行其中任何操作，必须为帐户提供必要的访问凭据。
+
+[cols="1a,3a"]
+|===
+| 操作 | 实施 
+
+
+ a| 
+删除存储分段
+ a| 
+在所有 Amazon S3 REST API 行为下实施。
+
+
+
+ a| 
+删除存储分段或
+ a| 
+此操作将删除存储分段的 CORS 配置。
+
+
+
+ a| 
+删除存储分段加密
+ a| 
+此操作将从存储分段中删除默认加密。现有加密对象保持加密状态，但添加到存储分段中的任何新对象不会加密。
+
+
+
+ a| 
+删除存储分段生命周期
+ a| 
+此操作将从存储分段中删除生命周期配置。
+
+
+
+ a| 
+删除存储分段策略
+ a| 
+此操作将删除附加到存储分段的策略。
+
+
+
+ a| 
+删除存储分段复制
+ a| 
+此操作将删除附加到存储分段的复制配置。
+
+
+
+ a| 
+删除存储分段标记
+ a| 
+此操作使用 `tagging` Subresource 从存储分段中删除所有标记。
+
+
+
+ a| 
+获取分段（列出对象）版本 1 和版本 2
+ a| 
+此操作将返回一个存储分段中的部分或全部（最多 1 ， 000 个）对象。对象的存储类可以具有两个值中的任一值，即使使用 `refastore_redundancy` storage class 选项载入对象也是如此：
+
+* `standard` ，表示对象存储在由存储节点组成的存储池中。
+* `Glacier` ，表示对象已移至云存储池指定的外部存储分段。
+
+
+如果存储分段包含大量前缀相同的已删除密钥，则响应可能包括一些不包含密钥的 `CommonPrefixes` 。
+
+
+
+ a| 
+获取分段 ACL
+ a| 
+此操作将返回肯定响应以及存储分段所有者的 ID ， DisplayName 和权限，指示所有者对存储分段具有完全访问权限。
+
+
+
+ a| 
+获取分段存储器
+ a| 
+此操作将返回存储分段的 `cors` 配置。
+
+
+
+ a| 
+获取存储分段加密
+ a| 
+此操作将返回存储分段的默认加密配置。
+
+
+
+ a| 
+获取存储分段生命周期
+ a| 
+此操作将返回存储分段的生命周期配置。
+
+
+
+ a| 
+获取存储分段位置
+ a| 
+此操作将返回在 PUT Bucket 请求中使用 `LocationConstrcont` 元素设置的区域。如果存储分段的区域为 `us-east-1` ，则会为该区域返回一个空字符串。
+
+
+
+ a| 
+获取存储分段通知
+ a| 
+此操作将返回附加到存储分段的通知配置。
+
+
+
+ a| 
+获取 Bucket 对象版本
+ a| 
+通过在存储分段上进行读取访问，此操作会使用 `versions` Subresource 列出存储分段中所有版本对象的元数据。
+
+
+
+ a| 
+获取存储分段策略
+ a| 
+此操作将返回附加到存储分段的策略。
+
+
+
+ a| 
+获取存储分段复制
+ a| 
+此操作将返回附加到存储分段的复制配置。
+
+
+
+ a| 
+获取存储分段标记
+ a| 
+此操作使用 `tagging` Subresource 返回存储分段的所有标记。
+
+
+
+ a| 
+获取存储分段版本控制
+ a| 
+此实施会使用 `ve决策` 子资源返回存储分段的版本控制状态。
+
+* _blank_ ：从未启用版本控制（存储分段为 "`未版本控制` " ）
+* Enabled ：已启用版本控制
+* suspended ：先前已启用版本控制并已暂停
+
+
+
+
+ a| 
+获取对象锁定配置
+ a| 
+此操作将返回存储分段默认保留模式和默认保留期限（如果已配置）。
+
+请参见 xref:../s3/use-s3-object-lock-default-bucket-retention.adoc#get-object-lock-configuration[获取对象锁定配置] 了解详细信息。
+
+
+
+ a| 
+头存储分段
+ a| 
+此操作将确定某个存储分段是否存在，并且您有权访问该存储分段。
+
+此操作将返回：
+
+* `x-ntap-sg-bucket-id` ： UUID 格式的存储分段 UUID 。
+* `x-ntap-sg-trace-id` ：关联请求的唯一跟踪 ID 。
+
+
+
+
+ a| 
+放入存储分段
+ a| 
+此操作将创建一个新存储分段。创建存储分段后，您就会成为存储分段所有者。
+
+* 存储分段名称必须符合以下规则：
++
+** 每个 StorageGRID 系统必须是唯一的（而不仅仅是租户帐户中的唯一）。
+** 必须符合 DNS 要求。
+** 必须至少包含 3 个字符，并且不能超过 63 个字符。
+** 可以是一个或多个标签的序列，并使用一个句点分隔相邻标签。每个标签必须以小写字母或数字开头和结尾，并且只能使用小写字母，数字和连字符。
+** 不能与文本格式的 IP 地址类似。
+** 不应在虚拟托管模式请求中使用句点。句点会在验证服务器通配符证书时出现发生原因 问题。
+
+
+* 默认情况下，会在 `us-east-1` 区域中创建分段；但是，您可以使用请求正文中的 `LocationConstrcont` Request 元素来指定其他区域。使用 `LocationConstrcont` 元素时，必须指定已使用网格管理器或网格管理 API 定义的区域的确切名称。如果您不知道应使用的区域名称，请联系您的系统管理员。
++
+* 注 * ：如果 PUT 存储分段请求使用的区域尚未在 StorageGRID 中定义，则会发生错误。
+
+* 您可以使用 `x-AMZ-bucket-object-lock-enabled` 请求标头来创建启用了 S3 对象锁定的存储分段。请参见 xref:../s3/using-s3-object-lock.adoc[使用 S3 对象锁定]。
++
+创建存储分段时，必须启用 S3 对象锁定。创建存储分段后，您无法添加或禁用 S3 对象锁定。S3 对象锁定需要分段版本控制，在创建分段时会自动启用分段版本控制。
+
+
+
+
+
+ a| 
+放入存储分段箱
+ a| 
+此操作会为存储分段设置 CORS 配置，以便存储分段可以处理跨源请求。跨源资源共享（ CORS ）是一种安全机制，允许一个域中的客户端 Web 应用程序访问不同域中的资源。例如，假设您使用名为 `images` 的 S3 存储分段来存储图形。通过为 `images` 存储分段设置 CORS 配置，您可以允许在网站 ` + http://www.example.com+` 上显示该存储分段中的图像。
+
+
+
+ a| 
+PUT 存储分段加密
+ a| 
+此操作将设置现有存储分段的默认加密状态。启用存储分段级别加密后，添加到存储分段中的任何新对象都会进行加密。 StorageGRID 支持使用 StorageGRID 管理的密钥进行服务器端加密。指定服务器端加密配置规则时，请将 `SSEAlgorithm` 参数设置为 `AES256` ，不要使用 `KMSMasterKeyID` 参数。
+
+如果对象上传请求已指定加密（即，如果请求包含 `x-AMZ-server-side encrypation-*` 请求标头），则存储分段默认加密配置将被忽略。
+
+
+
+ a| 
+PUT 存储分段生命周期
+ a| 
+此操作将为存储分段创建新的生命周期配置或替换现有的生命周期配置。StorageGRID 在一个生命周期配置中最多支持 1 ， 000 条生命周期规则。每个规则可以包含以下 XML 元素：
+
+* 到期日期（天，日期）
+* 非当前版本到期（非当前日期）
+* 筛选器（前缀，标记）
+* Status
+* ID
+
+
+StorageGRID 不支持以下操作：
+
+* AbortIncompleteMultipartUpload
+* ExpiredObjectDeleteMarker
+* 过渡
+
+
+要了解存储分段生命周期中的到期操作如何与 ILM 放置说明交互，请参见使用信息生命周期管理功能管理对象的说明中的 "`ILM 如何在对象的整个生命周期内运行` " 。
+
+* 注 * ：存储分段生命周期配置可用于启用了 S3 对象锁定的存储分段，但传统合规存储分段不支持存储分段生命周期配置。
+
+
+
+ a| 
+PUT 存储分段通知
+ a| 
+此操作将使用请求正文中包含的通知配置 XML 为存储分段配置通知。您应了解以下实施详细信息：
+
+* StorageGRID 支持将简单通知服务（ SNS ）主题作为目标。不支持简单队列服务（ SQS ）或 Amazon Lambda 端点。
+* 必须将通知目标指定为 StorageGRID 端点的 URN 。可以使用租户管理器或租户管理 API 创建端点。
++
+要成功配置通知，端点必须存在。如果端点不存在，则返回 `400 bad request` 错误，并显示代码 `InvalidArgument` 。
+
+* 您不能为以下事件类型配置通知。这些事件类型 * 不 * 受支持。
++
+** `s 3 ：异径冗余 LostObject`
+** `s 3 ： ObjectRestore ：已完成`
+
+
+* 从 StorageGRID 发送的事件通知使用标准 JSON 格式，只是它们不包含某些密钥，而对其他密钥使用特定值，如以下列表所示：
+* * 事件源 *
++
+`sGWS ： S3`
+
+* * awsRegion*
++
+不包括
+
+* * 。 x-AMZ-id-2*
++
+不包括
+
+* * arn*
++
+`urn ： sgws ： s3 ：：： bucket_name`
+
+
+
+
+
+ a| 
+PUT 存储分段策略
+ a| 
+此操作将设置附加到存储分段的策略。
+
+
+
+ a| 
+PUT 存储分段复制
+ a| 
+此操作将使用请求正文中提供的复制配置 XML 为存储分段配置 StorageGRID CloudMirror 复制。对于 CloudMirror 复制，您应了解以下实施详细信息：
+
+* StorageGRID 仅支持复制配置的 V1 。这意味着， StorageGRID 不支持使用 `Filter` 元素作为规则，并遵循 V1 约定删除对象版本。有关详细信息，请参见 https://docs.aws.amazon.com/AmazonS3/latest/userguide/replication-add-config.html["有关复制配置的 Amazon S3 文档"^]。
+* 分段复制可以在分版本或未分版本的分段上配置。
+* 您可以在复制配置 XML 的每个规则中指定不同的目标存储分段。一个源存储分段可以复制到多个目标存储分段。
+* 必须将目标分段指定为租户管理器或租户管理 API 中指定的 StorageGRID 端点的 URN 。
++
+要成功进行复制配置，必须存在此端点。如果此端点不存在，则此请求将失败，并显示 `400 错误请求` 。错误消息显示： `Unable to save the replication policy 。指定的端点 URN 不存在： _URN_ 。`
+
+* 您不需要在配置 XML 中指定 `role` 。StorageGRID 不使用此值，如果提交，则会忽略此值。
+* 如果在配置 XML 中省略存储类，则 StorageGRID 默认使用 `Standard` storage class 。
+* 如果从源存储分段中删除对象或删除源存储分段本身，则跨区域复制行为如下：
++
+** 如果在复制对象或存储分段之前将其删除，则不会复制此对象 / 存储分段，您也不会收到通知。
+** 如果您在复制对象或存储分段后将其删除，则 StorageGRID 会对跨区域复制的 V1 遵循标准 Amazon S3 删除行为。
+
+
+
+
+
+
+ a| 
+放置存储分段标记
+ a| 
+此操作使用 `tagging` Subresource 为存储分段添加或更新一组标记。添加存储分段标记时，请注意以下限制：
+
+* StorageGRID 和 Amazon S3 为每个存储分段最多支持 50 个标签。
+* 与存储分段关联的标记必须具有唯一的标记密钥。一个标记密钥的长度最多可包含 128 个 Unicode 字符。
+* 标记值的长度最多可以为 256 个 Unicode 字符。
+* 密钥和值区分大小写。
+
+
+
+
+ a| 
+PUT 存储分版本
+ a| 
+此实施使用 `ve决策` 子资源来设置现有存储分段的版本控制状态。您可以使用以下值之一设置版本控制状态：
+
+* Enabled ：为存储分段中的对象启用版本控制。添加到存储分段中的所有对象都会收到唯一的版本 ID 。
+* suspended ：为存储分段中的对象禁用版本控制。添加到存储分段的所有对象都会收到版本 ID `null` 。
+
+
+
+
+ a| 
+PUT 对象锁定配置
+ a| 
+此操作将配置或删除存储分段默认保留模式和默认保留期限。
+
+如果修改了默认保留期限，则现有对象版本的保留日期将保持不变，不会使用新的默认保留期限重新计算。
+
+请参见 xref:../s3/use-s3-object-lock-default-bucket-retention.adoc#put-object-lock-configuration[PUT 对象锁定配置] 了解详细信息。
+
+|===
+xref:consistency-controls.adoc[一致性控制]
+
+xref:get-bucket-last-access-time-request.adoc[获取分段上次访问时间请求]
+
+xref:bucket-and-group-access-policies.adoc[存储分段和组访问策略]
+
+xref:s3-operations-tracked-in-audit-logs.adoc[在审核日志中跟踪 S3 操作]
+
+xref:../ilm/index.adoc[使用 ILM 管理对象]
+
+xref:../tenant/index.adoc[使用租户帐户]

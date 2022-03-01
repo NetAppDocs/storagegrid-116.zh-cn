@@ -1,0 +1,17 @@
+---
+permalink: admin/managing-storage-options.html 
+sidebar: sidebar 
+keywords: storage options 
+summary: 存储选项包括对象分段设置，存储卷水印的当前值以及元数据预留空间设置。您还可以查看网关节点上已弃用的 CLB 服务以及存储节点上的 LDR 服务使用的 S3 和 Swift 端口。 
+---
+= 管理存储选项
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+存储选项包括对象分段设置，存储卷水印的当前值以及元数据预留空间设置。您还可以查看网关节点上已弃用的 CLB 服务以及存储节点上的 LDR 服务使用的 S3 和 Swift 端口。
+
+有关端口分配的信息，请参见 xref:summary-ip-addresses-and-ports-for-client-connections.adoc[摘要：客户端连接的 IP 地址和端口]。
+
+image::../media/storage_options.png[存储选项]

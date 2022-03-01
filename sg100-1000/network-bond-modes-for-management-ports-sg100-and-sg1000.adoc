@@ -1,0 +1,46 @@
+---
+permalink: sg100-1000/network-bond-modes-for-management-ports-sg100-and-sg1000.html 
+sidebar: sidebar 
+keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gateway Node, admin node, Network bond, Network bonding, Network bond mode, Network-bond mode, independent, active-backup, active backup, management, management port, management ports 
+summary: 对于服务设备上的两个 1-GbE 管理端口，您可以选择独立网络绑定模式或主动备份网络绑定模式来连接到可选的管理网络。 
+---
+= 管理端口的网络绑定模式
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+对于服务设备上的两个 1-GbE 管理端口，您可以选择独立网络绑定模式或主动备份网络绑定模式来连接到可选的管理网络。
+
+* SG100 网络管理端口 *
+
+image::../media/sg100_bonded_management_ports.png[sg100 绑定管理端口]
+
+* SG1000 网络管理端口 *
+
+image::../media/sg1000_bonded_management_ports.png[SG1000 网络管理端口]
+
+在独立模式下，只有左侧的管理端口连接到管理网络。此模式不提供冗余路径。右侧的管理端口未连接，可用于临时本地连接（使用 IP 地址 169.254.0.1 ）
+
+在主动备份模式下，两个管理端口均连接到管理网络。一次只有一个端口处于活动状态。如果活动端口发生故障，其备份端口会自动提供故障转移连接。将这两个物理端口绑定到一个逻辑管理端口可提供指向管理网络的冗余路径。
+
+
+NOTE: 如果在将 1-GbE 管理端口配置为主动备份模式后需要临时本地连接到服务设备，请从两个管理端口拔下缆线，将临时缆线插入右侧的管理端口，然后使用 IP 地址 169.254.0.1 访问此设备。
+
+|===
+| Callout | 网络绑定模式 
+
+
+ a| 
+答
+ a| 
+主动备份模式。这两个管理端口都绑定到一个连接到管理网络的逻辑管理端口。
+
+
+
+ a| 
+I
+ a| 
+独立模式。左侧端口连接到管理网络。右侧端口可用于临时本地连接（ IP 地址 169.254.0.1 ）。
+
+|===

@@ -1,0 +1,49 @@
+---
+permalink: ilm/removing-cloud-storage-pool.html 
+sidebar: sidebar 
+keywords: remove cloud storage pool 
+summary: 您可以删除未在 ILM 规则中使用且不包含对象数据的云存储池。 
+---
+= 删除云存储池
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以删除未在 ILM 规则中使用且不包含对象数据的云存储池。
+
+.您需要什么？ #8217 ；将需要什么
+* 您将使用登录到网格管理器 xref:../admin/web-browser-requirements.adoc[支持的 Web 浏览器]。
+* 您具有特定的访问权限。
+* 您已确认 S3 存储分段或 Azure 容器不包含任何对象。如果您尝试删除包含对象的云存储池，则会发生错误。请参见 xref:troubleshooting-cloud-storage-pools.adoc[对云存储池进行故障排除]。
++
+
+NOTE: 创建云存储池时， StorageGRID 会将标记文件写入存储分段或容器，以将其标识为云存储池。请勿删除名为 `x-ntap-sgws-cloud pool-uuid` 的文件。
+
+* 您已删除可能已使用此池的任何 ILM 规则。
+
+
+.步骤
+. 选择 * ILM * > * 存储池 * 。
++
+此时将显示存储池页面。
+
+. 选择 ILM 规则中当前未使用的云存储池的单选按钮。
++
+如果在 ILM 规则中使用云存储池，则无法将其删除。已禁用 * 删除 * 按钮。
+
++
+image::../media/cloud_storage_pool_used_in_ilm_rule.png[ILM 规则中使用的云存储池]
+
+. 选择 * 删除 * 。
++
+此时将显示确认警告。
+
++
+image::../media/cloud_storage_pool_remove.gif[删除云存储池]
+
+. 选择 * 确定 * 。
++
+此时将删除云存储池。
+
+

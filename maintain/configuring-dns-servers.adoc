@@ -1,0 +1,35 @@
+---
+permalink: maintain/configuring-dns-servers.html 
+sidebar: sidebar 
+keywords: storagegrid, dns, configuring dns, configure dns, domain name system 
+summary: 您可以添加，删除和更新域名系统 \ （ DNS\ ）服务器，以便可以使用完全限定域名 \ （ FQDN\ ）主机名，而不是 IP 地址。 
+---
+= 配置 DNS 服务器
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以添加，删除和更新域名系统（ DNS ）服务器，以便使用完全限定域名（ FQDN ）主机名，而不是 IP 地址。
+
+.您需要什么？ #8217 ；将需要什么
+* 您必须使用登录到网格管理器 xref:../admin/web-browser-requirements.adoc[支持的 Web 浏览器]。
+* 您必须具有维护或根访问权限。
+* 您必须具有要配置的 DNS 服务器的 IP 地址。
+
+
+通过指定 DNS 服务器信息，您可以对电子邮件或 SNMP 通知和 AutoSupport 使用完全限定域名（ FQDN ）主机名，而不是 IP 地址。建议至少指定两个 DNS 服务器。
+
+
+IMPORTANT: 为 DNS 服务器提供 2 到 6 个 IP 地址。通常，选择每个站点在发生网络隔离时可在本地访问的 DNS 服务器。这是为了确保已隔离的站点可以继续访问 DNS 服务。配置网格范围的 DNS 服务器列表后，您可以 xref:modifying-dns-configuration-for-single-grid-node.adoc[进一步自定义每个节点的 DNS 服务器列表]。
+
+如果省略 DNS 服务器信息或 DNS 服务器信息配置不正确，则会在每个网格节点的 SSM 服务上触发 DNST 警报。如果 DNS 配置正确且新服务器信息已到达所有网格节点，则警报将清除。
+
+.步骤
+. 选择 * 维护 * > * 网络 * > * DNS 服务器 * 。
+. 在服务器部分中，根据需要添加更新或删除 DNS 服务器条目。
++
+最佳做法是，每个站点至少指定两个 DNS 服务器。最多可以指定六个 DNS 服务器。
+
+. 单击 * 保存 * 。
+

@@ -1,0 +1,52 @@
+---
+permalink: admin/what-admin-node-is.html 
+sidebar: sidebar 
+keywords: admin nodes 
+summary: 管理节点可提供系统配置，监控和日志记录等管理服务。每个网格都必须有一个主管理节点，并且可能有任意数量的非主管理节点，以实现冗余。 
+---
+= 什么是管理节点
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+管理节点可提供系统配置，监控和日志记录等管理服务。每个网格都必须有一个主管理节点，并且可能有任意数量的非主管理节点，以实现冗余。
+
+登录到网格管理器或租户管理器时，您正在连接到管理节点。您可以连接到任何管理节点，每个管理节点都会显示一个类似的 StorageGRID 系统视图。但是，必须使用主管理节点执行维护过程。
+
+管理节点还可用于对 S3 和 Swift 客户端流量进行负载平衡。
+
+管理节点托管以下服务：
+
+* AMS 服务
+* CMN 服务
+* NMS 服务
+* Prometheus 服务
+* 负载平衡器和高可用性服务（用于支持 S3 和 Swift 客户端流量）
+
+
+管理节点还支持管理应用程序程序接口（ Management Application Program Interface ， mgmt-API ）处理来自网格管理 API 和租户管理 API 的请求。请参见 xref:using-grid-management-api.adoc[使用网格管理 API]。
+
+
+
+== 什么是 AMS 服务
+
+审核管理系统（ Audit Management System ， AMS ）服务可跟踪系统活动和事件。
+
+
+
+== 什么是 CMN 服务
+
+配置管理节点（ CMN ）服务负责管理所有服务所需的连接和协议功能的系统范围配置。此外， CMN 服务还用于运行和监控网格任务。每个 StorageGRID 部署只有一个 CMN 服务。托管 CMN 服务的管理节点称为主管理节点。
+
+
+
+== 什么是 NMS 服务
+
+网络管理系统（ Network Management System ， NMS ）服务为通过网格管理器（ StorageGRID 系统基于浏览器的界面）显示的监控，报告和配置选项提供支持。
+
+
+
+== 什么是 Prometheus 服务
+
+Prometheus 服务从所有节点上的服务收集时间序列指标。

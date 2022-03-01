@@ -1,0 +1,102 @@
+---
+permalink: sg6000/sg6060-cabling-optional-expansion-shelves.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6000, storage node, storage appliance, cabling, cable, wiring, wire, expansion shelf, sg6060 
+summary: 如果您使用的是扩展架，则必须将其连接到 E2860 控制器架。每个 SG6060 设备最多可以有两个扩展架。 
+---
+= SG6060 ：为可选扩展架布线
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果您使用的是扩展架，则必须将其连接到 E2860 控制器架。每个 SG6060 设备最多可以有两个扩展架。
+
+.您需要什么？ #8217 ；将需要什么
+* 每个扩展架附带两根 SAS 缆线。
+* 您已将扩展架安装在包含 E2860 控制器架的机柜或机架中。
++
+xref:sg6060-installing-60-drive-shelves-into-cabinet-or-rack.adoc[SG6060 ：将 60 个驱动器磁盘架安装到机柜或机架中]
+
+
+
+将每个扩展架连接到 E2860 控制器架，如图所示。
+
+此图显示了两个扩展架。如果只有一个，请将 IOM A 连接到控制器 A ，并将 IOM B 连接到控制器 B
+
+image::../media/expansion_shelves_connections_sg6060.png[SG6060 扩展架连接]
+
+[cols="1a,2a"]
+|===
+| Callout | Description 
+
+
+ a| 
+1.
+ a| 
+SG6000-CN
+
+
+
+ a| 
+2.
+ a| 
+E2860 控制器架
+
+
+
+ a| 
+3.
+ a| 
+控制器 A
+
+
+
+ a| 
+4.
+ a| 
+控制器 B
+
+
+
+ a| 
+5.
+ a| 
+扩展架 1
+
+
+
+ a| 
+6.
+ a| 
+扩展架 1 的 IOM A
+
+
+
+ a| 
+7.
+ a| 
+扩展架 1 的 IOM B
+
+
+
+ a| 
+8.
+ a| 
+扩展架 2.
+
+
+
+ a| 
+9
+ a| 
+扩展架 2 的 IOM A
+
+
+
+ a| 
+10
+ a| 
+扩展架 2 的 IOM B
+
+|===

@@ -1,0 +1,113 @@
+---
+permalink: fabricpool/information-needed-to-attach-storagegrid-as-cloud-tier.html 
+sidebar: sidebar 
+keywords: StorageGRID, fabricPool, ONTAP System Manager, ONTAP CLI, port, FQDN, object store name 
+summary: 在将 StorageGRID 附加为 FabricPool 的云层之前，您必须在 StorageGRID 中执行一些配置步骤并获取某些值。 
+---
+= 将 StorageGRID 附加为云层所需的信息
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在将 StorageGRID 附加为 FabricPool 的云层之前，您必须在 StorageGRID 中执行一些配置步骤并获取某些值。
+
+下表列出了在将 StorageGRID 作为 FabricPool 的云层附加时必须向 ONTAP 提供的信息。本节中的主题介绍如何使用 StorageGRID 网格管理器和租户管理器来获取所需信息。
+
+
+NOTE: 列出的确切字段名称以及用于在 ONTAP 中输入所需值的过程取决于您使用的是 ONTAP 命令行界面（ storage aggregate object-store config create ）还是 ONTAP 系统管理器（ * 存储 * > * 聚合和磁盘 * > * 云层 * ）。
+
+有关详细信息，请参见以下内容：
+
+* https://www.netapp.com/pdf.html?item=/media/17239-tr4598pdf.pdf["TR-4598 ：《 ONTAP 9.9.1 中的 FabricPool 最佳实践》"^]
+* https://docs.netapp.com/us-en/ontap/index.html["ONTAP 9 文档"^]
+
+
+[cols="1a,2a"]
+|===
+| ONTAP 字段 | Description 
+
+
+ a| 
+对象存储名称
+ a| 
+任何唯一的描述性名称。例如， `StorageGRID_Cloud_Tier` 。
+
+
+
+ a| 
+提供程序类型
+ a| 
+StorageGRID （ ONTAP 系统管理器）或 `SGWS` （ ONTAP 命令行界面）。
+
+
+
+ a| 
+Port
+ a| 
+FabricPool 连接到 StorageGRID 时将使用的端口。您可以确定在定义 StorageGRID 负载平衡器端点时要使用的端口号。
+
+xref:creating-load-balancer-endpoint-for-fabricpool.adoc[为 FabricPool 创建负载平衡器端点]
+
+
+
+ a| 
+服务器名称
+ a| 
+StorageGRID 负载平衡器端点的完全限定域名（ FQDN ）。例如， `s3.storagegrid.company.com` 。
+
+请注意以下事项：
+
+* 此处指定的域名必须与您为 StorageGRID 负载平衡器端点上传的 CA 证书上的域名匹配。
+* 此域名的 DNS 记录必须映射到要用于连接到 StorageGRID 的每个 IP 地址。
+
+
+xref:configuring-dns-for-storagegrid-ip-addresses.adoc[为 DNS 服务器配置 StorageGRID IP 地址]
+
+
+
+ a| 
+容器名称
+ a| 
+要在此 ONTAP 集群中使用的 StorageGRID 存储分段的名称。例如， `fabricpool-bucket` 。您可以在租户管理器中创建此存储分段，也可以从 ONTAP 9.10 System Manager 开始使用 FabricPool 设置向导创建存储分段。
+
+请注意以下事项：
+
+* 创建配置后，无法更改存储分段名称。
+* 存储分段不能启用版本控制。
+* 您必须为每个 ONTAP 集群使用不同的分段，以便将数据分层到 StorageGRID 。
+
+
+xref:creating-s3-bucket-and-access-key.adoc[创建 S3 存储分段并获取访问密钥]
+
+
+
+ a| 
+访问密钥和机密密码
+ a| 
+StorageGRID 租户帐户的访问密钥和机密访问密钥。
+
+您可以在租户管理器中生成这些值。
+
+xref:creating-s3-bucket-and-access-key.adoc[创建 S3 存储分段并获取访问密钥]
+
+
+
+ a| 
+SSL
+ a| 
+必须启用。
+
+
+
+ a| 
+对象存储证书
+ a| 
+创建 StorageGRID 负载平衡器端点时上传的 CA 证书。
+
+* 注意： * 如果中间 CA 颁发了 StorageGRID 证书，则必须提供中间 CA 证书。如果 StorageGRID 证书是直接由根 CA 颁发的，则必须提供根 CA 证书。
+
+xref:creating-load-balancer-endpoint-for-fabricpool.adoc[为 FabricPool 创建负载平衡器端点]
+
+|===
+获取所需的 StorageGRID 信息后，您可以转到 ONTAP 将 StorageGRID 添加为云层，将云层添加为聚合并设置卷分层策略。

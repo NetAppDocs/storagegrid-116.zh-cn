@@ -1,0 +1,39 @@
+---
+permalink: tenant/duplicating-group.html 
+sidebar: sidebar 
+keywords: how to duplicate tenant group 
+summary: 您可以通过复制现有组来更快地创建新组。 
+---
+= 重复的组
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以通过复制现有组来更快地创建新组。
+
+.您需要什么？ #8217 ；将需要什么
+* 您必须使用登录到租户管理器 xref:../admin/web-browser-requirements.adoc[支持的 Web 浏览器]。
+* 您必须属于具有 root 访问权限的用户组。请参见 xref:tenant-management-permissions.adoc[租户管理权限]。
+
+
+.步骤
+. 选择 * 访问管理 * > * 组 * 。
+. 选中要复制的组对应的复选框。
+. 选择 * 复制组 * 。有关创建组的其他详细信息，请参见创建组的说明 xref:creating-groups-for-s3-tenant.adoc[S3 租户] 或 xref:creating-groups-for-swift-tenant.adoc[Swift 租户]。
+. 选择 * 本地组 * 选项卡以创建本地组，或者选择 * 联合组 * 选项卡以从先前配置的身份源导入组。
++
+如果为 StorageGRID 系统启用了单点登录（ SSO ），则属于本地组的用户将无法登录到租户管理器，尽管他们可以使用客户端应用程序管理租户的资源， xref:tenant-management-permissions.adoc[基于组权限]。
+
+. 输入组的名称。
++
+** * 本地组 * ：输入显示名称和唯一名称。您可以稍后编辑显示名称。
+** * 联合组 * ：输入唯一名称。对于 Active Directory ，唯一名称是与 `sAMAccountName` 属性关联的名称。对于 OpenLDAP ，唯一名称是与 `uid` 属性关联的名称。
+
+
+. 选择 * 继续 * 。
+. 根据需要修改此组的权限。
+. 选择 * 继续 * 。
+. 如果要为 S3 租户复制组，可以根据需要从 * 添加 S3 策略 * 单选按钮中选择其他策略。如果选择了自定义策略，请根据需要更新 JSON 字符串。
+. 选择 * 创建组 * 。
+

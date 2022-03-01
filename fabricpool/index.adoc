@@ -1,0 +1,75 @@
+---
+permalink: fabricpool/index.html 
+sidebar: sidebar 
+keywords: how to configure storagegrid for fabricpool, using fabricpool with storagegrid, 
+summary: 如果您使用的是 NetApp ONTAP 软件，则可以使用 NetApp FabricPool 将非活动或冷数据分层到 NetApp StorageGRID 对象存储系统。 
+---
+= Configure StorageGRID for FabricPool ：概述
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果您使用的是 NetApp ONTAP 软件，则可以使用 NetApp FabricPool 将非活动或冷数据分层到 NetApp StorageGRID 对象存储系统。
+
+
+
+== 关于这些说明
+
+按照以下说明执行以下操作：
+
+* 简要了解如何配置 StorageGRID 对象存储系统以与 FabricPool 结合使用。
+* 了解在将 StorageGRID 附加为 FabricPool 云层时如何获取您提供给 ONTAP 的信息。
+* 了解为 FabricPool 工作负载配置 StorageGRID 信息生命周期管理（ ILM ）策略， StorageGRID 流量分类策略和其他 StorageGRID 选项的最佳实践。
+
+
+
+
+== 配置工作流
+
+image::../media/fabricpool_storagegrid_workflow.png[FabricPool StorageGRID 工作流]
+
+
+
+== 开始之前
+
+* 确定要使用哪个 FabricPool 卷分层策略将非活动 ONTAP 数据分层到 StorageGRID 。
+* 规划和安装 StorageGRID 系统以满足您的存储容量和性能需求。
+* 熟悉 StorageGRID 系统软件，包括网格管理器和租户管理器。
+* 查看以下附加资源，其中提供了有关使用和配置 FabricPool 的详细信息：
++
+** https://www.netapp.com/pdf.html?item=/media/17239-tr4598pdf.pdf["TR-4598 ：《 ONTAP 9.9.1 中的 FabricPool 最佳实践》"^]
+** https://docs.netapp.com/us-en/ontap/index.html["ONTAP 9 文档"^]
+
+
+
+
+
+
+== 什么是 FabricPool ？
+
+FabricPool 是一种 ONTAP 混合存储解决方案 ，它使用高性能闪存聚合作为性能层，使用对象存储作为云层。数据存储在主存储介质上或对象数据存储库中，具体取决于是否经常访问。使用启用了 FabricPool 的聚合有助于降低存储成本，而不会影响性能，效率或保护。
+
+无需更改架构，您可以继续从中央 ONTAP 存储系统管理数据和应用程序环境。
+
+
+
+== 什么是 StorageGRID ？
+
+StorageGRID 是一种存储架构，可以将数据作为对象进行管理，而不是像文件或块存储这样的其他存储架构。对象保留在一个容器（如分段）中，不会嵌套为其他目录中某个目录中的文件。虽然对象存储的性能通常低于文件或块存储，但其可扩展性明显更高。StorageGRID 存储分段可以容纳数 PB 的数据和数十亿个对象。
+
+
+
+== 为什么使用 StorageGRID 作为 FabricPool 云层？
+
+FabricPool 可以将 ONTAP 数据分层到多个对象存储提供程序，包括 StorageGRID 。公有 云可能会在存储分段或容器级别设置支持的每秒输入 / 输出操作数上限（ IOPS ），而 StorageGRID 性能则会随系统中的节点数进行扩展。使用 StorageGRID 作为 FabricPool 云层，您可以将冷数据保存在自己的私有云中，以获得最高性能并全面控制数据。
+
+此外，如果使用 StorageGRID 作为云层，则不需要 FabricPool 许可证。
+
+
+
+== 是否可以在 StorageGRID 中使用多个 ONTAP 集群？
+
+以下说明介绍如何将 StorageGRID 连接到单个 ONTAP 集群。但是，您可能希望将同一个 StorageGRID 系统连接到多个 ONTAP 集群。
+
+将数据从多个 ONTAP 集群分层到一个 StorageGRID 系统的唯一要求是，必须为每个集群使用不同的 S3 存储分段。根据您的要求，您可以对所有集群使用相同的高可用性（ HA ）组，负载平衡器端点和租户帐户，也可以为每个集群配置其中每个项。

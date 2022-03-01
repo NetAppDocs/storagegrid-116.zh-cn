@@ -1,0 +1,80 @@
+---
+permalink: admin/what-is-autosupport.html 
+sidebar: sidebar 
+keywords: autosupport, technical support, storagegrid health, system status, active iq 
+summary: 通过 AutoSupport 功能， StorageGRID 系统可以向技术支持发送运行状况和状态消息。 
+---
+= 什么是 AutoSupport ？
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+通过 AutoSupport 功能， StorageGRID 系统可以向技术支持发送运行状况和状态消息。
+
+使用 AutoSupport 可以显著加快问题的确定和解决速度。技术支持还可以监控系统的存储需求，并帮助您确定是否需要添加新节点或站点。您也可以将 AutoSupport 消息配置为发送到另一个目标。
+
+
+
+== AutoSupport 消息中包含的信息
+
+AutoSupport 消息包含如下信息：
+
+* StorageGRID 软件版本
+* 操作系统版本
+* 系统级别和位置级别属性信息
+* 近期警报和警报（旧系统）
+* 所有网格任务的当前状态，包括历史数据
+* 管理节点数据库使用情况
+* 丢失或缺失对象的数量
+* 网格配置设置
+* NMS 实体
+* 活动 ILM 策略
+* 已配置网格规范文件
+* 诊断指标
+
+
+您可以在首次安装 StorageGRID 时启用 AutoSupport 功能和各个 AutoSupport 选项，也可以稍后启用它们。如果未启用 AutoSupport ，网格管理器信息板上将显示一条消息。此消息包含指向 AutoSupport 配置页面的链接。
+
+image::../media/autosupport_disabled_message.png[AutoSupport 已禁用消息]
+
+如果关闭此消息，则此消息将不会再次显示，直到清除浏览器缓存为止，即使 AutoSupport 仍处于禁用状态。
+
+
+
+== 什么是 Active IQ ？
+
+Active IQ 是一名基于云的数字顾问，利用 NetApp 客户群的预测性分析和社区智慧。其持续风险评估，预测性警报，规范化指导和自动化操作可帮助您在问题发生之前防患于未然，从而改善系统运行状况并提高系统可用性。
+
+如果要使用 NetApp 支持站点上的 Active IQ 信息板和功能，则必须启用 AutoSupport 。
+
+https://docs.netapp.com/us-en/active-iq/index.html["Active IQ 数字顾问文档"^]
+
+
+
+== 用于发送 AutoSupport 消息的协议
+
+您可以选择以下三种协议之一来发送 AutoSupport 消息：
+
+* HTTPS
+* HTTP
+* SMTP
+
+
+如果使用 HTTPS 或 HTTP 发送 AutoSupport 消息，则可以在管理节点和技术支持之间配置非透明代理服务器。
+
+如果使用 SMTP 作为 AutoSupport 消息的协议，则必须配置 SMTP 邮件服务器。
+
+
+
+== AutoSupport 选项
+
+您可以使用以下选项的任意组合向技术支持发送 AutoSupport 消息：
+
+* * 每周 * ：每周自动发送一次 AutoSupport 消息。默认设置： enabled 。
+* * 事件触发 * ：每小时或发生重大系统事件时自动发送 AutoSupport 消息。默认设置： enabled 。
+* * 按需 * ：允许技术支持请求您的 StorageGRID 系统自动发送 AutoSupport 消息，这在他们正在使用问题描述 （需要 HTTPS AutoSupport 传输协议）时非常有用。默认设置： disabled 。
+* * 用户触发 * ：随时手动发送 AutoSupport 消息。
+
+
+https://mysupport.netapp.com/site/global/dashboard["NetApp 支持"^]

@@ -1,0 +1,188 @@
+---
+permalink: admin/configuring-audit-clients-for-active-directory.html 
+sidebar: sidebar 
+keywords: audit client for ad, active directory 
+summary: 对 StorageGRID 部署中要从中检索审核消息的每个管理节点执行此操作步骤 。 
+---
+= 为 Active Directory 配置审核客户端
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+对 StorageGRID 部署中要从中检索审核消息的每个管理节点执行此操作步骤 。
+
+.您需要什么？ #8217 ；将需要什么
+* 您已拥有 `passwords.txt` 文件以及 root/admin 帐户密码（可从上述软件包中获取）。
+* 您具有 CIFS Active Directory 用户名和密码。
+* 您已有 `Configuration.txt` 文件（可在上述软件包中找到）。
+
+
+
+NOTE: 已弃用通过 CIFS/Samba 进行审核导出，并将在未来的 StorageGRID 版本中删除。
+
+.步骤
+. 登录到主管理节点：
++
+.. 输入以下命令： `ssh admin@ primary_Admin_Node_IP_`
+.. 输入 `passwords.txt` 文件中列出的密码。
+.. 输入以下命令切换到 root ： `su -`
+.. 输入 `passwords.txt` 文件中列出的密码。
++
+以 root 用户身份登录时，提示符将从 ` $` 更改为 ` #` 。
+
+
+
+. 确认所有服务的状态均为 running 或 Verified ： `storagegRid-status`
++
+如果所有服务均未运行或未验证，请先解决问题，然后再继续。
+
+. 返回命令行，按 * 。 Ctrl+* 。 c* 。
+. 启动 CIFS 配置实用程序： `config_cifs.rb`
++
+[listing]
+----
+
+---------------------------------------------------------------------
+| Shares                 | Authentication         | Config          |
+---------------------------------------------------------------------
+| add-audit-share        | set-authentication     | validate-config |
+| enable-disable-share   | set-netbios-name       | help            |
+| add-user-to-share      | join-domain            | exit            |
+| remove-user-from-share | add-password-server    |                 |
+| modify-group           | remove-password-server |                 |
+|                        | add-wins-server        |                 |
+|                        | remove-wins-server     |                 |
+---------------------------------------------------------------------
+----
+. 为 Active Directory 设置身份验证： `sET-authentication`
++
+在大多数部署中，您必须在添加审核客户端之前设置身份验证。如果已设置身份验证，则会显示一条建议消息。如果已设置身份验证，请转至下一步。
+
++
+.. 当系统提示您安装工作组或 Active Directory 时： `ad`
+.. 出现提示时，输入 AD 域的名称（短域名）。
+.. 出现提示时，输入域控制器的 IP 地址或 DNS 主机名。
+.. 出现提示时，输入完整的域域名。
++
+使用大写字母。
+
+.. 当系统提示您启用 winbind 支持时，键入 * 。
++
+winbind 用于解析 AD 服务器中的用户和组信息。
+
+.. 出现提示时，输入 NetBIOS 名称。
+.. 出现提示时，按 * 输入 * 。
++
+此时将显示 CIFS 配置实用程序。
+
+
+
+. 加入域：
++
+.. 如果尚未启动，请启动 CIFS 配置实用程序： `config_cifs.rb`
+.. 加入域： `join-domain`
+.. 系统会提示您测试管理节点当前是否为有效的域成员。如果此管理节点先前未加入此域，请输入： `no`
+.. 出现提示时，请提供管理员的用户名： ` 管理员用户名 _`
++
+其中， ` 管理员用户名 _` 是 CIFS Active Directory 用户名，而不是 StorageGRID 用户名。
+
+.. 出现提示时，请提供管理员密码： ` 管理员密码 _ 密码 _`
++
+` ` _administrator_password_ 是 CIFS Active Directory 用户名，而不是 StorageGRID 密码。
+
+.. 出现提示时，按 * 输入 * 。
++
+此时将显示 CIFS 配置实用程序。
+
+
+
+. 验证您是否已正确加入域：
++
+.. 加入域： `join-domain`
+.. 当系统提示测试服务器当前是否为域的有效成员时，输入： `y`
++
+如果您收到消息 "`join is OK ，` " you have successfully joined the domain.如果未收到此响应，请尝试设置身份验证并重新加入域。
+
+.. 出现提示时，按 * 输入 * 。
++
+此时将显示 CIFS 配置实用程序。
+
+
+
+. 添加审核客户端： `add-audit-share`
++
+.. 当系统提示您添加用户或组时，输入： `user`
+.. 当系统提示您输入审核用户名时，请输入审核用户名。
+.. 出现提示时，按 * 输入 * 。
++
+此时将显示 CIFS 配置实用程序。
+
+
+
+. 如果允许多个用户或组访问审核共享，请添加其他用户： `add-user-to share`
++
+此时将显示已启用共享的编号列表。
+
++
+.. 输入审核导出共享的编号。
+.. 当系统提示您添加用户或组时，输入： `group`
++
+系统将提示您输入审核组名称。
+
+.. 当系统提示您输入审核组名称时，输入审核用户组的名称。
+.. 出现提示时，按 * 输入 * 。
++
+此时将显示 CIFS 配置实用程序。
+
+.. 对有权访问审核共享的每个其他用户或组重复此步骤。
+
+
+. （可选）验证您的配置： `validate-config`
++
+此时将检查并显示这些服务。您可以安全地忽略以下消息：
+
++
+** 找不到 include 文件 ` /etc/samba/includes/cifs-interfaces.inc`
+** 找不到 include 文件 ` /etc/samba/includes/cifs-filesystem.inc`
+** 找不到 include 文件 ` /etc/samba/includes/cifs-interfaces.inc`
+** 找不到 include 文件 ` /etc/samba/includes/cifs-custom-config.inc`
+** 找不到 include 文件 ` /etc/samba/includes/cifs-shares.inc`
+** rlimit_max ：将 rlimit_max （ 1024 ）增加到最小 Windows 限制（ 16384 ）
++
+
+IMPORTANT: 请勿将设置 "security=ads" 与 "password server" 参数结合使用。（默认情况下， Samba 会自动发现要联系的正确 DC ）。
+
++
+... 出现提示时，按 * 输入 * 以显示审核客户端配置。
+... 出现提示时，按 * 输入 * 。
++
+此时将显示 CIFS 配置实用程序。
+
+
+
+
+
+. 关闭 CIFS 配置实用程序： `exit`
+. 如果 StorageGRID 部署是单个站点，请转至下一步。
++
+或
+
++
+或者，如果 StorageGRID 部署包括其他站点的管理节点，则根据需要启用这些审核共享：
+
++
+.. 远程登录到站点的管理节点：
++
+... 输入以下命令： `ssh admin@ grid_node_ip_`
+... 输入 `passwords.txt` 文件中列出的密码。
+... 输入以下命令切换到 root ： `su -`
+... 输入 `passwords.txt` 文件中列出的密码。
+
+
+.. 重复上述步骤为每个管理节点配置审核共享。
+.. 关闭远程安全 Shell 登录到管理节点： `exit`
+
+
+. 注销命令 Shell ： `exit`
+

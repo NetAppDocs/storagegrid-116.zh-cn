@@ -1,0 +1,80 @@
+---
+permalink: sg5700/viewing-sg5700-boot-up-status-codes.html 
+sidebar: sidebar 
+keywords: storagegrid, sg5700, storage node, storage appliance, boot codes, boot-up codes, start codes, codes, boot, start 
+summary: 设备启动时，每个控制器上的七段显示状态和错误代码。 
+---
+= 查看 SG5700 启动状态代码
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+设备启动时，每个控制器上的七段显示状态和错误代码。
+
+E2800 控制器和 E5700SG 控制器显示不同的状态和错误代码。
+
+要了解这些代码的含义，请参见以下资源：
+
+|===
+| 控制器 | 参考 
+
+
+ a| 
+E2800 控制器
+ a| 
+_E5700 和 E2800 系统监控指南 _
+
+* 注： * 为 E 系列 E5700 控制器列出的代码不适用于设备中的 E5700SG 控制器。
+
+
+
+ a| 
+E5700SG 控制器
+ a| 
+" `s5700SG 控制器上的状态指示符` "
+
+|===
+.步骤
+. 在启动期间，通过查看七段显示器上显示的代码来监控进度。
++
+** E2800 控制器上的七段显示会显示重复序列 * 操作系统 * ， * 可持续发展 * ， ` * 空白 _*` ，以指示它正在执行每日开始处理。
+** E5700SG 控制器上的七段显示屏显示一系列代码，以 * AA* 和 * FF* 结尾。
+
+
+. 控制器启动后，确认七段显示内容如下：
++
+image::../media/seven_segment_display_codes.gif[控制器启动后，将显示七段。]
+
++
+|===
+| 控制器 | 七段式显示 
+
+
+ a| 
+E2800 控制器
+ a| 
+显示 99 ，这是 E 系列控制器架的默认 ID 。
+
+
+
+ a| 
+E5700SG 控制器
+ a| 
+显示了 * 何 * ，后跟两个数字的重复序列。
+
+[listing]
+----
+HO -- IP address for Admin Network -- IP address for Grid Network HO
+----
+在此序列中，第一组数字是为控制器的管理端口 1 分配的 DHCP IP 地址。此地址用于将控制器连接到 StorageGRID 的管理网络。第二组数字是 DHCP 分配的 IP 地址，用于将设备连接到用于 StorageGRID 的网格网络。
+
+* 注： * 如果无法使用 DHCP 分配 IP 地址，则会显示 0.0.0.0 。
+
+|===
+. 如果显示的七段显示其他值，请参见 xref:troubleshooting-hardware-installation.adoc[硬件安装故障排除（ SG5700 ）] 并确认您已正确完成安装步骤。如果无法解决此问题，请联系技术支持。
+
+
+xref:status-indicators-on-e5700sg-controller.adoc[E5700SG 控制器上的状态指示灯]
+
+https://library.netapp.com/ecmdocs/ECMLP2588751/html/frameset.html["《 E5700 和 E2800 系统监控指南》"^]

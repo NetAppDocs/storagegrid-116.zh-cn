@@ -1,0 +1,32 @@
+---
+permalink: upgrade/troubleshooting-user-interface-issues.html 
+sidebar: sidebar 
+keywords: grid manager, tenant manager, error, browser 
+summary: 升级到新版本的 StorageGRID 软件后，您可能会看到网格管理器或租户管理器出现问题。 
+---
+= 对用户界面问题进行故障排除
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+升级到新版本的 StorageGRID 软件后，您可能会看到网格管理器或租户管理器出现问题。
+
+
+
+== Web 界面未按预期响应
+
+升级 StorageGRID 软件后，网格管理器或租户管理器可能无法按预期做出响应。
+
+如果您在使用 Web 界面时遇到问题：
+
+* 确保您使用的是 xref:../admin/web-browser-requirements.adoc[支持的 Web 浏览器]。
++
+
+NOTE: 每个 StorageGRID 版本的浏览器支持通常会发生变化。
+
+* 清除 Web 浏览器缓存。
++
+清除缓存将删除先前版本的 StorageGRID 软件所使用的过时资源，并允许用户界面再次正常运行。有关说明，请参见 Web 浏览器的文档。
+
+

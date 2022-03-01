@@ -1,0 +1,89 @@
+---
+permalink: sg6000/replacing-sg6000-cn-controller.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6000, storage node, storage appliance, Replacing, replace, sg6000-cn, controller, remove, removing, removal, install, installing, installation 
+summary: 如果 SG6000-CN 控制器运行不正常或出现故障，您可能需要更换该控制器。 
+---
+= 更换 SG6000-CN 控制器
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果 SG6000-CN 控制器运行不正常或出现故障，您可能需要更换该控制器。
+
+.您需要什么？ #8217 ；将需要什么
+* 您的更换控制器的部件号与要更换的控制器相同。
+* 您可以通过标签来识别连接到控制器的每个缆线。
+* 您已在数据中心中找到要更换的控制器。
++
+xref:locating-controller-in-data-center.adoc[在数据中心中找到控制器]
+
+
+
+更换 SG6000-CN 控制器后，无法访问设备存储节点。如果 SG6000-CN 控制器运行正常，则可以在此操作步骤 开始时执行受控关闭。
+
+
+NOTE: 如果在安装 StorageGRID 软件之前更换控制器，则在完成此操作步骤 后，您可能无法立即访问 StorageGRID 设备安装程序。虽然您可以从与设备位于同一子网上的其他主机访问 StorageGRID 设备安装程序，但不能从其他子网上的主机访问它。此情况应在 15 分钟内自行解决（当原始控制器的任何 ARP 缓存条目超时），或者您也可以通过手动从本地路由器或网关清除任何旧的 ARP 缓存条目来立即清除此情况。
+
+.步骤
+. 如果 SG6000-CN 控制器运行充分，可以进行可控的关闭，请关闭 SG6000-CN 控制器。
++
+xref:shutting-down-sg6000-cn-controller.adoc[关闭 SG6000-CN 控制器]
+
+. 使用以下两种方法之一验证 SG6000-CN 控制器是否已关闭电源：
++
+** 控制器正面的电源指示灯 LED 熄灭。
+** BMC 界面的电源控制页面指示控制器已关闭。
+
+
+. 如果连接到控制器的 StorageGRID 网络使用 DHCP 服务器，请更新 DNS/network 和 IP 地址设置。
++
+.. 找到 SG6000-CN 控制器正面的 MAC 地址标签，并确定管理网络端口的 MAC 地址。
++
+
+NOTE: MAC 地址标签列出了 BMC 管理端口的 MAC 地址。+ 要确定管理网络端口的 MAC 地址，必须在标签上的十六进制数中添加 * 。 2 *例如，如果标签上的 MAC 地址以 *09* 结尾，则管理端口的 MAC 地址将以 *0B* 结尾。如果标签上的 MAC 地址以 * （ _y_ ） FF* 结尾，则管理端口的 MAC 地址将以 * （ _y_+1 ） 01* 结尾。您可以通过在 Windows 中打开 Calculator ，将其设置为程序编程模式，选择十六进制，键入 MAC 地址，然后键入 * + 2 =* 来轻松进行计算。
+
+.. 请您的网络管理员将您删除的控制器的 DNS/network 和 IP 地址与替代控制器的 MAC 地址相关联。
++
+
+IMPORTANT: 在为替代控制器接通电源之前，您必须确保原始控制器的所有 IP 地址均已更新。否则，控制器将在启动时获取新的 DHCP IP 地址，并且可能无法重新连接到 StorageGRID 。此步骤将对连接到控制器的所有 StorageGRID 网络执行适用场景 。
+
++
+
+NOTE: 如果原始控制器使用静态 IP 地址，则新控制器将自动采用您删除的控制器的 IP 地址。
+
+
+
+. 卸下并更换 SG6000-CN 控制器：
++
+.. 为缆线贴上标签，然后断开缆线以及任何 SFP+ 或 SFP28 收发器。
++
+
+IMPORTANT: To prevent degraded performance, do not twist, fold, pinch, or step on the cables.
+
+.. 从机柜或机架中卸下故障控制器。
+.. 将替代控制器安装到机柜或机架中。
+.. 更换缆线以及任何 SFP+ 或 SFP28 收发器。
+.. 打开控制器电源并监控控制器 LED 和启动代码。
+
+
+. 确认设备存储节点显示在网格管理器中且未显示任何警报。
+. 在网格管理器中，选择 * 节点 * ，然后验证节点控制器的 BMC IP 地址是否正确。
++
+如果节点控制器 IP 地址无效或不在预期范围内，请按照恢复和维护说明中所述重新配置 IP 地址。
+
++
+
+NOTE: 如果您在初始安装期间应用了其他自定义设置，例如设置 SNMP 陷阱目标或电子邮件通知，则应记录并验证此配置，并在必要时重新应用此配置。
+
++
+xref:../maintain/index.adoc[恢复和维护]
+
+
+
+xref:sg6000-cn-installing-into-cabinet-or-rack.adoc[SG6000-CN ：安装到机柜或机架中]
+
+xref:viewing-status-indicators-and-buttons-on-sg6000-cn-controller.adoc[查看 SG6000-CN 控制器上的状态指示灯和按钮]
+
+xref:viewing-boot-up-codes-for-sg6000-cn-controller.adoc[查看 SG6000-CN 控制器的启动代码]

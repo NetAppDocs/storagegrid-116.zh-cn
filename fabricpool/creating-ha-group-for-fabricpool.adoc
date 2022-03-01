@@ -1,0 +1,53 @@
+---
+permalink: fabricpool/creating-ha-group-for-fabricpool.html 
+sidebar: sidebar 
+keywords: fabricPool, high availability group, HA group, create, creating, virtual IP, VIP, preferred master, backup interface 
+summary: 在配置 StorageGRID 以与 FabricPool 结合使用时，您可以选择创建一个或多个高可用性组（ HA\ ）。HA 组由管理节点，网关节点或这两者上的一个或多个网络接口组成。 
+---
+= 为 FabricPool 创建高可用性（ HA ）组
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在配置 StorageGRID 以与 FabricPool 结合使用时，您可以选择创建一个或多个高可用性（ HA ）组。HA 组由管理节点，网关节点或这两者上的一个或多个网络接口组成。
+
+.您需要什么？ #8217 ；将需要什么
+* 您将使用登录到网格管理器 xref:../admin/web-browser-requirements.adoc[支持的 Web 浏览器]。
+* 您具有 root 访问权限。
+* 如果您计划使用 VLAN ，则已创建 VLAN 接口。请参见 xref:../admin/configure-vlan-interfaces.adoc[配置 VLAN 接口]。
+
+
+每个 HA 组都使用虚拟 IP 地址（ VIP ）来提供对关联节点上共享服务的高可用性访问。
+
+有关此任务的详细信息，请参见 xref:../admin/managing-high-availability-groups.adoc[管理高可用性组]。
+
+.步骤
+. 选择 * 配置 * > * 网络 * > * 高可用性组 * 。
+. 选择 * 创建 * 。
+. 输入唯一名称，也可以选择输入问题描述 。
+. 选择一个或多个接口以添加到此 HA 组。
++
+使用列标题对行进行排序，或者输入搜索词以更快地找到接口。
+
+. 确定此 HA 组的主接口和任何备份接口。
++
+拖放行以更改 * 优先级顺序 * 列中的值。
+
++
+列表中的第一个接口是主接口。主接口是活动接口，除非发生故障。
+
++
+如果 HA 组包含多个接口且活动接口发生故障，则 VIP 地址将按优先级顺序移至第一个备份接口。如果该接口发生故障， VIP 地址将移至下一个备份接口，依此类推。解决故障后， VIP 地址将移回可用的最高优先级接口。
+
+. 以 CIDR 表示法 ##8212 指定 VIP 子网； IPv4 地址后跟斜杠和子网长度（ 0-32 ）。
++
+网络地址不能设置任何主机位。例如， `192.16.0.0/22` 。
+
+. 或者，如果用于访问 StorageGRID 的 ONTAP IP 地址与 StorageGRID VIP 地址不在同一子网中，请输入 StorageGRID VIP 本地网关 IP 地址。本地网关 IP 地址必须位于 VIP 子网中。
+. 输入 HA 组的一个或多个虚拟 IP 地址。最多可以添加 10 个 IP 地址。所有 VIP 都必须位于 VIP 子网中。
++
+您必须至少提供一个 IPv4 地址。您也可以指定其他 IPv4 和 IPv6 地址。
+
+. 选择 * 创建 HA 组 * ，然后选择 * 完成 * 。
+

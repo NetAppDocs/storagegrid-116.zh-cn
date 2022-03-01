@@ -1,0 +1,116 @@
+---
+permalink: sg6000/installation-and-deployment-overview.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6000, storage node, storage appliance, Installation, deployment, Install, deploy, Installing, deploying 
+summary: 您可以在首次部署 StorageGRID 时安装一个或多个 StorageGRID 存储设备，也可以稍后在扩展过程中添加设备存储节点。在恢复操作中，您可能还需要安装设备存储节点。 
+---
+= 安装和部署概述
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以在首次部署 StorageGRID 时安装一个或多个 StorageGRID 存储设备，也可以稍后在扩展过程中添加设备存储节点。在恢复操作中，您可能还需要安装设备存储节点。
+
+您的 StorageGRID 系统正在使用所需版本的 StorageGRID 软件。
+
+|===
+| 设备 | 所需的 StorageGRID 版本 
+
+
+ a| 
+SG6060 ，不含扩展架
+ a| 
+11.1.1 或更高版本
+
+
+
+ a| 
+带有扩展架（一个或两个）的 SG6060
+ a| 
+11.3 或更高版本
+
+* 注意： * 如果在初始部署后添加扩展架，则必须使用 11.4 或更高版本。
+
+
+
+ a| 
+SGF6024
+ a| 
+11.3 或更高版本
+
+|===
+
+
+== 安装和部署任务
+
+将 StorageGRID 存储设备添加到 StorageGRID 系统包括四个主要步骤：
+
+. 准备安装：
++
+** 正在准备安装站点
+** 打开包装箱的包装并检查包装箱中的物品
+** 获取其他设备和工具
+** 收集 IP 地址和网络信息
+** 可选：如果您计划对所有设备数据进行加密，请配置外部密钥管理服务器（ KMS ）。有关外部密钥管理的详细信息，请参见 StorageGRID 管理说明。
+
+
+. 安装硬件：
++
+** 注册硬件
+** 将设备安装到机柜或机架中
+** 安装驱动器
+** 安装可选扩展架（仅限 SG6060 型号；最多两个扩展架）
+** 为设备布线
+** 连接电源线并接通电源
+** 查看启动状态代码
+
+
+. 配置硬件：
++
+** 访问 SANtricity 系统管理器以配置 SANtricity 系统管理器设置
+** 访问 StorageGRID 设备安装程序，为存储控制器上的管理端口 1 设置静态 IP 地址，以及配置连接到 StorageGRID 网络所需的链路和网络 IP 设置
+** 访问 SG6000-CN 控制器上的基板管理控制器（ BMC ）接口
+** 可选：如果您计划使用外部 KMS 对设备数据进行加密，请启用节点加密。
+** 可选：更改 RAID 模式。
+
+
+. 将设备部署为存储节点：
++
+|===
+| 任务 | 说明 
+
+
+ a| 
+在新的 StorageGRID 系统中部署设备存储节点
+ a| 
+xref:deploying-appliance-storage-node.adoc[部署设备存储节点]
+
+
+
+ a| 
+将设备存储节点添加到现有 StorageGRID 系统
+ a| 
+有关扩展 StorageGRID 系统的说明
+
+
+
+ a| 
+在存储节点恢复操作中部署设备存储节点
+ a| 
+恢复和维护说明
+
+|===
+
+
+xref:preparing-for-installation.adoc[准备安装（ SG6000 ）]
+
+xref:installing-hardware.adoc[安装硬件（ SG6000 ）]
+
+xref:configuring-hardware.adoc[配置硬件（ SG6000 ）]
+
+xref:../expand/index.adoc[扩展网格]
+
+xref:../maintain/index.adoc[恢复和维护]
+
+xref:../admin/index.adoc[管理 StorageGRID]

@@ -1,0 +1,63 @@
+---
+permalink: sg5600/configuring-autosupport.html 
+sidebar: sidebar 
+keywords: storagegrid, sg5600, storage node, storage appliance, configure, configuring, set up, setup, autosupport, auto support 
+summary: AutoSupport 工具会从设备收集客户支持包中的数据，并自动将数据发送给技术支持。配置 AutoSupport 有助于技术支持进行远程故障排除和问题分析。 
+---
+= 配置 AutoSupport
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+AutoSupport 工具会从设备收集客户支持包中的数据，并自动将数据发送给技术支持。配置 AutoSupport 有助于技术支持进行远程故障排除和问题分析。
+
+.您需要什么？ #8217 ；将需要什么
+* 必须在设备上启用并激活 AutoSupport 功能。
++
+AutoSupport 功能会在存储管理工作站上全局激活和停用。
+
+* Storage Manager 事件监控器必须至少在一台能够访问设备的计算机上运行，并且最好在不超过一台计算机上运行。
+
+
+所有数据都会在指定位置压缩为一个压缩归档文件格式（ .7z ）。
+
+AutoSupport 提供以下类型的消息：
+
+|===
+| 消息类型 | Description 
+
+
+ a| 
+事件消息
+ a| 
+* 受管设备上发生支持事件时发送
+* 包括系统配置和诊断信息
+
+
+
+
+ a| 
+每日消息
+ a| 
+* 在设备的本地时间内，用户可配置的时间间隔内，每天发送一次
+* 包括当前系统事件日志和性能数据
+
+
+
+
+ a| 
+每周消息
+ a| 
+* 在用户可配置的时间间隔内，在设备的本地时间内每周发送一次
+* 包括配置和系统状态信息
+
+
+|===
+.步骤
+. 在 SANtricity 存储管理器的企业管理窗口中，选择 * 设备 * 选项卡，然后选择 * 已发现的存储阵列 * 。
+. 选择 * 工具 * > * AutoSupport * > * 配置 * 。
+. 如果需要，请使用 SANtricity 存储管理器联机帮助完成此任务。
+
+
+http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=61197["NetApp 文档： SANtricity 存储管理器"^]

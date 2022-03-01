@@ -1,0 +1,32 @@
+---
+permalink: ubuntu/specifying-domain-name-system-server-information.html 
+sidebar: sidebar 
+keywords: how to specify Domain Name System server information 
+summary: 您必须为 StorageGRID 系统指定域名系统 \ （ DNS\ ）信息，以便可以使用主机名而非 IP 地址访问外部服务器。 
+---
+= 指定域名系统服务器信息
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您必须为 StorageGRID 系统指定域名系统（ DNS ）信息，以便可以使用主机名而非 IP 地址访问外部服务器。
+
+通过指定 DNS 服务器信息，您可以对电子邮件通知和 AutoSupport 使用完全限定域名（ FQDN ）主机名，而不是 IP 地址。建议至少指定两个 DNS 服务器。
+
+
+IMPORTANT: 为 DNS 服务器提供两到六个 IPv4 地址。您应选择 DNS 服务器，以便在网络隔离时每个站点都可以在本地访问这些服务器。这是为了确保已隔离的站点可以继续访问 DNS 服务。配置网格范围的 DNS 服务器列表后，您可以进一步自定义每个节点的 DNS 服务器列表。有关详细信息，请参见恢复和维护说明中有关修改 DNS 配置的信息。
+
+如果省略 DNS 服务器信息或 DNS 服务器信息配置不正确，则会在每个网格节点的 SSM 服务上触发 DNST 警报。如果 DNS 配置正确且新服务器信息已到达所有网格节点，则警报将清除。
+
+.步骤
+. 在 * 服务器 1* 文本框中至少指定一个 DNS 服务器的 IPv4 地址。
+. 如有必要，请选择最后一个条目旁边的加号以添加其他服务器条目。
++
+image::../media/9_gmi_installer_dns_page.gif[此图通过周围的文本进行了说明。]
+
++
+最佳实践是至少指定两个 DNS 服务器。最多可以指定六个 DNS 服务器。
+
+. 选择 * 下一步 * 。
+

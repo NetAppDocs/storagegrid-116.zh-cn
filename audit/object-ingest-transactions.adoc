@@ -1,0 +1,82 @@
+---
+permalink: audit/object-ingest-transactions.html 
+sidebar: sidebar 
+keywords: storagegrid, audit, message, messages, transaction, transactions, Object ingest, S3 ingest, Swift ingest, S3, Swift, SPUT, ORLM, WPUT 
+summary: 您可以通过查找 API 专用的审核消息（ S3 或 Swift ）来确定审核日志中的客户端载入事务。 
+---
+= 对象载入事务
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以通过查找特定于 API （ S3 或 Swift ）的审核消息，在审核日志中确定客户端载入事务。
+
+下表列出了在载入事务期间生成的并非所有审核消息。仅包含跟踪载入事务所需的消息。
+
+
+
+== S3 载入审核消息
+
+|===
+| 代码 | Name | Description | 跟踪 | 请参见 
+
+
+ a| 
+SPUT
+ a| 
+S3 PUT 事务
+ a| 
+S3 PUT 载入事务已成功完成。
+ a| 
+CBID ， S3BK ， S3KY
+ a| 
+xref:sput-s3-put.adoc[SPUT ： S3 PUT]
+
+
+
+ a| 
+ORLM
+ a| 
+符合对象规则
+ a| 
+已对此对象满足 ILM 策略要求。
+ a| 
+CBID
+ a| 
+xref:orlm-object-rules-met.adoc[ORLM ：符合对象规则]
+
+|===
+
+
+== Swift 载入审核消息
+
+|===
+| 代码 | Name | Description | 跟踪 | 请参见 
+
+
+ a| 
+WWPUT
+ a| 
+Swift PUT 事务
+ a| 
+Swift PUT 载入事务已成功完成。
+ a| 
+CBID ， WCON ， WOBJ
+ a| 
+xref:wput-swift-put.adoc[WWPUT ： Swift PUT]
+
+
+
+ a| 
+ORLM
+ a| 
+符合对象规则
+ a| 
+已对此对象满足 ILM 策略要求。
+ a| 
+CBID
+ a| 
+xref:orlm-object-rules-met.adoc[ORLM ：符合对象规则]
+
+|===

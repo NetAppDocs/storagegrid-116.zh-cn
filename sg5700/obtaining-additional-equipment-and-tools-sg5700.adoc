@@ -1,0 +1,71 @@
+---
+permalink: sg5700/obtaining-additional-equipment-and-tools-sg5700.html 
+sidebar: sidebar 
+keywords: storagegrid, sg5700, storage node, storage appliance, additional, equipment, tools 
+summary: 在安装 StorageGRID 设备之前，请确认您拥有所需的所有附加设备和工具。 
+---
+= 获取其他设备和工具（ SG5700 ）
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在安装 StorageGRID 设备之前，请确认您拥有所需的所有附加设备和工具。
+
+要安装和配置硬件，您需要使用以下附加设备：
+
+* * 螺丝刀 *
++
+image::../media/screwdrivers.gif[两个螺丝刀]
+
++
+十字线编号2 把螺丝刀
+
++
+中型平口螺丝刀
+
+* * ESD 腕带 *
++
+image::../media/appliance_wriststrap.gif[ESD 腕带]
+
+* * 光缆和 SFP 收发器 *
++
+image::../media/fc_cable_and_sfp.gif[光缆和 SFP+ 收发器]
+
++
+您计划使用的 10/25/GbE 端口的光缆
+
++
+可选：如果要使用 25 GbE 链路速度，请使用 SFP28 收发器
+
+* * 以太网缆线 *
++
+image::../media/ethernet_cables.png[以太网缆线]
+
+* * 服务笔记本电脑 *
++
+image::../media/sam_management_client.gif[服务笔记本电脑]
+
++
+xref:../admin/web-browser-requirements.adoc[支持的 Web 浏览器]
+
++
+SSH 客户端，例如 PuTTY
+
++
+1 Gb （ RJ-45 ）以太网端口
+
+* * 可选工具 *
++
+image::../media/optional_tools.gif[电钻和手电筒]
+
++
+带十字头的电钻
+
++
+Flashlight
+
++
+SG5760 的机械升降机
+
+

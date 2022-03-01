@@ -1,0 +1,187 @@
+---
+permalink: s3/put-object-copy.html 
+sidebar: sidebar 
+keywords: object, add object, put, put object request 
+summary: 您可以使用 S3 PUT 对象 - 复制请求为已存储在 S3 中的对象创建副本。PUT 对象 - 复制操作与执行 GET ，然后执行 PUT 操作相同。 
+---
+= PUT 对象—复制
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 S3 PUT 对象 - 复制请求为已存储在 S3 中的对象创建副本。PUT 对象 - 复制操作与执行 GET ，然后执行 PUT 操作相同。
+
+
+
+== 解决冲突
+
+冲突的客户端请求（例如，两个客户端写入同一密钥）将以 " 最新成功 " 为基础进行解决。" 最新赢单 " 评估的时间取决于 StorageGRID 系统何时完成给定请求，而不是 S3 客户端何时开始操作。
+
+
+
+== 对象大小
+
+单个 PUT 对象操作的最大 _recommended_size 为 5 GiB （ 5 ， 368 ， 709 ， 120 字节）。如果对象大于 5 GiB ，请改用多部分上传。
+
+
+IMPORTANT: 在 StorageGRID 11.6 中，单个 PUT 对象操作的最大 _supported _ 大小为 5 TiB （ 5 ， 497 ， 554 ， 138 ， 880 字节）。但是，如果您尝试上传超过 5 GiB 的对象，则会触发 * S3 PUT Object Size Too large* 警报。
+
+
+
+== 用户元数据中的 UTF-8 字符
+
+如果某个请求在用户定义的元数据的密钥名称或值中包含（未转义） UTF-8 值，则会未定义 StorageGRID 行为。
+
+StorageGRID 不会解析或解释用户定义的元数据的密钥名称或值中包含的转义 UTF-8 字符。转义的 UTF-8 字符被视为 ASCII 字符：
+
+* 如果用户定义的元数据包含转义的 UTF-8 字符，则请求将成功。
+* 如果对密钥名称或值的解释值包含不可打印的字符，则 StorageGRID 不会返回 `x-AMZ-MISSING-meta` 标头。
+
+
+
+
+== 支持的请求标头
+
+支持以下请求标头：
+
+* `内容类型`
+* `x-AMZ-copy-source`
+* `x-AMZ-copy-source-if-match`
+* `x-AMZ-copy-source-if-none-match`
+* `x-AMZ-copy-source-if-modified - since`
+* `x-AMZ-copy-source-if-modified-since`
+* `x-AMZ-meta-` ，后跟一个名称 - 值对，其中包含用户定义的元数据
+* `x-AMZ-metadata-directive` ：默认值为 `copy` ，可用于复制对象和关联元数据。
++
+您可以指定 `replace` 以在复制对象时覆盖现有元数据，或更新对象元数据。
+
+* `x-AMZ-storage-class`
+* `x-AMZ-tagging-directive` ：默认值为 `copy` ，可用于复制对象和所有标记。
++
+您可以指定 `replace` 以在复制对象时覆盖现有标记，或更新标记。
+
+* S3 对象锁定请求标头：
++
+** `x-AMZ-object-lock-mode`
+** `x-AMZ-object-lock-retain-until date`
+** `x-AMZ-object-lock-legal-hold`
++
+如果在不使用这些标题的情况下发出请求，则存储分段默认保留设置用于计算对象版本 retain-until 日期。
+
++
+xref:using-s3-object-lock.adoc[使用 S3 对象锁定]
+
+
+
+* SSA 请求标头：
++
+** `x-AMZ-copy-source​ -server-side​ -customer-zr encryption​`
+** `x-AMZ-copy-source​ -server-side encrypt-customer-key`
+** `x-AMZ-copy-source​ -server-side encryption - customer-key-MD5`
+** `x-AMZ-server-side encryption`
+** `x-AMZ-server-side encrypt-customer-key-md5`
+** `x-AMZ-server-side encrypt-customer-key`
+** `x-AMZ-server-side encrypt-customer-encryption`
++
+请参见 <<Request headers for server-side encryption>>
+
+
+
+
+
+
+
+== 请求标头不受支持
+
+不支持以下请求标头：
+
+* `缓存控制`
+* `内容处置`
+* `内容编码`
+* `内容语言`
+* `到期`
+* `x-AMZ-website-redirect-location`
+
+
+
+
+== 存储类选项
+
+支持 `x-AMZ-storage-class` 请求标头，如果匹配的 ILM 规则指定了双重提交或平衡的载入行为，则会影响 StorageGRID 创建的对象副本数。
+
+* `s标准`
++
+（默认）指定在 ILM 规则使用双提交选项或 balanced-option 回退到创建中间副本时执行双提交载入操作。
+
+* `re介绍冗余`
++
+指定在 ILM 规则使用双提交选项或 balanced-option 回退为创建中间副本时执行单提交载入操作。
+
++
+
+NOTE: 如果要在启用了 S3 对象锁定的情况下将对象载入存储分段，则会忽略 `re区冗余` 选项。如果要将对象载入旧的合规存储分段，则 `re区冗余` 选项将返回错误。StorageGRID 将始终执行双提交载入，以确保满足合规性要求。
+
+
+
+
+
+== 在 PUT 对象中使用 x-AMZ-copy-source —复制
+
+如果在 `x-AMZ-copy-source` 标头中指定的源分段和密钥与目标分段和密钥不同，则会向目标写入源对象数据的副本。
+
+如果源和目标匹配，并且将 `x-AMZ-metada-directive` 标头指定为 `replace` ，则对象的元数据将使用请求中提供的元数据值进行更新。在这种情况下， StorageGRID 不会重新载入对象。这有两个重要后果：
+
+* 您不能使用 PUT 对象 - 复制对现有对象进行原位加密，也不能更改现有对象的加密。如果您提供了 `x-AMZ-server-side encryption` 标头或 `x-AMZ-server-side encrypt-customer-encryption` 标头，则 StorageGRID 将拒绝此请求并返回 `XNotImplemented` 。
+* 不会使用匹配 ILM 规则中指定的 " 载入行为 " 选项。通过正常后台 ILM 进程重新评估 ILM 时，更新触发的任何对象放置更改都会进行。
++
+这意味着，如果 ILM 规则对载入行为使用严格选项，则在无法放置所需对象时（例如，由于新需要的位置不可用），不会执行任何操作。更新后的对象会保留其当前位置，直到可以进行所需的位置为止。
+
+
+
+
+
+== 服务器端加密的请求标头
+
+如果使用服务器端加密，则您提供的请求标头取决于源对象是否已加密以及是否计划对目标对象加密。
+
+* 如果源对象使用客户提供的密钥（ SSI-C ）进行加密，则必须在 PUT Object - Copy 请求中包含以下三个标头，以便可以解密并复制此对象：
++
+** `x-AMZ-copy-source​ server-side​ -customer-all` 指定 `AES256 encryption​` 。
+** `x-AMZ-copy-source​ -server-side encrypt-customer-key` 指定您在创建源对象时提供的加密密钥。
+** `x-AMZ-copy-source​ -server-side encryption - customer-key-MD5` ：指定您在创建源对象时提供的 MD5 摘要。
+
+
+* 如果要使用您提供和管理的唯一密钥对目标对象（副本）进行加密，请包含以下三个标题：
++
+** `x-AMZ-server-side encrypt-customer-all` ：指定 `AES256` 。
+** `x-AMZ-server-side encrypt-customer-key` ：为目标对象指定新的加密密钥。
+** `x-AMZ-server-side encrypt-customer-key-md5` ：指定新加密密钥的 MD5 摘要。
+
+
+
+
+* 注意： * 您提供的加密密钥永远不会存储。如果丢失加密密钥，则会丢失相应的对象。在使用客户提供的密钥保护对象数据之前，请查看 "`使用服务器端加密 " 中的注意事项。`
+
+* 如果要使用由 StorageGRID （ SSE ）管理的唯一密钥对目标对象（副本）进行加密，请将此标头包括在 PUT 对象 - 复制请求中：
++
+** `x-AMZ-server-side encryption`
+
+
+
+
+* 注： * 无法更新对象的 `s服务器端加密` 值。相反，请使用 `sx-AMZ-metada-directive` ： `replace` 使用新的 `服务器端加密` 值创建副本。
+
+
+
+== 版本控制
+
+如果源存储分段已版本控制，则可以使用 `x-AMZ-copy-source` 标头复制对象的最新版本。要复制对象的特定版本，必须使用 `veversionId` Subresource 明确指定要复制的版本。如果目标存储分段已版本控制，则生成的版本将在 `x-AMZ-version-id` 响应标题中返回。如果目标分段的版本控制已暂停，则 `x-AMZ-version-id` 将返回 "`null` " 值。
+
+xref:../ilm/index.adoc[使用 ILM 管理对象]
+
+xref:using-server-side-encryption.adoc[使用服务器端加密]
+
+xref:s3-operations-tracked-in-audit-logs.adoc[在审核日志中跟踪 S3 操作]
+
+xref:put-object.adoc[PUT 对象]

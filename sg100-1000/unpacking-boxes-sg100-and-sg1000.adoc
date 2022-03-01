@@ -1,0 +1,42 @@
+---
+permalink: sg100-1000/unpacking-boxes-sg100-and-sg1000.html 
+sidebar: sidebar 
+keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gateway Node, admin node, install, installation, unpack, unbox, prepare, inventory, components, contents 
+summary: 安装 StorageGRID 设备之前，请打开所有包装箱的包装，并将包装箱上的物品与包装清单上的物品进行比较。 
+---
+= 打开包装箱（ SG100 和 SG1000 ）
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+安装 StorageGRID 设备之前，请打开所有包装箱的包装，并将包装箱上的物品与包装清单上的物品进行比较。
+
+
+
+== 设备硬件
+
+* * SG100 或 SG1000*
++
+image::../media/sg6000_cn_front_without_bezel.gif[正面驱动器 SG 100 或 SG1000 服务设备]
+
+* * 导轨套件及说明 *
++
+image::../media/rail_kit.gif[导轨套件]
+
+
+
+
+
+== 电源线
+
+StorageGRID 设备的发货包括以下电源线：
+
+* * 您所在国家或地区有两条电源线 *
++
+image::../media/power_cords.gif[电源线]
+
++
+您的机柜可能使用专用电源线，而不是设备随附的电源线。
+
+

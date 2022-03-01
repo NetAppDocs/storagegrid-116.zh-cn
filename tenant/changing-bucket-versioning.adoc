@@ -1,0 +1,68 @@
+---
+permalink: tenant/changing-bucket-versioning.html 
+sidebar: sidebar 
+keywords: how to change bucket versioning, disabled versioning, enabled versioning, suspended versioning 
+summary: 如果您使用的是 S3 租户，则可以使用租户管理器或租户管理 API 更改 S3 分段的版本控制状态。 
+---
+= 更改存储分段的对象版本控制
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果您使用的是 S3 租户，则可以使用租户管理器或租户管理 API 更改 S3 分段的版本控制状态。
+
+.您需要什么？ #8217 ；将需要什么
+* 您将使用登录到租户管理器 xref:../admin/web-browser-requirements.adoc[支持的 Web 浏览器]。
+* 您属于具有 " 管理所有分段 " 或 " 根访问 " 权限的用户组。这些权限将覆盖组或存储分段策略中的权限设置。
++
+xref:tenant-management-permissions.adoc[租户管理权限]
+
+
+
+您可以为存储分段启用或暂停对象版本控制。为存储分段启用版本控制后，它将无法恢复为未版本控制状态。但是，您可以暂停存储分段的版本控制。
+
+* Disabled ：从未启用版本控制
+* Enabled ：已启用版本控制
+* suspended ：先前已启用版本控制并已暂停
+
+
+xref:../s3/object-versioning.adoc[S3 对象版本控制]
+
+xref:../ilm/example-4-ilm-rules-and-policy-for-s3-versioned-objects.adoc[S3 版本对象的 ILM 规则和策略（示例 4 ）]
+
+.步骤
+. 选择 * 存储（ S3 ） * > * 分段 * 。
+. 从列表中选择存储分段名称。
+. 选择 * 分段选项 * > * 对象版本控制 * 。
++
+image::../media/bucket_object_versioning.png[存储分段更改对象版本控制]
+
+. 为此存储分段中的对象选择版本控制状态。
++
+
+NOTE: 如果启用了 S3 对象锁定或原有合规性，则会禁用 * 对象版本控制 * 选项。
+
++
+[cols="1a,3a"]
+|===
+| 选项 | Description 
+
+
+ a| 
+启用版本控制
+ a| 
+如果要将每个对象的每个版本存储在此存储分段中，请启用对象版本控制。然后，您可以根据需要检索对象的先前版本。
+
+用户修改存储分段中已存在的对象时，这些对象将进行版本控制。
+
+
+
+ a| 
+暂停版本控制
+ a| 
+如果您不再需要创建新的对象版本，请暂停对象版本控制。您仍然可以检索任何现有对象版本。
+
+|===
+. 选择 * 保存更改 * 。
+

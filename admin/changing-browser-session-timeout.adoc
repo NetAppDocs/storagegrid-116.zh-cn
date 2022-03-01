@@ -1,0 +1,48 @@
+---
+permalink: admin/changing-browser-session-timeout.html 
+sidebar: sidebar 
+keywords: browser timeout, inactive session timeout 
+summary: 如果 Grid Manager 和租户管理器用户处于非活动状态的时间超过一段时间，您可以控制他们是否已注销。 
+---
+= 更改浏览器会话超时
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果 Grid Manager 和租户管理器用户处于非活动状态的时间超过一段时间，您可以控制他们是否已注销。
+
+.您需要什么？ #8217 ；将需要什么
+* 您将使用登录到网格管理器 xref:../admin/web-browser-requirements.adoc[支持的 Web 浏览器]。
+* 您具有特定的访问权限。
+
+
+GUI 非活动超时默认为 900 秒（ 15 分钟）。如果用户的浏览器会话在此时间内未处于活动状态，则此会话将超时。
+
+您可以根据需要通过设置 GUI 非活动超时显示选项来增加或减少超时时间。
+
+如果启用了单点登录（ SSO ），并且用户的浏览器会话超时，系统的行为就像用户手动选择了 * 注销 * 一样。用户必须重新输入其 SSO 凭据才能再次访问 StorageGRID 。请参见 xref:configuring-sso.adoc[配置单点登录]。
+
+[NOTE]
+====
+用户会话超时也可通过以下方式控制：
+
+* 一个单独的不可配置 StorageGRID 计时器，其中包括用于系统安全保护的计时器。默认情况下，每个用户的身份验证令牌在用户登录后 16 小时到期。用户的身份验证过期后，即使尚未达到 GUI 非活动超时值，该用户也会自动注销。要续订令牌，用户必须重新登录。
+* 身份提供程序的超时设置（假设已为 StorageGRID 启用 SSO ）。
+
+
+====
+.步骤
+. 选择 * 配置 * > * 系统 * > * 显示选项 * 。
+. 对于 * 图形用户界面非活动超时 * ，请输入 60 秒或更长时间的超时期限。
++
+如果不想使用此功能，请将此字段设置为 0 。用户在登录后 16 小时，身份验证令牌过期时将注销。
+
++
+image::../media/configuration_display_options.gif[显示选项页面]
+
+. 选择 * 应用更改 * 。
++
+新设置不会影响当前已登录的用户。用户必须重新登录或刷新浏览器，新的超时设置才能生效。
+
+

@@ -1,0 +1,21 @@
+---
+permalink: fabricpool/configuring-dns-for-storagegrid-ip-addresses.html 
+sidebar: sidebar 
+keywords: fabricPool, DNS, domain name system, FQDN, fully qualified domain name, IP address, VIP 
+summary: 配置高可用性组和负载平衡器端点后，您必须确保 ONTAP 系统的域名系统 \ （ DNS\ ）包含一条记录，用于将 StorageGRID 服务器名称 \ （完全限定域名 \ ）与 FabricPool 用于进行连接的 IP 地址相关联。 
+---
+= 为 DNS 服务器配置 StorageGRID IP 地址
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+配置高可用性组和负载平衡器端点后，您必须确保 ONTAP 系统的域名系统（ DNS ）包含一条记录，用于将 StorageGRID 服务器名称（完全限定域名）与 FabricPool 用于建立连接的 IP 地址相关联。
+
+在 DNS 记录中输入的 IP 地址取决于您是否使用的是由负载平衡节点组成的 HA 组：
+
+* 如果已配置 HA 组， FabricPool 将连接到该 HA 组的虚拟 IP 地址。
+* 如果您不使用 HA 组，则 FabricPool 可以使用任何网关节点或管理节点的 IP 地址连接到 StorageGRID 负载平衡器服务。
+
+
+此外，还必须确保 DNS 记录引用所有必需的端点域名，包括任何通配符名称。

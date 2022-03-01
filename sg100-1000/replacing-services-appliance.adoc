@@ -1,0 +1,98 @@
+---
+permalink: sg100-1000/replacing-services-appliance.html 
+sidebar: sidebar 
+keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gateway Node, admin node, Replacing, replace, remove, removing, removal, install, installing, installation 
+summary: 如果设备运行不正常或出现故障，您可能需要更换设备。 
+---
+= 更换服务设备
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果设备运行不正常或出现故障，您可能需要更换设备。
+
+.您需要什么？ #8217 ；将需要什么
+* 您的更换设备的部件号与要更换的设备相同。
+* 您可以通过标签来识别连接到设备的每个缆线。
+* 您已拥有 xref:locating-controller-in-data-center.adoc[已物理定位设备]。
+* 此设备已运行 xref:placing-appliance-into-maintenance-mode.adoc[已置于维护模式]。
+
+
+更换设备时，无法访问 StorageGRID 节点。如果设备运行正常，您可以在此操作步骤 开始时执行受控关闭。
+
+
+NOTE: 如果在安装 StorageGRID 软件之前更换设备，则在完成此操作步骤 后，您可能无法立即访问 StorageGRID 设备安装程序。虽然您可以从与设备位于同一子网上的其他主机访问 StorageGRID 设备安装程序，但不能从其他子网上的主机访问它。此情况应在 15 分钟内自行解决（当原始设备的任何 ARP 缓存条目超时），或者您也可以通过手动从本地路由器或网关清除任何旧的 ARP 缓存条目来立即清除此情况。
+
+.步骤
+. 将设备置于维护模式后，关闭设备。
++
+.. 登录到网格节点：
++
+... 输入以下命令： `ssh admin@ grid_node_ip_`
+... 输入 `passwords.txt` 文件中列出的密码。
+... 输入以下命令切换到 root ： `su -`
+... 输入 `passwords.txt` 文件中列出的密码。
++
+以 root 用户身份登录时，提示符将从 ` $` 更改为 ` #` 。
+
+
+
+.. 关闭设备： + ` * shutdown -h now*`
+
+
+. 使用以下两种方法之一验证设备电源是否已关闭：
++
+** 设备正面的电源指示灯 LED 熄灭。
+** BMC 界面的电源控制页面指示设备已关闭。
+
+
+. 如果连接到设备的 StorageGRID 网络使用 DHCP 服务器，请更新 DNS/network 和 IP 地址设置。
++
+.. 找到设备正面的 MAC 地址标签，然后确定管理网络端口的 MAC 地址。
++
+
+NOTE: MAC 地址标签列出了 BMC 管理端口的 MAC 地址。
+
++
+要确定管理网络端口的 MAC 地址，必须在标签上的十六进制数字中添加 * 。 2 *例如，如果标签上的 MAC 地址以 *09* 结尾，则管理端口的 MAC 地址将以 *0B* 结尾。如果标签上的 MAC 地址以 * （ _y_ ） FF* 结尾，则管理端口的 MAC 地址将以 * （ _y_+1 ） 01* 结尾。您可以通过在 Windows 中打开 Calculator ，将其设置为程序编程模式，选择十六进制，键入 MAC 地址，然后键入 * + 2 =* 来轻松进行计算。
+
+.. 请网络管理员将您删除的设备的 DNS/network 和 IP 地址与替换设备的 MAC 地址关联起来。
++
+
+IMPORTANT: 在为替代设备接通电源之前，您必须确保原始设备的所有 IP 地址均已更新。否则，设备将在启动时获取新的 DHCP IP 地址，并且可能无法重新连接到 StorageGRID 。此步骤将对连接到设备的所有 StorageGRID 网络执行适用场景 。
+
++
+
+NOTE: 如果原始设备使用静态 IP 地址，新设备将自动采用您删除的设备的 IP 地址。
+
+
+
+. 卸下并更换设备：
++
+.. 为缆线贴上标签，然后断开缆线和任何网络收发器的连接。
++
+
+IMPORTANT: To prevent degraded performance, do not twist, fold, pinch, or step on the cables.
+
+.. 从机柜或机架中取出故障设备。
+.. 将故障设备中的两个电源，八个散热风扇和两个 SSD 传输到更换设备。
++
+按照提供的说明更换这些组件。
+
+.. 将替代设备安装到机柜或机架中。
+.. 更换缆线和任何光纤收发器。
+.. 打开设备电源并监控设备 LED 和启动代码。
++
+使用 BMC 界面监控启动状态。
+
+
+
+. 确认设备节点显示在网格管理器中且未显示任何警报。
+
+
+xref:installing-appliance-in-cabinet-or-rack-sg100-and-sg1000.adoc[将设备安装到机柜或机架中（ SG100 和 SG1000 ）]
+
+xref:viewing-status-indicators-on-sg100-and-sg1000-appliances.adoc[查看 SG100 和 SG1000 设备上的状态指示灯]
+
+xref:viewing-boot-up-codes-for-appliance-sg100-and-sg1000.adoc[查看设备的启动代码]

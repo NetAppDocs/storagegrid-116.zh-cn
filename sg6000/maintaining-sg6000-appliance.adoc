@@ -1,0 +1,18 @@
+---
+permalink: sg6000/maintaining-sg6000-appliance.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6000, storage node, storage appliance, maintain, maintaining, hardware, procedures, tasks 
+summary: 您可能需要对 SG6000 设备执行维护过程。本节中的过程假定设备已部署为 StorageGRID 系统中的存储节点。 
+---
+= 维护 SG6000 设备
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可能需要对 SG6000 设备执行维护过程。本节中的过程假定设备已部署为 StorageGRID 系统中的存储节点。
+
+要防止服务中断，请在关闭设备之前确认所有其他存储节点均已连接到网格，或者在可接受服务中断期间的计划维护窗口期间关闭设备。请参见有关的信息 xref:../monitor/monitoring-node-connection-states.adoc[监控节点连接状态]。
+
+
+IMPORTANT: 如果您使用的 ILM 规则只创建一个对象的一个副本，则必须在计划维护时段关闭设备。否则，在任何维护操作步骤 导致存储节点停止服务期间，您可能暂时无法访问这些对象。请参见有关的信息 xref:../ilm/index.adoc[通过信息生命周期管理管理对象]。

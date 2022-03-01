@@ -1,0 +1,86 @@
+---
+permalink: s3/post-object-restore.html 
+sidebar: sidebar 
+keywords: post, post object restore, object 
+summary: 您可以使用 S3 后对象还原请求还原存储在云存储池中的对象。 
+---
+= 后对象还原
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 S3 后对象还原请求还原存储在云存储池中的对象。
+
+
+
+== 支持的请求类型
+
+StorageGRID 仅支持后对象还原请求来还原对象。它不支持 `Select` 类型的还原。选择 Requests return `XNotImplement已 执行` 。
+
+
+
+== 版本控制
+
+或者，指定 `veversionId` 以还原受版本控制的存储分段中特定版本的对象。如果未指定 `veversionId` ，则会还原对象的最新版本
+
+
+
+== 对云存储池对象执行后对象还原的行为
+
+如果某个对象存储在云存储池中（请参见有关通过信息生命周期管理管理来管理对象的说明），则根据对象的状态，后对象还原请求具有以下行为。有关详细信息，请参见 "`head Object` " 。
+
+
+NOTE: 如果某个对象存储在云存储池中，并且该对象的一个或多个副本也位于网格中，则无需发出后对象还原请求来还原该对象。相反，可以使用 GET 对象请求直接检索本地副本。
+
+|===
+| 对象的状态 | POST 对象还原的行为 
+
+
+ a| 
+对象已载入 StorageGRID ，但尚未通过 ILM 进行评估，或者对象不在云存储池中
+ a| 
+`403 For禁用` ， `InvalidObjectState`
+
+
+
+ a| 
+云存储池中的对象，但尚未过渡到无法检索的状态
+ a| 
+`200 正常` 不进行任何更改。
+
+* 注 * ：在将对象过渡到不可检索状态之前，您不能更改其 `到期日期` 。
+
+
+
+ a| 
+对象已过渡到无法检索的状态
+ a| 
+`202 已接受` 在请求正文中指定的天数内将对象的可检索副本还原到云存储池。在此期间结束时，对象将返回到无法检索的状态。
+
+或者，也可以使用 `Tier` Request 元素来确定完成还原作业所需的时间（`Expedited` ， `Standard` 或 `Bulk` ）。如果未指定 `Tier` ，则会使用 `Standard` Tier 。
+
+* 注意 * ：如果对象已过渡到 S3 Glacier 深度归档或云存储池使用 Azure Blob Storage ，则无法使用 `Expedited` 层还原它。返回以下错误 `403 For禁用` ， `InvalidTier` ： `此存储类不支持检索选项` 。
+
+
+
+ a| 
+正在从不可检索状态还原的对象
+ a| 
+`409 conflict` ， `RestoreAlreadyInProProgress`
+
+
+
+ a| 
+对象已完全还原到云存储池
+ a| 
+`200 正常`
+
+* 注： * 如果对象已还原到可检索状态，您可以通过重新发出 POST 对象还原请求并为 `Days` 提供新值来更改其 `expiry-date` 。还原日期将相对于请求时间进行更新。
+
+|===
+xref:../ilm/index.adoc[使用 ILM 管理对象]
+
+xref:head-object.adoc[HEAD 对象]
+
+xref:s3-operations-tracked-in-audit-logs.adoc[在审核日志中跟踪 S3 操作]

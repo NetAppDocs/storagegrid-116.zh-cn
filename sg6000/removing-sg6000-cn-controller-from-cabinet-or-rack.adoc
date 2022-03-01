@@ -1,0 +1,50 @@
+---
+permalink: sg6000/removing-sg6000-cn-controller-from-cabinet-or-rack.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6000, storage node, storage appliance, remove, removing, removal, cabinet, rack, controller, sg6000-cn 
+summary: 从机柜或机架中卸下 SG6000-CN 控制器，以便检修顶盖或将控制器移至其他位置。 
+---
+= 从机柜或机架中卸下 SG6000-CN 控制器
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+从机柜或机架中卸下 SG6000-CN 控制器，以便检修顶盖或将控制器移至其他位置。
+
+.您需要什么？ #8217 ；将需要什么
+* 您可以通过标签来标识连接到 SG6000-CN 控制器的每个缆线。
+* 您已实际找到要在数据中心中执行维护的 SG6000-CN 控制器。
++
+xref:locating-controller-in-data-center.adoc[在数据中心中找到控制器]
+
+* 您已关闭 SG6000-CN 控制器。
++
+xref:shutting-down-sg6000-cn-controller.adoc[关闭 SG6000-CN 控制器]
+
++
+
+CAUTION: 请勿使用电源开关关闭控制器。
+
+
+
+.步骤
+. 标记并断开控制器电源线。
+. 将 ESD 腕带的腕带一端绕在腕带上，并将扣具一端固定到金属接地，以防止静电放电。
+. 标记并断开控制器数据缆线以及任何 SFP+ 或 SFP28 收发器的连接。
++
+
+IMPORTANT: To prevent degraded performance, do not twist, fold, pinch, or step on the cables.
+
+. 松开控制器前面板上的两个固定螺钉。
++
+image::../media/sg6060_rack_retaining_screws.png[SG6060 机架固定螺钉]
+
+. 将 SG6000-CN 控制器向前滑出机架，直到安装导轨完全展开，并且您可以听到两侧的闩锁卡嗒声。
++
+可以访问控制器顶盖。
+
+. 可选：如果要从机柜或机架中完全卸下控制器，请按照导轨套件的说明从导轨中卸下控制器。
+
+
+xref:removing-sg6000-cn-controller-cover.adoc[拆下 SG6000-CN 控制器盖板]

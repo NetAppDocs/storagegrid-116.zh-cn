@@ -1,0 +1,67 @@
+---
+permalink: tenant/understanding-notifications-for-buckets.html 
+sidebar: sidebar 
+keywords: s3 bucket event notification, sequencer key 
+summary: 如果您希望 StorageGRID 向目标 Amazon Simple Notification Service \ （ SNS ）发送有关指定事件的通知，则可以为 S3 存储分段启用事件通知。 
+---
+= 了解存储分段通知
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果您希望 StorageGRID 向目标 Amazon Simple Notification Service （ SNS ）发送有关指定事件的通知，则可以为 S3 存储分段启用事件通知。
+
+您可以 xref:configuring-event-notifications.adoc[配置事件通知] 通过将通知配置 XML 与源存储分段相关联。通知配置 XML 遵循 S3 配置存储分段通知的约定，并将目标 SNS 主题指定为端点的 URN 。
+
+事件通知在通知配置中指定的源存储分段处创建，并传送到目标。如果与某个对象关联的事件成功，则会创建有关该事件的通知并排队等待传送。
+
+不保证通知的唯一性和顺序。由于为保证成功交付而执行的操作，可能会向目标发送多个事件通知。由于交付是异步的，因此无法保证目标上通知的时间顺序与源存储分段上事件的顺序一致，尤其是对于来自不同 StorageGRID 站点的操作。您可以在事件消息中使用 `sEquencer` 键来确定特定对象的事件顺序，如 Amazon S3 文档中所述。
+
+
+
+== 支持的通知和消息
+
+StorageGRID 事件通知遵循 Amazon S3 API ，但存在以下限制：
+
+* 您不能为以下事件类型配置通知。这些事件类型 * 不 * 受支持。
++
+** `s 3 ：异径冗余 LostObject`
+** `s 3 ： ObjectRestore ：已完成`
+
+
+* 从 StorageGRID 发送的事件通知使用标准 JSON 格式，只是它们不包含某些密钥，而对其他密钥使用特定值，如下表所示：
+
+
+[cols="1a,2a"]
+|===
+| 密钥名称 | StorageGRID 值 
+
+
+ a| 
+事件源
+ a| 
+`sGWS ： S3`
+
+
+
+ a| 
+awsRegion
+ a| 
+不包括
+
+
+
+ a| 
+X-AMZ-ID-2
+ a| 
+不包括
+
+
+
+ a| 
+ARN
+ a| 
+`urn ： sgws ： s3 ：：： bucket_name`
+
+|===

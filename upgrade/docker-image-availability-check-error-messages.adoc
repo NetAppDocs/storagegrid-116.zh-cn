@@ -1,0 +1,87 @@
+---
+permalink: upgrade/docker-image-availability-check-error-messages.html 
+sidebar: sidebar 
+keywords: upgrade, error message, docker image availability 
+summary: '尝试启动升级过程时，您可能会收到一条错误消息，指出 " Docker 映像可用性检查验证套件发现以下问题。 " 必须先解决所有问题，然后才能完成升级。' 
+---
+= 错误消息： Docker 映像可用性检查
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+尝试启动升级过程时，您可能会收到一条错误消息，指出 "`Docker 映像可用性检查验证套件发现以下问题。` 必须先解决所有问题，然后才能完成升级。
+
+如果您不确定解决所发现问题所需的更改，请联系技术支持。
+
+[cols="1a,1a,1a"]
+|===
+| message | 发生原因 | 解决方案 
+
+
+ a| 
+无法确定升级版本。升级版本信息文件 ` ｛ file_path ｝` 与预期格式不匹配。
+ a| 
+升级软件包已损坏。
+ a| 
+请重新上传升级包，然后重试。如果问题仍然存在，请联系技术支持。
+
+
+
+ a| 
+未找到升级版本信息文件 ` ｛ file_path ｝` 。无法确定升级版本。
+ a| 
+升级软件包已损坏。
+ a| 
+请重新上传升级包，然后重试。如果问题仍然存在，请联系技术支持。
+
+
+
+ a| 
+无法确定 ` ｛ node_name ｝` 上当前安装的版本。
+ a| 
+节点上的关键文件已损坏。
+ a| 
+请联系技术支持。
+
+
+
+ a| 
+尝试列出 ` ｛ node_name ｝` 上的版本时出现连接错误
+ a| 
+节点脱机或连接中断。
+ a| 
+请检查以确保所有节点均联机并可从主管理节点访问，然后重试。
+
+
+
+ a| 
+节点 ` ｛ node_name ｝` 的主机未加载 StorageGRID ` ｛ upgrade_version ｝` 映像。必须先在主机上安装映像和服务，然后才能继续升级。
+ a| 
+用于升级的 RPM 或 Deb 软件包未安装在运行节点的主机上，或者映像仍在导入过程中。
+
+* 注： * 此错误仅适用于在 Linux 上作为容器运行的适用场景 节点。
+ a| 
+检查以确保 RPM 或 Deb 软件包已安装在运行节点的所有 Linux 主机上。确保服务和映像文件的版本正确。请稍等几分钟，然后重试。
+
+请参见 xref:../upgrade/linux-installing-rpm-or-deb-package-on-all-hosts.adoc[Linux ：在所有主机上安装 RPM 或 Deb 软件包]。
+
+
+
+ a| 
+检查节点 ` ｛ node_name ｝` 时出错
+ a| 
+发生意外错误。
+ a| 
+请稍等几分钟，然后重试。
+
+
+
+ a| 
+运行预检时出现未捕捉的错误。` ｛ error_string ｝`
+ a| 
+发生意外错误。
+ a| 
+请稍等几分钟，然后重试。
+
+|===

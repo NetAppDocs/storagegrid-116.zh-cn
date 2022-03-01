@@ -1,0 +1,88 @@
+---
+permalink: sg6000/viewing-status-indicators-and-buttons-on-sg6000-cn-controller.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6000, storage node, storage appliance, status, indicators, lights, leds, light, led, switch , button, power, reset, identify, alarm, indicator, boot codes, boot, code, start, startup, start up, start-up, progress, sg6000-cn 
+summary: SG6000-CN 控制器包含一些指示灯，可帮助您确定控制器的状态，其中包括以下指示灯和按钮。 
+---
+= 查看 SG6000-CN 控制器上的状态指示灯和按钮
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SG6000-CN 控制器包含一些指示灯，可帮助您确定控制器的状态，其中包括以下指示灯和按钮。
+
+image::../media/sg6000_cn_front_indicators.gif[正面指示灯— SG6000-CN]
+
+[cols="1a,2a,3a"]
+|===
+|  | 显示 | Description 
+
+
+ a| 
+1.
+ a| 
+电源按钮
+ a| 
+* 蓝色：控制器已启动。
+* off ：控制器已关闭。
+
+
+
+
+ a| 
+2.
+ a| 
+重置按钮
+ a| 
+无指示符 _
+
+使用此按钮可对控制器执行硬重置。
+
+
+
+ a| 
+3.
+ a| 
+识别按钮
+ a| 
+* 闪烁或稳定蓝色：标识机柜或机架中的控制器。
+* off ：无法在机柜或机架中直观地识别控制器。
+
+
+此按钮可以设置为闪烁，打开（稳定）或关闭。
+
+
+
+ a| 
+4.
+ a| 
+警报 LED
+ a| 
+* 琥珀色：发生错误。
++
+* 注： * 要查看启动和错误代码，您必须访问 BMC 界面。
+
+* off ：不存在任何错误。
+
+
+|===
+
+
+== 常规启动代码
+
+在启动期间或在对 SG6000-CN 控制器进行硬重置后，将发生以下情况：
+
+. 基板管理控制器（ BMC ）会记录启动顺序的代码，包括发生的任何错误。
+. 电源按钮将亮起。
+. 如果在启动期间发生任何错误，警报 LED 将亮起。
++
+要查看启动和错误代码，您必须访问 BMC 界面。
+
+
+
+xref:troubleshooting-hardware-installation.adoc[硬件安装故障排除（ SG6000 ）]
+
+xref:configuring-bmc-interface-sg6000.adoc[配置 BMC 接口（ SG6000 ）]
+
+xref:powering-on-sg6000-cn-controller-and-verifying-operation.adoc[打开 SG6000-CN 控制器的电源并验证其运行情况]

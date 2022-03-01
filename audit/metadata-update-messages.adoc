@@ -1,0 +1,34 @@
+---
+permalink: audit/metadata-update-messages.html 
+sidebar: sidebar 
+keywords: storagegrid, audit, message, Metadata update, S3 metadata update, SUPD 
+summary: S3 客户端更新对象的元数据时会生成审核消息。 
+---
+= 元数据更新消息
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+当 S3 客户端更新对象的元数据时，系统会生成审核消息。
+
+
+
+== S3 元数据更新审核消息
+
+|===
+| 代码 | Name | Description | 跟踪 | 请参见 
+
+
+ a| 
+SUPD
+ a| 
+已更新 S3 元数据
+ a| 
+当 S3 客户端更新已载入对象的元数据时生成。
+ a| 
+CBID ， S3KY ， HTRH
+ a| 
+xref:supd-s3-metadata-updated.adoc[SUPD ：已更新 S3 元数据]
+
+|===

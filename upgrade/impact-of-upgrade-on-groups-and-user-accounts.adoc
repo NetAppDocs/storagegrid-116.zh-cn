@@ -1,0 +1,32 @@
+---
+permalink: upgrade/impact-of-upgrade-on-groups-and-user-accounts.html 
+sidebar: sidebar 
+keywords: upgrade, permissions 
+summary: 您必须了解 StorageGRID 升级的影响，以便可以在升级完成后相应地更新组和用户帐户。 
+---
+= 升级对组和用户帐户的影响
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您必须了解 StorageGRID 升级的影响，以便可以在升级完成后相应地更新组和用户帐户。
+
+
+
+== 对组权限和选项进行的更改
+
+升级到 StorageGRID 11.6 后，可以选择以下更新或新的权限和选项（ * 配置 * > * 访问控制 * > * 管理组 * ）。
+
+[cols="1a,2a"]
+|===
+| 权限或选项 | Description 
+
+
+ a| 
+租户帐户
+ a| 
+除了允许用户创建，编辑和删除租户帐户之外，此权限现在还允许管理员用户查看现有流量分类策略（ * 配置 * > * 网络 * > * 流量分类 * ）。
+
+|===
+请参见 xref:../admin/managing-admin-groups.adoc[管理管理组]。

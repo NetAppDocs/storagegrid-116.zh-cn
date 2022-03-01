@@ -1,0 +1,27 @@
+---
+permalink: maintain/resetting-preferred-sender-on-recovered-non-primary-admin-node.html 
+sidebar: sidebar 
+keywords: storagegrid, recover, non-primary admin node, reset preferred sender, resetting preferred sender 
+summary: 如果您要恢复的非主管理节点当前设置为警报通知，警报通知和 AutoSupport 消息的首选发送方，则必须在 StorageGRID 系统中重新配置此设置。 
+---
+= 在已恢复的非主管理节点上重置首选发送器
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果您要恢复的非主管理节点当前设置为警报通知，警报通知和 AutoSupport 消息的首选发送方，则必须在 StorageGRID 系统中重新配置此设置。
+
+.您需要什么？ #8217 ；将需要什么
+* 您必须使用登录到网格管理器 xref:../admin/web-browser-requirements.adoc[支持的 Web 浏览器]。
+* 您必须具有特定的访问权限。
+* 必须安装并运行已恢复的管理节点。
+
+
+.步骤
+. 选择 * 配置 * > * 系统 * > * 显示选项 * 。
+. 从 * 首选发件人 * 下拉列表中选择已恢复的管理节点。
+. 单击 * 应用更改 * 。
+
+
+xref:../admin/index.adoc[管理 StorageGRID]

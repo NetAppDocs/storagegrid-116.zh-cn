@@ -1,0 +1,36 @@
+---
+permalink: admin/configuring-stored-object-encryption.html 
+sidebar: sidebar 
+keywords: stored object encryption, grid options, encrypt 
+summary: 如果要确保在对象存储受到影响时无法以可读形式检索数据，则可以对存储的对象进行加密。默认情况下，对象不会加密。 
+---
+= 配置存储的对象加密
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果要确保在对象存储受到影响时无法以可读形式检索数据，则可以对存储的对象进行加密。默认情况下，对象不会加密。
+
+.您需要什么？ #8217 ；将需要什么
+* 您将使用登录到网格管理器 xref:../admin/web-browser-requirements.adoc[支持的 Web 浏览器]。
+* 您具有特定的访问权限。
+
+
+存储的对象加密可对通过 S3 或 Swift 载入的所有对象数据进行加密。启用此设置后，所有新载入的对象都将被加密，但不会对现有存储的对象进行任何更改。如果禁用加密，则当前加密的对象将保持加密状态，但新载入的对象不会加密。
+
+
+NOTE: 如果更改此设置，则应用新设置需要大约一分钟的时间。已配置的值将进行缓存以提高性能和扩展能力。
+
+存储的对象可以使用 AES‐128 或 AES‐256 加密算法进行加密。
+
+存储对象加密设置仅适用于尚未通过存储分段级别或对象级别加密进行加密的 S3 对象。
+
+.步骤
+. 选择 * 配置 * > * 系统 * > * 网格选项 * 。
+. 在存储的对象选项部分中，将存储的对象加密更改为 * 无 * （默认）， * AES-128* 或 * AES-256* 。
++
+image::../media/stored_object_encryption.png[存储对象加密]
+
+. 选择 * 保存 * 。
+

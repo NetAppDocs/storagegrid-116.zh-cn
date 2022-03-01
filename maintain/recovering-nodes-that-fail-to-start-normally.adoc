@@ -1,0 +1,25 @@
+---
+permalink: maintain/recovering-nodes-that-fail-to-start-normally.html 
+sidebar: sidebar 
+keywords: storagegrid, recover, node did not start, node fail to start 
+summary: 如果 StorageGRID 节点未正常重新加入网格，并且无法显示为可恢复，则可能已损坏。您可以强制节点进入恢复模式。 
+---
+= 恢复无法正常启动的节点
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果 StorageGRID 节点未正常重新加入网格，并且无法显示为可恢复，则可能已损坏。您可以强制节点进入恢复模式。
+
+要强制节点进入恢复模式，请执行以下操作：
+
+`sUdo StorageGRID node force-recovery _node-name_`
+
+
+TIP: 发出此命令之前，请确认节点的网络配置正确无误；节点可能由于网络接口映射不正确或网格网络 IP 地址或网关不正确而无法重新加入网格。
+
+
+IMPORTANT: 发出 `StorageGRID node force-recovery _node-name_` 命令后，您必须对 _node-name_ 执行其他恢复步骤。
+
+xref:whats-next-performing-additional-recovery-steps-if-required.adoc[下一步操作：如果需要，执行其他恢复步骤]

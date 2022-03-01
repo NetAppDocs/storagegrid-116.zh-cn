@@ -1,0 +1,13 @@
+---
+permalink: maintain/host-level-and-middleware-procedures.html 
+sidebar: sidebar 
+keywords: host level procedures, host-level procedures, middleware procedures 
+summary: 某些维护过程专用于 StorageGRID 的 Linux 或 VMware 部署，或者专用于 StorageGRID 解决方案 的其他组件。 
+---
+= 主机级别和中间件过程
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+某些维护过程专用于 StorageGRID 的 Linux 或 VMware 部署，或者专用于 StorageGRID 解决方案 的其他组件。

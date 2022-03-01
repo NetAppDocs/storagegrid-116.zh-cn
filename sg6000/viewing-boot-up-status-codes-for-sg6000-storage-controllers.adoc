@@ -1,0 +1,36 @@
+---
+permalink: sg6000/viewing-boot-up-status-codes-for-sg6000-storage-controllers.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6000, storage node, storage appliance, boot codes, boot-up codes, start codes, codes, boot, start, storage controller, controller, storage 
+summary: 每个存储控制器都有一个七段显示器，可在控制器启动时提供状态代码。E2800 控制器和 EF570 控制器的状态代码相同。 
+---
+= 查看 SG6000 存储控制器的启动状态代码
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+每个存储控制器都有一个七段显示器，可在控制器启动时提供状态代码。E2800 控制器和 EF570 控制器的状态代码相同。
+
+有关这些代码的说明，请参见适用于您的存储控制器类型的 E 系列系统监控信息。
+
+.步骤
+. 在启动期间，通过查看每个存储控制器的七段显示器上显示的代码来监控进度。
++
+每个存储控制器上的七段显示会显示重复序列 * 操作系统 * ， * 可持续发展 * ， ` * 空白 _*` ，以指示控制器正在执行每日开始处理。
+
+. 控制器启动后，确认每个存储控制器显示 99 ，这是 E 系列控制器架的默认 ID 。
++
+确保此值显示在两个存储控制器上，如本示例 E2800 控制器所示。
+
++
+image::../media/seven_segment_display_codes_for_e2800.gif[E2800 的七段显示代码]
+
+. 如果一个或两个控制器显示其他值，请参见 xref:troubleshooting-hardware-installation.adoc[硬件安装故障排除（ SG6000 ）] 并确认您已正确完成安装步骤。如果无法解决此问题，请联系技术支持。
+
+
+https://library.netapp.com/ecmdocs/ECMLP2588751/html/frameset.html["《 E5700 和 E2800 系统监控指南》"^]
+
+https://mysupport.netapp.com/site/global/dashboard["NetApp 支持"^]
+
+xref:powering-on-sg6000-cn-controller-and-verifying-operation.adoc[打开 SG6000-CN 控制器的电源并验证其运行情况]

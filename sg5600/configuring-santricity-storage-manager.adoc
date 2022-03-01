@@ -1,0 +1,13 @@
+---
+permalink: sg5600/configuring-santricity-storage-manager.html 
+sidebar: sidebar 
+keywords: storagegrid, sg5600, storage node, storage appliance, SANtricity Storage Manager, SANtricity, Storage Manager, configure, configuring, setup, set up, setting up, e2700 
+summary: 您可以使用 SANtricity 存储管理器监控 StorageGRID 设备中存储磁盘和硬件组件的状态。要访问此软件，您必须知道 E2700 控制器 \ （设备中的存储控制器 \ ）上管理端口 1 的 IP 地址。 
+---
+= 配置 SANtricity 存储管理器
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 SANtricity 存储管理器监控 StorageGRID 设备中存储磁盘和硬件组件的状态。要访问此软件，您必须知道 E2700 控制器（设备中的存储控制器）上管理端口 1 的 IP 地址。

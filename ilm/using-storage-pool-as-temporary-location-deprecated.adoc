@@ -1,0 +1,20 @@
+---
+permalink: ilm/using-storage-pool-as-temporary-location-deprecated.html 
+sidebar: sidebar 
+keywords: storage pool temporary location 
+summary: 创建对象放置包含单个存储池的 ILM 规则时，系统会提示您指定要用作临时位置的第二个存储池。 
+---
+= 使用存储池作为临时位置（已弃用）
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+创建对象放置包含单个存储池的 ILM 规则时，系统会提示您指定要用作临时位置的第二个存储池。
+
+临时位置已弃用，将在未来版本中删除。您不应选择存储池作为新 ILM 规则的临时位置。
+
+
+NOTE: 如果选择严格的载入行为（创建 ILM 规则向导的第 3 步），则会忽略临时位置。
+
+xref:data-protection-options-for-ingest.adoc[用于载入的数据保护选项]

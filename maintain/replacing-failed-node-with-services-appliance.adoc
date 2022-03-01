@@ -1,0 +1,36 @@
+---
+permalink: maintain/replacing-failed-node-with-services-appliance.html 
+sidebar: sidebar 
+keywords: storagegrid, recover, replace failed node, services appliance 
+summary: 您可以使用 SG100 或 SG1000 服务设备恢复出现故障的网关节点，出现故障的非主管理节点或 VMware 上托管的主管理节点， Linux 主机或服务设备发生故障。此操作步骤 是网格节点恢复操作步骤 的一个步骤。 
+---
+= 将故障节点更换为服务设备
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 SG100 或 SG1000 服务设备恢复出现故障的网关节点，出现故障的非主管理节点或 VMware 上托管的主管理节点， Linux 主机或服务设备发生故障。此操作步骤 是网格节点恢复操作步骤 的一个步骤。
+
+.您需要什么？ #8217 ；将需要什么
+* 您必须已确定以下情况之一是正确的：
++
+** 无法还原托管此节点的虚拟机。
+** 网格节点的物理或虚拟 Linux 主机出现故障，必须更换。
+** 必须更换托管网格节点的服务设备。
+
+
+* 您必须确保服务设备上的 StorageGRID 设备安装程序版本与 StorageGRID 系统的软件版本匹配，如用于验证和升级 StorageGRID 设备安装程序版本的硬件安装和维护中所述。
++
+xref:../sg100-1000/index.adoc[SG100 和 SG1000 服务设备]
+
+
+
+
+IMPORTANT: 不要在同一站点同时部署 SG100 和 SG1000 服务设备。可能会导致性能不可预测。
+
+在以下情况下，您可以使用 SG100 或 SG1000 服务设备恢复出现故障的网格节点：
+
+* 故障节点托管在 VMware 或 Linux 上（平台更改）
+* 故障节点托管在服务设备上（平台更换）
+

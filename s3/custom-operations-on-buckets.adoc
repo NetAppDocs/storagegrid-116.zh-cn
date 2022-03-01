@@ -1,0 +1,110 @@
+---
+permalink: s3/custom-operations-on-buckets.html 
+sidebar: sidebar 
+keywords: operations, buckets, custom, custom operations on buckets 
+summary: StorageGRID 系统支持添加到 S3 REST API 中且特定于系统的自定义存储分段操作。 
+---
+= 对存储分段执行自定义操作
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+StorageGRID 系统支持添加到 S3 REST API 中且特定于系统的自定义存储分段操作。
+
+下表列出了 StorageGRID 支持的自定义存储分段操作。
+
+|===
+| 操作 | Description | 有关详细信息 ... 
+
+
+ a| 
+获取存储分段一致性
+ a| 
+返回应用于特定存储分段的一致性级别。
+ a| 
+xref:get-bucket-consistency-request.adoc[获取存储分段一致性请求]
+
+
+
+ a| 
+PUT 存储分段一致性
+ a| 
+设置应用于特定存储分段的一致性级别。
+ a| 
+xref:put-bucket-consistency-request.adoc[PUT 存储分段一致性请求]
+
+
+
+ a| 
+获取存储分段上次访问时间
+ a| 
+返回为特定存储分段启用还是禁用上次访问时间更新。
+ a| 
+xref:get-bucket-last-access-time-request.adoc[获取分段上次访问时间请求]
+
+
+
+ a| 
+PUT 分段上次访问时间
+ a| 
+用于启用或禁用特定存储分段的上次访问时间更新。
+ a| 
+xref:put-bucket-last-access-time-request.adoc[PUT 分段上次访问时间请求]
+
+
+
+ a| 
+删除存储分段元数据通知配置
+ a| 
+删除与特定存储分段关联的元数据通知配置 XML 。
+ a| 
+xref:delete-bucket-metadata-notification-configuration-request.adoc[删除存储分段元数据通知配置请求]
+
+
+
+ a| 
+获取存储分段元数据通知配置
+ a| 
+返回与特定存储分段关联的元数据通知配置 XML 。
+ a| 
+xref:get-bucket-metadata-notification-configuration-request.adoc[获取存储分段元数据通知配置请求]
+
+
+
+ a| 
+PUT 存储分段元数据通知配置
+ a| 
+配置存储分段的元数据通知服务。
+ a| 
+xref:put-bucket-metadata-notification-configuration-request.adoc[PUT 存储分段元数据通知配置请求]
+
+
+
+ a| 
+使用合规设置放置存储分段
+ a| 
+已弃用且不支持：您无法再在启用合规性的情况下创建新存储分段。
+ a| 
+xref:deprecated-put-bucket-request-modifications-for-compliance.adoc[已弃用：使用合规性设置放置存储分段]
+
+
+
+ a| 
+获取存储分段合规性
+ a| 
+已弃用但受支持：返回当前对现有旧版合规存储分段有效的合规性设置。
+ a| 
+xref:deprecated-get-bucket-compliance-request.adoc[已弃用：获取存储分段合规性请求]
+
+
+
+ a| 
+PUT 存储分段合规性
+ a| 
+已弃用但受支持：允许您修改现有旧版合规存储分段的合规性设置。
+ a| 
+xref:deprecated-put-bucket-compliance-request.adoc[已弃用： PUT 存储分段合规性请求]
+
+|===
+xref:s3-operations-tracked-in-audit-logs.adoc[审核日志中跟踪的 S3 操作]

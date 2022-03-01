@@ -1,0 +1,58 @@
+---
+permalink: audit/object-retrieve-transactions.html 
+sidebar: sidebar 
+keywords: storagegrid, audit, message, Object retrieve, messages, transaction, transactions, s3, swift, trace, SGET, WGET 
+summary: 您可以通过查找 API 专用的 \ （ S3 和 Swift\ ）审核消息来确定审核日志中的对象检索事务。 
+---
+= 对象检索事务
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以通过查找特定于 API （ S3 和 Swift ）的审核消息来确定审核日志中的对象检索事务。
+
+下表列出了在检索事务期间生成的并非所有审核消息。仅包含跟踪检索事务所需的消息。
+
+
+
+== S3 检索审核消息
+
+[cols="1a,1a,2a,1a,1a"]
+|===
+| 代码 | Name | Description | 跟踪 | 请参见 
+
+
+ a| 
+SGET
+ a| 
+S3 GET
+ a| 
+请求从存储分段中检索对象。
+ a| 
+CBID ， S3BK ， S3KY
+ a| 
+xref:sget-s3-get.adoc[SGET ： S3 GET]
+
+|===
+
+
+== Swift 检索审核消息
+
+[cols="1a,1a,2a,1a,1a"]
+|===
+| 代码 | Name | Description | 跟踪 | 请参见 
+
+
+ a| 
+wget
+ a| 
+Swift GET
+ a| 
+请求从容器中检索对象。
+ a| 
+CBID ， WCON ， WOBJ
+ a| 
+xref:wget-swift-get.adoc[WGET ： Swift GET]
+
+|===

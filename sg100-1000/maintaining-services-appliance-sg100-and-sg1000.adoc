@@ -1,0 +1,13 @@
+---
+permalink: sg100-1000/maintaining-services-appliance-sg100-and-sg1000.html 
+sidebar: sidebar 
+keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gateway Node, admin node, maintain, maintaining, hardware, procedures, tasks 
+summary: 您可能需要对设备执行维护过程。本节中的过程假定设备已部署为 StorageGRID 系统中的网关节点或管理节点。 
+---
+= 维护设备
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可能需要对设备执行维护过程。本节中的过程假定设备已部署为 StorageGRID 系统中的网关节点或管理节点。

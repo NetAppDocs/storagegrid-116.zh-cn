@@ -1,0 +1,70 @@
+---
+permalink: sg5700/setting-ip-addresses-for-storage-controllers-using-storagegrid-appliance-installer.html 
+sidebar: sidebar 
+keywords: storagegrid, sg5700, storage node, storage appliance, storage controller, controller, configure, setup, set up, IP, IP address, management port, Appliance Installer 
+summary: 每个存储控制器上的管理端口 1 用于将设备连接到 SANtricity System Manager 的管理网络。如果无法从 StorageGRID 设备安装程序访问 SANtricity 系统管理器，则必须为每个存储控制器设置一个静态 IP 地址，以确保不会丢失与控制器架中的硬件和控制器固件的管理连接。 
+---
+= 使用 StorageGRID 设备安装程序设置存储控制器的 IP 地址
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+每个存储控制器上的管理端口 1 用于将设备连接到 SANtricity System Manager 的管理网络。如果无法从 StorageGRID 设备安装程序访问 SANtricity 系统管理器，则必须为每个存储控制器设置一个静态 IP 地址，以确保不会丢失与控制器架中的硬件和控制器固件的管理连接。
+
+.您需要什么？ #8217 ；将需要什么
+* 您正在使用可以连接到 StorageGRID 管理网络的任何管理客户端，或者您使用的是服务笔记本电脑。
+* 客户端或服务笔记本电脑具有受支持的 Web 浏览器。
+
+
+DHCP 分配的地址可以随时更改。为控制器分配静态 IP 地址，以确保一致的可访问性。
+
+
+NOTE: 只有当您无法从 StorageGRID 设备安装程序（ * 高级 * > * SANtricity 系统管理器 * ）或网格管理器（ * 节点 * > * SANtricity 系统管理器 * ）访问 SANtricity 系统管理器时，才应遵循此操作步骤 。
+
+.步骤
+. 在客户端中，输入 StorageGRID 设备安装程序的 URL ： + ` * https://_Appliance_Controller_IP_:8443*`
++
+对于 ` 设备控制器 IP` ，请在任何 StorageGRID 网络上使用设备的 IP 地址。
+
++
+此时将显示 StorageGRID 设备安装程序主页页面。
+
+. 选择 * 配置硬件 * > * 存储控制器网络配置 * 。
++
+此时将显示存储控制器网络配置页面。
+
+. 根据您的网络配置，对于 IPv4 ， IPv6 或这两者，请选择 * 已启用 * 。
+. 记下自动显示的 IPv4 地址。
++
+DHCP 是为存储控制器管理端口分配 IP 地址的默认方法。
+
++
+
+NOTE: 显示 DHCP 值可能需要几分钟的时间。
+
++
+image::../media/storage_controller_network_config_ipv4.gif[存储控制器网络配置 IPv4]
+
+. （可选）设置存储控制器管理端口的静态 IP 地址。
++
+
+NOTE: 您应该为管理端口分配静态 IP ，或者为 DHCP 服务器上的地址分配永久租约。
+
++
+.. 选择 * 静态 * 。
+.. 使用 CIDR 表示法输入 IPv4 地址。
+.. 输入默认网关。
++
+image::../media/storage_controller_ipv4_and_def_gateway.gif[存储控制器网络配置 IPv4 和默认网关]
+
+.. 单击 * 保存 * 。
++
+应用所做的更改可能需要几分钟的时间。
+
++
+连接到 SANtricity 系统管理器时，您将使用新的静态 IP 地址作为 URL ： + ` * https://_Storage_Controller_IP_*`
+
+
+
+

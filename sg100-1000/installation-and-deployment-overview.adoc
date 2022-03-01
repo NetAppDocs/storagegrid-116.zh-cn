@@ -1,0 +1,106 @@
+---
+permalink: sg100-1000/installation-and-deployment-overview.html 
+sidebar: sidebar 
+keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gateway Node, admin node, Installation, deployment, Install, deploy, Installing, deploying 
+summary: 您可以在首次部署 StorageGRID 时安装一个或多个 StorageGRID 服务设备，也可以稍后在扩展过程中添加服务设备节点。 
+---
+= 安装和部署概述
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以在首次部署 StorageGRID 时安装一个或多个 StorageGRID 服务设备，也可以稍后在扩展过程中添加服务设备节点。
+
+您的 StorageGRID 系统正在使用所需版本的 StorageGRID 软件。
+
+|===
+| 设备 | 所需的 StorageGRID 版本 
+
+
+ a| 
+SG100
+ a| 
+11.4 或更高版本（建议使用最新的修补程序）
+
+
+
+ a| 
+SG1000
+ a| 
+11.3 或更高版本（建议使用最新的修补程序）
+
+|===
+
+
+== 安装和部署任务
+
+准备 StorageGRID 设备并将其添加到网格包括四个主要步骤：
+
+. 准备安装：
++
+** 正在准备安装站点
+** 打开包装箱的包装并检查包装箱中的物品
+** 获取其他设备和工具
+** 验证网络配置
+** 可选：如果您计划对所有设备数据进行加密，请配置外部密钥管理服务器（ KMS ）。有关外部密钥管理的详细信息，请参见 StorageGRID 管理说明。
+
+
+. 安装硬件：
++
+** 注册硬件
+** 将设备安装到机柜或机架中
+** 为设备布线
+** 连接电源线并接通电源
+** 查看启动状态代码
+
+
+. 配置硬件：
++
+** 访问 StorageGRID 设备安装程序并配置连接到 StorageGRID 网络所需的链路和网络 IP 设置
+** 访问设备上的基板管理控制器（ BMC ）接口。
+** 可选：如果您计划使用外部 KMS 对设备数据进行加密，请启用节点加密。
+
+
+. 部署设备网关或管理节点
++
+安装并配置设备硬件后，您可以将此设备部署为 StorageGRID 系统中的网关节点和管理节点。SG100 和 SG1000 设备可以同时作为网关节点和管理节点（主节点和非主节点）运行。
+
++
+|===
+| 任务 | 说明 
+
+
+ a| 
+在新的 StorageGRID 系统中部署设备网关或管理节点
+ a| 
+xref:deploying-services-appliance-node.adoc[部署服务设备节点]
+
+
+
+ a| 
+将设备网关或管理节点添加到现有 StorageGRID 系统
+ a| 
+有关扩展 StorageGRID 系统的说明
+
+
+
+ a| 
+在节点恢复操作中部署设备网关或管理节点
+ a| 
+恢复和维护说明
+
+|===
+
+
+xref:preparing-for-installation-sg100-and-sg1000.adoc[准备安装（ SG100 和 SG1000 ）]
+
+xref:installing-hardware-sg100-and-sg1000.adoc[安装硬件（ SG100 和 SG1000 ）]
+
+xref:configuring-storagegrid-connections-sg100-and-sg1000.adoc[配置 StorageGRID 连接（ SG100 和 SG1000 ）]
+
+xref:../expand/index.adoc[扩展网格]
+
+xref:../maintain/index.adoc[恢复和维护]
+
+xref:../admin/index.adoc[管理 StorageGRID]

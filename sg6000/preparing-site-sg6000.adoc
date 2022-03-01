@@ -1,0 +1,120 @@
+---
+permalink: sg6000/preparing-site-sg6000.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6000, storage node, storage appliance, install, installation, site prep, site preparating, preparing site, site requirements, requirements, site, dimensions, weight, weights, temperature, humidity, altitude, airflow, heat, wiring, power, grounding, facility 
+summary: 在安装设备之前，您必须确保要使用的站点和机柜或机架符合 StorageGRID 设备的规格。 
+---
+= 准备站点（ SG6000 ）
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在安装设备之前，您必须确保要使用的站点和机柜或机架符合 StorageGRID 设备的规格。
+
+.步骤
+. 确认站点满足温度，湿度，海拔范围，气流，散热， 布线，电源和接地。有关详细信息，请参见 NetApp Hardware Universe 。
+. 确认您所在位置为 SG6060 提供 240 伏交流电源，为 SGF6024 提供 120 伏交流电源。
+. 获取一个 19 英寸（ 48.3 厘米）的机柜或机架，以适合此大小的磁盘架（不带缆线）：
++
+|===
+| 磁盘架类型 | 高度 | 宽度 | 深度 | 最大重量 
+
+
+ a| 
+* 用于 SG6060 的 E2860 控制器架 *
+ a| 
+6.87 英寸
+
+（ 17.46 厘米）
+ a| 
+17.66 英寸
+
+（ 44.86 厘米）
+ a| 
+38.25 英寸
+
+（ 97.16 厘米）
+ a| 
+250 磅
+
+（ 113 千克）
+
+
+
+ a| 
+* 用于 SG6060 （一个或两个）的可选扩展架 *
+ a| 
+6.87 英寸
+
+（ 17.46 厘米）
+ a| 
+17.66 英寸
+
+（ 44.86 厘米）
+ a| 
+38.25 英寸
+
+（ 97.16 厘米）
+ a| 
+250 磅
+
+（ 113 千克）
+
+
+
+ a| 
+用于 SGF6024 的 * EF570 控制器架 *
+ a| 
+3.35 英寸
+
+（ 8.50 厘米）
+ a| 
+17.66 英寸
+
+（ 44.86 厘米）
+ a| 
+19.00 英寸
+
+（ 48.26 厘米）
+ a| 
+51.74 磅
+
+（ 23.47 千克）
+
+
+
+ a| 
+每个设备的 * SG6000-CN 控制器 *
+ a| 
+1.70 英寸
+
+（ 4.32 厘米）
+ a| 
+17.32 英寸
+
+（ 44.0 厘米）
+ a| 
+32.0 英寸
+
+（ 81.3 厘米）
+ a| 
+39 磅
+
+（ 17.7 千克）
+
+|===
+. 确定要在何处安装设备。
++
+
+CAUTION: 安装 E2860 控制器架或可选扩展架时，请从机架或机柜的底部到顶部安装硬件，以防止设备发生倾翻。要确保最重的设备位于机柜或机架的底部，请在 E2860 控制器架和扩展架上方安装 SG6000-CN 控制器。
+
++
+
+IMPORTANT: 在提交安装之前，请确认设备随附的 0.5 米光缆或您提供的缆线长度足以满足计划的布局要求。
+
+
+
+https://hwu.netapp.com["NetApp Hardware Universe"^]
+
+https://mysupport.netapp.com/matrix["NetApp 互操作性表工具"^]

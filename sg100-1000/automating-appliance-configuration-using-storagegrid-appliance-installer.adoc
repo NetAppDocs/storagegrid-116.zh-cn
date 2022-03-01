@@ -1,0 +1,101 @@
+---
+permalink: sg100-1000/automating-appliance-configuration-using-storagegrid-appliance-installer.html 
+sidebar: sidebar 
+keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gateway Node, admin node, automate, automating, automation, automatic, configuration, configure, appliance installer 
+summary: 您可以使用包含配置信息的 JSON 文件自动配置设备。您可以使用 StorageGRID 设备安装程序上传文件。 
+---
+= 使用 StorageGRID 设备安装程序自动配置设备
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用包含配置信息的 JSON 文件自动配置设备。您可以使用 StorageGRID 设备安装程序上传文件。
+
+.您需要什么？ #8217 ；将需要什么
+* 您的设备必须使用与 StorageGRID 11.5 或更高版本兼容的最新固件。
+* 您必须连接到要使用配置的设备上的 StorageGRID 设备安装程序 xref:../admin/web-browser-requirements.adoc[支持的 Web 浏览器]。
+
+
+您可以自动执行设备配置任务，例如配置以下内容：
+
+* 网格网络，管理网络和客户端网络 IP 地址
+* BMC 接口
+* 网络链路
++
+** 端口绑定模式
+** 网络绑定模式
+** 链路速度
+
+
+
+
+使用上传的 JSON 文件配置设备通常比在 StorageGRID 设备安装程序中使用多个页面手动执行配置效率更高，尤其是在需要配置多个节点时。您必须一次应用一个节点的配置文件。
+
+
+NOTE: 希望自动安装和配置设备的经验丰富的用户可以 xref:automating-installation-configuration-appliance-nodes-configure-sga-py-script.adoc[使用 configure-sga.py 脚本]。
+
+.步骤
+. 使用以下方法之一生成 JSON 文件：
++
+** 。 https://configbuilder.netapp.com/["ConfigBuilder 应用程序"^]。
+** 。 xref:automating-installation-configuration-appliance-nodes-configure-sga-py-script.adoc[`configure-sGa.py` 设备配置脚本]。您可以从 StorageGRID 设备安装程序（ * 帮助 * > * 设备配置脚本 * ）下载此脚本。
++
+JSON 文件中的节点名称必须符合以下要求：
+
++
+*** 必须是一个有效的主机名，至少包含 1 个字符，并且不超过 32 个字符
+*** 可以使用字母，数字和连字符
+*** 不能以连字符开头或结尾
+*** 不能仅包含数字
++
+
+IMPORTANT: 请确保 JSON 文件中的节点名称（顶级名称）是唯一的，否则您将无法使用 JSON 文件配置多个节点。
+
+
+
+
+
+. 选择 * 高级 * > * 更新设备配置 * 。
++
+此时将显示更新设备配置页面。
+
++
+image::../media/update_appliance_configuration.png[更新设备配置页面]
+
+. 选择包含要上传的配置的 JSON 文件。
++
+.. 选择 * 浏览 * 。
+.. 找到并选择文件。
+.. 选择 * 打开 * 。
++
+已上传并验证此文件。验证过程完成后，文件名会显示在绿色复选标记旁边。
+
++
+
+IMPORTANT: 如果 JSON 文件中的配置包含 "link_config" ， "networks" 或这两者的部分，则可能会断开与设备的连接。如果 1 分钟内未重新连接，请使用分配给设备的其他 IP 地址之一重新输入设备 URL 。
+
++
+image::../media/update_appliance_configuration_valid_json.png[已上传更新设备配置 JSON]
+
++
+此时将使用 JSON 文件中定义的顶级节点名称填充 * 节点名称 * 下拉列表。
+
++
+
+NOTE: 如果文件无效，则文件名将显示为红色，并在黄色横幅中显示一条错误消息。此无效文件不会应用于此设备。您可以使用 ConfigBuilder 来确保具有有效的 JSON 文件。
+
+
+
+. 从 * 节点名称 * 下拉列表中选择一个节点。
++
+此时将启用 * 应用 JSON 配置 * 按钮。
+
++
+image::../media/update_appliance_configuration_apply_button_enabled.png[已启用更新设备配置应用按钮]
+
+. 选择 * 应用 JSON 配置 * 。
++
+此配置将应用于选定节点。
+
+

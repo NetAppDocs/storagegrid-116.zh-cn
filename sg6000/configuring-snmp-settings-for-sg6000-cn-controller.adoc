@@ -1,0 +1,39 @@
+---
+permalink: sg6000/configuring-snmp-settings-for-sg6000-cn-controller.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6000, storage node, storage appliance, SNMP, configure, setup, set up, sg6000-cn 
+summary: 如果您熟悉为硬件配置 SNMP ，则可以使用 BMC 界面为 SG6000-CN 控制器配置 SNMP 设置。您可以提供安全社区字符串，启用 SNMP 陷阱并最多指定五个 SNMP 目标。 
+---
+= 为 SG6000-CN 控制器配置 SNMP 设置
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果您熟悉为硬件配置 SNMP ，则可以使用 BMC 界面为 SG6000-CN 控制器配置 SNMP 设置。您可以提供安全社区字符串，启用 SNMP 陷阱并最多指定五个 SNMP 目标。
+
+.您需要什么？ #8217 ；将需要什么
+* 您知道如何访问 BMC 信息板。
+* 您在为 SNMPv1-v2c 设备配置 SNMP 设置方面具有经验。
+
+
+
+NOTE: 如果 SG6000-CN 发生故障且需要更换，则可能无法保留此操作步骤 所做的 BMC 设置。请确保您已应用所有设置，以便在更换硬件后根据需要轻松重新应用这些设置。
+
+.步骤
+. 从 BMC 信息板中，选择 * 设置 * > * SNMP 设置 * 。
+. 在 SNMP 设置页面上，选择 * 启用 SNMP V1/V2 * ，然后提供只读社区字符串和读写社区字符串。
++
+只读社区字符串类似于用户 ID 或密码。您应更改此值，以防止入侵者获取有关网络设置的信息。读写社区字符串可保护设备免受未经授权的更改。
+
+. （可选）选择 * 启用陷阱 * ，然后输入所需信息。
++
+
+IMPORTANT: 使用 IP 地址输入每个 SNMP 陷阱的目标 IP 。不支持完全限定域名。
+
++
+如果希望 SG6000-CN 控制器在 SNMP 控制台处于异常状态时立即向其发送通知，请启用陷阱。陷阱可能指示各种组件的硬件故障或超出温度阈值。
+
+. 或者，也可以单击 * 发送测试陷阱 * 来测试您的设置。
+. 如果设置正确，请单击 * 保存 * 。
+

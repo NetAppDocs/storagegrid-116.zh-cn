@@ -1,0 +1,81 @@
+---
+permalink: expand/configuring-expanded-storagegrid-system.html 
+sidebar: sidebar 
+keywords: expansion, configuration 
+summary: 完成扩展后，您必须执行其他集成和配置步骤。 
+---
+= 扩展后的配置步骤
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+完成扩展后，您必须执行其他集成和配置步骤。
+
+您必须为要在扩展中添加的网格节点完成以下列出的配置任务。根据在安装和管理系统时选择的选项以及您希望如何配置在扩展期间添加的网格节点，某些任务可能是可选的。
+
+.步骤
+. 如果添加了存储节点，请完成以下配置任务：
++
+.. 查看 ILM 规则中使用的存储池，以确保使用新存储。请参见 xref:../ilm/index.adoc[使用 ILM 管理对象]。
++
+*** 如果您添加了站点，请为此站点创建一个存储池，并更新 ILM 规则以使用新的存储池。
+*** 如果已将存储节点添加到现有站点，请确认新节点使用的存储级别正确。
++
+
+NOTE: 默认情况下，系统会将新的存储节点分配给所有存储节点存储级别，并将其添加到对站点使用该级别的存储池中。如果您希望新节点使用自定义存储级别，则必须手动将其分配给自定义级别（ * ILM * > * 存储级别 * ）。
+
+
+
+.. 验证存储节点是否正在载入对象。请参见 xref:verifying-storage-node-is-active.adoc[验证存储节点是否处于活动状态]。
+.. 重新平衡擦除编码的数据（仅当无法添加建议数量的存储节点时）。请参见xref:rebalancing-erasure-coded-data-after-adding-storage-nodes.adoc[添加存储节点后重新平衡经过纠删编码的数据]。
+
+
+. 如果添加了网关节点，请完成以下配置任务：
++
+** 如果将高可用性（ HA ）组用于客户端连接，则可以选择将网关节点添加到 HA 组。选择 * 配置 * > * 网络 * > * 高可用性组 * 以查看现有 HA 组列表并添加新节点。请参见 xref:../admin/index.adoc[管理 StorageGRID]。
+
+
+. 如果添加了管理节点，请完成以下配置任务：
++
+.. 如果为 StorageGRID 系统启用了单点登录（ Single Sign-On ， SSO ），请为新管理节点创建依赖方信任。创建此依赖方信任之前，您无法登录到此节点。请参见xref:../admin/configuring-sso.adoc[配置单点登录]。
+.. 如果您计划在管理节点上使用负载平衡器服务，也可以将新的管理节点添加到 HA 组中。选择 * 配置 * > * 网络 * > * 高可用性组 * 以查看现有 HA 组列表并添加新节点。请参见 xref:../admin/index.adoc[管理 StorageGRID]。
+.. 如果要使每个管理节点上的属性和审核信息保持一致，也可以将管理节点数据库从主管理节点复制到扩展管理节点。请参见 xref:copying-admin-node-database.adoc[复制管理节点数据库]。
+.. 如果要使每个管理节点上的历史指标保持一致，也可以将 Prometheus 数据库从主管理节点复制到扩展管理节点。请参见 xref:copying-prometheus-metrics.adoc[复制 Prometheus 指标]。
+.. 如果要使每个管理节点上的历史日志信息保持一致，也可以将现有审核日志从主管理节点复制到扩展管理节点。请参见 xref:copying-audit-logs.adoc[复制审核日志]。
+.. 或者，也可以通过 NFS 或 CIFS 文件共享配置对系统的访问以供审核。请参见 xref:../admin/index.adoc[管理 StorageGRID]。
++
+
+NOTE: 已弃用通过 CIFS/Samba 进行审核导出，并将在未来的 StorageGRID 版本中删除。
+
+.. 或者，也可以更改通知的首选发件人。您可以将扩展管理节点设置为首选发送器。否则，配置为首选发件人的现有管理节点将继续发送通知，包括 AutoSupport 消息， SNMP 通知，警报电子邮件和警报电子邮件（旧系统）。请参见 xref:../admin/index.adoc[管理 StorageGRID]。
+
+
+. 如果添加了归档节点，请完成以下配置任务。
++
+.. 配置归档节点与目标外部归档存储系统的连接。完成扩展后，归档节点将处于警报状态，直到您通过 * ARC/ * 目标 * 组件配置连接信息为止。请参见 xref:../admin/index.adoc[管理 StorageGRID]。
+.. 更新 ILM 策略以通过新的归档节点归档对象数据。请参见 xref:../ilm/index.adoc[使用 ILM 管理对象]。
+.. 为用于监控从归档节点检索对象数据的速度和效率的属性配置自定义警报。请参见 xref:../admin/index.adoc[管理 StorageGRID]。
+
+
+. 要检查扩展节点是否是使用不可信客户端网络添加的，或者更改节点的客户端网络是不可信还是可信，请转到 * 配置 * > * 网络 * > * 不可信客户端网络 * 。
++
+如果扩展节点上的客户端网络不可信，则必须使用负载平衡器端点与客户端网络上的节点建立连接。请参见 xref:../admin/index.adoc[管理 StorageGRID]。
+
+. 配置域名系统（ DNS ）。
++
+如果您一直在为每个网格节点单独指定 DNS 设置，则必须为新节点添加自定义的每节点 DNS 设置。请参见 xref:../maintain/modifying-dns-configuration-for-single-grid-node.adoc[修改单网格节点的 DNS 配置]。
+
++
+最佳做法是，网格范围的 DNS 服务器列表应包含一些可从每个站点本地访问的 DNS 服务器。如果您刚刚添加了一个新站点，请将该站点的新 DNS 服务器添加到网格范围的 DNS 配置中。
+
++
+
+IMPORTANT: 为 DNS 服务器提供两到六个 IPv4 地址。您应选择 DNS 服务器，以便在网络隔离时每个站点都可以在本地访问这些服务器。这是为了确保已隔离的站点可以继续访问 DNS 服务。配置网格范围的 DNS 服务器列表后，您可以进一步自定义每个节点的 DNS 服务器列表。有关详细信息，请参见 xref:../maintain/modifying-dns-configuration-for-single-grid-node.adoc[修改单网格节点的 DNS 配置]...
+
+. 如果添加了新站点，请确认网络时间协议（ NTP ）服务器可从该站点访问。请参见 xref:../maintain/configuring-ntp-servers.adoc[配置 NTP 服务器]。
++
+
+IMPORTANT: 确保每个站点至少有两个节点可以访问至少四个外部 NTP 源。如果一个站点上只有一个节点可以访问 NTP 源，则在该节点关闭时会发生计时问题。此外，指定每个站点两个节点作为主要 NTP 源可确保在站点与网格其余部分隔离时的时间准确无误。
+
+

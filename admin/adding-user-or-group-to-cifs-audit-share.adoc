@@ -1,0 +1,114 @@
+---
+permalink: admin/adding-user-or-group-to-cifs-audit-share.html 
+sidebar: sidebar 
+keywords: CIFS, add user to audit share, add group to audit share, ad authentication 
+summary: 您可以将用户或组添加到与 AD 身份验证集成的 CIFS 审核共享。 
+---
+= 将用户或组添加到 CIFS 审核共享
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以将用户或组添加到与 AD 身份验证集成的 CIFS 审核共享。
+
+.您需要什么？ #8217 ；将需要什么
+* 您已拥有 `passwords.txt` 文件以及 root/admin 帐户密码（可从上述软件包中获取）。
+* 您已有 `Configuration.txt` 文件（可在上述软件包中找到）。
+
+
+以下操作步骤 适用于与 AD 身份验证集成的审核共享。
+
+
+NOTE: 已弃用通过 CIFS/Samba 进行审核导出，并将在未来的 StorageGRID 版本中删除。
+
+.步骤
+. 登录到主管理节点：
++
+.. 输入以下命令： `ssh admin@ primary_Admin_Node_IP_`
+.. 输入 `passwords.txt` 文件中列出的密码。
+.. 输入以下命令切换到 root ： `su -`
+.. 输入 `passwords.txt` 文件中列出的密码。
++
+以 root 用户身份登录时，提示符将从 ` $` 更改为 ` #` 。
+
+
+
+. 确认所有服务的状态均为正在运行或已验证。输入： `storagegRid-status`
++
+如果所有服务均未运行或未验证，请先解决问题，然后再继续。
+
+. 返回命令行，按 * 。 Ctrl+* 。 c* 。
+. 启动 CIFS 配置实用程序： `config_cifs.rb`
++
+[listing]
+----
+
+---------------------------------------------------------------------
+| Shares                 | Authentication         | Config          |
+---------------------------------------------------------------------
+| add-audit-share        | set-authentication     | validate-config |
+| enable-disable-share   | set-netbios-name       | help            |
+| add-user-to-share      | join-domain            | exit            |
+| remove-user-from-share | add-password-server    |                 |
+| modify-group           | remove-password-server |                 |
+|                        | add-wins-server        |                 |
+|                        | remove-wins-server     |                 |
+---------------------------------------------------------------------
+----
+. 开始添加用户或组： `add-user-on-share`
++
+此时将显示已配置的审核共享的编号列表。
+
+. 出现提示时，输入审核共享（审核 - 导出）的编号： ` _audit_share_number_`
++
+系统会询问您是否要授予用户或组对此审核共享的访问权限。
+
+. 出现提示时，添加用户或组： `user` 或 `group`
+. 当系统提示您输入此 AD 审核共享的用户或组名称时，请输入此名称。
++
+此用户或组将作为审核共享的只读添加到服务器的操作系统和 CIFS 服务中。系统将重新加载 Samba 配置，以使用户或组能够访问审核客户端共享。
+
+. 出现提示时，按 * 输入 * 。
++
+此时将显示 CIFS 配置实用程序。
+
+. 对有权访问审核共享的每个用户或组重复上述步骤。
+. （可选）验证您的配置： `validate-config`
++
+此时将检查并显示这些服务。您可以安全地忽略以下消息：
+
++
+** 找不到 include 文件 /etc/samba/includes/cifs-interfaces.inc
+** 找不到 include 文件 /etc/samba/includes/cifs-filesystem.inc
+** 找不到 include 文件 /etc/samba/includes/cifs-custom-config.inc
+** 找不到 include 文件 /etc/samba/includes/cifs-shares.inc
++
+... 出现提示时，按 * 输入 * 以显示审核客户端配置。
+... 出现提示时，按 * 输入 * 。
+
+
+
+
+. 关闭 CIFS 配置实用程序： `exit`
+. 确定是否需要启用其他审核共享，如下所示：
++
+** 如果 StorageGRID 部署是单个站点，请转至下一步。
+** 如果 StorageGRID 部署包括其他站点的管理节点，请根据需要启用这些审核共享：
++
+... 远程登录到站点的管理节点：
++
+.... 输入以下命令： `ssh admin@ grid_node_ip_`
+.... 输入 `passwords.txt` 文件中列出的密码。
+.... 输入以下命令切换到 root ： `su -`
+.... 输入 `passwords.txt` 文件中列出的密码。
+
+
+... 重复上述步骤为每个管理节点配置审核共享。
+... 关闭远程安全 Shell 登录到远程管理节点： `exit`
+
+
+
+
+. 注销命令 Shell ： `exit`
+

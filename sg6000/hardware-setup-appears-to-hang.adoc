@@ -1,0 +1,32 @@
+---
+permalink: sg6000/hardware-setup-appears-to-hang.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6000, storage node, storage appliance, troubleshoot, troubleshooting, hardware, setup, hang, hangs, fails, failure, stop, terminate, terminates, stuck 
+summary: 如果硬件故障或布线错误导致存储控制器或 SG6000-CN 控制器无法完成启动处理，则 StorageGRID 设备安装程序可能不可用。 
+---
+= 硬件设置似乎挂起（ SG6000 ）
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果硬件故障或布线错误导致存储控制器或 SG6000-CN 控制器无法完成启动处理，则 StorageGRID 设备安装程序可能不可用。
+
+.步骤
+. 对于存储控制器，请查看七段显示器上的代码。
++
+在启动期间初始化硬件时，两个七段显示一系列代码。硬件成功启动后，这两个七段显示 `99` 。
+
+. 查看 SG6000-CN 控制器上的 LED 以及 BMC 中显示的启动和错误代码。
+. 如果您需要有关解决问题描述 的帮助，请联系技术支持。
+
+
+xref:viewing-boot-up-status-codes-for-sg6000-storage-controllers.adoc[查看 SG6000 存储控制器的启动状态代码]
+
+https://library.netapp.com/ecmdocs/ECMLP2588751/html/frameset.html["《 E5700 和 E2800 系统监控指南》"^]
+
+xref:viewing-status-indicators-and-buttons-on-sg6000-cn-controller.adoc[查看 SG6000-CN 控制器上的状态指示灯和按钮]
+
+xref:viewing-boot-up-codes-for-sg6000-cn-controller.adoc[查看 SG6000-CN 控制器的启动代码]
+
+xref:viewing-error-codes-for-sg6000-cn-controller.adoc[查看 SG6000-CN 控制器的错误代码]

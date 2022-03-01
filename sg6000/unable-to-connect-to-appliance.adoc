@@ -1,0 +1,53 @@
+---
+permalink: sg6000/unable-to-connect-to-appliance.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6000, storage node, storage appliance, troubleshoot, troubleshooting, connect, connection, unable to connect, no connection 
+summary: 如果无法连接到设备，则可能存在网络问题描述 ，或者硬件安装可能未成功完成。 
+---
+= 无法连接到设备
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果无法连接到设备，则可能存在网络问题描述 ，或者硬件安装可能未成功完成。
+
+.步骤
+. 如果无法连接到 SANtricity 系统管理器：
++
+.. 尝试使用管理网络上任一存储控制器的 IP 地址对设备执行 ping 操作，以查看 SANtricity System Manager ： + ` * ping _Storage_Controller_IP_*`
+.. 如果 ping 未收到任何响应，请确认您使用的 IP 地址正确无误。
++
+使用任一存储控制器上的管理端口 1 的 IP 地址。
+
+.. 如果 IP 地址正确，请检查设备布线和网络设置。
++
+如果无法解决问题描述 问题，请联系技术支持。
+
+.. 如果 ping 成功，请打开 Web 浏览器。
+.. 输入 SANtricity 系统管理器的 URL ： + ` * https://_Storage_Controller_IP_*`
++
+此时将显示 SANtricity 系统管理器的登录页面。
+
+
+
+. 如果无法连接到 SG6000-CN 控制器：
++
+.. 尝试使用 SG6000-CN 控制器的 IP 地址对设备执行 ping 操作： + ` * ping _SG6000-CN_Controller_IP_*`
+.. 如果 ping 未收到任何响应，请确认您使用的 IP 地址正确无误。
++
+您可以使用网格网络，管理网络或客户端网络上设备的 IP 地址。
+
+.. 如果 IP 地址正确，请检查设备布线， SFP 收发器和网络设置。
+.. 如果可以物理访问 SG6000-CN ，则可以使用与永久链路本地 IP `169.254.0.1` 的直接连接来检查控制器网络配置，并在必要时进行更新。有关详细说明，请参见中的步骤 2 xref:..//sg6000/accessing-storagegrid-appliance-installer-sg6000.adoc[访问 StorageGRID 设备安装程序]。
++
+如果无法解决问题描述 问题，请联系技术支持。
+
+.. 如果 ping 成功，请打开 Web 浏览器。
+.. 输入 StorageGRID 设备安装程序的 URL ： + ` * https://_SG6000-CN_Controller_IP_:8443*`
++
+此时将显示主页页面。
+
+
+
+

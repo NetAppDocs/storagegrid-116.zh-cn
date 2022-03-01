@@ -1,0 +1,29 @@
+---
+permalink: admin/changing-network-transfer-encryption.html 
+sidebar: sidebar 
+keywords: network transfer encryption, TLS algorithm 
+summary: StorageGRID 系统使用传输层安全 \ （ tls\ ）保护网格节点之间的内部控制流量。网络传输加密选项用于设置 TLS 用于加密网格节点之间的控制流量的算法。此设置不会影响数据加密。 
+---
+= 更改网络传输加密
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+StorageGRID 系统使用传输层安全（ Transport Layer Security ， TLS ）保护网格节点之间的内部控制流量。网络传输加密选项用于设置 TLS 用于加密网格节点之间的控制流量的算法。此设置不会影响数据加密。
+
+.您需要什么？ #8217 ；将需要什么
+* 您将使用登录到网格管理器 xref:../admin/web-browser-requirements.adoc[支持的 Web 浏览器]。
+* 您具有特定的访问权限。
+
+
+默认情况下，网络传输加密使用 AES256-SHA 算法。此外，还可以使用 AES128-SHA 算法对控制流量进行加密。
+
+.步骤
+. 选择 * 配置 * > * 系统 * > * 网格选项 * 。
+. 在网络选项部分中，将网络传输加密更改为 * AES128-SHA* 或 * AES256-SHA* （默认）。
++
+image::../media/network_transfer_encryption.png[网格配置网络加密]
+
+. 选择 * 保存 * 。
+

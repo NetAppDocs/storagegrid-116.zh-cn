@@ -1,0 +1,13 @@
+---
+permalink: sg6000/installing-hardware.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6000, storage node, storage appliance, hardware, install, installing 
+summary: 硬件安装需要将 SG6000-CN 控制器和存储控制器架安装到机柜或机架中，连接缆线并接通电源。 
+---
+= 安装硬件（ SG6000 ）
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+硬件安装需要将 SG6000-CN 控制器和存储控制器架安装到机柜或机架中，连接缆线并接通电源。

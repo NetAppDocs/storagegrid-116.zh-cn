@@ -1,0 +1,39 @@
+---
+permalink: sg6000/reviewing-appliance-network-connections-sg6000.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6000, storage node, storage appliance, network connections, network connection, network, connection, grid, admin, client, bmc, management, SANtricity System Manager, SANtricity 
+summary: 在安装 StorageGRID 设备之前，您应了解可以将哪些网络连接到此设备。 
+---
+= 查看设备网络连接（ SG6000 ）
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在安装 StorageGRID 设备之前，您应了解可以将哪些网络连接到此设备。
+
+在 StorageGRID 系统中将 StorageGRID 设备部署为存储节点时，您可以将其连接到以下网络：
+
+* * 适用于 StorageGRID 的网格网络 * ：网格网络用于所有内部 StorageGRID 流量。它可以在网格中的所有节点之间以及所有站点和子网之间建立连接。网格网络为必填项。
+* * 适用于 StorageGRID 的管理网络 * ：管理网络是一个用于系统管理和维护的封闭网络。管理网络通常是一个专用网络，不需要在站点之间进行路由。管理网络是可选的。
+* * 适用于 StorageGRID 的客户端网络： * 客户端网络是一种开放网络，用于访问包括 S3 和 Swift 在内的客户端应用程序。客户端网络可提供对网格的客户端协议访问，从而可以隔离和保护网格网络。客户端网络是可选的。
+* * 适用于 SANtricity System Manager* 的管理网络（可选）：通过此网络，您可以访问存储控制器上的 SANtricity System Manager ，从而监控和管理存储控制器架中的硬件组件。此管理网络可以与 StorageGRID 的管理网络相同，也可以是一个独立的管理网络。
++
+如果未连接可选的 SANtricity System Manager 网络，则可能无法使用某些 SANtricity 功能。
+
+* SG6000-CN 控制器的 * BMC 管理网络 * （可选）：通过此网络可以访问 SG6000-CN 中的基板管理控制器，从而可以监控和管理 SG6000-CN 控制器中的硬件组件。此管理网络可以与 StorageGRID 的管理网络相同，也可以是一个独立的管理网络。
++
+如果未连接可选的 BMC 管理网络，则某些支持和维护过程将更难执行。除非出于支持目的需要，否则您可以使 BMC 管理网络保持未连接状态。
+
+
+
+
+NOTE: 有关 StorageGRID 网络的详细信息，请参见 _Grid Primer_ 。
+
+xref:gathering-installation-information-sg6000.adoc[收集安装信息（ SG6000 ）]
+
+xref:cabling-appliance-sg6000.adoc[缆线设备（ SG6000 ）]
+
+xref:port-bond-modes-for-sg6000-cn-controller.adoc[SG6000-CN 控制器的端口绑定模式]
+
+xref:../network/index.adoc[网络准则]

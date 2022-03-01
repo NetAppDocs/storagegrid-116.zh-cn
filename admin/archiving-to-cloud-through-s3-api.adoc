@@ -1,0 +1,18 @@
+---
+permalink: admin/archiving-to-cloud-through-s3-api.html 
+sidebar: sidebar 
+keywords: archive node to aws, amazon web services 
+summary: 您可以将归档节点配置为直接连接到 Amazon Web Services \ （ AWS\ ）或可通过 S3 API 连接到 StorageGRID 系统的任何其他系统。 
+---
+= 通过 S3 API 归档到云
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以将归档节点配置为直接连接到 Amazon Web Services （ AWS ）或可通过 S3 API 连接到 StorageGRID 系统的任何其他系统。
+
+
+IMPORTANT: 通过 S3 API 将对象从归档节点移动到外部归档存储系统已被 ILM 云存储池所取代，它可提供更多功能。仍然支持 * 云分层 - 简单存储服务（ S3 ） * 选项，但您可能更喜欢实施云存储池。
+
+如果您当前正在使用具有 * 云分层 - 简单存储服务（ S3 ） * 选项的归档节点，请考虑将对象迁移到云存储池。请参见的说明 xref:../ilm/index.adoc[使用 ILM 管理对象]。

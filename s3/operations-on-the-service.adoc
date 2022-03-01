@@ -1,0 +1,39 @@
+---
+permalink: s3/operations-on-the-service.html 
+sidebar: sidebar 
+keywords: operations, service, operations on the service 
+summary: StorageGRID 系统支持对服务执行操作。 
+---
+= 对服务执行的操作
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+StorageGRID 系统支持对该服务执行以下操作。
+
+|===
+| 操作 | 实施 
+
+
+ a| 
+获取服务
+ a| 
+在所有 Amazon S3 REST API 行为下实施。
+
+
+
+ a| 
+获取存储使用量
+ a| 
+" 获取存储使用量 " 请求会告知您帐户正在使用的存储总量以及与帐户关联的每个存储分段的存储总量。这是对服务执行的操作，其中添加了路径 / 和自定义查询参数（` ？ x-ntap-sg-usage` ）。
+
+
+
+ a| 
+选项 /
+ a| 
+客户端应用程序可以在不提供 S3 身份验证凭据的情况下对存储节点上的 S3 端口发出问题描述 `options /` 请求，以确定存储节点是否可用。您可以使用此请求进行监控，也可以允许外部负载平衡器确定存储节点何时关闭。
+
+|===
+xref:get-storage-usage-request.adoc[获取存储使用情况请求]

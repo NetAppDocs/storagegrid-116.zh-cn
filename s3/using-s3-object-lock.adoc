@@ -1,0 +1,111 @@
+---
+permalink: s3/using-s3-object-lock.html 
+sidebar: sidebar 
+keywords: using S3 object lock, object lock, S3 object 
+summary: 如果为 StorageGRID 系统启用了全局 S3 对象锁定设置，则可以在启用了 S3 对象锁定的情况下创建存储分段，然后为添加到存储分段的每个对象版本指定保留日期和合法保留设置。 
+---
+= 使用 S3 对象锁定
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果为 StorageGRID 系统启用了全局 S3 对象锁定设置，则可以在启用了 S3 对象锁定的情况下创建存储分段，然后为每个存储分段指定默认保留期限，或者为添加到存储分段的每个对象版本指定特定的保留截止日期和合法保留设置。
+
+通过 S3 对象锁定，您可以指定对象级别的设置，以防止对象在固定时间内或无限期地被删除或覆盖。
+
+StorageGRID S3 对象锁定功能提供了一种保留模式，相当于 Amazon S3 合规模式。默认情况下，任何用户都无法覆盖或删除受保护的对象版本。StorageGRID S3 对象锁定功能不支持监管模式，并且不允许具有特殊权限的用户绕过保留设置或删除受保护的对象。
+
+
+
+== 为存储分段启用 S3 对象锁定
+
+如果为 StorageGRID 系统启用了全局 S3 对象锁定设置，则可以选择在创建每个分段时启用 S3 对象锁定。您可以使用以下任一方法：
+
+* 使用租户管理器创建存储分段。
++
+xref:../tenant/index.adoc[使用租户帐户]
+
+* 使用具有 `x-AMZ-bucket-object-lock-enabled` 请求标题的 PUT Bucket 请求创建存储分段。
++
+xref:operations-on-buckets.adoc[对存储分段执行的操作]
+
+
+
+创建存储分段后，您无法添加或禁用 S3 对象锁定。S3 对象锁定需要分段版本控制，在创建分段时会自动启用分段版本控制。
+
+启用了 S3 对象锁定的存储分段可以包含具有和不具有 S3 对象锁定设置的对象组合。StorageGRID 支持 S3 对象锁定分段中的对象的默认保留期限，并支持 PUT 对象锁定配置分段操作。`s 3 ： object-lock-remaing-retention-days` 策略条件键可设置对象允许的最小和最大保留期限。
+
+
+
+== 确定是否为存储分段启用了 S3 对象锁定
+
+要确定是否已启用 S3 对象锁定，请使用 xref:../s3/use-s3-object-lock-default-bucket-retention.adoc#get-object-lock-configuration[获取对象锁定配置] 请求。
+
+
+
+== 使用 S3 对象锁定设置创建对象
+
+要在将对象版本添加到启用了 S3 对象锁定的存储分段时指定 S3 对象锁定设置，请问题描述 对 PUT 对象， PUT 对象 - 复制或启动多部件上传请求。请使用以下请求标头。
+
+
+NOTE: 创建存储分段时，必须启用 S3 对象锁定。创建存储分段后，您无法添加或禁用 S3 对象锁定。
+
+* `x-AMZ-object-lock-mode` ，必须符合要求（区分大小写）。
++
+
+NOTE: 如果指定 `x-AMZ-object-lock-mode` ，则还必须指定 `x-AMZ-object-lock-retain-until date` 。
+
+* `x-AMZ-object-lock-retain-until date`
++
+** 保留日期值的格式必须为 `2020-08-10T21 ： 46 ： 00Z` 。允许使用小数秒，但仅保留 3 位小数（精确度为毫秒）。不允许使用其他 ISO 8601 格式。
+** 保留截止日期必须为未来日期。
+
+
+* `x-AMZ-object-lock-legal-hold`
++
+如果处于合法保留状态（区分大小写），则对象将置于合法保留状态。如果关闭了合法保留，则不会进行合法保留。任何其他值都会导致 400 错误请求（ InvalidArgument ）错误。
+
+
+
+如果您使用上述任一请求标头，请注意以下限制：
+
+* 如果 PUT 对象请求中存在任何 `x-AMZ-object-lock-*` 请求标头，则需要提供 `Content-MD5` 请求标头。PUT 对象 - 复制或启动多部件上传不需要 `Content-MD5` 。
+* 如果存储分段未启用 S3 对象锁定，并且存在 `x-AMZ-object-lock-*` 请求标头，则会返回 400 错误请求（ InvalidRequest ）错误。
+* PUT 对象请求支持使用 `x-AMZ-storage-class ： reduced _redundancy` 来匹配 AWS 行为。但是，如果在启用了 S3 对象锁定的情况下将对象载入存储分段，则 StorageGRID 将始终执行双提交载入。
+* 如果已配置标题 `x-AMZ-object-lock-mode` ， `x-AMZ-object-lock-retain-tilt-date` 和 `x-AMZ-object-lock-legal-hold` ，并且请求发送方具有正确的 `s 3 ： get*` 权限，则后续 GET 或 HEAD 对象版本响应将包括标题 x-AMZ-object-lock-legal-hold 。
+* 如果后续的删除对象版本或删除对象版本请求早于保留截止日期或处于合法保留状态，则此请求将失败。
+
+
+
+
+== 更新 S3 对象锁定设置
+
+如果需要更新现有对象版本的合法保留或保留设置，可以执行以下对象子资源操作：
+
+* `PUT 对象合法保留`
++
+如果新的合法保留值为 on ，则对象将置于合法保留状态。如果合法保留值为 off ，则取消合法保留。
+
+* `放置对象保留`
++
+** 模式值必须符合要求（区分大小写）。
+** 保留日期值的格式必须为 `2020-08-10T21 ： 46 ： 00Z` 。允许使用小数秒，但仅保留 3 位小数（精确度为毫秒）。不允许使用其他 ISO 8601 格式。
+** 如果对象版本具有现有的保留日期，则只能增加此保留日期。新的价值必须是未来的。
+
+
+
+
+xref:../ilm/index.adoc[使用 ILM 管理对象]
+
+xref:../tenant/index.adoc[使用租户帐户]
+
+xref:put-object.adoc[PUT 对象]
+
+xref:put-object-copy.adoc[PUT 对象—复制]
+
+xref:initiate-multipart-upload.adoc[启动多部件上传]
+
+xref:object-versioning.adoc[对象版本控制]
+
+https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-lock.html["《 Amazon Simple Storage Service 用户指南：使用 S3 对象锁定》"^]

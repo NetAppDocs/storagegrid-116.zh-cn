@@ -1,0 +1,26 @@
+---
+permalink: admin/managing-load-balancing.html 
+sidebar: sidebar 
+keywords: manage load balancing, balance workload, client ingest, client retrieval, distribute connection 
+summary: 您可以使用 StorageGRID 负载平衡功能处理从 S3 和 Swift 客户端载入和检索工作负载。负载平衡通过在多个存储节点之间分布工作负载和连接来最大限度地提高速度和连接容量。 
+---
+= Manage load balancing ：概述
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 StorageGRID 负载平衡功能处理从 S3 和 Swift 客户端载入和检索工作负载。负载平衡通过在多个存储节点之间分布工作负载和连接来最大限度地提高速度和连接容量。
+
+您可以通过以下方式对客户端工作负载进行负载平衡：
+
+* 使用负载平衡器服务，该服务安装在管理节点和网关节点上。负载平衡器服务提供第 7 层负载平衡，并对客户端请求执行 TLS 终止，检查请求并建立与存储节点的新安全连接。这是建议的负载平衡机制。
++
+请参见 xref:how-load-balancing-works-load-balancer-service.adoc[负载平衡的工作原理—负载平衡器服务]。
+
+* 使用已弃用的连接负载平衡器（ CLB ）服务，该服务仅安装在网关节点上。CLB 服务提供第 4 层负载平衡并支持链路成本。
++
+请参见 xref:how-load-balancing-works-clb-service.adoc[负载平衡的工作原理— CLB 服务（已弃用）]。
+
+* 集成第三方负载平衡器。有关详细信息，请联系您的 NetApp 客户代表。
+

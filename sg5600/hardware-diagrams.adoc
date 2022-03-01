@@ -1,0 +1,230 @@
+---
+permalink: sg5600/hardware-diagrams.html 
+sidebar: sidebar 
+keywords: storagegrid, sg5600, storage node, storage appliance, diagrams, hardware, components, locations, component, diagram, location, figures, figure, connector 
+summary: StorageGRID 设备的 SG5612 和 SG5660 型号都包括一个 E2700 控制器和一个 E5600SG 控制器。您应查看这些示意图，了解型号与控制器之间的差异。 
+---
+= 硬件示意图
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+StorageGRID 设备的 SG5612 和 SG5660 型号都包括一个 E2700 控制器和一个 E5600SG 控制器。您应查看这些示意图，了解型号与控制器之间的差异。
+
+
+
+== SG5612 2U 型号： E2700 控制器和 E5600SG 控制器背面图
+
+image::../media/sg5612_2u_rear_view.gif[带有两个控制器的 SG5612 的背面图]
+
+|===
+| Callout | Description 
+
+
+ a| 
+1.
+ a| 
+E2700 控制器
+
+
+
+ a| 
+2.
+ a| 
+E5600SG 控制器
+
+|===
+
+
+== SG5660 4U 型号： E2700 控制器和 E5600SG 控制器背面图
+
+E2700 控制器位于 E5600SG 控制器之上。
+
+image::../media/sg5660_4u_rear_view.gif[带有两个控制器的 SG5660 背面图]
+
+|===
+| Callout | Description 
+
+
+ a| 
+1.
+ a| 
+E2700 控制器
+
+
+
+ a| 
+2.
+ a| 
+E5600SG 控制器
+
+|===
+
+
+== E2700 控制器背面图
+
+image::../media/sga_controller_2700_diagram_callouts.gif[E2700 图]
+
+|===
+| Callout | Description 
+
+
+ a| 
+1.
+ a| 
+管理端口 1 （连接到安装 SANtricity 存储管理器的网络。）
+
+
+
+ a| 
+2.
+ a| 
+管理端口 2 （在安装期间用于连接到笔记本电脑。）
+
+
+
+ a| 
+3.
+ a| 
+SAS 互连端口 1
+
+
+
+ a| 
+4.
+ a| 
+SAS 互连端口 2
+
+
+
+ a| 
+5.
+ a| 
+串行连接端口
+
+
+
+ a| 
+6.
+ a| 
+七段式显示
+
+|===
+
+NOTE: 不使用 E2700 控制器背面标记为驱动器扩展（绿色）的两个 SAS 端口。StorageGRID 设备不支持扩展驱动器架。
+
+
+
+== E5600SG 控制器背面图
+
+image::../media/sga_controller_5600_diagram_callouts.gif[E5600 示意图]
+
+|===
+| Callout | Description 
+
+
+ a| 
+1.
+ a| 
+管理端口 1 连接到 StorageGRID 的管理网络。
+
+
+
+ a| 
+2.
+ a| 
+管理端口 2 选项：
+
+* 与管理端口 1 绑定，以便与 StorageGRID 的管理网络建立冗余连接。
+* 保持未连接状态，并可用于临时本地访问（ IP 169.254.0.1 ）。
+* 在安装期间，如果 DHCP 分配的 IP 地址不可用，请使用进行 IP 配置。
+
+
+
+
+ a| 
+3.
+ a| 
+SAS 互连端口 1
+
+
+
+ a| 
+4.
+ a| 
+SAS 互连端口 2
+
+
+
+ a| 
+5.
+ a| 
+10-GbE 网络端口 1 的故障和活动 LED
+
+
+
+ a| 
+6.
+ a| 
+10-GbE 网络端口 2 的故障和活动 LED
+
+
+
+ a| 
+7.
+ a| 
+10-GbE 网络端口 3 的故障和活动 LED
+
+
+
+ a| 
+8.
+ a| 
+10-GbE 网络端口 4 的故障和活动 LED
+
+
+
+ a| 
+9
+ a| 
+需要引起注意的 LED
+
+
+
+ a| 
+10
+ a| 
+七段式显示
+
+
+
+ a| 
+11.
+ a| 
+10-GbE 网络端口 1
+
+
+
+ a| 
+12
+ a| 
+10-GbE 网络端口 2
+
+
+
+ a| 
+13
+ a| 
+10-GbE 网络端口 3
+
+
+
+ a| 
+14
+ a| 
+10-GbE 网络端口 4
+
+|===
+
+NOTE: StorageGRID 设备 E5600SG 控制器上的主机接口卡（ HIC ）仅支持 10-Gb 以太网连接。不能用于 iSCSI 连接。

@@ -1,0 +1,78 @@
+---
+permalink: s3/put-bucket-consistency-request.html 
+sidebar: sidebar 
+keywords: S3 REST API, S3 operations, PUT bucket consistency request 
+summary: 通过 PUT 分段一致性请求，您可以指定要应用于对分段执行的操作的一致性级别。 
+---
+= PUT 存储分段一致性请求
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+通过 PUT 分段一致性请求，您可以指定要应用于对分段执行的操作的一致性级别。
+
+默认一致性控制设置为保证新创建的对象的写入后读。
+
+要完成此操作，您拥有 S3 ： PutBucketConsistency 权限或帐户 root 。
+
+
+
+== 请求
+
+`x-ntap-sg-consistency` 参数必须包含以下值之一：
+
+|===
+| 一致性控制 | Description 
+
+
+ a| 
+全部
+ a| 
+所有节点都会立即接收数据，否则请求将失败。
+
+
+
+ a| 
+强大的全局功能
+ a| 
+保证所有站点中所有客户端请求的写入后读一致性。
+
+
+
+ a| 
+强大的站点
+ a| 
+保证站点内所有客户端请求的写入后读一致性。
+
+
+
+ a| 
+读后写
+ a| 
+（默认）为新对象提供写入后读一致性，并为对象更新提供最终一致性。提供高可用性和数据保护保证。最符合 Amazon S3 一致性保证。
+
+* 注意： * 如果应用程序对不存在的对象使用 head 请求，则在一个或多个存储节点不可用时，可能会收到大量 500 个内部服务器错误。要防止出现这些错误，请将一致性控制设置为 "`Available` " ，除非您需要类似于 Amazon S3 的一致性保证。
+
+
+
+ a| 
+可用（机头操作的最终一致性）
+ a| 
+与 `read-after-new-write` 一致性级别相同，但仅为机头操作提供最终一致性。如果存储节点不可用，则为机头操作提供的可用性比 " `read-after-new-write` " 更高。与 Amazon S3 一致性保证不同，仅适用于机头操作。
+
+|===
+* 注： * 通常，您应使用 `read-after-new-write` 一致性控制值。如果请求无法正常工作，请尽可能更改应用程序客户端的行为。或者，配置客户端以指定每个 API 请求的一致性控制。请仅作为最后一种方法在存储分段级别设置一致性控制。
+
+
+
+== 请求示例
+
+[source, subs="specialcharacters,quotes"]
+----
+PUT /bucket?x-ntap-sg-consistency=strong-global HTTP/1.1
+Date: _date_
+Authorization: _authorization string_
+Host: _host_
+----
+xref:consistency-controls.adoc[一致性控制]

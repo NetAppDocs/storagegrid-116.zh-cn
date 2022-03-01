@@ -1,0 +1,90 @@
+---
+permalink: sg5700/accessing-storagegrid-appliance-installer-sg5700.html 
+sidebar: sidebar 
+keywords: storagegrid, sg5700, storage node, storage appliance, appliance installer, installer, access, accessing, start, starting 
+summary: 您必须访问 StorageGRID 设备安装程序以配置设备与三个 StorageGRID 网络之间的连接：网格网络，管理网络 \ （可选 \ ）和客户端网络 \ （可选 \ ）。 
+---
+= 访问 StorageGRID 设备安装程序
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您必须访问 StorageGRID 设备安装程序来配置设备与三个 StorageGRID 网络之间的连接：网格网络，管理网络（可选）和客户端网络（可选）。
+
+.您需要什么？ #8217 ；将需要什么
+* 您正在使用 xref:../admin/web-browser-requirements.adoc[支持的 Web 浏览器]。
+* 此设备已连接到您计划使用的所有 StorageGRID 网络。
+* 您知道这些网络上设备的 IP 地址，网关和子网。
+* 您已配置计划使用的网络交换机。
+
+
+首次访问 StorageGRID 设备安装程序时，您可以使用管理网络的 DHCP 分配的 IP 地址（假设设备已连接到管理网络）或网格网络的 DHCP 分配的 IP 地址。首选使用管理网络的 IP 地址。否则，如果使用网格网络的 DHCP 地址访问 StorageGRID 设备安装程序，则在更改链接设置和输入静态 IP 时，可能会与 StorageGRID 设备安装程序断开连接。
+
+.步骤
+. 在管理网络（如果已连接）或网格网络（如果未连接管理网络）上获取设备的 DHCP 地址。
++
+您可以执行以下任一操作：
+
++
+** 查看 E5700SG 控制器上的七段显示器。如果 E5700SG 控制器上的管理端口 1 和 10/25GbE 端口 2 和 4 连接到使用 DHCP 服务器的网络，则控制器会在打开机箱电源时尝试获取动态分配的 IP 地址。控制器完成启动过程后，其七段显示屏将显示 * HO* ，然后是两个数字的重复序列。
++
+[listing]
+----
+HO -- IP address for Admin Network -- IP address for Grid Network HO
+----
++
+顺序：
+
++
+*** 第一组数字是管理网络上设备存储节点的 DHCP 地址（如果已连接）。此 IP 地址将分配给 E5700SG 控制器上的管理端口 1 。
+*** 第二组数字是网格网络上设备存储节点的 DHCP 地址。首次为设备接通电源时，此 IP 地址将分配给 10/225-GbE 端口 2 和 4 。
++
+
+NOTE: 如果无法使用 DHCP 分配 IP 地址，则会显示 0.0.0.0 。
+
+
+
+** 将管理端口 1 的 MAC 地址提供给网络管理员，以便他们可以在管理网络上查找此端口的 DHCP 地址。MAC 地址印在 E5700SG 控制器上端口旁边的标签上。
+
+
+. 如果您能够获取任一 DHCP 地址：
++
+.. 在服务笔记本电脑上打开 Web 浏览器。
+.. 输入 StorageGRID 设备安装程序的 URL ： + ` * https://_E5700SG_Controller_IP_:8443*`
++
+对于 ` _E5700SG_Controller_IP_` ，请使用控制器的 DHCP 地址（如果有，请使用管理网络的 IP 地址）。
+
+.. 如果系统提示您显示安全警报，请使用浏览器的安装向导查看并安装证书。
++
+下次访问此 URL 时，不会显示此警报。
+
++
+此时将显示 StorageGRID 设备安装程序主页页面。首次访问此页面时显示的信息和消息取决于设备当前与 StorageGRID 网络的连接方式。可能会显示错误消息，这些消息将在后续步骤中解决。
+
++
+image::../media/appliance_installer_home_5700_5600.png[StorageGRID Webscale 设备安装程序主页顶部的屏幕截图]
+
+
+
+. 如果 E5700SG 控制器无法使用 DHCP 获取 IP 地址：
++
+.. 使用以太网缆线将服务笔记本电脑连接到 E5700SG 控制器上的管理端口 2 。
++
+image::../media/e5700sg_mgmt_port_2.gif[管理端口 2 在 E5700SG 控制器上的位置]
+
+.. 在服务笔记本电脑上打开 Web 浏览器。
+.. 输入 StorageGRID 设备安装程序的 URL ： + ` * \https://169.254.0.1:8443*`
++
+此时将显示 StorageGRID 设备安装程序主页页面。首次访问此页面时显示的信息和消息取决于设备当前的连接方式。
+
++
+
+NOTE: 如果无法通过链路本地连接访问主页，请将服务笔记本电脑 IP 地址配置为 `169.254.0.2` ，然后重试。
+
+
+
+. 查看主页页面上显示的所有消息，并根据需要配置链路配置和 IP 配置。
+
+
+xref:../admin/web-browser-requirements.adoc[Web 浏览器要求]

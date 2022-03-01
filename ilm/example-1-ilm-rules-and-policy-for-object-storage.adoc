@@ -1,0 +1,113 @@
+---
+permalink: ilm/example-1-ilm-rules-and-policy-for-object-storage.html 
+sidebar: sidebar 
+keywords: example ILM rule, information lifecycle rule examples 
+summary: 在定义 ILM 策略以满足对象保护和保留要求时，您可以使用以下示例规则和策略作为起点。 
+---
+= 示例 1 ：对象存储的 ILM 规则和策略
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在定义 ILM 策略以满足对象保护和保留要求时，您可以使用以下示例规则和策略作为起点。
+
+
+CAUTION: 以下 ILM 规则和策略仅为示例。配置 ILM 规则的方法有多种。在激活新策略之前，请模拟建议的策略，以确认它将按预期工作，以防止内容丢失。
+
+
+
+== ILM 规则 1 示例 1 ：将对象数据复制到两个数据中心
+
+此示例 ILM 规则会将对象数据复制到两个数据中心中的存储池。
+
+[cols="1a,2a"]
+|===
+| 规则定义 | 示例值 
+
+
+ a| 
+存储池
+ a| 
+两个存储池，分别位于不同的数据中心，分别名为存储池 DC1 和存储池 DC2 。
+
+
+
+ a| 
+规则名称
+ a| 
+两个副本两个数据中心
+
+
+
+ a| 
+参考时间
+ a| 
+载入时间
+
+
+
+ a| 
+内容放置
+ a| 
+在第 0 天，永久保留两个复制副本—一个在存储池 DC1 中，一个在存储池 DC2 中。
+
+|===
+image::../media/ilm_rule_two_copies_two_data_centers.png[ILM 规则 1 示例 1 ：将对象数据复制到两个数据中心]
+
+
+
+== ILM 规则 2 示例 1 ：使用存储分段匹配的纠删编码配置文件
+
+此示例 ILM 规则使用擦除编码配置文件和 S3 存储分段来确定对象的存储位置和存储时间。
+
+[cols="1a,2a"]
+|===
+| 规则定义 | 示例值 
+
+
+ a| 
+纠删编码配置文件
+ a| 
+* 在三个数据中心（全部 3 个站点）之间配置一个存储池
+* 使用 6+3 纠删编码方案
+
+
+
+
+ a| 
+规则名称
+ a| 
+用于 S3 存储分段财务记录的 EC
+
+
+
+ a| 
+参考时间
+ a| 
+载入时间
+
+
+
+ a| 
+内容放置
+ a| 
+对于名为 finance-records 的 S3 存储分段中的对象，请在 Erasure Coding 配置文件指定的池中创建一个经过纠删编码的副本。请永久保留此副本。
+
+|===
+image:../media/ilm_rule_ec_for_s3_bucket_finance_records.png["ILM 规则 2 示例 1 ：使用存储分段匹配的纠删编码配置文件"]
+
+
+
+== ILM 策略示例 1
+
+您可以通过 StorageGRID 系统设计复杂而复杂的 ILM 策略；但实际上，大多数 ILM 策略都很简单。
+
+多站点拓扑的典型 ILM 策略可能包括以下 ILM 规则：
+
+* 在载入时，使用 6+3 纠删编码将属于名为 `finance-records` 的 S3 存储分段的所有对象存储在三个数据中心中。
+* 如果某个对象与第一个 ILM 规则不匹配，请使用该策略的默认 ILM 规则 " 复制两个数据中心 " ，以便将该对象的副本存储在两个数据中心 DC1 和 DC2 中。
++
+image::../media/policy_1_configured_policy.png[ILM 策略示例 1]
+
+

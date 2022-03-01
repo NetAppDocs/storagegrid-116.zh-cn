@@ -1,0 +1,21 @@
+---
+permalink: ilm/what-storage-pool-is.html 
+sidebar: sidebar 
+keywords: what is a storage pool 
+summary: 存储池是指存储节点或归档节点的逻辑分组。您可以配置存储池以确定 StorageGRID 系统存储对象数据的位置以及使用的存储类型。 
+---
+= 什么是存储池
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+存储池是指存储节点或归档节点的逻辑分组。您可以配置存储池以确定 StorageGRID 系统存储对象数据的位置以及使用的存储类型。
+
+存储池具有两个属性：
+
+* * 存储级别 * ：对于存储节点，是指后备存储的相对性能。
+* * 站点 * ：要存储对象的数据中心。
+
+
+存储池用于在 ILM 规则中确定对象数据的存储位置。在为复制配置 ILM 规则时，您可以选择一个或多个包含存储节点或归档节点的存储池。在创建擦除编码配置文件时，您可以选择一个包含存储节点的存储池。

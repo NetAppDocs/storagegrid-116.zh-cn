@@ -1,0 +1,21 @@
+---
+permalink: sg5600/configuring-email-and-snmp-trap-alert-notifications.html 
+sidebar: sidebar 
+keywords: storagegrid, sg5600, storage node, storage appliance, email, notifications, alerts, alert, set up, setup, configure, configuration, snmp, traps 
+summary: SANtricity 存储管理器可以在设备或其某个组件的状态发生变化时向您发出通知。这称为警报通知。您可以通过两种不同的方法接收警报通知：电子邮件和 SNMP 陷阱。您必须配置要接收的警报通知。 
+---
+= 配置电子邮件和 SNMP 陷阱警报通知
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+SANtricity 存储管理器可以在设备或其某个组件的状态发生变化时向您发出通知。这称为警报通知。您可以通过两种不同的方法接收警报通知：电子邮件和 SNMP 陷阱。您必须配置要接收的警报通知。
+
+.步骤
+. 在 SANtricity 存储管理器的企业管理窗口中，选择 * 设备 * 选项卡，然后选择一个节点。
+. 选择 * 编辑 * > * 配置警报 * 。
+. 选择 * 电子邮件 * 选项卡以配置电子邮件警报通知。
+. 选择 * SNMP * 选项卡以配置 SNMP 陷阱警报通知。
+. 如果需要，请使用 SANtricity 存储管理器联机帮助完成此任务。
+

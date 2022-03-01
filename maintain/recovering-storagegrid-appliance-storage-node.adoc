@@ -1,0 +1,45 @@
+---
+permalink: maintain/recovering-storagegrid-appliance-storage-node.html 
+sidebar: sidebar 
+keywords: storagegrid, recover, appliance storage node failure 
+summary: 无论您是从系统驱动器丢失还是仅从存储卷丢失中恢复，用于恢复出现故障的 StorageGRID 设备存储节点的操作步骤 都是相同的。 
+---
+= 恢复设备存储节点
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+无论您是从系统驱动器丢失还是仅从存储卷丢失中恢复，用于恢复出现故障的 StorageGRID 设备存储节点的操作步骤 都是相同的。
+
+您必须准备设备并重新安装软件，配置节点以重新加入网格，重新格式化存储以及还原对象数据。
+
+image::../media/overview_sga_recovery.gif[StorageGRID 设备恢复概述流程图]
+
+
+CAUTION: 如果多个存储节点出现故障（或脱机），请联系技术支持。请勿执行以下恢复操作步骤 。可能发生数据丢失。
+
+
+CAUTION: 如果这是在存储节点发生故障或恢复后不到 15 天内第二个存储节点发生故障，请联系技术支持。在 15 天内在两个或多个存储节点上重建 Cassandra 可能会导致数据丢失。
+
+
+NOTE: 如果一个站点上的多个存储节点出现故障，则可能需要一个站点恢复操作步骤 。请联系技术支持。
+
+xref:how-site-recovery-is-performed-by-technical-support.adoc[技术支持如何执行站点恢复]
+
+
+IMPORTANT: 如果 ILM 规则配置为仅存储一个复制副本，而该副本位于发生故障的存储卷上，则您将无法恢复对象。
+
+
+NOTE: 如果在恢复期间遇到服务：状态 - Cassandra （ SVST ）警报，请参见有关通过重建 Cassandra 从警报中恢复的监控和故障排除说明。重建 Cassandra 后，应清除警报。如果未清除警报，请联系技术支持。
+
+
+NOTE: 有关硬件维护过程，例如更换控制器或重新安装 SANtricity OS 的说明，请参见存储设备的安装和维护说明。
+
+xref:../monitor/index.adoc[监控和故障排除]
+
+xref:../sg6000/index.adoc[SG6000 存储设备]
+
+xref:../sg5700/index.adoc[SG5700 存储设备]
+
+xref:../sg5600/index.adoc[SG5600 存储设备]

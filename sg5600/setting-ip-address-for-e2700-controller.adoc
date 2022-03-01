@@ -1,0 +1,66 @@
+---
+permalink: sg5600/setting-ip-address-for-e2700-controller.html 
+sidebar: sidebar 
+keywords: storagegrid, sg5600, storage node, storage appliance, storage controller, controller, configure, setup, set up, IP, IP address, management port, Appliance Installer, e2700 
+summary: E2700 控制器上的管理端口 1 用于将设备连接到 SANtricity 存储管理器的管理网络。您必须为 E2700 控制器设置静态 IP 地址，以确保不会丢失与 StorageGRID 设备中硬件和控制器固件的管理连接。 
+---
+= 设置 E2700 控制器的 IP 地址
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+E2700 控制器上的管理端口 1 用于将设备连接到 SANtricity 存储管理器的管理网络。您必须为 E2700 控制器设置静态 IP 地址，以确保不会丢失与 StorageGRID 设备中硬件和控制器固件的管理连接。
+
+您正在使用 xref:../admin/web-browser-requirements.adoc[支持的 Web 浏览器]。
+
+DHCP 分配的地址可能随时更改。为控制器分配一个静态 IP 地址，以确保可访问性一致。
+
+.步骤
+. 在客户端中，输入 StorageGRID 设备安装程序的 URL ： + ` * https://_E5600SG_Controller_IP_:8443*`
++
+对于 ` _E5600SG_Controller_IP_` ，请在任何 StorageGRID 网络上使用设备的 IP 地址。
+
++
+此时将显示 StorageGRID 设备安装程序主页页面。
+
+. 选择 * 硬件配置 * > * 存储控制器网络配置 * 。
++
+此时将显示存储控制器网络配置页面。
+
+. 根据您的网络配置，对于 IPv4 ， IPv6 或这两者，请选择 * 已启用 * 。
+. 记下自动显示的 IPv4 地址。
++
+DHCP 是为该端口分配 IP 地址的默认方法。
+
++
+
+NOTE: 显示 DHCP 值可能需要几分钟的时间。
+
++
+image::../media/storage_controller_network_config_ipv4.gif[存储控制器网络配置 IPv4]
+
+. （可选）为 E2700 控制器管理端口设置静态 IP 地址。
++
+
+NOTE: 您应该为管理端口分配静态 IP ，或者为 DHCP 服务器上的地址分配永久租约。
+
++
+.. 选择 * 静态 * 。
+.. 使用 CIDR 表示法输入 IPv4 地址。
+.. 输入默认网关。
++
+image::../media/storage_controller_ipv4_and_def_gateway.gif[存储控制器网络配置 IPv4 和默认网关]
+
+.. 单击 * 保存 * 。
++
+应用所做的更改可能需要几分钟的时间。
+
++
+连接到 SANtricity 存储管理器时，您将使用新的静态 IP 地址作为 URL ： + ` * https://_E2700_Controller_IP_*`
+
+
+
+
+
+http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=61197["NetApp 文档： SANtricity 存储管理器"^]

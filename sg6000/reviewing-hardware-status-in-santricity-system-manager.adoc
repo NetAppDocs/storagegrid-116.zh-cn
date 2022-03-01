@@ -1,0 +1,58 @@
+---
+permalink: sg6000/reviewing-hardware-status-in-santricity-system-manager.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6000, storage node, storage appliance, SANtricity System Manager, SANtricity, System Manager, hardware, status, diagnostic, environment drives, drive, temperature 
+summary: 您可以使用 SANtricity 系统管理器监控和管理存储控制器架中的各个硬件组件，并查看硬件诊断和环境信息，例如组件温度以及与驱动器相关的问题。 
+---
+= 在 SANtricity System Manager 中查看硬件状态
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以使用 SANtricity 系统管理器监控和管理存储控制器架中的各个硬件组件，并查看硬件诊断和环境信息，例如组件温度以及与驱动器相关的问题。
+
+.您需要什么？ #8217 ；将需要什么
+* 您正在使用 xref:../admin/web-browser-requirements.adoc[支持的 Web 浏览器]。
+* 要通过网格管理器访问 SANtricity 系统管理器，您必须具有存储设备管理员权限或 root 访问权限。
+* 要使用 StorageGRID 设备安装程序访问 SANtricity 系统管理器，您必须具有 SANtricity 系统管理器管理员用户名和密码。
+* 要使用 Web 浏览器直接访问 SANtricity System Manager ，您必须具有 SANtricity System Manager 管理员用户名和密码。
+
+
+
+NOTE: 要使用网格管理器或 StorageGRID 设备安装程序访问 SANtricity 系统管理器，您必须安装 SANtricity 固件 8.70 或更高版本。
+
+
+IMPORTANT: 从网格管理器或设备安装程序访问 SANtricity 系统管理器通常仅用于监控硬件和配置 E 系列 AutoSupport 。SANtricity System Manager 中的许多功能和操作（例如升级固件）不适用于监控 StorageGRID 设备。为避免出现问题，请始终按照适用于您的设备的硬件安装和维护说明进行操作。
+
+.步骤
+. xref:setting-up-and-accessing-santricity-system-manager.adoc[访问 SANtricity 系统管理器]。
+. 如果需要，请输入管理员用户名和密码。
+. 单击 * 取消 * 以关闭设置向导并显示 SANtricity 系统管理器主页。
++
+此时将显示 SANtricity System Manager 主页。在 SANtricity 系统管理器中，控制器架称为存储阵列。
+
++
+image::../media/sam_home_page.gif[SANtricity System Manager 主页的屏幕截图]
+
+. 查看显示的设备硬件信息，并确认所有硬件组件的状态均为最佳。
++
+.. 单击 * 硬件 * 选项卡。
+.. 单击 * 显示磁盘架的背面 * 。
++
+image::../media/sam_hardware_controllers_a_and_b.gif[SANtricity 系统管理器中的硬件状态选项卡]
+
++
+从磁盘架背面，您可以查看两个存储控制器，每个存储控制器中的电池，两个电源箱，两个风扇箱和扩展架（如果有）。您还可以查看组件温度。
+
+.. 要查看每个存储控制器的设置，请选择控制器，然后从上下文菜单中选择 * 查看设置 * 。
+.. 要查看磁盘架背面其他组件的设置，请选择要查看的组件。
+.. 单击 * 显示磁盘架正面 * ，然后选择要查看的组件。
++
+从磁盘架正面，您可以查看存储控制器磁盘架或扩展磁盘架（如果有）的驱动器和驱动器抽盒。
+
+
+
+
+
+如果需要关注任何组件的状态，请按照 Recovery Guru 中的步骤解决问题描述 或联系技术支持。

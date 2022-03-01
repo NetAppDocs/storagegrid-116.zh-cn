@@ -1,0 +1,23 @@
+---
+permalink: maintain/restoring-existing-nodes.html 
+sidebar: sidebar 
+keywords: storagegrid, recover, restore node to host 
+summary: 要将出现故障的网格节点还原到新的 Linux 主机，请使用相应的命令还原节点配置文件。 
+---
+= 将网格节点还原到主机
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+要将出现故障的网格节点还原到新的 Linux 主机，请使用相应的命令还原节点配置文件。
+
+执行全新安装时，您需要为要安装在主机上的每个网格节点创建一个节点配置文件。将网格节点还原到替代主机时，您需要还原或替换任何出现故障的网格节点的节点配置文件。
+
+如果从上一主机保留了任何块存储卷，则可能需要执行其他恢复过程。本节中的命令可帮助您确定需要执行的其他过程。
+
+.步骤
+* xref:restoring-and-validating-grid-nodes.adoc[还原和验证网格节点]
+* xref:starting-storagegrid-host-service.adoc[启动 StorageGRID 主机服务]
+* xref:recovering-nodes-that-fail-to-start-normally.adoc[恢复无法正常启动的节点]
+

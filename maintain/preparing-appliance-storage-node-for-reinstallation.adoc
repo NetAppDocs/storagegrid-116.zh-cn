@@ -1,0 +1,37 @@
+---
+permalink: maintain/preparing-appliance-storage-node-for-reinstallation.html 
+sidebar: sidebar 
+keywords: storagegrid, recover, appliance, reinstallation appliance, reinstall appliance 
+summary: 恢复设备存储节点时，必须先准备设备以重新安装 StorageGRID 软件。 
+---
+= 准备要重新安装的设备存储节点
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+恢复设备存储节点时，必须先准备设备以重新安装 StorageGRID 软件。
+
+. 登录到发生故障的存储节点：
++
+.. 输入以下命令： `ssh admin@ grid_node_ip_`
+.. 输入 `passwords.txt` 文件中列出的密码。
+.. 输入以下命令切换到 root ： `su -`
+.. 输入 `passwords.txt` 文件中列出的密码。
+
+
++
+以 root 用户身份登录时，提示符将从 ` $` 更改为 ` #` 。
+
+. 准备设备存储节点以安装 StorageGRID 软件。`sgareinstall`
+. 当系统提示您继续时，输入： `y`
++
+设备将重新启动， SSH 会话将结束。StorageGRID 设备安装程序通常需要大约 5 分钟才能投入使用，但在某些情况下，您可能需要等待长达 30 分钟。
+
++
+StorageGRID 设备存储节点已重置，并且无法再访问存储节点上的数据。在初始安装过程中配置的 IP 地址应保持不变；但是，建议您在操作步骤 完成后进行确认。
+
++
+执行 `sgareinstall` 命令后，将删除所有 StorageGRID 配置的帐户，密码和 SSH 密钥，并生成新的主机密钥。
+
+

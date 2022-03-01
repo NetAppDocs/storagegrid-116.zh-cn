@@ -1,0 +1,41 @@
+---
+permalink: primer/configuring-system-settings.html 
+sidebar: sidebar 
+keywords: system settings, grid manager, configure, configuration, display options, grid options, key management server, S3 object lock, storage options 
+summary: 您可以从网格管理器配置各种系统设置，以微调 StorageGRID 系统的运行。 
+---
+= 配置系统设置
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以从网格管理器配置各种系统设置，以微调 StorageGRID 系统的运行。
+
+
+
+== 显示选项
+
+通过显示选项，您可以指定用户会话的超时期限，并禁止对原有警报和事件触发的 AutoSupport 消息发送电子邮件通知。
+
+
+
+== 网格选项
+
+您可以使用网格选项为存储在 StorageGRID 系统中的所有对象配置设置，包括存储的对象压缩和存储的对象加密。和存储的对象哈希。
+
+您还可以使用这些选项为 S3 和 Swift 客户端操作指定全局设置。
+
+
+
+== S3 对象锁定
+
+StorageGRID S3 对象锁定功能是一种对象保护解决方案 ，相当于 Amazon Simple Storage Service （ Amazon S3 ）中的 S3 对象锁定。您可以为 StorageGRID 系统启用全局 S3 对象锁定设置，以允许 S3 租户帐户在启用了 S3 对象锁定的情况下创建分段。然后，租户可以使用 S3 客户端应用程序为这些分段中的对象指定保留设置（保留到日期，合法保留或同时指定这两者）。此外，启用了 S3 对象锁定的每个存储分段也可以选择具有默认保留模式和保留期限，如果在没有自身保留设置的情况下将对象添加到存储分段，则此模式和保留期限适用。
+
+image::../media/s3_object_lock_architecture.png[S3 对象锁定架构]
+
+
+
+== 存储选项
+
+通过存储选项，您可以控制对象分段并覆盖存储卷水印设置，以管理存储节点的可用存储空间。

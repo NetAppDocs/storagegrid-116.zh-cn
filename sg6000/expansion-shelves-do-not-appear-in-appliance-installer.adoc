@@ -1,0 +1,32 @@
+---
+permalink: sg6000/expansion-shelves-do-not-appear-in-appliance-installer.html 
+sidebar: sidebar 
+keywords: storagegrid, sg6000, storage node, storage appliance troubleshooting, Expansion, shelves, do not appear, Appliance Installer, missing, not shown 
+summary: 如果您为 SG6060 安装了扩展架，但这些扩展架未显示在 StorageGRID 设备安装程序中，则应验证这些磁盘架是否已完全安装并打开电源。 
+---
+= 扩展架未显示在设备安装程序中
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果您为 SG6060 安装了扩展架，但这些扩展架未显示在 StorageGRID 设备安装程序中，则应验证这些磁盘架是否已完全安装并打开电源。
+
+您可以通过在 StorageGRID 设备安装程序中查看以下信息来验证扩展架是否已连接到设备：
+
+* 主页 * 页面包含一条有关扩展架的消息。
++
+image::../media/expansion_shelf_home_page_msg.png[扩展架消息]
+
+* * 高级 * > * RAID 模式 * 页面可通过驱动器数量指示设备是否包含扩展架。例如，在以下屏幕截图中，显示了两个 SSD 和 178 个 HDD 。包含两个扩展架的 SG6060 总共包含 180 个驱动器。
+
+
+image::../media/expansion_shelves_shown_by_num_of_drives.png[驱动器数量]
+
+如果 StorageGRID 设备安装程序页面未指示存在扩展架，请遵循此操作步骤 。
+
+.步骤
+. 请验证 xref:sg6060-cabling-optional-expansion-shelves.adoc[所有必需的缆线均已牢固连接]。
+. 验证您是否已安装 xref:connecting-power-cords-and-applying-power-sg6000.adoc[已打开扩展架电源]。
+. 如果您需要有关解决问题描述 的帮助，请联系技术支持。
+

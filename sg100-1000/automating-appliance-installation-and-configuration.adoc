@@ -1,0 +1,29 @@
+---
+permalink: sg100-1000/automating-appliance-installation-and-configuration.html 
+sidebar: sidebar 
+keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gateway Node, admin node, automate, automating, automation, automatic, install, installation, configuration, configure 
+summary: 您可以自动安装和配置设备以及配置整个 StorageGRID 系统。 
+---
+= 自动化设备安装和配置（ SG100 和 SG1000 ）
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以自动安装和配置设备以及配置整个 StorageGRID 系统。
+
+自动化安装和配置对于部署多个 StorageGRID 实例或一个大型复杂的 StorageGRID 实例非常有用。
+
+要自动执行安装和配置，请使用以下一个或多个选项：
+
+* 创建一个 JSON 文件，用于指定设备的配置设置。使用 StorageGRID 设备安装程序上传 JSON 文件。
++
+
+NOTE: 您可以使用同一文件配置多个设备。
+
+* 使用 StorageGRID``configure-sGa.py`` Python 脚本自动配置设备。
+* 使用其他 Python 脚本配置整个 StorageGRID 系统的其他组件（ " 网格 " ）。
+
+
+
+NOTE: 您可以直接使用 StorageGRID 自动化 Python 脚本，也可以使用它们作为示例，说明如何在您自己开发的网格部署和配置工具中使用 StorageGRID 安装 REST API 。请参见的说明 xref:../maintain/downloading-and-extracting-storagegrid-installation-files.adoc[下载并提取 StorageGRID 安装文件]。

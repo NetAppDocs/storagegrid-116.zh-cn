@@ -1,0 +1,40 @@
+---
+permalink: admin/managing-untrusted-client-networks.html 
+sidebar: sidebar 
+keywords: untrusted client network 
+summary: 如果您使用的是客户端网络，则可以通过仅在显式配置的端点上接受入站客户端流量来帮助保护 StorageGRID 免受恶意攻击。 
+---
+= Manage Untrusted Client Networks ：概述
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果您使用的是客户端网络，则可以通过仅在显式配置的端点上接受入站客户端流量来帮助保护 StorageGRID 免受恶意攻击。
+
+默认情况下，每个网格节点上的客户端网络均为 _trusted_ 。也就是说，默认情况下， StorageGRID 会信任所有可用外部端口上与每个网格节点的入站连接（请参见中有关外部通信的信息 xref:../network/index.adoc[网络连接准则]）。
+
+您可以通过指定每个节点上的客户端网络为 _untrused__ 来减少对 StorageGRID 系统的恶意攻击威胁。如果节点的客户端网络不可信，则节点仅接受显式配置为负载平衡器端点的端口上的入站连接。请参见 xref:configuring-load-balancer-endpoints.adoc[配置负载平衡器端点]。
+
+
+
+== 示例 1 ：网关节点仅接受 HTTPS S3 请求
+
+假设您希望网关节点拒绝客户端网络上除 HTTPS S3 请求以外的所有入站流量。您应执行以下常规步骤：
+
+. 在负载平衡器端点页面中，通过 HTTPS 在端口 443 上为 S3 配置负载平衡器端点。
+. 在不可信客户端网络页面中，指定网关节点上的客户端网络不可信。
+
+
+保存配置后，网关节点客户端网络上的所有入站流量都会被丢弃，但端口 443 上的 HTTPS S3 请求和 ICMP 回显（ ping ）请求除外。
+
+
+
+== 示例 2 ：存储节点发送 S3 平台服务请求
+
+假设您要从存储节点启用出站 S3 平台服务流量，但要阻止与客户端网络上的该存储节点建立任何入站连接。您应执行此常规步骤：
+
+* 在不可信客户端网络页面中，指示存储节点上的客户端网络不可信。
+
+
+保存配置后，存储节点将不再接受客户端网络上的任何传入流量，但它仍允许向 Amazon Web Services 发出出站请求。

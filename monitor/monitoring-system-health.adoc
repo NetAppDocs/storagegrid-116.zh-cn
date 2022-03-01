@@ -1,0 +1,70 @@
+---
+permalink: monitor/monitoring-system-health.html 
+sidebar: sidebar 
+keywords: how to monitor system health, how to view system health 
+summary: 您应每天监控 StorageGRID 系统的整体运行状况。 
+---
+= 监控系统运行状况
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您应每天监控 StorageGRID 系统的整体运行状况。
+
+StorageGRID 系统具有容错功能，即使网格的某些部分不可用，它也可以继续运行。StorageGRID 系统中可能出现的问题描述 的第一个迹象可能是警报或警报（传统系统），而不一定是具有系统操作的问题描述 。注意系统运行状况有助于您在小问题影响操作或网格效率之前检测到这些问题。
+
+网格管理器信息板上的 " 运行状况 " 面板提供了可能影响系统的问题的摘要。您应调查信息板上显示的任何问题。
+
+
+NOTE: 要在触发警报后立即收到警报通知，您可以为警报设置电子邮件通知或配置 SNMP 陷阱。
+
+.步骤
+. 登录到网格管理器以查看信息板。
+. 查看运行状况面板中的信息。
++
+image::../media/dashboard_health_panel.png[信息板运行状况面板]
+
++
+如果存在问题，则会显示一些链接，您可以通过这些链接查看其他详细信息：
+
++
+[cols="1a,2a"]
+|===
+| 链接。 | 表示 
+
+
+ a| 
+网格详细信息
+ a| 
+如果任何节点已断开连接（连接状态为未知或管理员关闭），则显示此消息。单击链接或单击蓝色或灰色图标以确定受影响的节点。
+
+
+
+ a| 
+当前警报
+ a| 
+如果当前有任何警报处于活动状态，则显示此消息。单击链接，或单击 * 严重 * ， * 主要 * 或 * 次要 * 以查看 * 警报 * > * 当前 * 页面上的详细信息。
+
+
+
+ a| 
+最近解决的警报
+ a| 
+如果已解决过去一周触发的任何警报，则显示此消息。单击此链接可在 * 警报 * > * 已解决 * 页面上查看详细信息。
+
+
+
+ a| 
+许可证
+ a| 
+如果存在具有此 StorageGRID 系统软件许可证的问题描述 ，则显示此消息。单击此链接可在 * 维护 * > * 系统 * > * 许可证 * 页面上查看详细信息。
+
+|===
+
+
+.相关信息
+* xref:../admin/index.adoc[管理 StorageGRID]
+* xref:set-up-email-alert-notifications.adoc[为警报设置电子邮件通知]
+* xref:using-snmp-monitoring.adoc[使用 SNMP 监控]
+

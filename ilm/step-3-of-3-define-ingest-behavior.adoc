@@ -1,0 +1,73 @@
+---
+permalink: ilm/step-3-of-3-define-ingest-behavior.html 
+sidebar: sidebar 
+keywords: ilm rule step 3, define ingest behavior 
+summary: 通过创建 ILM 规则向导的第 3 步 \ （定义载入行为 \ ），您可以选择在载入时如何保护按此规则筛选的对象。 
+---
+= 第 3 步，共 3 步：定义载入行为
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+通过创建 ILM 规则向导的第 3 步（定义载入行为），您可以选择在载入时如何保护按此规则筛选的对象。
+
+StorageGRID 可以创建临时副本并将对象排入队列，以便稍后进行 ILM 评估，也可以立即创建副本以满足规则的放置说明。
+
+image::../media/define_ingest_behavior_for_ilm_rule.png[创建 ILM 规则第 3 步，共 3 步]
+
+.步骤
+. 选择要在载入对象时使用的数据保护选项：
++
+[cols="1a,2a"]
+|===
+| 选项 | Description 
+
+
+ a| 
+严格
+ a| 
+在载入时始终使用此规则的放置位置。如果无法放置此规则，则载入将失败。
+
+
+
+ a| 
+平衡
+ a| 
+最佳 ILM 效率。尝试在载入时放置此规则。如果无法创建中间副本，请创建此副本。
+
+
+
+ a| 
+双提交
+ a| 
+在载入时创建中间副本，并稍后应用此规则的放置位置。
+
+|===
++
+Balanced 结合了数据安全性和效率，在大多数情况下都适用。" 严格 " 或 " 双重提交 " 通常用于满足特定要求。
+
++
+请参见 xref:data-protection-options-for-ingest.adoc[用于载入的数据保护选项] 和 xref:advantages-disadvantages-of-ingest-options.adoc[数据保护选项的优势，劣势和限制] 有关详细信息 ...
+
++
+[NOTE]
+====
+如果选择 " 严格 " 或 " 平衡 " 选项，并且规则使用以下放置之一，则会显示一条错误消息：
+
+** 第 0 天的云存储池
+** 日期为 0 的归档节点
+** 当规则使用用户定义的创建时间作为参考时间时，则为云存储池或归档节点
+
+
+====
+. 选择 * 保存 * 。
++
+此时将保存 ILM 规则。在将规则添加到 ILM 策略并激活该策略之前，该规则不会变为活动状态。
+
+
+
+.相关信息
+* xref:example-5-ilm-rules-and-policy-for-strict-ingest-behavior.adoc[示例 5 ：用于严格载入行为的 ILM 规则和策略]
+* xref:creating-ilm-policy.adoc[创建 ILM 策略]
+

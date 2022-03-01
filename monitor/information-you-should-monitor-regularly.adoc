@@ -1,0 +1,81 @@
+---
+permalink: monitor/information-you-should-monitor-regularly.html 
+sidebar: sidebar 
+keywords: monitor, monitoring, StorageGRID, 
+summary: StorageGRID 是一种容错分布式存储系统，即使发生错误或节点或站点不可用，它也可以继续运行。您必须主动监控系统运行状况，工作负载和使用情况统计信息，以便在潜在问题影响网格的效率或可用性之前采取措施解决这些问题。 
+---
+= 您应定期监控的信息
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+StorageGRID 是一种容错分布式存储系统，即使发生错误或节点或站点不可用，它也可以继续运行。您必须主动监控系统运行状况，工作负载和使用情况统计信息，以便在潜在问题影响网格的效率或可用性之前采取措施解决这些问题。
+
+繁忙的系统会生成大量信息。本节提供了有关持续监控的最重要信息的指导。
+
+[cols="2a,1a"]
+|===
+| 要监控的内容 | Frequency 
+
+
+ a| 
+。 xref:monitoring-system-health.adoc[系统运行状况数据] 显示在网格管理器信息板上。记下是否与前一天发生了任何更改。
+ a| 
+每天
+
+
+
+ a| 
+速率 xref:monitoring-storage-capacity.adoc[存储节点对象和元数据容量] 正在使用
+ a| 
+每周
+
+
+
+ a| 
+xref:monitoring-information-lifecycle-management.adoc[信息生命周期管理操作]
+ a| 
+每周
+
+
+
+ a| 
+xref:monitoring-performance-networking-and-system-resources.adoc[性能，网络和系统资源]：
+
+* 查询延迟
+* 连接和网络连接
+* 节点级资源
+
+ a| 
+每周
+
+
+
+ a| 
+xref:monitoring-tenant-activity.adoc[租户活动]
+ a| 
+每周
+
+
+
+ a| 
+xref:monitoring-archival-capacity.adoc[外部归档存储系统的容量]
+ a| 
+每周
+
+
+
+ a| 
+xref:monitoring-load-balancing-operations.adoc[负载平衡操作]
+ a| 
+在初始配置之后以及任何配置更改之后
+
+
+
+ a| 
+xref:applying-hotfixes-or-upgrading-software-if-necessary.adoc[提供软件修补程序和软件升级]
+ a| 
+每月
+
+|===
