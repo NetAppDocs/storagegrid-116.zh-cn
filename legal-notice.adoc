@@ -47,6 +47,4 @@ https://www.netapp.com/us/legal/privacypolicy/index.aspx[]
 
 == StorageGRID 11.6 的开源版本
 
-https://library.netapp.com/ecm/ecm_download_file/2879263[]
-
-https://library.netapp.com/ecm/ecm_download_file/2881511[]
+https://library.netapp.com/ecm/ecm_download_file/ECMLP2879263[]
