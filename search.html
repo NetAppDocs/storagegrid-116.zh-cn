@@ -45,12 +45,52 @@
   <link rel="stylesheet" href='/zh-cn/storagegrid-116/css/na-utility.css' type='text/css'>
   <link rel="stylesheet" href='/zh-cn/storagegrid-116/css/na-sidebar.css' type='text/css'>
   <link rel='stylesheet' href='/zh-cn/storagegrid-116/css/clouddocs.css' type='text/css'>
+  <link rel='stylesheet' href='/zh-cn/storagegrid-116/css/custom-dropdown.css' type='text/css'>
   <link rel='stylesheet' href='/zh-cn/storagegrid-116/css/na-pagenav.css' type='text/css'>
 
   
   <link rel="stylesheet" href="/zh-cn/storagegrid-116/css/landing-page.css" type="text/css">
   <link rel="stylesheet" href="/zh-cn/storagegrid-116/css/tabbed-blocks.css" type="text/css">
-  <link rel='stylesheet' href='/zh-cn/storagegrid-116/css/na-feature.css' type='text/css'><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <!-- Canonical url -->
+  <link rel='stylesheet' href='/zh-cn/storagegrid-116/css/na-feature.css' type='text/css'><!-- Top level site integrations --><script>
+    if (document.location.hostname === "docs.netapp.com") {
+      var head = document.getElementsByTagName('head')[0];
+      var onetrustConsent = document.createElement("script");
+      onetrustConsent.type = "text/javascript";
+      onetrustConsent.src = "https://cdn.cookielaw.org/consent/72570c5c-fe30-465f-b0e0-b77f7fb4ae34/OtAutoBlock.js";
+      head.appendChild(onetrustConsent);
+
+      var onetrustScript = document.createElement("script");
+      onetrustScript.type = "text/javascript";
+      onetrustScript.src = "https://cdn.cookielaw.org/scripttemplates/otSDKStub.js";
+      onetrustScript.charset = "UTF-8";
+      onetrustScript.dataset.documentLanguage = "true";
+      onetrustScript.dataset.domainScript = "72570c5c-fe30-465f-b0e0-b77f7fb4ae34";
+      head.appendChild(onetrustScript);
+    }
+
+    function OptanonWrapper() { }
+
+    if (document.location.hostname === "docs.netapp.com") {
+      var adobe = document.createElement("script");
+      adobe.type = "text/plain";
+      adobe.className = "optanon-category-C0002";
+      adobe.src = "//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js";
+      head.appendChild(adobe);
+
+      var google = document.createElement("script");
+      google.type = "text/plain";
+      google.className = "optanon-category-C0002";
+      google.src = "https://www.googletagmanager.com/gtag/js?id=UA-81697994-3";
+      head.appendChild(google);
+
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-81697994-3');
+    }
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
 
   <!-- Used for Product Family Page Sidebar Visibility --><!-- Used to import Promise for IE. Required for SearchKit -->
@@ -60,15 +100,6 @@
 
   <script src='/zh-cn/storagegrid-116/js/na-utility.js'></script>
   <script src='/zh-cn/storagegrid-116/js/clouddocs.js'></script>
-  <script>
-  if (document.location.hostname === "docs.netapp.com") {
-    var head = document.getElementsByTagName('head')[0];
-    var adobe = document.createElement("script");
-    adobe.type = "text/javascript";
-    adobe.src = "//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js";
-    head.appendChild(adobe);
-  }
-  </script>
   <script src='/zh-cn/storagegrid-116/js/jquery.navgoco.min.js'></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   <script src='/zh-cn/storagegrid-116/js/toc.js'></script>
@@ -121,16 +152,8 @@
               $("#tg-sb-icon").toggleClass('fa-toggle-off');
           });
       });
-  </script><script async src="https://www.googletagmanager.com/gtag/js?id=UA-81697994-3"></script>
-  <script>
-  if (document.location.hostname === "docs.netapp.com") {
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'UA-81697994-3');
-  }
   </script>
-  <script src='/zh-cn/storagegrid-116/js/version-dropdown.js'></script>
+  <script src='/zh-cn/storagegrid-116/js/custom-dropdown.js'></script>
   <script src='/zh-cn/storagegrid-116/js/FileSaver.min.js'></script>
   <script src='/zh-cn/storagegrid-116/js/jszip-utils.min.js'></script>
   <script src='/zh-cn/storagegrid-116/js/jszip.min.js'></script>
@@ -138,7 +161,7 @@
 </head>
 
 
-  <body class role="document">
+  <body class role="document" data-flavor="">
     <div id="page" class="n-off-canvas-menu">
       <div class="n-off-canvas-menu__menu"><!--TODO: Add offcanvas code --></div>
       <div class="n-off-canvas-menu__content-wrap">
@@ -234,13 +257,15 @@
           <ul class="n-menu__list">
             <li class="n-menu__list-column">
               <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-cn/storagegrid-116//search.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
                   <a href="https://docs.netapp.com/us-en/storagegrid-116//search.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
                 </li><li class="n-menu__list-item n-menu__list-item--level-1">
                   <a href="https://docs.netapp.com/ja-jp/storagegrid-116//search.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
                 </li><li class="n-menu__list-item n-menu__list-item--level-1">
                   <a href="https://docs.netapp.com/ko-kr/storagegrid-116//search.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
+                </li><li class="n-menu__list-item n-menu__list-item--level-1">
+                  <a href="https://docs.netapp.com/zh-cn/storagegrid-116//search.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
+                </li><li class="n-menu__list-item n-menu__list-item--level-1">
+                  <a href="https://docs.netapp.com/zh-tw/storagegrid-116//search.html" class="n-menu__header-text"><span translate="no" class="notranslate">繁體中文</span></a>
                 </li></ul>
             </li>
           </ul>
@@ -295,6 +320,9 @@
 </div>
 <div class="n-pdf-body-container">
   <ul id="toggleContainerPdf" class="n-pdf-body" style="display:none;"><li class="pdf-ux-container">
+        
+        
+        
         <a target="_blank" href="/zh-cn/storagegrid-116/pdfs/fullsite-sidebar/StorageGRID_11_6_文档.pdf" >
           <img src="/zh-cn/storagegrid-116/images/pdf.png" width="16" height="16"/>此文档站点的 PDF</a>
 
@@ -305,6 +333,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/入门.pdf" 
@@ -318,6 +349,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/网格入门.pdf" 
@@ -337,6 +371,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/对象管理.pdf" 
@@ -352,6 +389,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/对象生命周期.pdf" 
@@ -393,6 +433,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/如何使用_StorageGRID.pdf" 
@@ -422,6 +465,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/监控操作.pdf" 
@@ -476,6 +522,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/网络连接准则.pdf" 
@@ -493,6 +542,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/网络拓扑示例.pdf" 
@@ -527,6 +579,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/部署特定的网络注意事项.pdf" 
@@ -559,6 +614,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/网络端口参考.pdf" 
@@ -603,6 +661,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/安装和维护设备硬件.pdf" 
@@ -616,6 +677,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/SG100_和_SG1000_服务设备.pdf" 
@@ -635,6 +699,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/准备安装__SG100_和_SG1000__.pdf" 
@@ -654,6 +721,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/查看设备网络连接__SG100_和_SG1000__.pdf" 
@@ -667,6 +737,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/SG100_和_SG1000_设备的端口绑定模式.pdf" 
@@ -713,6 +786,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/安装硬件__SG100_和_SG1000__.pdf" 
@@ -745,6 +821,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/配置_StorageGRID_连接__SG100_和_SG1000__.pdf" 
@@ -779,6 +858,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/配置_BMC_接口__SG100_和_SG1000__.pdf" 
@@ -813,6 +895,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/部署服务设备节点.pdf" 
@@ -832,6 +917,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/自动化设备安装和配置__SG100_和_SG1000__.pdf" 
@@ -871,6 +959,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/硬件安装故障排除__SG100_和_SG1000__.pdf" 
@@ -903,6 +994,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/维护设备.pdf" 
@@ -960,6 +1054,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/SG6000_存储设备.pdf" 
@@ -973,6 +1070,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/StorageGRID_SG6000_存储设备.pdf" 
@@ -1003,6 +1103,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/准备安装__SG6000__.pdf" 
@@ -1022,6 +1125,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/查看设备网络连接__SG6000__.pdf" 
@@ -1035,6 +1141,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/SG6000_CN_控制器的端口绑定模式.pdf" 
@@ -1081,6 +1190,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/安装硬件__SG6000__.pdf" 
@@ -1123,6 +1235,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/配置硬件__SG6000__.pdf" 
@@ -1136,6 +1251,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/配置_StorageGRID_连接__SG6000__.pdf" 
@@ -1170,6 +1288,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/访问和配置_SANtricity_System_Manager___SG6000__.pdf" 
@@ -1198,6 +1319,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/配置_BMC_接口__SG6000__.pdf" 
@@ -1249,6 +1373,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/自动化设备安装和配置__SG6000__.pdf" 
@@ -1279,6 +1406,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/硬件安装故障排除__SG6000__.pdf" 
@@ -1298,6 +1428,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/对连接问题进行故障排除__SG6000__.pdf" 
@@ -1335,6 +1468,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/维护_SG6000_设备.pdf" 
@@ -1350,6 +1486,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/升级存储控制器上的_SANtricity_操作系统.pdf" 
@@ -1406,6 +1545,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/更换_SG6000_CN_控制器中的光纤通道_HBA.pdf" 
@@ -1462,6 +1604,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/SG5700_存储设备.pdf" 
@@ -1475,6 +1620,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/StorageGRID_SG5700_存储设备.pdf" 
@@ -1501,6 +1649,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/准备安装__SG5700__.pdf" 
@@ -1520,6 +1671,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/查看设备网络连接__SG5700__.pdf" 
@@ -1533,6 +1687,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/E5700SG_控制器端口的端口绑定模式.pdf" 
@@ -1579,6 +1736,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/安装硬件__SG5700__.pdf" 
@@ -1600,6 +1760,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/查看_SG5700_启动状态代码.pdf" 
@@ -1633,6 +1796,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/配置硬件__SG5700__.pdf" 
@@ -1646,6 +1812,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/配置_StorageGRID_连接__SG5700__.pdf" 
@@ -1680,6 +1849,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/访问和配置_SANtricity_System_Manager___SG5700__.pdf" 
@@ -1727,6 +1899,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/自动化设备安装和配置__SG5700__.pdf" 
@@ -1757,6 +1932,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/硬件安装故障排除__SG5700__.pdf" 
@@ -1770,6 +1948,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/硬件设置似乎挂起__SG5700__.pdf" 
@@ -1807,6 +1988,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/维护_SG5700_设备.pdf" 
@@ -1822,6 +2006,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/升级存储控制器上的_SANtricity_操作系统.pdf" 
@@ -1862,6 +2049,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/在维护模式下监控节点加密__SG5700__.pdf" 
@@ -1904,6 +2094,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/SG5600_存储设备.pdf" 
@@ -1917,6 +2110,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/StorageGRID_SG5600_存储设备.pdf" 
@@ -1945,6 +2141,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/准备安装__SG5600__.pdf" 
@@ -1966,6 +2165,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/查看设备网络连接__SG5600__.pdf" 
@@ -1979,6 +2181,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/E5600SG_控制器端口的端口绑定模式.pdf" 
@@ -2025,6 +2230,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/安装硬件__SG5600__.pdf" 
@@ -2048,6 +2256,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/查看_SG5600_控制器的启动状态并查看错误代码.pdf" 
@@ -2081,6 +2292,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/配置硬件__SG5600__.pdf" 
@@ -2094,6 +2308,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/配置_StorageGRID_连接__SG5600__.pdf" 
@@ -2128,6 +2345,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/配置_SANtricity_存储管理器.pdf" 
@@ -2145,6 +2365,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/设置_SANtricity_存储管理器.pdf" 
@@ -2203,6 +2426,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/自动化设备安装和配置__SG5600__.pdf" 
@@ -2233,6 +2459,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/硬件安装故障排除__SG5600__.pdf" 
@@ -2246,6 +2475,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/硬件设置似乎挂起__SG5600__.pdf" 
@@ -2283,6 +2515,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/维护_SG5600_设备.pdf" 
@@ -2316,6 +2551,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/在维护模式下监控节点加密__SG5600__.pdf" 
@@ -2367,6 +2605,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/安装和升级软件.pdf" 
@@ -2380,6 +2621,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/升级_StorageGRID_软件.pdf" 
@@ -2403,6 +2647,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/规划和准备升级.pdf" 
@@ -2437,6 +2684,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/升级_StorageGRID_软件.pdf" 
@@ -2465,6 +2715,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/对升级问题进行故障排除.pdf" 
@@ -2504,6 +2757,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/安装_Red_Hat_Enterprise_Linux_或_CentOS.pdf" 
@@ -2519,6 +2775,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/规划并准备安装_Red_Hat_或_CentOS.pdf" 
@@ -2546,6 +2805,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/准备主机__Red_Hat_或_CentOS__.pdf" 
@@ -2587,6 +2849,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/部署虚拟网格节点__Red_Hat_或_CentOS__.pdf" 
@@ -2619,6 +2884,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/配置网格并完成安装__Red_Hat_或_CentOS__.pdf" 
@@ -2680,6 +2948,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/安装_Ubuntu_或_Debian.pdf" 
@@ -2695,6 +2966,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/规划并准备安装_Ubuntu_或_Debian.pdf" 
@@ -2722,6 +2996,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/准备主机__Ubuntu_或_Debian__.pdf" 
@@ -2767,6 +3044,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/部署虚拟网格节点__Ubuntu_或_Debian__.pdf" 
@@ -2799,6 +3079,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/配置网格并完成安装__Ubuntu_或_Debian__.pdf" 
@@ -2860,6 +3143,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/安装_VMware.pdf" 
@@ -2875,6 +3161,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/规划并准备_VMware_安装.pdf" 
@@ -2909,6 +3198,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/部署虚拟机网格节点__VMware__.pdf" 
@@ -2937,6 +3229,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/配置网格并完成安装__VMware__.pdf" 
@@ -3005,6 +3300,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/执行系统管理.pdf" 
@@ -3018,6 +3316,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/管理_StorageGRID.pdf" 
@@ -3033,6 +3334,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/开始使用_StorageGRID.pdf" 
@@ -3060,6 +3364,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/使用_API.pdf" 
@@ -3081,6 +3388,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/如果启用了单点登录_请使用_API.pdf" 
@@ -3127,6 +3437,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/控制对_StorageGRID_的访问.pdf" 
@@ -3154,6 +3467,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/使用单点登录__SSO__.pdf" 
@@ -3203,6 +3519,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/管理安全设置.pdf" 
@@ -3216,6 +3535,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/管理证书.pdf" 
@@ -3231,6 +3553,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/配置服务器证书.pdf" 
@@ -3274,6 +3599,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/配置密钥管理服务器.pdf" 
@@ -3318,6 +3646,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/管理代理设置.pdf" 
@@ -3344,6 +3675,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/管理不可信的客户端网络.pdf" 
@@ -3379,6 +3713,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/管理租户.pdf" 
@@ -3402,6 +3739,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/管理平台服务.pdf" 
@@ -3443,6 +3783,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/配置_S3_和_Swift_客户端连接.pdf" 
@@ -3462,6 +3805,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/管理高可用性组.pdf" 
@@ -3492,6 +3838,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/管理负载平衡.pdf" 
@@ -3537,6 +3886,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/管理网络和连接.pdf" 
@@ -3558,6 +3910,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/管理流量分类策略.pdf" 
@@ -3590,6 +3945,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/管理链路成本.pdf" 
@@ -3625,6 +3983,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/使用_AutoSupport.pdf" 
@@ -3657,6 +4018,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/管理存储节点.pdf" 
@@ -3674,6 +4038,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/管理存储选项.pdf" 
@@ -3702,6 +4069,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/配置已存储对象的全局设置.pdf" 
@@ -3743,6 +4113,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/管理管理节点.pdf" 
@@ -3768,6 +4141,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/配置审核客户端访问.pdf" 
@@ -3781,6 +4157,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/为_CIFS_配置审核客户端.pdf" 
@@ -3815,6 +4194,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/为_NFS_配置审核客户端.pdf" 
@@ -3863,6 +4245,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/管理归档节点.pdf" 
@@ -3878,6 +4263,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/通过_S3_API_归档到云.pdf" 
@@ -3910,6 +4298,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/通过_TSM_中间件归档到磁带.pdf" 
@@ -3946,6 +4337,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/集成_Tivoli_Storage_Manager.pdf" 
@@ -3963,6 +4357,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/完成归档节点设置.pdf" 
@@ -3978,6 +4375,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/配置_TSM_服务器.pdf" 
@@ -4033,6 +4433,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/将数据迁移到_StorageGRID.pdf" 
@@ -4072,6 +4475,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/使用_ILM_管理对象.pdf" 
@@ -4087,6 +4493,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/ILM_和对象生命周期.pdf" 
@@ -4102,6 +4511,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/如何载入对象.pdf" 
@@ -4128,6 +4540,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/对象的存储方式_复制或纠删编码_.pdf" 
@@ -4177,6 +4592,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/创建存储级别_存储池__EC_配置文件和区域.pdf" 
@@ -4192,6 +4610,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/配置存储池.pdf" 
@@ -4230,6 +4651,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/使用云存储池.pdf" 
@@ -4253,6 +4677,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/创建云存储池.pdf" 
@@ -4296,6 +4723,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/配置擦除编码配置文件.pdf" 
@@ -4335,6 +4765,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/创建_ILM_规则.pdf" 
@@ -4350,6 +4783,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/第_1_步_共_3_步_定义基础知识.pdf" 
@@ -4374,6 +4810,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/第_2_步_共_3_步_定义放置位置.pdf" 
@@ -4411,6 +4850,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/创建_ILM_策略.pdf" 
@@ -4447,6 +4889,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/将_S3_对象锁定与_ILM_结合使用.pdf" 
@@ -4479,6 +4924,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/ILM_规则和策略示例.pdf" 
@@ -4524,6 +4972,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/系统强化.pdf" 
@@ -4558,6 +5009,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/配置_FabricPool.pdf" 
@@ -4573,6 +5027,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/将_StorageGRID_附加为云层.pdf" 
@@ -4635,6 +5092,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/使用_StorageGRID.pdf" 
@@ -4648,6 +5108,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/使用租户帐户.pdf" 
@@ -4663,6 +5126,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/如何登录和注销.pdf" 
@@ -4691,6 +5157,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/租户管理_API.pdf" 
@@ -4719,6 +5188,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/管理系统访问.pdf" 
@@ -4734,6 +5206,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/管理组.pdf" 
@@ -4781,6 +5256,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/管理_S3_租户帐户.pdf" 
@@ -4794,6 +5272,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/管理_S3_访问密钥.pdf" 
@@ -4828,6 +5309,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/管理_S3_存储分段.pdf" 
@@ -4877,6 +5361,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/管理_S3_平台服务.pdf" 
@@ -4890,6 +5377,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/什么是平台服务_.pdf" 
@@ -4920,6 +5410,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/配置平台服务端点.pdf" 
@@ -4958,6 +5451,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/使用搜索集成服务.pdf" 
@@ -5006,6 +5502,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/使用_S3.pdf" 
@@ -5019,6 +5518,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/将_S3_与_StorageGRID_结合使用.pdf" 
@@ -5049,6 +5551,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/StorageGRID_如何实施_S3_REST_API.pdf" 
@@ -5081,6 +5586,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/S3_REST_API_支持的操作和限制.pdf" 
@@ -5098,6 +5606,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/对存储分段执行的操作.pdf" 
@@ -5126,6 +5637,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/对对象执行的操作.pdf" 
@@ -5166,6 +5680,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/多部分上传操作.pdf" 
@@ -5209,6 +5726,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/StorageGRID_S3_REST_API_操作.pdf" 
@@ -5238,6 +5758,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/已弃用旧合规性存储分段请求.pdf" 
@@ -5279,6 +5802,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/监控和审核操作.pdf" 
@@ -5294,6 +5820,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/访问和查看审核日志.pdf" 
@@ -5327,6 +5856,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/活动_空闲和并发_HTTP_连接的优势.pdf" 
@@ -5366,6 +5898,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/使用_Swift.pdf" 
@@ -5379,6 +5914,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/将_Swift_与_StorageGRID_结合使用.pdf" 
@@ -5409,6 +5947,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/Swift_REST_API_支持的操作.pdf" 
@@ -5467,6 +6008,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/监控和维护_StorageGRID.pdf" 
@@ -5480,6 +6024,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/监控和故障排除.pdf" 
@@ -5497,6 +6044,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/查看节点页面.pdf" 
@@ -5539,6 +6089,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/您应定期监控的信息.pdf" 
@@ -5552,6 +6105,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/监控系统运行状况.pdf" 
@@ -5609,6 +6165,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/管理警报和警报.pdf" 
@@ -5626,6 +6185,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/管理警报.pdf" 
@@ -5651,6 +6213,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/管理警报通知.pdf" 
@@ -5701,6 +6266,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/使用外部系统日志服务器.pdf" 
@@ -5727,6 +6295,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/使用_SNMP_监控.pdf" 
@@ -5753,6 +6324,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/收集其他_StorageGRID_数据.pdf" 
@@ -5799,6 +6373,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/对_StorageGRID_系统进行故障排除.pdf" 
@@ -5814,6 +6391,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/对对象和存储问题进行故障排除.pdf" 
@@ -5833,6 +6413,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/对丢失和丢失的对象数据进行故障排除.pdf" 
@@ -5901,6 +6484,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/警报参考_旧系统_.pdf" 
@@ -5925,6 +6511,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/日志文件参考.pdf" 
@@ -5964,6 +6553,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/扩展网格.pdf" 
@@ -5979,6 +6571,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/规划_StorageGRID_扩展.pdf" 
@@ -5992,6 +6587,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/添加存储容量.pdf" 
@@ -6039,6 +6637,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/添加存储卷.pdf" 
@@ -6067,6 +6668,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/添加网格节点或站点.pdf" 
@@ -6097,6 +6701,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/配置扩展系统.pdf" 
@@ -6142,6 +6749,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/恢复和维护.pdf" 
@@ -6155,6 +6765,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/恢复和维护_StorageGRID.pdf" 
@@ -6179,6 +6792,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/StorageGRID_热修补程序操作步骤.pdf" 
@@ -6215,6 +6831,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/网格节点恢复过程.pdf" 
@@ -6234,6 +6853,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/从存储节点故障中恢复.pdf" 
@@ -6249,6 +6871,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/恢复设备存储节点.pdf" 
@@ -6285,6 +6910,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/从系统驱动器完好无损的存储卷故障中恢复.pdf" 
@@ -6317,6 +6945,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/从系统驱动器故障中恢复.pdf" 
@@ -6360,6 +6991,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/从管理节点故障中恢复.pdf" 
@@ -6373,6 +7007,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/从主管理节点故障中恢复.pdf" 
@@ -6409,6 +7046,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/从非主管理节点故障中恢复.pdf" 
@@ -6454,6 +7094,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/从网关节点故障中恢复.pdf" 
@@ -6480,6 +7123,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/从归档节点故障中恢复.pdf" 
@@ -6510,6 +7156,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/所有网格节点类型_替换_Linux_节点.pdf" 
@@ -6525,6 +7174,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/将网格节点还原到主机.pdf" 
@@ -6538,6 +7190,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/还原和验证网格节点.pdf" 
@@ -6588,6 +7243,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/将故障节点更换为服务设备.pdf" 
@@ -6629,6 +7287,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/停用操作步骤.pdf" 
@@ -6642,6 +7303,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/网格节点停用.pdf" 
@@ -6655,6 +7319,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/准备停用网格节点.pdf" 
@@ -6668,6 +7335,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/网格节点停用注意事项.pdf" 
@@ -6683,6 +7353,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/存储节点停用注意事项.pdf" 
@@ -6756,6 +7429,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/站点停用.pdf" 
@@ -6803,6 +7479,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/网络维护过程.pdf" 
@@ -6818,6 +7497,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/配置_IP_地址.pdf" 
@@ -6848,6 +7530,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/向现有节点添加接口.pdf" 
@@ -6876,6 +7561,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/配置_DNS_服务器.pdf" 
@@ -6913,6 +7601,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/主机级别和中间件过程.pdf" 
@@ -6926,6 +7617,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/Linux__将网格节点迁移到新主机.pdf" 
@@ -6967,6 +7661,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/网格节点过程.pdf" 
@@ -7004,6 +7701,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/重新启动网格节点.pdf" 
@@ -7034,6 +7734,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/关闭并打开网格中的所有节点.pdf" 
@@ -7060,6 +7763,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/使用_DoNotStart_文件.pdf" 
@@ -7086,6 +7792,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/对_Server_Manager_进行故障排除.pdf" 
@@ -7121,6 +7830,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/设备节点克隆.pdf" 
@@ -7158,6 +7870,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/查看审核日志.pdf" 
@@ -7171,6 +7886,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/查看_StorageGRID_审核日志.pdf" 
@@ -7199,6 +7917,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/审核日志文件和消息格式.pdf" 
@@ -7212,6 +7933,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/审核日志文件格式.pdf" 
@@ -7238,6 +7962,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/审核消息格式.pdf" 
@@ -7277,6 +8004,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/审核消息和对象生命周期.pdf" 
@@ -7290,6 +8020,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/对象载入事务.pdf" 
@@ -7314,6 +8047,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/对象删除事务.pdf" 
@@ -7338,6 +8074,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/对象检索事务.pdf" 
@@ -7364,6 +8103,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/元数据更新消息.pdf" 
@@ -7397,6 +8139,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/审核消息.pdf" 
@@ -7410,6 +8155,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/审核消息类别.pdf" 
@@ -7442,6 +8190,9 @@
     
       <ul class="subfolders" style="display:none;">
         <li class="pdf-ux-container">
+          
+          
+          
           <a target="_blank" 
             
               href="/zh-cn/storagegrid-116/pdfs/sidebar/审核消息参考.pdf" 
@@ -10347,6 +11098,7 @@
 <!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
 <script>$("li.active").parents('li').toggleClass("active");</script>
 
+
   </div>
   
 
@@ -10401,7 +11153,8 @@
   data-did-you-mean="搜索 {suggestion}。" 
   data-no-results-found-did-you-mean="未找到与 {query} 匹配的结果。您是否要搜索 {suggestion}?" 
   data-results-found="找到 {hitCount} 个结果"
-  data-sk-es-pf-indexes=""></div>
+  data-sk-es-pf-indexes=""
+  data-flavor=""></div>
   <button class="search-all-icon n-property-bar__search-toggle-button" type="button">
     <svg class="n-icon-search n-property-bar__search-toggle-button-icon" aria-labelledby="title">
       <title>search</title>
@@ -10423,98 +11176,122 @@
   <div class="n-footer__bottom">
     <div class="n-container">
       <div class="n-footer__bottom-left">
-
         <div class="n-footer__copyright">
           <ul class="n-footer__copyright-list">
             <li class="n-footer__copyright-link">
-            <a href="https://www.netapp.com/us/legal/copyright.aspx">© 2022 NetApp, Inc.</a>
+              <a href="https://www.netapp.com/us/legal/copyright.aspx">© 2022 NetApp, Inc.</a>
             </li>
-
-</ul>
-</div>
-<div class="n-footer__social-links">
-<ul class="n-footer__social-link-list">
-<li class="n-footer__social-link-list-item">
-<a class="n-footer__social-link" data-ntap-social="follow-blog" href="https://blog.netapp.com" target="_blank" title="blog" alt="blog">
-<span class="n-footer__social-link-text">blog</span>
-<svg class="n-icon-blog n-footer__social-link-icon" aria-labelledby="title">
-  <title>blog@</title>
-  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-cn/storagegrid-116/common/svg/sprite.svg#blog"></use>
-</svg>
-
-</a>
-</li>
-<li class="n-footer__social-link-list-item">
-<a class="n-footer__social-link" data-ntap-social="follow-community" href="https://community.netapp.com/" target="_blank" title="community" alt="community">
-<span class="n-footer__social-link-text">community</span>
-<svg class="n-icon-community n-footer__social-link-icon" aria-labelledby="title">
-<title>community@</title>
-<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-cn/storagegrid-116/common/svg/sprite.svg#comments"></use>
-</svg>
-
-</a>
-</li>
-<li class="n-footer__social-link-list-item">
-<a class="n-footer__social-link" data-ntap-social="follow-twitter" href="https://twitter.com/netapp" target="_blank" title="twitter" alt="twitter">
-<span class="n-footer__social-link-text">twitter</span>
-<svg class="n-icon-twitter n-footer__social-link-icon" aria-labelledby="title">
-<title>twitter@</title>
-<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-cn/storagegrid-116/common/svg/sprite.svg#twitter"></use>
-</svg>
-
-</a>
-</li>
-<li class="n-footer__social-link-list-item">
-<a class="n-footer__social-link" data-ntap-social="follow-facebook" href="https://www.facebook.com/NetApp" target="_blank" title="facebook" alt="facebook">
-<span class="n-footer__social-link-text">facebook</span>
-<svg class="n-icon-facebook n-footer__social-link-icon" aria-labelledby="title">
-<title>facebook@</title>
-<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-cn/storagegrid-116/common/svg/sprite.svg#facebook"></use>
-</svg>
-
-</a>
-</li>
-<li class="n-footer__social-link-list-item">
-<a class="n-footer__social-link" data-ntap-social="follow-linkedin" href="https://www.linkedin.com/company/netapp" target="_blank" title="linkedin" alt="linkedin">
-<span class="n-footer__social-link-text">linkedin</span>
-<svg class="n-icon-linkedin n-footer__social-link-icon" aria-labelledby="title">
-<title>linkedin@</title>
-<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-cn/storagegrid-116/common/svg/sprite.svg#linkedin"></use>
-</svg>
-
-</a>
-</li>
-<li class="n-footer__social-link-list-item">
-<a class="n-footer__social-link" data-ntap-social="follow-youtube" href="https://www.youtube.com/user/NetAppTV" target="_blank" title="youtube" alt="youtube">
-<span class="n-footer__social-link-text">youtube</span>
-<svg class="n-icon-youtube n-footer__social-link-icon" aria-labelledby="title">
-<title>youtube@</title>
-<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-cn/storagegrid-116/common/svg/sprite.svg#youtube"></use>
-</svg>
-
-</a>
-</li>
-<li class="n-footer__social-link-list-item">
-<a class="n-footer__social-link" data-ntap-social="follow-slideshare" href="https://www.slideshare.net/NetApp" target="_blank" title="slideshare" alt="slideshare">
-<span class="n-footer__social-link-text">slideshare</span>
-<svg class="n-icon-slideshare n-footer__social-link-icon" aria-labelledby="title">
-<title>slideshare@</title>
-<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-cn/storagegrid-116/common/svg/sprite.svg#slideshare"></use>
-</svg>
-
-</a>
-</li>
-</ul>
-</div>
-
-</div>
-<div class="n-footer__bottom-right">
-  <p class="n-footer__fine-print">想就我们的网站提供反馈?<a target="_self" href="javascript:netapp_mailto()" class="n-footer__copyright">请告诉我们</a>
-  <a href="https://docs.netapp.com/zh-cn/announcements/" class="n-footer__copyright">通知</a>
-  </p>
-</div>
-</div>
-</div>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/terms-of-use/">条款和条件</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/privacy-policy/">隐私政策</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/cookie-policy/">Cookie 政策</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a class="ot-sdk-show-settings">Cookie 设置</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="n-footer__bottom-right">
+        <div class="n-footer__copyright">
+          <ul class="n-footer__copyright-list">
+            <li class="n-footer__copyright-link">
+              <span class="n-footer__fine-print">想就我们的网站提供反馈?</span>
+              <a target="_self" href="javascript:netapp_mailto()">请告诉我们</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://docs.netapp.com/zh-cn/announcements/">通知</a>
+            </li>
+          </ul>
+        </div>
+        <div class="n-footer__social-links">
+          <ul class="n-footer__social-link-list">
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-blog" href="https://blog.netapp.com"
+                target="_blank" title="blog" alt="blog">
+                <span class="n-footer__social-link-text">blog</span>
+                <svg class="n-icon-blog n-footer__social-link-icon" aria-labelledby="title">
+                  <title>blog@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/zh-cn/storagegrid-116/common/svg/sprite.svg#blog"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-community" href="https://community.netapp.com/"
+                target="_blank" title="community" alt="community">
+                <span class="n-footer__social-link-text">community</span>
+                <svg class="n-icon-community n-footer__social-link-icon" aria-labelledby="title">
+                  <title>community@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/zh-cn/storagegrid-116/common/svg/sprite.svg#comments"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-twitter" href="https://twitter.com/netapp"
+                target="_blank" title="twitter" alt="twitter">
+                <span class="n-footer__social-link-text">twitter</span>
+                <svg class="n-icon-twitter n-footer__social-link-icon" aria-labelledby="title">
+                  <title>twitter@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/zh-cn/storagegrid-116/common/svg/sprite.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-facebook" href="https://www.facebook.com/NetApp"
+                target="_blank" title="facebook" alt="facebook">
+                <span class="n-footer__social-link-text">facebook</span>
+                <svg class="n-icon-facebook n-footer__social-link-icon" aria-labelledby="title">
+                  <title>facebook@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/zh-cn/storagegrid-116/common/svg/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-linkedin"
+                href="https://www.linkedin.com/company/netapp" target="_blank" title="linkedin" alt="linkedin">
+                <span class="n-footer__social-link-text">linkedin</span>
+                <svg class="n-icon-linkedin n-footer__social-link-icon" aria-labelledby="title">
+                  <title>linkedin@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/zh-cn/storagegrid-116/common/svg/sprite.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-youtube"
+                href="https://www.youtube.com/user/NetAppTV" target="_blank" title="youtube" alt="youtube">
+                <span class="n-footer__social-link-text">youtube</span>
+                <svg class="n-icon-youtube n-footer__social-link-icon" aria-labelledby="title">
+                  <title>youtube@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/zh-cn/storagegrid-116/common/svg/sprite.svg#youtube"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="n-footer__social-link-list-item">
+              <a class="n-footer__social-link" data-ntap-social="follow-slideshare"
+                href="https://www.slideshare.net/NetApp" target="_blank" title="slideshare" alt="slideshare">
+                <span class="n-footer__social-link-text">slideshare</span>
+                <svg class="n-icon-slideshare n-footer__social-link-icon" aria-labelledby="title">
+                  <title>slideshare@</title>
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="/zh-cn/storagegrid-116/common/svg/sprite.svg#slideshare"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
 </footer>
 
       </div><!-- Elasticsearch JS -->
