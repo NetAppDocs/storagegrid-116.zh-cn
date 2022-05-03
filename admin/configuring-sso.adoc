@@ -5,6 +5,7 @@ keywords: configure single sign on, sso, SAML
 summary: 启用单点登录（ SSO ）后，只有在用户凭据通过贵组织实施的 SSO 登录过程获得授权的情况下，用户才能访问网格管理器，租户管理器，网格管理 API 或租户管理 API 。本地用户无法登录到 StorageGRID 。 
 ---
 = 配置单点登录
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

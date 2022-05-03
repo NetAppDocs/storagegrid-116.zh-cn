@@ -5,6 +5,7 @@ keywords: storagegrid, recover, network connection, restore network connection, 
 summary: 在某些情况下，例如站点范围或网格范围的 IP 地址更改，一组或多组节点可能无法与网格的其余部分联系。 
 ---
 = 恢复隔离节点的网络连接
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

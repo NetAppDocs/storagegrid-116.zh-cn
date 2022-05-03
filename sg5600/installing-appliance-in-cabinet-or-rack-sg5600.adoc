@@ -5,6 +5,7 @@ keywords: storagegrid, sg5600, storage node, storage appliance, install, install
 summary: 您必须在机柜或机架中安装导轨，然后将设备滑入导轨。如果您使用的是 SG5660 ，则还必须在安装设备后安装驱动器。 
 ---
 = 在机柜或机架中安装设备（ SG5600 ）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

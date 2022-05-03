@@ -5,6 +5,7 @@ keywords: how to create ILM policy, policy for S3 object lock
 summary: 如果启用了全局 S3 对象锁定设置，则创建策略的步骤略有不同。您必须确保 ILM 策略符合已启用 S3 对象锁定的分段的要求。 
 ---
 = 启用 S3 对象锁定后创建 ILM 策略
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

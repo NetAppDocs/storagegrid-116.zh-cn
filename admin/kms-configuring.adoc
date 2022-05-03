@@ -5,6 +5,7 @@ keywords: configure kms, key management server, kmip, Key Management Interoperab
 summary: 您可以配置一个或多个外部密钥管理服务器（ KMS\ ）以保护专门配置的设备节点上的数据。 
 ---
 = 配置密钥管理服务器：概述
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

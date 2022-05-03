@@ -5,6 +5,7 @@ keywords: stored object hashing, hashing algorithm, sha-1, sha-256
 summary: 存储对象哈希选项指定用于验证对象完整性的哈希算法。 
 ---
 = 配置存储的对象哈希
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

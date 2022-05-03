@@ -5,6 +5,7 @@ keywords: information lifecycle management overview, about information lifecycle
 summary: 您可以通过配置信息生命周期管理（ ILM ）规则和策略来管理 StorageGRID 系统中的对象。ILM 规则和策略指示 StorageGRID 如何创建和分发对象数据的副本，以及如何随着时间的推移管理这些副本。 
 ---
 = 使用 ILM 管理对象：概述
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

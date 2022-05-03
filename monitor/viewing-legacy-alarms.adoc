@@ -5,6 +5,7 @@ keywords: legacy alarms
 summary: 当系统属性达到警报阈值时，系统会触发警报 \ （原有系统 \ ）。您可以从当前警报页面查看当前活动的警报。 
 ---
 = 查看旧警报
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

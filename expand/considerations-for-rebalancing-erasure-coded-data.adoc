@@ -5,6 +5,7 @@ keywords: erasure coding, rebalance, ec rebalance, site rebalance
 summary: 如果要执行扩展以添加存储节点，并且 ILM 策略包含一个或多个用于擦除代码数据的 ILM 规则，则可能需要在扩展完成后执行 EC 重新平衡操作步骤 。 
 ---
 = 重新平衡经过纠删编码的数据的注意事项
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

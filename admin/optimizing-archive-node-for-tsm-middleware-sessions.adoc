@@ -5,6 +5,7 @@ keywords: archive node optimization
 summary: 您可以通过配置归档节点的会话来优化连接到 Tivoli Server Manager （ TSM\ ）的归档节点的性能。 
 ---
 = 针对 TSM 中间件会话优化归档节点
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: storagegrid, recover, restore grid node, restore node, validate grid n
 summary: 您必须还原任何出现故障的网格节点的网格配置文件，然后验证网格配置文件并解决任何错误。 
 ---
 = 还原和验证网格节点
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

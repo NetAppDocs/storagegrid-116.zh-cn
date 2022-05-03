@@ -5,6 +5,7 @@ keywords: storagegrid, sg6000, storage node, storage appliance, install, install
 summary: 硬件维护完成后，将控制器重新安装到机柜或机架中。 
 ---
 = 将 SG6000-CN 控制器重新安装到机柜或机架中
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

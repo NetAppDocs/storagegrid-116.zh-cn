@@ -5,6 +5,7 @@ keywords: storagegrid, sg5600, storage node, storage appliance, seven-segment di
 summary: E5600SG 控制器上的七段显示在设备启动和硬件初始化期间显示状态和错误代码。您可以使用这些代码确定状态并对错误进行故障排除。 
 ---
 = E5600SG 控制器七段显示代码
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: storagegrid, network interface, network interface error
 summary: 如果主机网络配置不正确或名称拼写错误，则在 StorageGRID 检查 /etc/storagegRid/nodes/<node-name\>.conf 文件中指定的映射时会发生错误。 
 ---
 = 修复缺少的网络接口错误
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

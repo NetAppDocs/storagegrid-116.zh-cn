@@ -5,6 +5,7 @@ keywords: software requirements
 summary: 您可以使用虚拟机托管任何类型的 StorageGRID 网格节点。VMware 服务器上安装的每个网格节点都需要一个虚拟机。 
 ---
 = 软件要求
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

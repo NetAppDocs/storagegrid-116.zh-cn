@@ -5,6 +5,7 @@ keywords: storagegrid, sg6000, storage node, storage appliance, Replacing, repla
 summary: 如果发生硬件问题，您可能需要更换存储控制器架中的组件。 
 ---
 = 更换存储控制器架中的硬件组件
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

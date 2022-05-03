@@ -5,6 +5,7 @@ keywords: storagegrid, sg6000, storage node, storage appliance, overview, models
 summary: StorageGRID SG6060 设备包括一个计算控制器和一个存储控制器架，其中包含两个存储控制器和 60 个驱动器。此外，还可以向设备添加 60 个驱动器的扩展架。 
 ---
 = SG6060 概述
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

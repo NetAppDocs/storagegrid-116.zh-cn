@@ -5,6 +5,7 @@ keywords: object data, ingest
 summary: 载入或保存操作由客户端和 StorageGRID 系统之间定义的数据流组成。 
 ---
 = 载入数据流
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

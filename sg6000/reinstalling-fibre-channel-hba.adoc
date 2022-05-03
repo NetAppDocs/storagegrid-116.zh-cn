@@ -5,6 +5,7 @@ keywords: storagegrid, sg6000, storage node, storage appliance, sg6000-cn, hba, 
 summary: 替代光纤通道 HBA 安装在与已删除的光纤通道 HBA 相同的位置。 
 ---
 = 重新安装光纤通道 HBA
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

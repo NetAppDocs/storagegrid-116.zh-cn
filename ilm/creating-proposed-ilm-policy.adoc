@@ -5,6 +5,7 @@ keywords: how to create ILM policy, proposed policy
 summary: 您可以从头开始创建建议的 ILM 策略，也可以克隆当前活动策略（如果要从同一组规则开始）。 
 ---
 = 创建建议的 ILM 策略
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

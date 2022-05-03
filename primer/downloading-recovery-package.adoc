@@ -5,6 +5,7 @@ keywords: recovery package, download, encryption keys
 summary: 恢复包是一个可下载的 .zip 文件，其中包含安装，扩展，升级和维护 StorageGRID 系统所需的部署专用文件和软件。 
 ---
 = 下载恢复包
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

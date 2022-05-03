@@ -5,6 +5,7 @@ keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gat
 summary: 您必须访问 StorageGRID 设备安装程序以配置设备与三个 StorageGRID 网络之间的连接：网格网络，管理网络 \ （可选 \ ）和客户端网络 \ （可选 \ ）。 
 ---
 = 访问 StorageGRID 设备安装程序
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

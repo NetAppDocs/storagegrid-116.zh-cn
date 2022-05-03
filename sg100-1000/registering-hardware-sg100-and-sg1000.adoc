@@ -5,6 +5,7 @@ keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gat
 summary: 注册设备硬件具有支持优势。 
 ---
 = 注册硬件
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gat
 summary: 在为设备接通电源时， BMC 会记录一系列启动代码。您可以在连接到 BMC 管理端口的图形控制台上查看这些代码。 
 ---
 = 查看设备的启动代码
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

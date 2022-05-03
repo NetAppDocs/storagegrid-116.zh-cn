@@ -5,6 +5,7 @@ keywords: monitor, monitoring node connection states, node connection states
 summary: 如果一个或多个节点与网格断开连接，则关键 StorageGRID 操作可能会受到影响。您必须监控节点连接状态并及时解决任何问题。 
 ---
 = 监控节点连接状态
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

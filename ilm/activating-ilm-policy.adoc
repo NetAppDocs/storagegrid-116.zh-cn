@@ -5,6 +5,7 @@ keywords: activate ilm policy, information lifecycle policy
 summary: 将 ILM 规则添加到建议的 ILM 策略，模拟该策略并确认其行为符合预期后，您便可激活建议的策略。 
 ---
 = 激活 ILM 策略
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

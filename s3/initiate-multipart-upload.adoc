@@ -5,6 +5,7 @@ keywords: initiate multipart upload, uploads
 summary: '" 启动多部件上传 " 操作将为对象启动多部件上传，并返回上传 ID 。' 
 ---
 = 启动多部件上传
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

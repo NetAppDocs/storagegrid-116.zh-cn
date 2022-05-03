@@ -5,6 +5,7 @@ keywords: storagegrid, sg6000, storage node, storage appliance, maintain, mainta
 summary: 您可能需要对 SG6000 设备执行维护过程。本节中的过程假定设备已部署为 StorageGRID 系统中的存储节点。 
 ---
 = 维护 SG6000 设备
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

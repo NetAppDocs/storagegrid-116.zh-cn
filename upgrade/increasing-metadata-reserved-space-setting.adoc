@@ -5,6 +5,7 @@ keywords: upgrade, metadata reserved space setting
 summary: 升级到 StorageGRID 11.6 后，如果存储节点满足 RAM 和可用空间的特定要求，则可以增加元数据预留空间系统设置。 
 ---
 = 增加元数据预留空间设置
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: CIFS, add user to audit share, add group to audit share, ad authentica
 summary: 您可以将用户或组添加到与 AD 身份验证集成的 CIFS 审核共享。 
 ---
 = 将用户或组添加到 CIFS 审核共享
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

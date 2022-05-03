@@ -5,6 +5,7 @@ keywords: ilm manage object rules
 summary: 网格管理员创建信息生命周期管理 \ （ ILM ）规则，以管理从 S3 REST API 客户端应用程序载入到 StorageGRID 系统的对象数据。然后，这些规则将添加到 ILM 策略中，以确定随着时间的推移对象数据的存储方式和存储位置。 
 ---
 = StorageGRID ILM 规则如何管理对象
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

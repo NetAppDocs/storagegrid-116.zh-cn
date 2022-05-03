@@ -5,6 +5,7 @@ keywords: storagegrid, recover, system drive warning, storage node
 summary: 在恢复存储节点的故障系统驱动器之前，您必须查看以下警告。 
 ---
 = 查看有关存储节点系统驱动器恢复的警告
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

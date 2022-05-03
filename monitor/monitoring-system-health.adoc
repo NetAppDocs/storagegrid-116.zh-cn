@@ -5,6 +5,7 @@ keywords: how to monitor system health, how to view system health
 summary: 您应每天监控 StorageGRID 系统的整体运行状况。 
 ---
 = 监控系统运行状况
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

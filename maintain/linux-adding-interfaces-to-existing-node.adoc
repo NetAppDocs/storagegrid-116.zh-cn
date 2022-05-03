@@ -5,6 +5,7 @@ keywords: add interfaces, add client network interface, add admin network interf
 summary: 按照以下步骤将管理网络或客户端网络上的接口添加到安装后的 Linux 节点中。 
 ---
 = Linux ：将管理员或客户端接口添加到现有节点
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

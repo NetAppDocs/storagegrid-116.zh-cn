@@ -5,6 +5,7 @@ keywords: how to manage alerts
 summary: 警报系统提供了一个易于使用的界面，用于检测，评估和解决 StorageGRID 运行期间可能发生的问题。 
 ---
 = 监控和管理警报
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

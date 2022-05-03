@@ -5,6 +5,7 @@ keywords: fabricPool, S3 bucket, bucket, access key, secret access key
 summary: 在将 StorageGRID 与 FabricPool 工作负载结合使用之前，您必须为 FabricPool 数据创建一个 S3 存储分段。您还需要为要用于 FabricPool 的租户帐户获取访问密钥和机密访问密钥。 
 ---
 = 创建 S3 存储分段并获取访问密钥
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

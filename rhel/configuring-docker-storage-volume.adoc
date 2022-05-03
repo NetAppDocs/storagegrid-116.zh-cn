@@ -5,6 +5,7 @@ keywords: how to configure container engine storage volume, Docker, Podman
 summary: 在安装容器引擎（ Docker 或 Podman ）之前，您可能需要格式化存储卷并将其挂载。 
 ---
 = 配置容器引擎存储卷
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

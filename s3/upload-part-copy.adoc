@@ -5,6 +5,7 @@ keywords: upload part, upload part - copy, multipart uploads, uploads,
 summary: 上传部件 - 复制操作通过将现有对象中的数据复制为数据源来上传对象的一部分。 
 ---
 = 上传部件—复制
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: how to specify if client network is untrusted, what is untrusted clien
 summary: 如果您使用的是客户端网络，则可以指定每个节点的客户端网络是可信还是不可信。您还可以为扩展中添加的新节点指定默认设置。 
 ---
 = 指定节点的客户端网络不可信
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

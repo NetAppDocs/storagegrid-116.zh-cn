@@ -5,6 +5,7 @@ keywords: network-specific requirements, network specific requirements, network 
 summary: 请按照每种 StorageGRID 网络类型的要求进行操作。 
 ---
 = 网络特定要求
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

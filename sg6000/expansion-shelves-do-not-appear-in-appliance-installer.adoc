@@ -5,6 +5,7 @@ keywords: storagegrid, sg6000, storage node, storage appliance troubleshooting, 
 summary: 如果您为 SG6060 安装了扩展架，但这些扩展架未显示在 StorageGRID 设备安装程序中，则应验证这些磁盘架是否已完全安装并打开电源。 
 ---
 = 扩展架未显示在设备安装程序中
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

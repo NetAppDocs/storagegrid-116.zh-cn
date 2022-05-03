@@ -5,6 +5,7 @@ keywords: storagegrid, sg5600, storage node, storage appliance, maintenance mode
 summary: 在执行特定维护过程之前，您必须将设备置于维护模式。 
 ---
 = 将设备置于维护模式
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

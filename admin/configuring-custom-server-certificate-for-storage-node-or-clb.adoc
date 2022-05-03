@@ -5,6 +5,7 @@ keywords: global S3 and Swift API certificate
 summary: 您可以替换或还原用于通过 S3 或 Swift 客户端连接到存储节点，网关节点上已弃用的 CLB 服务或负载平衡器端点的服务器证书。替换的自定义服务器证书特定于您的组织。 
 ---
 = 配置 S3 和 Swift API 证书
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: admin node, acknowledge alarm
 summary: 在一个管理节点上确认警报时，已确认的警报不会复制到任何其他管理节点。由于确认不会复制到其他管理节点，因此对于每个管理节点，网格拓扑树可能看起来不同。 
 ---
 = 管理节点如何显示已确认的警报（旧系统）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

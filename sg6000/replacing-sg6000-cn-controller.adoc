@@ -5,6 +5,7 @@ keywords: storagegrid, sg6000, storage node, storage appliance, Replacing, repla
 summary: 如果 SG6000-CN 控制器运行不正常或出现故障，您可能需要更换该控制器。 
 ---
 = 更换 SG6000-CN 控制器
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

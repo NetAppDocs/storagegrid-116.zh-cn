@@ -5,6 +5,7 @@ keywords: upgrade, grid tasks, firewall, ports
 summary: 在升级 StorageGRID 系统之前，您必须验证系统是否已准备好进行升级。您必须确保系统正常运行，并且所有网格节点均正常运行。 
 ---
 = 检查系统的状况
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

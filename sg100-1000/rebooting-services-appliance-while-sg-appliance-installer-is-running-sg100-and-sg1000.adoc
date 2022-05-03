@@ -5,6 +5,7 @@ keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gat
 summary: 在 StorageGRID 设备安装程序运行期间，您可能需要重新启动服务设备。例如，如果安装失败，您可能需要重新启动服务设备。 
 ---
 = 在 StorageGRID 设备安装程序运行期间重新启动服务设备
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

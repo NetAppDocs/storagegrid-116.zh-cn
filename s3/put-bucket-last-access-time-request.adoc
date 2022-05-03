@@ -5,6 +5,7 @@ keywords: S3 REST API, S3 operations, put bucket last access time request
 summary: 通过获取分段上次访问时间请求，您可以确定是为单个分段启用还是禁用了上次访问时间更新。 
 ---
 = PUT 分段上次访问时间请求
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

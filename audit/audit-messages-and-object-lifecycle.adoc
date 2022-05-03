@@ -5,6 +5,7 @@ keywords: storagegrid, audit, message, log, object lifecycle, ingest, retrieve, 
 summary: 每次载入，检索或删除对象时都会生成审核消息。您可以通过查找 API 专用的 \ （ S3 或 Swift\ ）审核消息来在审核日志中标识这些事务。 
 ---
 = 审核消息和对象生命周期
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

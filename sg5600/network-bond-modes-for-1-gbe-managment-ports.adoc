@@ -5,6 +5,7 @@ keywords: storagegrid, sg5600, storage node, storage appliance, Network bond, Ne
 summary: 对于 E5600SG 控制器上的两个 1-GbE 管理端口，您可以选择独立网络绑定模式或主动备份网络绑定模式来连接到可选的管理网络。 
 ---
 = 1-GbE 管理端口的网络绑定模式
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: audit messages, configure syslog server, configure external syslog ser
 summary: 所有 StorageGRID 节点都会生成审核消息以跟踪系统活动和事件。您可以调整审核级别以增加或减少记录的审核消息的类型和数量。 
 ---
 = 配置审核消息和日志目标
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

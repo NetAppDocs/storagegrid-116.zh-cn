@@ -5,6 +5,7 @@ keywords: configuring, tenant, connections
 summary: 要将 StorageGRID 配置为接受来自客户端应用程序的连接，需要创建一个或多个租户帐户并设置连接。 
 ---
 = 配置租户帐户和连接
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

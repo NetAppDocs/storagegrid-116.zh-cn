@@ -5,6 +5,7 @@ keywords: grid node, add node, add site, expand, expansion
 summary: 您可以按照此操作步骤 向现有站点添加网格节点或添加新站点，但不能同时执行这两种类型的扩展。 
 ---
 = 向现有站点添加网格节点或添加新站点
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

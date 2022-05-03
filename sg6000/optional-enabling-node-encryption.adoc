@@ -5,6 +5,7 @@ keywords: storagegrid, sg6000, storage node, storage appliance, Enabling, enable
 summary: 如果启用节点加密，则可以通过安全密钥管理服务器 \ （ KMS\ ）加密保护设备中的磁盘，防止物理丢失或从站点中删除。您必须在设备安装期间选择并启用节点加密，并且在 KMS 加密过程开始后，不能取消选择节点加密。 
 ---
 = 可选：启用节点加密
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: storagegrid, sg6000, storage node, storage appliance, controller, stor
 summary: 对于当前使用 SANtricity 操作系统版本早于 08.42.20.00 的存储控制器 \ （ 11.42\ ），您必须使用维护模式操作步骤 应用升级。 
 ---
 = 使用维护模式升级存储控制器上的 SANtricity 操作系统
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: create ILM policy, information lifecycle policy considerations
 summary: 创建 ILM 策略时，首先要选择并排列 ILM 规则。然后，您可以根据先前载入的对象模拟建议的策略，以验证其行为。如果您对建议的策略按预期运行感到满意，则可以激活此策略以创建活动策略。 
 ---
 = 创建 ILM 策略：概述
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

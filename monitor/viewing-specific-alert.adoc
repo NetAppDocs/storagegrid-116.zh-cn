@@ -5,6 +5,7 @@ keywords: how to view a specific alert
 summary: 您可以查看有关当前正在影响 StorageGRID 系统的警报或已解决的警报的详细信息。详细信息包括建议的更正操作，触发警报的时间以及与此警报相关的指标的当前值。 
 ---
 = 查看特定警报
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

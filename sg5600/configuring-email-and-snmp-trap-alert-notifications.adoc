@@ -5,6 +5,7 @@ keywords: storagegrid, sg5600, storage node, storage appliance, email, notificat
 summary: SANtricity 存储管理器可以在设备或其某个组件的状态发生变化时向您发出通知。这称为警报通知。您可以通过两种不同的方法接收警报通知：电子邮件和 SNMP 陷阱。您必须配置要接收的警报通知。 
 ---
 = 配置电子邮件和 SNMP 陷阱警报通知
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

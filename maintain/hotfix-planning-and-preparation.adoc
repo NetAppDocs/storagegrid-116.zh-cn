@@ -5,6 +5,7 @@ keywords: storagegrid, hotfix, prepare for a hotfix, plan for a hotfix
 summary: 您必须在应用修补程序之前进行规划，以确保 StorageGRID 系统的中断降至最低。 
 ---
 = 规划并准备修补程序
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

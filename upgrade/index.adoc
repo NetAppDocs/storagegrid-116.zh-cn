@@ -5,6 +5,7 @@ keywords: storagegrid software upgrade
 summary: 按照以下说明将 StorageGRID 系统升级到新版本。 
 ---
 = Upgrade StorageGRID software ：概述
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

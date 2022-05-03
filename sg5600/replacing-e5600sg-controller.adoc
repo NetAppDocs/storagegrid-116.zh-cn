@@ -5,6 +5,7 @@ keywords: storagegrid, sg5600, storage node, storage appliance, hardware, Replac
 summary: 您可能需要更换 E5600SG 控制器。 
 ---
 = 更换 E5600SG 控制器
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

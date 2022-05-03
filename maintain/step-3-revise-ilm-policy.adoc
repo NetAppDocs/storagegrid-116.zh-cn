@@ -5,6 +5,7 @@ keywords: storagegrid, recover, revise ilm policy
 summary: '从 " 弃用站点 " 向导的第 3 步 \ （修改 ILM 策略）中，您可以确定活动的 ILM 策略是否引用此站点。' 
 ---
 = 第 3 步：修订 ILM 策略
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

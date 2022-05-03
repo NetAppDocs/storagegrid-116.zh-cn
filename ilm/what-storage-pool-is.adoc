@@ -5,6 +5,7 @@ keywords: what is a storage pool
 summary: 存储池是指存储节点或归档节点的逻辑分组。您可以配置存储池以确定 StorageGRID 系统存储对象数据的位置以及使用的存储类型。 
 ---
 = 什么是存储池
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

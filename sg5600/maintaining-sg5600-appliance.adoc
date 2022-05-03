@@ -5,6 +5,7 @@ keywords: storagegrid, sg5600, storage node, storage appliance, maintain, mainta
 summary: 您可能需要升级 E2700 控制器上的 SANtricity 操作系统软件，更换 E2700 控制器或 E5600SG 控制器或更换特定组件。本节中的过程假定设备已部署为 StorageGRID 系统中的存储节点。 
 ---
 = 维护 SG5600 设备
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

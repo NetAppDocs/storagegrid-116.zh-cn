@@ -5,6 +5,7 @@ keywords: how to manage alerts, what are alerts, what are alarms
 summary: StorageGRID 警报系统旨在通知您需要关注的操作问题。旧警报系统已弃用。 
 ---
 = 管理警报和警报：概述
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: storagegrid, sg6000, storage node, storage appliance, boot codes, boot
 summary: 每个存储控制器都有一个七段显示器，可在控制器启动时提供状态代码。E2800 控制器和 EF570 控制器的状态代码相同。 
 ---
 = 查看 SG6000 存储控制器的启动状态代码
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: storagegrid, audit, message, WDEL, Swift DELETE
 summary: 当 Swift 客户端发出删除事务时，系统会请求删除指定的对象或容器。如果事务成功，服务器将发出此消息。 
 ---
 = WDEL ： Swift delete
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

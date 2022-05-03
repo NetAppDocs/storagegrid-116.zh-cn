@@ -5,6 +5,7 @@ keywords: sso requirements, single sign on requirements, identity federation req
 summary: 在为 StorageGRID 系统启用单点登录之前，请查看本节中的要求。 
 ---
 = 使用单点登录的要求
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

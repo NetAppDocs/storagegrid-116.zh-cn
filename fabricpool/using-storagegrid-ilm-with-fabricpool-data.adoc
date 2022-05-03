@@ -5,6 +5,7 @@ keywords: FabricPool, requirements, ILM, information lifecycle management, ILM r
 summary: 如果您使用 FabricPool 将数据分层到 StorageGRID ，则必须了解创建 StorageGRID 信息生命周期管理 \ （ ILM ）规则以及用于管理 FabricPool 数据的 ILM 策略的要求。您必须确保适用于 FabricPool 数据的 ILM 规则不会造成中断。 
 ---
 = 将 StorageGRID 信息生命周期管理与 FabricPool 数据结合使用
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

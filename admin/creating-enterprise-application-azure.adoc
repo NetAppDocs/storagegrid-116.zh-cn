@@ -5,6 +5,7 @@ keywords: enterprise application, azure ad, single sign on, sso
 summary: 您可以使用 Azure AD 为系统中的每个管理节点创建企业级应用程序。 
 ---
 = 在 Azure AD 中创建企业级应用程序
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

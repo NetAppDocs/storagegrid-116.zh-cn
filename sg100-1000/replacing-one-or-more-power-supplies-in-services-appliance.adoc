@@ -5,6 +5,7 @@ keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gat
 summary: 此服务设备具有两个电源以实现冗余。如果其中一个电源发生故障，您必须尽快更换，以确保设备具有冗余电源。在控制器中运行的两个电源必须具有相同的型号和功率。 
 ---
 = 更换服务设备中的一个或两个电源
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

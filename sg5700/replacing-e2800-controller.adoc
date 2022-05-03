@@ -5,6 +5,7 @@ keywords: storagegrid, sg5700, storage node, storage appliance, Replacing, repla
 summary: 如果 E2800 控制器运行不正常或出现故障，您可能需要更换它。 
 ---
 = 更换 E2800 控制器
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

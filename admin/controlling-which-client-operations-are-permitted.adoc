@@ -5,6 +5,7 @@ keywords: prevent client modification, grid option, deny client operations
 summary: 您可以选择阻止客户端修改网格选项来拒绝特定的 HTTP 客户端操作。 
 ---
 = 控制允许哪些客户端操作
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

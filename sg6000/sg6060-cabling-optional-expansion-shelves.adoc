@@ -5,6 +5,7 @@ keywords: storagegrid, sg6000, storage node, storage appliance, cabling, cable, 
 summary: 如果您使用的是扩展架，则必须将其连接到 E2860 控制器架。每个 SG6060 设备最多可以有两个扩展架。 
 ---
 = SG6060 ：为可选扩展架布线
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

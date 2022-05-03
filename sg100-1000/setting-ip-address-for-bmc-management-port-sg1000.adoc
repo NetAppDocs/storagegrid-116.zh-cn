@@ -5,6 +5,7 @@ keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gat
 summary: 在访问 BMC 接口之前，必须为服务设备上的 BMC 管理端口配置 IP 地址。 
 ---
 = 设置 BMC 管理端口的 IP 地址
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

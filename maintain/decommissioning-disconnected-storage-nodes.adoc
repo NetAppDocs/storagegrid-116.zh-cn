@@ -5,6 +5,7 @@ keywords: storagegrid, connected nodes, decommission node, storage node, disconn
 summary: 您必须了解在存储节点断开连接时停用存储节点会发生什么情况（运行状况为未知或管理员关闭）。 
 ---
 = 停用已断开连接的存储节点
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

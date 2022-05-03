@@ -5,6 +5,7 @@ keywords: archive node, tsm server, full capacity, node is full
 summary: 当 TSM 数据库或 TSM 服务器管理的归档介质存储即将达到容量时， TSM 服务器无法通知归档节点。可以通过主动监控 TSM 服务器来避免这种情况。 
 ---
 = 在 TSM 服务器达到容量时管理归档节点
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

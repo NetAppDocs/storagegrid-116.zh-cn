@@ -5,6 +5,7 @@ keywords: what is the object lifecycle
 summary: 对象的生命周期由多个阶段组成。每个阶段都表示对象发生的操作。 
 ---
 = 对象的生命周期
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

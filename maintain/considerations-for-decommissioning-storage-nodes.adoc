@@ -5,6 +5,7 @@ keywords: storagegrid, decommission
 summary: 如果您计划停用存储节点，则必须了解 StorageGRID 如何管理该节点上的对象数据和元数据。 
 ---
 = 存储节点停用注意事项
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

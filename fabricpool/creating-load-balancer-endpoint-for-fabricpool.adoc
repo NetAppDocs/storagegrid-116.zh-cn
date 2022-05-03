@@ -5,6 +5,7 @@ keywords: fabricPool, load balancer, endpoint, load balancing, create, creating,
 summary: 在配置 StorageGRID 以与 FabricPool 结合使用时，您必须配置负载平衡器端点并上传负载平衡器端点证书，此证书用于保护 ONTAP 和 StorageGRID 之间的连接。 
 ---
 = 为 FabricPool 创建负载平衡器端点
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

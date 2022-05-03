@@ -5,6 +5,7 @@ keywords: maintain overview, maintenance overview, about maintain, about mainten
 summary: 按照以下说明维护 StorageGRID 系统并从故障中恢复。 
 ---
 = 恢复和维护：概述
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

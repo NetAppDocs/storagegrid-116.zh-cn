@@ -5,6 +5,7 @@ keywords: storagegrid, sg6000, storage node, storage appliance, status, indicato
 summary: SG6000-CN 控制器包含一些指示灯，可帮助您确定控制器的状态，其中包括以下指示灯和按钮。 
 ---
 = 查看 SG6000-CN 控制器上的状态指示灯和按钮
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

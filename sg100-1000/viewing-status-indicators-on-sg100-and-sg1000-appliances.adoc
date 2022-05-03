@@ -5,6 +5,7 @@ keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gat
 summary: 设备中的指示灯可帮助您确定设备控制器和两个 SSD 的状态。 
 ---
 = 查看 SG100 和 SG1000 设备上的状态指示符
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

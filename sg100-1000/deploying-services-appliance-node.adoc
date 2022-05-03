@@ -5,6 +5,7 @@ keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gat
 summary: 您可以将服务设备部署为主管理节点，非主管理节点或网关节点。SG100 和 SG1000 设备可以同时作为网关节点和管理节点 \ （主节点或非主节点 \ ）运行。 
 ---
 = 部署服务设备节点
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

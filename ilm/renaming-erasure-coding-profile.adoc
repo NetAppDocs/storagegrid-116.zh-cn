@@ -5,6 +5,7 @@ keywords: rename erasure coding profile, ec profile
 summary: 您可能需要重命名纠删编码配置文件，以使其更明显地显示该配置文件的功能。 
 ---
 = 重命名擦除编码配置文件
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: storagegrid, grid node procedure
 summary: 您可能需要在特定网格节点上执行相关过程。虽然您可以从网格管理器执行其中几个过程，但大多数过程都要求您从节点的命令行访问 Server Manager 。 
 ---
 = 网格节点过程
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: storagegrid, audit, example, S3, object retrieval
 summary: 当 S3 客户端从存储节点 \ （ LDR 服务 \ ）检索对象时，系统会生成一条审核消息并将其保存到审核日志中。 
 ---
 = 示例： S3 对象检索
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

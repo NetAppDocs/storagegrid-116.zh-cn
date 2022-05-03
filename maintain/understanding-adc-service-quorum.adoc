@@ -5,6 +5,7 @@ keywords: storagegrid, recover, adc, adc quorum
 summary: 如果在停用后管理域控制器 \ （ ADC\ ）服务仍存在太少，则您可能无法停用数据中心站点上的某些存储节点。此服务位于某些存储节点上，用于维护网格拓扑信息并为网格提供配置服务。StorageGRID 系统要求每个站点始终提供一定的数字转换服务仲裁。 
 ---
 = 了解模数转换器仲裁
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

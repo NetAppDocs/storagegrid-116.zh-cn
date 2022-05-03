@@ -5,6 +5,7 @@ keywords: storagegrid, sg5700, storage node, storage appliance, SANtricity Syste
 summary: 您可能需要访问存储控制器上的 SANtricity 系统管理器来监控存储控制器架中的硬件或配置 E 系列 AutoSupport 。 
 ---
 = 设置并访问 SANtricity 系统管理器
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

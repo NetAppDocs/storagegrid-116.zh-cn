@@ -5,6 +5,7 @@ keywords: storagegrid, decommission
 summary: 在启动此操作步骤 以停用一个或多个节点之前，您必须了解删除每种类型的节点的含义。成功停用节点后，其服务将被禁用，并且节点将自动关闭。 
 ---
 = 网格节点停用注意事项
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

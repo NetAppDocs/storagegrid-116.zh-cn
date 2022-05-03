@@ -5,6 +5,7 @@ keywords: audit client, ams, audit management service
 summary: 管理节点可通过审核管理系统 \ （ AMS \ ）服务将所有审核的系统事件记录到可通过审核共享访问的日志文件中，该文件会在安装时添加到每个管理节点中。为了便于访问审核日志，您可以配置客户端对 CIFS 和 NFS 的审核共享的访问权限。 
 ---
 = 配置审核客户端访问
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

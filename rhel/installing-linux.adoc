@@ -5,6 +5,7 @@ keywords: how to install on red hat linux, how to install on centos
 summary: 您必须在所有网格主机上安装 Red Hat Enterprise Linux 或 CentOS Linux 。使用 NetApp 互操作性表工具可获取受支持版本的列表。 
 ---
 = 安装 Linux
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

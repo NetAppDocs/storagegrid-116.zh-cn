@@ -5,6 +5,7 @@ keywords: how to troubleshoot installation issues
 summary: 如果在安装 StorageGRID 系统时出现任何问题，您可以访问安装日志文件。 
 ---
 = 对安装问题进行故障排除
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

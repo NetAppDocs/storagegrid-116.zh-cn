@@ -5,6 +5,7 @@ keywords: how to create cloud storage pool
 summary: 创建云存储池时，您需要指定 StorageGRID 用于存储对象的外部存储分段或容器的名称和位置，云提供程序类型（ Amazon S3 或 Azure Blob Storage\ ）以及 StorageGRID 访问外部存储分段或容器所需的信息。 
 ---
 = 创建云存储池
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

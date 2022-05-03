@@ -5,6 +5,7 @@ keywords: delete ilm rule, edit ilm rule, clone ilm rule, ilm queue
 summary: 创建 ILM 规则和 ILM 策略后，您可以继续使用它们，并随存储需求的变化修改其配置。 
 ---
 = 使用 ILM 规则和 ILM 策略
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

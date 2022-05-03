@@ -5,6 +5,7 @@ keywords: storagegrid, server manager, log file
 summary: 如果使用 Server Manager 时出现问题，请检查其日志文件。 
 ---
 = 访问 Server Manager 日志文件
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

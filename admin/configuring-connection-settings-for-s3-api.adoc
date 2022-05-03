@@ -5,6 +5,7 @@ keywords: archive node connection to s3, arc service
 summary: 如果要使用 S3 接口连接到归档节点，则必须配置 S3 API 的连接设置。在配置这些设置之前，由于无法与外部归档存储系统进行通信，因此， ARC-Service 将保持主要警报状态。 
 ---
 = 配置 S3 API 的连接设置
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

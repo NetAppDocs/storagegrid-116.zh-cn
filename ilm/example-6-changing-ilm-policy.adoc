@@ -5,6 +5,7 @@ keywords: change ILM policy, example ILM policy, information lifecycle policy ex
 summary: 如果需要更改数据保护或添加新站点，您可能需要创建并激活新的 ILM 策略。 
 ---
 = 示例 6 ：更改 ILM 策略
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

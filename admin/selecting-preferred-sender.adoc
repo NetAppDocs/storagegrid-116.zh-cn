@@ -5,6 +5,7 @@ keywords: preferred sender, admin nodes, primary admin node
 summary: 如果您的 StorageGRID 部署包含多个管理节点，则可以选择哪个管理节点应是通知的首选发送方。默认情况下，系统会选择主管理节点，但任何管理节点都可以是首选发送方。 
 ---
 = 选择首选发件人
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: edit kms, edit key management server, change kms configuration, expire
 summary: 例如，如果证书即将到期，您可能需要编辑密钥管理服务器的配置。 
 ---
 = 编辑密钥管理服务器（ KMS ）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

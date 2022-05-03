@@ -5,6 +5,7 @@ keywords: storagegrid, audit, message, event, data
 summary: 审核日志中的每个审核消息都会记录特定于系统事件的数据。 
 ---
 = 事件专用数据
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: monitor operations, audit operations
 summary: 您可以通过查看整个网格或特定节点的事务趋势来监控客户端操作的工作负载和效率。您可以使用审核消息监控客户端操作和事务。 
 ---
 = 监控和审核操作
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gat
 summary: 服务设备上的基板管理控制器 \ （ BMC\ ）的用户界面提供了有关硬件的状态信息，并允许您为服务设备配置 SNMP 设置和其他选项。 
 ---
 = 配置 BMC 接口（ SG100 和 SG1000 ）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

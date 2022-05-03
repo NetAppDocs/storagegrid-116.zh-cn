@@ -5,6 +5,7 @@ keywords: considerations for using platform services
 summary: 在实施平台服务之前，请查看有关使用这些服务的建议和注意事项。 
 ---
 = 使用平台服务的注意事项
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: how to configure event notifications, bucket notification
 summary: 通知服务是三种 StorageGRID 平台服务之一。您可以为存储分段启用通知，以便将有关指定事件的信息发送到支持 AWS Simple Notification Service （ AWS Simple Notification Service ）的目标服务。 
 ---
 = 配置事件通知
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

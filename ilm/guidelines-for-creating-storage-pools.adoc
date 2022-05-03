@@ -5,6 +5,7 @@ keywords: storage pool guidelines
 summary: 配置和使用存储池时，请遵循以下准则。 
 ---
 = 创建存储池的准则
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

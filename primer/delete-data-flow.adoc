@@ -5,6 +5,7 @@ keywords: object, delete, deletion, object lock, bucket lifecycle, expiration, i
 summary: 当客户端执行删除操作或对象的生命周期到期时，系统会从 StorageGRID 系统中删除所有对象副本，从而触发自动删除操作。已定义用于删除对象的数据流。 
 ---
 = 删除数据流
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

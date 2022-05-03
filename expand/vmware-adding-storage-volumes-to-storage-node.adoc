@@ -5,6 +5,7 @@ keywords: expand, expansion, storage node, add storage volumes, VMware
 summary: 如果某个存储节点包含的存储卷少于 16 个，则可以使用 VMware vSphere 添加卷来增加其容量。 
 ---
 = VMware ：将存储卷添加到存储节点
+:allow-uri-read: 
 :experimental: 
 :icons: font
 :imagesdir: ../media/

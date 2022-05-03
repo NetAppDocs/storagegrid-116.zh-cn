@@ -5,6 +5,7 @@ keywords: archive node
 summary: 您也可以选择使用归档节点部署每个 StorageGRID 数据中心站点，以便连接到目标外部归档存储系统，例如 Tivoli Storage Manager （ TSM ）。 
 ---
 = 什么是归档节点
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

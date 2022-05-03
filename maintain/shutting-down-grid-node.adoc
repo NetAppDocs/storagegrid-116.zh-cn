@@ -5,6 +5,7 @@ keywords: storagegrid, recover, node shutdown, shut down node, node shut down
 summary: 您可以使用节点的命令 Shell 关闭网格节点。 
 ---
 = 关闭网格节点
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: storagegrid, sg5700, storage node, storage appliance, boot codes, boot
 summary: 设备启动时，每个控制器上的七段显示状态和错误代码。 
 ---
 = 查看 SG5700 启动状态代码
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

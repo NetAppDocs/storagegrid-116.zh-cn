@@ -5,6 +5,7 @@ keywords: storagegrid, sg5700, storage node, storage appliance, cabling, wiring,
 summary: 您必须将两个控制器彼此连接，连接每个控制器上的管理端口，并将 E5700SG 控制器上的 10/25/GbE 端口连接到网格网络和适用于 StorageGRID 的可选客户端网络。 
 ---
 = 缆线设备（ SG5700 ）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

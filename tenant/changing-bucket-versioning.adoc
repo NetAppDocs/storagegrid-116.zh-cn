@@ -5,6 +5,7 @@ keywords: how to change bucket versioning, disabled versioning, enabled versioni
 summary: 如果您使用的是 S3 租户，则可以使用租户管理器或租户管理 API 更改 S3 分段的版本控制状态。 
 ---
 = 更改存储分段的对象版本控制
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

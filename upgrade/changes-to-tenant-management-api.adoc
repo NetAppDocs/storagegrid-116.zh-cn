@@ -5,6 +5,7 @@ keywords: tenant management api, api, api version, swagger, rest api
 summary: StorageGRID 11.6 使用租户管理 API 版本 3 。版本 3 已弃用版本 2 ；但版本 1 和版本 2 仍受支持。 
 ---
 = 对租户管理 API 进行的更改
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

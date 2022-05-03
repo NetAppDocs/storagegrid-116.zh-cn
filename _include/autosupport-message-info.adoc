@@ -1,4 +1,5 @@
 = 
+:allow-uri-read: 
 
 
 AutoSupport 消息包含如下信息：

@@ -5,6 +5,7 @@ keywords: ilm tab
 summary: ILM 选项卡提供了有关信息生命周期管理 \ （ ILM ）操作的信息。 
 ---
 = 查看 ILM 选项卡
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

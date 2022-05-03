@@ -5,6 +5,7 @@ keywords: Hardening guidelines, certificates
 summary: 您应将安装期间创建的默认证书替换为您自己的自定义证书。 
 ---
 = 服务器证书的强化准则
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

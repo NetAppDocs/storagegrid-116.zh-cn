@@ -5,6 +5,7 @@ keywords: storagegrid, sg6000, storage node, storage appliance, controller, cont
 summary: 每个型号的 StorageGRID SG6000 设备都在 1U 机箱中包含一个 SG6000-CN 计算控制器，并在 2U 或 4U 机箱中包含双工 E 系列存储控制器，具体取决于型号。查看图表，了解有关每种控制器类型的更多信息。 
 ---
 = SG6000 设备中的控制器
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: how to create access key
 summary: 如果您使用的是 S3 租户，并且您拥有相应的权限，则可以创建自己的 S3 访问密钥。要访问 S3 租户帐户中的分段和对象，您必须具有访问密钥。 
 ---
 = 创建您自己的 S3 访问密钥
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

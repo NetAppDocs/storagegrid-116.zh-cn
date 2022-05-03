@@ -5,6 +5,7 @@ keywords: storagegrid license, view license, licensed capacity of grid
 summary: 您可以根据需要查看 StorageGRID 系统的许可证信息，例如网格的最大存储容量。 
 ---
 = 查看 StorageGRID 许可证信息
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

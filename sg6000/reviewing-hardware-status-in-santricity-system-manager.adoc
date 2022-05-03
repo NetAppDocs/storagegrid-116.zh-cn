@@ -5,6 +5,7 @@ keywords: storagegrid, sg6000, storage node, storage appliance, SANtricity Syste
 summary: 您可以使用 SANtricity 系统管理器监控和管理存储控制器架中的各个硬件组件，并查看硬件诊断和环境信息，例如组件温度以及与驱动器相关的问题。 
 ---
 = 在 SANtricity System Manager 中查看硬件状态
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

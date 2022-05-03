@@ -5,6 +5,7 @@ keywords: how to configure Docker storage volume
 summary: 安装 Docker 之前，您可能需要格式化 Docker 存储卷并将其挂载到 /var/lib/Docker 上。 
 ---
 = 配置 Docker 存储卷
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

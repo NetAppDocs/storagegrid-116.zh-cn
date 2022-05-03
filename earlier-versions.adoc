@@ -6,6 +6,7 @@ summary: 您可以在此处找到先前版本的 NetApp StorageGRID 软件的文
 ---
 = 早期版本的 NetApp StorageGRID 文档
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

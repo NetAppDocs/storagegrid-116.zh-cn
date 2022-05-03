@@ -5,6 +5,7 @@ keywords: storagegrid, audit, message, WGET, Swift GET
 summary: 当 Swift 客户端发出 GET 事务时，系统会请求检索对象，列出容器中的对象或列出帐户中的容器。如果事务成功，服务器将发出此消息。 
 ---
 = WGET ： Swift GET
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

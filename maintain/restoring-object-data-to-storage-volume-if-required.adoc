@@ -5,6 +5,7 @@ keywords: restore replicated data, restore erasure coded data, recover storage n
 summary: 如果需要使用 sn-recovery-postinstall.sh 脚本重新格式化一个或多个故障存储卷，则必须将对象数据从其他存储节点和归档节点还原到重新格式化的存储卷。除非重新格式化了一个或多个存储卷，否则不需要执行这些步骤。 
 ---
 = 根据需要将对象数据还原到存储卷
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

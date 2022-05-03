@@ -5,6 +5,7 @@ keywords: monitor node storage capacity
 summary: 您必须监控每个存储节点的总可用空间，以确保该节点具有足够的空间来容纳新对象数据。 
 ---
 = 监控每个存储节点的存储容量
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

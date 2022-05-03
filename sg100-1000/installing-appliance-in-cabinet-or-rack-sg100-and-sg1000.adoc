@@ -5,6 +5,7 @@ keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gat
 summary: 您必须在机柜或机架中为设备安装一组导轨，然后将设备滑入导轨。 
 ---
 = 将设备安装到机柜或机架中（ SG100 和 SG1000 ）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

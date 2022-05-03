@@ -5,6 +5,7 @@ keywords: storagegrid, recover, storage node failure
 summary: 如果一个存储节点脱机且未连接到其他存储节点超过 15 天，则必须在此节点上重建 Cassandra 。 
 ---
 = 将存储节点恢复到关闭状态超过 15 天
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

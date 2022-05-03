@@ -5,6 +5,7 @@ keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gat
 summary: 服务设备中的 SSD 包含 StorageGRID 操作系统。此外，如果将设备配置为管理节点，则 SSD 还包含审核日志，指标和数据库表。驱动器使用 RAID1 进行镜像以实现冗余。如果其中一个驱动器发生故障，您必须尽快更换它以确保冗余。 
 ---
 = 更换服务设备中的驱动器
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

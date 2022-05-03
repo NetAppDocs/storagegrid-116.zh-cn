@@ -5,6 +5,7 @@ keywords: how to install StorageGRID host services
 summary: 您可以使用 StorageGRID Deb 软件包安装 StorageGRID 主机服务。 
 ---
 = 安装 StorageGRID 主机服务
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

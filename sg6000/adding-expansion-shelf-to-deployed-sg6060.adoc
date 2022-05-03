@@ -5,6 +5,7 @@ keywords: storagegrid, sg6000, storage node, storage appliance, sg6060, expansio
 summary: 要增加存储容量，您可以向 StorageGRID 系统中部署的 SG6060 添加一个或两个扩展架。 
 ---
 = 将扩展架添加到已部署的 SG6060
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

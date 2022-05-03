@@ -5,6 +5,7 @@ keywords: what is a storage grade, create storage grade
 summary: 存储级别用于确定存储节点使用的存储类型。如果希望 ILM 规则将某些对象放置在特定存储节点上，而不是站点中的所有节点上，则可以创建存储级别。例如，您可能希望某些对象存储在速度最快的存储节点上，例如 StorageGRID 全闪存存储设备。 
 ---
 = 创建和分配存储级别
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

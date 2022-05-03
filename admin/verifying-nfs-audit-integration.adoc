@@ -5,6 +5,7 @@ keywords: nfs, audit share, audit client
 summary: 配置审核共享并添加 NFS 审核客户端后，您可以挂载审核客户端共享并验证这些文件是否可从审核共享访问。 
 ---
 = 验证 NFS 审核集成
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

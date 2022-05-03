@@ -5,6 +5,7 @@ keywords: storagegrid, audit, message, ASCE, Archive Object Store End
 summary: 此消息表示向外部归档存储系统写入内容块的操作已结束。 
 ---
 = ASCE ：归档对象存储结束
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

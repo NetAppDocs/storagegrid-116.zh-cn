@@ -5,6 +5,7 @@ keywords: expansion, Linux, add storage volumes
 summary: 如果某个存储节点包含的存储卷少于 16 个，则可以通过添加新的块存储设备，使其对 Linux 主机可见，并将新的块设备映射添加到用于该存储节点的 StorageGRID 配置文件来增加其容量。 
 ---
 = Linux ：将直连卷或 SAN 卷添加到存储节点
+:allow-uri-read: 
 :experimental: 
 :icons: font
 :imagesdir: ../media/

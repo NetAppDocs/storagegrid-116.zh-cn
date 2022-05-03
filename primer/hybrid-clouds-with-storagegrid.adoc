@@ -5,6 +5,7 @@ keywords: hybrid cloud, cloud storage pool, platform services, fabricpool, ontap
 summary: 您可以在混合云配置中使用 StorageGRID ，方法包括实施策略驱动型数据管理将对象存储在云存储池中，利用 StorageGRID 平台服务以及使用 NetApp FabricPool 将数据迁移到 StorageGRID 。 
 ---
 = 采用 StorageGRID 的混合云
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: how to disable alert rules, how to remove a custom alert rule
 summary: 或者，您也可以配置静音以临时禁止警报通知。 
 ---
 = 静默警报通知
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

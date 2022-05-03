@@ -5,6 +5,7 @@ keywords: admin network, client network, grid network, access interface, trunk i
 summary: StorageGRID 在每个网格节点上最多支持三个网络接口，使您可以根据安全和访问要求为每个网格节点配置网络。 
 ---
 = StorageGRID 网络准则
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

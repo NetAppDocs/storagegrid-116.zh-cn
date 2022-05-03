@@ -5,6 +5,7 @@ keywords: S3 REST API, S3 operations, PUT deprecated compliance requests
 summary: PUT 存储分段合规性请求已弃用。但是，您可以继续使用此请求修改现有旧版合规存储分段的合规性设置。 
 ---
 = 已弃用： PUT 存储分段合规性请求
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

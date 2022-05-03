@@ -5,6 +5,7 @@ keywords: platform service, cloudmirror replication, event notification, search 
 summary: 如果为 S3 租户帐户启用平台服务，则必须配置网格，以便租户可以访问使用这些服务所需的外部资源。 
 ---
 = 管理 S3 租户帐户的平台服务
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

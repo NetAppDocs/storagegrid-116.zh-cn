@@ -5,6 +5,7 @@ keywords: how to view the Grid Topology tree
 summary: 通过网格拓扑树，您可以访问有关 StorageGRID 系统元素的详细信息，包括站点，网格节点，服务和组件。在大多数情况下，只有在文档中说明或与技术支持合作时，您才需要访问网格拓扑树。 
 ---
 = 查看网格拓扑树
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

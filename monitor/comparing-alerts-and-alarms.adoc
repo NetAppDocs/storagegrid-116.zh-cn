@@ -5,6 +5,7 @@ keywords: how to compare alerts and alarms
 summary: 警报系统与传统警报系统之间存在许多相似之处，但警报系统具有显著优势，并且更易于使用。 
 ---
 = 比较警报和警报
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

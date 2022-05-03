@@ -5,6 +5,7 @@ keywords: storagegrid, hotfix
 summary: 应用修补程序时，系统会对 StorageGRID 系统中的节点应用累积系列软件更新。 
 ---
 = 应用修补程序的注意事项
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

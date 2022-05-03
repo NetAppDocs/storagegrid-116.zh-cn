@@ -5,6 +5,7 @@ keywords: tsm server, tivoli storage manager
 summary: 本节介绍了按照 TSM 最佳实践准备 TSM 服务器的示例说明。 
 ---
 = 配置 TSM 服务器
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

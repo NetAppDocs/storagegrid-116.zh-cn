@@ -5,6 +5,7 @@ keywords: fabricPool, high availability group, HA group, create, creating, virtu
 summary: 在配置 StorageGRID 以与 FabricPool 结合使用时，您可以选择创建一个或多个高可用性组（ HA\ ）。HA 组由管理节点，网关节点或这两者上的一个或多个网络接口组成。 
 ---
 = 为 FabricPool 创建高可用性（ HA ）组
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

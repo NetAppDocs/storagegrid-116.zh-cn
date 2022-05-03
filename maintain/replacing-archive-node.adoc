@@ -5,6 +5,7 @@ keywords: storagegrid, recover, archive node
 summary: 要恢复归档节点，必须先更换该节点。 
 ---
 = 替换归档节点
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

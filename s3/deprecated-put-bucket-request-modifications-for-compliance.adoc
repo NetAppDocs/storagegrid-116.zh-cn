@@ -5,6 +5,7 @@ keywords: S3 REST API, S3 operations, deprecated bucket requests for compliance
 summary: SGCompliance XML 元素已弃用。以前，您可以将此 StorageGRID 自定义元素包含在 PUT 存储分段请求的可选 XML 请求正文中，以创建合规存储分段。 
 ---
 = 已弃用：为满足合规性而修改存储分段请求
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

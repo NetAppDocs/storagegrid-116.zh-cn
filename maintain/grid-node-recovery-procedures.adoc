@@ -5,6 +5,7 @@ keywords: storagegrid, recovery
 summary: 如果网格节点发生故障，您可以通过更换发生故障的物理或虚拟服务器，重新安装 StorageGRID 软件以及还原可恢复的数据来恢复该节点。 
 ---
 = 网格节点恢复过程
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

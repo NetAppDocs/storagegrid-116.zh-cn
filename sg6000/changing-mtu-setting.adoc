@@ -5,6 +5,7 @@ keywords: storagegrid, sg6000, storage node, storage appliance, mtu, set, settin
 summary: 您可以更改在为设备节点配置 IP 地址时分配的 MTU 设置。 
 ---
 = 更改 MTU 设置
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: upgrade, requirements, rhel, red hat, linux, centOS, ubuntu, debian
 summary: 在开始软件升级之前，您必须获取所有必需的材料，才能成功完成升级。 
 ---
 = 获取软件升级所需的材料
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

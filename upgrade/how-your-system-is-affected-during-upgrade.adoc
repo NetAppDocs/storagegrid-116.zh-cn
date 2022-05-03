@@ -5,6 +5,7 @@ keywords: upgrade, firmware, appliance, alert
 summary: 您必须了解 StorageGRID 系统在升级期间会受到什么影响。 
 ---
 = 升级期间对系统的影响
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

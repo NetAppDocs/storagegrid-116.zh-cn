@@ -5,6 +5,7 @@ keywords: storagegrid, sg5600, storage node, storage appliance, hardware, config
 summary: 为设备接通电源后，您必须配置 SANtricity 存储管理器，该软件将用于监控硬件。您还必须配置 StorageGRID 要使用的网络连接。 
 ---
 = 配置硬件（ SG5600 ）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: audit client for ad, active directory
 summary: 对 StorageGRID 部署中要从中检索审核消息的每个管理节点执行此操作步骤 。 
 ---
 = 为 Active Directory 配置审核客户端
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

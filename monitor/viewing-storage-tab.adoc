@@ -5,6 +5,7 @@ keywords: storage tab
 summary: 存储选项卡汇总了存储可用性和其他存储指标。 
 ---
 = 查看存储选项卡
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

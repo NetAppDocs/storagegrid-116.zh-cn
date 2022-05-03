@@ -5,6 +5,7 @@ keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gat
 summary: 如果设备运行不正常或出现故障，您可能需要更换设备。 
 ---
 = 更换服务设备
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

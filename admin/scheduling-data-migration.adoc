@@ -5,6 +5,7 @@ keywords: data migration schedule, monitor data migration
 summary: 必须根据需要计划和监控数据迁移，以确保在所需时间内根据 ILM 策略放置数据。 
 ---
 = 计划和监控数据迁移
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

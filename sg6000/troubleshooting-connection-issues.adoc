@@ -5,6 +5,7 @@ keywords: storagegrid, sg6000, storage node, storage appliance, troubleshoot, tr
 summary: 如果您在 StorageGRID 设备安装期间遇到连接问题，应执行列出的更正操作步骤。 
 ---
 = 对连接问题进行故障排除（ SG6000 ）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

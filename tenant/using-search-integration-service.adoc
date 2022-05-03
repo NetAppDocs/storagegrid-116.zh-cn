@@ -5,6 +5,7 @@ keywords: how to use search integration service
 summary: 搜索集成服务是三种 StorageGRID 平台服务之一。您可以启用此服务，以便在创建，删除对象或更新其元数据或标记时将对象元数据发送到目标搜索索引。 
 ---
 = 使用搜索集成服务
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

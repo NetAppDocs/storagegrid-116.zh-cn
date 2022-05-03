@@ -5,6 +5,7 @@ keywords: clb service, connection load balancer
 summary: 网关节点上的连接负载平衡器（ CLB\ ）服务已弃用。现在，建议使用负载平衡器服务。 
 ---
 = 负载平衡的工作原理— CLB 服务（已弃用）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: manage high availability group, ha groups, admin node, gateway node, a
 summary: 您可以将多个管理节点和网关节点的网络接口分组到一个高可用性组中。如果 HA 组中的活动接口发生故障，则备份接口可以管理工作负载。 
 ---
 = 管理高可用性（ HA ）组：概述
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

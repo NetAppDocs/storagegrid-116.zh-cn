@@ -5,6 +5,7 @@ keywords: how to view current alerts
 summary: 触发警报后，信息板上会显示一个警报图标。节点页面上还会显示节点的警报图标。除非警报已静音，否则也可能会发送电子邮件通知。 
 ---
 = 查看当前警报
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

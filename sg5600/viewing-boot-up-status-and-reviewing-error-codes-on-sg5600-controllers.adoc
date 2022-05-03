@@ -5,6 +5,7 @@ keywords: storagegrid, sg5600, storage node, storage appliance, status, boot cod
 summary: 每个控制器上的七段显示会显示设备启动时，硬件初始化时以及硬件出现故障且必须退出初始化时的状态和错误代码。如果您要监控进度或进行故障排除，则应查看显示的代码顺序。 
 ---
 = 查看 SG5600 控制器的启动状态并查看错误代码
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

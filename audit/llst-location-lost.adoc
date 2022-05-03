@@ -5,6 +5,7 @@ keywords: storagegrid, audit, message, LLST, Location Lost
 summary: 如果找不到对象副本的位置 \ （复制或擦除编码 \ ），则会生成此消息。 
 ---
 = LLST ：位置丢失
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

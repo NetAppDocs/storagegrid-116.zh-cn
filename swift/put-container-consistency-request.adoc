@@ -5,6 +5,7 @@ keywords: put container consistency request
 summary: '使用 PUT 容器一致性请求可以指定要应用于对容器执行的操作的一致性级别。默认情况下，使用 " 读后新写入 " 一致性级别创建新容器。' 
 ---
 = 提交容器一致性请求
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

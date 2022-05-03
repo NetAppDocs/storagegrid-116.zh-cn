@@ -1,4 +1,5 @@
 = 关于 repair-data 脚本
+:allow-uri-read: 
 
 
 .您需要什么？ #8217 ；将需要什么

@@ -5,6 +5,7 @@ keywords: storagegrid, sg6000, storage node, storage appliance, upgrade, upgradi
 summary: 您可以升级驱动器固件，以确保具有所有最新功能和错误修复。 
 ---
 = 使用 SANtricity 系统管理器升级驱动器固件
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: how to use s3 console
 summary: 您可以使用 S3 控制台查看 S3 存储分段中的对象。 
 ---
 = 使用试验性 S3 控制台
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

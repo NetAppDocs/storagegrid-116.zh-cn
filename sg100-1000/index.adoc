@@ -5,6 +5,7 @@ keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gat
 summary: StorageGRID SG100 服务设备和 SG1000 服务设备可以作为网关节点和管理节点运行，以便在 StorageGRID 系统中提供高可用性负载平衡服务。这两个设备可以同时用作网关节点和管理节点（主节点或非主节点）。 
 ---
 = SG100 和 SG1000 设备：概述
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

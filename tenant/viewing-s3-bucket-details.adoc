@@ -5,6 +5,7 @@ keywords: how to view s3 bucket details
 summary: 您可以查看租户帐户中的分段和分段设置列表。 
 ---
 = 查看 S3 存储分段详细信息
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

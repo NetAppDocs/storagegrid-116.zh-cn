@@ -5,6 +5,7 @@ keywords: how to navigate to grid manager
 summary: 您可以使用网格管理器定义配置 StorageGRID 系统所需的所有信息。 
 ---
 = 导航到网格管理器
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

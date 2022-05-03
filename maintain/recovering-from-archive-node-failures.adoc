@@ -5,6 +5,7 @@ keywords: storagegrid, recover, archive node failure
 summary: 要从归档节点故障中恢复，您必须按确切顺序完成一系列任务。 
 ---
 = 从归档节点故障中恢复
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

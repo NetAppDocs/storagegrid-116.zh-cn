@@ -5,6 +5,7 @@ keywords: object lock workflow
 summary: 作为网格管理员，您必须与租户用户密切协调，以确保对象受到保护，并满足其保留要求。 
 ---
 = S3 对象锁定的工作流
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

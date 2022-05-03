@@ -5,6 +5,7 @@ keywords: fabricpool, ONTAP certificates
 summary: 对于执行严格主机名验证且不支持禁用严格主机名验证的 S3 客户端，例如使用 FabricPool 的 ONTAP 客户端，您可以在配置负载平衡器端点时生成或上传服务器证书。 
 ---
 = 为 FabricPool 配置 StorageGRID 证书
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

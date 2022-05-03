@@ -5,6 +5,7 @@ keywords: S3 regions, region, ilm rules
 summary: ILM 规则可以根据创建 S3 存储分段的区域筛选对象，从而可以将不同区域的对象存储在不同存储位置。如果要在规则中使用 S3 分段区域作为筛选器，则必须先创建可由系统中的分段使用的区域。 
 ---
 = 配置区域（可选，仅 S3 ）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

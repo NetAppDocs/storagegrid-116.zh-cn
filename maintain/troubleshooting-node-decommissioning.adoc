@@ -5,6 +5,7 @@ keywords: storagegrid, recover, decommission, troubleshoot
 summary: 如果节点停用操作步骤 因错误而停止，您可以采取特定步骤对问题进行故障排除。 
 ---
 = 对节点停用进行故障排除
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: storagegrid, sg5600, storage node, storage appliance, configure, confi
 summary: AutoSupport 工具会从设备收集客户支持包中的数据，并自动将数据发送给技术支持。配置 AutoSupport 有助于技术支持进行远程故障排除和问题分析。 
 ---
 = 配置 AutoSupport
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

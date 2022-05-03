@@ -5,6 +5,7 @@ keywords: Hardening guidelines, security
 summary: 除了遵循 StorageGRID 网络和节点的强化准则之外，您还应遵循 StorageGRID 系统其他方面的强化准则。 
 ---
 = 其他强化准则
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

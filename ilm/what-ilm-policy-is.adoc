@@ -5,6 +5,7 @@ keywords: what is information lifecycle management policy, ilm policy
 summary: 信息生命周期管理 \ （ ILM ）策略是一组有序的 ILM 规则，用于确定 StorageGRID 系统如何在一段时间内管理对象数据。 
 ---
 = 什么是 ILM 策略
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

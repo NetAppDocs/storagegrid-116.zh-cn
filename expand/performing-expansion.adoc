@@ -5,6 +5,7 @@ keywords: expand, expansion procedure
 summary: 执行扩展时，新的网格节点将添加到现有 StorageGRID 部署中。 
 ---
 = 执行扩展
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

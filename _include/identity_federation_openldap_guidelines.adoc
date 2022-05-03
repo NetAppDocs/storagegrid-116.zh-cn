@@ -1,4 +1,5 @@
 = memberOf 和 fint 覆盖
+:allow-uri-read: 
 
 
 如果要使用 OpenLDAP 服务器进行身份联合，则必须在 OpenLDAP 服务器上配置特定设置。

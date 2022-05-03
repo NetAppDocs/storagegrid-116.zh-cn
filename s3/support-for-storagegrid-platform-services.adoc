@@ -5,6 +5,7 @@ keywords: platform service support
 summary: 通过 StorageGRID 平台服务， StorageGRID 租户帐户可以利用外部服务（例如远程 S3 存储分段，简单通知服务 \ （ SNS ）端点或 Elasticsearch 集群）来扩展网格提供的服务。 
 ---
 = 支持 StorageGRID 平台服务
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

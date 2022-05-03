@@ -5,6 +5,7 @@ keywords: get container consistency request
 summary: 一致性级别可以在对象的可用性与这些对象在不同存储节点和站点之间的一致性之间进行权衡。使用获取容器一致性请求，您可以确定应用于特定容器的一致性级别。 
 ---
 = 获取容器一致性请求
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: storagegrid, audit, message, WHEA, Swift HEAD
 summary: 当 Swift 客户端发出 HEAD 事务时，系统会请求检查是否存在帐户，容器或对象，并检索任何相关元数据。如果事务成功，服务器将发出此消息。 
 ---
 = WHEA ： Swift head
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

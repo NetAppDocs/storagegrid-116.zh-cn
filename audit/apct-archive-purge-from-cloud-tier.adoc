@@ -5,6 +5,7 @@ keywords: storagegrid, audit, message, APCT, Archive Purge from Cloud-Tier
 summary: 从通过 S3 API 连接到 StorageGRID 的外部归档存储系统中删除归档对象数据时会生成此消息。 
 ---
 = APCT ：从云层清除归档
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

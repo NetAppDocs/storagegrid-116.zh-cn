@@ -5,6 +5,7 @@ keywords: how to view resolved alerts
 summary: 您可以搜索和查看已解决的警报历史记录。 
 ---
 = 查看已解决的警报
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: storagegrid, sg5600, storage node, storage appliance, diagrams, hardwa
 summary: StorageGRID 设备的 SG5612 和 SG5660 型号都包括一个 E2700 控制器和一个 E5600SG 控制器。您应查看这些示意图，了解型号与控制器之间的差异。 
 ---
 = 硬件示意图
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

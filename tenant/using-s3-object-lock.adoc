@@ -5,6 +5,7 @@ keywords: how to use s3 object lock
 summary: 如果您的对象必须符合保留方面的法规要求，则可以使用 StorageGRID 中的 S3 对象锁定功能。 
 ---
 = 对租户使用 S3 对象锁定
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

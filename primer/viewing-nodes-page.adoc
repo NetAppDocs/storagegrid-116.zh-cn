@@ -5,6 +5,7 @@ keywords: nodes page, connection state, unknown, administratively down, critical
 summary: 如果您需要比信息板提供的信息更详细的 StorageGRID 系统信息，则可以使用节点页面查看整个网格，网格中的每个站点以及站点上的每个节点的指标。 
 ---
 = 查看节点页面
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: implement swift rest api
 summary: 客户端应用程序可以使用 Swift REST API 调用连接到存储节点和网关节点以创建容器以及存储和检索对象。这样，为 OpenStack Swift 开发的面向服务的应用程序便可与 StorageGRID 系统提供的内部对象存储相连接。 
 ---
 = StorageGRID 如何实施 Swift REST API
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

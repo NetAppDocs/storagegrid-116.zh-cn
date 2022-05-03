@@ -5,6 +5,7 @@ keywords: storagegrid, recover, donotstart file, do not start file, remove donot
 summary: 删除阻止服务启动的 DoNotStart 文件时，必须启动该服务。 
 ---
 = 删除 DoNotStart 文件以进行维护
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

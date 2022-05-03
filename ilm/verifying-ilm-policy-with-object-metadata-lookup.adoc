@@ -5,6 +5,7 @@ keywords: verify ilm policy, object metadata lookup
 summary: 激活 ILM 策略后，应将代表性测试对象载入 StorageGRID 系统。然后，您应执行对象元数据查找，以确认副本是按预期创建的，并放置在正确的位置。 
 ---
 = 使用对象元数据查找验证 ILM 策略
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

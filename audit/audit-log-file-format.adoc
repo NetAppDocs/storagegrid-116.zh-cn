@@ -5,6 +5,7 @@ keywords: storagegrid, audit, log file formats, log formats, log file format, lo
 summary: 审核日志文件位于每个管理节点上，其中包含一组单独的审核消息。 
 ---
 = 审核日志文件格式
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

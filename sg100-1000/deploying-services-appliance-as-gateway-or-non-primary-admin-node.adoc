@@ -5,6 +5,7 @@ keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gat
 summary: 在将服务设备部署为网关节点或非主管理节点时，您可以使用该设备上随附的 StorageGRID 设备安装程序。 
 ---
 = 将服务设备部署为网关或非主管理节点
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

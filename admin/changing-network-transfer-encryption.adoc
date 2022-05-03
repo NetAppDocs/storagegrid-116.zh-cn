@@ -5,6 +5,7 @@ keywords: network transfer encryption, TLS algorithm
 summary: StorageGRID 系统使用传输层安全 \ （ tls\ ）保护网格节点之间的内部控制流量。网络传输加密选项用于设置 TLS 用于加密网格节点之间的控制流量的算法。此设置不会影响数据加密。 
 ---
 = 更改网络传输加密
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

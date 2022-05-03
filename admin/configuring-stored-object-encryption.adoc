@@ -5,6 +5,7 @@ keywords: stored object encryption, grid options, encrypt
 summary: 如果要确保在对象存储受到影响时无法以可读形式检索数据，则可以对存储的对象进行加密。默认情况下，对象不会加密。 
 ---
 = 配置存储的对象加密
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

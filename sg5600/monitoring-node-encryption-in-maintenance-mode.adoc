@@ -5,6 +5,7 @@ keywords: storagegrid, sg5600, storage node, storage appliance, kms, key managem
 summary: 如果您在安装期间为设备启用了节点加密，则可以监控每个设备节点的节点加密状态，包括节点加密状态和密钥管理服务器 \ （ KMS\ ）详细信息。 
 ---
 = 在维护模式下监控节点加密（ SG5600 ）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

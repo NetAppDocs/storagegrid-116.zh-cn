@@ -5,6 +5,7 @@ keywords: monitor, monitoring events, events, storageGRID events
 summary: 您可以监控网格节点检测到的事件，包括您为跟踪记录到系统日志服务器的事件而创建的自定义事件。网格管理器中显示的最后一个事件消息提供了有关最新事件的详细信息。 
 ---
 = 监控事件
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

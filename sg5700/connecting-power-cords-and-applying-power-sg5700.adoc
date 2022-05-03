@@ -5,6 +5,7 @@ keywords: storagegrid, sg5700, storage node, storage appliance, wire, wiring, ca
 summary: 为设备通电后，两个控制器都会启动。 
 ---
 = 连接电源线并接通电源（ SG5700 ）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

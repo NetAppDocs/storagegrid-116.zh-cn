@@ -5,6 +5,7 @@ keywords: simulate ilm policy
 summary: 在激活测试对象并将其应用于生产数据之前，您应先模拟建议的策略。模拟窗口提供了一个独立的环境，可在激活策略并将其应用于生产环境中的数据之前安全地对策略进行测试。 
 ---
 = 模拟 ILM 策略
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

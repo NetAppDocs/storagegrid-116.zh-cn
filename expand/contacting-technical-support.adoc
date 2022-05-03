@@ -5,6 +5,7 @@ keywords: contact technical support
 summary: 如果您在网格扩展过程中遇到无法解决的错误，或者网格任务失败，请联系技术支持。 
 ---
 = 请联系技术支持
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

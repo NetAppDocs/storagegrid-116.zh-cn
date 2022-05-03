@@ -5,6 +5,7 @@ keywords: storagegrid, decommission
 summary: 您可以使用节点停用操作步骤 删除一个或多个站点上的一个或多个存储节点，网关节点或非主管理节点。您不能停用主管理节点或归档节点。 
 ---
 = 网格节点停用
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

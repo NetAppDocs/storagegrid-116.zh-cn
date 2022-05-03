@@ -5,6 +5,7 @@ keywords: archive, monitor, monitoring, monitoring archival capacity
 summary: 您不能通过 StorageGRID 系统直接监控外部归档存储系统的容量。但是，您可以监控归档节点是否仍可将对象数据发送到归档目标，这可能表示需要扩展归档介质。 
 ---
 = 监控归档容量
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

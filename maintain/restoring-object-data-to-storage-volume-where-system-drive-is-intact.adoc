@@ -5,6 +5,7 @@ keywords: restore replicated data, restore erasure coded data, recover storage n
 summary: 在系统驱动器完好无损的存储节点上恢复存储卷后，您可以还原存储卷发生故障时丢失的对象数据。 
 ---
 = 将对象数据还原到系统驱动器完好无损的存储卷
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

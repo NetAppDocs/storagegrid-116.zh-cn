@@ -5,6 +5,7 @@ keywords: object data, retrieve
 summary: 检索操作由 StorageGRID 系统与客户端之间定义的数据流组成。系统使用属性跟踪从存储节点或云存储池或归档节点检索对象的情况（如有必要）。 
 ---
 = 检索数据流
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

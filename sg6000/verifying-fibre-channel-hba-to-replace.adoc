@@ -5,6 +5,7 @@ keywords: storagegrid, sg6000, storage node, storage appliance, sg6000-cn, hba, 
 summary: 如果您不确定要更换哪个光纤通道主机总线适配器（ HBA\ ），请完成此操作步骤 以进行识别。 
 ---
 = 确认要更换的光纤通道 HBA
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

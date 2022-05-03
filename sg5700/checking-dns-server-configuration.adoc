@@ -5,6 +5,7 @@ keywords: storagegrid, sg5700, storage node, storage appliance, domain name syst
 summary: 您可以检查并临时更改此设备节点当前正在使用的域名系统 \ （ DNS\ ）服务器。 
 ---
 = 检查 DNS 服务器配置
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

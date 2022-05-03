@@ -5,6 +5,7 @@ keywords: conflicting client requests
 summary: '冲突的客户端请求（例如两个客户端写入同一个密钥）会以 " 最新成功 " 为基础进行解决。' 
 ---
 = 客户端请求冲突
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

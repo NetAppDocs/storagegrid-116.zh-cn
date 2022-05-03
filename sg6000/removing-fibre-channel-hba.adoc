@@ -5,6 +5,7 @@ keywords: storagegrid, sg6000, storage node, storage appliance, sg6000-cn, hba, 
 summary: 如果 SG6000-CN 控制器中的光纤通道主机总线适配器（ HBA ）运行不正常或出现故障，您可能需要更换该适配器。 
 ---
 = 删除光纤通道 HBA
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

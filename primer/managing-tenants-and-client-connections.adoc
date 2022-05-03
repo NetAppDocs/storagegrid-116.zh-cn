@@ -5,6 +5,7 @@ keywords: tenant, client, connect, connection
 summary: 作为网格管理员，您可以创建和管理 S3 和 Swift 客户端用于存储和检索对象的租户帐户，并管理控制客户端连接到 StorageGRID 系统的方式的配置选项。 
 ---
 = 管理租户和客户端连接
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

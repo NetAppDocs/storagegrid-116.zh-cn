@@ -5,6 +5,7 @@ keywords: storagegrid, audit, example, S3, Metadata Update
 summary: 此示例显示了更新现有 S3 对象的元数据的成功事务。 
 ---
 = 示例： S3 元数据更新
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

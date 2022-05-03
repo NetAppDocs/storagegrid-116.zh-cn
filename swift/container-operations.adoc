@@ -5,6 +5,7 @@ keywords: swift container operations
 summary: 每个 Swift 帐户最多支持 1 ， 000 个容器。 StorageGRID对容器执行以下 Swift API 操作。 
 ---
 = 容器操作
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

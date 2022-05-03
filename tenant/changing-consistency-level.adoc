@@ -5,6 +5,7 @@ keywords: how to change tenant consistency level, read after new write, read-aft
 summary: 如果您使用的是 S3 租户，则可以使用租户管理器或租户管理 API 来更改对 S3 分段中的对象执行的操作的一致性控制。 
 ---
 = 更改一致性级别
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

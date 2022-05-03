@@ -5,6 +5,7 @@ keywords: storagegrid, audit, message, categories, category, group, groups, orga
 summary: 您应熟悉对审核消息进行分组的各个类别。这些组将根据消息表示的活动类别进行组织。 
 ---
 = 审核消息类别
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

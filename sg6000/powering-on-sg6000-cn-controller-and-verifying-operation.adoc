@@ -5,6 +5,7 @@ keywords: storagegrid, sg6000, storage node, storage appliance, power on, turn o
 summary: 完成维护后，打开控制器电源。 
 ---
 = 打开 SG6000-CN 控制器的电源并验证其运行情况
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

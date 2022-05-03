@@ -5,6 +5,7 @@ keywords: storagegrid, sg5600, storage node, storage appliance, admin node, link
 summary: 您可以更改 E5600SG 控制器的以太网链路配置。您可以更改端口绑定模式，网络绑定模式和链路速度。 
 ---
 = 更改 E5600SG 控制器的链路配置
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

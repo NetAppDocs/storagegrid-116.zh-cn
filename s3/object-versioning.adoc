@@ -5,6 +5,7 @@ keywords: object version, object versioning
 summary: 您可以使用版本控制来保留一个对象的多个版本，从而防止意外删除对象，并可用于检索和还原对象的早期版本。 
 ---
 = 对象版本控制
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

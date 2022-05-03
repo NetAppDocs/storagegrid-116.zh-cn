@@ -5,6 +5,7 @@ keywords: bucket access policies, group access policies
 summary:  
 ---
 = 存储分段和组访问策略
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

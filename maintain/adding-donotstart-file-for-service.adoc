@@ -5,6 +5,7 @@ keywords: storagegrid, add do not start file, adding do not start file, service
 summary: 您可以通过将 DoNotStart 文件添加到网格节点上某个服务的目录来阻止单个服务启动。 
 ---
 = 为服务添加 DoNotStart 文件
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

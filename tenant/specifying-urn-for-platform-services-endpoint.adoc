@@ -5,6 +5,7 @@ keywords: how to specify platform services urn
 summary: 创建平台服务端点时，必须指定唯一的资源名称 \ （ URN\ ）。在为平台服务创建配置 XML 时，您将使用 URN 引用此端点。每个端点的 URN 必须是唯一的。 
 ---
 = 为平台服务端点指定 URN
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

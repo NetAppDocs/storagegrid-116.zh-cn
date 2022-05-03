@@ -5,6 +5,7 @@ keywords: how to add tenant user to local group
 summary: 您可以根据需要将用户添加到本地组。 
 ---
 = 将用户添加到本地组
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

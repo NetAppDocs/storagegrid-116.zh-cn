@@ -5,6 +5,7 @@ keywords: CIFS audit share, change group name, change use for CIFS
 summary: 您可以通过添加新用户或组并删除旧用户或组来更改 CIFS 审核共享的用户或组名称。 
 ---
 = 更改 CIFS 审核共享用户或组名称
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

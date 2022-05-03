@@ -5,6 +5,7 @@ keywords: storagegrid, sg5700, storage node, storage appliance, install, install
 summary: 准备安装 StorageGRID 设备需要准备站点并获取所有必需的硬件，缆线和工具。您还应收集 IP 地址和网络信息。 
 ---
 = 准备安装（ SG5700 ）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

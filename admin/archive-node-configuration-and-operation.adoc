@@ -5,6 +5,7 @@ keywords: archive node configuration
 summary: 您的 StorageGRID 系统会将归档节点作为一个位置来管理，在该位置，对象会无限期地存储，并且始终可以访问。 
 ---
 = 归档节点配置和操作
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

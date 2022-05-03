@@ -5,6 +5,7 @@ keywords: storagegrid, sg5600, storage node, storage appliance, kms, key managem
 summary: 清除密钥管理服务器（ KMS\ ）配置将禁用设备上的节点加密。清除 KMS 配置后，设备上的数据将被永久删除，并且无法再访问。此数据不可恢复。 
 ---
 = 清除密钥管理服务器配置
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

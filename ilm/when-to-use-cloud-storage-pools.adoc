@@ -5,6 +5,7 @@ keywords: use cloud storage pool, benefits of cloud storage pools
 summary: 云存储池可以在多种使用情形下提供显著优势。 
 ---
 = 何时使用云存储池
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

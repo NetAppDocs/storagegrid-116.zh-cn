@@ -5,6 +5,7 @@ keywords: s3 object lock, default bucket retention
 summary: 如果存储分段启用了 S3 对象锁定，则可以指定应用于添加到存储分段中的每个对象的默认保留模式和默认保留期限。 
 ---
 = 使用 S3 对象锁定默认存储分段保留
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

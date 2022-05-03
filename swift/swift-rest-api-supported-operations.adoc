@@ -5,6 +5,7 @@ keywords: OpenStack, Swift API, REST API
 summary: StorageGRID 系统在 OpenStack Swift API 中支持大多数操作。在将 Swift REST API 客户端与 StorageGRID 集成之前，请查看帐户，容器和对象操作的实施详细信息。 
 ---
 = Swift REST API 支持的操作
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

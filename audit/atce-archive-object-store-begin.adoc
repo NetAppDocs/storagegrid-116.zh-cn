@@ -5,6 +5,7 @@ keywords: storagegrid, audit, message, ATCE, Archive Object Store Begin
 summary: 此消息表示已开始向外部归档存储写入内容块。 
 ---
 = ATCE ：开始归档对象存储
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

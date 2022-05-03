@@ -5,6 +5,7 @@ keywords: storagegrid, sg6000, storage node, storage appliance, sg6060, install,
 summary: 您必须在机柜或机架中为 E2860 控制器架安装一组导轨，然后将控制器架滑入导轨。如果您要安装 60 个驱动器扩展架，则需要使用相同的操作步骤 。 
 ---
 = SG6060 ：将 60 个驱动器磁盘架安装到机柜或机架中
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

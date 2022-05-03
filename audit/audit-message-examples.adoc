@@ -5,6 +5,7 @@ keywords: storagegrid, audit, audit.log, audit.log file, message, examples, exam
 summary: 您可以在每个审核消息中找到详细信息。所有审核消息都使用相同的格式。 
 ---
 = 审核消息示例
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

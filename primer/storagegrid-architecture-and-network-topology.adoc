@@ -5,6 +5,7 @@ keywords: architecture, deployment, topology, site, node redundancy, services, n
 summary: StorageGRID 系统由一个或多个数据中心站点上的多种类型的网格节点组成。 
 ---
 = StorageGRID 架构和网络拓扑
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

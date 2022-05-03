@@ -5,6 +5,7 @@ keywords: client network
 summary: 客户端网络是可选的。如果您计划配置客户端网络，请注意以下事项。 
 ---
 = 客户端网络要求
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

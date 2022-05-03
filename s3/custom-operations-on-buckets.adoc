@@ -5,6 +5,7 @@ keywords: operations, buckets, custom, custom operations on buckets
 summary: StorageGRID 系统支持添加到 S3 REST API 中且特定于系统的自定义存储分段操作。 
 ---
 = 对存储分段执行自定义操作
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: storagegrid, recover, appliance, reinstallation appliance, reinstall a
 summary: 恢复设备存储节点时，必须先准备设备以重新安装 StorageGRID 软件。 
 ---
 = 准备要重新安装的设备存储节点
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

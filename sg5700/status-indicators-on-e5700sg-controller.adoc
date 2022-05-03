@@ -5,6 +5,7 @@ keywords: storagegrid, sg5700, storage node, storage appliance, status, indicato
 summary: 在设备启动和硬件初始化期间， E5700SG 控制器上的七段显示屏和 LED 会显示状态和错误代码。您可以使用这些显示来确定状态并对错误进行故障排除。 
 ---
 = E5700SG 控制器上的状态指示灯
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

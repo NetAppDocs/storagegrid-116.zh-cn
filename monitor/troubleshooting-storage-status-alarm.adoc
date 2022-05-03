@@ -5,6 +5,7 @@ keywords: how to troubleshoot storage status alarm, how to troubleshoot ssts ala
 summary: 如果存储节点的对象存储剩余可用空间不足，则会触发存储状态（ SSTS ）警报。 
 ---
 = 对存储状态（ SSTS ）警报进行故障排除
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

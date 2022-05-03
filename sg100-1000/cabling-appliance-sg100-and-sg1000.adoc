@@ -5,6 +5,7 @@ keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gat
 summary: 您必须将设备上的管理端口连接到服务笔记本电脑，并将设备上的网络端口连接到网格网络和适用于 StorageGRID 的可选客户端网络。 
 ---
 = 缆线设备 SG100 和 SG1000
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

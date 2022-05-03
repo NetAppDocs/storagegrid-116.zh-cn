@@ -5,6 +5,7 @@ keywords: autosupport, triggering autosupport, manually triggering autosupport, 
 summary: 为了帮助技术支持解决 StorageGRID 系统的问题，您可以手动触发要发送的 AutoSupport 消息。 
 ---
 = 手动触发 AutoSupport 消息
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

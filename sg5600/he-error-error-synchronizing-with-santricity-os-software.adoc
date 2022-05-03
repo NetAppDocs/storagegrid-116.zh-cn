@@ -5,6 +5,7 @@ keywords: storagegrid, sg5600, storage node, storage appliance, troubleshooting,
 summary: 如果 StorageGRID 设备安装程序无法与 SANtricity 操作系统软件同步，则计算控制器上的七段显示会显示一个错误代码。 
 ---
 = he error ： Error synchronating with SANtricity OS Software
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

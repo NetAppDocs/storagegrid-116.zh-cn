@@ -5,6 +5,7 @@ keywords: storagegrid, audit, message, log, structure, content
 summary: 这些说明包含有关 StorageGRID 审核消息和审核日志的结构和内容的信息。您可以使用此信息读取和分析系统活动的审核跟踪。 
 ---
 = 查看审核日志：概述
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: audit client for NFS
 summary: 审核共享会自动启用为只读共享。 
 ---
 = 为 NFS 配置审核客户端
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

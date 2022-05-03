@@ -5,6 +5,7 @@ keywords: how to create Swift tenant groups
 summary: 您可以通过导入联合组或创建本地组来管理 Swift 租户帐户的访问权限。至少有一个组必须具有 Swift 管理员权限，这是管理 Swift 租户帐户的容器和对象所必需的。 
 ---
 = 为 Swift 租户创建组
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

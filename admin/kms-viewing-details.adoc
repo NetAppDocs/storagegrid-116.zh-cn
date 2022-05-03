@@ -5,6 +5,7 @@ keywords: view kms, view key management server
 summary: 您可以查看有关 StorageGRID 系统中每个密钥管理服务器的信息，包括服务器和客户端证书的当前状态。 
 ---
 = 查看 KMS 详细信息
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

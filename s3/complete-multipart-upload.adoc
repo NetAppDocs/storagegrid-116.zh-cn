@@ -5,6 +5,7 @@ keywords: multipart upload, object, object size
 summary: 完整的多部件上传操作通过整合先前上传的部件来完成对象的多部分上传。 
 ---
 = 完成多部件上传
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

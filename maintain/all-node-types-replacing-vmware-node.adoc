@@ -5,6 +5,7 @@ keywords: replace VMware node
 summary: 在恢复 VMware 上托管的故障 StorageGRID 节点时，必须删除故障节点并部署恢复节点。 
 ---
 = 所有网格节点类型：更换 VMware 节点
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

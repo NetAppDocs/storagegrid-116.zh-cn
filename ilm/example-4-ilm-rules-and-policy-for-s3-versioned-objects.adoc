@@ -5,6 +5,7 @@ keywords: object versions, example ILM rule, information lifecycle rule examples
 summary: 如果您的 S3 存储分段已启用版本控制，则可以通过在 ILM 策略中包含使用非当前时间作为参考时间的规则来管理非当前对象版本。 
 ---
 = 示例 4 ： S3 版本对象的 ILM 规则和策略
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

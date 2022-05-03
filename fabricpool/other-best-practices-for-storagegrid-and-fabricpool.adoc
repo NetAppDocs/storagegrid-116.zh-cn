@@ -5,6 +5,7 @@ keywords: fabricPool, best practices, encryption, compressions, tiering, AFF, co
 summary: 在配置要与 FabricPool 结合使用的 StorageGRID 系统时，应避免设置可能影响数据保存方式的全局选项。 
 ---
 = StorageGRID 和 FabricPool 的其他最佳实践
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

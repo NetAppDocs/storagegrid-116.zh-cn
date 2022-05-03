@@ -5,6 +5,7 @@ keywords: storage options
 summary: 存储选项包括对象分段设置，存储卷水印的当前值以及元数据预留空间设置。您还可以查看网关节点上已弃用的 CLB 服务以及存储节点上的 LDR 服务使用的 S3 和 Swift 端口。 
 ---
 = 管理存储选项
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

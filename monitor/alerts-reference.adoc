@@ -5,6 +5,7 @@ keywords: alerts reference
 summary: 下表列出了所有默认 StorageGRID 警报。您可以根据需要创建自定义警报规则，以适合您的系统管理方法。 
 ---
 = 警报参考
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gat
 summary: 在将服务设备部署为 StorageGRID 系统中的节点之前，您必须配置设备与计划使用的网络之间的连接。您可以通过浏览到服务设备上预安装的 StorageGRID 设备安装程序来配置网络连接。 
 ---
 = 配置 StorageGRID 连接（ SG100 和 SG1000 ）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

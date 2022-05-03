@@ -5,6 +5,7 @@ keywords: monitoring, monitoring node-level resources, grid nodes
 summary: 您应监控各个网格节点以检查其资源利用率级别。 
 ---
 = 监控节点级资源
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

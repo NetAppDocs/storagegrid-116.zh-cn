@@ -5,6 +5,7 @@ keywords: S3 REST API, S3 operations, PUT bucket consistency request
 summary: 通过 PUT 分段一致性请求，您可以指定要应用于对分段执行的操作的一致性级别。 
 ---
 = PUT 存储分段一致性请求
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: create EC profile, erasure coding profile
 summary: 要创建擦除编码配置文件，请将包含存储节点的存储池与擦除编码方案关联。此关联可确定创建的数据和奇偶校验片段的数量，以及系统将这些片段分布在何处。 
 ---
 = 创建擦除编码配置文件
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

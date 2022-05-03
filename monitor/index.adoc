@@ -5,6 +5,7 @@ keywords: monitor StorageGRID
 summary: 按照以下说明监控 StorageGRID 系统，并评估和解决可能发生的问题。 
 ---
 = 监控和故障排除：概述
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

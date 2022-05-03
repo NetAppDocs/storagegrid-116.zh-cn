@@ -5,6 +5,7 @@ keywords: eseries, santricity, system manager, asup, autosupport, technical supp
 summary: 您可以通过 StorageGRID 管理节点而不是存储设备管理端口向技术支持发送 E 系列 SANtricity System Manager AutoSupport 消息。 
 ---
 = 通过 StorageGRID 发送 E 系列 AutoSupport 消息
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

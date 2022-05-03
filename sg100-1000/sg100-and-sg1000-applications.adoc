@@ -5,6 +5,7 @@ keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gat
 summary: 您可以通过各种方式配置 StorageGRID 服务设备，以提供网关服务以及某些网格管理服务的冗余。 
 ---
 = SG100 和 SG1000 应用程序
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

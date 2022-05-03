@@ -5,6 +5,7 @@ keywords: storagegrid, audit, example, S3, object ingest
 summary: 以下一系列审核消息是在 S3 客户端将对象载入存储节点 \ （ LDR 服务 \ ）时生成并保存到审核日志的审核消息的示例。 
 ---
 = 示例： S3 对象载入
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

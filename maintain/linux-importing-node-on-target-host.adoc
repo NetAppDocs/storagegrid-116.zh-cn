@@ -5,6 +5,7 @@ keywords: storagegrid, recover, linux, import node, importing node, target host
 summary: 从源主机导出节点后，您可以在目标 Linux 主机上导入并验证此节点。验证可确认节点可以访问与源主机上相同的块存储和网络接口设备。 
 ---
 = Linux ：目标主机上的导入节点
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

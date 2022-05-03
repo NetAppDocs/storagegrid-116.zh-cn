@@ -5,6 +5,7 @@ keywords: storagegrid, audit, message, MGAU, Management audit message
 summary: '" 管理 " 类别可将用户请求记录到管理 API 。对于 API ，并非 GET 或 HEAD 请求的每个请求都会记录一个响应，其中包含 API 的用户名， IP 和请求类型。' 
 ---
 = MGAU ：管理审核消息
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: host level procedures, host-level procedures, middleware procedures
 summary: 某些维护过程专用于 StorageGRID 的 Linux 或 VMware 部署，或者专用于 StorageGRID 解决方案 的其他组件。 
 ---
 = 主机级别和中间件过程
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

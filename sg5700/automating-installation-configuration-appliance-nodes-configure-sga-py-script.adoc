@@ -5,6 +5,7 @@ keywords: storagegrid, sg5700, storage node, storage appliance, automate, automa
 summary: 您可以使用 configure-sga.py 脚本自动执行 StorageGRID 设备节点的许多安装和配置任务，包括安装和配置主管理节点。如果要配置大量设备，此脚本可能会很有用。您也可以使用此脚本生成包含设备配置信息的 JSON 文件。 
 ---
 = 使用 configure-sga.py 脚本自动安装和配置设备节点
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

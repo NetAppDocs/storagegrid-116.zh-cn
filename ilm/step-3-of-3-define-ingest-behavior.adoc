@@ -5,6 +5,7 @@ keywords: ilm rule step 3, define ingest behavior
 summary: 通过创建 ILM 规则向导的第 3 步 \ （定义载入行为 \ ），您可以选择在载入时如何保护按此规则筛选的对象。 
 ---
 = 第 3 步，共 3 步：定义载入行为
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

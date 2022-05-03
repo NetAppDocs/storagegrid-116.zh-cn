@@ -5,6 +5,7 @@ keywords: storage pool temporary location
 summary: 创建对象放置包含单个存储池的 ILM 规则时，系统会提示您指定要用作临时位置的第二个存储池。 
 ---
 = 使用存储池作为临时位置（已弃用）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

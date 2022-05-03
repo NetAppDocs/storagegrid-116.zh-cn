@@ -5,6 +5,7 @@ keywords: storagegrid, sg6000, storage node, storage appliance, Replacing, repla
 summary: 您可能需要更换扩展架中的输入 / 输出模块，电源或风扇。 
 ---
 = 更换可选 60 驱动器扩展架中的硬件组件
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

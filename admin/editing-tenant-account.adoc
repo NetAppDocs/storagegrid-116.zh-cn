@@ -5,6 +5,7 @@ keywords: edit tenant account, change tenant name, allow platform services, tena
 summary: 您可以编辑租户帐户以更改显示名称，更改身份源设置，允许或禁止平台服务或输入存储配额。 
 ---
 = 编辑租户帐户
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

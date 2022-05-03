@@ -5,6 +5,7 @@ keywords: storagegrid, sg5700, storage node, storage appliance, overview, models
 summary: SG5700 StorageGRID 设备是一个集成的存储和计算平台，作为 StorageGRID 网格中的存储节点运行。此设备可在混合网格环境中使用，该环境将设备存储节点与虚拟 \ （基于软件的 \ ）存储节点相结合。 
 ---
 = SG5700 设备：概述
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

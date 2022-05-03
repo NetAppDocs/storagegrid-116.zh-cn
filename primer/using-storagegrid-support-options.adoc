@@ -5,6 +5,7 @@ keywords: autosupport, active IQ, logs, audit.log, metrics, diagnostics
 summary: 网格管理器提供了一些选项，可帮助您在 StorageGRID 系统出现问题描述 时与技术支持联系。 
 ---
 = 使用 StorageGRID 支持选项
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: objects tab
 summary: 对象选项卡提供了有关 S3 和 Swift 载入和检索速率的信息。 
 ---
 = 查看对象选项卡
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

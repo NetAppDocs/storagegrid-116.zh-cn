@@ -5,6 +5,7 @@ keywords: how to search lost object, how to restore lost object, how to find los
 summary: '可能会找到并还原已触发 " 对象丢失（丢失） " 警报和 " 对象丢失 * " 警报且您已确定可能丢失的对象。' 
 ---
 = 搜索并还原可能丢失的对象
+:allow-uri-read: 
 :experimental: 
 :icons: font
 :imagesdir: ../media/

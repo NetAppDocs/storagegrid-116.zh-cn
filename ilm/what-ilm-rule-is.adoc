@@ -5,6 +5,7 @@ keywords: what is information lifecycle rule, ilm rule
 summary: 要管理对象，您需要创建一组信息生命周期管理 \ （ ILM ）规则并将其组织到 ILM 策略中。系统中载入的每个对象都会根据活动策略进行评估。如果策略中的规则与对象的元数据匹配，则规则中的说明将确定 StorageGRID 复制和存储该对象所采取的操作。 
 ---
 = 什么是 ILM 规则
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

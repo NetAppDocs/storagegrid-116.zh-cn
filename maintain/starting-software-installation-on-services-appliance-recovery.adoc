@@ -5,6 +5,7 @@ keywords: storagegrid, recover, services appliance, start software installation
 summary: 要在 SG100 或 SG1000 服务设备上安装网关节点或管理节点，请使用此设备上随附的 StorageGRID 设备安装程序。 
 ---
 = 开始在服务设备上安装软件
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

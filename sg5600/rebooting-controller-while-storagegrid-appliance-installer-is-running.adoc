@@ -5,6 +5,7 @@ keywords: storagegrid, sg5600, storage node, storage appliance, reboot, restart
 summary: 在 StorageGRID 设备安装程序运行期间，您可能需要重新启动计算控制器。例如，如果安装失败，您可能需要重新启动控制器。 
 ---
 = 在 StorageGRID 设备安装程序运行期间重新启动控制器
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

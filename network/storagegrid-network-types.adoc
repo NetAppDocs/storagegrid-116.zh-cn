@@ -5,6 +5,7 @@ keywords: network types, grid traffic, admin traffic, client traffic, grid netwo
 summary: StorageGRID 系统中的网格节点处理网格流量，管理流量和客户端流量。您必须正确配置网络，以管理这三种类型的流量并提供控制和安全性。 
 ---
 = StorageGRID 网络类型
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

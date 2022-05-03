@@ -5,6 +5,7 @@ keywords: how to specify domain name system dns
 summary: 您必须为 StorageGRID 系统指定域名系统 \ （ DNS\ ）信息，以便可以使用主机名而非 IP 地址访问外部服务器。 
 ---
 = 指定域名系统服务器信息
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

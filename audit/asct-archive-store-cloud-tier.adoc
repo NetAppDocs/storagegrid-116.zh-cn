@@ -5,6 +5,7 @@ keywords: storagegrid, audit, message, ASCT, Archive Store Cloud-Tier
 summary: 将归档对象数据存储到外部归档存储系统时会生成此消息，该系统通过 S3 API 连接到 StorageGRID 。 
 ---
 = SCT ：归档存储云层
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: qos, quality of service, traffic classification, best practices, limit
 summary: 要增强服务质量 \ （ QoS\ ）服务，您可以创建流量分类策略来识别和监控不同类型的网络流量。这些策略有助于限制和监控流量。 
 ---
 = 管理流量分类策略
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

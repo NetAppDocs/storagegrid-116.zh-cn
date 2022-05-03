@@ -5,6 +5,7 @@ keywords: storagegrid, sg6000, storage node, storage appliance, troubleshoot, tr
 summary: 如果无法连接到设备，则可能存在网络问题描述 ，或者硬件安装可能未成功完成。 
 ---
 = 无法连接到设备
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

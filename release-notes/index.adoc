@@ -5,6 +5,7 @@ keywords: release notes
 summary: 获取有关新功能，已删除或已弃用功能，已修复问题和已知问题的特定版本信息。 
 ---
 = 发行说明
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

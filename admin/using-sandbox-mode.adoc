@@ -5,6 +5,7 @@ keywords: use sandbox mode for sso, how to test single sign-on
 summary: 在为所有 StorageGRID 用户启用单点登录（ SSO ）之前，您可以使用沙盒模式配置和测试单点登录（ SSO ）。启用 SSO 后，您可以在需要更改或重新测试配置时返回到沙盒模式。 
 ---
 = 使用沙盒模式
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

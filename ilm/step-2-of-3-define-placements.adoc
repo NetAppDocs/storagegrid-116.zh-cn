@@ -5,6 +5,7 @@ keywords: ilm rule step 2, define placements
 summary: 通过创建 ILM 规则向导的第 2 步 \ （定义放置位置 \ ），您可以定义放置说明，以确定对象的存储时间，副本类型（复制或擦除编码 \ ），存储位置以及副本数量。 
 ---
 = 第 2 步，共 3 步：定义放置位置
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

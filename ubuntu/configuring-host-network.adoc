@@ -5,6 +5,7 @@ keywords: how to configure ubuntu or debian host network
 summary: 在主机上完成 Linux 安装后，您可能需要执行一些额外的配置，以便在每个主机上准备一组适合映射到稍后要部署的 StorageGRID 节点的网络接口。 
 ---
 = 配置主机网络（ Ubuntu 或 Debian ）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: storagegrid, audit, message, WPUT, Swift PUT
 summary: 当 Swift 客户端发出 PUT 事务时，系统会请求创建新的对象或容器。如果事务成功，服务器将发出此消息。 
 ---
 = WWPUT ： Swift PUT
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

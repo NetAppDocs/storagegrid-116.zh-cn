@@ -5,6 +5,7 @@ keywords: upgrade, linux, rpm, deb,
 summary: 如果在 Linux 主机上部署了任何 StorageGRID 节点，则在开始升级之前，必须在每个主机上安装一个额外的 RPM 或 Deb 软件包。 
 ---
 = Linux ：在所有主机上安装 RPM 或 Deb 软件包
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

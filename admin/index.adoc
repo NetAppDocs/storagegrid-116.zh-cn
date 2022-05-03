@@ -5,6 +5,7 @@ keywords: how to administer storagegrid
 summary: 按照以下说明配置和管理 StorageGRID 系统。 
 ---
 = 管理 StorageGRID ：概述
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

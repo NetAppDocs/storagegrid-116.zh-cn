@@ -5,6 +5,7 @@ keywords: upgrade, how to perform a software upgrade
 summary: 准备好执行升级后，请选择 .upgrade 归档并输入配置密码短语。您可以选择在执行实际升级之前运行升级预检。 
 ---
 = 执行升级
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

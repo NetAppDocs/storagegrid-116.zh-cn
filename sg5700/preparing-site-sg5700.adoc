@@ -5,6 +5,7 @@ keywords: storagegrid, sg5700, storage node, storage appliance, install, install
 summary: 在安装设备之前，您必须确保要使用的站点和机柜或机架符合 StorageGRID 设备的规格。 
 ---
 = 准备站点（ SG5700 ）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: archive node, store failure count
 summary: 如果归档节点通过 S3 API 连接到归档存储系统，则可以重置存储故障计数，此计数可用于清除 ARVF （存储故障）警报。 
 ---
 = 重置 S3 API 连接的存储故障计数
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

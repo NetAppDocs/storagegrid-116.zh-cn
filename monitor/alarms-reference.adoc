@@ -5,6 +5,7 @@ keywords: alarms, alarms reference
 summary: 下表列出了所有原有的默认警报。如果触发了警报，您可以在此表中查找警报代码以查找建议的操作。 
 ---
 = 警报参考（旧系统）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

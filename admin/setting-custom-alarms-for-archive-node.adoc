@@ -5,6 +5,7 @@ keywords: archive node, custom alarm, arql, arrl
 summary: 您应为 ARQL 和 ARLRL 属性建立自定义警报，用于监控归档节点从归档存储系统检索对象数据的速度和效率。 
 ---
 = 为归档节点设置自定义警报
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

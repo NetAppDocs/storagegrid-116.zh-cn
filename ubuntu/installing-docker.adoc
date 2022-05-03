@@ -5,6 +5,7 @@ keywords: how to install Docker
 summary: StorageGRID 系统作为一组 Docker 容器在 Linux 上运行。在安装 StorageGRID 之前，您必须先安装 Docker 。 
 ---
 = 安装 Docker
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

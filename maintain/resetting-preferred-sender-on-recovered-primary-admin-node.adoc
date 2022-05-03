@@ -5,6 +5,7 @@ keywords: storagegrid, recover, primary admin node, reset preferred sender, rese
 summary: 如果您要恢复的主管理节点当前设置为警报通知，警报通知和 AutoSupport 消息的首选发送方，则必须重新配置此设置。 
 ---
 = 重置已恢复的主管理节点上的首选发送器
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

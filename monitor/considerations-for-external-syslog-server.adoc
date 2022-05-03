@@ -5,6 +5,7 @@ keywords: syslog server, external syslog server, sizing, sizing syslog server, a
 summary: 请按照以下准则估算外部系统日志服务器所需的容量。 
 ---
 = 外部系统日志服务器的注意事项
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: autosupport, technical support, storagegrid health, system status, act
 summary: 通过 AutoSupport 功能， StorageGRID 系统可以向技术支持发送运行状况和状态消息。 
 ---
 = 什么是 AutoSupport ？
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

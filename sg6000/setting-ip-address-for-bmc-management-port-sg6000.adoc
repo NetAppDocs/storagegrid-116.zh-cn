@@ -5,6 +5,7 @@ keywords: storagegrid, sg6000, storage node, storage appliance, BMC, baseboard m
 summary: 在访问 BMC 接口之前，您必须为 SG6000-CN 控制器上的 BMC 管理端口配置 IP 地址。 
 ---
 = 设置 BMC 管理端口的 IP 地址
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

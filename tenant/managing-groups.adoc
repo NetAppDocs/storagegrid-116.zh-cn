@@ -5,6 +5,7 @@ keywords: how to manage groups
 summary: 您可以为用户组分配权限，以控制租户用户可以执行的任务。您可以从身份源（例如 Active Directory 或 OpenLDAP ）导入联合组，也可以创建本地组。 
 ---
 = 管理组
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: storagegrid, sg5600, storage node, storage appliance, port bond, port 
 summary: 在为 E5600SG 控制器端口配置网络链路时，您可以对连接到网格网络和可选客户端网络的 10-GbE 端口以及连接到可选管理网络的 1-GbE 管理端口使用端口绑定。端口绑定可在 StorageGRID 网络和设备之间提供冗余路径，从而有助于保护数据。 
 ---
 = E5600SG 控制器端口的端口绑定模式
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

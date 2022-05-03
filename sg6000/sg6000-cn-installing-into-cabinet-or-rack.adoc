@@ -5,6 +5,7 @@ keywords: storagegrid, sg6000, storage node, storage appliance, install, install
 summary: 您必须在机柜或机架中为 SG6000-CN 控制器安装一组导轨，然后将控制器滑入导轨。 
 ---
 = SG6000-CN ：安装到机柜或机架中
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

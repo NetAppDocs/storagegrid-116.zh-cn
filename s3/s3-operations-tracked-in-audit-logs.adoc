@@ -5,6 +5,7 @@ keywords: audit log actions tracked
 summary: StorageGRID 审核日志会跟踪多个存储分段操作和对象操作。 
 ---
 = 审核日志中跟踪的 S3 操作
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

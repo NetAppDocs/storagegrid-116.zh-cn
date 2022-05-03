@@ -5,6 +5,7 @@ keywords: nfs, audit client, audit share
 summary: NFS 审核客户端将根据其 IP 地址获得对审核共享的访问权限。通过将新 NFS 审核客户端的 IP 地址添加到审核共享，将审核共享的访问权限授予给该客户端。 
 ---
 = 将 NFS 审核客户端添加到审核共享
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: storagegrid, audit, log, log file, access, accessing
 summary: 审核共享包含活动的 audit.log 文件和任何压缩的审核日志文件。为了便于访问审核日志，您可以配置客户端对 NFS 和 CIFS 的审核共享的访问权限（ CIFS 已弃用）。您也可以直接从管理节点的命令行访问审核日志文件。 
 ---
 = 访问审核日志文件
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

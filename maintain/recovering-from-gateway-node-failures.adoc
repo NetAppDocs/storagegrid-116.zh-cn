@@ -5,6 +5,7 @@ keywords: storagegrid, recover, gateway node failure
 summary: 要从网关节点故障中恢复，您必须按确切顺序完成一系列任务。 
 ---
 = 从网关节点故障中恢复
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

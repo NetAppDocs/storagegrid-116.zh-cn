@@ -5,6 +5,7 @@ keywords: network port reference
 summary: 您必须确保网络基础架构能够在网格内的节点之间以及与外部客户端和服务之间提供内部和外部通信。您可能需要跨内部和外部防火墙，交换系统和路由系统进行访问。 
 ---
 = 网络端口参考
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

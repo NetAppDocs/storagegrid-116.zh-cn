@@ -5,6 +5,7 @@ keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gat
 summary: 如果硬件故障或布线错误阻止 StorageGRID 设备完成启动处理，则此设备安装程序可能不可用。 
 ---
 = 硬件设置似乎挂起（ SG100 和 SG1000 ）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

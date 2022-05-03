@@ -5,6 +5,7 @@ keywords: list multipart uploads, uploads, multipart uploads, bucket
 summary: '" 列出多部件上传 " 操作会列出某个存储分段正在进行的多部件上传。' 
 ---
 = 列出多部件上传
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

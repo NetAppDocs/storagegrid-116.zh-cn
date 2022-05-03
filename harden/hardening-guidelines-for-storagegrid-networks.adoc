@@ -5,6 +5,7 @@ keywords: hardening guidelines, networks, networking, security
 summary: StorageGRID 系统支持每个网格节点最多三个网络接口，使您可以根据安全和访问要求为每个网格节点配置网络。 
 ---
 = StorageGRID 网络强化准则
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: storagegrid, decommission admin node, decommission gateway node
 summary: 停用管理节点或网关节点之前，请查看以下注意事项。 
 ---
 = 管理节点或网关节点停用的注意事项
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

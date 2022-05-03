@@ -5,6 +5,7 @@ keywords: storagegrid, sg6000, storage node, storage appliance, raid, raid mode,
 summary: 您可以在设备上更改为其他 RAID 模式，以满足存储和恢复要求。您只能在部署设备存储节点之前更改此模式。 
 ---
 = 可选：更改 RAID 模式（仅限 SG6000 ）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

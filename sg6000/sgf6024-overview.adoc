@@ -5,6 +5,7 @@ keywords: storagegrid, sg6000, storage node, storage appliance, overview, models
 summary: StorageGRIDSGF6024 包括一个计算控制器和一个存储控制器架，可容纳 24 个固态驱动器。 
 ---
 = SGF6024 概述
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

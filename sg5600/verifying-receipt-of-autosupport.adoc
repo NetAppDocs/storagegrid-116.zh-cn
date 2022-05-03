@@ -5,6 +5,7 @@ keywords: storagegrid, sg5600, storage node, storage appliance, verify, verifica
 summary: 您应验证技术支持是否正在接收您的 AutoSupport 消息。您可以在 Active IQ 门户上找到系统的 AutoSupport 状态。验证是否收到这些消息可确保技术支持在您需要帮助时获取您的信息。 
 ---
 = 验证是否收到 AutoSupport
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: storagegrid, sg5600, storage node, storage appliance, overview, models
 summary: StorageGRID SG5600 设备是一个集成的存储和计算平台，作为 StorageGRID 网格中的存储节点运行。 
 ---
 = SG5600 设备：概述
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

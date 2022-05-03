@@ -5,6 +5,7 @@ keywords: archive node connection to tsm, tivoli storage manager
 summary: 在归档节点能够与 Tivoli Storage Manager （ TSM\ ）中间件进行通信之前，您必须配置多项设置。 
 ---
 = 配置与 TSM 中间件的连接
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

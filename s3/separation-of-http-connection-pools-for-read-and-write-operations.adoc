@@ -5,6 +5,7 @@ keywords: separate http connection pools read write
 summary: 您可以使用单独的 HTTP 连接池执行读写操作，并控制每个连接池要使用的池容量。通过单独的 HTTP 连接池，您可以更好地控制事务并平衡负载。 
 ---
 = 为读取和写入操作分隔 HTTP 连接池
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: storagegrid, sg6000, storage node, storage appliance, configure, setup
 summary: 您可以使用 StorageGRID 设备安装程序在 StorageGRID 网格，管理和客户端网络上配置设备存储节点所使用的 IP 地址和路由信息。 
 ---
 = 配置 StorageGRID IP 地址
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

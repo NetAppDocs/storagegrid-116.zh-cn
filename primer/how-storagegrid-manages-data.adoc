@@ -5,6 +5,7 @@ keywords: how storagegrid manages data, what an object is, how object data is pr
 summary: 在开始使用 StorageGRID 系统时，了解 StorageGRID 系统如何管理数据非常有用。 
 ---
 = StorageGRID 如何管理数据
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

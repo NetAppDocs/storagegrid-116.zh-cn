@@ -5,6 +5,7 @@ keywords: storagegrid, appliance node cloning, appliance node clone
 summary: 通过设备节点克隆，您可以轻松地将网格中的现有设备节点（源）替换为同一逻辑 StorageGRID 站点中的兼容设备（目标）。此过程会将所有数据传输到新设备，从而使其投入使用以更换旧设备节点，并使旧设备处于预安装状态。 
 ---
 = 设备节点克隆的工作原理
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

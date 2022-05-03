@@ -5,6 +5,7 @@ keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gat
 summary: 如果您在安装期间为设备启用了节点加密，则可以监控每个设备节点的节点加密状态，包括节点加密状态和密钥管理服务器 \ （ KMS\ ）详细信息。 
 ---
 = 监控维护模式下的节点加密（ SG100 和 SG1000 ）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

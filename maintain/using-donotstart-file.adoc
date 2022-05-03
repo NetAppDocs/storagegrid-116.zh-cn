@@ -5,6 +5,7 @@ keywords: storagegrid, recover, donotstart, do not start, donotstart file, do no
 summary: 如果您在技术支持的指导下执行各种维护或配置过程，则可能会要求您使用 DoNotStart 文件来防止在启动或重新启动 Server Manager 时启动服务。 
 ---
 = 使用 DoNotStart 文件
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

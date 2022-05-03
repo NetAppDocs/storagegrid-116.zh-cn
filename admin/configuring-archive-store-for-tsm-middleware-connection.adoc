@@ -5,6 +5,7 @@ keywords: archive node, tsm server, tivoli storage manager, archive store
 summary: 如果归档节点连接到 TSM 中间件服务器，则可以将归档节点的归档存储状态配置为联机或脱机。您还可以在归档节点首次启动时禁用归档存储，或者重置为关联警报跟踪的故障计数。 
 ---
 = 配置 TSM 的归档状态和计数器
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

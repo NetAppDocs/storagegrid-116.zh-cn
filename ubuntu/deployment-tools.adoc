@@ -5,6 +5,7 @@ keywords: deployment tools
 summary: 自动执行全部或部分 StorageGRID 安装可能会让您受益匪浅。 
 ---
 = 部署工具
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

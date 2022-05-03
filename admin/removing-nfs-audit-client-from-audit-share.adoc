@@ -5,6 +5,7 @@ keywords: nfs audit client, remove audit client
 summary: NFS 审核客户端将根据其 IP 地址获得对审核共享的访问权限。您可以通过删除现有审核客户端的 IP 地址来删除此客户端。 
 ---
 = 从审核共享中删除 NFS 审核客户端
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

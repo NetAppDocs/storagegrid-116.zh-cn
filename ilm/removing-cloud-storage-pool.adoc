@@ -5,6 +5,7 @@ keywords: remove cloud storage pool
 summary: 您可以删除未在 ILM 规则中使用且不包含对象数据的云存储池。 
 ---
 = 删除云存储池
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

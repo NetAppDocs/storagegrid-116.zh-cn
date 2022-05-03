@@ -5,6 +5,7 @@ keywords: post, post object restore, object
 summary: 您可以使用 S3 后对象还原请求还原存储在云存储池中的对象。 
 ---
 = 后对象还原
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

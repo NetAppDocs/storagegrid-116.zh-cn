@@ -5,6 +5,7 @@ keywords: storagegrid, recover, linux, start node
 summary: 验证迁移的节点后，您可以在目标 Linux 主机上运行命令来启动该节点。 
 ---
 = Linux ：启动已迁移的节点
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

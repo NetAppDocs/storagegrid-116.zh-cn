@@ -5,6 +5,7 @@ keywords: installation materials ubuntu debian
 summary: 在安装 StorageGRID 之前，您必须收集并准备所需的材料。 
 ---
 = 所需材料
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

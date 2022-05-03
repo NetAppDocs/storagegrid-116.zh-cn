@@ -5,6 +5,7 @@ keywords: using S3 object lock, object lock, S3 object
 summary: 如果为 StorageGRID 系统启用了全局 S3 对象锁定设置，则可以在启用了 S3 对象锁定的情况下创建存储分段，然后为添加到存储分段的每个对象版本指定保留日期和合法保留设置。 
 ---
 = 使用 S3 对象锁定
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

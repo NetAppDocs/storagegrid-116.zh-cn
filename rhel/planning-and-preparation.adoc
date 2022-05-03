@@ -5,6 +5,7 @@ keywords: installation planning red hat linux
 summary: 在部署网格节点和配置 StorageGRID 网格之前，您必须熟悉完成操作步骤 的步骤和要求。 
 ---
 = 安装前（ Red Hat 或 CentOS ）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

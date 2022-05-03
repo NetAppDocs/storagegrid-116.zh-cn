@@ -5,6 +5,7 @@ keywords: how to install Linux
 summary: 您必须在所有网格主机上安装 Ubuntu 或 Debian 。使用 NetApp 互操作性表工具可获取受支持版本的列表。 
 ---
 = 安装 Linux
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

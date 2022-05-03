@@ -5,6 +5,7 @@ keywords: alert rules, managing alerts, alerts, alert notifications. edit alert 
 summary: 通过警报，您可以监控 StorageGRID 系统中的各种事件和状况。您可以通过创建自定义警报，编辑或禁用默认警报，设置警报电子邮件通知以及使警报通知静音来管理警报。 
 ---
 = 管理警报：概述
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

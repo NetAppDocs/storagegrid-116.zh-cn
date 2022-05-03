@@ -5,6 +5,7 @@ keywords: how to specify the StorageGRID license information
 summary: 您必须指定 StorageGRID 系统的名称并上传 NetApp 提供的许可证文件。 
 ---
 = 指定 StorageGRID 许可证信息
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

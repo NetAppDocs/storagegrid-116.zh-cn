@@ -5,6 +5,7 @@ keywords: storagegrid, sg6000, storage node, storage appliance, Verifying, verif
 summary: 设备上的 StorageGRID 设备安装程序版本必须与 StorageGRID 系统上安装的软件版本匹配，以确保所有 StorageGRID 功能均受支持。 
 ---
 = 验证并升级 StorageGRID 设备安装程序版本
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: search integration, configuration xml, metadata notification, containe
 summary: 搜索集成服务使用 <MetadataNotificationConfiguration\> 和 </MetadataNotificationConfiguration\> 标记中包含的一组规则进行配置。每个规则都指定规则适用场景 所使用的对象以及 StorageGRID 应将这些对象的元数据发送到的目标。 
 ---
 = 用于搜索集成的配置 XML
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

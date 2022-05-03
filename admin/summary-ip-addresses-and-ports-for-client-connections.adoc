@@ -5,6 +5,7 @@ keywords: ip addresses for client, how to connect to storagegrid, ports, vip
 summary: 客户端应用程序可以使用网格节点的 IP 地址以及该节点上服务的端口号连接到 StorageGRID 。如果配置了高可用性组（ HA ），则客户端应用程序可以使用 HA 组的虚拟 IP 地址进行连接。 
 ---
 = 摘要：客户端连接的 IP 地址和端口
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

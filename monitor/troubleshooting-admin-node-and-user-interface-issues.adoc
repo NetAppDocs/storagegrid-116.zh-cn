@@ -5,6 +5,7 @@ keywords: how to troubleshoot admin node issues, how to troubleshoot user interf
 summary: 您可以执行多项任务来帮助确定与管理节点和 StorageGRID 用户界面相关的问题的根源。 
 ---
 = 对管理节点和用户界面问题进行故障排除
+:allow-uri-read: 
 :experimental: 
 :icons: font
 :imagesdir: ../media/

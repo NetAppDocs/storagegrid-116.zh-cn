@@ -5,6 +5,7 @@ keywords: storagegrid, audit, tool, audit-explain, audit explain, translate audi
 summary: 您可以使用审核解释工具将审核日志中的审核消息转换为易于阅读的格式。 
 ---
 = 使用审核解释工具
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: site-loss protection, cross-site replication, storage pools
 summary: 如果您的 StorageGRID 部署包含多个站点，则可以通过为每个站点创建一个存储池并在规则的放置说明中指定这两个存储池来启用站点丢失保护。例如，如果您将 ILM 规则配置为创建两个复制副本并指定两个站点上的存储池，则每个对象的一个副本将放置在每个站点上。如果您将规则配置为创建两个副本并指定三个存储池，则会分发这些副本以平衡存储池之间的磁盘使用量，同时确保这两个副本存储在不同的站点上。 
 ---
 = 使用多个存储池进行跨站点复制
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

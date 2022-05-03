@@ -5,6 +5,7 @@ keywords: browser timeout, inactive session timeout
 summary: 如果 Grid Manager 和租户管理器用户处于非活动状态的时间超过一段时间，您可以控制他们是否已注销。 
 ---
 = 更改浏览器会话超时
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

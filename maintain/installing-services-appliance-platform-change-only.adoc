@@ -5,6 +5,7 @@ keywords: storagegrid, recover services appliance, recover appliance, recovering
 summary: 如果要恢复 VMware 或 Linux 主机上托管的故障网格节点，并且要使用 SG100 或 SG1000 服务设备作为替代节点，则必须先使用与故障节点相同的节点名称安装新设备硬件。 
 ---
 = 安装服务设备（仅限平台更改）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

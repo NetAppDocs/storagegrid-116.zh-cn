@@ -5,6 +5,7 @@ keywords: what is new in StorageGRID 11.6
 summary: 此版本的 StorageGRID 引入了以下功能。 
 ---
 = StorageGRID 11.6.
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

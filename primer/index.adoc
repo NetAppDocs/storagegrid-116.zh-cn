@@ -5,6 +5,7 @@ keywords: grid primer, what is storagegrid, storagegrid basics
 summary: 使用这些简介可简要了解 StorageGRID 系统，并了解 StorageGRID 架构和网络拓扑，数据管理功能以及用户界面。 
 ---
 = 网格入门：概述
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

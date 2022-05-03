@@ -5,6 +5,7 @@ keywords: archive node to aws, amazon web services
 summary: 您可以将归档节点配置为直接连接到 Amazon Web Services \ （ AWS\ ）或可通过 S3 API 连接到 StorageGRID 系统的任何其他系统。 
 ---
 = 通过 S3 API 归档到云
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

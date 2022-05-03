@@ -5,6 +5,7 @@ keywords: storagegrid, missing block device, block device error
 summary: '系统会检查每个已恢复的节点是否映射到有效的块设备专用文件或块设备专用文件的有效软链接。如果 StorageGRID 在 ` /etc/storaggrid/nodes/_node-name_.conf` 文件中发现映射无效，则会显示缺少块设备错误。' 
 ---
 = 修复缺少的块设备错误
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

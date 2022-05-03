@@ -5,6 +5,7 @@ keywords: how to automate installation
 summary: 您可以使用 VMware vSphere 自动部署网格节点。您还可以自动配置 StorageGRID 。 
 ---
 = 自动化安装（ VMware ）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

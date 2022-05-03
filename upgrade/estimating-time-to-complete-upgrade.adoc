@@ -5,6 +5,7 @@ keywords: upgrade, time estimate, duration, cassandra upgrade
 summary: 在计划升级到 StorageGRID 11.6 时，您必须根据升级可能需要的时间考虑何时进行升级。此外，您还必须了解在升级的每个阶段可以执行哪些操作，哪些操作不能执行。 
 ---
 = 估计完成升级所需的时间
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

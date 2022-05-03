@@ -5,6 +5,7 @@ keywords: how to troubleshoot delivery of platform services message, how to trou
 summary: 如果平台服务消息传送到无法接受数据的目标，则会在网格管理器中触发总事件（ SMT ）警报。 
 ---
 = 对平台服务消息的传送进行故障排除（ SMTTT 警报）
+:allow-uri-read: 
 :experimental: 
 :icons: font
 :imagesdir: ../media/

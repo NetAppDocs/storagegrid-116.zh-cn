@@ -5,6 +5,7 @@ keywords: storagegrid, audit, message, messages, client write, OVWR, SDEL, SPOS,
 summary: 当 S3 或 Swift 客户端应用程序请求创建或修改对象时，系统会记录客户端写入审核消息。 
 ---
 = 客户端写入审核消息
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: storagegrid, recover, linux, migrate node, migrating node, new host fo
 summary: 您可以将 StorageGRID 节点从一台 Linux 主机迁移到另一台 Linux 主机以执行主机维护 \ （例如操作系统修补和重新启动 \ ），而不会影响网格的功能或可用性。 
 ---
 = Linux ：将网格节点迁移到新主机
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: object, add object, put, put object request
 summary: 您可以使用 S3 PUT 对象 - 复制请求为已存储在 S3 中的对象创建副本。PUT 对象 - 复制操作与执行 GET ，然后执行 PUT 操作相同。 
 ---
 = PUT 对象—复制
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

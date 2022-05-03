@@ -5,6 +5,7 @@ keywords: storagegrid, recover, server manager, restart server manager
 summary: 您可能需要重新启动服务器管理器以及网格节点上运行的所有服务。 
 ---
 = 重新启动 Server Manager 和所有服务
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

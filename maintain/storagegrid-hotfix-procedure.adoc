@@ -5,6 +5,7 @@ keywords: apply hotfix, install hotfix
 summary: 如果检测到软件问题并在功能版本之间得到解决，则可能需要将修补程序应用于 StorageGRID 系统。 
 ---
 = StorageGRID 热修补程序操作步骤
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

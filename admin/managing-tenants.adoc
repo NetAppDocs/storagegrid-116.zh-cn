@@ -5,6 +5,7 @@ keywords: manage tenants, tenant account, what is a tenant
 summary: 作为网格管理员，您可以创建和管理 S3 和 Swift 客户端用来存储和检索对象，监控存储使用情况以及管理客户端使用 StorageGRID 系统能够执行的操作的租户帐户。 
 ---
 = 管理租户
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

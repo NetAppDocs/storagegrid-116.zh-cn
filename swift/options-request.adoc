@@ -5,6 +5,7 @@ keywords: swift options request
 summary: 选项请求会检查单个 Swift 服务的可用性。选项请求由 URL 中指定的存储节点或网关节点处理。 
 ---
 = 选项请求
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

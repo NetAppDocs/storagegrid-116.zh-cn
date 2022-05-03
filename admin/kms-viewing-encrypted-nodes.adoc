@@ -5,6 +5,7 @@ keywords: view encrypted nodes, kms nodes, appliances with kms
 summary: 您可以查看有关 StorageGRID 系统中已启用节点加密设置的设备节点的信息。 
 ---
 = 查看加密节点
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

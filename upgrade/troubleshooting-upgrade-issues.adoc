@@ -5,6 +5,7 @@ keywords: upgrade, troubleshoot, troubleshooting, errors, upgrade precheck
 summary: 如果升级未成功完成，您可以自行解决问题描述 。如果无法解决问题描述 ，应先收集所需信息，然后再联系技术支持。 
 ---
 = 升级未完成
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

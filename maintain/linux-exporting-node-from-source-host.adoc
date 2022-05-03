@@ -5,6 +5,7 @@ keywords: storagegrid, recover, linux, export node, linux source host
 summary: 关闭网格节点并将其从源 Linux 主机导出。 
 ---
 = Linux ：从源主机导出节点
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

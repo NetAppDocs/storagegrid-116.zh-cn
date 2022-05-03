@@ -5,6 +5,7 @@ keywords: storagegrid, sg5600, storage node, storage appliance, network connecti
 summary: 在安装 StorageGRID 设备之前，您应了解可以将哪些网络连接到设备，以及如何使用每个控制器上的端口。 
 ---
 = 查看设备网络连接（ SG5600 ）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

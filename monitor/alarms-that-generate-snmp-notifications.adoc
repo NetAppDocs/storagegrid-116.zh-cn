@@ -5,6 +5,7 @@ keywords: alarms, monitor alarms, snmp notification, snmp
 summary: 下表列出了生成 SNMP 通知的原有警报。与警报不同，并非所有警报都会生成 SNMP 通知。只有列出的警报才会生成 SNMP 通知，并且严重性仅为指示值或更高。 
 ---
 = 生成 SNMP 通知的警报（旧系统）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gat
 summary: 部署网格节点后，您可以自动配置 StorageGRID 系统。 
 ---
 = 自动配置 StorageGRID
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: storage node, configuration settings, counters
 summary: 每个存储节点都使用许多配置设置和计数器。要清除警报，您可能需要查看当前设置或重置计数器 \ （原有系统 \ ）。 
 ---
 = 存储节点配置设置
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

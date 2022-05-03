@@ -5,6 +5,7 @@ keywords: cloud storage pool, azure blob storage
 summary: 为 Azure Blob 存储创建云存储池时，必须为 StorageGRID 用于存储对象的外部容器指定帐户名称和帐户密钥。 
 ---
 = Azure ：指定云存储池的身份验证详细信息
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

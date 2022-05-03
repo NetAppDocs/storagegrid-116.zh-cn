@@ -5,6 +5,7 @@ keywords: storagegrid, sg6000, storage node, storage appliance, boot codes, boot
 summary: 在为设备接通电源时， BMC 会为 SG6000-CN 控制器记录一系列启动代码。您可以通过多种方式查看这些代码。 
 ---
 = 查看 SG6000-CN 控制器的启动代码
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

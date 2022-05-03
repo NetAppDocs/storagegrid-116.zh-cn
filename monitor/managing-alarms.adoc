@@ -5,6 +5,7 @@ keywords: alarms, managing, manage alarms global alarms, custom alarms, triggeri
 summary: StorageGRID 警报系统是一种传统系统，用于识别正常运行期间有时会出现的故障点。 
 ---
 = 管理警报（旧系统）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

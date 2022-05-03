@@ -5,6 +5,7 @@ keywords: archive node, cloud tiering
 summary: 将归档节点配置为通过 S3 API 连接到外部归档存储系统后，如果连接发生变化，您可以修改某些设置。 
 ---
 = 修改 S3 API 的连接设置
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: storagegrid, audit, message, ECOC, Corrupt Erasure Coded Data Fragment
 summary: 此审核消息指示系统检测到经过纠删编码的数据片段已损坏。 
 ---
 = EcC ：擦除编码数据片段损坏
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

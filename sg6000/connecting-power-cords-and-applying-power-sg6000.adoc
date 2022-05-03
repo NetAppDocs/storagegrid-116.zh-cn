@@ -5,6 +5,7 @@ keywords: storagegrid, sg6000, storage node, storage appliance, wire, wiring, ca
 summary: 连接网络缆线后，您可以为 SG6000-CN 控制器以及两个存储控制器或可选扩展架供电。 
 ---
 = 连接电源线并接通电源（ SG6000 ）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

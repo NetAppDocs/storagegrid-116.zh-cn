@@ -5,6 +5,7 @@ keywords: storagegrid, audit, message, VLST, User Initiated Volume Lost
 summary: 每当运行 /proc/CMSI/Volume_lost 命令时都会发出此消息。 
 ---
 = VLST ：用户启动的卷丢失
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

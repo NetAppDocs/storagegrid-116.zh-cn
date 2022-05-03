@@ -5,6 +5,7 @@ keywords: storagegrid, sg5600, storage node, storage appliance, wire, wiring, ca
 summary: 您必须将交流电源线连接到外部电源和每个控制器上的交流电源连接器。连接电源线后，您可以打开电源。 
 ---
 = 连接交流电源线（ SG5600 ）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: storagegrid, sg6000, storage node, storage appliance, Installation, de
 summary: 您可以在首次部署 StorageGRID 时安装一个或多个 StorageGRID 存储设备，也可以稍后在扩展过程中添加设备存储节点。在恢复操作中，您可能还需要安装设备存储节点。 
 ---
 = 安装和部署概述
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: tivoli storage manager, tsm server, archive node, tape
 summary: 您可以将归档节点配置为以 Tivoli Storage Manager （ TSM\ ）服务器为目标，该服务器可提供逻辑接口，用于将对象数据存储和检索到随机或顺序访问存储设备，包括磁带库。 
 ---
 = 通过 TSM 中间件归档到磁带
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

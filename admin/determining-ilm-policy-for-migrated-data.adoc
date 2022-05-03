@@ -5,6 +5,7 @@ keywords: determing ilm policy, ilm for migrated data
 summary: StorageGRID 系统的 ILM 策略可确定创建的副本数，副本存储到的位置以及这些副本的保留时间。ILM 策略由一组 ILM 规则组成，这些规则介绍如何筛选对象以及如何随着时间的推移管理对象数据。 
 ---
 = 确定已迁移数据的 ILM 策略
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

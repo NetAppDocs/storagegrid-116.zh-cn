@@ -5,6 +5,7 @@ keywords: how to reset lost object count, how to reset missing object count
 summary: 在调查 StorageGRID 系统并验证所有记录的丢失对象是否永久丢失或是否为虚假警报之后，您可以将丢失对象属性的值重置为零。 
 ---
 = 重置丢失和缺失的对象计数
+:allow-uri-read: 
 :experimental: 
 :icons: font
 :imagesdir: ../media/

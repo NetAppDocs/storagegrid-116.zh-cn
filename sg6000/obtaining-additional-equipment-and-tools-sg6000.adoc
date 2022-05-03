@@ -5,6 +5,7 @@ keywords: storagegrid, sg6000, storage node, storage appliance, additional, equi
 summary: 在安装 StorageGRID 设备之前，请确认您拥有所需的所有附加设备和工具。 
 ---
 = 获取其他设备和工具（ SG6000 ）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

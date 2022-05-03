@@ -5,6 +5,7 @@ keywords: storagegrid, sg6000, storage node, storage appliance, installation RES
 summary: StorageGRID 提供了两个用于执行安装任务的 REST API ： StorageGRID 安装 API 和 StorageGRID 设备安装程序 API 。 
 ---
 = 安装 REST API 概述
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

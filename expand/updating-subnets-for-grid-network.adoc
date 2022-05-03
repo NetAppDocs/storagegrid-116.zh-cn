@@ -5,6 +5,7 @@ keywords: expand, expansion, add subnets, Grid Network
 summary: 在扩展中添加网格节点或新站点时，您可能需要更新子网或向网格网络添加子网。 
 ---
 = 更新网格网络的子网
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: configure kms, key management server
 summary: 您必须将 StorageGRID 配置为每个外部密钥管理服务器或 KMS 集群的客户端，然后才能将 KMS 添加到 StorageGRID 。 
 ---
 = 在 KMS 中将 StorageGRID 配置为客户端
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gat
 summary: 您可以更改服务设备的以太网链路配置。您可以更改端口绑定模式，网络绑定模式和链路速度。 
 ---
 = 更改服务设备的链路配置
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

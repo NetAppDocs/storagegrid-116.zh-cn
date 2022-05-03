@@ -5,6 +5,7 @@ keywords: how to prepare for ubuntu or debian installation
 summary: 在部署网格节点和配置 StorageGRID 网格之前，您必须熟悉完成操作步骤 的步骤和要求。 
 ---
 = 安装之前（ Ubuntu 或 Debian ）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

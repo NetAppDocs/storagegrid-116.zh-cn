@@ -5,6 +5,7 @@ keywords: what is erasure coding, what is ec
 summary: 纠删编码是 StorageGRID 存储对象数据的第二种方法。如果 StorageGRID 将对象与配置为创建纠删编码副本的 ILM 规则匹配，则会将对象数据分段为数据片段，计算额外的奇偶校验片段，并将每个片段存储在不同的存储节点上。访问某个对象时，系统会使用存储的片段重新组合该对象。如果数据或奇偶校验片段损坏或丢失，则纠删编码算法可以使用剩余数据和奇偶校验片段的子集重新创建该片段。 
 ---
 = 什么是纠删编码
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

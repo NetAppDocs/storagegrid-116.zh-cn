@@ -5,6 +5,7 @@ keywords: supported versions, version support
 summary: StorageGRID 支持以下特定版本的 S3 和 HTTP 。 
 ---
 = 支持的版本
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

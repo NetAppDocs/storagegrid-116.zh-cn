@@ -5,6 +5,7 @@ keywords: troubleshooting, logs
 summary: 您可以使用第三方软件日志对问题进行故障排除。 
 ---
 = 第三方软件的日志
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

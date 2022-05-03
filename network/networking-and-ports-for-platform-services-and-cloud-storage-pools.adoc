@@ -5,6 +5,7 @@ keywords: networking for platform services, networking for cloud storage pools
 summary: 如果您计划使用 StorageGRID 平台服务或云存储池，则必须配置网格网络和防火墙以确保可以访问目标端点。 
 ---
 = 用于平台服务和云存储池的网络和端口
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

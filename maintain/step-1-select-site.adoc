@@ -5,6 +5,7 @@ keywords: storagegrid, recover, select site
 summary: '要确定是否可以停用某个站点，请首先访问 " 停用站点 " 向导。' 
 ---
 = 第 1 步：选择站点
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

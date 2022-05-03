@@ -5,6 +5,7 @@ keywords: prometheus, Prometheus metrics, metrics
 summary: 管理节点上的 Prometheus 服务从所有节点上的服务收集时间序列指标。虽然 Prometheus 收集的指标超过 1000 个，但监控最关键的 StorageGRID 操作需要的指标相对较少。 
 ---
 = 常用的 Prometheus 指标
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

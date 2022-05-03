@@ -5,6 +5,7 @@ keywords: storagegrid, sg6000, storage node, storage appliance, install, install
 summary: 安装 StorageGRID 设备之前，请打开所有包装箱的包装，并将包装箱上的物品与包装清单上的物品进行比较。 
 ---
 = 打开包装箱（ SG6000 ）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

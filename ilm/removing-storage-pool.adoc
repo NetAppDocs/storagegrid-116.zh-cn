@@ -5,6 +5,7 @@ keywords: remove storage pool
 summary: 您可以删除未使用的存储池。 
 ---
 = 删除存储池
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

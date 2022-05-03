@@ -5,6 +5,7 @@ keywords: concurrent http connection benefits
 summary: 您应保持与 StorageGRID 系统的多个 TCP/IP 连接处于开放状态，以实现并行处理，从而提高性能。并行连接的最佳数量取决于多种因素。 
 ---
 = 并发 HTTP 连接的优势
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: what are platform services
 summary: StorageGRID 平台服务可以帮助您实施混合云战略。 
 ---
 = 什么是平台服务？
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: storagegrid, sg5700, storage node, storage appliance, hardware, instal
 summary: 硬件安装需要将设备安装到机柜或机架中，连接缆线并接通电源。 
 ---
 = 安装硬件（ SG5700 ）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

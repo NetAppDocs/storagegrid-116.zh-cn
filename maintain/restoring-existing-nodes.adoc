@@ -5,6 +5,7 @@ keywords: storagegrid, recover, restore node to host
 summary: 要将出现故障的网格节点还原到新的 Linux 主机，请使用相应的命令还原节点配置文件。 
 ---
 = 将网格节点还原到主机
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

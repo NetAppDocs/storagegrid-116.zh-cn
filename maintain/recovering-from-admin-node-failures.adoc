@@ -5,6 +5,7 @@ keywords: storagegrid, recover, admin node failure
 summary: 管理节点的恢复过程取决于它是主管理节点还是非主管理节点。 
 ---
 = 从管理节点故障中恢复
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: storagegrid, sg6000, storage node, storage appliance, storage controll
 summary: 每个存储控制器上的管理端口 1 用于将设备连接到 SANtricity System Manager 的管理网络。如果无法从 StorageGRID 设备安装程序访问 SANtricity 系统管理器，则必须为每个存储控制器设置一个静态 IP 地址，以确保不会丢失与控制器架中的硬件和控制器固件的管理连接。 
 ---
 = 使用 StorageGRID 设备安装程序设置存储控制器的 IP 地址
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

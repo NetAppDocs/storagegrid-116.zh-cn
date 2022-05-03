@@ -5,6 +5,7 @@ keywords: how to collect system data, how to collect logs
 summary: 您可以使用网格管理器检索 StorageGRID 系统的日志文件和系统数据（包括配置数据）。 
 ---
 = 收集日志文件和系统数据
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

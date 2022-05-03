@@ -5,6 +5,7 @@ keywords: reboot grid node
 summary: 您可以从网格管理器或节点的命令 Shell 重新启动网格节点。 
 ---
 = 重新启动网格节点
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

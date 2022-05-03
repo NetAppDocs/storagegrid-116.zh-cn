@@ -5,6 +5,7 @@ keywords: firewall access, firewall ports, external firewall
 summary: 如果要通过防火墙控制访问，请打开或关闭外部防火墙上的特定端口。 
 ---
 = 通过防火墙控制访问
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: prometheus, copy metrics, Admin Node expansion
 summary: 添加新的管理节点后，您可以选择将 Prometheus 维护的历史指标从主管理节点复制到新的管理节点。复制指标可确保管理节点之间的历史指标一致。 
 ---
 = 复制 Prometheus 指标
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

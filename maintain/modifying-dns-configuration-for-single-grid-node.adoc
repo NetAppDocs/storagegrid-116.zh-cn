@@ -5,6 +5,7 @@ keywords: storagegrid, recover, dns, modify dns
 summary: 您可以运行一个脚本，为每个网格节点配置不同的 DNS ，而不是在整个部署中全局配置域名系统（ DNS ）。 
 ---
 = 修改单网格节点的 DNS 配置
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: untrusted client network
 summary: 如果您使用的是客户端网络，则可以通过仅在显式配置的端点上接受入站客户端流量来帮助保护 StorageGRID 免受恶意攻击。 
 ---
 = Manage Untrusted Client Networks ：概述
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

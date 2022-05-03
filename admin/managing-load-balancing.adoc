@@ -5,6 +5,7 @@ keywords: manage load balancing, balance workload, client ingest, client retriev
 summary: 您可以使用 StorageGRID 负载平衡功能处理从 S3 和 Swift 客户端载入和检索工作负载。负载平衡通过在多个存储节点之间分布工作负载和连接来最大限度地提高速度和连接容量。 
 ---
 = Manage load balancing ：概述
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

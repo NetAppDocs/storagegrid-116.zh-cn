@@ -5,6 +5,7 @@ keywords: swift api endpoint support
 summary: StorageGRID 支持以下 Swift API 端点：信息 URL ，身份验证 URL 和存储 URL 。 
 ---
 = 支持的 Swift API 端点
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: task tab
 summary: 通过任务选项卡，您可以重新启动选定节点。此时将显示所有节点的任务选项卡。 
 ---
 = 使用任务选项卡重新启动网格节点
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

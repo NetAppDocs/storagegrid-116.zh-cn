@@ -5,6 +5,7 @@ keywords: node cloning, clone node
 summary: 您可以在 StorageGRID 中克隆设备节点，以使用设计较新或功能增强的设备。克隆会将现有节点上的所有信息传输到新设备，提供易于执行的硬件升级过程，并提供停用和扩展的替代方案来更换设备。 
 ---
 = 设备节点克隆
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

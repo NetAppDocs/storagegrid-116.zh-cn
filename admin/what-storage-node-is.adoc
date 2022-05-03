@@ -5,6 +5,7 @@ keywords: what is a storage node, how many storage nodes
 summary: 存储节点可管理和存储对象数据和元数据。每个 StorageGRID 系统必须至少具有三个存储节点。如果您有多个站点，则 StorageGRID 系统中的每个站点也必须有三个存储节点。 
 ---
 = 什么是存储节点？
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

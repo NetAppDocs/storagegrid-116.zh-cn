@@ -5,6 +5,7 @@ keywords: storagegrid, ip address, configure ip address, configuring ip address,
 summary: 您可以使用更改 IP 工具为网格节点配置 IP 地址来执行网络配置。 
 ---
 = 配置 IP 地址
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

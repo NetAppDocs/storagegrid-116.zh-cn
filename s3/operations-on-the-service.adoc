@@ -5,6 +5,7 @@ keywords: operations, service, operations on the service
 summary: StorageGRID 系统支持对服务执行操作。 
 ---
 = 对服务执行的操作
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

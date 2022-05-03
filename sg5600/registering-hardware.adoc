@@ -5,6 +5,7 @@ keywords: storagegrid, sg5600, storage node, storage appliance, register, regist
 summary: 注册设备硬件具有支持优势。 
 ---
 = 注册硬件
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

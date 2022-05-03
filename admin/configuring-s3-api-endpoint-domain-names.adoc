@@ -5,6 +5,7 @@ keywords: s3 api, endpoint domain names, virtual hosted-style requests
 summary: 要支持 S3 虚拟托管模式请求，您必须使用网格管理器配置 S3 客户端连接到的端点域名列表。 
 ---
 = 配置 S3 API 端点域名
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

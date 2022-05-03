@@ -5,6 +5,7 @@ keywords: how to validate red hat linux centos configuration
 summary: 在 /etc/storagegrid/nodes 中为每个 StorageGRID 节点创建配置文件后，您必须验证这些文件的内容。 
 ---
 = 验证 StorageGRID 配置
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

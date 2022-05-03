@@ -5,6 +5,7 @@ keywords: about ubuntu, ubuntu overview
 summary: 在 Ubuntu 或 Debian 环境中安装 StorageGRID 系统包括三个主要步骤。 
 ---
 = 安装 Ubuntu 或 Debian ：概述
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

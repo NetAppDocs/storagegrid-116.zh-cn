@@ -5,6 +5,7 @@ keywords: cloud storage pool with C2S, commercial cloud services, c2s access por
 summary: 要使用商用云服务 \ （ C2S ） S3 服务作为云存储池，您必须将 C2S 访问门户 \ （ CAP\ ）配置为身份验证类型，以便 StorageGRID 可以请求临时凭据来访问 C2S 帐户中的 S3 存储分段。 
 ---
 = C2S S3 ：指定云存储池的身份验证详细信息
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

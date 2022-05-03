@@ -5,6 +5,7 @@ keywords: storagegrid, sg5700, storage node, storage appliance, raid, raid mode,
 summary: 如果您的 SG5760 包含 60 个驱动器，则可以更改为其他 RAID 模式以满足存储和恢复要求。您只能在部署 StorageGRID 设备存储节点之前更改此模式。 
 ---
 = 可选：更改 RAID 模式（仅限 SG5760 ）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: storagegrid, sg5600, storage node, storage appliance, cabling, wiring,
 summary: 您必须使用 SAS 互连缆线将两个控制器彼此连接，将管理端口连接到相应的管理网络，并将 E5600SG 控制器上的 10 GbE 端口连接到网格网络和适用于 StorageGRID 的可选客户端网络。 
 ---
 = 缆线设备（ SG5600 ）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

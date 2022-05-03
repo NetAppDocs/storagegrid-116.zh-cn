@@ -5,6 +5,7 @@ keywords: upgrade, error message, docker image availability
 summary: '尝试启动升级过程时，您可能会收到一条错误消息，指出 " Docker 映像可用性检查验证套件发现以下问题。 " 必须先解决所有问题，然后才能完成升级。' 
 ---
 = 错误消息： Docker 映像可用性检查
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

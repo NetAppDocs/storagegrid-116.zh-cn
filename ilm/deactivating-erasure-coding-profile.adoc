@@ -5,6 +5,7 @@ keywords: deactivate ec profile, remove erasure coding profile
 summary: 如果您不再计划使用擦除编码配置文件，并且此配置文件当前未在任何 ILM 规则中使用，则可以停用它。 
 ---
 = 停用擦除编码配置文件
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

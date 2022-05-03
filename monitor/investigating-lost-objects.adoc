@@ -5,6 +5,7 @@ keywords: lost objects, investigating, objects
 summary: 触发 * 对象丢失 * 警报时，您必须立即进行调查。收集有关受影响对象的信息并联系技术支持。 
 ---
 = 调查丢失的对象
+:allow-uri-read: 
 :experimental: 
 :icons: font
 :imagesdir: ../media/

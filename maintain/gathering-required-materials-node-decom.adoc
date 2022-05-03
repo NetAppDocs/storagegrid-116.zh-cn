@@ -5,6 +5,7 @@ keywords: storagegrid, node decommission, decommission
 summary: 在执行网格节点停用之前，您必须获取以下信息。 
 ---
 = 收集所需材料
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: monitoring, monitoring network connections, network, network performan
 summary: 网格节点必须能够彼此通信，才能使网格正常运行。节点和站点之间的网络完整性以及站点之间的网络带宽对于高效运行至关重要。 
 ---
 = 监控网络连接和性能
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

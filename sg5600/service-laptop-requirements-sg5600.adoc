@@ -5,6 +5,7 @@ keywords: storagegrid, sg5600, storage node, storage appliance, service, laptop,
 summary: 在安装 StorageGRID 设备硬件之前，您应检查服务笔记本电脑是否具有所需的最低资源。 
 ---
 = 服务笔记本电脑要求
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

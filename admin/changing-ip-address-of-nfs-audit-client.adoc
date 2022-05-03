@@ -5,6 +5,7 @@ keywords: NFS audit client, change IP address
 summary: 如果需要更改 NFS 审核客户端的 IP 地址，请完成以下步骤。 
 ---
 = 更改 NFS 审核客户端的 IP 地址
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

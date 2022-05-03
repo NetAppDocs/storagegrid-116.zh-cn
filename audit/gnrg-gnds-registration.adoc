@@ -5,6 +5,7 @@ keywords: storagegrid, audi, message, GNRG, GNDS Registration
 summary: 如果某个服务在 StorageGRID 系统中更新或注册了有关自身的信息，则 CMN 服务将生成此审核消息。 
 ---
 = GNRG ： GNDS 注册
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

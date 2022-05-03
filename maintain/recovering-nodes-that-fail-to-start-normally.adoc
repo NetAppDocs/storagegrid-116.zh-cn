@@ -5,6 +5,7 @@ keywords: storagegrid, recover, node did not start, node fail to start
 summary: 如果 StorageGRID 节点未正常重新加入网格，并且无法显示为可恢复，则可能已损坏。您可以强制节点进入恢复模式。 
 ---
 = 恢复无法正常启动的节点
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

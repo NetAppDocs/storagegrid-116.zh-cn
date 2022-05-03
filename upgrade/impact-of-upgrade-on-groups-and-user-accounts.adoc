@@ -5,6 +5,7 @@ keywords: upgrade, permissions
 summary: 您必须了解 StorageGRID 升级的影响，以便可以在升级完成后相应地更新组和用户帐户。 
 ---
 = 升级对组和用户帐户的影响
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

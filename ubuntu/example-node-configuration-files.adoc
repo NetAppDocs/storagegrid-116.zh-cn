@@ -5,6 +5,7 @@ keywords: example node configuration files
 summary: 您可以使用示例节点配置文件帮助设置 StorageGRID 系统的节点配置文件。这些示例显示了所有类型网格节点的节点配置文件。 
 ---
 = 示例节点配置文件
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

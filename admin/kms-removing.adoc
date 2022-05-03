@@ -5,6 +5,7 @@ keywords: remove kms, remove key management server
 summary: 在某些情况下，您可能需要删除密钥管理服务器。例如，如果您已停用站点，则可能需要删除站点专用的 KMS 。 
 ---
 = 删除密钥管理服务器（ KMS ）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

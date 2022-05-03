@@ -5,6 +5,7 @@ keywords: storagegrid, sg5700, storage node, storage appliance, controller, stor
 summary: 为了确保存储控制器能够以最佳方式运行，您必须升级到适用于您的 StorageGRID 设备的最新 SANtricity 操作系统维护版本。请参阅 NetApp 互操作性表工具（ IMT ）以确定应使用的版本。如果需要帮助，请联系技术支持。 
 ---
 = 升级存储控制器上的 SANtricity 操作系统
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

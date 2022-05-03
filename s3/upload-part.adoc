@@ -5,6 +5,7 @@ keywords: s3 upload part operation
 summary: '" 上传部件 " 操作会通过多部件上传方式为对象上传部件。' 
 ---
 = 上传部件
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

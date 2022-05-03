@@ -5,6 +5,7 @@ keywords: storagegrid, audit, message, AVCC, Archive Validate Cloud-Tier Configu
 summary: 验证 Cloud Tiering - Simple Storage Service \ （ S3\ ）目标类型的配置设置后，将生成此消息。 
 ---
 = AVCC ：归档验证云层配置
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

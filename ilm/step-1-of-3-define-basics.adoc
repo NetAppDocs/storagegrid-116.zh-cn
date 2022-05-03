@@ -5,6 +5,7 @@ keywords: ILM rule step 1, define basics
 summary: 通过创建 ILM 规则向导的第 1 步 \ （定义基础知识 \ ），您可以定义规则的基本和高级筛选器。 
 ---
 = 第 1 步，共 3 步：定义基础知识
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

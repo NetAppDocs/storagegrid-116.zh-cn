@@ -5,6 +5,7 @@ keywords: enable http, clb connections, storage node connections
 summary: 默认情况下，客户端应用程序会使用 HTTPS 网络协议连接到存储节点或网关节点上已弃用的 CLB 服务。您可以选择为这些连接启用 HTTP ，例如在测试非生产网格时。 
 ---
 = 为客户端通信启用 HTTP
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

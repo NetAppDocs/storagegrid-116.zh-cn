@@ -5,6 +5,7 @@ keywords: fabricPool, tenant, SSO
 summary: 您必须在网格管理器中创建一个租户帐户以供 FabricPool 使用。 
 ---
 = 为 FabricPool 创建租户帐户
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: how to automate red hat linux installation
 summary: 您可以自动安装 StorageGRID 主机服务和配置网格节点。 
 ---
 = 自动安装（ Red Hat Enterprise Linux 或 CentOS ）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

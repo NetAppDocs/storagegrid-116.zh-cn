@@ -5,6 +5,7 @@ keywords: storagegrid, audit, example, S3, object deletion
 summary: 当 S3 客户端从存储节点 \ （ LDR 服务 \ ）中删除对象时，系统会生成一条审核消息并将其保存到审核日志中。 
 ---
 = 示例： S3 对象删除
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

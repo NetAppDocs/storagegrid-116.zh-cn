@@ -5,6 +5,7 @@ keywords: how to update the SNMP agent
 summary: 您可能需要禁用 SNMP 通知，更新社区字符串，或者添加或删除代理地址， USM 用户和陷阱目标。 
 ---
 = 更新 SNMP 代理
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

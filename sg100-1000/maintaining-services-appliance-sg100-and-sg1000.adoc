@@ -5,6 +5,7 @@ keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gat
 summary: 您可能需要对设备执行维护过程。本节中的过程假定设备已部署为 StorageGRID 系统中的网关节点或管理节点。 
 ---
 = 维护设备
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

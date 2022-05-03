@@ -5,6 +5,7 @@ keywords: cloud storage pool authentication, anonymous authentication, access ke
 summary: 在为 S3 创建云存储池时，必须选择云存储池端点所需的身份验证类型。您可以指定匿名或输入访问密钥 ID 和机密访问密钥。 
 ---
 = S3 ：指定云存储池的身份验证详细信息
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

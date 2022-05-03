@@ -5,6 +5,7 @@ keywords: overview installation REST API
 summary: StorageGRID 提供了用于执行安装任务的 StorageGRID 安装 API 。 
 ---
 = 安装 REST API 概述
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

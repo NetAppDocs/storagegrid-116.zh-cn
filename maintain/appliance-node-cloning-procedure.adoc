@@ -5,6 +5,7 @@ keywords: storagegrid, appliance node clone, appliance node cloning, node clone,
 summary: 克隆过程可能需要几天时间才能在源节点（正在更换的设备）和目标设备（新设备）之间传输数据。 
 ---
 = 克隆设备节点
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

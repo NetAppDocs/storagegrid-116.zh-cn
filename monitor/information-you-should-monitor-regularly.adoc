@@ -5,6 +5,7 @@ keywords: monitor, monitoring, StorageGRID,
 summary: StorageGRID 是一种容错分布式存储系统，即使发生错误或节点或站点不可用，它也可以继续运行。您必须主动监控系统运行状况，工作负载和使用情况统计信息，以便在潜在问题影响网格的效率或可用性之前采取措施解决这些问题。 
 ---
 = 您应定期监控的信息
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

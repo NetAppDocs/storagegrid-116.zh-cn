@@ -5,6 +5,7 @@ keywords: storagegrid, sg5600, storage node, storage appliance, Adding, add, app
 summary: 将设备中的 E2700 控制器连接到 SANtricity 存储管理器，然后将设备添加为存储阵列。 
 ---
 = 将设备添加到 SANtricity 存储管理器
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: S3 Select, object retrieval
 summary: 当 S3 客户端对某个对象发出 S3 Select 查询时，系统会生成审核消息并将其保存到审核日志中。 
 ---
 = 示例：对象上的 S3 Select
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

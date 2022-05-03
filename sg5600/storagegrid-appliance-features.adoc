@@ -5,6 +5,7 @@ keywords: storagegrid, sg5600, storage node, storage appliance, features
 summary: StorageGRID SG5600 设备提供了一个集成的存储解决方案 ，用于创建新的 StorageGRID 系统或扩展现有系统的容量。 
 ---
 = StorageGRID 设备功能
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

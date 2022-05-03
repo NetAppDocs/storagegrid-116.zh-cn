@@ -5,6 +5,7 @@ keywords: network settings, configure, configuring, configuration, domain name, 
 summary: 您可以从网格管理器配置各种网络设置，以微调 StorageGRID 系统的运行。 
 ---
 = 配置网络设置
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

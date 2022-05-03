@@ -5,6 +5,7 @@ keywords: configuring, snmp agent, snmp
 summary: 如果要使用第三方 SNMP 管理系统进行只读 MIB 访问和通知，则可以配置 StorageGRID SNMP 代理。 
 ---
 = 配置 SNMP 代理
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

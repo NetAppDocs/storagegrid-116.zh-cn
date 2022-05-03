@@ -5,6 +5,7 @@ keywords: erasure coding, EC, rebalancing, site rebalance procedure
 summary: 在某些情况下，您可能需要在添加新存储节点后重新平衡经过纠删编码的数据。 
 ---
 = 添加存储节点后重新平衡经过纠删编码的数据
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

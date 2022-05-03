@@ -5,6 +5,7 @@ keywords: storagegrid, sg5600, storage node, storage appliance, raid, raid mode,
 summary: 如果您的 SG5660 包含 60 个驱动器，则可以将卷配置从其默认和建议设置动态磁盘池（ DDP\ ）更改为 RAID6 。您只能在部署 StorageGRID 设备存储节点之前更改此模式。 
 ---
 = 可选：更改为 RAID6 模式（仅限 SG5660 ）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

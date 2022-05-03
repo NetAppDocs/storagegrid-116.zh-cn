@@ -5,6 +5,7 @@ keywords: select object content, filter object content
 summary: 您可以使用 S3 SelectObjectContent 请求根据简单的 SQL 语句筛选 S3 对象的内容。 
 ---
 = SelectObjectContent
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

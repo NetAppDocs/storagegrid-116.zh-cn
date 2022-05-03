@@ -5,6 +5,7 @@ keywords: storagegrid, sg5600, storage node, storage appliance, automate, automa
 summary: 您可以自动安装和配置设备以及配置整个 StorageGRID 系统。 
 ---
 = 自动化设备安装和配置（ SG5600 ）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

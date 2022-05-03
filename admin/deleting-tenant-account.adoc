@@ -5,6 +5,7 @@ keywords: tenant, delete, remove tenant
 summary: 如果要永久删除租户对系统的访问权限，可以删除租户帐户。 
 ---
 = 删除租户帐户
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

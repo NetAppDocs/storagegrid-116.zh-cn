@@ -5,6 +5,7 @@ keywords: storagegrid, recover, appliance, appliance install
 summary: 要在设备存储节点上安装 StorageGRID ，请使用设备中提供的 StorageGRID 设备安装程序。 
 ---
 = 开始安装 StorageGRID 设备
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

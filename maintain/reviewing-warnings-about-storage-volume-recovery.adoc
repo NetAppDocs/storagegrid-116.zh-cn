@@ -5,6 +5,7 @@ keywords: storagegrid, recover, volume warning
 summary: 在恢复存储节点的故障存储卷之前，您必须查看以下警告。 
 ---
 = 查看有关存储卷恢复的警告
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

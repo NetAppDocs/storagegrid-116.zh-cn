@@ -5,6 +5,7 @@ keywords: how to use text reports
 summary: 文本报告以文本形式显示 NMS 服务已处理的属性数据值。根据您报告的时间段，会生成两种类型的报告：一周以下时段的原始文本报告和一周以上时段的聚合文本报告。 
 ---
 = 使用文本报告
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

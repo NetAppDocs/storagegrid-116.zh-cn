@@ -5,6 +5,7 @@ keywords: storagegrid, installation files, download
 summary: 在恢复 StorageGRID 网格节点之前，您必须下载软件并提取文件。 
 ---
 = 下载并提取 StorageGRID 安装文件
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

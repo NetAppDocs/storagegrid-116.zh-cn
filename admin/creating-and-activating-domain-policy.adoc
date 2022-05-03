@@ -5,6 +5,7 @@ keywords: domain policy for tsm, tivoli storage manager policy
 summary: 您必须创建一个域策略，然后将其激活，以配置 TSM 服务器以保存从归档节点发送的数据。 
 ---
 = 创建并激活域策略
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

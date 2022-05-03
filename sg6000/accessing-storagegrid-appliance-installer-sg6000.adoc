@@ -5,6 +5,7 @@ keywords: storagegrid, sg6000, storage node, storage appliance, appliance instal
 summary: 您必须访问 StorageGRID 设备安装程序以验证安装程序版本，并配置设备与以下三个 StorageGRID 网络之间的连接：网格网络，管理网络（可选）和客户端网络（可选）。 
 ---
 = 访问 StorageGRID 设备安装程序
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: audit client for cifs
 summary: 用于配置审核客户端的操作步骤 取决于身份验证方法： Windows 工作组或 Windows Active Directory \ （ AD\ ）。添加后，审核共享将自动启用为只读共享。 
 ---
 = 为 CIFS 配置审核客户端
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

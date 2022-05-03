@@ -5,6 +5,7 @@ keywords: storagegrid, sg5600, storage node, storage appliance, power on, power,
 summary: 打开机箱电源可为两个控制器供电。 
 ---
 = 打开电源（ SG5600 ）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

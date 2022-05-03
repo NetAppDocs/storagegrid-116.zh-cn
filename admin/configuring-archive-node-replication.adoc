@@ -5,6 +5,7 @@ keywords: archive node replication
 summary: 您可以为归档节点配置复制设置并禁用入站和出站复制，或者重置为关联警报跟踪的故障计数。 
 ---
 = 配置归档节点复制
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

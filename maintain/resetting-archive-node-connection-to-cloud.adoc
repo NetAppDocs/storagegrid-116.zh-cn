@@ -5,6 +5,7 @@ keywords: storagegrid, recover, archive node connection, reset archive node conn
 summary: 通过 S3 API 恢复以云为目标的归档节点后，您需要修改配置设置以重置连接。如果归档节点无法检索对象数据，则会触发出站复制状态 \ （ ORSU\ ）警报。 
 ---
 = 将归档节点连接重置为云
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

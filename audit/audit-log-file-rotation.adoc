@@ -5,6 +5,7 @@ keywords: storagegrid, audit, log file, audit.log, audit.log file, rotation, sav
 summary: 审核日志文件会保存到管理节点的 /var/local/audit/export 目录中。活动的审核日志文件名为 audit.log 。 
 ---
 = 审核日志文件轮换
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

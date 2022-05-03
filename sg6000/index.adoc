@@ -5,6 +5,7 @@ keywords: storagegrid, sg6000, storage node, storage appliance, overview, models
 summary: StorageGRID SG6000 设备是一种集成的存储和计算平台，可作为 StorageGRID 系统中的存储节点运行。这些设备可以在混合网格环境中使用，该环境将设备存储节点和虚拟 \ （基于软件的 \ ）存储节点结合在一起。 
 ---
 = SG6000 设备：概述
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: storagegrid, sg5700, storage node, storage appliance, SANtricity Syste
 summary: 您可以使用 SANtricity 系统管理器监控存储控制器，存储磁盘和存储控制器架中其他硬件组件的状态。此外，您还可以为 E 系列 AutoSupport 配置代理，使您能够在不使用管理端口的情况下从设备发送 AutoSupport 消息。 
 ---
 = 访问和配置 SANtricity System Manager （ SG5700 ）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

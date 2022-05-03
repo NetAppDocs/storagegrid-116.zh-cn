@@ -5,6 +5,7 @@ keywords: archive node, tsm, tape storage pool, tivoli storage manager
 summary: 归档节点将写入磁盘存储池。要将内容归档到磁带，必须配置磁盘存储池以将内容移动到磁带存储池。 
 ---
 = 定义 TSM 磁带和磁盘存储池
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

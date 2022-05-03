@@ -5,6 +5,7 @@ keywords: storage node, storage appliance, controller, storage controller, upgra
 summary: 对于当前使用 SANtricity OS 08.42.20.00 （ 11.42\ ）或更高版本的存储控制器，您必须使用网格管理器应用升级。 
 ---
 = 使用网格管理器升级存储控制器上的 SANtricity 操作系统
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

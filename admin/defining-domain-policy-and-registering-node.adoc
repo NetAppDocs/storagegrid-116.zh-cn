@@ -5,6 +5,7 @@ keywords: domain policy, tsm, tivoli storage manager
 summary: 您需要为从归档节点保存的数据定义一个使用 TSM 管理类的域策略，然后注册一个节点以使用此域策略。 
 ---
 = 定义域策略并注册节点
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

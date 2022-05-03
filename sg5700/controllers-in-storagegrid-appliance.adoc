@@ -5,6 +5,7 @@ keywords: storagegrid, sg5700, storage node, storage appliance, controllers, con
 summary: StorageGRID 设备的 SG5712 和 SG5760 型号都包括一个 E5700SG 控制器和一个 E2800 控制器。您应查看这些图表以了解控制器之间的差异。 
 ---
 = StorageGRID 设备中的控制器
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

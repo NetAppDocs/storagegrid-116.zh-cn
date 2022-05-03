@@ -5,6 +5,7 @@ keywords: storagegrid, sg6000, storage node, storage appliance, install, install
 summary: 您必须在机柜或机架中为 EF570 控制器架安装一组导轨，然后将阵列滑入导轨。 
 ---
 = SGF6024 ：将 24 个驱动器磁盘架安装到机柜或机架中
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

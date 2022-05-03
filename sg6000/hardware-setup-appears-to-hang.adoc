@@ -5,6 +5,7 @@ keywords: storagegrid, sg6000, storage node, storage appliance, troubleshoot, tr
 summary: 如果硬件故障或布线错误导致存储控制器或 SG6000-CN 控制器无法完成启动处理，则 StorageGRID 设备安装程序可能不可用。 
 ---
 = 硬件设置似乎挂起（ SG6000 ）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

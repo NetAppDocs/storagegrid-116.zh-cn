@@ -5,6 +5,7 @@ keywords: encryption, encrypting data, best practices
 summary: StorageGRID 提供了多种数据加密选项。您应查看可用的方法，以确定哪些方法符合数据保护要求。 
 ---
 = 查看 StorageGRID 加密方法
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

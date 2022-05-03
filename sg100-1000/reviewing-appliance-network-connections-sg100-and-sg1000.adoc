@@ -5,6 +5,7 @@ keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gat
 summary: 在安装 StorageGRID 设备之前，您应了解可以将哪些网络连接到此设备。 
 ---
 = 查看设备网络连接（ SG100 和 SG1000 ）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

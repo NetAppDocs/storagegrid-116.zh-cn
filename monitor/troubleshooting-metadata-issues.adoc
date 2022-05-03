@@ -5,6 +5,7 @@ keywords: how to troubleshoot metadata issues
 summary: 您可以执行多项任务来帮助确定元数据问题的根源。 
 ---
 = 对元数据问题进行故障排除
+:allow-uri-read: 
 :experimental: 
 :icons: font
 :imagesdir: ../media/

@@ -5,6 +5,7 @@ keywords: tsm configuration, tivoli storage manager, archive to tape
 summary: 在调整 TSM 服务器的大小并对其进行配置时，应应用一些最佳实践来优化它，以便与归档节点配合使用。 
 ---
 = 配置最佳实践
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

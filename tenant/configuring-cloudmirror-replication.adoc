@@ -5,6 +5,7 @@ keywords: how to configure CloudMirror replication, replication xml
 summary: CloudMirror 复制服务是三种 StorageGRID 平台服务之一。您可以使用 CloudMirror 复制将对象自动复制到外部 S3 存储分段。 
 ---
 = 配置 CloudMirror 复制
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

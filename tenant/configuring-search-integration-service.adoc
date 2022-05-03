@@ -5,6 +5,7 @@ keywords: how to configure search integration service
 summary: 每当创建，删除对象或更新其元数据或标记时，搜索集成服务都会将对象元数据发送到目标搜索索引。 
 ---
 = 配置搜索集成服务
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

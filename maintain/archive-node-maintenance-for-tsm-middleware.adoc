@@ -5,6 +5,7 @@ keywords: storagegrid, archive node, tsm, tsm middleware, middleware
 summary: 可以将归档节点配置为通过 TSM 中间件服务器锁定磁带或通过 S3 API 将云锁定。配置后，无法更改归档节点目标。 
 ---
 = TSM 中间件的归档节点维护
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: storagegrid, subnet list, grid network
 summary: 您可以使用更改 IP 工具在网格网络上添加或更改子网。 
 ---
 = 在网格网络上添加或更改子网列表
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

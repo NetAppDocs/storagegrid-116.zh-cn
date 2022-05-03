@@ -5,6 +5,7 @@ keywords: storagegrid, sg6000, storage node, storage appliance, automate, automa
 summary: 您可以使用包含配置信息的 JSON 文件自动配置设备。您可以使用 StorageGRID 设备安装程序上传文件。 
 ---
 = 使用 StorageGRID 设备安装程序自动配置设备
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

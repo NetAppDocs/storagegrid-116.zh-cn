@@ -5,6 +5,7 @@ keywords: storagegrid, audit, message, SPUT, S3 PUT
 summary: 当 S3 客户端发出 PUT 事务时，系统会请求创建新对象或存储分段。如果事务成功，服务器将发出此消息。 
 ---
 = SPUT ： S3 PUT
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

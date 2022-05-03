@@ -5,6 +5,7 @@ keywords: access audit logs, review audit logs, view audit logs
 summary: 审核消息由 StorageGRID 服务生成并存储在文本日志文件中。审核日志中特定于 API 的审核消息提供关键的安全性，操作和性能监控数据，可帮助您评估系统的运行状况。 
 ---
 = 访问和查看审核日志
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

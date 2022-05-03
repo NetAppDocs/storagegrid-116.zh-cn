@@ -5,6 +5,7 @@ keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gat
 summary: 找到控制器，以便执行硬件维护或升级。 
 ---
 = 在数据中心中找到控制器
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

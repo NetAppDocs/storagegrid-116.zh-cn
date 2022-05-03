@@ -5,6 +5,7 @@ keywords: software upgrade, hotfix, santricity
 summary: 您可以执行各种维护过程来使 StorageGRID 系统保持最新并确保其高效运行。网格管理器提供了一些工具和选项，可帮助您加快执行维护任务的过程。 
 ---
 = 执行维护
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

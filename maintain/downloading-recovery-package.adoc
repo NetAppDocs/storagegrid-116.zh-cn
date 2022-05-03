@@ -5,6 +5,7 @@ keywords: storagegrid, recovery package
 summary: 通过恢复包文件，您可以在发生故障时还原 StorageGRID 系统。 
 ---
 = 下载恢复包
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

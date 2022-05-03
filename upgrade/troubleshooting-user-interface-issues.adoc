@@ -5,6 +5,7 @@ keywords: grid manager, tenant manager, error, browser
 summary: 升级到新版本的 StorageGRID 软件后，您可能会看到网格管理器或租户管理器出现问题。 
 ---
 = 对用户界面问题进行故障排除
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

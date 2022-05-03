@@ -5,6 +5,7 @@ keywords: S3 REST API, S3 operations, GET bucket consistency request
 summary: 使用获取存储分段一致性请求，您可以确定应用于特定存储分段的一致性级别。 
 ---
 = 获取存储分段一致性请求
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

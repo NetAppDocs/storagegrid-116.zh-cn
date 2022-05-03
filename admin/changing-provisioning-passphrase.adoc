@@ -5,6 +5,7 @@ keywords: provisioning passphrase, change passphrase
 summary: 使用此操作步骤 更改 StorageGRID 配置密码短语。恢复，扩展和维护过程需要密码短语。下载恢复软件包备份时也需要使用密码短语，其中包括网格拓扑信息，网格节点控制台密码以及 StorageGRID 系统的加密密钥。 
 ---
 = 更改配置密码短语
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

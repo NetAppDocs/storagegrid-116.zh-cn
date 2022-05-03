@@ -5,6 +5,7 @@ keywords: load balancer service, how load balancing works
 summary: 负载平衡器服务将传入的网络连接从客户端应用程序分发到存储节点。要启用负载平衡，必须使用网格管理器配置负载平衡器端点。 
 ---
 = 负载平衡的工作原理—负载平衡器服务
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: fabricPool, DNS, domain name system, FQDN, fully qualified domain name
 summary: 配置高可用性组和负载平衡器端点后，您必须确保 ONTAP 系统的域名系统 \ （ DNS\ ）包含一条记录，用于将 StorageGRID 服务器名称 \ （完全限定域名 \ ）与 FabricPool 用于进行连接的 IP 地址相关联。 
 ---
 = 为 DNS 服务器配置 StorageGRID IP 地址
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

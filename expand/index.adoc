@@ -5,6 +5,7 @@ keywords: expand grid
 summary: 按照以下说明扩展 StorageGRID 系统的容量或功能，而不会中断系统操作。 
 ---
 = 扩展网格：概述
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

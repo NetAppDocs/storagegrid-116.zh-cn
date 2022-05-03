@@ -5,6 +5,7 @@ keywords: data migration, data capacity for migration
 summary: 在将大量数据迁移到 StorageGRID 系统之前，请确认 StorageGRID 系统具有处理预期卷所需的磁盘容量。 
 ---
 = 确认 StorageGRID 系统的容量
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

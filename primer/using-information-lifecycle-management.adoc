@@ -5,6 +5,7 @@ keywords: what is information lifecycle management, how to use ilm
 summary: 您可以使用信息生命周期管理 \ （ ILM ）来控制 StorageGRID 系统中所有对象的放置，持续时间和数据保护。ILM 规则可确定 StorageGRID 在一段时间内如何存储对象。您可以配置一个或多个 ILM 规则，然后将其添加到 ILM 策略中。 
 ---
 = 使用信息生命周期管理
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

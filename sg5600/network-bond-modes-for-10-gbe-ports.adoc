@@ -5,6 +5,7 @@ keywords: storagegrid, sg5600, storage node, storage appliance, Network bond, Ne
 summary: E5600SG 控制器上的 10-GbE 网络端口支持网格网络和客户端网络连接的固定端口绑定模式或聚合端口绑定模式。 
 ---
 = 10-GbE 端口的网络绑定模式
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

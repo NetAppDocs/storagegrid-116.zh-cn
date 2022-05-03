@@ -5,6 +5,7 @@ keywords: storagegrid, sg6000, storage node, storage appliance, sg6000-cn, contr
 summary: 拆下控制器盖板，以便检修内部组件以进行维护。 
 ---
 = 拆下 SG6000-CN 控制器盖板
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

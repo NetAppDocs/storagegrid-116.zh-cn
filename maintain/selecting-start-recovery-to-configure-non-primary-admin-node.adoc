@@ -5,6 +5,7 @@ keywords: storagegrid, recover, non-primary admin node
 summary: 更换非主管理节点后，您必须在网格管理器中选择启动恢复，以将新节点配置为故障节点的替代节点。 
 ---
 = 选择 Start Recovery 以配置非主管理节点
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

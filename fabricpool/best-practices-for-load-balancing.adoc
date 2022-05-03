@@ -5,6 +5,7 @@ keywords: fabricPool, load balancer, endpoint, load balancing, Layer 7, cloud ti
 summary: 在将 StorageGRID 附加为 FabricPool 云层之前，您必须使用 StorageGRID 网格管理器至少配置一个负载平衡器端点。 
 ---
 = 负载平衡最佳实践
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

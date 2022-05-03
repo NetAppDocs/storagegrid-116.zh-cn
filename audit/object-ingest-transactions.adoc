@@ -5,6 +5,7 @@ keywords: storagegrid, audit, message, messages, transaction, transactions, Obje
 summary: 您可以通过查找 API 专用的审核消息（ S3 或 Swift ）来确定审核日志中的客户端载入事务。 
 ---
 = 对象载入事务
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

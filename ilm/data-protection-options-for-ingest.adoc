@@ -5,6 +5,7 @@ keywords: ingest options, balanced ingest, strict ingest, dual-commit ingest
 summary: 创建 ILM 规则时，您可以指定以下三个选项之一来在载入时保护对象：双提交，平衡或严格。根据您的选择， StorageGRID 会创建临时副本并将对象排队，以便稍后进行 ILM 评估，或者使用同步放置并立即创建副本以满足 ILM 要求。 
 ---
 = 用于载入的数据保护选项
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

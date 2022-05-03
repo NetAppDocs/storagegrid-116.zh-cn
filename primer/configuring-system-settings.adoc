@@ -5,6 +5,7 @@ keywords: system settings, grid manager, configure, configuration, display optio
 summary: 您可以从网格管理器配置各种系统设置，以微调 StorageGRID 系统的运行。 
 ---
 = 配置系统设置
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

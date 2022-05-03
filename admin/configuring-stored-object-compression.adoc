@@ -5,6 +5,7 @@ keywords: stored object compression, compress stored objects, grid options
 summary: '您可以使用 " 压缩存储的对象 " 网格选项减小 StorageGRID 中存储的对象的大小，从而减少对象占用的存储。' 
 ---
 = 配置存储的对象压缩
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: storagegrid, sg6000, storage node, storage appliance, remove, removing
 summary: 从机柜或机架中卸下 SG6000-CN 控制器，以便检修顶盖或将控制器移至其他位置。 
 ---
 = 从机柜或机架中卸下 SG6000-CN 控制器
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

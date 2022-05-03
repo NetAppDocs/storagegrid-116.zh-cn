@@ -5,6 +5,7 @@ keywords: object metadata notification
 summary: 下表列出了启用搜索集成后发送到目标端点的 JSON 文档中包含的所有字段。 
 ---
 = 元数据通知中包含的对象元数据
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

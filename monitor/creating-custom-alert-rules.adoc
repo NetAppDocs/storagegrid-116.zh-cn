@@ -5,6 +5,7 @@ keywords: how to create custom alert rules
 summary: 您可以创建自定义警报规则来定义自己触发警报的条件。 
 ---
 = 创建自定义警报规则
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

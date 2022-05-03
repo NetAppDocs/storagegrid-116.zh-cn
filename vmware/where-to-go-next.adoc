@@ -5,6 +5,7 @@ keywords: after installation
 summary: 完成安装后，您必须执行一系列集成和配置步骤。某些步骤是必需的；其他步骤是可选的。 
 ---
 = 下一步行动
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

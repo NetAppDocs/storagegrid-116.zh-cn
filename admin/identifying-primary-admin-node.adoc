@@ -5,6 +5,7 @@ keywords: cmn service, primary admin node, configuration management node
 summary: 主管理节点托管 CMN 服务。某些维护过程只能使用主管理节点执行。 
 ---
 = 确定主管理节点
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: S3 REST API, S3 operations, GET bucket metadata notification configura
 summary: 使用获取分段元数据通知配置请求，您可以检索用于为各个分段配置搜索集成的配置 XML 。 
 ---
 = 获取存储分段元数据通知配置请求
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

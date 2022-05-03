@@ -5,6 +5,7 @@ keywords: how to use charts, how to use reports
 summary: 您可以使用图表和报告监控 StorageGRID 系统的状态并对问题进行故障排除。网格管理器中提供的图表和报告类型包括环形图（仅限信息板上），图形和文本报告。 
 ---
 = 使用图表和图形
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

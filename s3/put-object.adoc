@@ -5,6 +5,7 @@ keywords: object, add object, put, put object request
 summary: 您可以使用 S3 PUT 对象请求将对象添加到存储分段中。 
 ---
 = PUT 对象
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

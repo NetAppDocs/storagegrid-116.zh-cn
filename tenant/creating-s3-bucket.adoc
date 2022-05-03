@@ -5,6 +5,7 @@ keywords: how to create S3 bucket
 summary: 您可以使用租户管理器为对象数据创建 S3 分段。创建存储分段时，必须指定存储分段的名称和区域。如果为 StorageGRID 系统启用了全局 S3 对象锁定设置，则可以选择为存储分段启用 S3 对象锁定。 
 ---
 = 创建 S3 存储分段
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

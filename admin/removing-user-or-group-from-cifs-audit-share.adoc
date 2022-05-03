@@ -5,6 +5,7 @@ keywords: cifs audit client
 summary: 您不能删除允许访问审核共享的最后一个用户或组。 
 ---
 = 从 CIFS 审核共享中删除用户或组
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

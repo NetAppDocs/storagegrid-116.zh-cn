@@ -5,6 +5,7 @@ keywords: erasure coding scheme
 summary: 为 ILM 规则配置纠删编码配置文件时，您可以根据计划使用的存储池中的存储节点和站点数量选择可用的纠删编码方案。纠删编码方案可控制为每个对象创建的数据片段数量和奇偶校验片段数量。 
 ---
 = 什么是纠删编码方案
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

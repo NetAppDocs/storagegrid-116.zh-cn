@@ -5,6 +5,7 @@ keywords: active http connection benefits
 summary: 要直接连接到存储节点或网关节点上的 CLB 服务 \ （已弃用 \ ），您应将活动 HTTP 连接的持续时间限制为最多 10 分钟，即使 HTTP 连接持续执行事务也是如此。 
 ---
 = 活动 HTTP 连接的优势
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

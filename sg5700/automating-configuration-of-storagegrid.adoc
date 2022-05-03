@@ -5,6 +5,7 @@ keywords: storagegrid, sg5700, storage node, storage appliance, automate, automa
 summary: 部署网格节点后，您可以自动配置 StorageGRID 系统。 
 ---
 = 自动配置 StorageGRID
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

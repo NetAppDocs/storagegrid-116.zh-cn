@@ -5,6 +5,7 @@ keywords: how data migration affects operations
 summary: StorageGRID 系统旨在为对象存储和检索提供高效操作，并通过无缝创建对象数据和元数据的冗余副本提供出色的数据保护，防止数据丢失。 
 ---
 = 迁移对操作的影响
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

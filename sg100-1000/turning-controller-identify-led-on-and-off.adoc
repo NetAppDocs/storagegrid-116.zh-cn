@@ -5,6 +5,7 @@ keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gat
 summary: 可以打开控制器正面和背面的蓝色标识 LED ，以帮助在数据中心中找到设备。 
 ---
 = 打开和关闭控制器标识 LED
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

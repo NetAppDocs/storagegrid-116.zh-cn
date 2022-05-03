@@ -5,6 +5,7 @@ keywords: storagegrid, recover, replace failed node, services appliance
 summary: 您可以使用 SG100 或 SG1000 服务设备恢复出现故障的网关节点，出现故障的非主管理节点或 VMware 上托管的主管理节点， Linux 主机或服务设备发生故障。此操作步骤 是网格节点恢复操作步骤 的一个步骤。 
 ---
 = 将故障节点更换为服务设备
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

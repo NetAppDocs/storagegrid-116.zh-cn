@@ -5,6 +5,7 @@ keywords: storagegrid, sg5600, storage node, storage appliance, install, informa
 summary: 在安装和配置 StorageGRID 设备时，您必须做出决策并收集有关以太网交换机端口， IP 地址以及端口和网络绑定模式的信息。 
 ---
 = 收集安装信息（ SG5600 ）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

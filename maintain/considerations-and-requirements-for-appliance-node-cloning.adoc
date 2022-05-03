@@ -5,6 +5,7 @@ keywords: storagegrid, clone appliance node, cloning appliance node
 summary: 在克隆设备节点之前，您必须了解注意事项和要求。 
 ---
 = 设备节点克隆的注意事项和要求
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

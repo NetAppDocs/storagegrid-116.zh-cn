@@ -5,6 +5,7 @@ keywords: logs
 summary: 您可以使用 StorageGRID 日志对问题进行故障排除。 
 ---
 = StorageGRID 软件日志
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

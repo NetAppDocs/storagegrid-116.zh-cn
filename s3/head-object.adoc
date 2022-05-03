@@ -5,6 +5,7 @@ keywords: head object
 summary: 您可以使用 S3 head Object 请求从对象检索元数据，而无需返回对象本身。 
 ---
 = HEAD 对象
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

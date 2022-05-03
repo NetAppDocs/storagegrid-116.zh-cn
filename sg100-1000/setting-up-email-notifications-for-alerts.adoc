@@ -5,6 +5,7 @@ keywords: storagegrid, sg100, sg1000, service appliance, services appliance, gat
 summary: 如果您希望在发生警报时发送电子邮件通知，则必须使用 BMC 界面配置 SMTP 设置，用户， LAN 目标，警报策略和事件筛选器。 
 ---
 = 为警报设置电子邮件通知
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: storagegrid, sg6000, storage node, storage appliance, BMC, baseboard m
 summary: 您可以使用 BMC 管理端口的 DHCP 或静态 IP 地址访问 SG6000-CN 控制器上的 BMC 接口。 
 ---
 = 访问 BMC 界面
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

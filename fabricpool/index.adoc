@@ -5,6 +5,7 @@ keywords: how to configure storagegrid for fabricpool, using fabricpool with sto
 summary: 如果您使用的是 NetApp ONTAP 软件，则可以使用 NetApp FabricPool 将非活动或冷数据分层到 NetApp StorageGRID 对象存储系统。 
 ---
 = Configure StorageGRID for FabricPool ：概述
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

@@ -5,6 +5,7 @@ keywords: s3 connection, swift connection, connect to storagegrid
 summary: 作为网格管理员，您可以管理控制 S3 和 Swift 租户如何将客户端应用程序连接到 StorageGRID 系统以存储和检索数据的配置选项。有多种不同的选项可满足不同的客户端和租户要求。 
 ---
 = 关于 S3 和 Swift 客户端连接
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

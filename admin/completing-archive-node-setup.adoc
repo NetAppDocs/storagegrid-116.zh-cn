@@ -5,6 +5,7 @@ keywords: archive node setup
 summary: 完成安装过程后，归档节点无法正常运行。在 StorageGRID 系统将对象保存到 TSM 归档节点之前，您必须完成 TSM 服务器的安装和配置，并配置归档节点以与 TSM 服务器进行通信。 
 ---
 = 完成归档节点设置
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

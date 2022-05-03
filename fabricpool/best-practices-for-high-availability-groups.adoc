@@ -5,6 +5,7 @@ keywords: fabricPool, high availability group, HA group, active-active, active-b
 summary: 在将 StorageGRID 附加为 FabricPool 云层之前，您应使用 StorageGRID 网格管理器配置高可用性 \ （ HA\ ）组。 
 ---
 = 高可用性组的最佳实践
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

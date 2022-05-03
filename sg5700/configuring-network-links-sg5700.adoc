@@ -5,6 +5,7 @@ keywords: storagegrid, sg5700, storage node, storage appliance, links, network l
 summary: 您可以为用于将设备连接到网格网络，客户端网络和管理网络的端口配置网络链路。您可以设置链路速度以及端口和网络绑定模式。 
 ---
 = 配置网络链路（ SG5700 ）
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

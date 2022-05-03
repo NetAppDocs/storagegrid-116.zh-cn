@@ -5,6 +5,7 @@ keywords: admin proxy, autosupport, non-transparent proxy
 summary: 如果使用 HTTP 或 HTTPS 发送 AutoSupport 消息，则可以在管理节点和技术支持 \ （ AutoSupport ）之间配置非透明代理服务器。 
 ---
 = 配置管理员代理设置
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

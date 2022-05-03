@@ -5,6 +5,7 @@ keywords: storagegrid, recover, system drive failure
 summary: 如果基于软件的存储节点上的系统驱动器发生故障，则此存储节点不可用于 StorageGRID 系统。您必须完成一组特定任务才能从系统驱动器故障中恢复。 
 ---
 = 从系统驱动器故障中恢复
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 

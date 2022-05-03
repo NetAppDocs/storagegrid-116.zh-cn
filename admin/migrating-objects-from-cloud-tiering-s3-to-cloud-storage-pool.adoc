@@ -5,6 +5,7 @@ keywords: cloud tiering
 summary: 如果您当前正在使用 Cloud Tiering - Simple Storage Service \ （ S3\ ）功能将对象数据分层到 S3 存储分段，请考虑将对象迁移到云存储池。云存储池提供了一种可扩展的方法，可利用 StorageGRID 系统中的所有存储节点。 
 ---
 = 将对象从 Cloud Tiering - S3 迁移到云存储池
+:allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
