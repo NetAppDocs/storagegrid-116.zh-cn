@@ -29,6 +29,7 @@ IMPORTANT: 请勿一次升级多个 StorageGRID 设备上的驱动器固件。�
 
 
 .步骤
+. 确认此设备已位于中 xref:placing-appliance-into-maintenance-mode.adoc[维护模式]。
 . 使用以下方法之一访问 SANtricity System Manager ：
 +
 ** 使用 StorageGRID 设备安装程序并选择 * 高级 * > * SANtricity 系统管理器 *

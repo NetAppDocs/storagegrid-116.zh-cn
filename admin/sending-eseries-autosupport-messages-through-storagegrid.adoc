@@ -19,7 +19,7 @@ summary: 您可以通过 StorageGRID 管理节点而不是存储设备管理端�
 
 
 
-NOTE: 要使用网格管理器访问 SANtricity 系统管理器，您必须具有 SANtricity 固件 8.70 或更高版本。
+NOTE: 要使用网格管理器访问SANtricity 系统管理器、您必须具有SANtricity 固件8.70 (11.7)或更高版本。
 
 E 系列 AutoSupport 消息包含存储硬件的详细信息，比 StorageGRID 系统发送的其他 AutoSupport 消息更具体。
 

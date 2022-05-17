@@ -15,7 +15,7 @@ summary: 如果无法使用网格管理器升级 SANtricity 操作系统软件�
 
 .您需要什么？ #8217 ；将需要什么
 * 您已查阅 NetApp 互操作性表工具（ IMT ）以确认用于升级的 SANtricity 操作系统版本与您的设备兼容。
-* 如果不使用网格管理器，则必须将 E5600SG 控制器置于维护模式。将控制器置于维护模式会中断与 E2700 控制器的连接。在更改链路配置之前，您必须先执行此操作 xref:placing-appliance-into-maintenance-mode.adoc[将 E5600SG 控制器置于维护模式]。
+* 您必须将E5600控制器置于中 xref:placing-appliance-into-maintenance-mode.adoc[维护模式] 如果您不使用网格管理器。将控制器置于维护模式会中断与 E2700 控制器的连接。
 +
 
 NOTE: 在极少数情况下，将 StorageGRID 设备置于维护模式可能会使该设备无法进行远程访问。
@@ -28,6 +28,7 @@ NOTE: 在极少数情况下，将 StorageGRID 设备置于维护模式可能会�
 IMPORTANT: 一次升级多个 StorageGRID 设备可能会导致发生原因 数据不可用，具体取决于您的部署模式和 ILM 策略。
 
 .步骤
+. 确认设备已进入 xref:placing-appliance-into-maintenance-mode.adoc[维护模式]。
 . 从服务笔记本电脑访问 SANtricity 存储管理器并登录。
 . 将新的 SANtricity OS 软件文件和 NVSRAM 文件下载到管理客户端。
 +

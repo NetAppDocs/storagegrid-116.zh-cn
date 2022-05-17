@@ -90,10 +90,7 @@ Eth2
 要添加中继或访问接口，请参见以下内容：
 
 * * VMware （安装节点后） * ： xref:../maintain/vmware-adding-trunk-or-access-interfaces-to-node.adoc[VMware ：向节点添加中继或访问接口]
-+
-** * RHEL 或 CentOS （安装节点之前） * ： xref:../rhel/creating-node-configuration-files.adoc[创建节点配置文件]
-** * Ubuntu 或 Debian （安装节点之前） * ： xref:../ubuntu/creating-node-configuration-files.adoc[创建节点配置文件]
-** * RHEL ， CentOS ， Ubuntu 或 Debian （安装节点后） * ： xref:../maintain/linux-adding-trunk-or-access-interfaces-to-node.adoc[Linux ：向节点添加中继或访问接口]
-
-
+* * RHEL 或 CentOS （安装节点之前） * ： xref:../rhel/creating-node-configuration-files.adoc[创建节点配置文件]
+* * Ubuntu 或 Debian （安装节点之前） * ： xref:../ubuntu/creating-node-configuration-files.adoc[创建节点配置文件]
+* * RHEL ， CentOS ， Ubuntu 或 Debian （安装节点后） * ： xref:../maintain/linux-adding-trunk-or-access-interfaces-to-node.adoc[Linux ：向节点添加中继或访问接口]
 

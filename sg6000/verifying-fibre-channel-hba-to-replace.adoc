@@ -34,7 +34,7 @@ image::../media/nodes_page_hardware_tab_for_appliance_verify_HBA.png[光纤通�
 
 +
 ** 如果未显示 StorageGRID 设备部分，则选定节点不是 StorageGRID 设备。从树视图中选择其他节点。
-** 如果设备型号不是 SG6060 ，请从树视图中选择其他节点。
+** 如果设备型号不是SG6060或SG6060X、请从树视图中选择其他节点。
 ** 如果序列号不匹配，请从树视图中选择其他节点。
 
 

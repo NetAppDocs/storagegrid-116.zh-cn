@@ -34,6 +34,7 @@ NOTE: 维护模式会中断与存储控制器的连接，停止所有 I/O 活动
 IMPORTANT: 请勿一次升级多个 StorageGRID 设备上的驱动器固件。这样做可能会导致发生原因 数据不可用，具体取决于您的部署模式和 ILM 策略。
 
 .步骤
+. 确认此设备已位于中 xref:placing-appliance-into-maintenance-mode.adoc[维护模式]。
 . 打开 Web 浏览器，然后输入 IP 地址作为 SANtricity 存储管理器的 URL ： + ` * https://_E2700_Controller_IP_*`
 . 如果需要，输入 SANtricity Storage Manager 管理员用户名和密码。
 . 在 SANtricity 企业管理中，选择 * 设备 * 选项卡。

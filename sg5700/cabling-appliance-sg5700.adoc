@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storagegrid, sg5700, storage node, storage appliance, cabling, wiring, connecting, cable, wire, connect 
 summary: 您必须将两个控制器彼此连接，连接每个控制器上的管理端口，并将 E5700SG 控制器上的 10/25/GbE 端口连接到网格网络和适用于 StorageGRID 的可选客户端网络。 
 ---
-= 缆线设备（ SG5700 ）
+= 缆线设备(SG5700系列)
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
@@ -33,9 +33,15 @@ summary: 您必须将两个控制器彼此连接，连接每个控制器上的�
 
 CAUTION: * 受到激光辐射的风险 * —请勿拆卸或卸下 SFP 收发器的任何部件。您可能受到激光辐射的影响。
 
-此图显示了 SG5760 中的两个控制器，其中 E2800 控制器位于顶部， E5700SG 控制器位于底部。在 SG5712 中，从背面查看时， E2800 控制器位于 E5700SG 控制器的左侧。
+图中显示了SG5760和SG5760X中的两个控制器、其中顶部是E2800系列存储控制器、底部是E5700SG控制器。在SG5712和SG5712X中、从背面看、E2800系列存储控制器位于E5700SG控制器的左侧。
+
+* SG5760连接*
 
 image::../media/sg5760_connections.gif[SG5760 设备上的连接]
+
+* SG5760X连接*
+
+image::../media/sg5760X_connections.png[SG5760X设备上的连接]
 
 |===
 |  | Port | 端口类型 | 功能 
@@ -55,7 +61,7 @@ image::../media/sg5760_connections.gif[SG5760 设备上的连接]
  a| 
 2.
  a| 
-E2800 控制器上的管理端口 1
+E2800系列控制器上的管理端口1
  a| 
 1-GbE （ RJ-45 ）
  a| 
@@ -66,7 +72,7 @@ E2800 控制器上的管理端口 1
  a| 
 2.
  a| 
-E2800 控制器上的管理端口 2
+E2800系列控制器上的管理端口2
  a| 
 1-GbE （ RJ-45 ）
  a| 

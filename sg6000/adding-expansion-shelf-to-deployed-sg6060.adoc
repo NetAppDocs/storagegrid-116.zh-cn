@@ -11,7 +11,7 @@ summary: 要增加存储容量，您可以向 StorageGRID 系统中部署的 SG6
 
 
 [role="lead"]
-要增加存储容量，您可以向已部署在 StorageGRID 系统中的 SG6060 添加一个或两个扩展架。
+要增加存储容量、您可以向StorageGRID 系统中已部署的SG6060或SG6060X添加一个或两个扩展架。
 
 .您需要什么？ #8217 ；将需要什么
 * 您必须具有配置密码短语。
@@ -26,27 +26,31 @@ xref:locating-controller-in-data-center.adoc[在数据中心中找到控制器]
 要添加扩展架，请执行以下高级步骤：
 
 * 在机柜或机架中安装硬件。
-* 将 SG6060 置于维护模式。
+* 将SG6060或SG6060X置于维护模式。
 * 将扩展架连接到 E2860 控制器架或其他扩展架。
 * 使用 StorageGRID 设备安装程序启动扩展
 * 请稍候，直到配置完新卷为止。
 
 
-每个设备节点为一个或两个扩展架完成操作步骤 所需时间应至少为一小时。为了最大限度地减少停机时间，以下步骤将指导您在将 SG6060 置于维护模式之前安装新的扩展架和驱动器。每个设备节点的其余步骤大约需要 20 到 30 分钟。
+每个设备节点为一个或两个扩展架完成操作步骤 所需时间应至少为一小时。为了最大限度地减少停机时间、以下步骤将指导您在将SG6060或SG6060X置于维护模式之前安装新的扩展架和驱动器。每个设备节点的其余步骤大约需要 20 到 30 分钟。
 
 .步骤
 . 按照说明将 60 个驱动器磁盘架安装到机柜或机架中。
 +
-xref:sg6060-installing-60-drive-shelves-into-cabinet-or-rack.adoc[SG6060 ：将 60 个驱动器磁盘架安装到机柜或机架中]
+xref:sg6060-installing-60-drive-shelves-into-cabinet-or-rack.adoc[SG6060和SG6060X：将60个驱动器磁盘架安装到机柜或机架中]
 
 . 按照说明安装驱动器。
 +
-xref:sg6060-installing-drives.adoc[SG6060 ：安装驱动器]
+xref:sg6060-installing-drives.adoc[SG6060和SG6060X：安装驱动器]
 
 . 在网格管理器中， xref:placing-appliance-into-maintenance-mode.adoc[将 SG6000-CN 控制器置于维护模式]。
 . 将每个扩展架连接到 E2860 控制器架，如图所示。
 +
 此图显示了两个扩展架。如果只有一个，请将 IOM A 连接到控制器 A ，并将 IOM B 连接到控制器 B
+
++
+
+NOTE: 图中显示了SG6060。SG6060X的扩展布线相同。
 
 +
 image::../media/expansion_shelves_connections_sg6060.png[SG6060 扩展架连接]
@@ -208,10 +212,10 @@ image::../media/appliance_installer_reboot_complete.png[重新启动完成]
 
 
 
-xref:unpacking-boxes-sg6000.adoc[打开包装箱（ SG6000 ）]
+xref:unpacking-boxes-sg6000.adoc[打开包装箱(SG6000和SG6060X)]
 
-xref:sg6060-installing-60-drive-shelves-into-cabinet-or-rack.adoc[SG6060 ：将 60 个驱动器磁盘架安装到机柜或机架中]
+xref:sg6060-installing-60-drive-shelves-into-cabinet-or-rack.adoc[SG6060和SG6060X：将60个驱动器磁盘架安装到机柜或机架中]
 
-xref:sg6060-installing-drives.adoc[SG6060 ：安装驱动器]
+xref:sg6060-installing-drives.adoc[SG6060和SG6060X：安装驱动器]
 
 xref:../monitor/index.adoc[监控和故障排除]

@@ -15,7 +15,7 @@ summary: 安装 StorageGRID 设备之前，请打开所有包装箱的包装，�
 
 
 
-== SG6060
+== SG6060和SG6060X
 
 * * SG6000-CN 控制器 *
 +
@@ -49,7 +49,7 @@ image::../media/back_brackets_table_size.gif[SG5760 的背面支架和锁紧螺�
 
 
 
-== SG6060 扩展架
+== SG6060和SG6060X扩展架
 
 * * 未安装驱动器的扩展架 *
 +
@@ -126,7 +126,7 @@ image::../media/fc_cable_and_sfp.gif[光缆和 SFP]
 +
 四个 SFP+ 收发器，支持 16 Gb/ 秒 FC
 
-* * 可选：两根 SAS 缆线用于连接每个 SG6060 扩展架 *
+* *可选：两根SAS缆线用于连接每个SG6060或SG60X扩展架*
 +
 image::../media/sas_cable.gif[SAS 缆线]
 

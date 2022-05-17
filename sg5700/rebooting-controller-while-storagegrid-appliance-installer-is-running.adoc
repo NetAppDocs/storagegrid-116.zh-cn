@@ -24,7 +24,7 @@ summary: 在 StorageGRID 设备安装程序运行期间，您可能需要重新�
 image::../media/reboot_controller_from_maintenance_mode.png[在维护模式下重新启动控制器]
 
 +
-SG6000-CN 控制器将重新启动。
+控制器将重新启动。
 
 
 

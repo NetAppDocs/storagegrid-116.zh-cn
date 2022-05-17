@@ -4,14 +4,22 @@ sidebar: sidebar
 keywords: storagegrid, sg5700, storage node, storage appliance, controllers, controller, e5700sg, e2800, ports, port, connectors, connector 
 summary: StorageGRID 设备的 SG5712 和 SG5760 型号都包括一个 E5700SG 控制器和一个 E2800 控制器。您应查看这些图表以了解控制器之间的差异。 
 ---
-= StorageGRID 设备中的控制器
+= StorageGRID 5700设备中的控制器
 :allow-uri-read: 
 :icons: font
 :imagesdir: ../media/
 
 
 [role="lead"]
-StorageGRID 设备的 SG5712 和 SG5760 型号都包括一个 E5700SG 控制器和一个 E2800 控制器。您应查看这些图表以了解控制器之间的差异。
+StorageGRID 设备的12驱动器SG5712和SG5712X以及60驱动器SG5760和SG5760X型号都包括一个E5700SG计算控制器和一个E系列E2800存储控制器。
+
+* SG5712和SG5760使用E2800A控制器。
+* SG5712X和SG5760X使用E2800B控制器。
++
+ The E2800A and E2800B controllers are identical in specification and function except for the location of the interconnect ports.
+
+
+您应查看这些图表以了解控制器之间的差异。
 
 
 
@@ -108,7 +116,11 @@ image::../media/e5700sg_controller_with_callouts.gif[E5700SG 控制器上的连�
 |===
 
 
-== E2800 控制器
+== E2800系列存储控制器
+
+SG5700设备中使用了两个版本的E2800存储控制器：E2800A和E2800B。E2800A没有HIC、E2800B有四端口HIC。这两个控制器版本的规格和功能相同、但互连端口的位置除外。
+
+E2800系列存储控制器具有以下规格：
 
 * 用作设备的存储控制器。
 * 管理驱动器上的数据存储。
@@ -118,9 +130,15 @@ image::../media/e5700sg_controller_with_callouts.gif[E5700SG 控制器上的连�
 * 连接到 E5700SG 控制器并作为目标运行。
 
 
-此图显示了 E2800 控制器背面的连接器。
+下图显示了E2800A和E2800B控制器背面的连接器。
 
-image::../media/e2800_controller_with_callouts.gif[E2800 控制器上的连接器]
+* E2800A*背面的连接器
+
+image::../media/e2800_controller_with_callouts.gif[E2800A控制器上的连接器]
+
+* E2800B*背面的连接器
+
+image::../media/e2800B_controller_with_callouts.gif[E2800B控制器上的连接器]
 
 |===
 |  | Port | Type | 使用 ... 
@@ -180,6 +198,6 @@ image::../media/e2800_controller_with_callouts.gif[E2800 控制器上的连接�
  a| 
 12 Gb/ 秒 SAS
  a| 
-未使用。StorageGRID 设备不支持扩展驱动器架。
+未使用。
 
 |===

@@ -21,7 +21,7 @@ summary: 您可能需要访问存储控制器上的 SANtricity 系统管理器�
 
 
 
-NOTE: 要使用网格管理器或 StorageGRID 设备安装程序访问 SANtricity 系统管理器，您必须安装 SANtricity 固件 8.70 或更高版本。您可以使用 StorageGRID 设备安装程序并选择 * 帮助 * > * 关于 * 来检查固件版本。
+NOTE: 您必须具有SANtricity 固件8.70 (11.70)或更高版本、才能使用网格管理器或StorageGRID 设备安装程序访问SANtricity 系统管理器。您可以使用 StorageGRID 设备安装程序并选择 * 帮助 * > * 关于 * 来检查固件版本。
 
 
 IMPORTANT: 从网格管理器或设备安装程序访问 SANtricity 系统管理器通常仅用于监控硬件和配置 E 系列 AutoSupport 。SANtricity System Manager 中的许多功能和操作（例如升级固件）不适用于监控 StorageGRID 设备。为避免出现问题，请始终按照适用于您的设备的硬件安装和维护说明进行操作。
@@ -64,18 +64,13 @@ http://mysupport.netapp.com/info/web/ECMP1658252.html["NetApp E 系列系统文�
 
 
 .步骤
-. 执行以下操作之一：
-+
-** 使用 StorageGRID 设备安装程序并选择 * 高级 * > * SANtricity 系统管理器 *
-** 使用网格管理器并选择 * 节点 * > ` * 设备存储节点 _*` > * SANtricity 系统管理器 *
+. 使用 StorageGRID 设备安装程序并选择 * 高级 * > * SANtricity 系统管理器 *
 +
 
-NOTE: 如果这些选项不可用或未显示登录页面，则必须使用存储控制器的 IP 地址。浏览到存储控制器 IP ： + ` * https://_Storage_Controller_IP_*` 以访问 SANtricity System Manager
+NOTE: 如果StorageGRID 设备安装程序不可用或未显示登录页面、则必须使用存储控制器的IP地址。浏览到存储控制器 IP ： + ` * https://_Storage_Controller_IP_*` 以访问 SANtricity System Manager
 
 +
 此时将显示 SANtricity 系统管理器的登录页面。
-
-
 
 . 设置或输入管理员密码。
 +

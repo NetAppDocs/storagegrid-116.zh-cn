@@ -37,7 +37,7 @@ NOTE: 此操作步骤 会自动将 NVSRAM 升级到与 SANtricity 操作系统�
 请务必为存储控制器选择 SANtricity 操作系统版本。
 
 +
-https://mysupport.netapp.com/site/products/all/details/eseries-santricityos/downloads-tab["NetApp 下载： SANtricity OS"^]
+https://mysupport.netapp.com/site/products/all/details/storagegrid-appliance/downloads-tab["NetApp下载：StorageGRID 设备"^]
 
 . 选择 * 维护 * > * 系统 * > * 软件更新 * 。
 +

@@ -39,7 +39,7 @@ IMPORTANT: To prevent degraded performance, do not twist, fold, pinch, or step o
 
 . 松开控制器前面板上的两个固定螺钉。
 +
-image::../media/sg6060_rack_retaining_screws.png[SG6060 机架固定螺钉]
+image::../media/sg6060_rack_retaining_screws.png[SG6060和SG6060X机架固定螺钉]
 
 . 将 SG6000-CN 控制器向前滑出机架，直到安装导轨完全展开，并且您可以听到两侧的闩锁卡嗒声。
 +

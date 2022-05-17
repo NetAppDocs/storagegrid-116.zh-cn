@@ -40,9 +40,9 @@ entries:
   entries:
   - title: 注册硬件
     url: "/sg6000/registering-hardware.html"
-  - title: SG6060 ：将 60 个驱动器磁盘架安装到机柜或机架中
+  - title: SG6060和SG6060X：将60个驱动器磁盘架安装到机柜或机架中
     url: "/sg6000/sg6060-installing-60-drive-shelves-into-cabinet-or-rack.html"
-  - title: SG6060 ：安装驱动器
+  - title: SG6060和SG6060X：安装驱动器
     url: "/sg6000/sg6060-installing-drives.html"
   - title: SGF6024 ：将 24 个驱动器磁盘架安装到机柜或机架中
     url: "/sg6000/sgf6024-installing-24-drive-shelves-into-cabinet-or-rack.html"
@@ -50,13 +50,13 @@ entries:
     url: "/sg6000/sg6000-cn-installing-into-cabinet-or-rack.html"
   - title: 缆线设备（ SG6000 ）
     url: "/sg6000/cabling-appliance-sg6000.html"
-  - title: SG6060 ：使用缆线连接可选扩展架
+  - title: SG6060和SG6060X：使用缆线连接可选扩展架
     url: "/sg6000/sg6060-cabling-optional-expansion-shelves.html"
   - title: 连接电源线并接通电源（ SG6000 ）
     url: "/sg6000/connecting-power-cords-and-applying-power-sg6000.html"
   - title: 查看 SG6000-CN 控制器上的状态指示灯和按钮
     url: "/sg6000/viewing-status-indicators-and-buttons-on-sg6000-cn-controller.html"
-  - title: 查看 SG6000 存储控制器的启动状态代码
+  - title: 查看SG6000和SG6060X存储控制器的启动状态代码
     url: "/sg6000/viewing-boot-up-status-codes-for-sg6000-storage-controllers.html"
 - title: 配置硬件（ SG6000 ）
   url: "/sg6000/configuring-hardware.html"

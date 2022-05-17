@@ -30,7 +30,7 @@ xref:../admin/index.adoc[管理 StorageGRID]
 要通过网格管理器访问 SANtricity 系统管理器，您必须具有存储设备管理员权限或 root 访问权限。
 
 
-NOTE: 要使用网格管理器访问 SANtricity 系统管理器，您必须具有 SANtricity 固件 8.70 或更高版本。
+NOTE: 要使用网格管理器访问SANtricity 系统管理器、您必须具有SANtricity 固件8.70 (11.70)或更高版本。
 
 
 IMPORTANT: 从网格管理器访问 SANtricity 系统管理器通常仅用于监控设备硬件和配置 E 系列 AutoSupport 。SANtricity System Manager 中的许多功能和操作（例如升级固件）不适用于监控 StorageGRID 设备。为避免出现问题，请始终按照适用于您的设备的硬件安装和维护说明进行操作。

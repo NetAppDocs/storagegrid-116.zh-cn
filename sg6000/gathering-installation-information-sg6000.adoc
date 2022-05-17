@@ -19,9 +19,9 @@ summary: 在安装和配置 StorageGRID 设备时，您必须做出决策并收�
 
 == 连接到存储控制器上的 SANtricity System Manager 所需的信息
 
-您必须将设备中的两个存储控制器（ E2800 控制器或 EF570 控制器）连接到要用于 SANtricity System Manager 的管理网络。控制器位于每个设备中，如下所示：
+您必须将设备中的两个存储控制器(E2800系列控制器或EF570控制器)连接到要用于SANtricity System Manager的管理网络。控制器位于每个设备中，如下所示：
 
-* SG6060 ：控制器 A 位于顶部，控制器 B 位于底部。
+* SG6060和SG6060X：控制器A位于顶部、控制器B位于底部。
 * SGF6024 ：控制器 A 位于左侧，控制器 B 位于右侧。
 
 

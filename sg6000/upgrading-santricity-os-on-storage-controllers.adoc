@@ -30,6 +30,6 @@ IMPORTANT: 升级存储设备的 SANtricity 操作系统时，必须按照 Stora
 
 https://mysupport.netapp.com/matrix["NetApp 互操作性表工具"^]
 
-https://mysupport.netapp.com/site/products/all/details/eseries-santricityos/downloads-tab["NetApp 下载： SANtricity OS"^]
+https://mysupport.netapp.com/site/products/all/details/storagegrid-appliance/downloads-tab["NetApp下载：StorageGRID 设备"^]
 
 xref:../monitor/index.adoc[监控和故障排除]
