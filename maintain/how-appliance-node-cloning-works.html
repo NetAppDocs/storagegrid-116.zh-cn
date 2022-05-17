@@ -5268,6 +5268,8 @@
 
 
 
+
+
           
         </li>
       </ul>
@@ -8710,9 +8712,9 @@
       <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/storagegrid-116/sg6000/registering-hardware.html">
         注册硬件
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/storagegrid-116/sg6000/sg6060-installing-60-drive-shelves-into-cabinet-or-rack.html">
-        SG6060 ：将 60 个驱动器磁盘架安装到机柜或机架中
+        SG6060和SG6060X：将60个驱动器磁盘架安装到机柜或机架中
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/storagegrid-116/sg6000/sg6060-installing-drives.html">
-        SG6060 ：安装驱动器
+        SG6060和SG6060X：安装驱动器
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/storagegrid-116/sg6000/sgf6024-installing-24-drive-shelves-into-cabinet-or-rack.html">
         SGF6024 ：将 24 个驱动器磁盘架安装到机柜或机架中
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/storagegrid-116/sg6000/sg6000-cn-installing-into-cabinet-or-rack.html">
@@ -8720,13 +8722,13 @@
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/storagegrid-116/sg6000/cabling-appliance-sg6000.html">
         缆线设备（ SG6000 ）
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/storagegrid-116/sg6000/sg6060-cabling-optional-expansion-shelves.html">
-        SG6060 ：使用缆线连接可选扩展架
+        SG6060和SG6060X：使用缆线连接可选扩展架
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/storagegrid-116/sg6000/connecting-power-cords-and-applying-power-sg6000.html">
         连接电源线并接通电源（ SG6000 ）
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/storagegrid-116/sg6000/viewing-status-indicators-and-buttons-on-sg6000-cn-controller.html">
         查看 SG6000-CN 控制器上的状态指示灯和按钮
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/storagegrid-116/sg6000/viewing-boot-up-status-codes-for-sg6000-storage-controllers.html">
-        查看 SG6000 存储控制器的启动状态代码
+        查看SG6000和SG6060X存储控制器的启动状态代码
       </a></li></ul></li><li class="subfolders "><a href="/zh-cn/storagegrid-116/sg6000/configuring-hardware.html">
         <div class="na-navbar-padding"> 配置硬件（ SG6000 ）</div>
       </a>
@@ -10067,13 +10069,15 @@
       </a>
       <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/storagegrid-116/tenant/using-identity-federation.html">
         使用身份联合
-      </a></li><li class="subfolders "><a href="/zh-cn/storagegrid-116/tenant/managing-groups.html">
+      </a></li><li class="subfolders "><a href="#">
         <div class="na-navbar-padding"> 管理组</div>
       </a>
       <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/storagegrid-116/tenant/creating-groups-for-s3-tenant.html">
         为 S3 租户创建组
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/storagegrid-116/tenant/creating-groups-for-swift-tenant.html">
         为 Swift 租户创建组
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/storagegrid-116/tenant/tenant-management-permissions.html">
+        租户管理权限
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/storagegrid-116/tenant/viewing-and-editing-group-details.html">
         查看和编辑组详细信息
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/storagegrid-116/tenant/adding-users-to-local-group.html">
@@ -11191,7 +11195,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-05-03 06:51:19 +0000">05/03/2022</time>
+    <time datetime="2022-05-17 18:37:51 +0000">05/17/2022</time>
     
   
 
@@ -11286,10 +11290,10 @@
 <li>
 <p>如果由于安装了固态驱动器（ SSD ），目标存储设备中安装的标准驱动器数量小于源节点中的驱动器数量，则目标设备中标准驱动器的整体存储容量（以 TB 为单位） 必须满足或超过源存储节点中所有驱动器的总功能驱动器容量。</p>
 <div class="paragraph">
-<p>例如，在将包含 60 个驱动器的 SG5660 源存储节点设备克隆到包含 58 个标准驱动器的 SG6060 目标设备时，应在克隆之前在 SG6060 目标设备中安装更大的驱动器，以保持存储容量。（目标设备中包含 SSD 的两个驱动器插槽不包括在设备存储总容量中。）</p>
+<p>例如、在将包含60个驱动器的SG5660源存储节点设备克隆到包含58个标准驱动器的SG6060或SG60X目标设备时、应在克隆之前在SG6060或SG60X目标设备中安装更大的驱动器、以保持存储容量。（目标设备中包含 SSD 的两个驱动器插槽不包括在设备存储总容量中。）</p>
 </div>
 <div class="paragraph">
-<p>但是，如果为 60 个驱动器的 SG5660 源节点设备配置了 SANtricity 动态磁盘池 DDP-8 ，则使用 DDP-16 配置 58 个驱动器大小相同的 SG6060 目标设备可能会使 SG6060 设备成为有效的克隆目标，因为它提高了存储效率。</p>
+<p>但是、如果为60个驱动器的SG5660源节点设备配置了SANtricity 动态磁盘池DDP-8、则使用DDP-16配置58个驱动器大小相同的SG6060或SG6060X目标设备可能会使SG6060或SG6060X设备成为有效的克隆目标、因为它提高了存储效率。</p>
 </div>
 </li>
 </ul>

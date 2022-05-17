@@ -5268,6 +5268,8 @@
 
 
 
+
+
           
         </li>
       </ul>
@@ -8701,9 +8703,9 @@
       <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/storagegrid-116/sg6000/registering-hardware.html">
         注册硬件
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/storagegrid-116/sg6000/sg6060-installing-60-drive-shelves-into-cabinet-or-rack.html">
-        SG6060 ：将 60 个驱动器磁盘架安装到机柜或机架中
+        SG6060和SG6060X：将60个驱动器磁盘架安装到机柜或机架中
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/storagegrid-116/sg6000/sg6060-installing-drives.html">
-        SG6060 ：安装驱动器
+        SG6060和SG6060X：安装驱动器
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/storagegrid-116/sg6000/sgf6024-installing-24-drive-shelves-into-cabinet-or-rack.html">
         SGF6024 ：将 24 个驱动器磁盘架安装到机柜或机架中
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/storagegrid-116/sg6000/sg6000-cn-installing-into-cabinet-or-rack.html">
@@ -8711,13 +8713,13 @@
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/storagegrid-116/sg6000/cabling-appliance-sg6000.html">
         缆线设备（ SG6000 ）
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/storagegrid-116/sg6000/sg6060-cabling-optional-expansion-shelves.html">
-        SG6060 ：使用缆线连接可选扩展架
+        SG6060和SG6060X：使用缆线连接可选扩展架
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/storagegrid-116/sg6000/connecting-power-cords-and-applying-power-sg6000.html">
         连接电源线并接通电源（ SG6000 ）
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/storagegrid-116/sg6000/viewing-status-indicators-and-buttons-on-sg6000-cn-controller.html">
         查看 SG6000-CN 控制器上的状态指示灯和按钮
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/storagegrid-116/sg6000/viewing-boot-up-status-codes-for-sg6000-storage-controllers.html">
-        查看 SG6000 存储控制器的启动状态代码
+        查看SG6000和SG6060X存储控制器的启动状态代码
       </a></li></ul></li><li class="subfolders "><a href="/zh-cn/storagegrid-116/sg6000/configuring-hardware.html">
         <div class="na-navbar-padding"> 配置硬件（ SG6000 ）</div>
       </a>
@@ -10058,13 +10060,15 @@
       </a>
       <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/storagegrid-116/tenant/using-identity-federation.html">
         使用身份联合
-      </a></li><li class="subfolders "><a href="/zh-cn/storagegrid-116/tenant/managing-groups.html">
+      </a></li><li class="subfolders "><a href="#">
         <div class="na-navbar-padding"> 管理组</div>
       </a>
       <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/storagegrid-116/tenant/creating-groups-for-s3-tenant.html">
         为 S3 租户创建组
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/storagegrid-116/tenant/creating-groups-for-swift-tenant.html">
         为 Swift 租户创建组
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/storagegrid-116/tenant/tenant-management-permissions.html">
+        租户管理权限
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/storagegrid-116/tenant/viewing-and-editing-group-details.html">
         查看和编辑组详细信息
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/storagegrid-116/tenant/adding-users-to-local-group.html">
@@ -11182,7 +11186,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-05-03 06:51:19 +0000">05/03/2022</time>
+    <time datetime="2022-05-17 18:37:51 +0000">05/17/2022</time>
     
   
 
@@ -11195,7 +11199,7 @@
 <p>SG5700 StorageGRID 设备是一个集成的存储和计算平台，作为 StorageGRID 网格中的存储节点运行。此设备可在混合网格环境中使用，该环境将设备存储节点与虚拟（基于软件的）存储节点相结合。</p>
 </div>
 <div class="paragraph">
-<p>StorageGRID SG5700 设备具有以下功能：</p>
+<p>StorageGRID SG5700系列设备具有以下功能：</p>
 </div>
 <div class="ulist">
 <ul>
@@ -11203,7 +11207,7 @@
 <p>集成 StorageGRID 存储节点的存储和计算要素。</p>
 </li>
 <li>
-<p>包括 StorageGRID 设备安装程序，用于简化存储节点部署和配置。</p>
+<p>包括 StorageGRID 设备安装程序，以简化存储节点的部署和配置。</p>
 </li>
 <li>
 <p>包括用于硬件管理和监控的 E 系列 SANtricity System Manager 。</p>
@@ -11212,24 +11216,31 @@
 <p>最多支持四个连接到 StorageGRID 网格网络和客户端网络的 10-GbE 或 25-GbE 连接。</p>
 </li>
 <li>
-<p>支持全磁盘加密（ Full Disk Encryption ， FDE ）驱动器或联邦信息处理标准（ Federal Information Processing Standard ， FIPS ）驱动器。如果将这些驱动器与 SANtricity 系统管理器中的驱动器安全功能结合使用，则会阻止未经授权的数据访问。</p>
+<p>支持全磁盘加密(Full Disk Encryption、FDE)驱动器或联邦信息处理标准(Federal Information Processing Standard、FIPS)驱动器。如果将这些驱动器与 SANtricity 系统管理器中的驱动器安全功能结合使用，则会阻止未经授权的数据访问。</p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
-<p>SG5700 设备有两种型号： SG5712 和 SG5760 。这两种型号都包括以下组件：</p>
+<p>SG5700设备有四种型号：SG5712和SG5712X以及SG5760和SG5760X。除了存储控制器上互连端口的位置之外、SG5712和SG5712X之间在规格或功能上没有区别。同样、除了存储控制器上互连端口的位置之外、SG5712和SG5712X在规格或功能上没有任何区别。</p>
+</div>
+<div class="paragraph">
+<p>这些型号包括以下组件：</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
-<col style="width: 33.3333%;">
-<col style="width: 33.3333%;">
-<col style="width: 33.3334%;">
+<col style="width: 6.6666%;">
+<col style="width: 13.3333%;">
+<col style="width: 20%;">
+<col style="width: 26.6666%;">
+<col style="width: 33.3335%;">
 </colgroup>
 <thead>
 <tr>
 <th class="tableblock halign-left valign-top">组件</th>
 <th class="tableblock halign-left valign-top">SG5712</th>
+<th class="tableblock halign-left valign-top">SG5712X</th>
 <th class="tableblock halign-left valign-top">SG5760</th>
+<th class="tableblock halign-left valign-top">SG5760X</th>
 </tr>
 </thead>
 <tbody>
@@ -11243,16 +11254,28 @@
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>E5700SG 控制器</p>
 </div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>E5700SG 控制器</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>E5700SG 控制器</p>
+</div></div></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>存储控制器</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>E 系列 E2800 控制器</p>
+<p>E2800A控制器</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>E 系列 E2800 控制器</p>
+<p>E2800B控制器</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>E2800A控制器</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>E2800B控制器</p>
 </div></div></td>
 </tr>
 <tr>
@@ -11261,6 +11284,12 @@
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>E 系列 DE212C 机箱，一个双机架单元（ 2U ）机箱</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>E 系列 DE212C 机箱，一个双机架单元（ 2U ）机箱</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>E 系列 DE460C 机箱，一个四机架单元（ 4U ）机箱</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>E 系列 DE460C 机箱，一个四机架单元（ 4U ）机箱</p>
@@ -11274,6 +11303,12 @@
 <p>12 个 NL-SAS 驱动器（ 3.5 英寸）</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>12 个 NL-SAS 驱动器（ 3.5 英寸）</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>60 个 NL-SAS 驱动器（ 3.5 英寸）</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>60 个 NL-SAS 驱动器（ 3.5 英寸）</p>
 </div></div></td>
 </tr>
@@ -11283,6 +11318,12 @@
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>两个电源风扇箱</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>两个电源风扇箱</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>两个电源箱和两个风扇箱</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
 <p>两个电源箱和两个风扇箱</p>
@@ -11296,10 +11337,17 @@
 </div>
 </div>
 <div class="sect1">
-<h2 id="型号-sg5712">型号 SG5712</h2>
+<h2 id="型号sg5712和5712x">型号SG5712和5712X</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>此图显示了 SG5712 型号的正面和背面，该型号是一个 2U 机箱，可容纳 12 个驱动器。</p>
+<p>图中显示了SG5712和SG5712X型号的正面和背面、这是一个2U机箱、可容纳12个驱动器。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>SG5712前视图和后视图*</p>
+</li>
+</ul>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -11309,6 +11357,13 @@
 <div class="paragraph">
 <p>SG5712 包括两个控制器和两个电源风扇箱。</p>
 </div>
+<div class="ulist">
+<ul>
+<li>
+<p>SG5712组件*</p>
+</li>
+</ul>
+</div>
 <div class="imageblock">
 <div class="content">
 <img src="../media/sg5712_with_callouts.gif" alt="SG5712 设备中的控制器和电源风扇箱">
@@ -11316,8 +11371,8 @@
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
-<col style="width: 50%;">
-<col style="width: 50%;">
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
 </colgroup>
 <thead>
 <tr>
@@ -11331,7 +11386,72 @@
 <p>1.</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>E2800 控制器（存储控制器）</p>
+<p>E2800A控制器(存储控制器)</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>2.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>E5700SG 控制器（计算控制器）</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>3.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>电源风扇箱</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+<div class="ulist">
+<ul>
+<li>
+<p>SG5712X前视图和后视图*</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../media/sg5712x_front_and_back_views.gif" alt="SG5712X设备的正面和背面">
+</div>
+</div>
+<div class="paragraph">
+<p>SG5712X包括两个控制器和两个电源风扇箱。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>SG5712X组件*</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../media/sg5712x_with_callouts.gif" alt="SG5712X设备中的控制器和电源风扇箱">
+</div>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Callout</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>1.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>E2800B控制器(存储控制器)</p>
 </div></div></td>
 </tr>
 <tr>
@@ -11355,10 +11475,17 @@
 </div>
 </div>
 <div class="sect1">
-<h2 id="型号-sg5760">型号 SG5760</h2>
+<h2 id="型号sg5760和sg5760x">型号SG5760和SG5760X</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>此图显示了 SG5760 型号的正面和背面，这是一个 4U 机箱，在 5 个驱动器抽盒中容纳 60 个驱动器。</p>
+<p>图中显示了SG5760和SG5760X型号的正面和背面、这是一个4U机箱、可在5个驱动器抽盒中容纳60个驱动器。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>SG5760前视图和后视图*</p>
+</li>
+</ul>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -11368,6 +11495,13 @@
 <div class="paragraph">
 <p>SG5760 包括两个控制器，两个风扇箱和两个电源箱。</p>
 </div>
+<div class="ulist">
+<ul>
+<li>
+<p>SG5760组件*</p>
+</li>
+</ul>
+</div>
 <div class="imageblock">
 <div class="content">
 <img src="../media/sg5760_with_callouts.gif" alt="控制器" width="fan canisters" height="and power canisters in SG5760 appliance">
@@ -11375,8 +11509,8 @@
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
-<col style="width: 50%;">
-<col style="width: 50%;">
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
 </colgroup>
 <thead>
 <tr>
@@ -11390,7 +11524,80 @@
 <p>1.</p>
 </div></div></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>E2800 控制器（存储控制器）</p>
+<p>E2800A控制器(存储控制器)</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>2.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>E5700SG 控制器（计算控制器）</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>3.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>风扇箱（第 1 页，共 2 页）</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>4.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>电源箱（第 1 页，共 2 页）</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+<div class="ulist">
+<ul>
+<li>
+<p>SG5760X前视图和后视图*</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../media/sg5760x_front_and_back_views.gif" alt="SG5760X设备的正面和背面">
+</div>
+</div>
+<div class="paragraph">
+<p>SG5760S包括两个控制器、两个风扇箱和两个电源箱。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>SG5760X组件*</p>
+</li>
+</ul>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../media/sg5760x_with_callouts.gif" alt="控制器" width="fan canisters" height="and power canisters in SG5760X appliance">
+</div>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Callout</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>1.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>E2800B控制器(存储控制器)</p>
 </div></div></td>
 </tr>
 <tr>

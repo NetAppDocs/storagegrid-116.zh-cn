@@ -5277,6 +5277,8 @@
 
 
 
+
+
           
         </li>
       </ul>
@@ -8710,9 +8712,9 @@
       <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/storagegrid-116/sg6000/registering-hardware.html">
         注册硬件
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/storagegrid-116/sg6000/sg6060-installing-60-drive-shelves-into-cabinet-or-rack.html">
-        SG6060 ：将 60 个驱动器磁盘架安装到机柜或机架中
+        SG6060和SG6060X：将60个驱动器磁盘架安装到机柜或机架中
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/storagegrid-116/sg6000/sg6060-installing-drives.html">
-        SG6060 ：安装驱动器
+        SG6060和SG6060X：安装驱动器
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/storagegrid-116/sg6000/sgf6024-installing-24-drive-shelves-into-cabinet-or-rack.html">
         SGF6024 ：将 24 个驱动器磁盘架安装到机柜或机架中
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/storagegrid-116/sg6000/sg6000-cn-installing-into-cabinet-or-rack.html">
@@ -8720,13 +8722,13 @@
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/storagegrid-116/sg6000/cabling-appliance-sg6000.html">
         缆线设备（ SG6000 ）
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/storagegrid-116/sg6000/sg6060-cabling-optional-expansion-shelves.html">
-        SG6060 ：使用缆线连接可选扩展架
+        SG6060和SG6060X：使用缆线连接可选扩展架
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/storagegrid-116/sg6000/connecting-power-cords-and-applying-power-sg6000.html">
         连接电源线并接通电源（ SG6000 ）
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/storagegrid-116/sg6000/viewing-status-indicators-and-buttons-on-sg6000-cn-controller.html">
         查看 SG6000-CN 控制器上的状态指示灯和按钮
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/storagegrid-116/sg6000/viewing-boot-up-status-codes-for-sg6000-storage-controllers.html">
-        查看 SG6000 存储控制器的启动状态代码
+        查看SG6000和SG6060X存储控制器的启动状态代码
       </a></li></ul></li><li class="subfolders "><a href="/zh-cn/storagegrid-116/sg6000/configuring-hardware.html">
         <div class="na-navbar-padding"> 配置硬件（ SG6000 ）</div>
       </a>
@@ -10067,13 +10069,15 @@
       </a>
       <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/storagegrid-116/tenant/using-identity-federation.html">
         使用身份联合
-      </a></li><li class="subfolders "><a href="/zh-cn/storagegrid-116/tenant/managing-groups.html">
+      </a></li><li class="subfolders "><a href="#">
         <div class="na-navbar-padding"> 管理组</div>
       </a>
       <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/storagegrid-116/tenant/creating-groups-for-s3-tenant.html">
         为 S3 租户创建组
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/storagegrid-116/tenant/creating-groups-for-swift-tenant.html">
         为 Swift 租户创建组
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/storagegrid-116/tenant/tenant-management-permissions.html">
+        租户管理权限
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/storagegrid-116/tenant/viewing-and-editing-group-details.html">
         查看和编辑组详细信息
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/storagegrid-116/tenant/adding-users-to-local-group.html">
@@ -11191,7 +11195,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-05-03 06:51:19 +0000">05/03/2022</time>
+    <time datetime="2022-05-17 18:37:51 +0000">05/17/2022</time>
     
   
 
@@ -11199,7 +11203,7 @@
 </p>
 
 <div class="paragraph lead">
-<p>要增加存储容量，您可以向已部署在 StorageGRID 系统中的 SG6060 添加一个或两个扩展架。</p>
+<p>要增加存储容量、您可以向StorageGRID 系统中已部署的SG6060或SG6060X添加一个或两个扩展架。</p>
 </div>
 <div class="ulist">
 <div class="title">您需要什么？ #8217 ；将需要什么</div>
@@ -11230,7 +11234,7 @@
 <p>在机柜或机架中安装硬件。</p>
 </li>
 <li>
-<p>将 SG6060 置于维护模式。</p>
+<p>将SG6060或SG6060X置于维护模式。</p>
 </li>
 <li>
 <p>将扩展架连接到 E2860 控制器架或其他扩展架。</p>
@@ -11244,7 +11248,7 @@
 </ul>
 </div>
 <div class="paragraph">
-<p>每个设备节点为一个或两个扩展架完成操作步骤 所需时间应至少为一小时。为了最大限度地减少停机时间，以下步骤将指导您在将 SG6060 置于维护模式之前安装新的扩展架和驱动器。每个设备节点的其余步骤大约需要 20 到 30 分钟。</p>
+<p>每个设备节点为一个或两个扩展架完成操作步骤 所需时间应至少为一小时。为了最大限度地减少停机时间、以下步骤将指导您在将SG6060或SG6060X置于维护模式之前安装新的扩展架和驱动器。每个设备节点的其余步骤大约需要 20 到 30 分钟。</p>
 </div>
 <div class="olist arabic">
 <div class="title">步骤</div>
@@ -11252,13 +11256,13 @@
 <li>
 <p>按照说明将 60 个驱动器磁盘架安装到机柜或机架中。</p>
 <div class="paragraph">
-<p><a href="sg6060-installing-60-drive-shelves-into-cabinet-or-rack.html">SG6060 ：将 60 个驱动器磁盘架安装到机柜或机架中</a></p>
+<p><a href="sg6060-installing-60-drive-shelves-into-cabinet-or-rack.html">SG6060和SG6060X：将60个驱动器磁盘架安装到机柜或机架中</a></p>
 </div>
 </li>
 <li>
 <p>按照说明安装驱动器。</p>
 <div class="paragraph">
-<p><a href="sg6060-installing-drives.html">SG6060 ：安装驱动器</a></p>
+<p><a href="sg6060-installing-drives.html">SG6060和SG6060X：安装驱动器</a></p>
 </div>
 </li>
 <li>
@@ -11268,6 +11272,18 @@
 <p>将每个扩展架连接到 E2860 控制器架，如图所示。</p>
 <div class="paragraph">
 <p>此图显示了两个扩展架。如果只有一个，请将 IOM A 连接到控制器 A ，并将 IOM B 连接到控制器 B</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/storagegrid-116/images/note.svg" alt="注">
+</td>
+<td class="content">
+图中显示了SG6060。SG6060X的扩展布线相同。
+</td>
+</tr>
+</table>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -11531,13 +11547,13 @@
 </ol>
 </div>
 <div class="paragraph">
-<p><a href="unpacking-boxes-sg6000.html">打开包装箱（ SG6000 ）</a></p>
+<p><a href="unpacking-boxes-sg6000.html">打开包装箱(SG6000和SG6060X)</a></p>
 </div>
 <div class="paragraph">
-<p><a href="sg6060-installing-60-drive-shelves-into-cabinet-or-rack.html">SG6060 ：将 60 个驱动器磁盘架安装到机柜或机架中</a></p>
+<p><a href="sg6060-installing-60-drive-shelves-into-cabinet-or-rack.html">SG6060和SG6060X：将60个驱动器磁盘架安装到机柜或机架中</a></p>
 </div>
 <div class="paragraph">
-<p><a href="sg6060-installing-drives.html">SG6060 ：安装驱动器</a></p>
+<p><a href="sg6060-installing-drives.html">SG6060和SG6060X：安装驱动器</a></p>
 </div>
 <div class="paragraph">
 <p><a href="../monitor/index.html">监控和故障排除</a></p>
