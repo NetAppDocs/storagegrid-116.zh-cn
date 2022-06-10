@@ -6,7 +6,7 @@ entries:
   pdf-filename: StorageGRID SG6000 存储设备
   url: "/sg6000/index.html"
   entries:
-  - title: SG6060 概述
+  - title: SG6060和SG6060X概述
     url: "/sg6000/sg6060-overview.html"
   - title: SGF6024 概述
     url: "/sg6000/sgf6024-overview.html"
