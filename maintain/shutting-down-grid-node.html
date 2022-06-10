@@ -277,35 +277,27 @@
     </div>
   </div>
   <div class="n-property-bar__toolbar">
-    <!-- Start Language Selector --><div id="ie-i18n" class="n-property-bar__lang-selector">
-      <div id="ie-i18n-menu">
-      <span class="ie-i18n-lang">简体中文</span>
-        <button class="ie-i18n-icon-container" type="button">
+    <!-- Start Language Selector --><div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+      <div class="custom-dropdown-select custom-dropdown-select-lang">
+      <span class="lang-name">简体中文</span>
           <svg class="n-globe__icon" aria-labelledby="title">
             <title>globe</title>
             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-cn/storagegrid-116/common/svg/sprite.svg#globe"></use>
           </svg>
         </button>
       </div>
-      <div id="n-property-navigation-bar__menu--language-selector" class="ie-i18n-results-container n-menu n-menu--v3 n-menu--is-active" style="display: none;">
-        <div class="n-language-selector-menu">
-          <ul class="n-menu__list">
-            <li class="n-menu__list-column">
-              <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/us-en/storagegrid-116/maintain/shutting-down-grid-node.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ja-jp/storagegrid-116/maintain/shutting-down-grid-node.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/ko-kr/storagegrid-116/maintain/shutting-down-grid-node.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-cn/storagegrid-116/maintain/shutting-down-grid-node.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
-                </li><li class="n-menu__list-item n-menu__list-item--level-1">
-                  <a href="https://docs.netapp.com/zh-tw/storagegrid-116/maintain/shutting-down-grid-node.html" class="n-menu__header-text"><span translate="no" class="notranslate">繁體中文</span></a>
-                </li></ul>
-            </li>
-          </ul>
-        </div>
-      </div>
+
+      <ul class="custom-dropdown-menu"><li>
+          <a href="https://docs.netapp.com/zh-cn/storagegrid-116/maintain/shutting-down-grid-node.html" target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/us-en/storagegrid-116/maintain/shutting-down-grid-node.html" target="_self"><span translate="no" class="notranslate">English</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ja-jp/storagegrid-116/maintain/shutting-down-grid-node.html" target="_self"><span translate="no" class="notranslate">日本語</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/zh-tw/storagegrid-116/maintain/shutting-down-grid-node.html" target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+        </li><li>
+          <a href="https://docs.netapp.com/ko-kr/storagegrid-116/maintain/shutting-down-grid-node.html" target="_self"><span translate="no" class="notranslate">한국어</span></a>
+        </li></ul>
     </div><!-- End Language Selector -->
 
     <div class="n-property-bar__cta"></div>
@@ -8420,7 +8412,7 @@
     $("#toggleContainerPdf").toggle('display');
     $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
   });
-</script><div class="sidebar-nav-container">
+</script><div class="sidebar-nav-container" id="mysidebardiv">
   <ul id="mysidebar" class="nav"><li class=" "><a class="na-navbar-padding" href="/zh-cn/storagegrid-116/index.html">
         StorageGRID 11.6 文档
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/storagegrid-116/release-notes/index.html">
@@ -8678,7 +8670,7 @@
         <div class="na-navbar-padding"> 概述</div>
       </a>
       <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/storagegrid-116/sg6000/sg6060-overview.html">
-        SG6060 概述
+        SG6060和SG6060X概述
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/storagegrid-116/sg6000/sgf6024-overview.html">
         SGF6024 概述
       </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/storagegrid-116/sg6000/controllers-in-sg6000-appliances.html">
@@ -11195,7 +11187,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-05-03 06:51:19 +0000">05/03/2022</time>
+    <time datetime="2022-06-10 20:57:16 +0000">06/10/2022</time>
     
   
 
@@ -11241,16 +11233,9 @@
 </div>
 </li>
 <li>
-<p>如果您计划关闭存储节点，请注意以下事项：</p>
-<div class="ulist">
-<ul>
-<li>
-<p>如果 ILM 规则指定了 " 双提交 " 的载入行为或规则指定了 " 已平衡 " ，并且无法立即创建所有必需的副本，则 StorageGRID 会立即将任何新载入的对象提交到同一站点上的两个存储节点，并在稍后评估 ILM 。如果要关闭给定站点上的两个或更多存储节点，则在关闭期间可能无法访问这些对象。</p>
-</li>
-<li>
-<p>为了确保在存储节点关闭时您可以访问所有对象，请在关闭节点之前停止在站点上载入对象大约一小时。</p>
-</li>
-</ul>
+<p>如果您计划关闭一个站点上的多个存储节点、请在关闭这些节点之前停止在该站点上载入对象大约一小时。</p>
+<div class="paragraph">
+<p>如果任何ILM规则使用*双提交*载入选项(或者某个规则使用*平衡*选项、并且无法立即创建所有必需的副本)、则StorageGRID 会立即将任何新载入的对象提交到同一站点上的两个存储节点、并在稍后对ILM进行评估。如果某个站点上的多个存储节点关闭、则在关闭期间、您可能无法访问新载入的对象。如果站点上的可用存储节点太少、写入操作也可能失败。</p>
 </div>
 </li>
 </ul>
@@ -11510,4 +11495,5 @@
     </script>
     <script src='/zh-cn/storagegrid-116/js/www-ntap.js'></script>
     <script src='/zh-cn/storagegrid-116/js/tabbed-blocks.js'></script>
+    <script src='/zh-cn/storagegrid-116/js/sidebar.js'></script>
   </body></html>
