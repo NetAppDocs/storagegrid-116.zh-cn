@@ -42,12 +42,14 @@ xref:monitoring-information-lifecycle-management.adoc[信息生命周期管理�
 
 
  a| 
-xref:monitoring-performance-networking-and-system-resources.adoc[性能，网络和系统资源]：
+xref:monitoring-network-connections-and-performance.adoc[网络连接和性能]
+ a| 
+每周
 
-* 查询延迟
-* 连接和网络连接
-* 节点级资源
 
+
+ a| 
+xref:monitoring-node-level-resources.adoc[节点级资源]
  a| 
 每周
 

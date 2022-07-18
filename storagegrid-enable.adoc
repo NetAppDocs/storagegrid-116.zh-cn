@@ -1,0 +1,27 @@
+---
+sidebar: sidebar 
+permalink: storagegrid-enable.html 
+keywords: storagegrid, how to enable, third-party solutions, tools, applications, examples 
+summary: 了解如何在StorageGRID 环境中测试和启用应用程序。 
+---
+= 如何在您的环境中启用StorageGRID
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+了解如何在StorageGRID 环境中测试和启用应用程序。
+
+转至 https://docs.netapp.com/us-en/storagegrid-enable/index.html["storagegrid-enable"^] 文档站点、查找可在此站点的产品文档上扩展的示例和指南。* storagegrid enable*站点还介绍了评估和集成StorageGRID 的一些后续步骤。
+
+其中包括以下信息：
+
+* 列出了过去和当前StorageGRID 版本中经过验证的第三方解决方案。
+* 产品功能指南。例如、这些指南提供了有关创建云存储池的详细信息。
+* 工具和应用程序指南。
+* 使用S3加密和S3对象锁定等StorageGRID 功能的API示例。
+

@@ -48,7 +48,7 @@ summary: 在扩展中部署新网格节点的步骤与首次安装网格时使�
 
 IMPORTANT: 在生产部署中，请勿在一个物理或虚拟主机上运行多个存储节点。为每个存储节点使用专用主机可提供一个隔离的故障域。
 
-* 如果 StorageGRID 节点使用从 NetApp AFF 系统分配的存储，请确认此卷未启用 FabricPool 分层策略。对 StorageGRID 节点使用的卷禁用 FabricPool 分层可简化故障排除和存储操作。
+* 如果StorageGRID 节点使用从NetApp ONTAP 系统分配的存储、请确认此卷未启用FabricPool 分层策略。对 StorageGRID 节点使用的卷禁用 FabricPool 分层可简化故障排除和存储操作。
 
 
 .步骤

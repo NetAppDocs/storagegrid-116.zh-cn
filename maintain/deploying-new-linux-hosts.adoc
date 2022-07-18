@@ -32,7 +32,7 @@ IMPORTANT: 完成安装说明中的 "`安装 StorageGRID 主机服务` " 任务�
 
 * 请确保使用与原始主机上使用的主机接口名称相同的主机接口名称。
 * 如果您使用共享存储来支持 StorageGRID 节点，或者已将部分或全部磁盘驱动器或 SSD 从故障节点移至替代节点，则必须重新建立原始主机上的相同存储映射。例如，如果按照安装说明中的建议在 ` /etc/multipath.conf` 中使用了 WWID 和别名，请务必在替代主机上的 ` /etc/multipath.conf` 中使用相同的别名 /WWID 对。
-* 如果 StorageGRID 节点使用从 NetApp AFF 系统分配的存储，请确认此卷未启用 FabricPool 分层策略。对 StorageGRID 节点使用的卷禁用 FabricPool 分层可简化故障排除和存储操作。
+* 如果StorageGRID 节点使用从NetApp ONTAP 系统分配的存储、请确认此卷未启用FabricPool 分层策略。对 StorageGRID 节点使用的卷禁用 FabricPool 分层可简化故障排除和存储操作。
 +
 
 IMPORTANT: 切勿使用 FabricPool 将与 StorageGRID 相关的任何数据分层回 StorageGRID 本身。将 StorageGRID 数据分层回 StorageGRID 会增加故障排除和操作复杂性。

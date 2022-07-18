@@ -178,11 +178,17 @@ image::../media/storage_used_object_metadata_actual_reserved.png[已用存储 - 
 
 image::../media/metadata_allowed_space_volume_0.png[元数据允许的空间卷 0]
 
-下表总结了 StorageGRID 如何确定存储节点的允许元数据空间值。
+下表显示了StorageGRID 如何根据不同存储节点的内存量和元数据的实际预留空间计算不同存储节点的*允许元数据空间*。
 
 [cols="1a,1a,2a,2a"]
 |===
-|  |  2+| 存储节点上的内存大小 
+
+
+ a| 
+ a| 
+ a| 
+*存储节点上的内存量*
+
 
 
  a| 
@@ -195,14 +201,7 @@ image::../media/metadata_allowed_space_volume_0.png[元数据允许的空间卷 
 
 
  a| 
- a| 
- a| 
-允许的元数据空间
-
-
-
- a| 
-元数据的实际预留空间
+*元数据的实际预留空间*
  a| 
 &lt ； = 4 TB
  a| 

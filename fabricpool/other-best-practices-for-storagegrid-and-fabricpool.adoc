@@ -35,7 +35,7 @@ summary: 在配置要与 FabricPool 结合使用的 StorageGRID 系统时，应�
 
 == FabricPool 分层
 
-如果 StorageGRID 节点使用从 NetApp AFF 系统分配的存储，请确认此卷未启用 FabricPool 分层策略。例如，如果 StorageGRID 节点正在 VMware 主机上运行，请确保为 StorageGRID 节点的数据存储库提供支持的卷未启用 FabricPool 分层策略。对 StorageGRID 节点使用的卷禁用 FabricPool 分层可简化故障排除和存储操作。
+如果StorageGRID 节点使用从NetApp ONTAP 系统分配的存储、请确认此卷未启用FabricPool 分层策略。例如，如果 StorageGRID 节点正在 VMware 主机上运行，请确保为 StorageGRID 节点的数据存储库提供支持的卷未启用 FabricPool 分层策略。对 StorageGRID 节点使用的卷禁用 FabricPool 分层可简化故障排除和存储操作。
 
 
 IMPORTANT: 切勿使用 FabricPool 将与 StorageGRID 相关的任何数据分层回 StorageGRID 本身。将 StorageGRID 数据分层回 StorageGRID 会增加故障排除和操作复杂性。

@@ -45,6 +45,8 @@ sidebar:
     - section: expand
     - section: maintain
     - section: audit
+  - title: 启用StorageGRID
+    url: "/storagegrid-enable.html"
   - title: 早期版本
     url: "/earlier-versions.html"
   - title: 法律声明
@@ -111,6 +113,8 @@ homepage:
       url: "/audit/index.html"
   - title: 演示教程
     links:
+    - title: 了解如何启用StorageGRID
+      url: https://docs.netapp.com/us-en/storagegrid-enable/index.html
     - title: StorageGRID 视频库
       url: https://www.youtube.com/playlist?list=PLdXI3bZJEw7nh2wGRA65iulXhtXwLiqrY
     - title: NetApp 学习服务
