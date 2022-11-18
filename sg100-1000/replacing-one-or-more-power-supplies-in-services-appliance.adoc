@@ -36,7 +36,7 @@ image::../media/sg1000_power_supplies.png[带有两个电源的 SG100 的背面]
 NOTE: SG1000 的电源相同。
 
 .步骤
-. 如果您只更换一个电源，则无需关闭设备。转至 <<Unplug_the_power_cord,拔下电源线>> 步骤。如果要同时更换两个电源，请在拔下电源线之前执行以下操作：
+. 如果您只更换一个电源，则无需关闭设备。转至 ,拔下电源线 步骤。如果要同时更换两个电源，请在拔下电源线之前执行以下操作：
 +
 .. xref:placing-appliance-into-maintenance-mode.adoc[将设备置于维护模式]。
 .. xref:shut-down-sg100-and-sg1000.adoc[关闭设备]。

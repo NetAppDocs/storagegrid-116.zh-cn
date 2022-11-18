@@ -372,7 +372,7 @@ storagegrid_storage_status
 
 
  a| 
-storaggrid_storage_utilization metadata_bytes
+storaggrid_storage_utilization字节
  a| 
 存储节点上复制和擦除编码的对象数据的估计总大小。
 

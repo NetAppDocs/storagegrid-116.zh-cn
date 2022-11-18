@@ -42,7 +42,7 @@ CAUTION: 如果多个存储节点脱机或此网格中的存储节点在过去 1
 * 运行 `sn-recovery-postinstall.sh` 脚本。运行此脚本时，它将执行以下操作。
 +
 
-IMPORTANT: 在运行 `sn-recovery-postinstall.sh` 之前，请勿在恢复期间重新启动存储节点（请参见的步骤） <<post_install_script_step,安装后脚本>>）重新格式化故障存储卷并还原对象元数据。在 `sn-recovery-postinstall.sh` 完成之前重新启动存储节点会导致尝试启动的服务出错，并导致 StorageGRID 设备节点退出维护模式。
+IMPORTANT: 运行之前、请勿在恢复期间重新启动存储节点 `sn-recovery-postinstall.sh` 重新格式化故障存储卷并还原对象元数据。之前重新启动存储节点 `sn-recovery-postinstall.sh` 完成会导致尝试启动的服务出错、并导致StorageGRID 设备节点退出维护模式。请参见的步骤 ,安装后脚本。
 
 +
 ** 重新格式化 `sn-remount-volumes` 脚本无法挂载或发现格式不正确的任何存储卷。
@@ -227,7 +227,7 @@ NOTE: RSM 服务位于包含此 ADC 服务的存储节点上。
 
 NOTE: 某些 StorageGRID 恢复过程使用 Reaper 处理 Cassandra 修复。一旦相关服务或所需服务开始，便会自动进行修复。您可能会注意到脚本输出中提到 " `reaper` " 或 "`Cassandra repair.` " 。 如果您看到指示修复失败的错误消息，请运行错误消息中指示的命令。
 
-. 在 `sn-recovery-postinstall.sh` 脚本运行时，监控网格管理器中的恢复页面。
+. 【安装后脚本步骤】。作为 `sn-recovery-postinstall.sh` 脚本运行时、监控网格管理器中的恢复页面。
 +
 " 恢复 " 页面上的进度条和阶段列可提供 `sn-recovery-postinstall.sh` 脚本的高级状态。
 

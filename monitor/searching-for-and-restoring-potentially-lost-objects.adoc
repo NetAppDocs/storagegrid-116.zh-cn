@@ -115,7 +115,7 @@ ls '/var/local/rangedb/1/p/17/11/00rH0%DkRs&LgA%#3tN6'
 * 注 * ：在命令中，始终用单引号将对象文件路径括起来，以转义任何特殊字符。
 
 * 如果未找到对象路径，则此对象将丢失，无法使用此操作步骤 进行还原。请联系技术支持。
-* 如果找到对象路径，请继续执行步骤 <<restore_the_object_to_StorageGRID,将对象还原到 StorageGRID>>。您可以尝试将找到的对象还原回 StorageGRID 。
+* 如果找到对象路径，请继续执行步骤 ,将对象还原到 StorageGRID。您可以尝试将找到的对象还原回 StorageGRID 。
 +
 .. 【还原对象到 StorageGRID ， start=3]] 如果找到对象路径，请尝试将对象还原到 StorageGRID ：
 +
@@ -154,7 +154,7 @@ First packet of file was valid. Extracted key: 38186FE53E3C49A5
 Renamed '/var/local/rangedb/1/p/17/11/00rH0%DkRs&LgA%#3tN6' to '/var/local/rangedb/1/p/17/11/00rH0%DkRt78Ila#3udu'
 ----
 +
-继续执行步骤 <<verify_that_new_locations_were_created,验证是否已创建新位置>>
+继续执行步骤 ,验证是否已创建新位置
 
 +
 ... 如果对象已成功还原到 StorageGRID ，请验证是否已创建新位置。

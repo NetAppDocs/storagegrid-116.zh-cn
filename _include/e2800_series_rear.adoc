@@ -22,7 +22,7 @@ image::../media/e2800B_labels_on_controller.gif[E2800A控制器上的MAC和FRU�
  a| 
 MAC 地址
  a| 
-管理端口 1 的 MAC 地址（ "`P1` " ）。如果您使用 DHCP 获取原始控制器的 IP 地址，则需要使用此地址连接到新控制器。
+管理端口1的MAC地址(E2800A上的"`P1"和E2800B`上的0a)。如果您使用 DHCP 获取原始控制器的 IP 地址，则需要使用此地址连接到新控制器。
 
 
 

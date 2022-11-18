@@ -1,5 +1,5 @@
 ---
-permalink: monitor/set-up-snmp-alert-notifications.html 
+permalink: monitor/snmp-alert-notifications.html 
 sidebar: sidebar 
 keywords: how to use snmp notifications for alerts 
 summary: 如果您希望 StorageGRID 在发生警报时发送 SNMP 通知，则必须启用 StorageGRID SNMP 代理并配置一个或多个陷阱目标。 

@@ -74,6 +74,6 @@ Enter command [`add search <domain>|remove search <domain>|add nameserver <ip>`]
 . 按照提示输入其他命令时的说明进行操作。
 . 保存所做的更改并退出应用程序： `save`
 . [[close_cmd_shell]] 关闭服务器上的命令 Shell ： `exit`
-. 对于每个网格节点，重复中的步骤 <<log_in_to_node,登录到节点>> 到 <<close_cmd_shell,关闭命令 Shell>>。
+. 对于每个网格节点，重复中的步骤 ,登录到节点 到 ,关闭命令 Shell。
 . 如果不再需要对其他服务器进行无密码访问，请从 SSH 代理中删除私钥。输入： `ssh-add -D`
 

@@ -115,7 +115,7 @@ xref:../admin/index.adoc[管理 StorageGRID]
 
 * 注意： * 由于警报和警报是独立的系统，因此用于警报和 AutoSupport 通知的电子邮件设置不用于警报通知。但是，您可以对所有通知使用同一邮件服务器。
 
-xref:set-up-email-alert-notifications.adoc[为警报设置电子邮件通知]
+xref:email-alert-notifications.adoc[为警报设置电子邮件通知]
  a| 
 选择 * 支持 * > * 警报（旧版） * > * 旧版电子邮件设置 * 。
 
@@ -147,7 +147,7 @@ xref:alarms-that-generate-snmp-notifications.adoc[生成 SNMP 通知的警报（
 . 在 * 收件人 * 部分中，为每个电子邮件列表或发生警报时应接收电子邮件的人员输入一个电子邮件地址。
 
 
-xref:set-up-email-alert-notifications.adoc[为警报设置电子邮件通知]
+xref:email-alert-notifications.adoc[为警报设置电子邮件通知]
  a| 
 . 选择 * 支持 * > * 警报（旧版） * > * 旧版电子邮件设置 * 。
 . 创建邮件列表。

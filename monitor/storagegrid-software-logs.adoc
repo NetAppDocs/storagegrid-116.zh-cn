@@ -287,7 +287,7 @@ CLB 服务的错误信息。
  a| 
 管理节点和网关节点
 
-只有某些管理节点和网关节点才包含此日志。请参见 xref:manage-s3-select-for-tenant-accounts.adoc[S3 Select 管理节点和网关节点的要求和限制]。
+只有某些管理节点和网关节点才包含此日志。请参见 xref:../admin/manage-s3-select-for-tenant-accounts.adoc[S3 Select 管理节点和网关节点的要求和限制]。
 
 
 

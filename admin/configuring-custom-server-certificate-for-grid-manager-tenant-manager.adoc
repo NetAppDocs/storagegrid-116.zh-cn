@@ -27,7 +27,7 @@ NOTE: 为了确保操作不会因服务器证书失败而中断，当此服务�
 如果您要使用域名而非 IP 地址访问网格管理器或租户管理器，则在发生以下任一情况时，浏览器将显示证书错误，并且无法绕过此错误：
 
 * 您的自定义管理接口证书将过期。
-* 您 <<Restore the default management interface certificate,从自定义管理接口证书还原到默认服务器证书>>。
+* 您  the default management interface certificate,从自定义管理接口证书还原到默认服务器证书。
 
 
 ====

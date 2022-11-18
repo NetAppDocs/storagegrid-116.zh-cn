@@ -21,7 +21,7 @@ summary: 在执行维护过程之前，您必须确保具有必要的材料来�
  a| 
 StorageGRID 安装归档
  a| 
-如果需要恢复网格节点，则需要 <<download-and-extract-install-files-recover,下载 StorageGRID 安装文件>> 适用于您的平台。
+如果需要恢复网格节点，则需要 ,下载 StorageGRID 安装文件 适用于您的平台。
 
 * 注意： * 如果要恢复存储节点上的故障存储卷，则不需要下载文件。
 

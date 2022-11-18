@@ -138,7 +138,7 @@ StorageGRID 系统是否可以载入内容？
  a| 
 对 StorageGRID 系统，其配置或环境进行更改可以发生原因 新行为。
  a| 
-* <<create_timeline,创建最近更改的时间线>>
+* ,创建最近更改的时间线
 
 
 
@@ -186,7 +186,7 @@ StorageGRID 系统是否可以载入内容？
  a| 
 收集有关各种运行值的正常级别的信息。这些基线值以及与这些基线的偏差可以提供有价值的线索。
  a| 
-* <<establish_baselines,建立基线>>
+* ,建立基线
 
 
 
@@ -478,14 +478,14 @@ xref:collecting-log-files-and-system-data.adoc[收集日志文件和系统数据
 |  | 基线信息  a| 
 收集有关载入操作，检索操作和存储消耗的基线信息。
 
-<<establish_baselines,建立基线>>
+,建立基线
 
 
 
 |  | 最近更改的时间线  a| 
 创建一个时间线，用于汇总系统或其环境的所有近期更改。
 
-<<create_timeline,创建最近更改的时间线>>
+,创建最近更改的时间线
 
 
 

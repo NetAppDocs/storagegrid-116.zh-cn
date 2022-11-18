@@ -72,12 +72,12 @@ image::../media/snmp_other_config_usm_users_table.png[SNMP 其他配置 USM 用�
 
 +
 
-NOTE: 如果您添加或删除用户的权威引擎 ID ，并且当前已选择该用户作为目标，则必须按照步骤中所述编辑或删除该目标 <<SNMP_TRAP_DESTINATION,SNMP 陷阱目标>>。否则，在保存 SNMP 代理配置时会发生验证错误。
+NOTE: 如果您添加或删除用户的权威引擎 ID ，并且当前已选择该用户作为目标，则必须按照步骤中所述编辑或删除该目标 ,SNMP 陷阱目标。否则，在保存 SNMP 代理配置时会发生验证错误。
 
 .. 要删除 USM 用户，请选择该用户的单选按钮，然后单击 * 删除 * 。然后，单击 * 确定 * 以确认要删除此用户。
 +
 
-NOTE: 如果当前已为陷阱目标选择删除的用户，则必须按照步骤中所述编辑或删除此目标 <<SNMP_TRAP_DESTINATION,SNMP 陷阱目标>>。否则，在保存 SNMP 代理配置时会发生验证错误。
+NOTE: 如果当前已为陷阱目标选择删除的用户，则必须按照步骤中所述编辑或删除此目标 ,SNMP 陷阱目标。否则，在保存 SNMP 代理配置时会发生验证错误。
 
 +
 image::../media/snmp_usm_user_remove_error.png[SNMP USM 用户删除错误]

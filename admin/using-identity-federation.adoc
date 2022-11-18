@@ -27,7 +27,7 @@ summary: 使用身份联合可以加快设置组和用户的速度，并允许�
 
 NOTE: 如果要使用未列出的 LDAP v3 服务，请联系技术支持。
 
-* 如果您计划使用 OpenLDAP ，则必须配置 OpenLDAP 服务器。请参见 <<Guidelines for configuring an OpenLDAP server>>。
+* 如果您计划使用 OpenLDAP ，则必须配置 OpenLDAP 服务器。请参见  for configuring an OpenLDAP server。
 * 如果您计划启用单点登录（ SSO ），则已查看 xref:requirements-for-sso.adoc[使用单点登录的要求]。
 * 如果您计划使用传输层安全（ Transport Layer Security ， TLS ）与 LDAP 服务器进行通信，则身份提供程序正在使用 TLS 1.2 或 1.3 。请参见 xref:supported-ciphers-for-outgoing-tls-connections.adoc[支持传出 TLS 连接的密码]。
 

@@ -85,7 +85,7 @@ entries:
     - title: 管理警报通知
       entries:
       - title: 设置 SNMP 通知
-        url: "/monitor/set-up-snmp-alert-notifications.html"
+        url: "/monitor/snmp-alert-notifications.html"
       - title: 设置电子邮件通知
         url: "/monitor/email-alert-notifications.html"
       - title: 静默警报通知

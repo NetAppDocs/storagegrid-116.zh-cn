@@ -37,7 +37,7 @@ NOTE: 部署节点后，您将无法再使用 StorageGRID 设备安装程序访�
 * 如果无法使用 StorageGRID 设备安装程序或网格管理器，则可以使用连接到管理端口的 Web 浏览器直接访问 SANtricity 系统管理器。
 
 
-此操作步骤 包含首次访问 SANtricity System Manager 的步骤。如果您已设置 SANtricity 系统管理器，请转到 <<config_hardware_alerts_sg6000,配置硬件警报步骤>>。
+此操作步骤 包含首次访问 SANtricity System Manager 的步骤。如果您已设置 SANtricity 系统管理器，请转到 ,配置硬件警报步骤。
 
 
 NOTE: 使用网格管理器或 StorageGRID 设备安装程序，您可以访问 SANtricity 系统管理器，而无需配置或连接设备的管理端口。

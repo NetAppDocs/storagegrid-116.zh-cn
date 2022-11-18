@@ -16,7 +16,7 @@ summary: 在主机上完成 Linux 安装后，您可能需要执行一些额外�
 .您需要什么？ #8217 ；将需要什么
 * 您已查看 xref:../network/index.adoc[StorageGRID 网络连接准则]。
 * 您已查看有关的信息 xref:node-container-migration-requirements.adoc[节点容器迁移要求]。
-* 如果您使用的是虚拟主机，则已阅读 <<mac_address_cloning_ubuntu,MAC 地址克隆的注意事项和建议>> 配置主机网络之前。
+* 如果您使用的是虚拟主机，则已阅读 ,MAC 地址克隆的注意事项和建议 配置主机网络之前。
 
 
 

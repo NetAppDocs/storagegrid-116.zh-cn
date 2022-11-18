@@ -53,7 +53,7 @@ sudo mount container-storage-volume-device /var/lib/containers
 
 == 安装 Docker
 
-StorageGRID 系统作为一组容器在 Red Hat Enterprise Linux 或 CentOS 上运行。如果您已选择使用 Docker 容器引擎，请按照以下步骤安装 Docker 。否则， <<Install Podman,安装 Podman>>。
+StorageGRID 系统作为一组容器在 Red Hat Enterprise Linux 或 CentOS 上运行。如果您已选择使用 Docker 容器引擎，请按照以下步骤安装 Docker 。否则，  Podman,安装 Podman。
 
 .步骤
 . 按照适用于您的 Linux 版本的说明安装 Docker 。
@@ -87,7 +87,7 @@ sudo docker version
 
 == 安装 Podman
 
-StorageGRID 系统作为一组容器在 Red Hat Enterprise Linux 上运行。如果您已选择使用 Podman 容器引擎，请按照以下步骤安装 Podman 。否则， <<Install Docker,安装 Docker>>。
+StorageGRID 系统作为一组容器在 Red Hat Enterprise Linux 上运行。如果您已选择使用 Podman 容器引擎，请按照以下步骤安装 Podman 。否则，  Docker,安装 Docker。
 
 
 NOTE: 只有 Red Hat Enterprise Linux （ RHEL ）才支持 Podman 。

@@ -50,7 +50,7 @@ NOTE: 如果需要，您可以 xref:linux-migrating-grid-node-to-new-host.adoc[�
 
 NOTE: 如果问题描述 您使用 `sservice servermanager stop` 命令停止设备存储节点上的服务，则必须重新启动设备以重新启动节点。
 
-. 对于主管理节点，重复执行的步骤 <<log_in_to_gn,登录到节点>> 和 <<stop_all_services,停止节点上的所有服务>>。
+. 对于主管理节点，重复执行的步骤 ,登录到节点 和 ,停止节点上的所有服务。
 . 对于在 Linux 主机上运行的节点：
 +
 .. 登录到主机操作系统。

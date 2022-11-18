@@ -40,7 +40,7 @@ NOTE: 希望自动安装和配置设备的经验丰富的用户可以 xref:autom
 . 使用以下方法之一生成 JSON 文件：
 +
 ** 。 https://configbuilder.netapp.com/["ConfigBuilder 应用程序"^]。
-** 。 xref:automating-installation-configuration-appliance-nodes-configure-sga-py-script.adoc[`configure-sGa.py` 设备配置脚本]。您可以从 StorageGRID 设备安装程序（ * 帮助 * > * 设备配置脚本 * ）下载此脚本。
+** 。 xref:automating-installation-configuration-appliance-nodes-configure-sga-py-script.adoc[configure-sga.py设备配置脚本]。您可以从StorageGRID 设备安装程序(*帮助***设备配置脚本*)下载此脚本。
 +
 JSON 文件中的节点名称必须符合以下要求：
 

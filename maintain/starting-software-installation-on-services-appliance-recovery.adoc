@@ -57,7 +57,7 @@ image::../media/services_appliance_installer_gateway_node.png[设备安装程序
 .. 在 * 节点名称 * 字段中，输入与要恢复的节点相同的名称，然后单击 * 保存 * 。
 .. 在安装部分中，检查当前状态下列出的软件版本
 +
-如果准备安装的软件版本正确，请跳至 <<installation_section_step,安装步骤>>。
+如果准备安装的软件版本正确，请跳至 ,安装步骤。
 
 .. 如果需要上传其他版本的软件，请在 * 高级 * 菜单下选择 * 上传 StorageGRID 软件 * 。
 +

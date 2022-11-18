@@ -23,7 +23,7 @@ StorageGRID 安装归档
  a| 
 如果要添加新的网格节点或新站点，则必须下载并提取 StorageGRID 安装归档。您必须使用网格上当前运行的相同版本。
 
-有关详细信息，请参见的说明 <<download-and-extract-install-files,下载并提取 StorageGRID 安装文件>>。
+有关详细信息，请参见的说明 ,下载并提取 StorageGRID 安装文件。
 
 * 注意： * 如果要向现有存储节点添加新存储卷或安装新的 StorageGRID 设备，则不需要下载文件。
 

@@ -88,12 +88,12 @@ summary: '如果对存储卷水印使用自定义值，则可能需要解决 " �
 +
 image::../media/nodes_page_object_data_used_with_alert.png[节点页面，显示用于 3 SnS 的对象数据]
 
-. 如果所有存储节点均未接近全满（例如，所有 * 已使用的对象数据 * 值均小于 80% ），则可以开始使用覆盖设置。转至 <<Use optimized watermarks>>。
+. 如果所有存储节点均未接近全满（例如，所有 * 已使用的对象数据 * 值均小于 80% ），则可以开始使用覆盖设置。转至  optimized watermarks。
 +
 
-NOTE: 此一般规则存在一些例外情况。例如，如果 ILM 规则使用严格的载入行为或特定存储池接近全满，则应首先执行中的步骤 <<View optimized storage watermarks>> 和 <<Determine if you can use optimized watermarks>>。
+NOTE: 此一般规则存在一些例外情况。例如，如果 ILM 规则使用严格的载入行为或特定存储池接近全满，则应首先执行中的步骤  optimized storage watermarks 和  if you can use optimized watermarks。
 
-. 如果还有一个存储节点接近全满，请执行中的步骤 <<View optimized storage watermarks>> 和 <<Determine if you can use optimized watermarks>>。
+. 如果还有一个存储节点接近全满，请执行中的步骤  optimized storage watermarks 和  if you can use optimized watermarks。
 
 
 
@@ -133,9 +133,9 @@ StorageGRID 使用两个 Prometheus 指标来显示它为 * 存储卷软只读�
 .. 将每个对象存储（卷）的 * 可用 * 值与您为该存储节点记下的最大优化水印进行比较。
 
 
-. 如果每个联机存储节点上至少有一个卷的可用空间超过该节点的最大优化水印容量，请转至 <<Use optimized watermarks>> 开始使用经过优化的水印。
+. 如果每个联机存储节点上至少有一个卷的可用空间超过该节点的最大优化水印容量，请转至  optimized watermarks 开始使用经过优化的水印。
 +
-否则， xref:../expand/index.adoc[扩展网格] 请尽快。向现有节点添加存储卷或添加新的存储节点。然后，转到 <<Use optimized watermarks>> 更新水印设置。
+否则， xref:../expand/index.adoc[扩展网格] 请尽快。向现有节点添加存储卷或添加新的存储节点。然后，转到  optimized watermarks 更新水印设置。
 
 . 如果需要继续对存储卷水印使用自定义值， xref:../monitor/silencing-alert-notifications.adoc[静默] 或 xref:../monitor/disabling-alert-rules.adoc[-disable] * 低只读水印覆盖 * 警报。
 +

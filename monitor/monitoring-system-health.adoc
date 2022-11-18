@@ -66,6 +66,6 @@ image::../media/dashboard_health_panel.png[信息板运行状况面板]
 
 .相关信息
 * xref:../admin/index.adoc[管理 StorageGRID]
-* xref:set-up-email-alert-notifications.adoc[为警报设置电子邮件通知]
+* xref:email-alert-notifications.adoc[为警报设置电子邮件通知]
 * xref:using-snmp-monitoring.adoc[使用 SNMP 监控]
 

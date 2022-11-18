@@ -92,7 +92,7 @@ xref:using-s3-object-lock.adoc[使用 S3 对象锁定]
 ** `x-AMZ-server-side encrypt-customer-key`
 ** `x-AMZ-server-side encrypt-customer-encryption`
 +
-<<Request headers for server-side encryption>>
+ headers for server-side encryption
 
 
 

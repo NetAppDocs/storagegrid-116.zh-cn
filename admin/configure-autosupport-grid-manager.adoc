@@ -135,7 +135,7 @@ AutoSupport On Demand 可帮助解决技术支持正在积极处理的问题。
 
 启用 AutoSupport 后，系统会向 NetApp 支持部门发送运行状况和状态消息。您可以为所有 AutoSupport 消息指定一个其他目标。
 
-要验证或更改用于发送 AutoSupport 消息的协议，请参见中的说明 <<Specify the protocol for AutoSupport messages>>。
+要验证或更改用于发送 AutoSupport 消息的协议，请参见中的说明  the protocol for AutoSupport messages。
 
 
 NOTE: 您不能使用 SMTP 协议将 AutoSupport 消息发送到其他目标。

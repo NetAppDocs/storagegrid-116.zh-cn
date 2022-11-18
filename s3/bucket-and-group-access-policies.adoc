@@ -201,7 +201,7 @@ PUT 存储分段策略操作的 HTTP 请求正文必须使用 charset=UTF-8 进�
 * 资源值可以指定创建组策略时尚不存在的存储分段。
 
 
-<<Specify variables in a policy>>
+ variables in a policy
 
 
 
@@ -824,7 +824,7 @@ S3 ： PutOverwriteObject 权限是一种自定义 StorageGRID 权限，适用�
 
 IMPORTANT: 如果当前 S3 策略允许覆盖，并且 PutOverwriteObject 权限设置为 deny ，则客户端无法覆盖对象的数据，用户定义的元数据或对象标记。此外，如果选中了 * 阻止客户端修改 * 复选框（ * 配置 * > * 系统 * > * 网格选项 * ），则该设置将覆盖 PutOverwriteObject 权限的设置。
 
-<<S3 group policy examples>>
+ group policy examples
 
 
 
@@ -1299,11 +1299,11 @@ PUT#1 -------> PUT#2 ---X (denied)
 ----
 xref:../ilm/index.adoc[使用 ILM 管理对象]
 
-<<Create policies requiring special handling>>
+ policies requiring special handling
 
 xref:how-storagegrid-ilm-rules-manage-objects.adoc[StorageGRID ILM 规则如何管理对象]
 
-<<S3 group policy examples>>
+ group policy examples
 
 
 

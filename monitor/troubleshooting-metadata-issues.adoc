@@ -165,7 +165,7 @@ image::../media/cassandra_not_running_chart.png[概述： SSM ：服务页面]
 started because it has been offline for longer than
 its 15 day grace period - rebuild cassandra
 ----
-.. 确保此消息的时间戳是您按照步骤中的说明尝试重新启动 Cassandra 的时间 <<restart_Cassandra_from_the_Storage_Node,从存储节点重新启动 Cassandra>>。
+.. 确保此消息的时间戳是您按照步骤中的说明尝试重新启动 Cassandra 的时间 ,从存储节点重新启动 Cassandra。
 +
 Cassandra 可以有多个条目；您必须找到最新的条目。
 

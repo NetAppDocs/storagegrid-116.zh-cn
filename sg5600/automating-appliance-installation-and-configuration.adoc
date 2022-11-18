@@ -27,4 +27,4 @@ NOTE: 您可以使用同一文件配置多个设备。
 
 
 
-NOTE: 您可以直接使用 StorageGRID 自动化 Python 脚本，也可以使用它们作为示例，说明如何在您自己开发的网格部署和配置工具中使用 StorageGRID 安装 REST API 。请参见有关的信息 xref:downloading-and-extracting-storagegrid-installation-files.adoc[下载并提取 StorageGRID 安装文件] 在恢复和维护说明中。
+NOTE: 您可以直接使用 StorageGRID 自动化 Python 脚本，也可以使用它们作为示例，说明如何在您自己开发的网格部署和配置工具中使用 StorageGRID 安装 REST API 。请参见有关的信息 xref:../maintain/gathering-required-materials-for-grid-node-recovery.adoc#download-and-extract-install-files-recover[下载并提取 StorageGRID 安装文件]。

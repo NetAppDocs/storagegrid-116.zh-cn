@@ -21,7 +21,7 @@ summary: 在开始软件升级之前，您必须获取所有必需的材料，�
  a| 
 StorageGRID 升级文件
  a| 
-<<Download the StorageGRID upgrade files>> 连接到您的服务笔记本电脑。
+ the StorageGRID upgrade files 连接到您的服务笔记本电脑。
 
 
 
@@ -46,7 +46,7 @@ xref:../admin/web-browser-requirements.adoc[支持的 Web 浏览器]
  a| 
 恢复软件包（` .zip` ）文件
  a| 
-<<Download the Recovery Package>> 升级之前，请将此文件保存在安全位置。通过恢复包文件，您可以在发生故障时还原系统。
+ the Recovery Package 升级之前，请将此文件保存在安全位置。通过恢复包文件，您可以在发生故障时还原系统。
 
 
 

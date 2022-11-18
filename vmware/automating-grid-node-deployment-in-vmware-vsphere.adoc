@@ -93,7 +93,7 @@ Bash shell 脚本，用于自动部署虚拟网格节点。
 . 打开 `deploy-vsphere-ovftool.ini` 。
 . 输入部署 VMware 虚拟网格节点所需的所有信息。
 +
-请参见 xref:configuration-file-settings.adoc[配置文件设置] 以了解相关信息。
+请参见 ,配置文件设置 以了解相关信息。
 
 . 输入并验证所有必要信息后，请保存并关闭此文件。
 

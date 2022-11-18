@@ -234,7 +234,7 @@ NOTE: 在具有高电噪声的环境中，您可能会发现错误率较高。
 
 
 
-<<troubleshoot_MTU_alert,对网格网络 MTU 不匹配警报进行故障排除>>
+,对网格网络 MTU 不匹配警报进行故障排除
 
 xref:alarms-reference.adoc[警报参考（旧系统）]
 

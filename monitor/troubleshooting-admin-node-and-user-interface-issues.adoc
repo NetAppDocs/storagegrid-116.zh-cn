@@ -165,7 +165,7 @@ sg snmp agent                  11.4.0         Running
 +
 确保 idnt ， Acct ， nginx 和 Cassandra 服务均已运行。
 
-. 重复步骤 <<use_Lumberjack_to_collect_logs,使用 Lumberjack 收集日志>> 和 <<review_logs,查看日志>> 查看存储节点上的日志。
+. 重复步骤 ,使用 Lumberjack 收集日志 和 ,查看日志 查看存储节点上的日志。
 . If you are unable to resolve the issue, contact technical support.
 +
 将收集的日志提供给技术支持。另请参见 xref:logs-files-reference.adoc[日志文件参考]。

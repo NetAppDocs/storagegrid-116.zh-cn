@@ -78,7 +78,7 @@ image::../media/ilm_rules_page_with_edit_and_clone_enabled.png[ILM 规则页面]
 +
 image::../media/edit_ilm_rule_step_1.png[编辑 ILM 规则页面]
 
-. 按照的步骤完成编辑 ILM 规则向导中的各个页面 xref:creating-ilm-rule.adoc[创建 ILM 规则] 和 xref:using-advanced-filters-in-ilm-rules.adoc[使用高级筛选器]根据需要。
+. 按照的步骤完成编辑 ILM 规则向导中的各个页面 xref:access-create-ilm-rule-wizard.adoc[创建 ILM 规则] 和 xref:using-advanced-filters-in-ilm-rules.adoc[使用高级筛选器]根据需要。
 +
 编辑 ILM 规则时，不能更改其名称。
 
