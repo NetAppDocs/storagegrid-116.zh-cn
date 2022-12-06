@@ -23,4 +23,5 @@ TIP: 发出此命令之前，请确认节点的网络配置正确无误；节点
 
 IMPORTANT: 发出 `StorageGRID node force-recovery _node-name_` 命令后，您必须对 _node-name_ 执行其他恢复步骤。
 
+.相关信息
 xref:whats-next-performing-additional-recovery-steps-if-required.adoc[下一步操作：如果需要，执行其他恢复步骤]

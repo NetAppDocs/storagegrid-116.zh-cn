@@ -13,6 +13,7 @@ summary: 您可以自动安装和配置设备以及配置整个 StorageGRID 系�
 [role="lead"]
 您可以自动安装和配置设备以及配置整个 StorageGRID 系统。
 
+.关于此任务
 自动化安装和配置对于部署多个 StorageGRID 实例或一个大型复杂的 StorageGRID 实例非常有用。
 
 要自动执行安装和配置，请使用以下一个或多个选项：

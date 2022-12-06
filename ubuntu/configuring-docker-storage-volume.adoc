@@ -13,6 +13,7 @@ summary: 安装 Docker 之前，您可能需要格式化 Docker 存储卷并将�
 [role="lead"]
 在安装 Docker 之前，您可能需要格式化 Docker 存储卷并将其挂载到 ` /var/lib/Docker` 上。
 
+.关于此任务
 如果您计划对 Docker 存储卷使用本地存储，并且包含 ` /var/lib` 的主机分区上有足够的可用空间，则可以跳过这些步骤。
 
 .步骤

@@ -29,6 +29,7 @@ IMPORTANT: 在执行已断开连接的站点停用之前，您必须联系您的
 
 NOTE: 如果需要执行第二个维护操作步骤 ，可以 xref:pausing-and-resuming-decommission-process-for-storage-nodes.adoc[在删除存储节点时暂停停用操作步骤]。只有在达到 ILM 评估或纠删编码的数据停用阶段时， * 暂停 * 按钮才会启用；但是， ILM 评估（数据迁移）将继续在后台运行。第二个维护操作步骤 完成后，您可以恢复停用。
 
+.相关信息
 xref:grid-node-decommissioning.adoc[网格节点停用]
 
 xref:site-decommissioning.adoc[站点停用]

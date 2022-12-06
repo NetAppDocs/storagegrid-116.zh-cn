@@ -47,4 +47,5 @@ StorageGRID 支持表示 Elasticsearch 集群的搜索集成端点。这些 Elas
 
 搜索集成端点是指特定的 Elasticsearch 索引和类型。您必须先在 Elasticsearch 中创建索引，然后才能在 StorageGRID 中创建端点，否则端点创建将失败。在创建端点之前，您无需创建类型。如果需要， StorageGRID 将在向端点发送对象元数据时创建此类型。
 
+.相关信息
 xref:../admin/index.adoc[管理 StorageGRID]

@@ -13,10 +13,11 @@ summary: 您必须监控每个存储节点的总可用空间，以确保该节�
 [role="lead"]
 您必须监控每个存储节点的总可用空间，以确保该节点具有足够的空间来容纳新对象数据。
 
-.您需要什么？ #8217 ；将需要什么
+.您需要的内容
 * 您必须使用登录到网格管理器 xref:../admin/web-browser-requirements.adoc[支持的 Web 浏览器]。
 
 
+.关于此任务
 可用空间是指可用于存储对象的存储空间量。存储节点的总可用空间是通过将节点中所有对象存储上的可用空间相加来计算得出的。
 
 image::../media/calculating_watermarks.gif[可用总空间的概念图]
@@ -66,6 +67,7 @@ NOTE: 如果您的 ILM 策略使用纠删编码，则您可能希望在现有存
 
 
 
+.相关信息
 xref:../admin/index.adoc[管理 StorageGRID]
 
 xref:troubleshooting-storagegrid-system.adoc[对对象数据存储不足警报进行故障排除]

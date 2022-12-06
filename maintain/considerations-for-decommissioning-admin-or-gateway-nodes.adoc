@@ -20,4 +20,5 @@ summary: 停用管理节点或网关节点之前，请查看以下注意事项�
 * 如果停用管理节点并为 StorageGRID 系统启用了单点登录（ SSO ），则必须记住从 Active Directory 联合身份验证服务（ AD FS ）中删除该节点的依赖方信任。
 
 
+.相关信息
 xref:../admin/index.adoc[管理 StorageGRID]

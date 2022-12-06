@@ -13,7 +13,7 @@ summary: 必须将替代节点配置为 StorageGRID 系统的主管理节点。
 [role="lead"]
 必须将替代节点配置为 StorageGRID 系统的主管理节点。
 
-.您需要什么？ #8217 ；将需要什么
+.您需要的内容
 * 对于虚拟机上托管的主管理节点，必须部署，启动和初始化虚拟机。
 * 对于服务设备上托管的主管理节点，您已更换此设备并安装了软件。请参见适用于您的设备的安装指南。
 +
@@ -62,6 +62,7 @@ NOTE: 要配置依赖方信任，请参见有关管理 StorageGRID 的说明。�
 
 
 
+.相关信息
 xref:../admin/index.adoc[管理 StorageGRID]
 
 xref:storagegrid-hotfix-procedure.adoc[StorageGRID 热修补程序操作步骤]

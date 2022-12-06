@@ -33,4 +33,5 @@ summary: 如果您计划停用存储节点，则必须了解 StorageGRID 如何�
 
 
 
+.相关信息
 xref:restoring-object-data-to-storage-volume-if-required.adoc[根据需要将对象数据还原到存储卷]

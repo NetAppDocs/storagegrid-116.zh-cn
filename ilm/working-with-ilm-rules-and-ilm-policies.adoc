@@ -13,7 +13,7 @@ summary: 创建 ILM 规则和 ILM 策略后，您可以继续使用它们，并�
 [role="lead"]
 创建 ILM 规则和 ILM 策略后，您可以继续使用它们，并随存储需求的变化修改其配置。
 
-.您需要什么？ #8217 ；将需要什么
+.您需要的内容
 * 您将使用登录到网格管理器 xref:../admin/web-browser-requirements.adoc[支持的 Web 浏览器]。
 * 您具有特定的访问权限。
 

@@ -40,6 +40,7 @@ S3 租户帐户由 StorageGRID 网格管理员使用网格管理器或网格管�
 
 IMPORTANT: S3 租户用户可以使用租户管理器创建和管理 S3 存储分段，但他们必须具有 S3 访问密钥，并使用 S3 REST API 载入和管理对象。
 
+.相关信息
 xref:../admin/index.adoc[管理 StorageGRID]
 
 xref:../tenant/index.adoc[使用租户帐户]
@@ -79,6 +80,7 @@ NOTE: CLB 服务已弃用。在 StorageGRID 11.3 版本之前配置的客户端�
 
 有关每个选项的详细信息，请参见有关管理 StorageGRID 的说明。
 
+.相关信息
 xref:../admin/index.adoc[管理 StorageGRID]
 
 
@@ -199,6 +201,7 @@ LDR
 
 可以为客户端用于连接到 StorageGRID 的 IP 地址配置 DNS 名称。请与本地网络管理员联系。
 
+.相关信息
 xref:../admin/index.adoc[管理 StorageGRID]
 
 
@@ -217,6 +220,7 @@ NOTE: CLB 服务已弃用。
 
 如果选择了 * 启用 HTTP 连接 * 选项，则客户端对 HTTP 使用的端口必须与对 HTTPS 使用的端口不同。请参见有关管理 StorageGRID 的说明。
 
+.相关信息
 xref:../admin/index.adoc[管理 StorageGRID]
 
 xref:benefits-of-active-idle-and-concurrent-http-connections.adoc[活动，空闲和并发 HTTP 连接的优势]
@@ -227,6 +231,7 @@ xref:benefits-of-active-idle-and-concurrent-http-connections.adoc[活动，空�
 
 在对客户端请求使用 S3 域名之前， StorageGRID 管理员必须将系统配置为接受在 S3 路径模式和 S3 虚拟托管模式请求中使用 S3 域名的连接。
 
+.关于此任务
 要使用 S3 虚拟托管模式请求，网格管理员必须执行以下任务：
 
 * 使用网格管理器将 S3 端点域名添加到 StorageGRID 系统。
@@ -251,6 +256,7 @@ NOTE: CLB 服务已弃用。
 
 完成这些步骤后，您可以使用虚拟托管模式请求（例如， `bucket.s3.company.com` ）。
 
+.相关信息
 xref:../admin/index.adoc[管理 StorageGRID]
 
 xref:configuring-security-for-rest-api.adoc[配置 REST API 的安全性]
@@ -261,7 +267,7 @@ xref:configuring-security-for-rest-api.adoc[配置 REST API 的安全性]
 
 您可以使用 Amazon Web Services 命令行界面（ AWS 命令行界面）测试与系统的连接，并验证是否可以向系统读取和写入对象。
 
-.您需要什么？ #8217 ；将需要什么
+.您需要的内容
 * 您已从下载并安装 AWS 命令行界面 https://aws.amazon.com/cli["aws.amazon.com/cli"^]。
 * 您已在 StorageGRID 系统中创建 S3 租户帐户。
 

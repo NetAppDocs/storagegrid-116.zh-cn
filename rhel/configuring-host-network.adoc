@@ -13,15 +13,16 @@ summary: 在主机上完成 Linux 安装后，您可能需要执行一些额外�
 [role="lead"]
 在主机上完成 Linux 安装后，您可能需要执行一些额外的配置，以便在每个主机上准备一组适合映射到稍后要部署的 StorageGRID 节点的网络接口。
 
-.您需要什么？ #8217 ；将需要什么
+.您需要的内容
 * 您已查看 xref:../network/index.adoc[StorageGRID 网络连接准则]。
 * 您已查看有关的信息 xref:node-container-migration-requirements.adoc[节点容器迁移要求]。
-* 如果您使用的是虚拟主机，则已阅读 ,MAC 地址克隆的注意事项和建议 配置主机网络之前。
+* 如果您使用的是虚拟主机，则已阅读 <<mac_address_cloning_rhel,MAC 地址克隆的注意事项和建议>> 配置主机网络之前。
 
 
 
 NOTE: 如果要使用 VM 作为主机，则应选择 VMXNET 3 作为虚拟网络适配器。VMware E1000 网络适配器已导致在某些 Linux 版本上部署 StorageGRID 容器时出现连接问题。
 
+.关于此任务
 网格节点必须能够访问网格网络，还可以访问管理网络和客户端网络。您可以通过创建映射来提供此访问权限，此映射会将主机的物理接口与每个网格节点的虚拟接口相关联。创建主机接口时，请使用友好名称以方便在所有主机之间进行部署，并启用迁移。
 
 同一接口可以在主机与一个或多个节点之间共享。例如，您可以使用相同的接口进行主机访问和节点管理网络访问，以便于维护主机和节点。尽管主机和各个节点之间可以共享同一接口，但所有接口都必须具有不同的 IP 地址。不能在节点之间或主机与任何节点之间共享 IP 地址。
@@ -33,12 +34,14 @@ NOTE: 如果要使用 VM 作为主机，则应选择 VMXNET 3 作为虚拟网络
 
 NOTE: 请勿直接使用绑定或网桥设备作为容器网络接口。这样做可能会阻止内核问题描述 在容器命名空间中对绑定和网桥设备使用 MACVLAN 导致节点启动。请改用非绑定设备，例如 VLAN 或虚拟以太网（ Veth ）对。在节点配置文件中指定此设备作为网络接口。
 
+.相关信息
 xref:creating-node-configuration-files.adoc[正在创建节点配置文件]
 
 
 
 == MAC 地址克隆的注意事项和建议
 
+.【mac_address_cloning_rhel]]
 MAC 地址克隆会使容器使用主机的 MAC 地址，而主机则使用您指定的地址或随机生成的地址的 MAC 地址。您应使用 MAC 地址克隆来避免使用混杂模式网络配置。
 
 
@@ -113,6 +116,7 @@ image::../media/rhel_install_vlan_diag_1.gif[Red Hat 安装 VLAN 示意图]
 
 == 示例 2 ： LACP 绑定传输 VLAN
 
+.关于此任务
 示例 2 假定您熟悉绑定网络接口以及在所使用的 Linux 分发版上创建 VLAN 接口。
 
 示例 2 介绍了一种基于 VLAN 的通用灵活方案，该方案有助于在单个主机上的所有节点之间共享所有可用网络带宽。此示例尤其适用于裸机主机。
@@ -137,4 +141,5 @@ image::../media/rhel_install_vlan_diag_2.gif[此图通过周围的文本进行�
 
 
 
+.相关信息
 xref:example-etc-sysconfig-network-scripts.adoc[示例 /etc/sysconfig/network-scripts]

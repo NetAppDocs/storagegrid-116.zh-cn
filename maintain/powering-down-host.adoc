@@ -79,6 +79,7 @@ NOTE: 在设备节点上执行问题描述 `shutdown -h now` 命令后，必须�
 . 注销命令 Shell ： `exit`
 
 
+.相关信息
 xref:../sg100-1000/index.adoc[SG100 和 SG1000 服务设备]
 
 xref:../sg6000/index.adoc[SG6000 存储设备]

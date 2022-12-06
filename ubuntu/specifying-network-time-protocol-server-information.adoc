@@ -13,6 +13,7 @@ summary: 您必须为 StorageGRID 系统指定网络时间协议（ NTP ）配�
 [role="lead"]
 您必须为 StorageGRID 系统指定网络时间协议（ NTP ）配置信息，以便在不同服务器上执行的操作保持同步。
 
+.关于此任务
 您必须为 NTP 服务器指定 IPv4 地址。
 
 您必须指定外部 NTP 服务器。指定的 NTP 服务器必须使用 NTP 协议。
@@ -40,4 +41,5 @@ image::../media/8_gmi_installer_ntp_page.gif[此图通过周围的文本进行�
 . 选择 * 下一步 * 。
 
 
+.相关信息
 xref:../network/index.adoc[网络连接准则]

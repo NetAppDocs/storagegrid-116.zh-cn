@@ -20,10 +20,11 @@ summary: 您可以执行多项任务来帮助确定元数据问题的根源。
 
 如果触发 * 低元数据存储 * 警报，则必须添加新的存储节点。
 
-.您需要什么？ #8217 ；将需要什么
+.您需要的内容
 * 您必须使用登录到网格管理器 xref:../admin/web-browser-requirements.adoc[支持的 Web 浏览器]。
 
 
+.关于此任务
 StorageGRID 会在每个存储节点的卷 0 上为对象元数据预留一定数量的空间。此空间称为实际预留空间，并细分为对象元数据允许的空间（允许的元数据空间）以及数据缩减和修复等基本数据库操作所需的空间。允许的元数据空间用于控制整体对象容量。
 
 image::../media/metadata_allowed_space_volume_0.png[允许的元数据空间卷 0]
@@ -76,12 +77,13 @@ NOTE: 由于 StorageGRID 会在每个站点保留所有对象元数据的完整�
 
 服务：状态 - Cassandra （ SVST ）警报指示您可能需要为存储节点重建 Cassandra 数据库。Cassandra 用作 StorageGRID 的元数据存储。
 
-.您需要什么？ #8217 ；将需要什么
+.您需要的内容
 * 您必须使用登录到网格管理器 xref:../admin/web-browser-requirements.adoc[支持的 Web 浏览器]。
 * 您必须具有特定的访问权限。
 * 您必须具有 `passwords.txt` 文件。
 
 
+.关于此任务
 如果 Cassandra 停止超过 15 天（例如，存储节点已关闭），则在节点恢复联机后， Cassandra 将无法启动。您必须为受影响的 DDS 服务重建 Cassandra 数据库。
 
 您可以 xref:running-diagnostics.adoc[运行诊断] 获取网格当前状态的追加信息 。
@@ -165,7 +167,7 @@ image::../media/cassandra_not_running_chart.png[概述： SSM ：服务页面]
 started because it has been offline for longer than
 its 15 day grace period - rebuild cassandra
 ----
-.. 确保此消息的时间戳是您按照步骤中的说明尝试重新启动 Cassandra 的时间 ,从存储节点重新启动 Cassandra。
+.. 确保此消息的时间戳是您按照步骤中的说明尝试重新启动 Cassandra 的时间 <<restart_Cassandra_from_the_Storage_Node,从存储节点重新启动 Cassandra>>。
 +
 Cassandra 可以有多个条目；您必须找到最新的条目。
 
@@ -184,6 +186,7 @@ Cassandra 可以有多个条目；您必须找到最新的条目。
 
 如果 Cassandra 数据库出现内存不足错误，则会触发总计事件（ SMT ）警报。如果发生此错误，请联系技术支持以使用问题描述 。
 
+.关于此任务
 如果 Cassandra 数据库发生内存不足错误，则会创建堆转储，触发总事件（ SMT ）警报， Cassandra 堆内存不足错误计数将增加 1 。
 
 .步骤

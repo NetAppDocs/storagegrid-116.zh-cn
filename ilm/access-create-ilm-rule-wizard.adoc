@@ -16,7 +16,7 @@ summary: 您可以使用创建 ILM 规则向导创建 ILM 规则。
 
 NOTE: 如果要为策略创建默认 ILM 规则，请改用此操作步骤 ： xref:creating-default-ilm-rule.adoc[创建默认 ILM 规则]。
 
-.您需要什么？ #8217 ；将需要什么
+.您需要的内容
 * 您将使用登录到网格管理器 xref:../admin/web-browser-requirements.adoc[支持的 Web 浏览器]。
 * 您具有特定的访问权限。
 * 如果要指定此规则适用场景 中的租户帐户，您拥有 " 租户帐户 " 权限或知道每个帐户的帐户 ID 。
@@ -32,6 +32,7 @@ image::../media/video-screenshot-ilm-rules.png[视频： StorageGRID ILM 规则�
 
 
 
+.关于此任务
 创建 ILM 规则时：
 
 * 请考虑 StorageGRID 系统的拓扑和存储配置。

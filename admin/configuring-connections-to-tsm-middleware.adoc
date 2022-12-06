@@ -13,11 +13,12 @@ summary: 在归档节点能够与 Tivoli Storage Manager （ TSM\ ）中间件�
 [role="lead"]
 在归档节点能够与 Tivoli Storage Manager （ TSM ）中间件进行通信之前，您必须配置多项设置。
 
-.您需要什么？ #8217 ；将需要什么
+.您需要的内容
 * 您将使用登录到网格管理器 xref:../admin/web-browser-requirements.adoc[支持的 Web 浏览器]。
 * 您具有特定的访问权限。
 
 
+.关于此任务
 在配置这些设置之前，由于无法与 Tivoli Storage Manager 进行通信，因此，此 ARC-Service 仍会处于主要警报状态。
 
 .步骤

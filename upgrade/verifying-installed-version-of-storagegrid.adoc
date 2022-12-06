@@ -13,9 +13,10 @@ summary: 在开始升级之前，您必须确认先前版本的 StorageGRID 当�
 [role="lead"]
 在开始升级之前，您必须确认先前版本的 StorageGRID 当前已安装应用了最新可用的修补程序。
 
+.关于此任务
 在升级到 StorageGRID 11.5 之前，网格必须安装 StorageGRID 11.5 。如果您当前使用的是早期版本的 StorageGRID ，则必须安装所有先前的升级文件及其最新的修补程序（强烈建议），直到网格的当前版本为 StorageGRID 11.5. _x.y_ 为止。
 
-中显示了一个可能的升级路径  Upgrade to StorageGRID 11.5 from version 11.3.0.8,示例。
+中显示了一个可能的升级路径 <<示例：从 11.3.0.8 版升级到 StorageGRID 11.5,示例>>。
 
 
 IMPORTANT: NetApp 强烈建议您在升级到下一个版本之前对每个 StorageGRID 版本应用最新的修补程序，同时对安装的每个新版本应用最新的修补程序。在某些情况下，您必须应用修补程序以避免数据丢失的风险。请参见 https://mysupport.netapp.com/site/products/all/details/storagegrid/downloads-tab["NetApp 下载： StorageGRID"^] 以及每个修补程序的发行说明以了解更多信息。

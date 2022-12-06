@@ -127,4 +127,5 @@ StorageGRID 的 API 架构。
 * 注意 * ：在执行升级之前，如果您没有用于升级兼容性测试的非生产 StorageGRID 环境，则可以使用这些架构确认为使用 StorageGRID 管理 API 编写的任何代码都与新的 StorageGRID 版本兼容。
 
 |===
+.相关信息
 xref:../maintain/index.adoc[恢复和维护]

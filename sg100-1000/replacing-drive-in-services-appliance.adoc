@@ -13,7 +13,7 @@ summary: 服务设备中的 SSD 包含 StorageGRID 操作系统。此外，如�
 [role="lead"]
 服务设备中的 SSD 包含 StorageGRID 操作系统。此外，如果将设备配置为管理节点，则 SSD 还包含审核日志，指标和数据库表。驱动器使用 RAID1 进行镜像以实现冗余。如果其中一个驱动器发生故障，您必须尽快更换它以确保冗余。
 
-.您需要什么？ #8217 ；将需要什么
+.您需要的内容
 * 您已拥有 xref:locating-controller-in-data-center.adoc[已物理定位设备]。
 * 您已通过注意到左侧 LED 呈琥珀色闪烁来验证哪个驱动器出现故障。
 +

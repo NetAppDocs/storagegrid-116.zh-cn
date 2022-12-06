@@ -13,13 +13,14 @@ summary: 您可以使用 StorageGRID 密钥管理服务器向导添加每个 KMS
 [role="lead"]
 您可以使用 StorageGRID 密钥管理服务器向导添加每个 KMS 或 KMS 集群。
 
-.您需要什么？ #8217 ；将需要什么
+.您需要的内容
 * 您已查看 xref:kms-considerations-and-requirements.adoc[使用密钥管理服务器的注意事项和要求]。
 * 您已拥有 xref:kms-configuring-storagegrid-as-client.adoc[已在 KMS 中将 StorageGRID 配置为客户端]和您具有每个 KMS 或 KMS 集群所需的信息。
 * 您将使用登录到网格管理器 xref:../admin/web-browser-requirements.adoc[支持的 Web 浏览器]。
 * 您具有 root 访问权限。
 
 
+.关于此任务
 如果可能，请先配置任何站点特定的密钥管理服务器，然后再配置一个默认 KMS ，以便对所有不受另一个 KMS 管理的站点进行适用场景 。如果首先创建默认 KMS ，则网格中所有节点加密的设备都将使用默认 KMS 进行加密。如果要稍后创建站点专用的 KMS ，则必须先将当前版本的加密密钥从默认 KMS 复制到新的 KMS 。请参见 xref:kms-considerations-for-changing-for-site.adoc[更改站点的 KMS 的注意事项] 了解详细信息。
 
 

@@ -13,7 +13,7 @@ summary: 关闭 SG6000-CN 控制器以执行硬件维护。
 [role="lead"]
 关闭 SG6000-CN 控制器以执行硬件维护。
 
-.您需要什么？ #8217 ；将需要什么
+.您需要的内容
 * 您已将需要维护的 SG6000-CN 控制器物理定位在数据中心。
 +
 xref:locating-controller-in-data-center.adoc[在数据中心中找到控制器]
@@ -21,6 +21,7 @@ xref:locating-controller-in-data-center.adoc[在数据中心中找到控制器]
 * 此设备已运行 xref:placing-appliance-into-maintenance-mode.adoc[置于维护模式]。
 
 
+.关于此任务
 要防止服务中断，请在可以接受服务中断期间的计划维护窗口期间关闭控制器或关闭控制器之前，确认所有其他存储节点均已连接到网格。请参见有关通过信息生命周期管理管理对象的说明中有关确定节点连接状态的信息。
 
 
@@ -79,4 +80,5 @@ image::../media/bmc_power_control_page_controller_off.png[BMC 电源控制页面
 
 
 
+.相关信息
 xref:removing-sg6000-cn-controller-from-cabinet-or-rack.adoc[从机柜或机架中卸下 SG6000-CN 控制器]

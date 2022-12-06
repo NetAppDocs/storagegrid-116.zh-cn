@@ -93,7 +93,7 @@ IMPORTANT: 当对象从云存储池移回 StorageGRID 时， StorageGRID 会为�
 
 
 
-== S3 ：外部存储分段的生命周期注意事项
+== S3：外部存储分段的生命周期注意事项
 
 StorageGRID 与云存储池中指定的外部 S3 存储分段之间的对象移动由 StorageGRID 中的 ILM 规则和活动 ILM 策略控制。相比之下，对象从云存储池中指定的外部 S3 存储分段过渡到 Amazon S3 Glacier 或 S3 Glacier 深度归档（或过渡到实施 Glacier 存储类的存储解决方案 ）则由该分段的生命周期配置控制。
 

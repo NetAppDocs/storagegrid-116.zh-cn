@@ -68,8 +68,8 @@ image::security_certificates.png[证书页面]
 --
 这些全局证书可确保从 Web 浏览器以及外部 S3 和 Swift API 客户端访问 StorageGRID 的安全。在安装期间， StorageGRID 证书颁发机构最初会生成两个全局证书。生产环境的最佳实践是使用由外部证书颁发机构签名的自定义证书。
 
-*  interface certificate：确保客户端 Web 浏览器与 StorageGRID 管理界面的连接安全。
-*  and Swift API certificate：保护与存储节点，管理节点和网关节点的客户端 API 连接的安全， S3 和 Swift 客户端应用程序使用这些连接上传和下载对象数据。
+* <<管理接口证书>>：确保客户端 Web 浏览器与 StorageGRID 管理界面的连接安全。
+* <<S3 和 Swift API 证书>>：保护与存储节点，管理节点和网关节点的客户端 API 连接的安全， S3 和 Swift 客户端应用程序使用这些连接上传和下载对象数据。
 
 
 有关已安装的全局证书的信息包括：
@@ -97,7 +97,7 @@ image::security_certificates.png[证书页面]
 --
 .网格 CA
 --
-。 ,网格 CA 证书由 StorageGRID 证书颁发机构在 StorageGRID 安装期间生成，可保护所有内部 StorageGRID 流量。
+。 <<gridca_details,网格 CA 证书>>由 StorageGRID 证书颁发机构在 StorageGRID 安装期间生成，可保护所有内部 StorageGRID 流量。
 
 证书信息包括证书到期日期和证书内容。
 
@@ -106,7 +106,7 @@ image::security_certificates.png[证书页面]
 --
 .客户端
 --
-,客户端证书由外部证书颁发机构生成，用于保护外部监控工具与 StorageGRID Prometheus 数据库之间的连接。
+<<adminclientcert_details,客户端证书>>由外部证书颁发机构生成，用于保护外部监控工具与 StorageGRID Prometheus 数据库之间的连接。
 
 证书表中的每个已配置客户端证书都有一行，用于指示此证书是否可用于 Prometheus 数据库访问以及证书到期日期。
 
@@ -128,7 +128,7 @@ image::security_certificates.png[证书页面]
 --
 .负载平衡器端点
 --
- balancer endpoint certificate,负载平衡器端点证书上载或生成的，用于保护 S3 和 Swift 客户端之间的连接以及网关节点和管理节点上的 StorageGRID 负载平衡器服务。
+<<负载平衡器端点证书,负载平衡器端点证书>>上载或生成的，用于保护 S3 和 Swift 客户端之间的连接以及网关节点和管理节点上的 StorageGRID 负载平衡器服务。
 
 负载平衡器端点表对每个已配置的负载平衡器端点都有一行，用于指示此端点是否使用全局 S3 和 Swift API 证书或自定义负载平衡器端点证书。此外，还会显示每个证书的到期日期。
 
@@ -145,7 +145,7 @@ NOTE: 对端点证书所做的更改可能需要长达 15 分钟才能应用于�
 --
 .Tenants
 --
-租户可以使用  federation certificate,身份联合服务器证书 或  services endpoint certificate,平台服务端点证书 以确保其与 StorageGRID 的连接安全。
+租户可以使用 <<身份联合证书,身份联合服务器证书>> 或 <<平台服务端点证书,平台服务端点证书>> 以确保其与 StorageGRID 的连接安全。
 
 租户表中的每个租户都有一行，用于指示每个租户是否有权使用自己的身份源或平台服务。
 
@@ -162,12 +162,12 @@ NOTE: 对端点证书所做的更改可能需要长达 15 分钟才能应用于�
 --
 StorageGRID 会将其他安全证书用于特定目的。这些证书按其功能名称列出。其他安全证书包括：
 
-*  federation certificate,身份联合证书
-*  Storage Pool endpoint certificate,云存储池证书
-*  management server (KMS) certificate,密钥管理服务器（ KMS ）证书
-*  sign-on (SSO) certificate,单点登录证书
-*  alert notification certificate,通过电子邮件发送警报通知证书
-*  syslog server certificate,外部系统日志服务器证书
+* <<身份联合证书,身份联合证书>>
+* <<云存储池端点证书,云存储池证书>>
+* <<密钥管理服务器（ KMS ）证书,密钥管理服务器（ KMS ）证书>>
+* <<单点登录（ SSO ）证书,单点登录证书>>
+* <<通过电子邮件发送警报通知证书,通过电子邮件发送警报通知证书>>
+* <<外部系统日志服务器证书,外部系统日志服务器证书>>
 
 
 信息指示函数使用的证书类型及其服务器和客户端证书的到期日期（如果适用）。选择功能名称将打开一个浏览器选项卡，您可以在此查看和编辑证书详细信息。
@@ -239,7 +239,7 @@ xref:configuring-custom-server-certificate-for-storage-node-or-clb.adoc[配置 S
 
 === 网格 CA 证书
 
-请参见 ,默认网格 CA 证书问题描述。
+请参见 <<gridca_details,默认网格 CA 证书问题描述>>。
 
 
 
@@ -278,7 +278,7 @@ xref:configuring-administrator-client-certificates.adoc[配置客户端证书]
  a| 
 对 S3 或 Swift 客户端与网关节点和管理节点上的 StorageGRID 负载平衡器服务之间的连接进行身份验证。您可以在配置负载平衡器端点时上传或生成负载平衡器证书。客户端应用程序在连接到 StorageGRID 时使用负载平衡器证书来保存和检索对象数据。
 
-您也可以使用自定义版本的全局  and Swift API certificate 用于对与负载平衡器服务的连接进行身份验证的证书。如果使用全局证书对负载平衡器连接进行身份验证，则无需为每个负载平衡器端点上传或生成单独的证书。
+您也可以使用自定义版本的全局 <<S3 和 Swift API 证书>> 用于对与负载平衡器服务的连接进行身份验证的证书。如果使用全局证书对负载平衡器连接进行身份验证，则无需为每个负载平衡器端点上传或生成单独的证书。
 
 * 注意： * 用于负载平衡器身份验证的证书是正常 StorageGRID 操作期间使用量最多的证书。
  a| 

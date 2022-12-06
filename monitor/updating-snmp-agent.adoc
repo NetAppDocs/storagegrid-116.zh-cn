@@ -13,11 +13,12 @@ summary: 您可能需要禁用 SNMP 通知，更新社区字符串，或者添�
 [role="lead"]
 您可能需要禁用 SNMP 通知，更新社区字符串，或者添加或删除代理地址， USM 用户和陷阱目标。
 
-.您需要什么？ #8217 ；将需要什么
+.您需要的内容
 * 您必须使用登录到网格管理器 xref:../admin/web-browser-requirements.adoc[支持的 Web 浏览器]。
 * 您必须具有 root 访问权限。
 
 
+.关于此任务
 更新时 xref:configuring-snmp-agent.adoc[SNMP 代理配置]，请注意，您必须单击 SNMP 代理页面底部的 * 保存 * 以提交对每个选项卡所做的任何更改。
 
 .步骤
@@ -72,12 +73,12 @@ image::../media/snmp_other_config_usm_users_table.png[SNMP 其他配置 USM 用�
 
 +
 
-NOTE: 如果您添加或删除用户的权威引擎 ID ，并且当前已选择该用户作为目标，则必须按照步骤中所述编辑或删除该目标 ,SNMP 陷阱目标。否则，在保存 SNMP 代理配置时会发生验证错误。
+NOTE: 如果您添加或删除用户的权威引擎 ID ，并且当前已选择该用户作为目标，则必须按照步骤中所述编辑或删除该目标 <<SNMP_TRAP_DESTINATION,SNMP 陷阱目标>>。否则，在保存 SNMP 代理配置时会发生验证错误。
 
 .. 要删除 USM 用户，请选择该用户的单选按钮，然后单击 * 删除 * 。然后，单击 * 确定 * 以确认要删除此用户。
 +
 
-NOTE: 如果当前已为陷阱目标选择删除的用户，则必须按照步骤中所述编辑或删除此目标 ,SNMP 陷阱目标。否则，在保存 SNMP 代理配置时会发生验证错误。
+NOTE: 如果当前已为陷阱目标选择删除的用户，则必须按照步骤中所述编辑或删除此目标 <<SNMP_TRAP_DESTINATION,SNMP 陷阱目标>>。否则，在保存 SNMP 代理配置时会发生验证错误。
 
 +
 image::../media/snmp_usm_user_remove_error.png[SNMP USM 用户删除错误]

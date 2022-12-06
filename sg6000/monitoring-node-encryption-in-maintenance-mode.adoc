@@ -13,7 +13,7 @@ summary: 如果您在安装期间为设备启用了节点加密，则可以监�
 [role="lead"]
 如果您在安装期间为设备启用了节点加密，则可以监控每个设备节点的节点加密状态，包括节点加密状态和密钥管理服务器（ KMS ）详细信息。
 
-.您需要什么？ #8217 ；将需要什么
+.您需要的内容
 * 必须在安装期间为设备启用节点加密。安装设备后，您无法启用节点加密。
 * 您已拥有 xref:placing-appliance-into-maintenance-mode.adoc[已将设备置于维护模式]。
 
@@ -62,4 +62,5 @@ image::../media/nodes_menu.png[设备节点已重新加入网格]
 
 
 
+.相关信息
 xref:../admin/index.adoc[管理 StorageGRID]

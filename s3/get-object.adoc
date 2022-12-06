@@ -125,6 +125,7 @@ NOTE: 如果某个对象存储在云存储池中，并且该对象的一个或�
 * 后续的 GET 对象请求可能会返回 `403 For禁用` 。
 
 
+.相关信息
 xref:using-server-side-encryption.adoc[使用服务器端加密]
 
 xref:../ilm/index.adoc[使用 ILM 管理对象]

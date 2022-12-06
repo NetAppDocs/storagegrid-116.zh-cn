@@ -35,6 +35,7 @@ NOTE: 如果节点或站点停用操作步骤 已暂停，您可以安全地应�
 
 
 
+.相关信息
 xref:../monitor/index.adoc[监控和故障排除]
 
 xref:pausing-and-resuming-decommission-process-for-storage-nodes.adoc[暂停和恢复存储节点的停用过程]

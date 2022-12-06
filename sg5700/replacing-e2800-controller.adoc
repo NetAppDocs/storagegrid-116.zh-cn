@@ -29,6 +29,7 @@ IMPORTANT: 只有在使用已保存的密钥解锁驱动器后，才能使用此
 * 您必须使用登录到网格管理器 xref:../admin/web-browser-requirements.adoc[支持的 Web 浏览器]。
 
 
+.关于此任务
 您可以通过以下两种方式确定控制器箱是否发生故障：
 
 * SANtricity System Manager 中的恢复 Guru 可指示您更换控制器。
@@ -266,7 +267,7 @@ image::../media/e2800_battery_flange_not_ok.gif[电池法兰不正确]
 
 NOTE: 此操作步骤 中的插图显示了一个双端口HIC。控制器中的HIC可能具有不同数量的端口。
 
-. 如果控制器没有HIC (E2800A)、请更换控制器盖板。如果控制器确实具有HIC (E2800B)、请继续执行 ,将HIC从故障控制器移至替代控制器。
+. 如果控制器没有HIC (E2800A)、请更换控制器盖板。如果控制器确实具有HIC (E2800B)、请继续执行 <<move_the_HIC_to_the_replacement_controller,将HIC从故障控制器移至替代控制器>>。
 +
 .. 如果配有HIC、请将HIC从故障控制器移至更换控制器。
 .. 从HIC中删除所有SFP。
@@ -392,4 +393,5 @@ image::../media/node_rejoin_grid_confirmation.png[设备节点已重新加入网
 
 更换部件后，按照套件随附的 RMA 说明将故障部件退回 NetApp 。请参见 https://mysupport.netapp.com/site/info/rma["部件退回和放大器；更换"^] 第页，了解更多信息。
 
+.相关信息
 http://mysupport.netapp.com/info/web/ECMP1658252.html["NetApp E 系列系统文档站点"^]

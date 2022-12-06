@@ -179,7 +179,7 @@ SANtricity 软件中显示的存储控制器的全球标识符。
  a| 
 一个数据驱动器的有效大小。
 
-* 注 * ：对于具有扩展架的节点，请使用 ,每个磁盘架的数据驱动器大小 而是。有效驱动器大小可能因磁盘架而异。
+* 注 * ：对于具有扩展架的节点，请使用 <<shelf_data_drive_size,每个磁盘架的数据驱动器大小>> 而是。有效驱动器大小可能因磁盘架而异。
 
 
 
@@ -476,6 +476,7 @@ image::../media/nodes_page_storage_tables.png[节点页面存储表]
 
 
 
+.相关信息
 xref:../sg6000/index.adoc[SG6000 存储设备]
 
 xref:../sg5700/index.adoc[SG5700 存储设备]
@@ -712,4 +713,5 @@ image::../media/nodes_page_storage_tab_services_appliance.png[节点页面存储
 
 
 
+.相关信息
 xref:../sg100-1000/index.adoc[SG100 和 SG1000 服务设备]

@@ -15,11 +15,12 @@ summary: 所有 StorageGRID 节点都会生成审核消息以跟踪系统活动�
 
 有关审核消息的详细信息，请参见 xref:../audit/index.adoc[查看审核日志]。
 
-.您需要什么？ #8217 ；将需要什么
+.您需要的内容
 * 您将使用登录到网格管理器 xref:../admin/web-browser-requirements.adoc[支持的 Web 浏览器]。
 * 您具有维护或 root 访问权限。
 
 
+.关于此任务
 所有 StorageGRID 节点都会生成审核消息和日志，以跟踪系统活动和事件。默认情况下，审核信息会发送到管理节点上的审核日志。您可以调整审核级别以增加或减少审核日志中记录的审核消息的类型和数量。您也可以将审核信息配置为发送到远程系统日志服务器或临时存储在源节点上以手动收集。
 
 
@@ -141,7 +142,7 @@ NOTE: 只有当 * 客户端读取 * 或 * 客户端写入 * 的审核级别不�
 如果要远程保存审核信息，可以配置外部系统日志服务器。
 
 * 如果要将审核信息保存到外部系统日志服务器，请转至 xref:../monitor/configuring-syslog-server.adoc[配置外部系统日志服务器]。
-* 如果您不使用外部系统日志服务器，请转至 ,选择审核信息目标。
+* 如果您不使用外部系统日志服务器，请转至 <<Select-audit-information-destinations,选择审核信息目标>>。
 
 
 
@@ -214,6 +215,7 @@ CAUTION: 是否更改日志目标？
 
 
 
+.相关信息
 xref:../monitor/considerations-for-external-syslog-server.adoc[外部系统日志服务器的注意事项]
 
 xref:../admin/index.adoc[管理 StorageGRID]

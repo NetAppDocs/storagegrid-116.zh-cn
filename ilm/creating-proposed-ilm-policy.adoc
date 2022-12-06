@@ -16,7 +16,7 @@ summary: 您可以从头开始创建建议的 ILM 策略，也可以克隆当前
 
 NOTE: 如果已启用全局 S3 对象锁定设置，请改用此操作步骤 ： xref:creating-ilm-policy-after-s3-object-lock-is-enabled.adoc[启用 S3 对象锁定后创建 ILM 策略]。
 
-.您需要什么？ #8217 ；将需要什么
+.您需要的内容
 * 您将使用登录到网格管理器 xref:../admin/web-browser-requirements.adoc[支持的 Web 浏览器]。
 * 您具有特定的访问权限。
 * 您已创建要添加到建议策略的 ILM 规则。您可以根据需要保存建议的策略，创建其他规则，然后编辑建议的策略以添加新规则。
@@ -28,6 +28,7 @@ image::../media/video-screenshot-ilm-policies.png[视频： StorageGRID ILM 策�
 
 
 
+.关于此任务
 创建建议 ILM 策略的典型原因包括：
 
 * 您添加了一个新站点，需要使用新的 ILM 规则在该站点上放置对象。

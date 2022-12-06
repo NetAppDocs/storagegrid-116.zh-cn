@@ -43,4 +43,5 @@ summary: 如果您在 StorageGRID 设备安装期间遇到连接问题，应执�
 
 
 
+.相关信息
 xref:e5600sg-controller-seven-segment-display-codes.adoc[E5600SG 控制器七段显示代码]

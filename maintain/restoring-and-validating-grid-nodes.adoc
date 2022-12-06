@@ -13,6 +13,7 @@ summary: 您必须还原任何出现故障的网格节点的网格配置文件�
 [role="lead"]
 您必须还原任何出现故障的网格节点的网格配置文件，然后验证网格配置文件并解决任何错误。
 
+.关于此任务
 您可以导入主机上应存在的任何网格节点，前提是其 ` 或 var/local` 卷未因上一主机故障而丢失。例如，如果您为 StorageGRID 系统数据卷使用共享存储，则 ` /var/local` 卷可能仍存在，如适用于 Linux 操作系统的 StorageGRID 安装说明中所述。导入节点会将其节点配置文件还原到主机。
 
 如果无法导入缺少的节点，则必须重新创建其网格配置文件。
@@ -83,6 +84,7 @@ IMPORTANT: 如果在为节点重新创建配置文件时使用任何新的块设
 
 
 
+.相关信息
 xref:../rhel/index.adoc[安装 Red Hat Enterprise Linux 或 CentOS]
 
 xref:../ubuntu/index.adoc[安装 Ubuntu 或 Debian]

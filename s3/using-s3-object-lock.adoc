@@ -97,6 +97,7 @@ NOTE: 如果指定 `x-AMZ-object-lock-mode` ，则还必须指定 `x-AMZ-object-
 
 
 
+.相关信息
 xref:../ilm/index.adoc[使用 ILM 管理对象]
 
 xref:../tenant/index.adoc[使用租户帐户]

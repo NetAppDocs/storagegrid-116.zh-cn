@@ -38,6 +38,7 @@ Swift 租户帐户由 StorageGRID 网格管理员使用网格管理器或网格�
 
 IMPORTANT: Swift 用户必须具有 root 访问权限才能访问租户管理器。但是， " 根访问 " 权限不允许用户向 Swift REST API 进行身份验证以创建容器和载入对象。用户必须具有 Swift 管理员权限才能向 Swift REST API 进行身份验证。
 
+.相关信息
 xref:../admin/index.adoc[管理 StorageGRID]
 
 xref:../tenant/index.adoc[使用租户帐户]
@@ -213,6 +214,7 @@ NOTE: CLB 服务已弃用。
 
 如果选择了 * 启用 HTTP 连接 * 选项，则客户端对 HTTP 使用的端口必须与对 HTTPS 使用的端口不同。请参见有关管理 StorageGRID 的说明。
 
+.相关信息
 xref:../admin/index.adoc[管理 StorageGRID]
 
 
@@ -221,7 +223,7 @@ xref:../admin/index.adoc[管理 StorageGRID]
 
 您可以使用 Swift 命令行界面测试与 StorageGRID 系统的连接，并验证是否可以向系统读取和写入对象。
 
-.您需要什么？ #8217 ；将需要什么
+.您需要的内容
 * 您必须已下载并安装 python swiftclient ，即 Swift 命令行客户端。
 +
 https://platform.swiftstack.com/docs/integration/python-swiftclient.html["SwiftStack ： Python-swiftclient"^]
@@ -229,6 +231,7 @@ https://platform.swiftstack.com/docs/integration/python-swiftclient.html["SwiftS
 * 您必须在 StorageGRID 系统中具有 Swift 租户帐户。
 
 
+.关于此任务
 如果尚未配置安全性，则必须在每个命令中添加 ` -insecure` 标志。
 
 .步骤
@@ -289,6 +292,7 @@ delete test_container
 ----
 
 
+.相关信息
 xref:configuring-tenant-accounts-and-connections.adoc[创建和配置 Swift 租户帐户]
 
 xref:configuring-security-for-rest-api.adoc[配置 REST API 的安全性]

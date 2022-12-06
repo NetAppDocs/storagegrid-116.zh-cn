@@ -24,4 +24,5 @@ summary: 连接网络缆线后，您可以为设备接通电源。
 . 如果已卸下前挡板，请将其连接到设备。
 
 
+.相关信息
 xref:viewing-status-indicators-on-sg100-and-sg1000-appliances.adoc[查看 SG100 和 SG1000 设备上的状态指示符]

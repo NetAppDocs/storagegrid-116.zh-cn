@@ -13,6 +13,7 @@ summary: 在将 StorageGRID 附加为 FabricPool 的云层之前，您必须在 
 [role="lead"]
 在将 StorageGRID 附加为 FabricPool 的云层之前，您必须在 StorageGRID 中执行一些配置步骤并获取某些值。
 
+.关于此任务
 下表列出了在将 StorageGRID 作为 FabricPool 的云层附加时必须向 ONTAP 提供的信息。本节中的主题介绍如何使用 StorageGRID 网格管理器和租户管理器来获取所需信息。
 
 
@@ -111,4 +112,5 @@ SSL
 xref:creating-load-balancer-endpoint-for-fabricpool.adoc[为 FabricPool 创建负载平衡器端点]
 
 |===
+.完成后
 获取所需的 StorageGRID 信息后，您可以转到 ONTAP 将 StorageGRID 添加为云层，将云层添加为聚合并设置卷分层策略。

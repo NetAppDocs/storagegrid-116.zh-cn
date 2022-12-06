@@ -34,4 +34,5 @@ HTTP
 * 注 * ： StorageGRID 不支持 HTTP/1.1 管道化。
 
 |===
+.相关信息
 http://docs.openstack.org/developer/swift/api/object_api_v1_overview.html["OpenStack ：对象存储 API"^]

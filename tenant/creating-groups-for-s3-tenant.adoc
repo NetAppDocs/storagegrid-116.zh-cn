@@ -13,7 +13,7 @@ summary: 您可以通过导入联合组或创建本地组来管理 S3 用户组�
 [role="lead"]
 您可以通过导入联合组或创建本地组来管理 S3 用户组的权限。
 
-.您需要什么？ #8217 ；将需要什么
+.您需要的内容
 * 您必须使用登录到租户管理器 xref:../admin/web-browser-requirements.adoc[支持的 Web 浏览器]。
 * 您必须属于具有 root 访问权限的用户组。请参见 xref:tenant-management-permissions.adoc[租户管理权限]。
 * 如果您计划导入联合组，则表示已配置身份联合，并且已配置的身份源中已存在此联合组。

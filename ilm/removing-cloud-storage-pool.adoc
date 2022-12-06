@@ -13,7 +13,7 @@ summary: 您可以删除未在 ILM 规则中使用且不包含对象数据的云
 [role="lead"]
 您可以删除未在 ILM 规则中使用且不包含对象数据的云存储池。
 
-.您需要什么？ #8217 ；将需要什么
+.您需要的内容
 * 您将使用登录到网格管理器 xref:../admin/web-browser-requirements.adoc[支持的 Web 浏览器]。
 * 您具有特定的访问权限。
 * 您已确认 S3 存储分段或 Azure 容器不包含任何对象。如果您尝试删除包含对象的云存储池，则会发生错误。请参见 xref:troubleshooting-cloud-storage-pools.adoc[对云存储池进行故障排除]。

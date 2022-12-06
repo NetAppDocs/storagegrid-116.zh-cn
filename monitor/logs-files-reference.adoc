@@ -173,4 +173,5 @@ CPU ，网络和磁盘 I/O 的性能信息
 StorageGRID 容器命令的输出。包含系统信息，例如网络连接和磁盘使用情况。
 
 |===
+.相关信息
 xref:collecting-log-files-and-system-data.adoc[收集日志文件和系统数据]

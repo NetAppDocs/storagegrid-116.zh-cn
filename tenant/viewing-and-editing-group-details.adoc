@@ -13,7 +13,7 @@ summary: 查看组的详细信息时，您可以更改组的显示名称，权�
 [role="lead"]
 查看组的详细信息时，您可以更改组的显示名称，权限，策略以及属于该组的用户。
 
-.您需要什么？ #8217 ；将需要什么
+.您需要的内容
 * 您必须使用登录到租户管理器 xref:../admin/web-browser-requirements.adoc[支持的 Web 浏览器]。
 * 您必须属于具有 root 访问权限的用户组。
 
@@ -59,6 +59,7 @@ IMPORTANT: 要确保更改已保存，请在每个部分进行更改后选择 * 
 
 
 
+.相关信息
 xref:creating-groups-for-s3-tenant.adoc[为 S3 租户创建组]
 
 xref:creating-groups-for-swift-tenant.adoc[为 Swift 租户创建组]

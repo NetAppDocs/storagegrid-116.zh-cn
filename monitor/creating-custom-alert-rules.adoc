@@ -13,7 +13,7 @@ summary: 您可以创建自定义警报规则来定义自己触发警报的条�
 [role="lead"]
 您可以创建自定义警报规则来定义自己触发警报的条件。
 
-.您需要什么？ #8217 ；将需要什么
+.您需要的内容
 * 您将使用登录到网格管理器 xref:../admin/web-browser-requirements.adoc[支持的 Web 浏览器]
 * 您具有 " 管理警报 " 或 " 根访问 " 权限
 * 您熟悉 xref:commonly-used-prometheus-metrics.adoc[常用的 Prometheus 指标]
@@ -24,6 +24,7 @@ image::../media/video-screenshot-alert-create-custom.png[链接 -"https://netapp
 
 
 
+.关于此任务
 StorageGRID 不会验证自定义警报。如果您决定创建自定义警报规则，请遵循以下一般准则：
 
 * 查看默认警报规则的条件，并将其用作自定义警报规则的示例。

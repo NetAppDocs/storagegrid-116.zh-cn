@@ -123,6 +123,7 @@ X-Trans-Id: 1936575373
 Content-Length: 0
 x-ntap-sg-consistency: strong-site
 ----
+.相关信息
 xref:../tenant/index.adoc[使用租户帐户]
 
 
@@ -263,4 +264,5 @@ Connection: CLOSE
 X-Trans-Id: 1936575373
 Content-Length: 0
 ----
+.相关信息
 xref:../tenant/index.adoc[使用租户帐户]

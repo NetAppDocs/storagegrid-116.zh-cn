@@ -13,7 +13,7 @@ summary: 对于当前使用 SANtricity OS 08.42.20.00 （ 11.42\ ）或更高版
 [role="lead"]
 对于当前使用 SANtricity OS 08.42.20.00 （ 11.42 ）或更高版本的存储控制器，您必须使用网格管理器应用升级。
 
-.您需要什么？ #8217 ；将需要什么
+.您需要的内容
 * 您已查阅 NetApp 互操作性表工具（ IMT ）以确认用于升级的 SANtricity 操作系统版本与您的设备兼容。
 * 您具有维护或 root 访问权限。
 * 您将使用登录到网格管理器 xref:../admin/web-browser-requirements.adoc[支持的 Web 浏览器]。
@@ -21,6 +21,7 @@ summary: 对于当前使用 SANtricity OS 08.42.20.00 （ 11.42\ ）或更高版
 * 您可以访问 SANtricity 操作系统的 NetApp 下载页面。
 
 
+.关于此任务
 在完成 SANtricity 操作系统升级过程之前，您无法执行其他软件更新（ StorageGRID 软件升级或修补程序）。如果您尝试在 SANtricity 操作系统升级过程完成之前启动修补程序或 StorageGRID 软件升级，则系统会重定向到 SANtricity 操作系统升级页面。
 
 只有在 SANtricity 操作系统升级成功应用于已选择进行升级的所有适用节点之后，操作步骤 才会完成。在每个节点上（按顺序）加载 SANtricity 操作系统可能需要 30 分钟以上的时间，并且最多需要 90 分钟来重新启动每个 StorageGRID 存储设备。
@@ -167,7 +168,7 @@ IMPORTANT: 只有在所有列出的存储节点上批准 SANtricity 操作系统
 此时将显示一条警告，询问您是否确实要在不升级所有节点的情况下完成升级过程。
 
 .. 选择 * 确定 * 返回到 * SANtricity OS* 页面。
-.. 准备好继续批准节点后，请转至 ,下载 SANtricity 操作系统 重新启动升级过程。
+.. 准备好继续批准节点后，请转至 <<download_santricity_os,下载 SANtricity 操作系统>> 重新启动升级过程。
 
 
 +
@@ -187,6 +188,7 @@ NOTE: 重复升级操作步骤 时，您必须批准先前升级的节点。
 
 
 
+.相关信息
 https://mysupport.netapp.com/matrix["NetApp 互操作性表工具"^]
 
 xref:upgrading-santricity-os-on-storage-controllers-using-maintenance-mode-sg6000.adoc[使用维护模式升级存储控制器上的 SANtricity 操作系统]

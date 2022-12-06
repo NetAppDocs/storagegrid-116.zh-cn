@@ -41,12 +41,13 @@ summary: 您必须使 StorageGRID 系统和相关服务保持最新，以抵御�
 
 
 
-== 升级到 Linux 节点
+== *升级到Linux节点*
 
 如果 StorageGRID 节点使用的是 Linux 主机平台，则必须确保将安全更新和内核更新应用于主机操作系统。此外，如果存在固件更新，则必须将这些更新应用于容易受到影响的硬件。
 
 使用 NetApp 互操作性表工具可获取受支持版本的列表。
 
+.相关信息
 https://mysupport.netapp.com/site/products/all/details/storagegrid/downloads-tab["NetApp 下载： StorageGRID"^]
 
 xref:../upgrade/index.adoc[升级软件]

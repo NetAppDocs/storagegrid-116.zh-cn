@@ -80,6 +80,7 @@ NOTE: 如果某个对象存储在云存储池中，并且该对象的一个或�
 * 注： * 如果对象已还原到可检索状态，您可以通过重新发出 POST 对象还原请求并为 `Days` 提供新值来更改其 `expiry-date` 。还原日期将相对于请求时间进行更新。
 
 |===
+.相关信息
 xref:../ilm/index.adoc[使用 ILM 管理对象]
 
 xref:head-object.adoc[HEAD 对象]

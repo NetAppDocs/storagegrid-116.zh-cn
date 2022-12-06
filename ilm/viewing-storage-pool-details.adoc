@@ -13,7 +13,7 @@ summary: 您可以查看存储池的详细信息以确定存储池的使用位�
 [role="lead"]
 您可以查看存储池的详细信息以确定存储池的使用位置，并查看包含哪些节点和存储级别。
 
-.您需要什么？ #8217 ；将需要什么
+.您需要的内容
 * 您将使用登录到网格管理器 xref:../admin/web-browser-requirements.adoc[支持的 Web 浏览器]。
 * 您具有特定的访问权限。
 
@@ -90,4 +90,5 @@ NOTE: 如果存储池在擦除编码配置文件中使用，则无法将其删�
 . 查看完存储池详细信息后，选择 * 关闭 * 。
 
 
+.相关信息
 xref:working-with-ilm-rules-and-ilm-policies.adoc[使用 ILM 规则和 ILM 策略]

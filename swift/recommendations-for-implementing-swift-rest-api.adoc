@@ -50,7 +50,7 @@ mycontainer/f8e3-image3132.jpg
 
 
 
-== 有关 " 范围读取 " 的建议
+== 关于"`范围读取`"的建议
 
 如果选择了 * 压缩存储的对象 * 选项（ * 配置 * > * 系统 * > * 网格选项 * ），则 Swift 客户端应用程序应避免执行指定要返回的字节数范围的 GET 对象操作。这些 "`range read` " 操作效率低下，因为 StorageGRID 必须有效解压缩对象以访问请求的字节。从非常大的对象请求少量字节的 GET 对象操作效率尤其低下；例如，从 50 GB 压缩对象读取 10 MB 范围的操作效率非常低。
 
@@ -59,6 +59,7 @@ mycontainer/f8e3-image3132.jpg
 
 NOTE: 如果需要压缩对象，并且客户端应用程序必须使用范围读取，请增加应用程序的读取超时时间。
 
+.相关信息
 xref:get-container-consistency-request.adoc[获取容器一致性请求]
 
 xref:put-container-consistency-request.adoc[提交容器一致性请求]

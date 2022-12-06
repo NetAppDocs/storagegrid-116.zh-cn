@@ -13,6 +13,7 @@ summary: 在安装容器引擎（ Docker 或 Podman ）之前，您可能需要�
 [role="lead"]
 在安装容器引擎（ Docker 或 Podman ）之前，您可能需要格式化存储卷并将其挂载。
 
+.关于此任务
 如果您计划对 Docker 或 Podman 存储卷使用本地存储，并且在包含适用于 Docker 的 ` /var/lib/Docker` 和适用于 Podman 的 ` /var/lib/containers` 的主机分区上有足够的可用空间，则可以跳过这些步骤。
 
 
@@ -53,7 +54,7 @@ sudo mount container-storage-volume-device /var/lib/containers
 
 == 安装 Docker
 
-StorageGRID 系统作为一组容器在 Red Hat Enterprise Linux 或 CentOS 上运行。如果您已选择使用 Docker 容器引擎，请按照以下步骤安装 Docker 。否则，  Podman,安装 Podman。
+StorageGRID 系统作为一组容器在 Red Hat Enterprise Linux 或 CentOS 上运行。如果您已选择使用 Docker 容器引擎，请按照以下步骤安装 Docker 。否则， <<安装 Podman,安装 Podman>>。
 
 .步骤
 . 按照适用于您的 Linux 版本的说明安装 Docker 。
@@ -87,7 +88,7 @@ sudo docker version
 
 == 安装 Podman
 
-StorageGRID 系统作为一组容器在 Red Hat Enterprise Linux 上运行。如果您已选择使用 Podman 容器引擎，请按照以下步骤安装 Podman 。否则，  Docker,安装 Docker。
+StorageGRID 系统作为一组容器在 Red Hat Enterprise Linux 上运行。如果您已选择使用 Podman 容器引擎，请按照以下步骤安装 Podman 。否则， <<安装 Docker,安装 Docker>>。
 
 
 NOTE: 只有 Red Hat Enterprise Linux （ RHEL ）才支持 Podman 。

@@ -13,6 +13,7 @@ summary: 要确保 StorageGRID 设备安装程序与其他节点之间的访问�
 [role="lead"]
 要确保 StorageGRID 设备安装程序与其他节点之间的访问不会受到防火墙的阻碍，请确认 StorageGRID 设备安装程序可以连接到指定 IP 地址或地址范围内的特定 TCP 端口或端口集。
 
+.关于此任务
 使用 StorageGRID 设备安装程序中提供的端口列表，您可以测试设备与网格网络中其他节点之间的连接。
 
 此外，您还可以在管理和客户端网络以及 UDP 端口上测试连接，例如用于外部 NFS 或 DNS 服务器的端口。有关这些端口的列表，请参见 StorageGRID 网络连接准则中的端口参考。
@@ -71,4 +72,5 @@ image::../media/nmap_test_red_banner.png[nmap 测试红色横幅]
 
 
 
+.相关信息
 xref:../network/index.adoc[网络连接准则]

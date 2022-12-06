@@ -298,6 +298,7 @@ NOTE: 如果一个存储节点仅使用一个存储卷，而为该卷分配的�
 
 有关详细信息，请转至 xref:../admin/managing-object-metadata-storage.adoc[管理对象元数据存储]。
 
+.相关信息
 xref:node-container-migration-requirements.adoc[节点容器迁移要求]
 
 xref:../maintain/index.adoc[恢复和维护]

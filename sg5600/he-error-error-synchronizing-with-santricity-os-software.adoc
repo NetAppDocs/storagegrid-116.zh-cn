@@ -13,6 +13,7 @@ summary: 如果 StorageGRID 设备安装程序无法与 SANtricity 操作系统�
 [role="lead"]
 如果 StorageGRID 设备安装程序无法与 SANtricity 操作系统软件同步，则计算控制器上的七段显示会显示一个错误代码。
 
+.关于此任务
 如果显示错误代码，请执行此更正操作。
 
 .步骤

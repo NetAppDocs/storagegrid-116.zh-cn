@@ -13,7 +13,7 @@ summary: 您可以使用 SANtricity 系统管理器监控和管理存储控制�
 [role="lead"]
 您可以使用 SANtricity 系统管理器监控和管理存储控制器架中的各个硬件组件，并查看硬件诊断和环境信息，例如组件温度以及与驱动器相关的问题。
 
-.您需要什么？ #8217 ；将需要什么
+.您需要的内容
 * 您正在使用 xref:../admin/web-browser-requirements.adoc[支持的 Web 浏览器]。
 * 要通过网格管理器访问 SANtricity 系统管理器，您必须具有存储设备管理员权限或 root 访问权限。
 * 要使用 StorageGRID 设备安装程序访问 SANtricity 系统管理器，您必须具有 SANtricity 系统管理器管理员用户名和密码。

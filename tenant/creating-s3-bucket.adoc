@@ -13,7 +13,7 @@ summary: 您可以使用租户管理器为对象数据创建 S3 分段。创建�
 [role="lead"]
 您可以使用租户管理器为对象数据创建 S3 分段。创建存储分段时，必须指定存储分段的名称和区域。如果为 StorageGRID 系统启用了全局 S3 对象锁定设置，则可以选择为存储分段启用 S3 对象锁定。
 
-.您需要什么？ #8217 ；将需要什么
+.您需要的内容
 * 您将使用登录到租户管理器 xref:../admin/web-browser-requirements.adoc[支持的 Web 浏览器]。
 * 您属于具有 " 管理所有分段 " 或 " 根访问 " 权限的用户组。这些权限将覆盖组或存储分段策略中的权限设置。
 +
@@ -85,6 +85,7 @@ IMPORTANT: 创建存储分段后，您无法启用或禁用 S3 对象锁定。
 
 
 
+.相关信息
 xref:../ilm/index.adoc[使用 ILM 管理对象]
 
 xref:understanding-tenant-management-api.adoc[了解租户管理 API]

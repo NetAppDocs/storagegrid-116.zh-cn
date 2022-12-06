@@ -26,6 +26,7 @@ StorageGRID 系统使用对象元数据中的位置信息来确定从哪个位�
 
 如果没有副本的对象数据丢失，则不存在恢复解决方案 。但是，您必须重置丢失对象计数器，以防止已知丢失的对象屏蔽任何新的丢失对象。
 
+.相关信息
 xref:investigating-lost-objects.adoc[调查丢失的对象]
 
 xref:resetting-lost-and-missing-object-counts.adoc[重置丢失和缺失的对象计数]

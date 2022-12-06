@@ -52,6 +52,7 @@ E 系列文档
 . 如果无法解决问题描述 问题，请联系技术支持。
 
 
+.相关信息
 xref:e5600sg-controller-seven-segment-display-codes.adoc[E5600SG 控制器七段显示代码]
 
 xref:he-error-error-synchronizing-with-santricity-os-software.adoc[he error ： Error synchronating with SANtricity OS Software]

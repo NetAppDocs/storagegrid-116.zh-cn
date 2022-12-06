@@ -95,6 +95,7 @@ TLS
 
 
 |===
+.相关信息
 xref:../admin/index.adoc[管理 StorageGRID]
 
 
@@ -173,4 +174,5 @@ tls_rsa_and_aes_128_gcm_SHA256
 tls_rsa_and_aes_256_gcm_SHA384
 
 |===
+.相关信息
 xref:configuring-tenant-accounts-and-connections.adoc[配置租户帐户和连接]

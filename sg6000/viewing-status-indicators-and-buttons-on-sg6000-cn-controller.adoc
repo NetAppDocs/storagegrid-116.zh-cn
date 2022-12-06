@@ -82,6 +82,7 @@ image::../media/sg6000_cn_front_indicators.gif[正面指示灯— SG6000-CN]
 
 
 
+.相关信息
 xref:troubleshooting-hardware-installation.adoc[硬件安装故障排除（ SG6000 ）]
 
 xref:configuring-bmc-interface-sg6000.adoc[配置 BMC 接口（ SG6000 ）]

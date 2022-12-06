@@ -13,6 +13,7 @@ summary: 您可以自动安装 StorageGRID 主机服务和配置网格节点。
 [role="lead"]
 您可以自动安装 StorageGRID 主机服务和配置网格节点。
 
+.关于此任务
 在以下任一情况下，自动部署可能会很有用：
 
 * 您已使用标准业务流程框架（例如 Ansible ， Puppet 或 Chef ）部署和配置物理或虚拟主机。
@@ -55,7 +56,7 @@ StorageGRID 主机服务打包在 DEB 中，并由配置文件驱动，这些配
 
 部署网格节点后，您可以自动配置 StorageGRID 系统。
 
-.您需要什么？ #8217 ；将需要什么
+.您需要的内容
 * 您可以从安装归档中了解以下文件的位置。
 
 
@@ -81,6 +82,7 @@ StorageGRID 主机服务打包在 DEB 中，并由配置文件驱动，这些配
 * 您已创建 `configure-storaggrid.json` 配置文件。要创建此文件，您可以修改示例配置文件（`configure-storaggrid.sample.json` ）或空白配置文件（`config-storaggrid.blank.json` ）。
 
 
+.关于此任务
 您可以使用 `configure-storaggrid.py` Python 脚本和 `configure-storaggrid.json` 配置文件来自动配置 StorageGRID 系统。
 
 
@@ -111,6 +113,7 @@ cd StorageGRID-Webscale-version/platform
 ----
 
 
+.结果
 在配置过程中会生成一个恢复包 ` .zip` 文件，该文件将下载到运行安装和配置过程的目录中。您必须备份恢复软件包文件，以便在一个或多个网格节点发生故障时恢复 StorageGRID 系统。例如，将其复制到安全的备份网络位置和安全的云存储位置。
 
 
@@ -133,4 +136,5 @@ IMPORTANT: 恢复包文件必须受到保护，因为它包含可用于从 Stora
 ----
 StorageGRID has been configured and installed.
 ----
+.相关信息
 xref:overview-of-installation-rest-api.adoc[安装 REST API 概述]

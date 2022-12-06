@@ -13,7 +13,7 @@ summary: 您可以在管理网络子网列表中添加，删除或更改一个�
 [role="lead"]
 您可以在管理网络子网列表中添加，删除或更改一个或多个节点的子网。
 
-.您需要什么？ #8217 ；将需要什么
+.您需要的内容
 * 您必须具有 `passwords.txt` 文件。
 
 
@@ -139,4 +139,5 @@ Updating grid network configuration on Name
 
 
 
+.相关信息
 xref:configuring-ip-addresses.adoc[配置 IP 地址]

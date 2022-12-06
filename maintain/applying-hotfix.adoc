@@ -13,7 +13,7 @@ summary: 此修补程序会首先自动应用于主管理节点。然后，您�
 [role="lead"]
 此修补程序会首先自动应用于主管理节点。然后，您必须批准将此修补程序应用于其他网格节点，直到所有节点运行相同的软件版本为止。您可以通过选择批准单个网格节点，网格节点组或所有网格节点来自定义批准顺序。
 
-.您需要什么？ #8217 ；将需要什么
+.您需要的内容
 * 您已查看注意事项并完成中的步骤 xref:hotfix-planning-and-preparation.adoc[规划并准备修补程序]。
 * 您具有配置密码短语。
 * 您具有 root 访问权限或维护权限。
@@ -132,6 +132,7 @@ image::../media/approve_all_progresstable.png[使用删除按钮执行修补程�
 
 
 
+.相关信息
 xref:../admin/index.adoc[管理 StorageGRID]
 
 xref:../monitor/index.adoc[监控和故障排除]

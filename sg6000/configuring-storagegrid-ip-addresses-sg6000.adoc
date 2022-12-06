@@ -13,6 +13,7 @@ summary: 您可以使用 StorageGRID 设备安装程序在 StorageGRID 网格，
 [role="lead"]
 您可以使用 StorageGRID 设备安装程序在 StorageGRID 网格，管理和客户端网络上配置设备存储节点所使用的 IP 地址和路由信息。
 
+.关于此任务
 您必须为每个已连接网络上的设备分配一个静态 IP ，或者为 DHCP 服务器上的地址分配一个永久租约。
 
 如果要更改链路配置，请参见 xref:changing-link-configuration-of-sg6000-cn-controller.adoc[有关更改 SG6000-CN 控制器的链路配置的说明]。

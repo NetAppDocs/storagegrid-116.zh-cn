@@ -13,7 +13,7 @@ summary: 您可能需要停用当前未连接到网格的节点（运行状况�
 [role="lead"]
 您可能需要停用当前未连接到网格的节点（运行状况为未知或管理员关闭的节点）。
 
-.您需要什么？ #8217 ；将需要什么
+.您需要的内容
 * 您了解要求和 xref:considerations-for-decommissioning-grid-nodes.adoc[停用网格节点的注意事项]。
 * 您已获取所有前提条件项。
 * 您已确保没有处于活动状态的数据修复作业。请参见 xref:checking-data-repair-jobs.adoc[检查数据修复作业]。
@@ -23,6 +23,7 @@ summary: 您可能需要停用当前未连接到网格的节点（运行状况�
 * 您必须具有配置密码短语。
 
 
+.关于此任务
 您可以通过在 * 运行状况 * 列中查找未知（蓝色）或管理员关闭（灰色）图标来识别已断开连接的节点。在此示例中，名为 DC1-S4 的存储节点已断开连接；所有其他节点均已连接。
 
 image::../media/decommission_nodes_page_one_disconnected.png[在一个节点断开连接的情况下停用节点页面]
@@ -197,6 +198,7 @@ IMPORTANT: 在 StorageGRID 11.6 中，可以使用 `show -replicate-repair-statu
 
 --
 ====
+.完成后
 一旦断开连接的节点停用并完成所有数据修复作业，您就可以根据需要停用任何已连接的网格节点。
 
 然后，在完成停用操作步骤 后完成以下步骤：
@@ -212,4 +214,5 @@ IMPORTANT: 在 StorageGRID 11.6 中，可以使用 `show -replicate-repair-statu
 
 
 
+.相关信息
 xref:grid-node-recovery-procedures.adoc[网格节点恢复过程]

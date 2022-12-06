@@ -13,7 +13,7 @@ summary: 如果需要更改网格中所有节点的网格网络 IP 地址，则�
 [role="lead"]
 如果需要更改网格中所有节点的网格网络 IP 地址，则必须遵循此专用操作步骤 。您不能使用操作步骤 更改单个节点来更改网格范围的网格网络 IP 。
 
-.您需要什么？ #8217 ；将需要什么
+.您需要的内容
 * 您必须具有 `passwords.txt` 文件。
 
 
@@ -140,6 +140,7 @@ IMPORTANT: 必须一次性关闭整个网格，以便所有节点同时关闭。
 
 
 
+.相关信息
 xref:../admin/index.adoc[管理 StorageGRID]
 
 xref:adding-to-or-changing-subnet-lists-on-grid-network.adoc[在网格网络上添加或更改子网列表]

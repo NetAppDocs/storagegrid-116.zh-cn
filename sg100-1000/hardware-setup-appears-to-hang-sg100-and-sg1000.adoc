@@ -18,6 +18,7 @@ summary: 如果硬件故障或布线错误阻止 StorageGRID 设备完成启动�
 . 如果您需要有关解决问题描述 的帮助，请联系技术支持。
 
 
+.相关信息
 xref:viewing-boot-up-codes-for-appliance-sg100-and-sg1000.adoc[查看设备的启动代码]
 
 xref:viewing-error-codes-for-sg1000-controller-sg100-and-sg1000.adoc[查看设备的错误代码]

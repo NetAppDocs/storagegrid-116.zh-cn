@@ -100,6 +100,7 @@ image::../media/tenant_dashboard_endpoint_error.png[显示端点消息的信息�
 
 要查看有关端点错误的详细信息，请选择端点以显示端点页面。
 
+.相关信息
 xref:troubleshooting-platform-services-endpoint-errors.adoc[解决平台服务端点错误]
 
 xref:../monitor/index.adoc[监控和故障排除]

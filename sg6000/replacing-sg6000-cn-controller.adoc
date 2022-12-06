@@ -13,7 +13,7 @@ summary: 如果 SG6000-CN 控制器运行不正常或出现故障，您可能需
 [role="lead"]
 如果 SG6000-CN 控制器运行不正常或出现故障，您可能需要更换该控制器。
 
-.您需要什么？ #8217 ；将需要什么
+.您需要的内容
 * 您的更换控制器的部件号与要更换的控制器相同。
 * 您可以通过标签来识别连接到控制器的每个缆线。
 * 您已在数据中心中找到要更换的控制器。
@@ -22,6 +22,7 @@ xref:locating-controller-in-data-center.adoc[在数据中心中找到控制器]
 
 
 
+.关于此任务
 更换 SG6000-CN 控制器后，无法访问设备存储节点。如果 SG6000-CN 控制器运行正常，则可以在此操作步骤 开始时执行受控关闭。
 
 
@@ -83,6 +84,7 @@ xref:../maintain/index.adoc[恢复和维护]
 
 
 
+.相关信息
 xref:sg6000-cn-installing-into-cabinet-or-rack.adoc[SG6000-CN ：安装到机柜或机架中]
 
 xref:viewing-status-indicators-and-buttons-on-sg6000-cn-controller.adoc[查看 SG6000-CN 控制器上的状态指示灯和按钮]

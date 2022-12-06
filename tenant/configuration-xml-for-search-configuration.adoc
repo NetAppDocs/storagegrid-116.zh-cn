@@ -183,6 +183,7 @@ urn 包含在目标元素中。
     </Rule>
 </MetadataNotificationConfiguration>
 ----
+.相关信息
 xref:../s3/index.adoc[使用 S3]
 
 xref:object-metadata-included-in-metadata-notifications.adoc[元数据通知中包含的对象元数据]

@@ -13,7 +13,7 @@ summary: 必须至少创建一个正确类型的端点，然后才能启用平�
 [role="lead"]
 必须至少创建一个正确类型的端点，然后才能启用平台服务。
 
-.您需要什么？ #8217 ；将需要什么
+.您需要的内容
 * 您必须使用登录到租户管理器 xref:../admin/web-browser-requirements.adoc[支持的 Web 浏览器]。
 * StorageGRID 管理员必须为您的租户帐户启用平台服务。
 * 您必须属于具有管理端点权限的用户组。
@@ -211,6 +211,7 @@ NOTE: 如果未为租户帐户启用平台服务，则端点创建将失败。�
 
 配置端点后，您可以使用其 URN 配置平台服务。
 
+.相关信息
 xref:specifying-urn-for-platform-services-endpoint.adoc[为平台服务端点指定 URN]
 
 xref:configuring-cloudmirror-replication.adoc[配置 CloudMirror 复制]

@@ -67,7 +67,7 @@ summary: 一致性控制可以根据应用程序的要求，在对象的可用�
 |===
 
 
-== 使用 " 读后新写入 " 和 " 可用 " 一致性控制
+== 使用"`read-after-new-write`"和"`available`"一致性控制
 
 如果 head 或 get 操作使用 `read-after-new-write` 一致性控制，则 StorageGRID 将执行多个步骤的查找，如下所示：
 
@@ -145,6 +145,7 @@ NOTE: 在为 ILM 规则选择载入行为之前，请阅读有关通过信息生
 
 一致性级别和 ILM 规则之间的关系可能很复杂。如需帮助，请联系 NetApp 。
 
+.相关信息
 xref:../ilm/index.adoc[使用 ILM 管理对象]
 
 xref:get-bucket-consistency-request.adoc[获取存储分段一致性请求]

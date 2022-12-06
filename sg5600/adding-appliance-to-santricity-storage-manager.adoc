@@ -13,8 +13,10 @@ summary: 将设备中的 E2700 控制器连接到 SANtricity 存储管理器，�
 [role="lead"]
 将设备中的 E2700 控制器连接到 SANtricity 存储管理器，然后将设备添加为存储阵列。
 
+.您需要的内容
 您正在使用 xref:../admin/web-browser-requirements.adoc[支持的 Web 浏览器]。
 
+.关于此任务
 有关详细说明，请参见 SANtricity 存储管理器文档。
 
 .步骤
@@ -43,4 +45,5 @@ NOTE: 只有一个设备的控制器连接到 SANtricity 存储管理器，因�
 . 单击 * 添加 * 。
 
 
+.相关信息
 http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=61197["NetApp 文档： SANtricity 存储管理器"^]

@@ -366,6 +366,7 @@ PUT 对象锁定配置
 请参见 xref:../s3/use-s3-object-lock-default-bucket-retention.adoc#put-object-lock-configuration[PUT 对象锁定配置] 了解详细信息。
 
 |===
+.相关信息
 xref:consistency-controls.adoc[一致性控制]
 
 xref:get-bucket-last-access-time-request.adoc[获取分段上次访问时间请求]

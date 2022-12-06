@@ -61,6 +61,7 @@ PUT 存储分段元数据通知
 * 如果目标存储分段启用了原有合规性，则 CloudMirror 复制将失败并显示 AccessDenied 错误。
 
 
+.相关信息
 xref:../tenant/index.adoc[使用租户帐户]
 
 xref:../admin/index.adoc[管理 StorageGRID]

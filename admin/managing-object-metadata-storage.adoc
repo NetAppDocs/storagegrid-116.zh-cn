@@ -230,7 +230,7 @@ image::../media/storage_used_object_metadata_allowed.png[已用存储 - 对象�
 
 
 
-在屏幕截图中， * 允许 * 值为 2.64 TB ，这是存储节点的最大值，该存储节点的元数据实际预留空间超过 4 TB 。
+在屏幕截图中、*允许*值为3.96 TB、这是存储节点的最大值、该存储节点的元数据实际预留空间超过4 TB。
 
 * 允许 * 值对应于此 Prometheus 指标：
 
@@ -244,7 +244,7 @@ image::../media/storage_used_object_metadata_allowed.png[已用存储 - 对象�
 
 * 系统范围的 * 元数据预留空间 * 设置为 8 TB 。（当每个存储节点的 RAM 超过 128 GB 时，这是 StorageGRID 11.6 的默认值。）
 * SN1 元数据的实际预留空间为 6 TB 。（由于卷 0 小于 * 元数据预留空间 * 设置，因此会保留整个卷。）
-* SN1 上允许的元数据空间为 2.64 TB 。（这是实际预留空间的最大值。）
+* 根据中所示的计算、SN1上的元数据允许的空间为3 TB <<actual-reserved-space-for-metadata,元数据的实际预留空间表>>：(元数据的实际预留空间−1 TB)×60%、最多3.96 TB。
 
 
 

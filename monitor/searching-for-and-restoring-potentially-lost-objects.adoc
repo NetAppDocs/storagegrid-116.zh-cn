@@ -14,11 +14,12 @@ summary: '可能会找到并还原已触发 " 对象丢失（丢失） " 警报�
 [role="lead"]
 可能会找到并还原已触发 " 对象丢失（丢失） " 警报和 " 对象丢失 * " 警报且您已确定可能丢失的对象。
 
-.您需要什么？ #8217 ；将需要什么
+.您需要的内容
 * 您必须具有 "`调查丢失的对象 " 中标识的任何丢失对象的 UUID 。`
 * 您必须具有 `passwords.txt` 文件。
 
 
+.关于此任务
 您可以按照此操作步骤 在网格中其他位置查找丢失对象的复制副本。在大多数情况下，找不到丢失的对象。但是，在某些情况下，如果您立即采取措施，则可能能够找到并还原丢失的复制对象。
 
 
@@ -115,7 +116,7 @@ ls '/var/local/rangedb/1/p/17/11/00rH0%DkRs&LgA%#3tN6'
 * 注 * ：在命令中，始终用单引号将对象文件路径括起来，以转义任何特殊字符。
 
 * 如果未找到对象路径，则此对象将丢失，无法使用此操作步骤 进行还原。请联系技术支持。
-* 如果找到对象路径，请继续执行步骤 ,将对象还原到 StorageGRID。您可以尝试将找到的对象还原回 StorageGRID 。
+* 如果找到对象路径，请继续执行步骤 <<restore_the_object_to_StorageGRID,将对象还原到 StorageGRID>>。您可以尝试将找到的对象还原回 StorageGRID 。
 +
 .. 【还原对象到 StorageGRID ， start=3]] 如果找到对象路径，请尝试将对象还原到 StorageGRID ：
 +
@@ -154,7 +155,7 @@ First packet of file was valid. Extracted key: 38186FE53E3C49A5
 Renamed '/var/local/rangedb/1/p/17/11/00rH0%DkRs&LgA%#3tN6' to '/var/local/rangedb/1/p/17/11/00rH0%DkRt78Ila#3udu'
 ----
 +
-继续执行步骤 ,验证是否已创建新位置
+继续执行步骤 <<verify_that_new_locations_were_created,验证是否已创建新位置>>
 
 +
 ... 如果对象已成功还原到 StorageGRID ，请验证是否已创建新位置。
@@ -272,6 +273,7 @@ ORLM 审核消息类似于此示例消息。
 
 
 
+.相关信息
 xref:investigating-lost-objects.adoc[调查丢失的对象]
 
 xref:resetting-lost-and-missing-object-counts.adoc[重置丢失和缺失的对象计数]

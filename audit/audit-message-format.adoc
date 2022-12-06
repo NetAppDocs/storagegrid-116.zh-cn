@@ -46,6 +46,7 @@ summary: 在 StorageGRID 系统中交换的审核消息包括所有消息通用�
 * `value` 是属性的内容，通常为数字或文本值。值始终后跟冒号（` ：` ）。数据类型 CStr 的值由双引号 ` " "` 括起来。
 
 
+.相关信息
 xref:using-audit-explain-tool.adoc[使用审核解释工具]
 
 xref:using-audit-sum-tool.adoc[使用 audit-sum 工具]

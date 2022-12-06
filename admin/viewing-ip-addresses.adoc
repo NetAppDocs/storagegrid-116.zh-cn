@@ -13,8 +13,10 @@ summary: 您可以查看 StorageGRID 系统中每个网格节点的 IP 地址。
 [role="lead"]
 您可以查看 StorageGRID 系统中每个网格节点的 IP 地址。然后，您可以使用此 IP 地址通过命令行登录到网格节点并执行各种维护过程。
 
+.您需要的内容
 您将使用登录到网格管理器 xref:../admin/web-browser-requirements.adoc[支持的 Web 浏览器]。
 
+.关于此任务
 有关更改 IP 地址的信息，请参见 xref:../maintain/index.adoc[恢复和维护]。
 
 .步骤

@@ -13,7 +13,7 @@ summary: 在访问 BMC 接口之前，必须为服务设备上的 BMC 管理端�
 [role="lead"]
 在访问 BMC 接口之前，必须为服务设备上的 BMC 管理端口配置 IP 地址。
 
-.您需要什么？ #8217 ；将需要什么
+.您需要的内容
 * 管理客户端正在使用 xref:../admin/web-browser-requirements.adoc[支持的 Web 浏览器]。
 * 您正在使用可连接到 StorageGRID 网络的任何管理客户端。
 * BMC 管理端口将连接到您计划使用的管理网络。

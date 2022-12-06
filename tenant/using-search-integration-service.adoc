@@ -25,6 +25,7 @@ NOTE: 由于搜索集成服务会将对象元数据发送到目标，因此其�
 * PUT 存储分段元数据通知配置请求
 
 
+.相关信息
 xref:configuration-xml-for-search-configuration.adoc[用于搜索集成的配置 XML]
 
 xref:object-metadata-included-in-metadata-notifications.adoc[元数据通知中包含的对象元数据]

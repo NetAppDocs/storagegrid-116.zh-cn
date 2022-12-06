@@ -13,7 +13,7 @@ summary: 例如，如果证书即将到期，您可能需要编辑密钥管理�
 [role="lead"]
 例如，如果证书即将到期，您可能需要编辑密钥管理服务器的配置。
 
-.您需要什么？ #8217 ；将需要什么
+.您需要的内容
 * 您已查看 xref:kms-considerations-and-requirements.adoc[使用密钥管理服务器的注意事项和要求]。
 * 如果您计划更新为 KMS 选择的站点，则已查看 xref:kms-considerations-for-changing-for-site.adoc[更改站点的 KMS 的注意事项]。
 * 您将使用登录到网格管理器 xref:../admin/web-browser-requirements.adoc[支持的 Web 浏览器]。

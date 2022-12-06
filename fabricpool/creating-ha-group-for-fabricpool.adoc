@@ -13,12 +13,13 @@ summary: 在配置 StorageGRID 以与 FabricPool 结合使用时，您可以选�
 [role="lead"]
 在配置 StorageGRID 以与 FabricPool 结合使用时，您可以选择创建一个或多个高可用性（ HA ）组。HA 组由管理节点，网关节点或这两者上的一个或多个网络接口组成。
 
-.您需要什么？ #8217 ；将需要什么
+.您需要的内容
 * 您将使用登录到网格管理器 xref:../admin/web-browser-requirements.adoc[支持的 Web 浏览器]。
 * 您具有 root 访问权限。
 * 如果您计划使用 VLAN ，则已创建 VLAN 接口。请参见 xref:../admin/configure-vlan-interfaces.adoc[配置 VLAN 接口]。
 
 
+.关于此任务
 每个 HA 组都使用虚拟 IP 地址（ VIP ）来提供对关联节点上共享服务的高可用性访问。
 
 有关此任务的详细信息，请参见 xref:../admin/managing-high-availability-groups.adoc[管理高可用性组]。

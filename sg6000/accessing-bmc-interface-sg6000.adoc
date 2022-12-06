@@ -13,7 +13,7 @@ summary: 您可以使用 BMC 管理端口的 DHCP 或静态 IP 地址访问 SG60
 [role="lead"]
 您可以使用 BMC 管理端口的 DHCP 或静态 IP 地址访问 SG6000-CN 控制器上的 BMC 接口。
 
-.您需要什么？ #8217 ；将需要什么
+.您需要的内容
 * SG6000-CN 控制器上的 BMC 管理端口将连接到您计划使用的管理网络。
 +
 image::../media/sg6000_cn_bmc_management_port.gif[SG6000-CN 控制器上的 BMC 管理端口]

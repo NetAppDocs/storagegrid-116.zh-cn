@@ -13,7 +13,7 @@ summary: 您可以使用 PingFederate 为系统中的每个管理节点创建服
 [role="lead"]
 您可以使用 PingFederate 为系统中的每个管理节点创建服务提供商（ SP ）连接。要加快此过程，您需要从 StorageGRID 导入 SAML 元数据。
 
-.您需要什么？ #8217 ；将需要什么
+.您需要的内容
 * 您已为 StorageGRID 配置单点登录，并选择了 * Ping 联邦 * 作为 SSO 类型。
 * 在网格管理器的单点登录页面上选择了 * 沙盒模式 * 。请参见 xref:../admin/using-sandbox-mode.adoc[使用沙盒模式]。
 * 您拥有系统中每个管理节点的 * SP 连接 ID* 。您可以在 StorageGRID 单点登录页面上的管理节点详细信息表中找到这些值。
@@ -23,6 +23,7 @@ summary: 您可以使用 PingFederate 为系统中的每个管理节点创建服
 * 您具有 PingFederate 服务器的管理员权限。
 
 
+.关于此任务
 以下说明总结了如何将 PingFederate 服务器 10.3 版配置为 StorageGRID 的 SSO 提供程序。如果您使用的是其他版本的 PingFederate ，则可能需要调整这些说明。有关您的版本的详细说明，请参见 PingFederate 服务器文档。
 
 
@@ -33,7 +34,7 @@ summary: 您可以使用 PingFederate 为系统中的每个管理节点创建服
 
 
 
-=== 创建数据存储
+=== 创建数据存储库[Data -store]]
 
 如果尚未创建数据存储库，请将 PingFederate 连接到 AD FS LDAP 服务器。使用您在使用时使用的值 xref:../admin/using-identity-federation.adoc[配置身份联合] 在 StorageGRID 中。
 
@@ -44,7 +45,7 @@ summary: 您可以使用 PingFederate 为系统中的每个管理节点创建服
 
 
 
-=== 创建密码凭据验证程序
+=== 创建密码凭据验证器[password-validator]]
 
 如果尚未创建密码凭据验证程序，请创建一个。
 
@@ -57,7 +58,7 @@ summary: 您可以使用 PingFederate 为系统中的每个管理节点创建服
 
 
 
-=== 创建 IdP 适配器实例
+=== 创建IdP适配器实例[adapter-instance]]
 
 如果尚未创建 IdP 适配器实例，请创建此实例。
 
@@ -65,14 +66,14 @@ summary: 您可以使用 PingFederate 为系统中的每个管理节点创建服
 . 选择 * 创建新实例 * 。
 . 在类型选项卡上，选择 * HTML 表单 IdP 适配器 * 。
 . 在 IdP 适配器选项卡上，选择 * 向 " 凭据验证器 "* 添加新行。
-. 选择 ,密码凭据验证程序 您已创建。
+. 选择 <<password-validator,密码凭据验证程序>> 您已创建。
 . 在适配器属性选项卡上，为 * 伪名称 * 选择 * 用户名 * 属性。
 . 选择 * 保存 * 。
 
 
 
 
-=== 创建或导入签名证书
+=== 创建或导入签名证书[[signing-certificate]]
 
 如果尚未创建，请创建或导入签名证书。
 
@@ -87,7 +88,7 @@ summary: 您可以使用 PingFederate 为系统中的每个管理节点创建服
 在 PingFederate 中创建 SP 连接时，您可以导入从 StorageGRID 为管理节点下载的 SAML 元数据。元数据文件包含您需要的许多特定值。
 
 
-IMPORTANT: 您必须为 StorageGRID 系统中的每个管理节点创建一个 SP 连接，以便用户可以安全地登录和注销任何节点。按照以下说明创建第一个 SP 连接。然后，转到  additional SP connections 创建所需的任何其他连接。
+IMPORTANT: 您必须为 StorageGRID 系统中的每个管理节点创建一个 SP 连接，以便用户可以安全地登录和注销任何节点。按照以下说明创建第一个 SP 连接。然后，转到 <<创建其他 SP 连接>> 创建所需的任何其他连接。
 
 
 
@@ -134,10 +135,10 @@ IMPORTANT: 您必须为 StorageGRID 系统中的每个管理节点创建一个 S
 === 映射适配器实例
 
 . 在身份验证源映射选项卡上，选择 * 映射新适配器实例 * 。
-. 在适配器实例选项卡上，选择 ,适配器实例 您已创建。
+. 在适配器实例选项卡上，选择 <<adapter-instance,适配器实例>> 您已创建。
 . 在映射方法选项卡上，选择 * 从数据存储中检索其他属性 * 。
 . 在属性源和用户查找选项卡上，选择 * 添加属性源 * 。
-. 在数据存储选项卡上，提供问题描述 并选择 ,数据存储 您已添加。
+. 在数据存储选项卡上，提供问题描述 并选择 <<data-store,数据存储>> 您已添加。
 . 在 LDAP 目录搜索选项卡上：
 +
 ** 输入 * 基本 DN* ，该 DN 应与您在 StorageGRID 中为 LDAP 服务器输入的值完全匹配。
@@ -174,7 +175,7 @@ IMPORTANT: 您必须为 StorageGRID 系统中的每个管理节点创建一个 S
 
 . 从 SP 连接选项卡中，选择 * 凭据 * 。
 . 从凭据选项卡中，选择 * 配置凭据 * 。
-. 选择 ,正在签名证书 您已创建或导入。
+. 选择 <<signing-certificate,正在签名证书>> 您已创建或导入。
 . 选择 * 下一步 * 转到 * 管理签名验证设置 * 。
 +
 .. 在信任模式选项卡上，选择 * 已取消锁定 * 。

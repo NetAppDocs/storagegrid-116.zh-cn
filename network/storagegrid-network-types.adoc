@@ -36,7 +36,7 @@ StorageGRID 系统中的网格节点处理 _grid traffic ， _admin traffic _ �
  a| 
 用于系统管理和维护的流量。
  a| 
-管理网络（可选），  VLAN networks,VLAN 网络（可选）
+管理网络（可选）， <<可选 VLAN 网络,VLAN 网络（可选）>>
 
 
 
@@ -45,7 +45,7 @@ StorageGRID 系统中的网格节点处理 _grid traffic ， _admin traffic _ �
  a| 
 在外部客户端应用程序和网格之间传输的流量，包括来自 S3 和 Swift 客户端的所有对象存储请求。
  a| 
-客户端网络（可选），  VLAN networks,VLAN 网络（可选）
+客户端网络（可选）， <<可选 VLAN 网络,VLAN 网络（可选）>>
 
 |===
 您可以通过以下方式配置网络：

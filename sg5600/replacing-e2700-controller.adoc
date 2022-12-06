@@ -13,13 +13,14 @@ summary: 如果 E2700 控制器运行不正常或出现故障，您可能需要�
 [role="lead"]
 如果 E2700 控制器运行不正常或出现故障，您可能需要更换它。
 
-.您需要什么？ #8217 ；将需要什么
+.您需要的内容
 * 您的更换控制器的部件号与要更换的控制器相同。
 * 您可以通过标签来识别连接到控制器的每个缆线。
 * 您已获得防静电保护。
 * 您必须具有维护或根访问权限。有关详细信息，请参见有关管理 StorageGRID 的说明。
 
 
+.关于此任务
 您可以通过检查控制器上的琥珀色 "Service Action Required LED （需要执行维修操作） " （如图中的 1 所示）来确定控制器是否出现故障。如果此 LED 亮起，则应更换控制器。
 
 image::../media/e2700_controller_sar_led.gif[E2700 控制器上的 "Service Action Required" LED]
@@ -96,6 +97,7 @@ image::../media/node_rejoin_grid_confirmation.png[设备节点已重新加入网
 . 在 SANtricity 存储管理器中，确认新控制器处于最佳状态，然后收集支持数据。
 
 
+.相关信息
 https://mysupport.netapp.com/info/web/ECMP11751516.html["NetApp E 系列和 EF 系列硬件更换过程"^]
 
 http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=61765["NetApp 文档： E2700 系列"^]

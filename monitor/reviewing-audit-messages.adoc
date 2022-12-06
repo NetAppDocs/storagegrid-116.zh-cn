@@ -29,6 +29,7 @@ summary: 审核消息可帮助您更好地了解 StorageGRID 系统的详细操�
 
 有关审核日志文件的详细信息，审核消息的格式，审核消息的类型以及可用于分析审核消息的工具，请参见审核消息的说明。要了解如何配置审核客户端访问，请参见有关管理 StorageGRID 的说明。
 
+.相关信息
 xref:../audit/index.adoc[查看审核日志]
 
 xref:../admin/index.adoc[管理 StorageGRID]

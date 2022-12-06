@@ -210,6 +210,7 @@ IMPORTANT: 在任何一段时间内只复制一个副本会使数据面临永久
 * `X-Trans-ID`
 
 
+.相关信息
 xref:../ilm/index.adoc[使用 ILM 管理对象]
 
 xref:monitoring-and-auditing-operations.adoc[监控和审核操作]

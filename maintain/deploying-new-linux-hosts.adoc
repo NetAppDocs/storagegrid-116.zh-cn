@@ -39,6 +39,7 @@ IMPORTANT: 切勿使用 FabricPool 将与 StorageGRID 相关的任何数据分�
 
 
 
+.相关信息
 xref:../rhel/index.adoc[安装 Red Hat Enterprise Linux 或 CentOS]
 
 xref:../ubuntu/index.adoc[安装 Ubuntu 或 Debian]

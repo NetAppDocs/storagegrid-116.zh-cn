@@ -13,6 +13,7 @@ summary: 内部硬件维护完成后，重新安装控制器盖板。
 [role="lead"]
 内部硬件维护完成后，重新安装控制器盖板。
 
+.您需要的内容
 您已完成控制器内部的所有维护过程。
 
 .步骤
@@ -27,6 +28,7 @@ image::../media/sg6060_cover_latch_alignment_pin.jpg[SG6060 盖板闩锁对齐�
 . 可选：将蓝色塑料闩锁按锁定方向转动四分之一圈，如闩锁上所示，以将其锁定。
 
 
+.完成后
 在机柜或机架中重新安装控制器。
 
 xref:reinstalling-sg6000-cn-controller-into-cabinet-or-rack.adoc[将 SG6000-CN 控制器重新安装到机柜或机架中]

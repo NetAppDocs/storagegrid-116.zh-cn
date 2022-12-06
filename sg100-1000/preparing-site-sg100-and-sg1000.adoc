@@ -43,6 +43,7 @@ summary: 在安装设备之前，您必须确保要使用的站点和机柜或�
 . 确定要在何处安装设备。
 
 
+.相关信息
 https://hwu.netapp.com["NetApp Hardware Universe"^]
 
 https://mysupport.netapp.com/matrix["NetApp 互操作性表工具"^]

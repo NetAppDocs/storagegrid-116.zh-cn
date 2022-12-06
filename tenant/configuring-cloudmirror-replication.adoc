@@ -13,13 +13,14 @@ summary: CloudMirror 复制服务是三种 StorageGRID 平台服务之一。您�
 [role="lead"]
 。 xref:understanding-cloudmirror-replication-service.adoc[CloudMirror 复制服务] 是三种 StorageGRID 平台服务之一。您可以使用 CloudMirror 复制将对象自动复制到外部 S3 存储分段。
 
-.您需要什么？ #8217 ；将需要什么
+.您需要的内容
 * StorageGRID 管理员必须为您的租户帐户启用平台服务。
 * 您必须已创建一个分段，才能用作复制源。
 * 要用作 CloudMirror 复制目标的端点必须已存在，并且必须具有其 URN 。
 * 您必须属于具有 " 管理所有分段 " 或 " 根访问 " 权限的用户组，此权限允许您管理租户帐户中所有 S3 分段的设置。使用租户管理器配置存储分段时，这些权限会覆盖组或存储分段策略中的权限设置。
 
 
+.关于此任务
 CloudMirror 复制会将对象从源存储分段复制到端点中指定的目标存储分段。要为存储分段启用 CloudMirror 复制，必须创建并应用有效的存储分段复制配置 XML 。复制配置 XML 必须对每个目标使用 S3 存储分段端点的 URN 。
 
 
@@ -93,6 +94,7 @@ NOTE: StorageGRID 管理员必须使用网格管理器或网格管理 API 为每
 
 
 
+.相关信息
 xref:../s3/index.adoc[使用 S3]
 
 xref:creating-platform-services-endpoint.adoc[创建平台服务端点]

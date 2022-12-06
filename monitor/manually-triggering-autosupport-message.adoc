@@ -13,7 +13,7 @@ summary: 为了帮助技术支持解决 StorageGRID 系统的问题，您可以�
 [role="lead"]
 为了帮助技术支持解决 StorageGRID 系统的问题，您可以手动触发要发送的 AutoSupport 消息。
 
-.您需要什么？ #8217 ；将需要什么
+.您需要的内容
 * 您必须使用登录到网格管理器 xref:../admin/web-browser-requirements.adoc[支持的 Web 浏览器]。
 * 您必须具有 " 根访问 " 或 " 其他网格配置 " 权限。
 
@@ -33,4 +33,5 @@ NOTE: 发送用户触发的 AutoSupport 消息后，请在 1 分钟后刷新浏�
 
 
 
+.相关信息
 xref:managing-alarms.adoc[为警报配置电子邮件服务器设置（旧系统）]

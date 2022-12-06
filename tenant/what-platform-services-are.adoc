@@ -100,6 +100,7 @@ CloudMirror 复制
 |===
 有关 StorageGRID 如何实施这些 API 的详细信息，请参见有关实施 S3 客户端应用程序的说明。
 
+.相关信息
 xref:considerations-for-using-platform-services.adoc[使用平台服务的注意事项]
 
 xref:../s3/index.adoc[使用 S3]

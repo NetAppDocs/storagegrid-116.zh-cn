@@ -35,6 +35,7 @@ summary: 客户端应用程序可以使用 Swift REST API 调用连接到存储�
 
 此外，您还可以通过 StorageGRID 控制每个容器的一致性。您可以根据应用程序的需要更改一致性控制，以便在对象的可用性与这些对象在不同存储节点和站点之间的一致性之间进行权衡。
 
+.相关信息
 xref:../ilm/index.adoc[使用 ILM 管理对象]
 
 xref:get-container-consistency-request.adoc[获取容器一致性请求]

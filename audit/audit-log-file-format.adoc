@@ -48,6 +48,7 @@ summary: 审核日志文件位于每个管理节点上，其中包含一组单�
 ----
 以默认格式，审核日志文件中的审核消息不易阅读或解释。您可以使用 `audit-explain` 工具获取审核日志中审核消息的简化摘要。您可以使用 `audit-sum` 工具总结已记录的写入，读取和删除操作的数量以及这些操作所需的时间。
 
+.相关信息
 xref:using-audit-explain-tool.adoc[使用审核解释工具]
 
 xref:using-audit-sum-tool.adoc[使用 audit-sum 工具]

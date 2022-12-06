@@ -13,7 +13,7 @@ summary: 完成维护后，打开控制器电源。
 [role="lead"]
 完成维护后，打开控制器电源。
 
-.您需要什么？ #8217 ；将需要什么
+.您需要的内容
 * 您已将控制器安装在机柜或机架中并连接了数据和电源线。
 +
 xref:reinstalling-sg6000-cn-controller-into-cabinet-or-rack.adoc[将 SG6000-CN 控制器重新安装到机柜或机架中]
@@ -106,6 +106,7 @@ CAUTION: 请勿使其他设备节点脱机，除非此设备具有绿色图标�
 . 可选：如果已卸下前挡板，请安装前挡板。
 
 
+.相关信息
 xref:viewing-status-indicators-and-buttons-on-sg6000-cn-controller.adoc[查看 SG6000-CN 控制器上的状态指示灯和按钮]
 
 xref:viewing-boot-up-status-codes-for-sg6000-storage-controllers.adoc[查看 SG6000 存储控制器的启动状态代码]

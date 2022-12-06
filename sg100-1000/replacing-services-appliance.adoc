@@ -13,13 +13,14 @@ summary: 如果设备运行不正常或出现故障，您可能需要更换设�
 [role="lead"]
 如果设备运行不正常或出现故障，您可能需要更换设备。
 
-.您需要什么？ #8217 ；将需要什么
+.您需要的内容
 * 您的更换设备的部件号与要更换的设备相同。
 * 您可以通过标签来识别连接到设备的每个缆线。
 * 您已拥有 xref:locating-controller-in-data-center.adoc[已物理定位设备]。
 * 此设备已运行 xref:placing-appliance-into-maintenance-mode.adoc[已置于维护模式]。
 
 
+.关于此任务
 更换设备时，无法访问 StorageGRID 节点。如果设备运行正常，您可以在此操作步骤 开始时执行受控关闭。
 
 
@@ -92,6 +93,7 @@ IMPORTANT: To prevent degraded performance, do not twist, fold, pinch, or step o
 . 确认设备节点显示在网格管理器中且未显示任何警报。
 
 
+.相关信息
 xref:installing-appliance-in-cabinet-or-rack-sg100-and-sg1000.adoc[将设备安装到机柜或机架中（ SG100 和 SG1000 ）]
 
 xref:viewing-status-indicators-on-sg100-and-sg1000-appliances.adoc[查看 SG100 和 SG1000 设备上的状态指示灯]

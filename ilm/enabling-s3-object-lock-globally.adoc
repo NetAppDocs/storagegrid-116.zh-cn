@@ -13,7 +13,7 @@ summary: 如果 S3 租户帐户在保存对象数据时需要遵守法规要求�
 [role="lead"]
 如果 S3 租户帐户在保存对象数据时需要遵守法规要求，则必须为整个 StorageGRID 系统启用 S3 对象锁定。启用全局 S3 对象锁定设置后，任何 S3 租户用户都可以使用 S3 对象锁定创建和管理存储分段和对象。
 
-.您需要什么？ #8217 ；将需要什么
+.您需要的内容
 * 您具有 root 访问权限。
 * 您将使用登录到网格管理器 xref:../admin/web-browser-requirements.adoc[支持的 Web 浏览器]。
 * 您已查看 S3 对象锁定工作流，必须了解注意事项。
@@ -25,6 +25,7 @@ summary: 如果 S3 租户帐户在保存对象数据时需要遵守法规要求�
 
 
 
+.关于此任务
 网格管理员必须启用全局 S3 对象锁定设置，以允许租户用户创建启用了 S3 对象锁定的新分段。启用此设置后，便无法将其禁用。
 
 
@@ -66,6 +67,7 @@ image::../media/s3_object_lock_global_setting_error.gif[S3 对象锁定全局设
 
 
 
+.完成后
 启用全局 S3 对象锁定设置后，您可能需要执行此操作 xref:../ilm/creating-default-ilm-rule.adoc[创建默认规则] 合规和 xref:creating-ilm-policy-after-s3-object-lock-is-enabled.adoc[创建 ILM 策略] 合规。启用此设置后， ILM 策略可以选择同时包含合规的默认规则和不合规的默认规则。例如，您可能希望使用一个不合规规则，该规则不会筛选未启用 S3 对象锁定的分段中的对象。
 
 .相关信息

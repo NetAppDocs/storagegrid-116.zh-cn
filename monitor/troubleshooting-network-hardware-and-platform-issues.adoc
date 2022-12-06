@@ -15,7 +15,7 @@ summary: 您可以执行多项任务来帮助确定与 StorageGRID 网络，硬�
 
 
 
-== 对 "422 ： Unprocessable Entity" 错误进行故障排除
+== 对"`422：Unprocessable Entity`"错误进行故障排除
 
 错误 422 ：在许多情况下可能会出现 Unprocessable Entity 。检查错误消息以确定导致问题描述 的原因。
 
@@ -75,14 +75,16 @@ TLS handshake failed
 检查外部系统提供的密码。系统必须使用 StorageGRID 支持的其中一个密码进行传出 TLS 连接，如 StorageGRID 管理说明所示。
 
 |===
+.相关信息
 xref:../admin/index.adoc[管理 StorageGRID]
 
 
 
-== 对网格网络 MTU 不匹配警报进行故障排除
+== 【故障排除_MTU_ALERT]]对网格网络MTU不匹配警报进行故障排除
 
 如果网格网络接口（ eth0 ）的最大传输单元（ MTU ）设置在网格中的各个节点之间差别很大，则会触发 * 网格网络 MTU 不匹配 * 警报。
 
+.关于此任务
 MTU 设置的差异可能表明，某些（但并非所有） eth0 网络配置了巨型帧。如果 MTU 大小不匹配大于 1000 ，则可能会出现发生原因 网络性能问题。
 
 .步骤
@@ -152,6 +154,7 @@ MTU 设置的差异可能表明，某些（但并非所有） eth0 网络配置�
 
 
 
+.相关信息
 xref:../sg100-1000/index.adoc[SG100 和 SG1000 服务设备]
 
 xref:../sg6000/index.adoc[SG6000 存储设备]
@@ -166,6 +169,7 @@ xref:../sg5600/index.adoc[SG5600 存储设备]
 
 StorageGRID 与网络硬件之间的连接问题可能会导致网络接收错误（ NRER ）警报。在某些情况下，无需手动干预即可清除 NRER 错误。如果未清除这些错误，请执行建议的操作。
 
+.关于此任务
 与 StorageGRID 连接的网络硬件出现以下问题可能会导致 NRER 警报：
 
 * 需要正向错误更正（ FEC ），但不在使用中
@@ -234,7 +238,8 @@ NOTE: 在具有高电噪声的环境中，您可能会发现错误率较高。
 
 
 
-,对网格网络 MTU 不匹配警报进行故障排除
+.相关信息
+<<troubleshoot_MTU_alert,对网格网络 MTU 不匹配警报进行故障排除>>
 
 xref:alarms-reference.adoc[警报参考（旧系统）]
 
@@ -257,6 +262,7 @@ xref:../sg100-1000/index.adoc[SG100 和 SG1000 服务设备]
 
 NOTE: 在为生产级 StorageGRID 安装指定外部 NTP 源时，请勿在 Windows Server 2016 之前的 Windows 版本上使用 Windows 时间（ W32Time ）服务。早期版本的 Windows 上的时间服务不够准确， Microsoft 不支持在 StorageGRID 等高精度环境中使用。
 
+.相关信息
 xref:../maintain/index.adoc[恢复和维护]
 
 
@@ -282,16 +288,18 @@ IMPORTANT: 创建单独的虚拟网络接口，以供 Linux 主机操作系统�
 
 如果您不希望使用 MAC 地址克隆，而希望允许所有接口接收和传输非虚拟机管理程序分配的 MAC 地址的数据， 对于配置模式， MAC 地址更改和伪造传输，请确保虚拟交换机和端口组级别的安全属性设置为 * 接受 * 。虚拟交换机上设置的值可以被端口组级别的值覆盖，因此请确保这两个位置的设置相同。
 
+.相关信息
 xref:../rhel/index.adoc[安装 Red Hat Enterprise Linux 或 CentOS]
 
 xref:../ubuntu/index.adoc[安装 Ubuntu 或 Debian]
 
 
 
-== Linux ：节点状态为 " 孤立 "
+== Linux：节点状态为"`孤立`"
 
 处于孤立状态的 Linux 节点通常表示控制节点容器的 StorageGRID 服务或 StorageGRID 节点守护进程意外终止。
 
+.关于此任务
 如果 Linux 节点报告其处于孤立状态，您应：
 
 * 检查日志中的错误和消息。
@@ -337,6 +345,7 @@ storagegrid node start DC1-S1-172-16-1-172
 
 如果您在 Linux 主机上安装了 StorageGRID 节点，并且注意到尚未按预期为节点容器分配 IPv6 地址，则可能需要在内核中启用 IPv6 支持。
 
+.关于此任务
 您可以在网格管理器的以下位置查看已分配给网格节点的 IPv6 地址：
 
 * 选择 * 节点 * ，然后选择节点。然后，在概述选项卡上选择 * IP 地址 * 旁边的 * 显示更多 * 。

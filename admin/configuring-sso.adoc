@@ -45,7 +45,7 @@ image::../media/sign_in_sso.gif[启用 StorageGRID 时登录页面]
 
 +
 
-NOTE: 输入租户帐户的完整 URL （即，完全限定域名或 IP 地址后跟 ` / ？ AccountID=_20-Digit-account-id_` ）时，不会显示 StorageGRID 登录页面。而是会立即重定向到您所在组织的 SSO 登录页面，您可以在该页面上进行登录 ,使用您的 SSO 凭据登录。
+NOTE: 输入租户帐户的完整 URL （即，完全限定域名或 IP 地址后跟 ` / ？ AccountID=_20-Digit-account-id_` ）时，不会显示 StorageGRID 登录页面。而是会立即重定向到您所在组织的 SSO 登录页面，您可以在该页面上进行登录 <<signin_sso,使用您的 SSO 凭据登录>>。
 
 . 指示您是要访问网格管理器还是租户管理器：
 +

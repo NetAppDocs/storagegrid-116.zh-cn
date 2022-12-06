@@ -13,7 +13,7 @@ summary: 您可以查看租户帐户中的分段和分段设置列表。
 [role="lead"]
 您可以查看租户帐户中的分段和分段设置列表。
 
-.您需要什么？ #8217 ；将需要什么
+.您需要的内容
 * 您必须使用登录到租户管理器 xref:../admin/web-browser-requirements.adoc[支持的 Web 浏览器]。
 
 

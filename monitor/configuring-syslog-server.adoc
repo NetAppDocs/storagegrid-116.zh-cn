@@ -13,13 +13,14 @@ summary: 如果要将审核日志，应用程序日志和安全事件日志保�
 [role="lead"]
 如果要将审核日志，应用程序日志和安全事件日志保存到网格外部的位置，请使用此操作步骤 配置外部系统日志服务器。
 
-.您需要什么？ #8217 ；将需要什么
+.您需要的内容
 * 您将使用登录到网格管理器 xref:../admin/web-browser-requirements.adoc[支持的 Web 浏览器]。
 * 您具有维护或 root 访问权限。
 * 您有一个能够接收和存储日志文件的系统日志服务器。有关详细信息，请参见 xref:../monitor/considerations-for-external-syslog-server.adoc[外部系统日志服务器的注意事项]。
 * 如果您计划使用 TLS 或 ROLP/TLS ，则您拥有正确的服务器和客户端认证。
 
 
+.关于此任务
 如果要将审核信息发送到外部系统日志服务器，则必须先配置外部服务器。
 
 通过将审核信息发送到外部系统日志服务器，您可以：
@@ -563,6 +564,7 @@ IMPORTANT: 您必须确认外部系统日志服务器可以接收测试 StorageG
 
 
 
+.相关信息
 xref:../audit/index.adoc[审核消息概述]
 
 xref:../monitor/configure-audit-messages.adoc[配置审核消息和日志目标]

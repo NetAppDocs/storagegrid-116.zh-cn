@@ -13,10 +13,11 @@ summary: 您应监控各个网格节点以检查其资源利用率级别。
 [role="lead"]
 您应监控各个网格节点以检查其资源利用率级别。
 
-.您需要什么？ #8217 ；将需要什么
+.您需要的内容
 * 您必须使用登录到网格管理器 xref:../admin/web-browser-requirements.adoc[支持的 Web 浏览器]。
 
 
+.关于此任务
 如果节点始终过载，则可能需要更多节点才能高效运行。
 
 .步骤
@@ -33,6 +34,7 @@ image::../media/nodes_page_hardware_tab_graphs.png[节点页面硬件选项卡]
 
 
 
+.相关信息
 xref:viewing-hardware-tab.adoc#view-information-about-appliance-storage-nodes[查看有关设备存储节点的信息]
 
 xref:viewing-hardware-tab.adoc#view-information-about-appliance-admin-nodes-and-gateway-nodes[查看有关设备管理节点和网关节点的信息]

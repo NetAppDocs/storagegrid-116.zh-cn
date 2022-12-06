@@ -69,6 +69,7 @@ xref:deploying-appliance-storage-node.adoc[部署设备存储节点]
 恢复和维护说明
 
 |===
+.相关信息
 xref:preparing-for-installation.adoc[准备安装（ SG5700 ）]
 
 xref:installing-hardware.adoc[安装硬件]

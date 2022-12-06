@@ -13,7 +13,7 @@ summary: 对于当前使用 SANtricity 操作系统版本早于 08.42.20.00 的�
 [role="lead"]
 对于当前使用的 SANtricity 操作系统版本早于 08.42.20.00 （ 11.42 ）的存储控制器，您必须使用维护模式操作步骤 来应用升级。
 
-.您需要什么？ #8217 ；将需要什么
+.您需要的内容
 * 您已查阅 NetApp 互操作性表工具（ IMT ）以确认用于升级的 SANtricity 操作系统版本与您的设备兼容。
 * 您必须将E5700SG控制器置于中 xref:placing-appliance-into-maintenance-mode.adoc[维护模式]、中断与E2800控制器的连接。
 +
@@ -22,6 +22,7 @@ NOTE: 在极少数情况下，将 StorageGRID 设备置于维护模式可能会�
 
 
 
+.关于此任务
 请勿一次在多个 StorageGRID 设备上升级 E 系列控制器中的 SANtricity 操作系统或 NVSRAM 。
 
 
@@ -57,4 +58,5 @@ image::../media/node_rejoin_grid_confirmation.png[设备节点已重新加入网
 
 
 
+.相关信息
 xref:upgrading-santricity-os-on-storage-controllers-using-grid-manager-sg5700.adoc[使用网格管理器升级存储控制器上的 SANtricity 操作系统]

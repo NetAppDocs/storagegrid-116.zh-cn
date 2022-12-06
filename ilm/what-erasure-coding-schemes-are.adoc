@@ -23,8 +23,8 @@ StorageGRID 系统使用 Reed-Solomon 纠删编码算法。该算法会将对象
 NOTE: 如果存储池包含两个站点，则无法配置擦除编码配置文件。
 
 +
-**  schemes for storage pools containing three or more sites,包含三个或更多站点的存储池的纠删编码方案
-**  schemes for one-site storage pools,单站点存储池的纠删编码方案
+** <<包含三个或更多站点的存储池的纠删编码方案,包含三个或更多站点的存储池的纠删编码方案>>
+** <<单站点存储池的纠删编码方案,单站点存储池的纠删编码方案>>
 
 
 * 请勿使用默认存储池，所有存储节点或包含默认站点的存储池所有站点。
@@ -316,4 +316,5 @@ NOTE: 如果您不确定要使用的方案，请选择 4+2 或 6+3 ，或者联�
 71%
 
 |===
+.相关信息
 xref:../expand/index.adoc[扩展网格]

@@ -20,16 +20,18 @@ IMPORTANT: 网络的 MTU 值必须与节点所连接的交换机端口上配置�
 
 IMPORTANT: 为了获得最佳网络性能，应在所有节点的网格网络接口上配置类似的 MTU 值。如果网格网络在各个节点上的 MTU 设置有明显差异，则会触发 * 网格网络 MTU 不匹配 * 警报。并非所有网络类型的 MTU 值都相同。
 
-要在不重新启动设备节点的情况下更改 MTU 设置，  the MTU setting using the Change IP tool,使用更改 IP 工具。
+要在不重新启动设备节点的情况下更改 MTU 设置， <<使用更改 IP 工具更改 MTU 设置,使用更改 IP 工具>>。
 
-如果在初始安装期间未在 StorageGRID 设备安装程序中配置客户端或管理网络，  the MTU setting using maintenance mode,使用维护模式更改 MTU 设置。
+如果在初始安装期间未在 StorageGRID 设备安装程序中配置客户端或管理网络， <<使用维护模式更改 MTU 设置,使用维护模式更改 MTU 设置>>。
 
 
 
 == 使用更改 IP 工具更改 MTU 设置
 
+.您需要的内容
 您有 `passwords.txt` 文件可用于更改 IP 工具。
 
+.步骤
 访问更改 IP 工具并按中所述更新 MTU 设置 xref:../maintain/changing-nodes-network-configuration.adoc[更改节点网络配置]。
 
 
@@ -38,6 +40,7 @@ IMPORTANT: 为了获得最佳网络性能，应在所有节点的网格网络接
 
 如果无法使用更改 IP 工具访问这些设置，请使用维护模式更改 MTU 设置。
 
+.您需要的内容
 此设备已运行 xref:placing-appliance-into-maintenance-mode.adoc[已置于维护模式]。
 
 .步骤
@@ -64,4 +67,5 @@ image::../media/nodes_menu.png[设备节点已重新加入网格]
 
 
 
+.相关信息
 xref:../admin/index.adoc[管理 StorageGRID]

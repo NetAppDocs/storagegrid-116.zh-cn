@@ -46,6 +46,7 @@ summary: 停用站点之前，您必须获取以下材料。
 如果有，请获取描述系统当前拓扑的任何文档。
 
 |===
+.相关信息
 xref:../admin/web-browser-requirements.adoc[Web 浏览器要求]
 
 xref:downloading-recovery-package.adoc[下载恢复包]

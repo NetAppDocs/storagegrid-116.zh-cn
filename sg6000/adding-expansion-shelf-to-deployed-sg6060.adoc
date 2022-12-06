@@ -13,7 +13,7 @@ summary: 要增加存储容量，您可以向 StorageGRID 系统中部署的 SG6
 [role="lead"]
 要增加存储容量、您可以向StorageGRID 系统中已部署的SG6060或SG6060X添加一个或两个扩展架。
 
-.您需要什么？ #8217 ；将需要什么
+.您需要的内容
 * 您必须具有配置密码短语。
 * 您必须运行 StorageGRID 11.4 或更高版本。
 * 每个扩展架都有扩展架和两根 SAS 缆线。
@@ -23,6 +23,7 @@ xref:locating-controller-in-data-center.adoc[在数据中心中找到控制器]
 
 
 
+.关于此任务
 要添加扩展架，请执行以下高级步骤：
 
 * 在机柜或机架中安装硬件。
@@ -192,7 +193,7 @@ image::../media/monitor_expansion_for_new_appliance_shelf.png[监控扩展架配
 
 +
 
-NOTE: 要在扩展架配置失败时重试此配置，请转到 StorageGRID 设备安装程序，选择 * 高级 * > * 重新启动控制器 * ，然后选择 * 重新启动至维护模式 * 。节点重新启动后，重试 ,扩展架配置。
+NOTE: 要在扩展架配置失败时重试此配置，请转到 StorageGRID 设备安装程序，选择 * 高级 * > * 重新启动控制器 * ，然后选择 * 重新启动至维护模式 * 。节点重新启动后，重试 <<start_expansion,扩展架配置>>。
 
 +
 重新启动完成后， * 任务 * 选项卡将显示以下屏幕截图：
@@ -212,6 +213,7 @@ image::../media/appliance_installer_reboot_complete.png[重新启动完成]
 
 
 
+.相关信息
 xref:unpacking-boxes-sg6000.adoc[打开包装箱(SG6000和SG6060X)]
 
 xref:sg6060-installing-60-drive-shelves-into-cabinet-or-rack.adoc[SG6060和SG6060X：将60个驱动器磁盘架安装到机柜或机架中]

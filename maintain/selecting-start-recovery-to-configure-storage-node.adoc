@@ -13,7 +13,7 @@ summary: 更换存储节点后，您必须在网格管理器中选择启动恢�
 [role="lead"]
 更换存储节点后，您必须在网格管理器中选择启动恢复，以将新节点配置为故障节点的替代节点。
 
-.您需要什么？ #8217 ；将需要什么
+.您需要的内容
 * 您必须使用登录到网格管理器 xref:../admin/web-browser-requirements.adoc[支持的 Web 浏览器]。
 * 您必须具有维护或根访问权限。
 * 您必须具有配置密码短语。
@@ -22,6 +22,7 @@ summary: 更换存储节点后，您必须在网格管理器中选择启动恢�
 * 您必须已确认过去 15 天内未重建此存储节点。
 
 
+.关于此任务
 如果存储节点作为容器安装在 Linux 主机上，则只有在满足以下条件之一时，才必须执行此步骤：
 
 * 您必须使用 ` -force` 标志导入节点，或者发出 `StorageGRID node force-recovery _node-name_`
@@ -61,4 +62,5 @@ image::../media/recovery_reset_button.gif[显示 " 正在等待手动步骤 " �
 
 
 
+.相关信息
 xref:preparing-appliance-for-reinstallation-platform-replacement-only.adoc[准备要重新安装的设备（仅限平台更换）]

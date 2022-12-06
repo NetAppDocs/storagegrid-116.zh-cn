@@ -13,8 +13,10 @@ summary: E2700 控制器上的管理端口 1 用于将设备连接到 SANtricity
 [role="lead"]
 E2700 控制器上的管理端口 1 用于将设备连接到 SANtricity 存储管理器的管理网络。您必须为 E2700 控制器设置静态 IP 地址，以确保不会丢失与 StorageGRID 设备中硬件和控制器固件的管理连接。
 
+.您需要的内容
 您正在使用 xref:../admin/web-browser-requirements.adoc[支持的 Web 浏览器]。
 
+.关于此任务
 DHCP 分配的地址可能随时更改。为控制器分配一个静态 IP 地址，以确保可访问性一致。
 
 .步骤
@@ -64,4 +66,5 @@ image::../media/storage_controller_ipv4_and_def_gateway.gif[存储控制器网�
 
 
 
+.相关信息
 http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=61197["NetApp 文档： SANtricity 存储管理器"^]

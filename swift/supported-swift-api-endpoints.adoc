@@ -97,6 +97,7 @@ StorageGRID 支持以下 Swift API 端点：信息 URL ，身份验证 URL 和�
 * `X-Container-Object-Count`
 
 
+.相关信息
 xref:configuring-tenant-accounts-and-connections.adoc[配置租户帐户和连接]
 
 xref:account-operations.adoc[帐户操作]

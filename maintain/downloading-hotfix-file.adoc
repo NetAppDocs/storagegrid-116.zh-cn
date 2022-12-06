@@ -50,4 +50,5 @@ NOTE: 如果您使用的是 macOS 设备，则此修补程序文件可能会自�
 . 选择下载位置，然后选择 * 保存 * 。
 
 
+.相关信息
 xref:configuring-replacement-primary-admin-node.adoc[配置替代主管理节点]

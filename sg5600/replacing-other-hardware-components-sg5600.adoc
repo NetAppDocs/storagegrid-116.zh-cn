@@ -13,11 +13,12 @@ summary: 您可能需要更换 StorageGRID 设备中的驱动器，风扇，电�
 [role="lead"]
 您可能需要更换 StorageGRID 设备中的驱动器，风扇，电源或电池。
 
-.您需要什么？ #8217 ；将需要什么
+.您需要的内容
 * 您已安装 E 系列硬件更换操作步骤 。
 * 此设备已运行 xref:placing-appliance-into-maintenance-mode.adoc[置于维护模式] 如果组件更换操作步骤 要求您关闭设备。
 
 
+.关于此任务
 更换驱动器，电源风扇箱，风扇箱，电源箱，电池 或驱动器抽盒，请参见 E2700 和 E5600 存储阵列的标准过程。重点介绍有关拆卸和更换硬件本身的分步说明；许多 SANtricity 存储管理器过程不适用于设备。
 
 
@@ -83,6 +84,7 @@ E2700 控制器中的电池（需要卸下控制器）
 按照中的步骤进行操作 xref:replacing-e2700-controller.adoc[更换 E2700 控制器]，但请在现有控制器中安装新电池。
 
 |===
+.相关信息
 https://mysupport.netapp.com/info/web/ECMP11751516.html["NetApp E 系列和 EF 系列硬件更换过程"^]
 
 http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=61765["NetApp 文档： E2700 系列"^]

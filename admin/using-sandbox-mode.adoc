@@ -13,7 +13,7 @@ summary: 在为所有 StorageGRID 用户启用单点登录（ SSO ）之前，�
 [role="lead"]
 在为所有 StorageGRID 用户启用单点登录（ SSO ）之前，您可以使用沙盒模式配置和测试单点登录（ SSO ）。启用 SSO 后，您可以在需要更改或重新测试配置时返回到沙盒模式。
 
-.您需要什么？ #8217 ；将需要什么
+.您需要的内容
 * 您将使用登录到网格管理器 xref:../admin/web-browser-requirements.adoc[支持的 Web 浏览器]。
 * 您具有 root 访问权限。
 * 您已为 StorageGRID 系统配置身份联合。
@@ -42,6 +42,7 @@ Azure 酒店
 |===
 
 
+.关于此任务
 启用 SSO 后，如果用户尝试登录到管理节点，则 StorageGRID 会向 SSO 身份提供程序发送身份验证请求。然后， SSO 身份提供程序会向 StorageGRID 发回身份验证响应，指示身份验证请求是否成功。对于成功的请求：
 
 * Active Directory 或 PingFederate 的响应包括用户的通用唯一标识符（ UUID ）。

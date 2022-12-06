@@ -62,6 +62,7 @@ image::../media/state_graph.gif[状态图]
 
 
 
+.相关信息
 xref:viewing-nodes-page.adoc[查看节点页面]
 
 xref:viewing-grid-topology-tree.adoc[查看网格拓扑树]
@@ -126,6 +127,7 @@ image:../media/gray_blue_chart_shading.gif["显示不确定值和未知值混合
 
 节点页面包含您应定期访问的图表和图形，用于监控存储容量和吞吐量等属性。在某些情况下，尤其是在与技术支持人员合作时，您可以使用 * 支持 * > * 工具 * > * 网格拓扑 * 页面访问其他图表。
 
+.您需要的内容
 您必须使用登录到网格管理器 xref:../admin/web-browser-requirements.adoc[支持的 Web 浏览器]。
 
 .步骤
@@ -181,7 +183,7 @@ image::../media/nms_chart.gif[周围文本所述的屏幕截图]
 
 图表以图形方式显示属性数据值。您可以报告数据中心站点，网格节点，组件或服务。
 
-.您需要什么？ #8217 ；将需要什么
+.您需要的内容
 * 您必须使用登录到网格管理器 xref:../admin/web-browser-requirements.adoc[支持的 Web 浏览器]。
 * 您必须具有特定的访问权限。
 

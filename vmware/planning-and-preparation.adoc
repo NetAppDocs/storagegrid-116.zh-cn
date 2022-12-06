@@ -33,6 +33,7 @@ NOTE: StorageGRID 安装操作步骤 中不包含特定于硬件的安装和集�
 * 确定要使用的可用部署和配置工具。
 
 
+.相关信息
 xref:../sg100-1000/index.adoc[SG100 和 SG1000 服务设备]
 
 xref:../sg6000/index.adoc[SG6000 存储设备]

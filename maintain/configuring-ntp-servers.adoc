@@ -13,13 +13,14 @@ summary: 您可以添加，更新或删除网络时间协议（ NTP ）服务器
 [role="lead"]
 您可以添加，更新或删除网络时间协议（ Network Time Protocol ， NTP ）服务器，以确保 StorageGRID 系统中的网格节点之间准确同步数据。
 
-.您需要什么？ #8217 ；将需要什么
+.您需要的内容
 * 您必须使用登录到网格管理器 xref:../admin/web-browser-requirements.adoc[支持的 Web 浏览器]。
 * 您必须具有维护或根访问权限。
 * 您必须具有配置密码短语。
 * 您必须具有要配置的 NTP 服务器的 IPv4 地址。
 
 
+.关于此任务
 StorageGRID 系统使用网络时间协议（ NTP ）来同步网格中所有网格节点之间的时间。
 
 在每个站点上，至少会为 StorageGRID 系统中的两个节点分配主 NTP 角色。它们会同步到建议的至少四个外部时间源，最多六个外部时间源以及彼此之间。StorageGRID 系统中不是主 NTP 节点的每个节点都充当 NTP 客户端，并与这些主 NTP 节点同步。

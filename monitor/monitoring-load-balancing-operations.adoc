@@ -13,11 +13,12 @@ summary: 如果您使用负载平衡器管理客户端与 StorageGRID 的连接�
 [role="lead"]
 如果您使用负载平衡器管理客户端与 StorageGRID 的连接，则应在最初配置系统之后以及在进行任何配置更改或执行扩展之后监控负载平衡操作。
 
-.您需要什么？ #8217 ；将需要什么
+.您需要的内容
 * 您必须使用登录到网格管理器 xref:../admin/web-browser-requirements.adoc[支持的 Web 浏览器]。
 * 您必须具有特定的访问权限。
 
 
+.关于此任务
 您可以使用管理节点或网关节点上的负载平衡器服务，外部第三方负载平衡器或网关节点上的 CLB 服务在多个存储节点上分发客户端请求。
 
 
@@ -73,6 +74,7 @@ NOTE: CLB 服务已弃用。
 
 
 
+.相关信息
 xref:../admin/index.adoc[管理 StorageGRID]
 
 xref:viewing-load-balancer-tab.adoc[查看负载平衡器选项卡]

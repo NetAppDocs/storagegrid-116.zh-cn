@@ -58,6 +58,7 @@ NOTE: 在受管关闭操作期间，节点可能会显示为未知。在这些�
 
 image::../media/nodes_page_alerts_table.png[节点页面警报表]
 
+.相关信息
 xref:monitoring-node-connection-states.adoc[监控节点连接状态]
 
 xref:viewing-current-alerts.adoc[查看当前警报]

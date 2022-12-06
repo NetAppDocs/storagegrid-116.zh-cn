@@ -13,13 +13,14 @@ summary: 您必须访问 StorageGRID 设备安装程序以配置设备与三个 
 [role="lead"]
 您必须访问 StorageGRID 设备安装程序来配置设备与三个 StorageGRID 网络之间的连接：网格网络，管理网络（可选）和客户端网络（可选）。
 
-.您需要什么？ #8217 ；将需要什么
+.您需要的内容
 * 您正在使用 xref:../admin/web-browser-requirements.adoc[支持的 Web 浏览器]。
 * 此设备已连接到您计划使用的所有 StorageGRID 网络。
 * 您知道这些网络上设备的 IP 地址，网关和子网。
 * 您已配置计划使用的网络交换机。
 
 
+.关于此任务
 首次访问 StorageGRID 设备安装程序时，您可以使用管理网络的 DHCP 分配的 IP 地址（假设设备已连接到管理网络）或网格网络的 DHCP 分配的 IP 地址。首选使用管理网络的 IP 地址。否则，如果使用网格网络的 DHCP 地址访问 StorageGRID 设备安装程序，则在更改链接设置和输入静态 IP 时，可能会与 StorageGRID 设备安装程序断开连接。
 
 .步骤
@@ -88,4 +89,5 @@ NOTE: 如果无法通过链路本地连接访问主页，请将服务笔记本�
 . 查看主页页面上显示的所有消息，并根据需要配置链路配置和 IP 配置。
 
 
+.相关信息
 xref:../admin/web-browser-requirements.adoc[Web 浏览器要求]

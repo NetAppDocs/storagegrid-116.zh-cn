@@ -58,4 +58,5 @@ summary: 如果能够保留故障主管理节点中的审核日志，则可以�
 
 您还必须还原对审核共享的任何已有客户端访问。有关详细信息，请参见有关管理 StorageGRID 的说明。
 
+.相关信息
 xref:../admin/index.adoc[管理 StorageGRID]

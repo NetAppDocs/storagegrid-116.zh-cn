@@ -13,10 +13,11 @@ summary: 在将 StorageGRID 与 FabricPool 工作负载结合使用之前，您�
 [role="lead"]
 在将 StorageGRID 与 FabricPool 工作负载结合使用之前，您必须为 FabricPool 数据创建一个 S3 存储分段。您还需要为要用于 FabricPool 的租户帐户获取访问密钥和机密访问密钥。
 
-.您需要什么？ #8217 ；将需要什么
+.您需要的内容
 * 您已创建一个租户帐户供 FabricPool 使用。
 
 
+.关于此任务
 以下说明介绍如何使用 StorageGRID 租户管理器创建存储分段并获取访问密钥。您也可以使用租户管理 API 或 StorageGRID S3 REST API 执行这些任务。或者，如果您使用的是 ONTAP 9.10 ，则可以改用 FabricPool 设置向导创建存储分段。
 
 了解更多信息：

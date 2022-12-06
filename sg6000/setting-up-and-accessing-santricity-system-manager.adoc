@@ -13,7 +13,7 @@ summary: 您可能需要访问存储控制器上的 SANtricity 系统管理器�
 [role="lead"]
 您可能需要访问存储控制器上的 SANtricity 系统管理器来监控存储控制器架中的硬件或配置 E 系列 AutoSupport 。
 
-.您需要什么？ #8217 ；将需要什么
+.您需要的内容
 * 您正在使用 xref:../admin/web-browser-requirements.adoc[支持的 Web 浏览器]。
 * 要通过网格管理器访问 SANtricity 系统管理器，您必须已安装 StorageGRID ，并且必须具有存储设备管理员权限或根访问权限。
 * 要使用 StorageGRID 设备安装程序访问 SANtricity 系统管理器，您必须具有 SANtricity 系统管理器管理员用户名和密码。
@@ -26,6 +26,7 @@ NOTE: 您必须具有SANtricity 固件8.70 (11.70)或更高版本、才能使用
 
 IMPORTANT: 从网格管理器或设备安装程序访问 SANtricity 系统管理器通常仅用于监控硬件和配置 E 系列 AutoSupport 。SANtricity System Manager 中的许多功能和操作（例如升级固件）不适用于监控 StorageGRID 设备。为避免出现问题，请始终按照适用于您的设备的硬件安装和维护说明进行操作。
 
+.关于此任务
 根据您所处的安装和配置过程的阶段，有三种方法可以访问 SANtricity System Manager ：
 
 * 如果此设备尚未部署为 StorageGRID 系统中的节点，则应使用 StorageGRID 设备安装程序中的高级选项卡。
@@ -37,7 +38,7 @@ NOTE: 部署节点后，您将无法再使用 StorageGRID 设备安装程序访�
 * 如果无法使用 StorageGRID 设备安装程序或网格管理器，则可以使用连接到管理端口的 Web 浏览器直接访问 SANtricity 系统管理器。
 
 
-此操作步骤 包含首次访问 SANtricity System Manager 的步骤。如果您已设置 SANtricity 系统管理器，请转到 ,配置硬件警报步骤。
+此操作步骤 包含首次访问 SANtricity System Manager 的步骤。如果您已设置 SANtricity 系统管理器，请转到 <<config_hardware_alerts_sg6000,配置硬件警报步骤>>。
 
 
 NOTE: 使用网格管理器或 StorageGRID 设备安装程序，您可以访问 SANtricity 系统管理器，而无需配置或连接设备的管理端口。

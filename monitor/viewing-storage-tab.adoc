@@ -34,4 +34,5 @@ image::../media/nodes_storage_node_storage_tab.png[节点 > 存储节点 > 存�
 
 image::../media/nodes_page_storage_tables.png[节点页面存储表]
 
+.相关信息
 xref:monitoring-storage-capacity.adoc[监控存储容量]

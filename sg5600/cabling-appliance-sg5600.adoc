@@ -13,7 +13,7 @@ summary: 您必须使用 SAS 互连缆线将两个控制器彼此连接，将管
 [role="lead"]
 您必须使用 SAS 互连缆线将两个控制器彼此连接，将管理端口连接到相应的管理网络，并将 E5600SG 控制器上的 10 GbE 端口连接到网格网络和适用于 StorageGRID 的可选客户端网络。
 
-.您需要什么？ #8217 ；将需要什么
+.您需要的内容
 * 您有用于连接管理端口的以太网缆线。
 * 您可以使用光缆连接四个 10-GbE 端口（设备不提供这些端口）。
 
@@ -21,6 +21,7 @@ summary: 您必须使用 SAS 互连缆线将两个控制器彼此连接，将管
 
 CAUTION: * 受到激光辐射的风险 * —请勿拆卸或卸下 SFP 收发器的任何部件。您可能受到激光辐射的影响。
 
+.关于此任务
 连接缆线时，请参见下图，其中显示了顶部的 E2700 控制器和底部的 E5600SG 控制器。此图显示的是 SG5660 型号； SG5612 型号中的控制器是并排控制的，而不是堆栈控制。
 
 image::../media/cabling_diagram.gif[缆线图]
@@ -204,6 +205,7 @@ E5600SG 控制器上的端口 2
 
 
 
+.相关信息
 xref:port-bond-modes-for-e5600sg-controller-ports.adoc[E5600SG 控制器端口的端口绑定模式]
 
 xref:accessing-storagegrid-appliance-installer-sg5600.adoc[访问 StorageGRID 设备安装程序]

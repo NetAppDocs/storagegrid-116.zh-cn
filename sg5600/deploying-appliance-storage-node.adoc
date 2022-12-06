@@ -13,7 +13,7 @@ summary: 安装和配置存储设备后，您可以将其部署为 StorageGRID �
 [role="lead"]
 安装和配置存储设备后，您可以将其部署为 StorageGRID 系统中的存储节点。将设备部署为存储节点时，您可以使用设备上随附的 StorageGRID 设备安装程序。
 
-.您需要什么？ #8217 ；将需要什么
+.您需要的内容
 * 如果要克隆设备节点，请继续执行恢复和维护过程。
 +
 xref:../maintain/index.adoc[恢复和维护]
@@ -26,6 +26,7 @@ xref:../maintain/index.adoc[恢复和维护]
 * 您的服务笔记本电脑具有受支持的 Web 浏览器。
 
 
+.关于此任务
 每个存储设备都用作一个存储节点。任何设备都可以连接到网格网络，管理网络和客户端网络
 
 要在 StorageGRID 系统中部署设备存储节点，请访问 StorageGRID 设备安装程序并执行以下步骤：
@@ -116,6 +117,7 @@ NOTE: 如果您需要一次部署多个设备存储节点，则可以使用 `con
 
 
 
+.相关信息
 xref:../expand/index.adoc[扩展网格]
 
 xref:../maintain/index.adoc[恢复和维护]

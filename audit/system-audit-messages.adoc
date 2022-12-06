@@ -205,4 +205,5 @@ User Initiated Volume Lost ：已运行 ` /proc/CMSI/Volume_Lost` 命令。
 xref:vlst-user-initiated-volume-lost.adoc[VLST ：用户启动的卷丢失]
 
 |===
+.相关信息
 xref:lkcu-overwritten-object-cleanup.adoc[LKCU ：覆盖对象清理]

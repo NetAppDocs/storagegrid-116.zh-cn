@@ -21,4 +21,5 @@ summary: 网络选项卡显示一个图形，其中显示了通过节点，站�
 
 image::../media/nodes_page_network_tab.png[节点页面网络选项卡]
 
+.相关信息
 xref:monitoring-network-connections-and-performance.adoc[监控网络连接和性能]

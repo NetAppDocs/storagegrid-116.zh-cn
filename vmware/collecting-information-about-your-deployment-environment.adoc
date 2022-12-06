@@ -97,6 +97,7 @@ IMPORTANT: VMware Live vMotion 会导致虚拟机时钟时间跳转，任何类�
 * 域名系统（ DNS ）服务器 IP 地址
 
 
+.相关信息
 xref:how-grid-nodes-discover-primary-admin-node.adoc[网格节点如何发现主管理节点]
 
 xref:storage-and-performance-requirements.adoc[存储和性能要求]

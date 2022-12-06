@@ -92,4 +92,5 @@ IMPORTANT: S3 租户用户可以使用租户管理器创建和管理 S3 访问�
 
 IMPORTANT: Swift 用户必须具有 root 访问权限才能访问租户管理器。但是， " 根 " 访问权限不允许用户通过 Swift REST API 的身份验证来创建容器和载入对象。用户必须具有 Swift 管理员权限才能向 Swift REST API 进行身份验证。
 
+.相关信息
 xref:../tenant/index.adoc[使用租户帐户]

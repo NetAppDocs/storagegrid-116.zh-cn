@@ -71,4 +71,5 @@ Content-Type: application/xml
 
 存储的每个对象版本都会在响应中生成 `ObjectCount` 和 `DataBytes` 值。删除标记不会添加到 `ObjectCount` Total 中。
 
+.相关信息
 xref:consistency-controls.adoc[一致性控制]

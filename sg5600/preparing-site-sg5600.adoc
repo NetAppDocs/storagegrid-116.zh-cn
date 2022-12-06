@@ -69,6 +69,7 @@ SG5660
 . 安装所需的任何网络交换机。有关兼容性信息，请参见 NetApp 互操作性表工具。
 
 
+.相关信息
 https://hwu.netapp.com["NetApp Hardware Universe"^]
 
 https://mysupport.netapp.com/NOW/products/interoperability["NetApp 互操作性"^]

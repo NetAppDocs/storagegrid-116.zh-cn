@@ -13,6 +13,7 @@ summary: 设备启动时，每个控制器上的七段显示状态和错误代�
 [role="lead"]
 设备启动时，每个控制器上的七段显示状态和错误代码。
 
+.关于此任务
 E2800 控制器和 E5700SG 控制器显示不同的状态和错误代码。
 
 要了解这些代码的含义，请参见以下资源：
@@ -76,6 +77,7 @@ HO -- IP address for Admin Network -- IP address for Grid Network HO
 . 如果显示的七段显示其他值，请参见 xref:troubleshooting-hardware-installation.adoc[硬件安装故障排除（ SG5700 ）] 并确认您已正确完成安装步骤。如果无法解决此问题，请联系技术支持。
 
 
+.相关信息
 xref:status-indicators-on-e5700sg-controller.adoc[E5700SG 控制器上的状态指示灯]
 
 https://library.netapp.com/ecmdocs/ECMLP2588751/html/frameset.html["《 E5700 和 E2800 系统监控指南》"^]

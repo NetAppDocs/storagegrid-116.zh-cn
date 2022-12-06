@@ -113,6 +113,7 @@ E5700SG 控制器上的 10/225-GbE 端口 1-4
 连接到网格网络和 StorageGRID 客户端网络。请参见 " E5700SG 控制器的`10/225-GbE 端口连接 " 。`
 
 |===
+.相关信息
 xref:gathering-installation-information-sg5700.adoc[收集安装信息（ SG5700 ）]
 
 xref:cabling-appliance-sg5700.adoc[缆线设备（ SG5700 ）]

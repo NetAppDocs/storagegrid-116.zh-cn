@@ -13,7 +13,7 @@ summary: 关闭服务设备以执行硬件维护。
 [role="lead"]
 关闭服务设备以执行硬件维护。
 
-.您需要什么？ #8217 ；将需要什么
+.您需要的内容
 * 您已将需要维护的服务设备物理定位在数据中心。
 +
 xref:locating-controller-in-data-center.adoc[在数据中心中查找控制器]
@@ -21,6 +21,7 @@ xref:locating-controller-in-data-center.adoc[在数据中心中查找控制器]
 * 此设备已运行 xref:placing-appliance-into-maintenance-mode.adoc[置于维护模式]。
 
 
+.关于此任务
 为了防止服务中断，请在计划维护时段关闭服务设备，此时通常会发生服务中断。
 
 .步骤

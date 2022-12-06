@@ -96,7 +96,7 @@ NOTE: 这些数字适用于每个主机，而不适用于整个网格。
 
 * 注： * 基于软件的存储节点可以包含 1 到 16 个存储卷；建议至少使用 3 个存储卷。
  a| 
-12 TB （ 4 TB/LUN ）请参见 ,存储节点的存储要求 有关详细信息 ...
+12 TB （ 4 TB/LUN ）请参见 <<storage_req_SN,存储节点的存储要求>> 有关详细信息 ...
 
 
 
@@ -298,6 +298,7 @@ NOTE: 如果一个存储节点仅使用一个存储卷，而为该卷分配的�
 
 有关详细信息，请转至 xref:../admin/managing-object-metadata-storage.adoc[管理对象元数据存储]。
 
+.相关信息
 xref:node-container-migration-requirements.adoc[节点容器迁移要求]
 
 xref:../maintain/index.adoc[恢复和维护]

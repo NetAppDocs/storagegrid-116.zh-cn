@@ -15,6 +15,7 @@ summary: 要从归档节点故障中恢复，您必须按确切顺序完成一�
 
 image::../media/overview_archive_node_recovery.gif[归档节点恢复概述流程图]
 
+.关于此任务
 归档节点恢复受以下问题影响：
 
 * 如果 ILM 策略配置为复制单个副本。

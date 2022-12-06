@@ -19,6 +19,7 @@ ILM 选项卡提供了有关信息生命周期管理（ ILM ）操作的信息�
 
 image::../media/nodes_page_ilm_tab.png[节点页面 ILM 选项卡]
 
+.相关信息
 xref:monitoring-information-lifecycle-management.adoc[监控信息生命周期管理]
 
 xref:../admin/index.adoc[管理 StorageGRID]

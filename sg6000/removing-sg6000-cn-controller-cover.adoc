@@ -13,6 +13,7 @@ summary: 拆下控制器盖板，以便检修内部组件以进行维护。
 [role="lead"]
 拆下控制器盖板，以便检修内部组件以进行维护。
 
+.您需要的内容
 从机柜或机架中卸下控制器，以便检修顶盖。
 
 xref:removing-sg6000-cn-controller-from-cabinet-or-rack.adoc[从机柜或机架中卸下 SG6000-CN 控制器]
@@ -29,4 +30,5 @@ IMPORTANT: 将 ESD 腕带的腕带一端绑在腕带周围，并将扣具一端�
 
 
 
+.相关信息
 xref:removing-fibre-channel-hba.adoc[删除光纤通道 HBA]

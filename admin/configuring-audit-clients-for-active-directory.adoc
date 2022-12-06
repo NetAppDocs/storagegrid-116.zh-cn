@@ -13,7 +13,7 @@ summary: 对 StorageGRID 部署中要从中检索审核消息的每个管理节�
 [role="lead"]
 对 StorageGRID 部署中要从中检索审核消息的每个管理节点执行此操作步骤 。
 
-.您需要什么？ #8217 ；将需要什么
+.您需要的内容
 * 您已拥有 `passwords.txt` 文件以及 root/admin 帐户密码（可从上述软件包中获取）。
 * 您具有 CIFS Active Directory 用户名和密码。
 * 您已有 `Configuration.txt` 文件（可在上述软件包中找到）。

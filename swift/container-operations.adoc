@@ -133,4 +133,5 @@ summary: 每个 Swift 帐户最多支持 1 ， 000 个容器。 StorageGRID对�
 
 容器名称在 StorageGRID 命名空间中必须是唯一的。如果容器位于其他帐户下，则返回以下标头： "HTTP/1.1 409 conflict 。 "
 
+.相关信息
 xref:monitoring-and-auditing-operations.adoc[监控和审核操作]

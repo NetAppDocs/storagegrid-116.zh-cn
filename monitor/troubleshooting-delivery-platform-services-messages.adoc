@@ -14,6 +14,7 @@ summary: 如果平台服务消息传送到无法接受数据的目标，则会�
 [role="lead"]
 如果平台服务消息传送到无法接受数据的目标，则会在网格管理器中触发总事件（ SMT ）警报。
 
+.关于此任务
 例如，即使无法将关联的复制或通知消息传送到已配置的端点， S3 多部分上传也可以成功。或者，如果元数据过长，则可能无法传送有关 CloudMirror 复制的消息。
 
 SMT 警报包含最后一条事件消息，其中显示： `failed to publish notifications for _bucket-name object key_` for the last object whose notification failed.

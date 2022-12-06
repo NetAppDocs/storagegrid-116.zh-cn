@@ -19,7 +19,7 @@ summary: 您可以使用 VMware vSphere 自动部署网格节点。您还可以�
 
 使用 VMware vSphere 自动部署网格节点。
 
-.您需要什么？ #8217 ；将需要什么
+.您需要的内容
 * 您可以访问使用 Bash 3.2 或更高版本的 Linux/Unix 系统。
 * 您已安装并正确配置 VMware OVF Tool 4.1 。
 * 您知道使用 OVF 工具访问 VMware vSphere 所需的用户名和密码。
@@ -93,7 +93,7 @@ Bash shell 脚本，用于自动部署虚拟网格节点。
 . 打开 `deploy-vsphere-ovftool.ini` 。
 . 输入部署 VMware 虚拟网格节点所需的所有信息。
 +
-请参见 ,配置文件设置 以了解相关信息。
+请参见 <<configuration-file-settings,配置文件设置>> 以了解相关信息。
 
 . 输入并验证所有必要信息后，请保存并关闭此文件。
 
@@ -308,6 +308,7 @@ NOTE: 对于主管理节点， admin_ip 参数将被忽略。
 * 未全局设置的任何参数。例如，如果某个节点已连接到管理网络，而您未全局指定 admin_network 参数，则必须为此节点指定这些参数。
 
 
+.主管理节点
 主管理节点需要以下附加设置：
 
 * * 节点类型 * ： VM_Admin_Node
@@ -339,6 +340,7 @@ DISK = INSTANCES=2, CAPACITY=300
 
 NOTE: 对于管理节点，实例必须始终等于 2 。
 
+.存储节点
 存储节点需要以下附加设置：
 
 * * 节点类型 * ： VM_Storage_Node
@@ -399,6 +401,7 @@ DISK = INSTANCES=16, CAPACITY=4096
 ----
 
 
+.归档节点
 归档节点需要以下附加设置：
 
 * * 节点类型 * ： VM_Archive_Node
@@ -416,6 +419,7 @@ DISK = INSTANCES=16, CAPACITY=4096
 
   ADMIN_IP = 10.1.0.2
 ----
+.网关节点
 网关节点需要以下附加设置：
 
 * * 节点类型 * ： VM_API_Gateway
@@ -439,6 +443,7 @@ DISK = INSTANCES=16, CAPACITY=4096
 
   ADMIN_IP = 10.1.0.2
 ----
+.非主管理节点
 非主管理节点需要以下附加设置：
 
 * * 节点类型 * ： VM_Admin_Node
@@ -478,7 +483,7 @@ NOTE: 对于管理节点，实例必须始终等于 2 。
 
 您可以使用 `dedeploy-vsphere-ovftool.sh` Bash 脚本和您修改的 deploy-vsphere-ovftool.ini 配置文件在 VMware vSphere 中自动部署 StorageGRID 网格节点。
 
-.您需要什么？ #8217 ；将需要什么
+.您需要的内容
 * 您已为您的环境创建 deploy-vsphere-ovftool.ini 配置文件。
 
 
@@ -546,7 +551,7 @@ Deployment Summary
 
 部署网格节点后，您可以自动配置 StorageGRID 系统。
 
-.您需要什么？ #8217 ；将需要什么
+.您需要的内容
 * 您可以从安装归档中了解以下文件的位置。
 
 
@@ -602,6 +607,7 @@ cd StorageGRID-Webscale-version/platform
 ----
 
 
+.结果
 在配置过程中会生成一个恢复包 .zip 文件，该文件将下载到运行安装和配置过程的目录中。您必须备份恢复软件包文件，以便在一个或多个网格节点发生故障时恢复 StorageGRID 系统。例如，将其复制到安全的备份网络位置和安全的云存储位置。
 
 
@@ -624,6 +630,7 @@ IMPORTANT: 恢复包文件必须受到保护，因为它包含可用于从 Stora
 ----
 StorageGRID has been configured and installed.
 ----
+.相关信息
 xref:navigating-to-grid-manager.adoc[导航到网格管理器]
 
 xref:overview-of-installation-rest-api.adoc[安装 REST API 概述]

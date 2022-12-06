@@ -20,11 +20,12 @@ summary: 您可以执行多项任务来帮助确定与管理节点和 StorageGRI
 
 如果您在登录到 StorageGRID 管理节点时遇到错误，则您的系统可能具有身份联合配置的问题描述 ，网络或硬件问题，具有管理节点服务的问题描述 或连接的存储节点上具有 Cassandra 数据库的问题描述 。
 
-.您需要什么？ #8217 ；将需要什么
+.您需要的内容
 * 您必须具有 `passwords.txt` 文件。
 * 您必须具有特定的访问权限。
 
 
+.关于此任务
 如果在尝试登录到管理节点时看到以下任何错误消息，请遵循以下故障排除准则：
 
 * `您的此帐户凭据无效。请重试。`
@@ -165,7 +166,7 @@ sg snmp agent                  11.4.0         Running
 +
 确保 idnt ， Acct ， nginx 和 Cassandra 服务均已运行。
 
-. 重复步骤 ,使用 Lumberjack 收集日志 和 ,查看日志 查看存储节点上的日志。
+. 重复步骤 <<use_Lumberjack_to_collect_logs,使用 Lumberjack 收集日志>> 和 <<review_logs,查看日志>> 查看存储节点上的日志。
 . If you are unable to resolve the issue, contact technical support.
 +
 将收集的日志提供给技术支持。另请参见 xref:logs-files-reference.adoc[日志文件参考]。
@@ -203,6 +204,7 @@ NOTE: StorageGRID 11.5 的浏览器支持已更改。确认您使用的是受支
 
 如果 StorageGRID 系统包含多个管理节点，则可以使用另一个管理节点检查不可用管理节点的状态。
 
+.您需要的内容
 您必须具有特定的访问权限。
 
 .步骤
@@ -217,4 +219,5 @@ image::../media/unavailable_admin_node_troubleshooting.gif[周围文本所述的
 . 采取适当的操作解决问题描述 。
 
 
+.相关信息
 xref:../admin/index.adoc[管理 StorageGRID]

@@ -24,6 +24,7 @@ summary: 在安装 StorageGRID 设备之前，您应了解可以将哪些网络�
 
 
 
+.相关信息
 xref:gathering-installation-information-sg100-and-sg1000.adoc[收集安装信息（ SG100 和 SG1000 ）]
 
 xref:cabling-appliance-sg100-and-sg1000.adoc[缆线设备 SG100 和 SG1000]

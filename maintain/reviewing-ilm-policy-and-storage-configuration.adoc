@@ -59,6 +59,7 @@ Storage type
 停用完成后，是否有足够的相应类型存储？例如， ILM 规则可能会规定在内容老化时将内容从一种存储类型移动到另一种存储类型。如果是，您必须确保在 StorageGRID 系统的最终配置中具有足够的相应类型的存储。
 
 |===
+.相关信息
 xref:../ilm/index.adoc[使用 ILM 管理对象]
 
 xref:../expand/index.adoc[扩展网格]

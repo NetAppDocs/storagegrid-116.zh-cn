@@ -21,7 +21,7 @@ summary: 在开始软件升级之前，您必须获取所有必需的材料，�
  a| 
 StorageGRID 升级文件
  a| 
- the StorageGRID upgrade files 连接到您的服务笔记本电脑。
+<<下载 StorageGRID 升级文件>> 连接到您的服务笔记本电脑。
 
 
 
@@ -46,7 +46,7 @@ xref:../admin/web-browser-requirements.adoc[支持的 Web 浏览器]
  a| 
 恢复软件包（` .zip` ）文件
  a| 
- the Recovery Package 升级之前，请将此文件保存在安全位置。通过恢复包文件，您可以在发生故障时还原系统。
+<<下载恢复包>> 升级之前，请将此文件保存在安全位置。通过恢复包文件，您可以在发生故障时还原系统。
 
 
 
@@ -137,7 +137,7 @@ NOTE: SG100 或 SG1000 不需要其他文件。
 
 通过恢复包文件，您可以在发生故障时还原 StorageGRID 系统。在对 StorageGRID 系统进行网格拓扑更改之前或升级软件之前，请下载当前的恢复软件包文件。然后，在更改网格拓扑或升级软件后下载恢复包的新副本。
 
-.您需要什么？ #8217 ；将需要什么
+.您需要的内容
 * 您必须使用登录到网格管理器 xref:../admin/web-browser-requirements.adoc[支持的 Web 浏览器]。
 * 您必须具有配置密码短语。
 * 您必须具有特定的访问权限。

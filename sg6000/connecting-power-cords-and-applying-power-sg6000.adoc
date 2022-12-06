@@ -49,6 +49,7 @@ CAUTION: * 电击风险 * —在连接电源线之前，请确保每个扩展架
 . 如果已卸下 SG6000-CN 控制器，请将前挡板连接到该控制器。
 
 
+.相关信息
 xref:viewing-boot-up-status-codes-for-sg6000-storage-controllers.adoc[查看 SG6000 存储控制器的启动状态代码]
 
 xref:viewing-status-indicators-and-buttons-on-sg6000-cn-controller.adoc[查看 SG6000-CN 控制器上的状态指示灯和按钮]

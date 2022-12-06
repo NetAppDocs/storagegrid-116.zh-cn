@@ -92,7 +92,7 @@ xref:using-s3-object-lock.adoc[使用 S3 对象锁定]
 ** `x-AMZ-server-side encrypt-customer-key`
 ** `x-AMZ-server-side encrypt-customer-encryption`
 +
- headers for server-side encryption
+<<服务器端加密的请求标头>>
 
 
 
@@ -139,6 +139,7 @@ NOTE: 有关 StorageGRID 如何处理 UTF-8 字符的信息，请参见 PUT 对�
 
 多部分上传包括启动上传，发布上传，上传部件，组装上传的部件以及完成上传的操作。在执行完整的多部件上传操作时，系统会创建对象（如果适用，还会进行版本控制）。
 
+.相关信息
 xref:../ilm/index.adoc[使用 ILM 管理对象]
 
 xref:using-server-side-encryption.adoc[使用服务器端加密]

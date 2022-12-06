@@ -15,7 +15,7 @@ summary: 当网格管理员为 StorageGRID 系统创建信息生命周期管理 
 
 这些说明仅适用于至少包含一个在放置说明中使用 * 上次访问时间 * 选项的 ILM 规则的 StorageGRID 系统。如果您的 StorageGRID 系统不包含此类规则，则可以忽略这些说明。
 
-.您需要什么？ #8217 ；将需要什么
+.您需要的内容
 * 您必须使用登录到租户管理器 xref:../admin/web-browser-requirements.adoc[支持的 Web 浏览器]。
 * 您必须属于具有 " 管理所有分段 " 或 " 根访问 " 权限的用户组。这些权限将覆盖组或存储分段策略中的权限设置。请参见 xref:tenant-management-permissions.adoc[租户管理权限]。
 
@@ -127,6 +127,7 @@ image::../media/buckets_last_update_time_dialog_box.png[显示用于设置上次
 . 选择 * 保存更改 * 。
 
 
+.相关信息
 xref:tenant-management-permissions.adoc[租户管理权限]
 
 xref:../ilm/index.adoc[使用 ILM 管理对象]

@@ -13,6 +13,7 @@ summary: 在安装和配置 StorageGRID 设备时，您必须做出决策并收�
 [role="lead"]
 在安装和配置 StorageGRID 设备时，您必须做出决策并收集有关以太网交换机端口， IP 地址以及端口和网络绑定模式的信息。
 
+.关于此任务
 您可以使用下表记录连接到设备的每个网络的所需信息。安装和配置硬件需要这些值。
 
 
@@ -423,6 +424,7 @@ image::../media/bmc_management_port.gif[BMC 管理端口]
 
 
 |===
+.相关信息
 xref:controllers-in-sg6000-appliances.adoc[SG6000 设备中的控制器]
 
 xref:reviewing-appliance-network-connections-sg6000.adoc[查看设备网络连接（ SG6000 ）]

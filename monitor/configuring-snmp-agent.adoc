@@ -13,11 +13,12 @@ summary: 如果要使用第三方 SNMP 管理系统进行只读 MIB 访问和通
 [role="lead"]
 如果要使用第三方 SNMP 管理系统进行只读 MIB 访问和通知，则可以配置 StorageGRID SNMP 代理。
 
-.您需要什么？ #8217 ；将需要什么
+.您需要的内容
 * 您将使用登录到网格管理器 xref:../admin/web-browser-requirements.adoc[支持的 Web 浏览器]。
 * 您具有 root 访问权限。
 
 
+.关于此任务
 StorageGRID SNMP 代理支持所有三个版本的 SNMP 协议。您可以为代理配置一个或多个版本。
 
 .步骤
@@ -55,7 +56,7 @@ image::../media/snmp_agent_page.png[SNMP 代理页面]
 +
 .. 在 * 默认陷阱社区 * 字段中，也可以输入要用于陷阱目标的默认社区字符串。
 +
-您可以根据需要提供其他（ "`custom` " ）社区字符串 ,定义特定陷阱目标。
+您可以根据需要提供其他（ "`custom` " ）社区字符串 <<select_trap_destination,定义特定陷阱目标>>。
 
 +
 * 默认陷阱社区 * 最多可以包含 32 个字符，并且不能包含空格字符。
@@ -268,4 +269,5 @@ image::../media/snmp_other_config_trap_dest_table.png[SNMP 其他配置陷阱目
 
 
 
+.相关信息
 xref:silencing-alert-notifications.adoc[静默警报通知]

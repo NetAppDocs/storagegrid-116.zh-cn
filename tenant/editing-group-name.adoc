@@ -13,7 +13,7 @@ summary: 您可以编辑组的显示名称。您不能编辑组的唯一名称�
 [role="lead"]
 您可以编辑组的显示名称。您不能编辑组的唯一名称。
 
-.您需要什么？ #8217 ；将需要什么
+.您需要的内容
 * 您必须使用登录到租户管理器 xref:../admin/web-browser-requirements.adoc[支持的 Web 浏览器]。
 * 您必须属于具有 root 访问权限的用户组。请参见 xref:tenant-management-permissions.adoc[租户管理权限]。
 

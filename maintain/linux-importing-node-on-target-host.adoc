@@ -48,6 +48,7 @@ sudo storagegrid node validate DC1-S3
 
 
 
+.相关信息
 xref:../rhel/index.adoc[安装 Red Hat Enterprise Linux 或 CentOS]
 
 xref:../ubuntu/index.adoc[安装 Ubuntu 或 Debian]

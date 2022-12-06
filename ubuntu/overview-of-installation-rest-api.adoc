@@ -40,4 +40,5 @@ StorageGRID 安装 API 包括以下部分：
 * * 站点 * —站点级配置操作。您可以创建，查看，删除和修改站点。
 
 
+.相关信息
 xref:automating-installation.adoc[自动化安装]

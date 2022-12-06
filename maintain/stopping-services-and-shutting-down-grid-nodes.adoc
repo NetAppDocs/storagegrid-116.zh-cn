@@ -13,6 +13,7 @@ summary: 在关闭 StorageGRID 系统之前，必须先停止每个网格节点�
 [role="lead"]
 在关闭 StorageGRID 系统之前，必须先停止每个网格节点上运行的所有服务，然后关闭所有 VMware 虚拟机，容器引擎和 StorageGRID 设备。
 
+.关于此任务
 首先停止管理节点和 API 网关节点上的服务，然后停止存储节点上的服务。
 
 通过此方法，您可以使用主管理节点尽可能长时间地监控其他网格节点的状态。
@@ -50,7 +51,7 @@ NOTE: 如果需要，您可以 xref:linux-migrating-grid-node-to-new-host.adoc[�
 
 NOTE: 如果问题描述 您使用 `sservice servermanager stop` 命令停止设备存储节点上的服务，则必须重新启动设备以重新启动节点。
 
-. 对于主管理节点，重复执行的步骤 ,登录到节点 和 ,停止节点上的所有服务。
+. 对于主管理节点，重复执行的步骤 <<log_in_to_gn,登录到节点>> 和 <<stop_all_services,停止节点上的所有服务>>。
 . 对于在 Linux 主机上运行的节点：
 +
 .. 登录到主机操作系统。
@@ -99,6 +100,7 @@ NOTE: 如果问题描述 您使用 `sservice servermanager stop` 命令停止设
 
 
 
+.相关信息
 xref:../sg100-1000/index.adoc[SG100 和 SG1000 服务设备]
 
 xref:../sg6000/index.adoc[SG6000 存储设备]

@@ -13,6 +13,7 @@ summary: 硬件维护完成后，将控制器重新安装到机柜或机架中�
 [role="lead"]
 硬件维护完成后，将控制器重新安装到机柜或机架中。
 
+.您需要的内容
 您已重新安装控制器盖板。
 
 xref:reinstalling-sg6000-cn-controller-cover.adoc[重新安装 SG6000-CN 控制器盖板]
@@ -48,6 +49,7 @@ xref:connecting-power-cords-and-applying-power-sg6000.adoc[连接电源线并接
 
 
 
+.完成后
 可以重新启动控制器。
 
 xref:powering-on-sg6000-cn-controller-and-verifying-operation.adoc[打开 SG6000-CN 控制器的电源并验证其运行情况]

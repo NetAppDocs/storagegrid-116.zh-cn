@@ -108,6 +108,7 @@ IMPORTANT: 您提供的加密密钥永远不会存储。如果丢失加密密钥
 * 如果为存储分段配置了 CloudMirror 复制，则无法载入 SSI-C 对象。载入操作将失败。
 
 
+.相关信息
 xref:get-object.adoc[获取对象]
 
 xref:head-object.adoc[HEAD 对象]

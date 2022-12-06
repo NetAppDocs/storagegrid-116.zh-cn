@@ -13,12 +13,14 @@ summary: 您必须为每个主机分配块存储卷。
 [role="lead"]
 您必须为每个主机分配块存储卷。
 
+.您需要的内容
 您已阅读以下主题，其中提供了完成此任务所需的信息：
 
 xref:storage-and-performance-requirements.adoc[存储和性能要求]
 
 xref:node-container-migration-requirements.adoc[节点容器迁移要求]
 
+.关于此任务
 在将块存储卷（ LUN ）分配给主机时，请使用 `S存储要求` 中的表确定以下内容：
 
 * 每个主机所需的卷数（根据要在该主机上部署的节点的数量和类型）
@@ -92,4 +94,5 @@ multipaths {
 
 NOTE: 如果要设置共享存储以支持 StorageGRID 节点迁移并使用设备映射程序多路径功能，则可以在所有主机上创建并安装通用的 ` /etc/multipath.conf` 。只需确保在每个主机上使用不同的容器引擎存储卷即可。使用别名并将目标主机名包含在每个容器引擎存储卷 LUN 的别名中，这样便于记住，建议这样做。
 
+.相关信息
 xref:configuring-docker-storage-volume.adoc[配置容器引擎存储卷]

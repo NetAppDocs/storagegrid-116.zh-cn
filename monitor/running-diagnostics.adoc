@@ -17,11 +17,12 @@ summary: 在对问题描述 进行故障排除时，您可以与技术支持一�
 * xref:commonly-used-prometheus-metrics.adoc[常用的 Prometheus 指标]
 
 
-.您需要什么？ #8217 ；将需要什么
+.您需要的内容
 * 您将使用登录到网格管理器 xref:../admin/web-browser-requirements.adoc[支持的 Web 浏览器]。
 * 您具有特定的访问权限。
 
 
+.关于此任务
 " 诊断 " 页面会对网格的当前状态执行一组诊断检查。每个诊断检查可以具有以下三种状态之一：
 
 * image:../media/icon_alert_green_checkmark.png["图标警报绿色复选标记"] * 正常 * ：所有值均在正常范围内。

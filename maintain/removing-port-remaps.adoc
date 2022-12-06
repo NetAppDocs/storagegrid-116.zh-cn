@@ -48,4 +48,5 @@ IMPORTANT: 对于在裸机主机上部署为容器的 StorageGRID 系统，此�
 . 对具有冲突重新映射端口的每个管理节点和网关节点重复上述步骤。
 
 
+.相关信息
 xref:../admin/index.adoc[管理 StorageGRID]

@@ -14,11 +14,12 @@ summary: 对象数据存储空间 * 不足警报可监控每个存储节点上�
 [role="lead"]
 对象数据存储空间 * 不足警报可监控每个存储节点上可用于存储对象数据的空间量。
 
-.您需要什么？ #8217 ；将需要什么
+.您需要的内容
 * 您必须使用登录到网格管理器 xref:../admin/web-browser-requirements.adoc[支持的 Web 浏览器]。
 * 您必须具有特定的访问权限。
 
 
+.关于此任务
 如果存储节点上复制和擦除编码的对象数据总量满足警报规则中配置的条件之一，则会触发 * 对象数据存储空间不足 * 警报。
 
 默认情况下，如果此情况评估为 true ，则会触发重大警报：
@@ -83,6 +84,7 @@ NOTE: 要管理完整的存储节点，请参见有关管理 StorageGRID 的说�
 
 
 
+.相关信息
 xref:troubleshooting-storage-status-alarm.adoc[对存储状态（ SSTS ）警报进行故障排除]
 
 xref:../expand/index.adoc[扩展网格]

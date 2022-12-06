@@ -45,6 +45,7 @@ StorageGRID 审核日志会跟踪多个存储分段操作和对象操作。
 * PUT 对象—复制
 
 
+.相关信息
 xref:operations-on-buckets.adoc[对存储分段执行的操作]
 
 xref:operations-on-objects.adoc[对对象执行的操作]

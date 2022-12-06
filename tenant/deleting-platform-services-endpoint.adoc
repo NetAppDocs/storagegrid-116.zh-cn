@@ -13,7 +13,7 @@ summary: 如果您不想再使用关联的平台服务，可以删除端点。
 [role="lead"]
 如果您不想再使用关联的平台服务，可以删除端点。
 
-.您需要什么？ #8217 ；将需要什么
+.您需要的内容
 * 您必须使用登录到租户管理器 xref:../admin/web-browser-requirements.adoc[支持的 Web 浏览器]。
 * 您必须属于具有 * 管理端点 * 权限的用户组。请参见 xref:tenant-management-permissions.adoc[租户管理权限]。
 

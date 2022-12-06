@@ -128,4 +128,5 @@ NOTE: 切勿手动删除云存储池中可能已由 ILM 放置的对象。如果
 * 检查存储代理服务器的网络配置。
 
 
+.相关信息
 xref:lifecycle-of-cloud-storage-pool-object.adoc[云存储池对象的生命周期]

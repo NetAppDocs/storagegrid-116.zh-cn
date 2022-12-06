@@ -13,7 +13,7 @@ summary: '访问网格管理器中的 " 停用节点 " 页面时，您可以一�
 [role="lead"]
 访问网格管理器中的 " 停用节点 " 页面时，您可以一目了然地看到哪些节点可以停用。
 
-.您需要什么？ #8217 ；将需要什么
+.您需要的内容
 * 您必须使用登录到网格管理器 xref:../admin/web-browser-requirements.adoc[支持的 Web 浏览器]。
 * 您必须具有维护或根访问权限。
 
@@ -66,7 +66,7 @@ image::../media/decommission_nodes_page_all_connected.png[停用节点页面]
 ** image:../media/icon_alarm_blue_unknown.png["蓝色问号图标"] （蓝色）：未知
 
  a| 
-转至 ,列出停用操作步骤 选项的步骤。
+转至 <<decommission_procedure_choices,列出停用操作步骤 选项的步骤>>。
 
 
 
@@ -146,6 +146,7 @@ xref:decommissioning-disconnected-grid-nodes.adoc[停用已断开连接的网格
 xref:decommissioning-connected-grid-nodes.adoc[停用已连接的网格节点]
 
 |===
+.相关信息
 xref:checking-data-repair-jobs.adoc[检查数据修复作业]
 
 xref:understanding-adc-service-quorum.adoc[了解模数转换器仲裁]

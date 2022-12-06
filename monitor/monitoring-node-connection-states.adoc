@@ -13,10 +13,11 @@ summary: 如果一个或多个节点与网格断开连接，则关键 StorageGRI
 [role="lead"]
 如果一个或多个节点与网格断开连接，则关键 StorageGRID 操作可能会受到影响。您必须监控节点连接状态并及时解决任何问题。
 
-.您需要什么？ #8217 ；将需要什么
+.您需要的内容
 * 您必须使用登录到网格管理器 xref:../admin/web-browser-requirements.adoc[支持的 Web 浏览器]。
 
 
+.关于此任务
 节点可以具有以下三种连接状态之一：
 
 * * 未连接 - 未知 * image:../media/icon_alarm_blue_unknown.png["蓝色问号图标"]：节点未连接到网格，原因未知。例如，节点之间的网络连接已断开或电源已关闭。此外，可能还会触发 * 无法与节点 * 通信 " 警报。其他警报可能也处于活动状态。这种情况需要立即引起关注。
@@ -60,6 +61,7 @@ image::../media/node_connection_state_blue.png[节点连接状态为蓝色]
 
 
 
+.相关信息
 xref:alerts-reference.adoc[警报参考]
 
 xref:../maintain/index.adoc[恢复和维护]

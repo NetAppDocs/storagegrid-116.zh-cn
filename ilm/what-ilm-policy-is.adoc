@@ -56,4 +56,5 @@ image::../media/ilm_policy_and_rules.png[ILM 策略和规则]
 
 image::../media/ilm_policies_proposed_active_historical.png[ILM 策略的概念映像]
 
+.相关信息
 xref:creating-ilm-policy.adoc[创建 ILM 策略]

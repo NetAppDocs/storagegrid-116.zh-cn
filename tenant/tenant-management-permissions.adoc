@@ -78,6 +78,7 @@ NOTE: 如果用户属于多个组，并且任何组设置为只读，则用户�
 没有此权限的用户不会看到 * 平台服务端点 * 菜单选项。
 
 |===
+.相关信息
 xref:../s3/index.adoc[使用 S3]
 
 xref:../swift/index.adoc[使用 Swift]

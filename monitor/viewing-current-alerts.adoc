@@ -13,7 +13,7 @@ summary: 触发警报后，信息板上会显示一个警报图标。节点页�
 [role="lead"]
 触发警报后，信息板上会显示一个警报图标。节点页面上还会显示节点的警报图标。除非警报已静音，否则也可能会发送电子邮件通知。
 
-.您需要什么？ #8217 ；将需要什么
+.您需要的内容
 * 您必须使用登录到网格管理器 xref:../admin/web-browser-requirements.adoc[支持的 Web 浏览器]。
 * 您也可以观看以下视频： https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=2680a74f-070c-41c2-bcd3-acc5013c9cdd["视频：警报概述"^]。
 +

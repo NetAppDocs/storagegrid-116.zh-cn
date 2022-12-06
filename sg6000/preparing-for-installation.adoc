@@ -13,4 +13,5 @@ summary: 准备安装 StorageGRID 设备需要准备站点并获取所有必需�
 [role="lead"]
 准备安装 StorageGRID 设备需要准备站点并获取所有必需的硬件，缆线和工具。您还应收集 IP 地址和网络信息。
 
+.相关信息
 xref:../admin/web-browser-requirements.adoc[Web 浏览器要求]

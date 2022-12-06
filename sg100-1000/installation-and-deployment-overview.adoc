@@ -13,6 +13,7 @@ summary: 您可以在首次部署 StorageGRID 时安装一个或多个 StorageGR
 [role="lead"]
 您可以在首次部署 StorageGRID 时安装一个或多个 StorageGRID 服务设备，也可以稍后在扩展过程中添加服务设备节点。
 
+.您需要的内容
 您的 StorageGRID 系统正在使用所需版本的 StorageGRID 软件。
 
 [cols="1a,2a"]
@@ -96,6 +97,7 @@ xref:../maintain/index.adoc[恢复和维护StorageGRID 系统]
 |===
 
 
+.相关信息
 xref:../expand/index.adoc[扩展网格]
 
 xref:../maintain/index.adoc[恢复和维护您的网格]

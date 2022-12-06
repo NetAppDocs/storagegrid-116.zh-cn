@@ -31,6 +31,7 @@ summary: 在安装 StorageGRID 设备之前，您应了解可以将哪些网络�
 
 NOTE: 有关 StorageGRID 网络的详细信息，请参见 _Grid Primer_ 。
 
+.相关信息
 xref:gathering-installation-information-sg6000.adoc[收集安装信息（ SG6000 ）]
 
 xref:cabling-appliance-sg6000.adoc[缆线设备（ SG6000 ）]

@@ -13,6 +13,7 @@ summary: 您应验证技术支持是否正在接收您的 AutoSupport 消息。�
 [role="lead"]
 您应验证技术支持是否正在接收您的 AutoSupport 消息。您可以在 Active IQ 门户上找到系统的 AutoSupport 状态。验证是否收到这些消息可确保技术支持在您需要帮助时获取您的信息。
 
+.关于此任务
 AutoSupport 可以显示以下状态之一：
 
 * * 开 *

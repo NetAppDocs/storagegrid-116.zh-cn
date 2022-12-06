@@ -51,6 +51,7 @@ summary: 除了遵循 StorageGRID 网络和节点的强化准则之外，您还�
 
 对于不可信的客户端流量，建议使用第三方负载平衡器。第三方负载平衡可提供更多控制和更多保护层，防止受到攻击。
 
+.相关信息
 xref:../monitor/index.adoc[监控和故障排除]
 
 xref:../audit/index.adoc[查看审核日志]

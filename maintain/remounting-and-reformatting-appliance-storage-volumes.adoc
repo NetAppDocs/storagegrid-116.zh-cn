@@ -13,7 +13,7 @@ summary: 您必须手动运行两个脚本，才能重新挂载保留的存储�
 [role="lead"]
 您必须手动运行两个脚本，才能重新挂载保留的存储卷并重新格式化任何发生故障的存储卷。第一个脚本将重新挂载格式正确的卷，使其格式化为 StorageGRID 存储卷。第二个脚本将重新格式化所有已卸载的卷，根据需要重新构建 Cassandra 数据库并启动服务。
 
-.您需要什么？ #8217 ；将需要什么
+.您需要的内容
 * 您已更换已知需要更换的任何故障存储卷的硬件。
 +
 运行 `sn-remount-volumes` 脚本可能有助于您确定其他故障存储卷。
@@ -25,6 +25,7 @@ summary: 您必须手动运行两个脚本，才能重新挂载保留的存储�
 
 CAUTION: 如果多个存储节点脱机或此网格中的存储节点在过去 15 天内已重建，请联系技术支持。请勿运行 `sn-recovery-postinstall.sh` 脚本。在两个或多个存储节点上相互重建 Cassandra 的 15 天内可能会导致数据丢失。
 
+.关于此任务
 要完成此操作步骤 ，请执行以下高级任务：
 
 * 登录到已恢复的存储节点。
@@ -224,6 +225,7 @@ image::../media/recovering_cassandra.png[显示网格管理界面中的恢复进
 
 在 `sn-recovery-postinstall.sh` 脚本启动节点上的服务后，您可以将对象数据还原到由该脚本格式化的任何存储卷，如下一个操作步骤 中所述。
 
+.相关信息
 xref:reviewing-warnings-for-system-drive-recovery.adoc[查看有关存储节点系统驱动器恢复的警告]
 
 xref:restoring-object-data-to-storage-volume-for-appliance.adoc[将对象数据还原到设备的存储卷]

@@ -23,7 +23,7 @@ NOTE: 为了确保操作不会因服务器证书失败而中断，当此服务�
 
 NOTE: 如果您使用密钥管理服务器（ KMS ）保护专门配置的设备节点上的数据，请参见有关的特定信息 xref:kms-adding.adoc[上传 KMS 客户端证书]。
 
-.您需要什么？ #8217 ；将需要什么
+.您需要的内容
 * 您具有 root 访问权限。
 * 您将使用登录到网格管理器 xref:../admin/web-browser-requirements.adoc[支持的 Web 浏览器]。
 * 配置客户端证书：
@@ -48,9 +48,9 @@ NOTE: 如果您使用密钥管理服务器（ KMS ）保护专门配置的设备
 
 按照适用于您的场景的操作步骤 添加客户端证书：
 
-*  interface certificate already configured
-*  issued client certificate
-*  certificate from Grid Manager
+* <<已配置管理接口证书>>
+* <<CA颁发的客户端证书>>
+* <<从网格管理器生成的证书>>
 
 
 
@@ -220,7 +220,7 @@ IMPORTANT: 关闭此对话框后，您将无法查看此证书专用密钥。将
 . 在网格管理器中、选择*配置*>*安全性*>*证书*、然后选择*全局*选项卡。
 . 选择*管理接口证书*。
 . 选择 * 使用自定义证书 * 。
-. 从上传certificate.pem和private_key.pem文件 ,客户端证书详细信息 步骤。无需上传CA捆绑包。
+. 从上传certificate.pem和private_key.pem文件 <<client_cert_details,客户端证书详细信息>> 步骤。无需上传CA捆绑包。
 +
 .. 选择 * 上传证书 * ，然后选择 * 继续 * 。
 .. 上传每个证书文件(`.pem`)。

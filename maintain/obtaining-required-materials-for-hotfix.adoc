@@ -59,4 +59,5 @@ StorageGRID 修补程序文件
 `reADME.txt` 此修补程序的文件。此文件包含在热修补程序下载页面中。在应用此修补程序之前，请务必仔细查看 `reADME` 文件。
 
 |===
+.相关信息
 xref:downloading-hotfix-file.adoc[下载修补程序文件]

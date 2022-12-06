@@ -13,6 +13,7 @@ summary: 您必须为 StorageGRID 系统指定域名系统 \ （ DNS\ ）信息�
 [role="lead"]
 您必须为 StorageGRID 系统指定域名系统（ DNS ）信息，以便可以使用主机名而非 IP 地址访问外部服务器。
 
+.关于此任务
 通过指定 DNS 服务器信息，您可以对电子邮件通知和 AutoSupport 使用完全限定域名（ FQDN ）主机名，而不是 IP 地址。建议至少指定两个 DNS 服务器。
 
 

@@ -13,7 +13,7 @@ summary: 如果您使用的是 S3 租户，并且您拥有相应的权限，则�
 [role="lead"]
 如果您使用的是 S3 租户，并且您拥有相应的权限，则可以查看 S3 访问密钥列表。您可以按到期时间对列表进行排序，以便确定哪些密钥不久将过期。您可以根据需要创建新密钥或删除不再使用的密钥。
 
-.您需要什么？ #8217 ；将需要什么
+.您需要的内容
 * 您必须使用登录到租户管理器 xref:../admin/web-browser-requirements.adoc[支持的 Web 浏览器]。
 * 您必须具有管理自己的 S3 凭据权限。
 
@@ -39,6 +39,7 @@ image::../media/access_keys_view_list.png[访问密钥列表]
 
 
 
+.相关信息
 xref:creating-your-own-s3-access-keys.adoc[创建您自己的 S3 访问密钥]
 
 xref:deleting-your-own-s3-access-keys.adoc[删除您自己的 S3 访问密钥]

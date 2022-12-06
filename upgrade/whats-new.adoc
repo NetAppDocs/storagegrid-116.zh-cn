@@ -46,7 +46,7 @@ NOTE: 除非功能发生更改，否则 StorageGRID 11.6 文档站点中的屏�
 * 新的 * 创建 VLAN 接口 * 向导将指导您完成输入 VLAN ID 以及在一个或多个节点上选择父接口的过程。父接口可以是网格网络，客户端网络，也可以是 VM 或裸机主机的附加中继接口。请参见 xref:../admin/configure-vlan-interfaces.html[配置 VLAN 接口]。
 * 现在，您可以向节点添加额外的中继或访问接口。如果添加中继接口，则必须配置 VLAN 接口。如果添加访问接口，则可以将该接口直接添加到 HA 组；而无需配置 VLAN 接口。请参见以下内容：
 +
-** * Linux （安装节点之前） * ：  enhancements
+** * Linux （安装节点之前） * ： <<安装增强功能>>
 ** * Linux （安装节点后） * ： xref:../maintain/linux-adding-trunk-or-access-interfaces-to-node.adoc[Linux ：向节点添加中继或访问接口]
 ** * VMware （安装节点后） * ： xref:../vmware/collecting-information-about-your-deployment-environment.adoc[收集有关部署环境的信息]
 

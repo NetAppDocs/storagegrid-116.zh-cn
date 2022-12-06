@@ -13,7 +13,7 @@ summary: 您可以从系统中删除组。仅属于该组的任何用户将无�
 [role="lead"]
 您可以从系统中删除组。仅属于该组的任何用户将无法再登录到租户管理器或使用租户帐户。
 
-.您需要什么？ #8217 ；将需要什么
+.您需要的内容
 * 您必须使用登录到租户管理器 xref:../admin/web-browser-requirements.adoc[支持的 Web 浏览器]。
 * 您必须属于具有 root 访问权限的用户组。请参见 xref:tenant-management-permissions.adoc[租户管理权限]。
 

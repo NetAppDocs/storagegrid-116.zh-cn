@@ -13,7 +13,7 @@ summary: 您可以配置高可用性 \ （ HA\ ）组，以提供对管理节点
 [role="lead"]
 您可以配置高可用性（ High Availability ， HA ）组，以提供对管理节点或网关节点上服务的高可用性访问。
 
-.您需要什么？ #8217 ；将需要什么
+.您需要的内容
 * 您将使用登录到网格管理器 xref:../admin/web-browser-requirements.adoc[支持的 Web 浏览器]。
 * 您具有 root 访问权限。
 * 如果您计划在 HA 组中使用 VLAN 接口，则已创建 VLAN 接口。请参见 xref:../admin/configure-vlan-interfaces.adoc[配置 VLAN 接口]。

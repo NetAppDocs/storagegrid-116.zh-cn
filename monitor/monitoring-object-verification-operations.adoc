@@ -13,11 +13,12 @@ summary: StorageGRID 系统可以验证存储节点上对象数据的完整性�
 [role="lead"]
 StorageGRID 系统可以验证存储节点上对象数据的完整性，并检查是否存在损坏和缺失的对象。
 
-.您需要什么？ #8217 ；将需要什么
+.您需要的内容
 * 您必须使用登录到网格管理器 xref:../admin/web-browser-requirements.adoc[支持的 Web 浏览器]。
 * 您必须具有维护或根访问权限。
 
 
+.关于此任务
 两个 xref:verifying-object-integrity.adoc[验证过程] 协同工作以确保数据完整性：
 
 * * 后台验证 * 会自动运行，并持续检查对象数据的正确性。

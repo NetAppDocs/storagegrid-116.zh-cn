@@ -114,6 +114,7 @@ image::../media/ssd_indicators.png[SSD 指示灯]
 蓝色（闪烁）：正在访问驱动器
 
 |===
+.相关信息
 xref:troubleshooting-hardware-installation-sg100-and-sg1000.adoc[硬件安装故障排除（ SG100 和 SG1000 ）]
 
 xref:configuring-bmc-interface-sg1000.adoc[配置 BMC 接口（ SG100 和 SG1000 ）]

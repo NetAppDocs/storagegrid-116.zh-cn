@@ -55,6 +55,7 @@ NOTE: 如果任何归档节点将使用 Tivoli Storage Manager 作为外部归�
 
 NOTE: 已弃用通过 CIFS/Samba 进行审核导出，并将在未来的 StorageGRID 版本中删除。
 
+.相关信息
 xref:../admin/index.adoc[管理 StorageGRID]
 
 xref:../s3/index.adoc[使用 S3]

@@ -16,6 +16,7 @@ summary: 通过 S3 API 恢复以云为目标的归档节点后，您需要修改
 
 NOTE: 如果归档节点通过 TSM 中间件连接到外部存储，则该节点将自动重置，您无需重新配置。
 
+.您需要的内容
 您必须使用登录到网格管理器 xref:../admin/web-browser-requirements.adoc[支持的 Web 浏览器]。
 
 .步骤

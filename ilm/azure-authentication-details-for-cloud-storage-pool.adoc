@@ -13,7 +13,7 @@ summary: 为 Azure Blob 存储创建云存储池时，必须为 StorageGRID 用�
 [role="lead"]
 为 Azure Blob 存储创建云存储池时，必须为 StorageGRID 用于存储对象的外部容器指定帐户名称和帐户密钥。
 
-.您需要什么？ #8217 ；将需要什么
+.您需要的内容
 * 您已输入云存储池的基本信息并指定 * Azure Blob Storage* 作为提供程序类型。* 共享密钥 * 显示在 * 身份验证类型 * 字段中。
 +
 image::../media/cloud_storage_pool_create_azure.png[云存储池创建 Azure]

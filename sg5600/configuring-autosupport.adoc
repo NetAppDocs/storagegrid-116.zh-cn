@@ -13,7 +13,7 @@ summary: AutoSupport 工具会从设备收集客户支持包中的数据，并�
 [role="lead"]
 AutoSupport 工具会从设备收集客户支持包中的数据，并自动将数据发送给技术支持。配置 AutoSupport 有助于技术支持进行远程故障排除和问题分析。
 
-.您需要什么？ #8217 ；将需要什么
+.您需要的内容
 * 必须在设备上启用并激活 AutoSupport 功能。
 +
 AutoSupport 功能会在存储管理工作站上全局激活和停用。
@@ -21,6 +21,7 @@ AutoSupport 功能会在存储管理工作站上全局激活和停用。
 * Storage Manager 事件监控器必须至少在一台能够访问设备的计算机上运行，并且最好在不超过一台计算机上运行。
 
 
+.关于此任务
 所有数据都会在指定位置压缩为一个压缩归档文件格式（ .7z ）。
 
 AutoSupport 提供以下类型的消息：
@@ -61,4 +62,5 @@ AutoSupport 提供以下类型的消息：
 . 如果需要，请使用 SANtricity 存储管理器联机帮助完成此任务。
 
 
+.相关信息
 http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=61197["NetApp 文档： SANtricity 存储管理器"^]

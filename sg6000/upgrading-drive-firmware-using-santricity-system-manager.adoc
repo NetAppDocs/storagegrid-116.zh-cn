@@ -13,7 +13,7 @@ summary: 您可以升级驱动器固件，以确保具有所有最新功能和�
 [role="lead"]
 您可以升级驱动器固件，以确保具有所有最新功能和错误修复。
 
-.您需要什么？ #8217 ；将需要什么
+.您需要的内容
 * 存储设备处于最佳状态。
 * 所有驱动器均处于最佳状态。
 * 您已安装与您的 SANtricity 版本兼容的最新版本 StorageGRID System Manager 。
@@ -220,4 +220,5 @@ image::../media/node_rejoin_grid_confirmation.png[设备节点已重新加入网
 
 
 
+.相关信息
 xref:upgrading-santricity-os-on-storage-controllers.adoc[升级存储控制器上的 SANtricity 操作系统]

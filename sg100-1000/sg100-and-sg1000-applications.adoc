@@ -43,4 +43,5 @@ NOTE: CLB 服务已弃用。
 
 在与 StorageGRID 存储设备结合使用时， SG100 和 SG1000 服务设备均支持部署纯设备网格，而不依赖于外部虚拟机管理程序或计算硬件。
 
+.相关信息
 xref:../admin/index.adoc[管理 StorageGRID]

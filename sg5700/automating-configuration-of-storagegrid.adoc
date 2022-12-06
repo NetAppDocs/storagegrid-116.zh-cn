@@ -13,7 +13,7 @@ summary: 部署网格节点后，您可以自动配置 StorageGRID 系统。
 [role="lead"]
 部署网格节点后，您可以自动配置 StorageGRID 系统。
 
-.您需要什么？ #8217 ；将需要什么
+.您需要的内容
 * 您可以从安装归档中了解以下文件的位置。
 +
 |===
@@ -43,6 +43,7 @@ summary: 部署网格节点后，您可以自动配置 StorageGRID 系统。
 * 您已创建 `configure-storaggrid.json` 配置文件。要创建此文件，您可以修改示例配置文件（`configure-storaggrid.sample.json` ）或空白配置文件（`config-storaggrid.blank.json` ）。
 
 
+.关于此任务
 您可以使用 `configure-storaggrid.py` Python 脚本和 `configure-storaggrid.json` 配置文件来自动配置 StorageGRID 系统。
 
 
@@ -68,6 +69,7 @@ NOTE: 您也可以使用网格管理器或安装 API 配置系统。
 ----
 
 
+.完成后
 在配置过程中会生成一个恢复包 ` .zip` 文件，该文件将下载到运行安装和配置过程的目录中。您必须备份恢复软件包文件，以便在一个或多个网格节点发生故障时恢复 StorageGRID 系统。例如，将其复制到安全的备份网络位置和安全的云存储位置。
 
 

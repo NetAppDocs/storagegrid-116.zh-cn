@@ -13,6 +13,7 @@ summary: 清除密钥管理服务器（ KMS\ ）配置将禁用设备上的节�
 [role="lead"]
 清除密钥管理服务器（ KMS ）配置将禁用设备上的节点加密。清除 KMS 配置后，设备上的数据将被永久删除，并且无法再访问。此数据不可恢复。
 
+.您需要的内容
 如果需要保留设备上的数据，则必须先执行节点停用操作步骤 或克隆节点，然后才能清除 KMS 配置。
 
 
@@ -20,6 +21,7 @@ IMPORTANT: 清除 KMS 后，设备上的数据将被永久删除，并且无法�
 
 xref:../maintain/grid-node-decommissioning.adoc[停用节点] 将其包含的任何数据移动到 StorageGRID 中的其他节点。
 
+.关于此任务
 清除设备 KMS 配置将禁用节点加密，从而删除设备节点与 StorageGRID 站点的 KMS 配置之间的关联。然后，设备上的数据将被删除，并且设备将保持预安装状态。此过程不能逆转。
 
 必须清除 KMS 配置：
@@ -75,6 +77,8 @@ KMS 加密密钥和所有数据将从节点中删除，设备将重新启动。�
 
 
 
+.完成后
 在设备重新启动并确认 KMS 已清除且设备处于预安装状态后，您可以从 StorageGRID 系统中物理删除此设备。有关的信息，请参见恢复和维护说明 xref:../maintain/preparing-appliance-for-reinstallation-platform-replacement-only.adoc[准备要重新安装的设备]。
 
+.相关信息
 xref:../admin/index.adoc[管理 StorageGRID]

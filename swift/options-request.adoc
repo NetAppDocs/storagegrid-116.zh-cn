@@ -41,4 +41,5 @@ summary: 选项请求会检查单个 Swift 服务的可用性。选项请求由 
 * `X-Trans-ID`
 
 
+.相关信息
 xref:supported-swift-api-endpoints.adoc[支持的 Swift API 端点]

@@ -13,7 +13,7 @@ summary: 所有客户端活动都与租户帐户相关联。您可以使用网�
 [role="lead"]
 所有客户端活动都与租户帐户相关联。您可以使用网格管理器监控租户的存储使用情况或网络流量，也可以使用审核日志或 Grafana 信息板收集有关租户如何使用 StorageGRID 的更多详细信息。
 
-.您需要什么？ #8217 ；将需要什么
+.您需要的内容
 * 您将使用登录到网格管理器 xref:../admin/web-browser-requirements.adoc[支持的 Web 浏览器]。
 * 您具有 root 访问权限或管理员权限。
 
@@ -145,6 +145,7 @@ IMPORTANT: 指标页面上提供的工具主要供技术支持使用。这些工
 
 
 
+.相关信息
 xref:alerts-reference.adoc[警报参考]
 
 xref:../audit/index.adoc[查看审核日志]

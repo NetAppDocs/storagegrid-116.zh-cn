@@ -13,8 +13,8 @@ summary: 在实施云存储池之前，请查看存储在每种类型的云存�
 [role="lead"]
 在实施云存储池之前，请查看存储在每种类型的云存储池中的对象的生命周期。
 
-*  Lifecycle of a Cloud Storage Pool object
-*  Lifecycle of a Cloud Storage Pool object
+* <<S3 ：云存储池对象的生命周期>>
+* <<Azure ： Cloud Storage Pool 对象的生命周期>>
 
 
 
@@ -110,4 +110,5 @@ NOTE: 如果 StorageGRID 中的存储节点上也存在对象的一个或多个�
 
 
 
+.相关信息
 xref:../s3/index.adoc[使用 S3]

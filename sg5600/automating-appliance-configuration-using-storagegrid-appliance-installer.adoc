@@ -13,11 +13,12 @@ summary: 您可以使用包含配置信息的 JSON 文件自动配置设备。�
 [role="lead"]
 您可以使用包含配置信息的 JSON 文件自动配置设备。您可以使用 StorageGRID 设备安装程序上传文件。
 
-.您需要什么？ #8217 ；将需要什么
+.您需要的内容
 * 您的设备必须使用与 StorageGRID 11.5 或更高版本兼容的最新固件。
 * 您必须连接到要使用配置的设备上的 StorageGRID 设备安装程序 xref:../admin/web-browser-requirements.adoc[支持的 Web 浏览器]。
 
 
+.关于此任务
 您可以自动执行设备配置任务，例如配置以下内容：
 
 * 网格网络，管理网络和客户端网络 IP 地址

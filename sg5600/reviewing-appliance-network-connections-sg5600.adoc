@@ -113,6 +113,7 @@ E5600SG 控制器上的四个网络端口
 连接到网格网络和 StorageGRID 客户端网络。请参见 "`E5600SG 控制器的 10-GbE 端口连接 " 。`
 
 |===
+.相关信息
 xref:port-bond-modes-for-e5600sg-controller-ports.adoc[E5600SG 控制器端口的端口绑定模式]
 
 xref:gathering-installation-information-sg5600.adoc[收集安装信息（ SG5600 ）]

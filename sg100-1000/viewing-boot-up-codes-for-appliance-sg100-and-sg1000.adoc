@@ -13,7 +13,7 @@ summary: 在为设备接通电源时， BMC 会记录一系列启动代码。您
 [role="lead"]
 在为设备接通电源时， BMC 会记录一系列启动代码。您可以在连接到 BMC 管理端口的图形控制台上查看这些代码。
 
-.您需要什么？ #8217 ；将需要什么
+.您需要的内容
 * 您知道如何访问 BMC 信息板。
 * 如果您要使用 LAN 上串行（ Serial Over LAN ，故障转移），则具有使用 IPMI 故障转移控制台应用程序的经验。
 
@@ -152,4 +152,5 @@ StorageGRID 正在运行。
 |===
 
 
+.相关信息
 xref:accessing-bmc-interface-sg1000.adoc[访问 BMC 界面]

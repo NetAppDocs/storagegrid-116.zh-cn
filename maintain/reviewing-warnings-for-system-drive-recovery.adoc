@@ -42,6 +42,7 @@ IMPORTANT: 如果 ILM 规则配置为仅存储一个复制副本，而该副本�
 
 NOTE: 如果在恢复期间遇到服务：状态 - Cassandra （ SVST ）警报，请参见有关通过重建 Cassandra 从警报中恢复的监控和故障排除说明。重建 Cassandra 后，应清除警报。如果未清除警报，请联系技术支持。
 
+.相关信息
 xref:../monitor/index.adoc[监控和故障排除]
 
 xref:warnings-and-considerations-for-grid-node-recovery.adoc[有关网格节点恢复的警告和注意事项]

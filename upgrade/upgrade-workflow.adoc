@@ -30,4 +30,5 @@ IMPORTANT: 除非您确定网格节点已准备好停止并重新启动，否则
 . 升级完成后，确认软件版本并应用任何修补程序。
 
 
+.相关信息
 xref:estimating-time-to-complete-upgrade.adoc[估计完成升级所需的时间]

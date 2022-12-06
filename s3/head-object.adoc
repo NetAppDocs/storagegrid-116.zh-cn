@@ -145,6 +145,7 @@ StorageGRID 不会解析或解释用户定义的元数据中的转义 UTF-8 字�
 
 如果未指定 `veversionId` Subresource ，则此操作将提取受版本控制的存储分段中的对象的最新版本。如果对象的当前版本为删除标记，则返回 "`not found` " 状态，并将 `x-AMZ-delete-marker` response 标头设置为 `true` 。
 
+.相关信息
 xref:using-server-side-encryption.adoc[使用服务器端加密]
 
 xref:../ilm/index.adoc[使用 ILM 管理对象]

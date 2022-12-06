@@ -13,7 +13,7 @@ summary: 通过恢复包文件，您可以在发生故障时还原 StorageGRID �
 [role="lead"]
 通过恢复包文件，您可以在发生故障时还原 StorageGRID 系统。
 
-.您需要什么？ #8217 ；将需要什么
+.您需要的内容
 * 您必须使用登录到网格管理器 xref:../admin/web-browser-requirements.adoc[支持的 Web 浏览器]。
 * 您必须具有配置密码短语。
 * 您必须具有特定的访问权限。
@@ -42,4 +42,5 @@ IMPORTANT: 恢复包文件必须受到保护，因为它包含可用于从 Stora
 
 
 
+.相关信息
 xref:../admin/index.adoc[管理 StorageGRID]

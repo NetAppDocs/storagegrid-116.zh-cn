@@ -13,7 +13,7 @@ summary: 创建云存储池时，您需要指定 StorageGRID 用于存储对象�
 [role="lead"]
 创建云存储池时，您需要指定 StorageGRID 用于存储对象的外部存储分段或容器的名称和位置，云提供程序类型（ Amazon S3 或 Azure Blob Storage ）以及 StorageGRID 访问外部存储分段或容器所需的信息。
 
-.您需要什么？ #8217 ；将需要什么
+.您需要的内容
 * 您将使用登录到网格管理器 xref:../admin/web-browser-requirements.adoc[支持的 Web 浏览器]。
 * 您具有特定的访问权限。
 * 您已查看配置云存储池的准则。
@@ -21,6 +21,7 @@ summary: 创建云存储池时，您需要指定 StorageGRID 用于存储对象�
 * 您拥有访问存储分段或容器所需的所有身份验证信息。
 
 
+.关于此任务
 云存储池指定一个外部 S3 存储分段或 Azure Blob 存储容器。StorageGRID 会在您保存云存储池后立即对其进行验证，因此您必须确保云存储池中指定的存储分段或容器存在且可访问。
 
 .步骤

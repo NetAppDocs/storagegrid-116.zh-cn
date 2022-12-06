@@ -39,6 +39,7 @@ image::../media/ping_test_passed.png[StorageGRID Webscale 设备安装程序中�
 
 
 
+.相关信息
 xref:configuring-network-links-sg100-and-sg1000.adoc[配置网络链路（ SG100 和 SG1000 ）]
 
 xref:changing-mtu-setting.adoc[更改 MTU 设置]

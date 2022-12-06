@@ -19,11 +19,12 @@ summary: 如果您已配置并启用单点登录（ SSO ），并且使用 Azure
 
 如果您使用 Azure 作为 SSO 身份提供程序，则以下说明适用
 
-.您需要什么？ #8217 ；将需要什么
+.您需要的内容
 * 您知道属于 StorageGRID 用户组的联合用户的 SSO 电子邮件地址和密码。
 * 如果要访问租户管理 API ，您知道租户帐户 ID 。
 
 
+.关于此任务
 要获取身份验证令牌，可以使用以下示例脚本：
 
 * `storagegrid-ssoauth-azure.py` Python 脚本

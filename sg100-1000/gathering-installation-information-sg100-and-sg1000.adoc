@@ -357,6 +357,7 @@ image::../media/sg1000_bmc_management_port.png[SG1000 BMC 管理端口]
 
 
 |===
+.相关信息
 xref:sg100-and-sg1000-appliances-overview.adoc[SG100 和 SG1000 设备概述]
 
 xref:cabling-appliance-sg100-and-sg1000.adoc[缆线设备 SG100 和 SG1000]

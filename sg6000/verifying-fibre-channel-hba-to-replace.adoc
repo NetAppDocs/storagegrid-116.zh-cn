@@ -13,7 +13,7 @@ summary: 如果您不确定要更换哪个光纤通道主机总线适配器（ H
 [role="lead"]
 如果您不确定要更换哪个光纤通道主机总线适配器（ HBA ），请完成此操作步骤 以进行识别。
 
-.您需要什么？ #8217 ；将需要什么
+.您需要的内容
 * 您拥有需要更换光纤通道 HBA 的存储设备或 SG6000-CN 控制器的序列号。
 +
 
@@ -47,4 +47,5 @@ xref:turning-controller-identify-led-on-and-off.adoc[打开和关闭控制器识
 
 
 
+.相关信息
 xref:removing-fibre-channel-hba.adoc[删除光纤通道 HBA]

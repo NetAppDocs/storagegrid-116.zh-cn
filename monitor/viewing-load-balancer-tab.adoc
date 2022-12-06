@@ -46,6 +46,7 @@ NOTE: 此值将在每个请求完成时更新。因此，此值可能与请求�
 
 此图提供了每秒返回给客户端的错误响应数的 3 分钟移动平均值，并按错误响应代码进行细分。
 
+.相关信息
 xref:monitoring-load-balancing-operations.adoc[监控负载平衡操作]
 
 xref:../admin/index.adoc[管理 StorageGRID]

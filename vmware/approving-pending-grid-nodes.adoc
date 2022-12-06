@@ -13,6 +13,7 @@ summary: 您必须先批准每个网格节点，然后才能将其加入 Storage
 [role="lead"]
 您必须先批准每个网格节点，然后才能将其加入 StorageGRID 系统。
 
+.您需要的内容
 您已部署所有虚拟设备和 StorageGRID 设备网格节点。
 
 

@@ -13,7 +13,7 @@ summary: 您可以搜索和查看已解决的警报历史记录。
 [role="lead"]
 您可以搜索和查看已解决的警报历史记录。
 
-.您需要什么？ #8217 ；将需要什么
+.您需要的内容
 * 您必须使用登录到网格管理器 xref:../admin/web-browser-requirements.adoc[支持的 Web 浏览器]。
 
 

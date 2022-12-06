@@ -22,6 +22,7 @@ summary: 如果硬件故障或布线错误导致存储控制器或 SG6000-CN 控
 . 如果您需要有关解决问题描述 的帮助，请联系技术支持。
 
 
+.相关信息
 xref:viewing-boot-up-status-codes-for-sg6000-storage-controllers.adoc[查看 SG6000 存储控制器的启动状态代码]
 
 https://library.netapp.com/ecmdocs/ECMLP2588751/html/frameset.html["《 E5700 和 E2800 系统监控指南》"^]

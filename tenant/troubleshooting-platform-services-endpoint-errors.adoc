@@ -75,6 +75,7 @@ image::../media/endpoint_error_on_connection_tab.png[连接选项卡上出现端
 
 xref:../admin/index.adoc[管理 StorageGRID]
 
+.相关信息
 xref:creating-platform-services-endpoint.adoc[创建平台服务端点]
 
 xref:testing-connection-for-platform-services-endpoint.adoc[测试平台服务端点的连接]

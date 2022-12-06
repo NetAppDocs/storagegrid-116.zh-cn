@@ -65,7 +65,7 @@ IMPORTANT: 启用此功能后，任何具有更改租户 root 密码权限的 Gr
 
 
 
-== 添加到网格 / 日志 / 收集端点
+== 添加到 `grid/logs/collect` 端点
 
 已向 `grid/logs/Collect` 端点添加四个布尔值：
 
@@ -77,7 +77,7 @@ IMPORTANT: 启用此功能后，任何具有更改租户 root 密码权限的 Gr
 
 
 
-== 新的 ​node 详细信息 / grid​ /service-IDs 端点
+== 新增 `​node-details /grid​/service-ids` 端点
 
 新的 `​ 或 grid​ /service-IDs` 端点可将节点 UUID 映射到关联节点名称，服务 ID 和服务类型。
 

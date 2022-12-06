@@ -13,7 +13,7 @@ summary: 网格节点必须能够彼此通信，才能使网格正常运行。�
 [role="lead"]
 网格节点必须能够彼此通信，才能使网格正常运行。节点和站点之间的网络完整性以及站点之间的网络带宽对于高效运行至关重要。
 
-.您需要什么？ #8217 ；将需要什么
+.您需要的内容
 * 您必须使用登录到网格管理器 xref:../admin/web-browser-requirements.adoc[支持的 Web 浏览器]。
 * 您必须具有特定的访问权限。
 
@@ -74,6 +74,7 @@ image::../media/traffic_classification_policies_main_screen_w_examples.png[图�
 
 
 
+.相关信息
 xref:viewing-network-tab.adoc[查看网络选项卡]
 
 xref:monitoring-node-connection-states.adoc[监控节点连接状态]

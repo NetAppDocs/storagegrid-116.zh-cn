@@ -13,7 +13,7 @@ summary: 在配置 StorageGRID 以与 FabricPool 结合使用时，您必须配�
 [role="lead"]
 在配置 StorageGRID 以与 FabricPool 结合使用时，您必须配置负载平衡器端点并上传负载平衡器端点证书，此证书用于保护 ONTAP 和 StorageGRID 之间的连接。
 
-.您需要什么？ #8217 ；将需要什么
+.您需要的内容
 * 您将使用登录到网格管理器 xref:../admin/web-browser-requirements.adoc[支持的 Web 浏览器]。
 * 您具有 root 访问权限。
 * 您具有以下文件：
@@ -25,6 +25,7 @@ summary: 在配置 StorageGRID 以与 FabricPool 结合使用时，您必须配�
 
 
 
+.关于此任务
 有关此任务的详细信息，请参见 xref:../admin/configuring-load-balancer-endpoints.adoc[配置负载平衡器端点]。
 
 .步骤

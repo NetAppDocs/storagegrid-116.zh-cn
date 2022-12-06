@@ -34,6 +34,7 @@ IMPORTANT: 定期监控 CPU 和内存使用情况，以确保这些资源能够�
 
 另请参见有关存储要求的信息。
 
+.相关信息
 https://mysupport.netapp.com/matrix["NetApp 互操作性表工具"^]
 
 xref:storage-and-performance-requirements.adoc[存储和性能要求]
