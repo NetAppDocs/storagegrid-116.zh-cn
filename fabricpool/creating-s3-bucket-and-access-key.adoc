@@ -72,7 +72,7 @@ image::../media/create_bucket_for_fabricpool.png[为 FabricPool 创建存储分�
 
 +
 
-NOTE: 对于 FabricPool 存储分段，建议的存储分段一致性级别为 `read-after-new-write 。` 不建议使用 "`Available` " 一致性级别。请参见 xref:../tenant/changing-consistency-level.adoc[更改一致性级别]。
+NOTE: 对于FabricPool 存储分段、建议的存储分段一致性级别为*读取-后-新-写入*、这是新存储分段的默认设置。请勿将FabricPool 分段编辑为使用*可用*或任何其他一致性级别。
 
 . 创建访问密钥和机密访问密钥。
 +

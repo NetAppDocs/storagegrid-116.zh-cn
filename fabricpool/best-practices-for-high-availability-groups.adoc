@@ -42,7 +42,7 @@ IMPORTANT: 如果您计划使用 VLAN 接口隔离 FabricPool 流量，则网络
 
 为 FabricPool 创建 StorageGRID HA 组的最佳实践取决于工作负载，如下所示：
 
-* 如果您计划将 FabricPool 与主工作负载数据结合使用，则必须创建一个至少包含两个负载平衡节点的 HA 组，以防止数据检索中断。
+* 如果您计划将FabricPool 与主工作负载数据结合使用、则必须创建一个至少包含两个负载平衡节点的HA组、以防止数据检索中断。
 * 如果您计划使用 FabricPool snapshot-only 卷分层策略或非主本地性能层（例如，灾难恢复位置或 NetApp SnapMirror ® 目标），则只能为 HA 组配置一个节点。
 
 

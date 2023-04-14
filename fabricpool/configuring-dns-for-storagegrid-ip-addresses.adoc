@@ -15,8 +15,8 @@ summary: 配置高可用性组和负载平衡器端点后，您必须确保 ONTA
 
 在 DNS 记录中输入的 IP 地址取决于您是否使用的是由负载平衡节点组成的 HA 组：
 
-* 如果已配置 HA 组， FabricPool 将连接到该 HA 组的虚拟 IP 地址。
-* 如果您不使用 HA 组，则 FabricPool 可以使用任何网关节点或管理节点的 IP 地址连接到 StorageGRID 负载平衡器服务。
+* 如果已配置HA组、FabricPool 将连接到该HA组的虚拟IP地址。
+* 如果您不使用HA组、则FabricPool 可以使用任何网关节点或管理节点的IP地址连接到StorageGRID 负载平衡器服务。
 
 
 此外，还必须确保 DNS 记录引用所有必需的端点域名，包括任何通配符名称。

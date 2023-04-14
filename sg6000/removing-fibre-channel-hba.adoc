@@ -15,25 +15,22 @@ summary: 如果 SG6000-CN 控制器中的光纤通道主机总线适配器（ HB
 
 .您需要的内容
 * 您拥有正确的替代光纤通道 HBA 。
-* 您已确定哪个 SG6000-CN 控制器包含要替换的光纤通道 HBA 。
+* 您已拥有 link:verifying-fibre-channel-hba-to-replace.html["已确定哪个SG6000-CN控制器包含要更换的光纤通道HBA"]。
+* 您已拥有 link:locating-controller-in-data-center.html["以物理方式定位SG6000-CN控制器"] 在数据中心。
+* 您已拥有 link:shutting-down-sg6000-cn-controller.html["关闭SG6000-CN控制器"]。
 +
-xref:verifying-fibre-channel-hba-to-replace.adoc[确认要更换的光纤通道 HBA]
 
-* 您已在物理上找到要在数据中心中更换光纤通道 HBA 的 SG6000-CN 控制器。
-+
-xref:locating-controller-in-data-center.adoc[在数据中心中找到控制器]
+IMPORTANT: 从机架中卸下控制器之前、需要进行有控制的关闭。
 
-* 您已卸下控制器盖板。
-+
-xref:removing-sg6000-cn-controller-cover.adoc[拆下 SG6000-CN 控制器盖板]
-
+* 您已拥有 link:removing-sg6000-cn-controller-from-cabinet-or-rack.html["已从机柜或机架中卸下控制器"]。
+* 您已拥有 link:removing-sg6000-cn-controller-cover.html["已卸下控制器盖板"]。
 
 
 .关于此任务
-为了防止服务中断，请在开始更换光纤通道 HBA 之前确认所有其他存储节点均已连接到网格，或者在计划的维护时段内更换适配器，此时通常会发生服务中断。请参见有关通过信息生命周期管理管理对象的说明中有关确定节点连接状态的信息。
+为了防止服务中断，请在开始更换光纤通道 HBA 之前确认所有其他存储节点均已连接到网格，或者在计划的维护时段内更换适配器，此时通常会发生服务中断。请参见有关的信息 link:../monitor/monitor-node-connection-states.html["监控节点连接状态"]。
 
 
-IMPORTANT: 如果您使用的 ILM 规则只创建一个对象的一个副本，则必须在计划的维护窗口期间更换光纤通道 HBA 。否则，在此操作步骤 期间，您可能暂时无法访问这些对象。+ 查看有关通过信息生命周期管理管理对象的信息。
+IMPORTANT: 如果您使用的 ILM 规则只创建一个对象的一个副本，则必须在计划的维护窗口期间更换光纤通道 HBA 。否则，在此操作步骤 期间，您可能暂时无法访问这些对象。请参见有关的信息 link:../ilm/why-you-should-not-use-single-copy-replication.html["为什么不应使用单副本复制"]。
 
 .步骤
 . 将 ESD 腕带的腕带一端绕在腕带上，并将扣具一端固定到金属接地，以防止静电放电。
@@ -57,12 +54,3 @@ image::../media/sg6060_fc_hba_location.jpg[SG6060 光纤通道 HBA 位于提升�
 安装替代光纤通道 HBA 。
 
 xref:reinstalling-fibre-channel-hba.adoc[重新安装光纤通道 HBA]
-
-.相关信息
-xref:reinstalling-fibre-channel-hba.adoc[重新安装光纤通道 HBA]
-
-xref:../admin/index.adoc[管理 StorageGRID]
-
-xref:../monitor/index.adoc[监控和故障排除]
-
-xref:../ilm/index.adoc[使用 ILM 管理对象]
