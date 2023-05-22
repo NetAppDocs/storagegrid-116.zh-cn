@@ -19,7 +19,7 @@ StorageGRID 修补程序包含在功能或修补程序版本之外进行的软�
 .步骤
 . 转到 StorageGRID 的 "NetApp 下载 " 页面。
 +
-https://mysupport.netapp.com/site/products/all/details/storagegrid/downloads-tab["NetApp 下载： StorageGRID"^]
+https://["NetApp 下载： StorageGRID"^]
 
 . 选择 * 类型 / 选择版本 * 字段的向下箭头可查看可供下载的更新列表：
 +

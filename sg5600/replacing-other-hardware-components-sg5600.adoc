@@ -85,8 +85,8 @@ E2700 控制器中的电池（需要卸下控制器）
 
 |===
 .相关信息
-https://mysupport.netapp.com/info/web/ECMP11751516.html["NetApp E 系列和 EF 系列硬件更换过程"^]
+https://["NetApp E 系列和 EF 系列硬件更换过程"^]
 
-http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=61765["NetApp 文档： E2700 系列"^]
+http://["NetApp 文档： E2700 系列"^]
 
-http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=61893["NetApp 文档： E5600 系列"^]
+http://["NetApp 文档： E5600 系列"^]

@@ -25,4 +25,4 @@ E5600SG 控制器的状态和错误代码与 E2700 控制器的状态和错误�
 .相关信息
 xref:e5600sg-controller-seven-segment-display-codes.adoc[E5600SG 控制器七段显示代码]
 
-http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=61765["NetApp 文档： E2700 系列"^]
+http://["NetApp 文档： E2700 系列"^]

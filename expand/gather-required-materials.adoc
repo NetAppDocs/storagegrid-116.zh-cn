@@ -74,7 +74,7 @@ StorageGRID 文档
  a| 
 适用于您的平台的最新文档
  a| 
-有关支持的版本，请参见 https://mysupport.netapp.com/matrix["互操作性表"^]。
+有关支持的版本，请参见 https://["互操作性表"^]。
 
 |===
 
@@ -90,7 +90,7 @@ StorageGRID 文档
 .步骤
 . 转到 StorageGRID 的 "NetApp 下载 " 页面。
 +
-https://mysupport.netapp.com/site/products/all/details/storagegrid/downloads-tab["NetApp 下载： StorageGRID"^]
+https://["NetApp 下载： StorageGRID"^]
 
 . 选择网格上当前运行的 StorageGRID 版本。
 . 使用您的 NetApp 帐户的用户名和密码登录。

@@ -2,7 +2,7 @@
 settings:
   name: StorageGRID
   internal:
-    pdf_enabled: true
+    pdf_enabled: false
   prod:
     pdf_enabled: true
     harmony_enabled: false
@@ -48,7 +48,7 @@ sidebar:
     - section: audit
   - title: 启用StorageGRID
     url: "/storagegrid-enable.html"
-  - title: 早期版本
+  - title: 其他版本
     url: "/earlier-versions.html"
   - title: 法律声明
     url: "/legal-notices.html"
@@ -132,10 +132,12 @@ homepage:
       url: https://netapp.com/blog/
     - title: NetApp 社区
       url: https://community.netapp.com/
-  - title: 早期版本
+  - title: 其他版本
     links:
+    - title: StorageGRID 11.7文档
+      url: https://docs.netapp.com/us-en/storagegrid-117/index.html
     - title: StorageGRID 11.5 文档
-      url: https://docs.netapp.com/sgws-115/index.jsp
+      url: https://docs.netapp.com/us-en/storagegrid-115/index.html
     - title: StorageGRID 11.4 文档
       url: https://docs.netapp.com/sgws-114/index.jsp
     - title: StorageGRID 11.3 文档

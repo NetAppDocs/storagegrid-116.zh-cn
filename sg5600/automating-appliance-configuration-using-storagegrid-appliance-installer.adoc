@@ -42,7 +42,7 @@ NOTE: 有经验的用户如果希望自动安装和配置其设备，可以使�
 +
 ** ConfigBuilder 应用程序
 +
-https://configbuilder.netapp.com/["ConfigBuilder.netapp.com"^]
+https://["ConfigBuilder.netapp.com"^]
 
 ** `configure-sGa.py` 设备配置脚本。您可以从 StorageGRID 设备安装程序（ * 帮助 * > * 设备配置脚本 * ）下载此脚本。请参见有关使用 configure-sga.py 脚本自动配置的说明。
 +

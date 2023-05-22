@@ -45,4 +45,4 @@ CAUTION: 您必须在每个 ESX 主机上正确配置网络时间协议（ NTP �
 有关安装这些 VMware 产品所需的步骤，请参见 VMware 文档。
 
 .相关信息
-https://mysupport.netapp.com/matrix["NetApp 互操作性表工具"^]
+https://["NetApp 互操作性表工具"^]

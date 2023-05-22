@@ -43,6 +43,6 @@ IMPORTANT: 如果您仍在使用传统警报，请计划在升级到 StorageGRID
 
 NAS 网桥功能先前在 StorageGRID 11.4 版中进入了有限访问权限。NAS 网桥功能仍受限访问，自 StorageGRID 11.6 之日已弃用。
 
-NAS 网桥 11.4 仍为最终版本，并将继续与 StorageGRID 11.6 兼容。查看 https://mysupport.netapp.com/matrix["NetApp 互操作性表工具"^] 确保 NAS 网桥 11.4 和 StorageGRID 版本之间的持续兼容性。
+NAS 网桥 11.4 仍为最终版本，并将继续与 StorageGRID 11.6 兼容。查看 https://["NetApp 互操作性表工具"^] 确保 NAS 网桥 11.4 和 StorageGRID 版本之间的持续兼容性。
 
-查看 NetApp 支持站点上的 https://mysupport.netapp.com/site/info/version-support["NAS 网桥的支持计划"^]。
+查看 NetApp 支持站点上的 https://["NAS 网桥的支持计划"^]。

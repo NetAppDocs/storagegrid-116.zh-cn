@@ -104,7 +104,7 @@ StorageGRID 系统使用四种类型的网格节点：
 * xref:../ubuntu/index.adoc[安装 Ubuntu 或 Debian]
 
 
-使用 https://mysupport.netapp.com/matrix["NetApp 互操作性表工具"^] 以获取支持的版本列表。
+使用 https://["NetApp 互操作性表工具"^] 以获取支持的版本列表。
 
 
 
@@ -137,7 +137,7 @@ StorageGRID 硬件设备经过专门设计，可在 StorageGRID 系统中使用�
 
 有关详细信息，请参见以下内容：
 
-* https://hwu.netapp.com["NetApp Hardware Universe"^]
+* https://["NetApp Hardware Universe"^]
 * xref:../sg100-1000/index.adoc[SG100 和 SG1000 服务设备]
 * xref:../sg6000/index.adoc[SG6000 存储设备]
 * xref:../sg5700/index.adoc[SG5700 存储设备]

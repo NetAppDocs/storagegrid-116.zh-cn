@@ -217,10 +217,6 @@ NOTE: 某些 StorageGRID 恢复过程使用 Reaper 处理 Cassandra 修复。一
 +
 image::../media/recovering_cassandra.png[显示网格管理界面中的恢复进度的屏幕截图]
 
-. 使用计算控制器的 IP 地址输入 `https://Controller_IP:8443` ，返回到 StorageGRID 设备安装程序的监控安装页面。
-+
-" 监控安装 " 页面显示脚本运行时的安装进度。
-
 
 
 在 `sn-recovery-postinstall.sh` 脚本启动节点上的服务后，您可以将对象数据还原到由该脚本格式化的任何存储卷，如下一个操作步骤 中所述。

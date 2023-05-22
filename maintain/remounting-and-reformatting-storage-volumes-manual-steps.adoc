@@ -228,7 +228,7 @@ NOTE: RSM 服务位于包含此 ADC 服务的存储节点上。
 
 NOTE: 某些 StorageGRID 恢复过程使用 Reaper 处理 Cassandra 修复。一旦相关服务或所需服务开始，便会自动进行修复。您可能会注意到脚本输出中提到 " `reaper` " 或 "`Cassandra repair.` " 。 如果您看到指示修复失败的错误消息，请运行错误消息中指示的命令。
 
-. 【安装后脚本步骤】。作为 `sn-recovery-postinstall.sh` 脚本运行时、监控网格管理器中的恢复页面。
+. [[post-install-script-step ]]作为 `sn-recovery-postinstall.sh` 脚本运行时、监控网格管理器中的恢复页面。
 +
 " 恢复 " 页面上的进度条和阶段列可提供 `sn-recovery-postinstall.sh` 脚本的高级状态。
 

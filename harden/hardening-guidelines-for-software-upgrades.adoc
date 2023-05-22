@@ -48,10 +48,10 @@ summary: 您必须使 StorageGRID 系统和相关服务保持最新，以抵御�
 使用 NetApp 互操作性表工具可获取受支持版本的列表。
 
 .相关信息
-https://mysupport.netapp.com/site/products/all/details/storagegrid/downloads-tab["NetApp 下载： StorageGRID"^]
+https://["NetApp 下载： StorageGRID"^]
 
 xref:../upgrade/index.adoc[升级软件]
 
 xref:../maintain/index.adoc[恢复和维护]
 
-https://mysupport.netapp.com/matrix["NetApp 互操作性表工具"^]
+https://["NetApp 互操作性表工具"^]

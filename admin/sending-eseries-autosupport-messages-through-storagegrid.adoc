@@ -29,7 +29,7 @@ E 系列 AutoSupport 消息包含存储硬件的详细信息，比 StorageGRID �
 如果要在网格管理器中配置管理代理服务器，请参见 xref:configuring-admin-proxy-settings.adoc[配置管理员代理设置]。
 
 
-NOTE: 此操作步骤 仅用于为 E 系列 AutoSupport 消息配置 StorageGRID 代理服务器。有关 E 系列 AutoSupport 配置的更多详细信息，请参见 https://mysupport.netapp.com/info/web/ECMP1658252.html["NetApp E 系列和 SANtricity 文档"^]。
+NOTE: 此操作步骤 仅用于为 E 系列 AutoSupport 消息配置 StorageGRID 代理服务器。有关 E 系列 AutoSupport 配置的更多详细信息，请参见 https://["NetApp E 系列和 SANtricity 文档"^]。
 
 .步骤
 . 在网格管理器中，选择 * 节点 * 。

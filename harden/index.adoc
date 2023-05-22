@@ -32,4 +32,4 @@ StorageGRID 遵循 _NetApp 漏洞处理策略 _ 。报告的漏洞会根据产�
 
 
 .相关信息
-https://security.netapp.com/policy/["漏洞处理策略"^]
+https://["漏洞处理策略"^]

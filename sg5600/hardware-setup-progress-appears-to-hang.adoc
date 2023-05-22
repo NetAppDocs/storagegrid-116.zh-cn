@@ -57,6 +57,6 @@ xref:e5600sg-controller-seven-segment-display-codes.adoc[E5600SG 控制器七段
 
 xref:he-error-error-synchronizing-with-santricity-os-software.adoc[he error ： Error synchronating with SANtricity OS Software]
 
-https://library.netapp.com/ecm/ecm_download_file/ECMLP2344477["《 E2700 控制器驱动器托盘和相关驱动器托盘安装指南》"^]
+https://["《 E2700 控制器驱动器托盘和相关驱动器托盘安装指南》"^]
 
-http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=61765["NetApp 文档： E2700 系列"^]
+http://["NetApp 文档： E2700 系列"^]

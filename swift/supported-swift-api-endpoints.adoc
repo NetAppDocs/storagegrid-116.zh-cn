@@ -65,7 +65,7 @@ StorageGRID 支持以下 Swift API 端点：信息 URL ，身份验证 URL 和�
 
 对成功的身份验证请求的响应将返回存储 URL 和身份验证令牌，如下所示：
 
-`X-Storage-URL ： https://_FQDN_[] _ 节点 _IP ： Swift_Port_/v1/_Tenant 帐户 ID`
+`X-Storage-URL ： https://[] _ 节点 _IP ： Swift_Port_/v1/_Tenant 帐户 ID`
 
 `X-Auth-Token ： _token_`
 

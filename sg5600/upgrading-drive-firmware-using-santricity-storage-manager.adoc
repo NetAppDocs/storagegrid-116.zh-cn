@@ -70,7 +70,7 @@ image::../media/sg_storagemanager_upgrade_drive_firmware.png[升级驱动器固�
 +
 .. 打开 Web 浏览器，导航到 NetApp 支持网站，然后使用您的 ID 和密码登录。
 +
-https://mysupport.netapp.com/site/["NetApp 支持"^]
+https://["NetApp 支持"^]
 
 .. 在 NetApp 支持网站上，选择 * 下载 * 选项卡，然后选择 * E 系列磁盘驱动器固件 * 。
 +

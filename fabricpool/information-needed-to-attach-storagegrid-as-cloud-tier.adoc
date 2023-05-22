@@ -21,8 +21,8 @@ NOTE: 列出的确切字段名称以及用于在 ONTAP 中输入所需值的过�
 
 有关详细信息，请参见以下内容：
 
-* https://www.netapp.com/pdf.html?item=/media/17239-tr4598pdf.pdf["TR-4598 ：《 ONTAP 9.9.1 中的 FabricPool 最佳实践》"^]
-* https://docs.netapp.com/us-en/ontap/index.html["ONTAP 9 文档"^]
+* https://["TR-4598 ：《 ONTAP 9.9.1 中的 FabricPool 最佳实践》"^]
+* https://["ONTAP 9 文档"^]
 
 
 [cols="1a,2a"]

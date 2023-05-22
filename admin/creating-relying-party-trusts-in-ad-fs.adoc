@@ -39,7 +39,7 @@ NOTE: 您必须为 StorageGRID 系统中的每个管理节点创建依赖方信�
 . 从 Windows 开始菜单中，右键选择 PowerShell 图标，然后选择 * 以管理员身份运行 * 。
 . 在 PowerShell 命令提示符处，输入以下命令：
 +
-`Add-AdfsRelyingPartyTrust -Name "_Admin_Node_Identifer_" -MetadataURL "https://_Admin_Node_FQDN_/api/saml-metadata"`[]
+`Add-AdfsRelyingPartyTrust -Name "_Admin_Node_Identifer_" -MetadataURL "https://[]
 
 +
 ** 对于 ` _Admin_Node_Identifier_` ，请输入管理节点的依赖方标识符，就像它显示在 Single Sign-On 页面上一样。例如， `SG-DC1-ADM1` 。

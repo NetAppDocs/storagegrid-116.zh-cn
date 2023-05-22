@@ -77,6 +77,6 @@ image::../media/appliance_drive_insertion.gif[驱动器插入]
 
 
 .相关信息
-https://library.netapp.com/ecm/ecm_download_file/ECMLP2344477["《 E2700 控制器驱动器托盘和相关驱动器托盘安装指南》"^]
+https://["《 E2700 控制器驱动器托盘和相关驱动器托盘安装指南》"^]
 
-https://library.netapp.com/ecm/ecm_download_file/ECMP1532527["《 E5600 控制器驱动器托盘和相关驱动器托盘安装指南》"^]
+https://["《 E5600 控制器驱动器托盘和相关驱动器托盘安装指南》"^]

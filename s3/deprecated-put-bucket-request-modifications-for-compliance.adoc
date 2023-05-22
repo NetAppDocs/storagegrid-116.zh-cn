@@ -20,7 +20,7 @@ xref:using-s3-object-lock.adoc[使用 S3 对象锁定]
 
 xref:../ilm/index.adoc[使用 ILM 管理对象]
 
-https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/StorageGRID/How_to_manage_legacy_Compliant_buckets_in_StorageGRID_11.5["NetApp 知识库：如何在 StorageGRID 11.5 中管理原有的合规存储分段"^]
+https://["NetApp 知识库：如何在 StorageGRID 11.5 中管理原有的合规存储分段"^]
 
 您不能再在已启用合规性的情况下创建新存储分段。如果您尝试使用 PUT 分段请求修改以满足合规性要求来创建新的合规分段，则会返回以下错误消息：
 

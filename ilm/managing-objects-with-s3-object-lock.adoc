@@ -50,7 +50,7 @@ S3 对象锁定取代了早期 StorageGRID 版本中提供的合规性功能。�
 * 取消合法保留。
 
 
-请参见 https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/StorageGRID/How_to_manage_legacy_Compliant_buckets_in_StorageGRID_11.5["NetApp 知识库：如何在 StorageGRID 11.5 中管理原有的合规存储分段"^] 有关说明，请参见。
+请参见 https://["NetApp 知识库：如何在 StorageGRID 11.5 中管理原有的合规存储分段"^] 有关说明，请参见。
 
 如果您在先前版本的 StorageGRID 中使用了原有的合规性功能，请参见下表，了解它与 StorageGRID 中的 S3 对象锁定功能的比较情况。
 

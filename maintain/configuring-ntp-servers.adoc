@@ -35,7 +35,7 @@ IMPORTANT: 确保每个站点至少有两个节点可以访问至少四个外部
 
 NOTE: 在为生产级 StorageGRID 安装指定外部 NTP 源时，请勿在 Windows Server 2016 之前的 Windows 版本上使用 Windows 时间（ W32Time ）服务。早期版本的 Windows 上的时间服务不够准确， Microsoft 不支持在 StorageGRID 等高精度环境中使用。
 
-https://support.microsoft.com/en-us/help/939322/support-boundary-to-configure-the-windows-time-service-for-high-accura["支持边界，用于为高精度环境配置 Windows 时间服务"^]
+https://["支持边界，用于为高精度环境配置 Windows 时间服务"^]
 
 如果您遇到安装期间最初指定的 NTP 服务器的稳定性或可用性问题，可以通过添加其他服务器或更新或删除现有服务器来更新 StorageGRID 系统使用的外部 NTP 源列表。
 
