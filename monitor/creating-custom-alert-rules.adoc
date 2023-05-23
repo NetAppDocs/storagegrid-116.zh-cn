@@ -17,10 +17,10 @@ summary: 您可以创建自定义警报规则来定义自己触发警报的条�
 * 您将使用登录到网格管理器 xref:../admin/web-browser-requirements.adoc[支持的 Web 浏览器]
 * 您具有 " 管理警报 " 或 " 根访问 " 权限
 * 您熟悉 xref:commonly-used-prometheus-metrics.adoc[常用的 Prometheus 指标]
-* 您了解 https://["Prometheus 查询的语法"^]
-* 您也可以观看以下视频： https://["视频：使用指标创建自定义警报"^]
+* 您了解 https://prometheus.io/docs/querying/basics/["Prometheus 查询的语法"^]
+* 您也可以观看以下视频： https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=b35ac3f2-957b-4e79-b82b-acc5013c98d0["视频：使用指标创建自定义警报"^]
 +
-image::../media/video-screenshot-alert-create-custom.png[链接 -"https://[] Alt-Video ：使用指标创建自定义警报 "]
+image::../media/video-screenshot-alert-create-custom.png[链接 -"https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=b35ac3f2-957b-4e79-b82b-acc5013c98d0"[] Alt-Video ：使用指标创建自定义警报 "]
 
 
 

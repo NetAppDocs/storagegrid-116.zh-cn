@@ -73,6 +73,6 @@ E 系列：更换驱动器抽盒（ 60 个驱动器）
 
 |===
 .相关信息
-http://["NetApp E 系列系统文档站点"^]
+http://mysupport.netapp.com/info/web/ECMP1658252.html["NetApp E 系列系统文档站点"^]
 
 xref:replacing-storage-controller-sg6000.adoc[更换存储控制器]

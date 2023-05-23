@@ -110,4 +110,4 @@ xref:initiate-multipart-upload.adoc[启动多部件上传]
 
 xref:object-versioning.adoc[对象版本控制]
 
-https://["《 Amazon Simple Storage Service 用户指南：使用 S3 对象锁定》"^]
+https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-lock.html["《 Amazon Simple Storage Service 用户指南：使用 S3 对象锁定》"^]

@@ -39,8 +39,8 @@ image::../media/fabricpool_storagegrid_workflow.png[FabricPool StorageGRID 工�
 * 熟悉 StorageGRID 系统软件，包括网格管理器和租户管理器。
 * 查看以下附加资源，其中提供了有关使用和配置 FabricPool 的详细信息：
 +
-** https://["TR-4598 ：《 ONTAP 9.9.1 中的 FabricPool 最佳实践》"^]
-** https://["ONTAP 9 文档"^]
+** https://www.netapp.com/pdf.html?item=/media/17239-tr4598pdf.pdf["TR-4598 ：《 ONTAP 9.9.1 中的 FabricPool 最佳实践》"^]
+** https://docs.netapp.com/us-en/ontap/index.html["ONTAP 9 文档"^]
 
 
 

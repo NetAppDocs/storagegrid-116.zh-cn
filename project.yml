@@ -7,7 +7,7 @@ settings:
     pdf_enabled: true
     harmony_enabled: false
     lipi_enabled: false
-  langs: zh-cn,us-en,ja-jp,ko-kr,zh-tw,de-de,es-es,fr-fr
+  langs: zh-cn,us-en,ja-jp,ko-kr,zh-tw,de-de,es-es,fr-fr,it-it
 sidebar:
   entries:
   - title: StorageGRID 11.6 文档

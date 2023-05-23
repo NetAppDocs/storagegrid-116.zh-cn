@@ -21,7 +21,7 @@ summary: 注册设备硬件具有支持优势。
 +
 image::../media/appliance_label.gif[标签，包括序列号]
 
-. 访问 NetApp 支持站点，网址为 http://["mysupport.netapp.com"^]。
+. 访问 NetApp 支持站点，网址为 http://mysupport.netapp.com/["mysupport.netapp.com"^]。
 . 确定是否需要注册硬件：
 +
 |===

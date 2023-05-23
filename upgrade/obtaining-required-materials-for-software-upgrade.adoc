@@ -95,7 +95,7 @@ xref:../admin/web-browser-requirements.adoc[支持的 Web 浏览器]
 
 
 .步骤
-. 转至 https://["NetApp 下载： StorageGRID"^]。
+. 转至 https://mysupport.netapp.com/site/products/all/details/storagegrid/downloads-tab["NetApp 下载： StorageGRID"^]。
 . 选择用于下载最新版本的按钮，或者从下拉菜单中选择其他版本并选择 * 执行 * 。
 +
 StorageGRID 软件版本采用以下格式： 11._x.y_ 。StorageGRID 修补程序采用以下格式： 11._x.y.z_ 。

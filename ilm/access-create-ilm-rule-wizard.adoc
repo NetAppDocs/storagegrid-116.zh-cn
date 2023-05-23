@@ -25,7 +25,7 @@ NOTE: 如果要为策略创建默认 ILM 规则，请改用此操作步骤 ： x
 * 如果要创建纠删编码副本，则已配置纠删编码配置文件。请参见 xref:creating-erasure-coding-profile.adoc[创建擦除编码配置文件]。
 * 您熟悉 xref:data-protection-options-for-ingest.adoc[用于载入的数据保护选项]。
 * 如果您需要创建一个用于 S3 对象锁定的合规规则，您将熟悉 xref:requirements-for-s3-object-lock.adoc[S3 对象锁定的要求]。
-* 您也可以观看以下视频： https://["视频： StorageGRID ILM 规则：入门"^]。
+* 您也可以观看以下视频： https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=beffbe9b-e95e-4a90-9560-acc5013c93d8["视频： StorageGRID ILM 规则：入门"^]。
 +
 [link=https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=beffbe9b-e95e-4a90-9560-acc5013c93d8]
 image::../media/video-screenshot-ilm-rules.png[视频： StorageGRID ILM 规则：入门]

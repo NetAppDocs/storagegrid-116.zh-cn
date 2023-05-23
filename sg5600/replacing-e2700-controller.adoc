@@ -98,6 +98,6 @@ image::../media/node_rejoin_grid_confirmation.png[设备节点已重新加入网
 
 
 .相关信息
-https://["NetApp E 系列和 EF 系列硬件更换过程"^]
+https://mysupport.netapp.com/info/web/ECMP11751516.html["NetApp E 系列和 EF 系列硬件更换过程"^]
 
-http://["NetApp 文档： E2700 系列"^]
+http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=61765["NetApp 文档： E2700 系列"^]

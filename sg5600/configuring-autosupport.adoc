@@ -63,4 +63,4 @@ AutoSupport 提供以下类型的消息：
 
 
 .相关信息
-http://["NetApp 文档： SANtricity 存储管理器"^]
+http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=61197["NetApp 文档： SANtricity 存储管理器"^]

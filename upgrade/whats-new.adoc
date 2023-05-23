@@ -125,7 +125,7 @@ IMPORTANT: 试验性 S3 控制台尚未经过全面测试，不适用于对象�
 * 通过 AutoSupport 页面（ * 支持 * > * 工具 * > * AutoSupport * ）上的一个新 * 检查软件更新 * 复选框，您可以控制此功能。如果您的系统无法访问 WAN ，则可以禁用对可用软件更新的检查。请参见 xref:../admin/configure-autosupport-grid-manager.adoc#disable-checks-for-software-updates[配置 AutoSupport 并禁用软件更新检查]。
 +
 
-NOTE: 要升级到 StorageGRID 11.6 ，您可以选择使用脚本同时升级和应用修补程序。请参见 https://["NetApp 知识库：如何为 StorageGRID 运行组合式主要升级和修补程序脚本"^]。
+NOTE: 要升级到 StorageGRID 11.6 ，您可以选择使用脚本同时升级和应用修补程序。请参见 https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/StorageGRID/How_to_run_combined_major_upgrade_and_hotfix_script_for_StorageGRID["NetApp 知识库：如何为 StorageGRID 运行组合式主要升级和修补程序脚本"^]。
 
 * 现在，如果需要稍后完成升级，您可以暂停 SANtricity 操作系统升级并跳过升级某些节点。请参见适用于您的存储设备的说明：
 +

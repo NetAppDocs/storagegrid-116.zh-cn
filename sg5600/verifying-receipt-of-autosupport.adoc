@@ -33,7 +33,7 @@ AutoSupport 可以显示以下状态之一：
 技术支持从系统收到每周日志后， AutoSupport 状态将更改为 on 。
 
 .步骤
-. 访问 NetApp 支持站点，网址为 http://["mysupport.netapp.com"^]，然后登录到 Active IQ 门户。
+. 访问 NetApp 支持站点，网址为 http://mysupport.netapp.com/["mysupport.netapp.com"^]，然后登录到 Active IQ 门户。
 . 如果 AutoSupport 状态为 off ，并且您认为不正确，请完成以下操作：
 +
 .. 检查系统配置，确保已打开 AutoSupport 。

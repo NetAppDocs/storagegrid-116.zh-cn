@@ -80,4 +80,4 @@ HO -- IP address for Admin Network -- IP address for Grid Network HO
 .相关信息
 xref:status-indicators-on-e5700sg-controller.adoc[E5700SG 控制器上的状态指示灯]
 
-https://["《 E5700 和 E2800 系统监控指南》"^]
+https://library.netapp.com/ecmdocs/ECMLP2588751/html/frameset.html["《 E5700 和 E2800 系统监控指南》"^]

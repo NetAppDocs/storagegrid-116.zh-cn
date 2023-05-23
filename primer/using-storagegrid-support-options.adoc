@@ -57,7 +57,7 @@ Active IQ 是一名基于云的数字顾问，利用 NetApp 客户群的预测�
 
 如果要使用 NetApp 支持站点上的 Active IQ 信息板和功能，则必须启用 AutoSupport 。
 
-https://["Active IQ 数字顾问文档"^]
+https://docs.netapp.com/us-en/active-iq/index.html["Active IQ 数字顾问文档"^]
 
 
 

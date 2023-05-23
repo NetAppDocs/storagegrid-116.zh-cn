@@ -36,13 +36,13 @@ summary: 通过警报，您可以监控 StorageGRID 系统中的各种事件和�
 
 要了解更多信息，请查看以下视频：
 
-* https://["视频：警报概述"^]
+* https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=2680a74f-070c-41c2-bcd3-acc5013c9cdd["视频：警报概述"^]
 +
 [link=https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=2680a74f-070c-41c2-bcd3-acc5013c9cdd]
 image::../media/video-screenshot-alert-overview.png[视频：警报概述]
 
-* https://["视频：使用指标创建自定义警报"^]
+* https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=b35ac3f2-957b-4e79-b82b-acc5013c98d0["视频：使用指标创建自定义警报"^]
 +
-image::../media/video-screenshot-alert-create-custom.png[链接 -"https://[] Alt-Video ：使用指标创建自定义警报 "]
+image::../media/video-screenshot-alert-create-custom.png[链接 -"https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=b35ac3f2-957b-4e79-b82b-acc5013c98d0"[] Alt-Video ：使用指标创建自定义警报 "]
 
 

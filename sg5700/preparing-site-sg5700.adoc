@@ -71,6 +71,6 @@ SG5760
 
 
 .相关信息
-https://["NetApp Hardware Universe"^]
+https://hwu.netapp.com["NetApp Hardware Universe"^]
 
-https://["NetApp 互操作性表工具"^]
+https://mysupport.netapp.com/matrix["NetApp 互操作性表工具"^]

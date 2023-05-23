@@ -123,4 +123,4 @@ xref:upload-part.adoc[上传部件]
 
 xref:upload-part-copy.adoc[上传部件—复制]
 
-https://["Amazon S3 开发人员指南：使用客户提供的加密密钥（ SSI-C ）使用服务器端加密保护数据"^]
+https://docs.aws.amazon.com/AmazonS3/latest/dev/ServerSideEncryptionCustomerKeys.html["Amazon S3 开发人员指南：使用客户提供的加密密钥（ SSI-C ）使用服务器端加密保护数据"^]

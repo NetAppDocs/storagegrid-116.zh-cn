@@ -226,7 +226,7 @@ xref:../admin/index.adoc[管理 StorageGRID]
 .您需要的内容
 * 您必须已下载并安装 python swiftclient ，即 Swift 命令行客户端。
 +
-https://["SwiftStack ： Python-swiftclient"^]
+https://platform.swiftstack.com/docs/integration/python-swiftclient.html["SwiftStack ： Python-swiftclient"^]
 
 * 您必须在 StorageGRID 系统中具有 Swift 租户帐户。
 

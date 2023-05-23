@@ -92,7 +92,7 @@ NOTE: 如果您需要一次部署多个设备节点，则可以使用 `configure
 
 . 或者，要安装其他版本的 StorageGRID 软件，请执行以下步骤：
 +
-.. 下载安装归档：https://["NetApp下载：StorageGRID 设备"^]。
+.. 下载安装归档：https://mysupport.netapp.com/site/products/all/details/storagegrid-appliance/downloads-tab["NetApp下载：StorageGRID 设备"^]。
 .. 提取归档。
 .. 从 StorageGRID 设备安装程序中，选择 * 高级 * > * 上传 StorageGRID 软件 * 。
 .. 单击 * 删除 * 以删除当前软件包。

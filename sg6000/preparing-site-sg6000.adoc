@@ -117,6 +117,6 @@ IMPORTANT: 在提交安装之前，请确认设备随附的 0.5 米光缆或您�
 
 
 .相关信息
-https://["NetApp Hardware Universe"^]
+https://hwu.netapp.com["NetApp Hardware Universe"^]
 
-https://["NetApp 互操作性表工具"^]
+https://mysupport.netapp.com/matrix["NetApp 互操作性表工具"^]

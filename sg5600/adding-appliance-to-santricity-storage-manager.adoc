@@ -46,4 +46,4 @@ NOTE: 只有一个设备的控制器连接到 SANtricity 存储管理器，因�
 
 
 .相关信息
-http://["NetApp 文档： SANtricity 存储管理器"^]
+http://mysupport.netapp.com/documentation/productlibrary/index.html?productID=61197["NetApp 文档： SANtricity 存储管理器"^]

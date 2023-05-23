@@ -112,4 +112,4 @@ IMPORTANT: 请始终用双手支撑控制器的重量。
 
 
 .相关信息
-http://["NetApp E 系列系统文档站点"^]
+http://mysupport.netapp.com/info/web/ECMP1658252.html["NetApp E 系列系统文档站点"^]

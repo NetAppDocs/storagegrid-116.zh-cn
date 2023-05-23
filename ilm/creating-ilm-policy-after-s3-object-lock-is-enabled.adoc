@@ -23,7 +23,7 @@ NOTE: 如果尚未启用全局 S3 对象锁定设置，请按照的常规说明�
 
 * 您已创建要添加到建议策略的合规和不合规 ILM 规则。您可以根据需要保存建议的策略，创建其他规则，然后编辑建议的策略以添加新规则。请参见xref:example-7-compliant-ilm-policy-for-s3-object-lock.adoc[示例 7 ： S3 对象锁定的兼容 ILM 策略]。
 * 您已拥有 xref:creating-default-ilm-rule.adoc[已创建默认 ILM 规则] 合规策略。
-* 您也可以观看以下视频： https://["视频： StorageGRID ILM 策略"^]
+* 您也可以观看以下视频： https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=c929e94e-353a-4375-b112-acc5013c81c7["视频： StorageGRID ILM 策略"^]
 +
 [link=https://netapp.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=c929e94e-353a-4375-b112-acc5013c81c7]
 image::../media/video-screenshot-ilm-policies.png[视频： StorageGRID ILM 策略]

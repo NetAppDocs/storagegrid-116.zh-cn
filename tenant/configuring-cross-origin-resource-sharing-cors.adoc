@@ -46,7 +46,7 @@ summary: 如果您希望 S3 存储分段中的存储分段和对象可供其他�
 </CORSConfiguration>
 ----
 +
-有关 CORS 配置 XML 的详细信息，请参见 http://["Amazon Web Services （ AWS ）文档：《 Amazon Simple Storage Service 开发人员指南》"^]。
+有关 CORS 配置 XML 的详细信息，请参见 http://docs.aws.amazon.com/AmazonS3/latest/dev/Welcome.html["Amazon Web Services （ AWS ）文档：《 Amazon Simple Storage Service 开发人员指南》"^]。
 
 . 在租户管理器中，选择 * 存储（ S3 ） * > * 分段 * 。
 . 从列表中选择存储分段名称。

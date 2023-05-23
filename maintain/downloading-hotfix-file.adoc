@@ -16,7 +16,7 @@ summary: 您必须先下载此修补程序文件，然后才能应用此修补�
 .步骤
 . 转到 StorageGRID 的 "NetApp 下载 " 页面。
 +
-https://["NetApp 下载： StorageGRID"]
+https://mysupport.netapp.com/site/products/all/details/storagegrid/downloads-tab["NetApp 下载： StorageGRID"]
 
 . 选择 * 可用软件 * 下的向下箭头可查看可供下载的修补程序列表。
 +
