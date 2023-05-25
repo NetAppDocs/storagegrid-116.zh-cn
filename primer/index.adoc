@@ -17,7 +17,7 @@ summary: 使用这些简介可简要了解 StorageGRID 系统，并了解 Storag
 
 == 什么是 StorageGRID ？
 
-NetApp StorageGRID 是一款基于对象的软件定义存储解决方案 ，支持行业标准对象 API ，包括 Amazon Simple Storage Service （ S3 ） API 和 OpenStack Swift API 。
+NetApp®StorageGRID®是一款软件定义的对象存储套件，支持公共、私有和混合多云环境中的各种用例。StorageGRID 为Amazon S3 API提供本机支持、并提供行业领先的创新技术、例如自动化生命周期管理、以便长期经济高效地存储、保护和保留非结构化数据。
 
 StorageGRID 可为大规模非结构化数据提供安全，持久的存储。元数据驱动的集成生命周期管理策略可优化数据在整个生命周期中的位置。将内容放置在合适的位置，合适的时间和合适的存储层上，以降低成本。
 

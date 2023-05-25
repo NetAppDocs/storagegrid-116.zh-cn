@@ -76,10 +76,10 @@ entries:
       url: "/sg6000/verifying-network-connections.html"
     - title: 验证端口级别的网络连接
       url: "/sg6000/verifying-port-level-network-connections.html"
-  - title: 访问和配置 SANtricity System Manager （ SG6000 ）
+  - title: 访问和配置SANtricity系统管理器(SG6000)
     url: "/sg6000/accessing-and-configuring-santricity-system-manager.html"
     entries:
-    - title: 设置和访问 SANtricity 系统管理器
+    - title: 设置并访问 SANtricity 系统管理器
       url: "/sg6000/setting-up-and-accessing-santricity-system-manager.html"
     - title: 在 SANtricity System Manager 中查看硬件状态
       url: "/sg6000/reviewing-hardware-status-in-santricity-system-manager.html"
