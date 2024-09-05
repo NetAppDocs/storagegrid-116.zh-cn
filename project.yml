@@ -12,7 +12,8 @@ sidebar:
   entries:
   - title: StorageGRID 11.6 文档
     url: "/index.html"
-  - section: release-notes
+  - title: 发行说明
+    url: "/release-notes/index.html"
   - title: 入门
     entries:
     - section: primer
