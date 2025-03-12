@@ -2,7 +2,7 @@
 permalink: sg5600/verifying-receipt-of-autosupport.html 
 sidebar: sidebar 
 keywords: storagegrid, sg5600, storage node, storage appliance, verify, verification, verifying, confirm, confirmation, confirming, autosupport, auto-support, status 
-summary: 您应验证技术支持是否正在接收您的 AutoSupport 消息。您可以在 Active IQ 门户上找到系统的 AutoSupport 状态。验证是否收到这些消息可确保技术支持在您需要帮助时获取您的信息。 
+summary: 您应验证技术支持是否正在接收您的 AutoSupport 消息。您可以在数字顾问门户上找到系统的AutoSupport状态。验证是否收到这些消息可确保技术支持在您需要帮助时获取您的信息。 
 ---
 = 验证是否收到 AutoSupport
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: 您应验证技术支持是否正在接收您的 AutoSupport 消息。�
 
 
 [role="lead"]
-您应验证技术支持是否正在接收您的 AutoSupport 消息。您可以在 Active IQ 门户上找到系统的 AutoSupport 状态。验证是否收到这些消息可确保技术支持在您需要帮助时获取您的信息。
+您应验证技术支持是否正在接收您的 AutoSupport 消息。您可以在数字顾问门户上找到系统的AutoSupport状态。验证是否收到这些消息可确保技术支持在您需要帮助时获取您的信息。
 
 .关于此任务
 AutoSupport 可以显示以下状态之一：
@@ -33,7 +33,7 @@ AutoSupport 可以显示以下状态之一：
 技术支持从系统收到每周日志后， AutoSupport 状态将更改为 on 。
 
 .步骤
-. 访问 NetApp 支持站点，网址为 http://mysupport.netapp.com/["mysupport.netapp.com"^]，然后登录到 Active IQ 门户。
+. 访问NetApp支持站点，网址为 http://mysupport.netapp.com/["mysupport.netapp.com"^]，并登录到数字顾问门户。
 . 如果 AutoSupport 状态为 off ，并且您认为不正确，请完成以下操作：
 +
 .. 检查系统配置，确保已打开 AutoSupport 。
