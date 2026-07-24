@@ -15,6 +15,7 @@ summary: 在安装 StorageGRID 设备之前，您应了解可以将哪些网络�
 
 
 
+[[storagegrid-appliance-networks]]
 == StorageGRID 设备网络
 
 将 StorageGRID 设备部署为存储节点时，您可以将其连接到以下网络：
@@ -33,6 +34,7 @@ NOTE: 有关 StorageGRID 网络的详细信息，请参见 _Grid Primer_ 。
 
 
 
+[[storagegrid-appliance-connections]]
 == StorageGRID 设备连接
 
 安装 StorageGRID 设备时，必须将两个控制器彼此连接并连接到所需的网络。此图显示了 SG5660 中的两个控制器，其中 E2700 控制器位于顶部， E5600SG 控制器位于底部。在 SG5612 中， E2700 控制器位于 E5600SG 控制器的左侧。

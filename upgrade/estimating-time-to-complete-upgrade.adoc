@@ -119,6 +119,7 @@ summary: 在计划升级到 StorageGRID 11.6 时，您必须根据升级可能�
 
 
 
+[[example-estimated-time-to-upgrade-to-storagegrid-11-6]]
 == 示例：升级到 StorageGRID 11.6 的估计时间
 
 假设您的系统有 14 个网格节点，其中 8 个是 Linux 节点。

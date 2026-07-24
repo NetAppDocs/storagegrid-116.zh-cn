@@ -17,6 +17,7 @@ summary: 在实施平台服务之前，请查看有关使用这些服务的建�
 
 
 
+[[considerations-for-using-platform-services]]
 == 使用平台服务的注意事项
 
 [cols="1a,3a"]
@@ -61,6 +62,7 @@ ILM 驱动的对象删除
 |===
 
 
+[[considerations-for-using-cloudmirror-replication-service]]
 == 使用 CloudMirror 复制服务的注意事项
 
 [cols="1a,3a"]

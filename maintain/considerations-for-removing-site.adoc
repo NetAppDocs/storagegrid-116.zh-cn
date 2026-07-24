@@ -15,6 +15,7 @@ summary: 在使用站点停用操作步骤 删除站点之前，您必须查看�
 
 
 
+[[what-happens-when-you-decommission-a-site]]
 == 停用站点时会发生什么情况
 
 停用站点时， StorageGRID 会从 StorageGRID 系统中永久删除站点上的所有节点以及站点本身。
@@ -27,6 +28,7 @@ summary: 在使用站点停用操作步骤 删除站点之前，您必须查看�
 
 
 
+[[differences-between-connected-site-and-disconnected-site-decommission-procedures]]
 == 已连接站点与已断开站点停用过程之间的差异
 
 您可以使用站点停用操作步骤 删除所有节点均已连接到 StorageGRID 的站点（称为已连接站点停用），或者删除所有节点均已与 StorageGRID 断开连接的站点（称为已断开连接的站点停用）。开始之前，您必须了解这些过程之间的差异。
@@ -48,6 +50,7 @@ IMPORTANT: 在执行已断开连接的站点停用操作步骤 之前，您必�
 
 
 
+[[general-requirements-for-removing-a-connected-or-a-disconnected-site]]
 == 删除已连接或已断开连接的站点的一般要求
 
 在删除已连接或已断开连接的站点之前，您必须了解以下要求：
@@ -75,6 +78,7 @@ NOTE: 如果您需要在已连接站点停用期间执行另一个维护操作�
 
 
 
+[[requirements-for-information-lifecycle-management-ilm]]
 == 信息生命周期管理（ ILM ）的要求
 
 在删除站点时，您必须更新 ILM 配置。" 取消配置站点 " 向导将指导您完成许多前提条件步骤，以确保满足以下要求：
@@ -93,6 +97,7 @@ xref:../ilm/index.adoc[使用 ILM 管理对象]
 
 
 
+[[considerations-for-the-object-data-at-a-connected-site]]
 == 已连接站点上的对象数据注意事项
 
 如果要执行已连接站点停用，则必须在创建新的 ILM 规则和新的 ILM 策略时确定如何处理站点上的现有对象数据。您可以执行以下任一操作，也可以同时执行这两项操作：
@@ -117,6 +122,7 @@ IMPORTANT: 切勿创建单个副本 ILM 规则来容纳站点的删除。如果 
 
 
 
+[[additional-requirements-for-a-connected-site-decommission]]
 == 已连接站点停用的其他要求
 
 在 StorageGRID 删除已连接站点之前，您必须确保满足以下条件：
@@ -140,6 +146,7 @@ IMPORTANT: 从站点移动或删除对象数据可能需要数天，数周甚至
 
 
 
+[[additional-requirements-for-a-disconnected-site-decommission]]
 == 断开连接的站点停用的其他要求
 
 在 StorageGRID 删除已断开连接的站点之前，您必须确保满足以下条件：
@@ -166,6 +173,7 @@ NOTE: 如果您的 ILM 规则和策略旨在防止单个站点丢失，则其余
 
 
 
+[[considerations-for-consistency-controls-when-you-remove-a-site]]
 == 删除站点时的一致性控制注意事项
 
 S3 存储分段或 Swift 容器的一致性级别可确定 StorageGRID 是否在通知客户端对象载入成功之前将对象元数据完全复制到所有节点和站点。一致性控制可以在对象的可用性与这些对象在不同存储节点和站点之间的一致性之间实现平衡。

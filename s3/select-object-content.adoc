@@ -25,6 +25,7 @@ summary: 您可以使用 S3 SelectObjectContent 请求根据简单的 SQL 语句
 
 
 
+[[request-syntax-example]]
 == 请求语法示例
 
 [source, asciidoc]
@@ -68,6 +69,7 @@ x-amz-expected-bucket-owner: ExpectedBucketOwner
 ----
 
 
+[[sql-query-example]]
 == SQL 查询示例
 
 此查询可从美国人口统计数据中获取状态名称， 2010 年人口， 2015 年估计人口以及变更百分比。文件中不属于状态的记录将被忽略。
@@ -95,6 +97,7 @@ POPESTIMATE2020
 ----
 
 
+[[aws-cli-usage-example]]
 == AWS-CLI 使用示例
 
 [listing]

@@ -15,6 +15,7 @@ summary: 按照以下说明扩展 StorageGRID 系统的容量或功能，而不�
 
 
 
+[[about-these-instructions]]
 == 关于这些说明
 
 以下说明介绍如何执行 StorageGRID 扩展，以便向存储节点，现有站点或整个新站点添加新网格节点。
@@ -23,6 +24,7 @@ summary: 按照以下说明扩展 StorageGRID 系统的容量或功能，而不�
 
 
 
+[[overview-of-expansion-procedure]]
 == 扩展操作步骤 概述
 
 执行扩展的原因决定了您必须添加的每种类型的新节点数以及这些新节点的位置。例如，如果要执行扩展以增加存储容量，添加元数据容量或添加冗余或新功能，则节点要求会有所不同。

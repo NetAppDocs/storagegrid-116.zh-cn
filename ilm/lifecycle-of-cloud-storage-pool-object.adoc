@@ -19,6 +19,7 @@ summary: 在实施云存储池之前，请查看存储在每种类型的云存�
 
 
 
+[[s3-lifecycle-of-a-cloud-storage-pool-object]]
 == S3 ：云存储池对象的生命周期
 
 此图显示了存储在 S3 云存储池中的对象的生命周期阶段。
@@ -71,6 +72,7 @@ NOTE: 如果 StorageGRID 中的存储节点上也存在对象的一个或多个�
 
 
 
+[[azure-lifecycle-of-a-cloud-storage-pool-object]]
 == Azure ： Cloud Storage Pool 对象的生命周期
 
 此图显示了存储在 Azure 云存储池中的对象的生命周期阶段。

@@ -15,6 +15,7 @@ summary: 您必须了解 StorageGRID 升级的影响，以便可以在升级完�
 
 
 
+[[changes-to-group-permissions-and-options]]
 == 对组权限和选项进行的更改
 
 升级到 StorageGRID 11.6 后，可以选择以下更新或新的权限和选项（ * 配置 * > * 访问控制 * > * 管理组 * ）。

@@ -38,12 +38,14 @@ NOTE: 对端点证书所做的更改可能需要长达 15 分钟才能应用于�
 
 
 
+[[create-a-load-balancer-endpoint]]
 == 创建负载平衡器端点
 
 每个负载平衡器端点都指定一个端口，一个客户端类型（ S3 或 Swift ）和一个网络协议（ HTTP 或 HTTPS ）。
 
 
 
+[[access-the-wizard]]
 === 访问向导
 
 . 选择 * 配置 * > * 网络 * > * 负载平衡器端点 * 。
@@ -52,6 +54,7 @@ NOTE: 对端点证书所做的更改可能需要长达 15 分钟才能应用于�
 
 
 
+[[enter-endpoint-details]]
 === 输入端点详细信息
 
 . 输入端点的详细信息。
@@ -106,6 +109,7 @@ Port
 
 
 
+[[select-the-binding-mode]]
 === 选择绑定模式
 
 . 为端点选择绑定模式以控制端点的访问方式。
@@ -158,6 +162,7 @@ image::../media/load_balancer_endpoint_ha_group_vips_binding_mode.png[端点 HA 
 
 
 
+[[attach-certificate]]
 === 附加证书
 
 . 如果要创建 * HTTPS * 端点，请选择要附加到该端点的安全证书类型。
@@ -243,6 +248,7 @@ NOTE: EC 专用密钥必须大于或等于 224 位。RSA 私钥必须大于或�
 
 
 
+[[after-you-finishafter-you-finish]]
 === 完成后的操作
 
 . 如果您使用域名系统（ DNS ），请确保 DNS 包含一条记录，以便将 StorageGRID 完全限定域名与客户端用于建立连接的每个 IP 地址相关联。
@@ -268,6 +274,7 @@ NOTE: EC 专用密钥必须大于或等于 224 位。RSA 私钥必须大于或�
 
 
 
+[[view-and-edit-load-balancer-endpoints]]
 == 查看和编辑负载平衡器端点
 
 您可以查看现有负载平衡器端点的详细信息，包括安全端点的证书元数据。您还可以更改端点的名称或绑定模式，并更新任何关联的证书。
@@ -348,6 +355,7 @@ IMPORTANT: 编辑端点后，您可能需要等待长达 15 分钟，才能将�
 
 
 
+[[remove-load-balancer-endpoints]]
 == 删除负载平衡器端点
 
 您可以使用 * 操作 * 菜单删除一个或多个端点，也可以从详细信息页面中删除单个端点。

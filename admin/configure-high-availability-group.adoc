@@ -29,6 +29,7 @@ summary: 您可以配置高可用性 \ （ HA\ ）组，以提供对管理节点
 
 
 
+[[create-a-high-availability-group]]
 == 创建高可用性组
 
 创建高可用性组时，您可以选择一个或多个接口并按优先级顺序对其进行组织。然后，您将一个或多个 VIP 地址分配给该组。
@@ -37,6 +38,7 @@ summary: 您可以配置高可用性 \ （ HA\ ）组，以提供对管理节点
 
 
 
+[[access-the-wizard]]
 === 访问向导
 
 . 选择 * 配置 * > * 网络 * > * 高可用性组 * 。
@@ -45,6 +47,7 @@ summary: 您可以配置高可用性 \ （ HA\ ）组，以提供对管理节点
 
 
 
+[[enter-details-for-the-ha-group]]
 === 输入 HA 组的详细信息
 
 . 为 HA 组提供一个唯一名称。
@@ -57,6 +60,7 @@ image::../media/ha-group-create-wizard.png[HA 组创建向导]
 
 
 
+[[add-interfaces-to-the-ha-group]]
 === 向 HA 组添加接口
 
 . 选择一个或多个接口以添加到此 HA 组。
@@ -91,6 +95,7 @@ image::../media/vlan_parent_interface_tooltip.png[VLAN 接口工具提示]
 
 
 
+[[determine-the-priority-order]]
 === 确定优先级顺序
 
 . 确定此 HA 组的主接口和任何备份（故障转移）接口。
@@ -115,6 +120,7 @@ IMPORTANT: 如果 HA 组提供对网格管理器的访问权限，则必须选�
 
 
 
+[[enter-ip-addresses]]
 === 输入 IP 地址
 
 . 在 * 子网 CIDR * 字段中，以 CIDR 表示法指定 VIP 子网— IPv4 地址后跟斜杠和子网长度（ 0-32 ）。
@@ -147,12 +153,14 @@ NOTE: 等待长达 15 分钟，以便对 HA 组所做的更改应用于所有节
 
 
 
+[[next-steps]]
 === 后续步骤
 
 如果要使用此 HA 组进行负载平衡，请创建一个负载平衡器端点以确定端口和网络协议并附加任何所需的证书。请参见 xref:configuring-load-balancer-endpoints.adoc[配置负载平衡器端点]。
 
 
 
+[[edit-a-high-availability-group]]
 == 编辑高可用性组
 
 您可以编辑高可用性（ High Availability ， HA ）组以更改其名称和问题描述 ，添加或删除接口，更改优先级顺序或添加或更新虚拟 IP 地址。
@@ -201,6 +209,7 @@ NOTE: 等待长达 15 分钟，以便对 HA 组所做的更改应用于所有节
 
 
 
+[[remove-a-high-availability-group]]
 == 删除高可用性组
 
 您可以一次删除一个或多个高可用性（ HA ）组。但是，如果 HA 组绑定到一个或多个负载平衡器端点，则无法删除该组。

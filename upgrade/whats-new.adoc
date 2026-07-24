@@ -15,6 +15,7 @@ summary: 此版本的 StorageGRID 引入了以下功能。
 
 
 
+[[usability-enhancements]]
 == 可用性增强功能
 
 网格管理器用户界面经过大幅重新设计，可改善用户体验。
@@ -39,6 +40,7 @@ NOTE: 除非功能发生更改，否则 StorageGRID 11.6 文档站点中的屏�
 
 
 
+[[multiple-vlan-interfaces]]
 == 多个 VLAN 接口
 
 现在，您可以为管理节点和网关节点创建虚拟 LAN （ VLAN ）接口。您可以使用 HA 组和负载平衡器端点中的 VLAN 接口隔离客户端流量并对其进行分区，以提高安全性，灵活性和性能。
@@ -55,18 +57,21 @@ NOTE: 除非功能发生更改，否则 StorageGRID 11.6 文档站点中的屏�
 
 
 
+[[can-use-azure-ad-for-identity-federation]]
 == 可以使用 Azure AD 进行身份联合
 
 现在，在为网格管理器或租户管理器配置身份联合时，您可以选择 Azure Active Directory （ Azure AD ）作为身份源。请参见 xref:../admin/using-identity-federation.adoc[使用身份联合]。
 
 
 
+[[can-use-azure-ad-and-pingfederate-for-sso]]
 == 可以使用 Azure AD 和 PingFederate 进行 SSO
 
 现在，在为网格配置单点登录（ SSO ）时，您可以选择 Azure AD 或 PingFederate 作为 SSO 类型。然后，您可以使用沙盒模式配置和测试 Azure AD 企业应用程序或 PingFederate 服务提供商（ SP ）与每个 StorageGRID 管理节点的连接。请参见 xref:../admin/configuring-sso.adoc[配置单点登录]。
 
 
 
+[[centralized-certificate-management]]
 == 集中式证书管理
 
 * 新的 " 证书 " 页面（ * 配置 * > * 安全性 * > * 证书 * ）将有关所有 StorageGRID 安全证书的信息整合到一个位置。您可以从新页面管理 StorageGRID 全局证书，网格 CA 证书和客户端证书，也可以查看有关其他证书的信息，例如用于负载平衡器端点，租户和身份联合的证书。请参见 xref:../admin/using-storagegrid-security-certificates.adoc[关于安全证书]。
@@ -81,6 +86,7 @@ NOTE: 除非功能发生更改，否则 StorageGRID 11.6 文档站点中的屏�
 
 
 
+[[other-grid-manager-enhancements]]
 == 其他 Grid Manager 增强功能
 
 * * 更新高可用性（ HA ）组 * 。现在，向导将指导您完成创建 HA 组的过程。请参见 xref:../admin/configure-high-availability-group.html[配置高可用性组]。
@@ -104,6 +110,7 @@ NOTE: 此全局证书以前用于连接到已弃用的 CLB 服务和存储节点
 
 
 
+[[new-tenant-manager-features]]
 == 新增租户管理器功能
 
 * * 全新的试验性 S3 控制台 * 。新的试验性 S3 控制台可通过租户管理器中的 " 分段 " 页面提供的链接来使 S3 租户用户查看和管理其分段中的对象。请参见 xref:../tenant/use-s3-console.adoc[使用试验性 S3 控制台]。
@@ -118,6 +125,7 @@ IMPORTANT: 试验性 S3 控制台尚未经过全面测试，不适用于对象�
 
 
 
+[[new-upgrade-and-hotfix-process]]
 == 新的升级和修复过程
 
 * 重新设计了 * StorageGRID Upgrade* 页面（ * 维护 * > * 系统 * > * 软件更新 * > * StorageGRID upgrade* ）。
@@ -138,6 +146,7 @@ NOTE: 要升级到 StorageGRID 11.6 ，您可以选择使用脚本同时升级�
 
 
 
+[[external-syslog-server-support]]
 == 外部系统日志服务器支持
 
 * 现在，如果要远程保存和管理审核消息以及部分 StorageGRID 日志（ * 配置 * > * 监控 * > * 审核和系统日志服务器 * ），则可以配置外部系统日志服务器。配置外部系统日志服务器后，您可以在本地，远程或同时保存审核消息和某些日志文件。通过配置审核信息的目标，您可以减少管理节点上的网络流量。请参见 xref:../monitor/configure-audit-messages.adoc[配置审核消息和日志目标]。
@@ -146,6 +155,7 @@ NOTE: 要升级到 StorageGRID 11.6 ，您可以选择使用脚本同时升级�
 
 
 
+[[s3-select]]
 == S3 Select
 
 现在，您可以选择允许 S3 租户对单个对象发出问题描述 SelectObjectContent 请求。S3 Select 可以高效地搜索大量数据，而无需部署数据库和相关资源即可启用搜索。它还可以降低检索数据的成本和延迟。请参见 xref:../admin/manage-s3-select-for-tenant-accounts.adoc[管理租户帐户的 S3 Select] 和 xref:../s3/use-s3-select.adoc[使用 S3 Select]。
@@ -154,24 +164,28 @@ NOTE: 要升级到 StorageGRID 11.6 ，您可以选择使用脚本同时升级�
 
 
 
+[[s3-object-lock-default-bucket-retention-period]]
 == S3 对象锁定默认存储分段保留期限
 
 现在，在使用 S3 对象锁定时，您可以为存储分段指定默认保留期限。默认保留期限适用场景 添加到存储分段中但没有自己保留设置的任何对象。请参见 xref:../s3/using-s3-object-lock.adoc[使用 S3 对象锁定]。
 
 
 
+[[google-cloud-platform-support]]
 == Google Cloud Platform 支持
 
 现在，您可以使用 Google Cloud Platform （ GCP ）作为云存储池和 CloudMirror 平台服务的端点。请参见 xref:../tenant/specifying-urn-for-platform-services-endpoint.adoc[指定平台服务端点的 URN] 和 xref:../ilm/creating-cloud-storage-pool.adoc[创建云存储池]。
 
 
 
+[[aws-c2s-support]]
 == AWS C2S 支持
 
 现在，您可以使用 AWS Commercial Cloud Services （ C2S ）端点进行 CloudMirror 复制。请参见 xref:../tenant/creating-platform-services-endpoint.adoc[创建平台服务端点]。
 
 
 
+[[other-s3-changes]]
 == 其他 S3 更改
 
 * * 获取多部分对象的对象和头对象支持 * 。以前， StorageGRID 在 GET 对象或 HEAD 对象请求中不支持 `partnumber` request 参数。现在，您可以通过问题描述 GET 和 HEAD 请求检索多部件对象的特定部分。GET 和 HEAD 对象还支持 `x-AMZ-MP-parts-count` 响应元素，以指示对象包含的部件数。
@@ -183,6 +197,7 @@ xref:../s3/index.adoc[使用 S3]
 
 
 
+[[performance-enhancements]]
 == 性能增强
 
 * * 存储节点可支持 20 亿个对象 * 。存储节点上的底层目录结构经过优化，可提高可扩展性和性能。现在，存储节点可以使用额外的子目录来存储多达 20 亿个复制对象，并最大限度地提高性能。升级到 StorageGRID 11.6 时，节点子目录会进行修改，但现有对象不会重新分布到新目录中。
@@ -216,6 +231,7 @@ NOTE: 如果您尚未执行此操作，并且存储节点在卷 0 上具有足�
 
 
 
+[[enhancements-to-maintenance-procedures-and-support-tools]]
 == 维护过程和支持工具的增强功能
 
 * * 可以更改节点控制台密码 * 。现在，您可以使用网格管理器更改节点控制台密码（ * 配置 * > * 访问控制 * > * 网格密码 * ）。这些密码用于通过 SSH 以 "admin" 身份登录到节点，或者通过 VM/ 物理控制台连接登录到 root 用户。请参见 xref:../admin/change-node-console-password.adoc[更改节点控制台密码]。
@@ -241,6 +257,7 @@ IMPORTANT: 在 StorageGRID 11.6 中，可以使用 `show -replicate-repair-statu
 
 
 
+[[installation-enhancements]]
 == 安装增强功能
 
 * 现在，您可以在安装 Red Hat Enterprise Linux 期间选择使用 Podman 作为容器。以前， StorageGRID 仅支持 Docker 容器。
@@ -259,6 +276,7 @@ IMPORTANT: 在 StorageGRID 11.6 中，可以使用 `show -replicate-repair-statu
 
 
 
+[[new-alerts]]
 == 新警报
 
 为 StorageGRID 11.6 添加了以下新警报：
@@ -287,6 +305,7 @@ IMPORTANT: 在 StorageGRID 11.6 中，可以使用 `show -replicate-repair-statu
 
 
 
+[[changes-to-audit-messages]]
 == 审核消息的更改
 
 * 已向 ORLM ：对象规则已满足审核消息添加一个新的 * BUID* 字段。"BUID* 字段显示用于内部操作的存储分段 ID 。只有当消息状态为 PRGD 时，才会显示新字段。
@@ -304,6 +323,7 @@ IMPORTANT: 在 StorageGRID 11.6 中，可以使用 `show -replicate-repair-statu
 
 
 
+[[storagegrid-documentation-changes]]
 == StorageGRID 文档更改
 
 StorageGRID 11.6 文档站点的外观已经过修改，现在使用 GitHub 作为底层平台。

@@ -15,6 +15,7 @@ summary: 您必须了解 StorageGRID 系统在升级期间会受到什么影响�
 
 
 
+[[storagegrid-upgrades-are-non-disruptive]]
 == StorageGRID 升级不会造成系统中断
 
 StorageGRID 系统可以在整个升级过程中从客户端应用程序载入和检索数据。在升级期间，网格节点会一次关闭一个，因此，目前并非所有网格节点都不可用。
@@ -29,6 +30,7 @@ StorageGRID 系统可以在整个升级过程中从客户端应用程序载入�
 
 
 
+[[appliance-firmware-is-upgraded]]
 == 设备固件已升级
 
 在 StorageGRID 11.6 升级期间：
@@ -40,6 +42,7 @@ StorageGRID 系统可以在整个升级过程中从客户端应用程序载入�
 
 
 
+[[alerts-might-be-triggered]]
 == 可能会触发警报
 
 服务启动和停止以及 StorageGRID 系统作为混合版本环境运行时（某些网格节点运行早期版本，而其他网格节点已升级到更高版本），可能会触发警报。升级完成后，可能会触发其他警报。
@@ -54,12 +57,14 @@ StorageGRID 系统可以在整个升级过程中从客户端应用程序载入�
 
 
 
+[[many-snmp-notifications-are-generated]]
 == 系统会生成许多 SNMP 通知
 
 请注意，在升级期间停止并重新启动网格节点时，可能会生成大量 SNMP 通知。要避免出现过多通知，请在开始升级之前取消选中 * 启用 SNMP 代理通知 * 复选框（ * 配置 * > * 监控 * > * SNMP 代理 * ）以禁用 SNMP 通知。然后，在升级完成后重新启用通知。
 
 
 
+[[configuration-changes-are-restricted]]
 == 配置更改受限
 
 
@@ -83,6 +88,7 @@ NOTE: 受限配置更改的列表可能会随版本而异。升级到另一个 S
 
 
 
+[[you-cannot-view-bucket-details-or-manage-buckets-from-the-tenant-manager]]
 == 您不能从租户管理器查看存储分段详细信息或管理存储分段
 
 在升级到 StorageGRID 11.6 期间（即，当系统作为混合版本环境运行时），您无法使用租户管理器查看存储分段详细信息或管理存储分段。租户管理器中的 " 分段 " 页面显示以下错误之一：

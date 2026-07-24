@@ -15,12 +15,14 @@ summary: 在 Swift REST API 中添加了特定于 StorageGRID 系统的操作。
 
 
 
+[[get-container-consistency-request]]
 == 获取容器一致性请求
 
 一致性级别可在对象的可用性与这些对象在不同存储节点和站点之间的一致性之间实现平衡。使用获取容器一致性请求，您可以确定应用于特定容器的一致性级别。
 
 
 
+[[request]]
 === 请求
 
 |===
@@ -49,6 +51,7 @@ summary: 在 Swift REST API 中添加了特定于 StorageGRID 系统的操作。
 |===
 
 
+[[request-example]]
 === 请求示例
 
 [listing]
@@ -60,6 +63,7 @@ Host: test.com
 ----
 
 
+[[response]]
 === 响应
 
 |===
@@ -112,6 +116,7 @@ Host: test.com
 |===
 
 
+[[response-example]]
 === 响应示例
 
 [listing]
@@ -128,12 +133,14 @@ xref:../tenant/index.adoc[使用租户帐户]
 
 
 
+[[put-container-consistency-request]]
 == 提交容器一致性请求
 
 使用 PUT 容器一致性请求可以指定要应用于对容器执行的操作的一致性级别。默认情况下，使用 `read-after-new-write` 一致性级别创建新容器。
 
 
 
+[[request]]
 === 请求
 
 |===
@@ -172,6 +179,7 @@ xref:../tenant/index.adoc[使用租户帐户]
 |===
 
 
+[[how-consistency-controls-and-ilm-rules-interact-to-affect-data-protection]]
 === 一致性控制和 ILM 规则如何交互以影响数据保护
 
 您选择的一致性控制和 ILM 规则都会影响对象的保护方式。这些设置可以进行交互。
@@ -190,6 +198,7 @@ NOTE: 在为 ILM 规则选择载入行为之前，请阅读有关通过信息生
 
 
 
+[[example-of-how-consistency-control-and-ilm-rule-can-interact]]
 === 一致性控制和 ILM 规则如何交互的示例
 
 假设您有一个双站点网格，其中包含以下 ILM 规则和以下一致性级别设置：
@@ -208,6 +217,7 @@ NOTE: 在为 ILM 规则选择载入行为之前，请阅读有关通过信息生
 
 
 
+[[request-example]]
 === 请求示例
 
 [listing]
@@ -219,6 +229,7 @@ Host: test.com
 ----
 
 
+[[response]]
 === 响应
 
 |===
@@ -254,6 +265,7 @@ Host: test.com
 |===
 
 
+[[response-example]]
 === 响应示例
 
 [listing]

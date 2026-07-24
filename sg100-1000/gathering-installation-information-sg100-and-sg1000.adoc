@@ -15,6 +15,7 @@ summary: 在安装和配置 StorageGRID 设备时，您必须做出决策并收�
 
 
 
+[[administration-and-maintenance-ports]]
 == 管理和维护端口
 
 StorageGRID 管理网络是一个可选网络，用于系统管理和维护。此设备使用设备上的以下 1-GbE 管理端口连接到管理网络。
@@ -104,6 +105,7 @@ DHCP 为管理网络端口分配的 IP 地址（如果在启动后可用）
 |===
 
 
+[[networking-ports]]
 == 网络端口
 
 设备上的四个网络端口连接到 StorageGRID 网格网络和可选客户端网络。
@@ -173,6 +175,7 @@ DHCP 为管理网络端口分配的 IP 地址（如果在启动后可用）
 |===
 
 
+[[grid-network-ports]]
 == 网格网络端口
 
 适用于 StorageGRID 的网格网络是一个必需的网络，用于所有内部 StorageGRID 流量。此设备使用四个网络端口连接到网格网络。
@@ -245,6 +248,7 @@ DHCP 为网格网络分配的 IP 地址（如果在启动后可用）
 |===
 
 
+[[client-network-ports]]
 == 客户端网络端口
 
 适用于 StorageGRID 的客户端网络是一个可选网络，通常用于提供对网格的客户端协议访问。此设备使用四个网络端口连接到客户端网络。
@@ -316,6 +320,7 @@ DHCP 为客户端网络分配的 IP 地址（如果在启动后可用）
 |===
 
 
+[[bmc-management-network-ports]]
 == BMC 管理网络端口
 
 您可以使用图中圈出的 1-GbE 管理端口访问服务设备上的 BMC 接口。此端口支持使用智能平台管理接口（ Intelligent Platform Management Interface ， IPMI ）标准通过以太网远程管理控制器硬件。

@@ -17,6 +17,7 @@ summary: 存储节点可管理和存储对象数据和元数据。每个 Storage
 
 
 
+[[what-is-the-adc-service]]
 == 什么是模数转换器服务？
 
 管理域控制器（ ADC-A ）服务对网格节点及其彼此连接进行身份验证。一个站点的前三个存储节点中的每个存储节点都托管了此类模块转换服务。
@@ -31,12 +32,14 @@ summary: 存储节点可管理和存储对象数据和元数据。每个 Storage
 
 
 
+[[what-is-the-dds-service]]
 == 什么是 DDS 服务？
 
 分布式数据存储（ DDS ）服务由存储节点托管，它与 Cassandra 数据库建立接口，以便对存储在 StorageGRID 系统中的对象元数据执行后台任务。
 
 
 
+[[object-counts]]
 === 对象计数
 
 DDS 服务可跟踪载入到 StorageGRID 系统中的对象总数，以及通过每个系统支持的接口（ S3 或 Swift ）载入的对象总数。
@@ -47,6 +50,7 @@ image::../media/dds_object_counts_queries.png[DDS 概述页面]
 
 
 
+[[queries]]
 === 查询
 
 您可以确定通过特定 DDS 服务对元数据存储运行查询所需的平均时间，成功查询的总数以及因问题描述 超时而失败的查询总数。
@@ -59,12 +63,14 @@ image::../media/dds_object_counts_queries.png[DDS 概述页面]
 
 
 
+[[consistency-guarantees-and-controls]]
 === 一致性保证和控制
 
 StorageGRID 保证新创建的对象的写入后读一致性。成功完成 PUT 操作后的任何 GET 操作都将能够读取新写入的数据。现有对象的覆盖，元数据更新和删除操作最终保持一致。
 
 
 
+[[what-is-the-ldr-service]]
 == 什么是 LDR 服务？
 
 本地分发路由器（ LDR ）服务由每个存储节点托管，负责处理 StorageGRID 系统的内容传输。内容传输包含许多任务，包括数据存储，路由和请求处理。LDR 服务通过处理数据传输负载和数据流量功能来完成 StorageGRID 系统的大部分繁重工作。
@@ -84,6 +90,7 @@ LDR 服务可处理以下任务：
 
 
 
+[[queries]]
 === 查询
 
 LDR 查询包括在检索和归档操作期间查询对象位置。您可以确定运行查询所需的平均时间，成功查询的总数以及因超时问题描述 而失败的查询总数。
@@ -96,12 +103,14 @@ LDR 查询包括在检索和归档操作期间查询对象位置。您可以确�
 
 
 
+[[ilm-activity]]
 === ILM 活动
 
 通过信息生命周期管理（ ILM ）指标，您可以监控对象在实施 ILM 时的评估速率。您可以在信息板或 * 节点 * > * 存储节点 _* > * ILM * 上查看这些指标。
 
 
 
+[[object-stores]]
 === 对象存储
 
 LDR 服务的底层数据存储分为固定数量的对象存储（也称为存储卷）。每个对象存储都是一个单独的挂载点。
@@ -116,6 +125,7 @@ image::../media/object_stores.png[对象存储]
 
 
 
+[[metadata-protection]]
 === 元数据保护
 
 对象元数据是指与对象或对象的问题描述 相关的信息，例如对象修改时间或存储位置。StorageGRID 将对象元数据存储在与 LDR 服务连接的 Cassandra 数据库中。

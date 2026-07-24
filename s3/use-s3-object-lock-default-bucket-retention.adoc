@@ -25,6 +25,7 @@ summary: 如果存储分段启用了 S3 对象锁定，则可以指定应用于�
 
 
 
+[[get-object-lock-configuration]]
 == 获取对象锁定配置
 
 通过获取对象锁定配置请求，您可以确定是否为存储分段启用了对象锁定，如果已启用，请查看是否为存储分段配置了默认保留模式和保留期限。
@@ -35,6 +36,7 @@ summary: 如果存储分段启用了 S3 对象锁定，则可以指定应用于�
 
 
 
+[[request-example]]
 === 请求示例
 
 [listing, subs="specialcharacters,quotes"]
@@ -49,6 +51,7 @@ Authorization: _authorization string_
 ----
 
 
+[[response-example]]
 === 响应示例
 
 [listing]
@@ -73,6 +76,7 @@ Server: AmazonS3
 ----
 
 
+[[put-object-lock-configuration]]
 == PUT 对象锁定配置
 
 使用 PUT 对象锁定配置请求，您可以修改已启用对象锁定的存储分段的默认保留模式和默认保留期限。您还可以删除先前配置的默认保留设置。
@@ -87,6 +91,7 @@ Server: AmazonS3
 
 
 
+[[request-example]]
 === 请求示例
 
 [listing, subs="specialcharacters,quotes"]

@@ -23,6 +23,7 @@ StorageGRID 使用两种类型的安全证书：
 
 StorageGRID 用作某些连接的服务器（例如负载平衡器端点）或其他连接的客户端（例如 CloudMirror 复制服务）。
 
+[[gridca_details]]
 * 默认网格 CA 证书 *
 
 StorageGRID 包含一个内置证书颁发机构（ Certificate Authority ， CA ），可在系统安装期间生成内部网格 CA 证书。默认情况下，使用网格 CA 证书保护内部 StorageGRID 流量。外部证书颁发机构（ CA ）可以对完全符合组织信息安全策略的自定义证书进行问题描述 。虽然您可以在非生产环境中使用网格 CA 证书，但在生产环境中，最佳做法是使用由外部证书颁发机构签名的自定义证书。此外，还支持无证书的不安全连接，但不建议这样做。
@@ -39,6 +40,7 @@ NOTE: StorageGRID 还包括在所有网格上相同的操作系统 CA 证书。�
 
 
 
+[[access-security-certificates]]
 == 访问安全证书
 
 您可以在一个位置访问有关所有 StorageGRID 证书的信息，以及指向每个证书的配置工作流的链接。
@@ -182,19 +184,22 @@ NOTE: 只有在拥有相应权限的情况下，才能查看和访问其他证�
 * xref:../ilm/creating-cloud-storage-pool.adoc[为 S3 ， C2S S3 或 Azure 指定云存储池证书]
 * xref:creating-relying-party-trusts-in-ad-fs.adoc#create-a-relying-party-trust-manually[手动为依赖方信任指定 SSO 证书]
 * xref:../monitor/email-alert-notifications.adoc[指定警报电子邮件通知的证书]
-* xref:../monitor/configuring-syslog-server.adoc#attach-certificate.adoc[指定外部系统日志服务器证书]
+* xref:../monitor/configuring-syslog-server.adoc#enter-syslog-info.adoc[指定外部系统日志服务器证书]
 
 
 --
 ====
 
 
+[[security-certificate-details]]
 == 安全证书详细信息
 
 下面介绍了每种类型的安全证书，并提供了指向包含实施说明的文章的链接。
 
 
 
+[[management-interface-certificate]]
+[[adminclientcert_details]]
 === 管理接口证书
 
 [cols="1a,1a,1a,1a"]
@@ -218,6 +223,7 @@ xref:configuring-custom-server-certificate-for-grid-manager-tenant-manager.adoc[
 |===
 
 
+[[s3-and-swift-api-certificate]]
 === S3 和 Swift API 证书
 
 [cols="1a,1a,1a,1a"]
@@ -237,12 +243,14 @@ xref:configuring-custom-server-certificate-for-storage-node-or-clb.adoc[配置 S
 |===
 
 
+[[grid-ca-certificate]]
 === 网格 CA 证书
 
 请参见 <<gridca_details,默认网格 CA 证书问题描述>>。
 
 
 
+[[administrator-client-certificate]]
 === 管理员客户端证书
 
 [cols="1a,1a,1a,1a"]
@@ -266,6 +274,7 @@ xref:configuring-administrator-client-certificates.adoc[配置客户端证书]
 |===
 
 
+[[load-balancer-endpoint-certificate]]
 === 负载平衡器端点证书
 
 [cols="1a,1a,1a,1a"]
@@ -291,6 +300,7 @@ xref:configuring-administrator-client-certificates.adoc[配置客户端证书]
 |===
 
 
+[[identity-federation-certificate]]
 === 身份联合证书
 
 [cols="1a,1a,1a,1a"]
@@ -310,6 +320,7 @@ xref:using-identity-federation.adoc[使用身份联合]
 |===
 
 
+[[platform-services-endpoint-certificate]]
 === 平台服务端点证书
 
 [cols="1a,1a,1a,1a"]
@@ -331,6 +342,7 @@ xref:../tenant/editing-platform-services-endpoint.adoc[编辑平台服务端点]
 |===
 
 
+[[cloud-storage-pool-endpoint-certificate]]
 === 云存储池端点证书
 
 [cols="1a,1a,1a,1a"]
@@ -350,6 +362,7 @@ xref:../ilm/creating-cloud-storage-pool.adoc[创建云存储池]
 |===
 
 
+[[key-management-server-kms-certificate]]
 === 密钥管理服务器（ KMS ）证书
 
 [cols="1a,1a,1a,1a"]
@@ -369,6 +382,7 @@ xref:kms-adding.adoc[添加密钥管理服务器（ KMS ）]
 |===
 
 
+[[single-sign-on-sso-certificate]]
 === 单点登录（ SSO ）证书
 
 [cols="1a,1a,1a,1a"]
@@ -388,6 +402,7 @@ xref:configuring-sso.adoc[配置单点登录]
 |===
 
 
+[[email-alert-notification-certificate]]
 === 通过电子邮件发送警报通知证书
 
 [cols="1a,1a,1a,1a"]
@@ -411,6 +426,7 @@ xref:../monitor/email-alert-notifications.adoc[为警报设置电子邮件通知
 |===
 
 
+[[external-syslog-server-certificate]]
 === 外部系统日志服务器证书
 
 [cols="1a,1a,1a,1a"]
@@ -432,10 +448,12 @@ xref:../monitor/configuring-syslog-server.adoc[配置外部系统日志服务器
 |===
 
 
+[[certificate-examples]]
 == 证书示例
 
 
 
+[[example-1-load-balancer-service]]
 === 示例 1 ：负载平衡器服务
 
 在此示例中， StorageGRID 充当服务器。
@@ -450,6 +468,7 @@ xref:../monitor/configuring-syslog-server.adoc[配置外部系统日志服务器
 
 
 
+[[example-2-external-key-management-server-kms]]
 === 示例 2 ：外部密钥管理服务器（ KMS ）
 
 在此示例中， StorageGRID 充当客户端。

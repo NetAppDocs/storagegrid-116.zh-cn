@@ -15,6 +15,7 @@ summary: 每个型号的 StorageGRID SG6000 设备都在 1U 机箱中包含一�
 
 
 
+[[all-appliances-sg6000-cn-compute-controller]]
 == 所有设备： SG6000-CN 计算控制器
 
 * 为设备提供计算资源。
@@ -110,6 +111,7 @@ BMC 管理端口
 |===
 
 
+[[sg6060-and-sg6060x-e2800-series-storage-controllers]]
 == SG6060和SG6060X：E2800系列存储控制器
 
 * 两个控制器，用于提供故障转移支持。
@@ -278,6 +280,7 @@ image::../media/e2800B_controller_with_callouts.gif[E2800B控制器上的连接�
 |===
 
 
+[[sgf6024-ef570-storage-controllers]]
 == SGF6024 ： EF570 存储控制器
 
 * 两个控制器，用于提供故障转移支持。
@@ -344,6 +347,7 @@ image::../media/ef570_rear_connectors.gif[EF570 背面连接器]
 |===
 
 
+[[sg6060-and-sg6060x-inputoutput-modules-for-optional-expansion-shelves]]
 == SG6060和SG6060X：用于可选扩展架的输入/输出模块
 
 扩展架包含两个输入 / 输出模块（ IOM ），这些模块连接到存储控制器或其他扩展架。

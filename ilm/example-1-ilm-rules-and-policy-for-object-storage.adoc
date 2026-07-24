@@ -18,6 +18,7 @@ CAUTION: 以下 ILM 规则和策略仅为示例。配置 ILM 规则的方法有�
 
 
 
+[[ilm-rule-1-for-example-1-copy-object-data-to-two-data-centers]]
 == ILM 规则 1 示例 1 ：将对象数据复制到两个数据中心
 
 此示例 ILM 规则会将对象数据复制到两个数据中心中的存储池。
@@ -58,6 +59,7 @@ image::../media/ilm_rule_two_copies_two_data_centers.png[ILM 规则 1 示例 1 �
 
 
 
+[[ilm-rule-2-for-example-1-erasure-coding-profile-with-bucket-matching]]
 == ILM 规则 2 示例 1 ：使用存储分段匹配的纠删编码配置文件
 
 此示例 ILM 规则使用擦除编码配置文件和 S3 存储分段来确定对象的存储位置和存储时间。
@@ -100,6 +102,7 @@ image:../media/ilm_rule_ec_for_s3_bucket_finance_records.png["ILM 规则 2 示�
 
 
 
+[[ilm-policy-for-example-1]]
 == ILM 策略示例 1
 
 您可以通过 StorageGRID 系统设计复杂而复杂的 ILM 策略；但实际上，大多数 ILM 策略都很简单。

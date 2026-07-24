@@ -19,6 +19,7 @@ summary: 使用获取存储分段一致性请求，您可以确定应用于特�
 
 
 
+[[request-example]]
 == 请求示例
 
 [source, subs="specialcharacters,quotes"]
@@ -30,6 +31,7 @@ Host: _host_
 ----
 
 
+[[response]]
 == 响应
 
 在响应 XML 中， ` < 一致性 >` 将返回以下值之一：
@@ -76,6 +78,7 @@ Host: _host_
 |===
 
 
+[[response-example]]
 == 响应示例
 
 [listing]

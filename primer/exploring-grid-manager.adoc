@@ -19,6 +19,7 @@ summary: 网格管理器是一个基于浏览器的图形界面，可用于配�
 
 
 
+[[grid-manager-dashboard]]
 == 网格管理器信息板
 
 首次登录到网格管理器时，您可以使用信息板一目了然地监控系统活动。
@@ -35,12 +36,14 @@ image::../media/grid_manager_dashboard.png[网格管理器中的信息板]
 
 
 
+[[search-field]]
 == 搜索字段
 
 标题栏中的 * 搜索 * 字段可用于快速导航到网格管理器中的特定页面。例如，您可以输入 * 公里 * 以访问密钥管理服务器（ KMS ）页面。您可以使用 * 搜索 * 在网格管理器的边栏以及配置，维护和支持菜单中查找条目。
 
 
 
+[[alerts-menu]]
 == 警报菜单
 
 警报菜单提供了一个易于使用的界面，用于检测，评估和解决 StorageGRID 操作期间可能发生的问题。
@@ -63,6 +66,7 @@ image::../media/alerts_menu.png[警报菜单]
 
 
 
+[[nodes-page]]
 == 节点页面
 
 节点页面显示有关整个网格，网格中的每个站点以及站点上的每个节点的信息。
@@ -78,6 +82,7 @@ image::../media/nodes_menu.png[节点页面主页]
 
 
 
+[[tenants-page]]
 == 租户页面
 
 通过租户页面，您可以为 StorageGRID 系统创建和监控存储租户帐户。您必须至少创建一个租户帐户，以指定谁可以存储和检索对象以及这些对象可以使用哪些功能。
@@ -94,6 +99,7 @@ image::../media/tenants_menu_and_page.png[租户菜单和页面]
 
 
 
+[[ilm-menu]]
 == ILM 菜单
 
 您可以通过 ILM 菜单配置信息生命周期管理（ ILM ）规则和策略，以控制数据的持久性和可用性。您还可以输入对象标识符以查看该对象的元数据。
@@ -107,6 +113,7 @@ image::../media/ilm_menu_and_page.png[ILM 菜单和页面]
 
 
 
+[[configuration-menu]]
 == 配置菜单
 
 通过配置菜单，您可以指定网络设置，安全设置，系统设置，监控选项和访问控制选项。
@@ -125,6 +132,7 @@ image::../media/configuration_menu.png[配置菜单]
 
 
 
+[[maintenance-menu]]
 == 维护菜单
 
 通过维护菜单，您可以执行维护任务，系统维护和网络维护。
@@ -133,6 +141,7 @@ image::../media/maintenance_menu.png[维护菜单和页面]
 
 
 
+[[tasks]]
 === 任务
 
 维护任务包括：
@@ -145,6 +154,7 @@ image::../media/maintenance_menu.png[维护菜单和页面]
 
 
 
+[[system]]
 === 系统
 
 您可以执行的系统维护任务包括：
@@ -156,6 +166,7 @@ image::../media/maintenance_menu.png[维护菜单和页面]
 
 
 
+[[network]]
 === 网络
 
 您可以执行的网络维护任务包括：
@@ -178,6 +189,7 @@ image::../media/maintenance_menu.png[维护菜单和页面]
 
 
 
+[[support-menu]]
 == 支持菜单
 
 " 支持 " 菜单提供了一些选项，可帮助技术支持分析您的系统并对其进行故障排除。支持菜单分为两部分：工具和警报（旧版）。
@@ -186,6 +198,7 @@ image::../media/support_menu.png[支持菜单]
 
 
 
+[[tools]]
 === 工具
 
 从支持菜单的工具部分，您可以：
@@ -203,6 +216,7 @@ IMPORTANT: * 指标 * 选项中提供的工具供技术支持使用。这些工�
 
 
 
+[[alarms-legacy]]
 === 警报（原有）
 
 从支持菜单的警报（旧）部分，您可以查看当前，历史和全局警报，设置自定义事件以及为旧警报和 AutoSupport 设置电子邮件通知。
@@ -220,6 +234,7 @@ NOTE: 虽然传统警报系统仍受支持，但警报系统具有显著优势�
 
 
 
+[[help-menu]]
 == 帮助菜单
 
 通过 "Help" 选项，您可以访问当前版本的 StorageGRID 文档中心以及 API 文档。您还可以确定当前安装的 StorageGRID 版本。

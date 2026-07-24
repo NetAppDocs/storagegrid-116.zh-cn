@@ -11981,7 +11981,6 @@
   <block id="944b71402cd24845ff39c563c96ca044" category="paragraph">StorageGRID 负载平衡器服务安装在所有管理节点和所有网关节点上，并提供第 7 层负载平衡。它会终止客户端请求，检查请求并与存储节点建立新的安全连接。</block>
   <block id="8d2a3eedf773a72befa932aed8d7f9ac" category="paragraph">将客户端流量转发到存储节点时，每个节点上的负载平衡器服务会独立运行。通过加权过程，负载平衡器服务会将更多请求路由到 CPU 可用性更高的存储节点。</block>
   <block id="8093bef8d3bd5322de90d79561037395" category="inline-link">TR-4626 ： StorageGRID 第三方和全局负载平衡器</block>
-  <block id="a2c2070c2f3795327ecb2d6b0b1e4888" category="paragraph">虽然建议使用 StorageGRID 负载平衡器服务来平衡负载，但您可能希望集成第三方负载平衡器。有关信息，请联系您的 NetApp 客户代表或参阅<block ref="ec679a3314262150343eb4fab3671478" category="inline-link-rx"></block>。</block>
   <block id="7a70566cdfe11f85775164ef0744c103" category="admonition">网关节点上的单独连接负载平衡器（ CLB ）服务已弃用，不再建议用于 FabricPool 。</block>
   <block id="ffc35660cb01781fda0d8ca8311aa666" category="section-title">StorageGRID 负载平衡最佳实践</block>
   <block id="4cdd2e050ab7da0c29f3507feee7e60a" category="paragraph">作为一般最佳实践， StorageGRID 系统中的每个站点都应包含两个或更多具有负载平衡器服务的节点。例如，一个站点可能包含两个网关节点，或者同时包含一个管理节点和一个网关节点。无论您使用的是 SG100 或 SG1000 服务设备，裸机节点还是基于虚拟机（ VM ）的节点，确保每个负载平衡节点都有足够的网络，硬件或虚拟化基础架构。</block>
@@ -15819,7 +15818,6 @@
   <block id="c942cd2c766731340f77cd9fd93a13f3" category="list-text">* 保留至日期 * ：如果对象版本的保留至日期为未来日期，则可以检索该对象，但无法修改或删除它。可以根据需要增加对象的保留截止日期，但不能缩短此日期。</block>
   <block id="25ebc69b339d924e907446311a845053" category="list-text">* 合法保留 * ：对对象版本应用合法保留时，会立即锁定该对象。例如，您可能需要对与调查或法律争议相关的对象进行法律保留。合法保留没有到期日期，但在明确删除之前始终有效。合法保留与保留日期无关。</block>
   <block id="a090536446dd7f323460ddbd49c38c8d" category="inline-xref-macro">指定存储分段的默认保留模式和默认保留期限</block>
-  <block id="6c31d6cf421f9000aba3e23b6a8f6c93" category="paragraph">您也可以 <block ref="e2c421d9a5703c6c664784d1045961cf" category="inline-xref-macro-rx"></block>。这些设置将应用于添加到存储分段中但不指定其自身保留设置的每个对象。</block>
   <block id="da2a22af73376f56508881edd4e1f5ef" category="inline-xref-macro">使用 S3 对象锁定</block>
   <block id="d6175014aeae5e73af965661bf52486f" category="paragraph">有关这些设置的详细信息，请参见 <block ref="020f67115fc39c5d750f0b4412f8960e" category="inline-xref-macro-rx"></block>。</block>
   <block id="da830190ddfdba33e8f9d75b3e699a34" category="section-title">管理旧版合规存储分段</block>
@@ -16539,7 +16537,6 @@
   <block id="121c057e9b7cbd5da5ebf474105d6af3" category="admonition">创建存储分段后，您无法启用或禁用 S3 对象锁定。</block>
   <block id="9612955e3fc0d9fd38d59dc0a68d70ec" category="paragraph">只有在启用了全局 S3 对象锁定设置的情况下，才会显示 S3 对象锁定部分。</block>
   <block id="67c829986ae2289c3d2343127a819271" category="paragraph">必须为存储分段启用 S3 对象锁定， S3 客户端应用程序才能为添加到存储分段的对象指定保留日期和合法保留设置。</block>
-  <block id="706645668046ef27f43c764e82ffc91f" category="paragraph">如果为存储分段启用 S3 对象锁定，则会自动启用存储分段版本控制。您也可以 <block ref="e2c421d9a5703c6c664784d1045961cf" category="inline-xref-macro-rx"></block> 应用于输入到存储分段中但未指定其自身保留设置的每个对象。</block>
   <block id="dae88aa57023d25a914b7f27844a0886" category="paragraph">此时将创建存储分段并将其添加到 " 存储分段 " 页面上的表中。</block>
   <block id="0894f612bf3eefe24129515f5cf8d30a" category="paragraph"><block ref="0894f612bf3eefe24129515f5cf8d30a" category="inline-xref-macro-rx"></block></block>
   <block id="d3929a0dea572e10006f2adf12521dc3" category="summary">如果在 StorageGRID 尝试与平台服务端点通信时发生错误，信息板上将显示一条消息。在平台服务端点页面上，最后一个错误列指示错误发生多长时间前。如果与端点凭据关联的权限不正确，则不会显示任何错误。</block>
@@ -17524,7 +17521,6 @@
   <block id="a28adb863cc50d04e41ddd351f4ac1f4" category="paragraph">您可以使用 Swift 命令行界面测试与 StorageGRID 系统的连接，并验证是否可以向系统读取和写入对象。</block>
   <block id="38e6bc5bdc322a6f441aaa4fe4abfbfe" category="list-text">您必须已下载并安装 python swiftclient ，即 Swift 命令行客户端。</block>
   <block id="ea2e2232bb3986e591fff52edb33db45" category="inline-link">SwiftStack ： Python-swiftclient</block>
-  <block id="ba17489a8f740c07748827b51c4bca72" category="paragraph"><block ref="ba17489a8f740c07748827b51c4bca72" category="inline-link-rx"></block></block>
   <block id="3d0b6b2bc34345ee43d5ec713caf4ae2" category="list-text">您必须在 StorageGRID 系统中具有 Swift 租户帐户。</block>
   <block id="f9cfd85bde3b541345f8d7650d96f0ed" category="paragraph">如果尚未配置安全性，则必须在每个命令中添加 ` -insecure` 标志。</block>
   <block id="0224dc6451a221df0be836110175806b" category="list-text">查询 StorageGRID Swift 部署的信息 URL ：</block>
@@ -20284,7 +20280,6 @@
   <block id="769030e6adf37c64eefc0e4517f7f168" category="inline-xref-macro">指定警报电子邮件通知的证书</block>
   <block id="1b6eead70ccf79273f7e2d3ff8b88dcb" category="list-text"><block ref="1b6eead70ccf79273f7e2d3ff8b88dcb" category="inline-xref-macro-rx"></block></block>
   <block id="7b9c406e4212a8333835f0010808d154" category="inline-xref-macro">指定外部系统日志服务器证书</block>
-  <block id="a61e632a6c6c1e72b01a2297ef41915e" category="list-text"><block ref="a61e632a6c6c1e72b01a2297ef41915e" category="inline-xref-macro-rx"></block></block>
   <block id="8aa0ebe33df9cb5be903c0df6e334d8c" category="section-title">安全证书详细信息</block>
   <block id="c9eb4f5a979fcb112653c12e8dae0370" category="paragraph">下面介绍了每种类型的安全证书，并提供了指向包含实施说明的文章的链接。</block>
   <block id="7204ebc628bd1455b3b5a3cc7e5a0271" category="section-title">管理接口证书</block>
@@ -20909,7 +20904,6 @@
   <block id="65f52b48237f5a9792f284df4b2acfc2" category="list-text">您已为系统中的每个管理节点下载 * SAML 元数据 * 。</block>
   <block id="60e50bf352574c4b764babea8d0dec58" category="list-text">您在 PingFederate 服务器中创建 SP 连接的经验。</block>
   <block id="3d5e251dbb3767e2b0a044783d035660" category="inline-link">《管理员参考指南》</block>
-  <block id="86670dcbf4e1e3eb6fc2cf6d6ef58087" category="list-text">您拥有<block ref="4cd1ca3c7095a9a27d6ff9992d8b6395" category="inline-link-rx"></block> PingFederate 服务器。PingFederate 文档提供了详细的分步说明和说明。</block>
   <block id="a31b14fbba2f5dc7f3c73cb2937135e7" category="list-text">您具有 PingFederate 服务器的管理员权限。</block>
   <block id="cc90d146485e33031ccc8c532130cc48" category="paragraph">以下说明总结了如何将 PingFederate 服务器 10.3 版配置为 StorageGRID 的 SSO 提供程序。如果您使用的是其他版本的 PingFederate ，则可能需要调整这些说明。有关您的版本的详细说明，请参见 PingFederate 服务器文档。</block>
   <block id="548f6f80ce0916cbeff0ea139f289818" category="section-title">完成 PingFederate 中的前提条件</block>
@@ -23390,7 +23384,6 @@
   <block id="4b2d317067d5d18f332ce107575f362c" category="list-text">指定存储分段的默认保留设置，这些设置将应用于添加到存储分段中但未指定其自身保留设置的对象。</block>
   <block id="8868a47c0b6de47608bc8d3bf38ae7db" category="list-text">向这些存储分段添加对象，并指定对象级别的保留期限和合法保留设置。</block>
   <block id="f5b7437455c03145f56ac5123f486e07" category="list-text">根据需要更新单个对象的保留期限或更改合法保留设置。</block>
-  <block id="51db2faf376ce0847c5a2773ca51aaf5" category="list-text"><block ref="51db2faf376ce0847c5a2773ca51aaf5" category="inline-xref-macro-rx"></block></block>
   <block id="9a4fe5be4202782787f2883bb6173f14" category="summary">您可以使用以下示例规则和策略来确保对大于 1 MB 的映像进行纠删编码，并使用较小的映像创建两个副本。</block>
   <block id="b5bdb58120ae54e0dc4759f8f1bdb34a" category="doc">示例 3 ：用于更好地保护映像文件的 ILM 规则和策略</block>
   <block id="18b695f83a13aac5434f9427be434038" category="section-title">ILM 规则 1 ，例如 3 ：对大于 1 MB 的映像文件使用 EC</block>
@@ -23741,7 +23734,6 @@
   <block id="19a5af8e43ff0991e97b9b8b62b70f9e" category="list-text">在启用了 S3 对象锁定的情况下向存储分段添加对象版本时， S3 客户端应用程序可以使用默认存储分段保留设置，也可以指定对象的保留设置（保留至日期，合法保留或两者）。然后， StorageGRID 会为此对象生成元数据，其中包括唯一对象标识符（ UUID ）以及载入日期和时间。</block>
   <block id="1620d27b42c5e03eb048fd4952187334" category="list-text"><block ref="1620d27b42c5e03eb048fd4952187334" category="inline-xref-macro-rx"></block></block>
   <block id="535250ebde4641da7785bbb995be0907" category="list-text"><block ref="535250ebde4641da7785bbb995be0907" category="inline-xref-macro-rx"></block></block>
-  <block id="a58256386215c9d08302eed28bf339f2" category="list-text"><block ref="51db2faf376ce0847c5a2773ca51aaf5" category="inline-xref-macro-rx"></block>。</block>
   <block id="3ef6f39a0898d57a8373862c13abf39b" category="list-text">检查两根 SAS 互连缆线的完整性，并确认它们已牢固连接。</block>
   <block id="b55730017a32c9d2e48bb5be439d2c12" category="list-text">根据需要更换一根或两根缆线，然后重试。</block>
   <block id="3d063ad665dd3261f382cc3806d14285" category="list-text">安装驱动器（仅限 SG5660 ）</block>
@@ -25012,7 +25004,6 @@
   <block id="1d19dc59588d4083f0f29180db6b245a" category="inline-link-macro">系统日志服务器</block>
   <block id="779857ea5b4bb9d9e029769cb1021668" category="admonition">此列表不包括可能配置为的端口 <block ref="746eddac88f5aeef6f9d4a5e6c299353" category="inline-xref-macro-rx"></block> 或用于 <block ref="622b95977fe8661b6daf14916262613c" category="inline-link-macro-rx"></block>。</block>
   <block id="ec55792b95de091dad4d02c7fd603285" category="paragraph">您已将需要维护的 SG6000-CN 控制器物理定位在数据中心。请参见 <block ref="1dd212b048cde960a47616fde1652b03" category="inline-xref-macro-rx"></block>。</block>
-  <block id="f3b2fc431cfa1294fb2f32bf0d611146" category="paragraph">要防止服务中断，请在可以接受服务中断期间的计划维护窗口期间关闭控制器或关闭控制器之前，确认所有其他存储节点均已连接到网格。请参见有关的信息 <block ref="b87f566cfb4da89762d29b32ea859b72" category="inline-xref-macro-rx"></block>。</block>
   <block id="f8a1ded3be140cfa646c0a38e54f1958" category="list-text">关闭SG6000-CN控制器：</block>
   <block id="373219ec2af135931ca2e337ac723eb0" category="admonition">您必须通过输入以下指定的命令来控制控制器的关闭。最佳做法是、尽可能执行可控关闭、以避免不必要的警报、确保完整日志可用并避免服务中断。</block>
   <block id="83ab1aea411f67a8b3a134fb31746401" category="list-text">如果尚未登录到网格节点、请使用PuTTY或其他ssh客户端登录：</block>
@@ -25042,4 +25033,13 @@
   <block id="b6a6856979f644f23831092a77a579ae" category="sidebar">StorageGRID 11.5文档</block>
   <block id="27a5fc98d432133572f8dd4b135b3de1" category="sidebar">原有版本</block>
   <block id="d230fedbcdb888124f0cd7c7b8424de2" category="sidebar">StorageGRID 11.6文档</block>
+  <block id="314cdf9c84aa6c966fe4fb582b188465" category="list-text">您有 <block ref="f84597d85764336430714159407ba35e" category="inline-link-rx"></block> for PingFederate Server。PingFederate 文档提供了详细的分步说明和解释。</block>
+  <block id="08e26906a8e8d5c4beee8ca4cdf90ce6" category="list-text"><block ref="08e26906a8e8d5c4beee8ca4cdf90ce6" category="inline-xref-macro-rx"></block></block>
+  <block id="770cdcff797902756f1def742a8a2c67" category="paragraph">虽然 StorageGRID 负载均衡器服务是推荐的负载均衡机制，但您可能需要集成第三方负载均衡器。有关信息，请联系您的 NetApp 客户代表或参阅<block ref="f288d85c361e50afbcd4b879f9cae76d" category="inline-link-rx"></block>。</block>
+  <block id="ed2762569298f9b18dc6d760997a0110" category="list-text"><block ref="197165ec8ea585a56a26e15e0feb11be" category="inline-xref-macro-rx"></block>。</block>
+  <block id="197165ec8ea585a56a26e15e0feb11be" category="list-text"><block ref="197165ec8ea585a56a26e15e0feb11be" category="inline-xref-macro-rx"></block></block>
+  <block id="3c0f60ce51032f38ed763bae516198c2" category="paragraph">为了防止服务中断，请在关闭控制器之前确认所有其他存储节点已连接到网格，或者在可接受服务中断的计划维护窗口期间关闭控制器。请参阅有关 <block ref="b193da65b21effb833a9bf1bd754f309" category="inline-link-macro-rx"></block> 的信息。</block>
+  <block id="33c1e18f53477c9bb4f0798f48754f35" category="paragraph"><block ref="33c1e18f53477c9bb4f0798f48754f35" category="inline-link-rx"></block></block>
+  <block id="b53403065dfcb41417da941b4beed2f5" category="paragraph">如果为存储桶启用 S3 Object Lock，则会自动启用存储桶版本控制。您还可以 <block ref="58283852e6f413e20f79674d66e2e21c" category="inline-xref-macro-rx"></block> 应用于未指定其自身保留设置的存储桶中接收的每个对象。</block>
+  <block id="86e957fdf56676c9d0a5f37906ebfe60" category="paragraph">您也可以<block ref="58283852e6f413e20f79674d66e2e21c" category="inline-xref-macro-rx"></block>。这些设置将应用于添加到存储桶中未指定自身保留设置的每个对象。</block>
 </blocks>

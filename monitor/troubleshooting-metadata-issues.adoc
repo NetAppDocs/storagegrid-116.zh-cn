@@ -16,6 +16,7 @@ summary: 您可以执行多项任务来帮助确定元数据问题的根源。
 
 
 
+[[troubleshoot-the-low-metadata-storage-alert]]
 == 对 " 低元数据存储 " 警报进行故障排除
 
 如果触发 * 低元数据存储 * 警报，则必须添加新的存储节点。
@@ -73,6 +74,7 @@ NOTE: 由于 StorageGRID 会在每个站点保留所有对象元数据的完整�
 
 
 
+[[troubleshoot-the-services-status-cassandra-svst-alarm]]
 == 对服务进行故障排除：状态 - Cassandra （ SVST ）警报进行故障排除
 
 服务：状态 - Cassandra （ SVST ）警报指示您可能需要为存储节点重建 Cassandra 数据库。Cassandra 用作 StorageGRID 的元数据存储。
@@ -182,6 +184,7 @@ Cassandra 可以有多个条目；您必须找到最新的条目。
 
 
 
+[[troubleshoot-cassandra-out-of-memory-errors-smtt-alarm]]
 == 对 Cassandra 内存不足错误（ SMTTT 警报）进行故障排除
 
 如果 Cassandra 数据库出现内存不足错误，则会触发总计事件（ SMT ）警报。如果发生此错误，请联系技术支持以使用问题描述 。

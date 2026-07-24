@@ -15,6 +15,7 @@ summary: 除了遵循 StorageGRID 网络和节点的强化准则之外，您还�
 
 
 
+[[logs-and-audit-messages]]
 == 日志和审核消息
 
 始终以安全的方式保护 StorageGRID 日志和审核消息输出。从支持和系统可用性角度来看， StorageGRID 日志和审核消息可提供宝贵的信息。此外， StorageGRID 日志和审核消息输出中包含的信息和详细信息通常具有敏感性。
@@ -25,6 +26,7 @@ summary: 除了遵循 StorageGRID 网络和节点的强化准则之外，您还�
 
 
 
+[[netapp-autosupport]]
 == NetApp AutoSupport
 
 通过 StorageGRID 的 AutoSupport 功能，您可以主动监控系统的运行状况，并自动向 NetApp 技术支持，贵组织的内部支持团队或支持合作伙伴发送消息和详细信息。默认情况下，首次配置 StorageGRID 时，会启用发送给 NetApp 技术支持的 AutoSupport 消息。
@@ -37,6 +39,7 @@ summary: 除了遵循 StorageGRID 网络和节点的强化准则之外，您还�
 
 
 
+[[cross-origin-resource-sharing-cors]]
 == 跨源资源共享（ CORS ）
 
 如果您希望 S3 存储分段中的存储分段和对象可供其他域中的 Web 应用程序访问，则可以为该存储分段配置跨源资源共享（ CORS ）。通常，除非需要，否则请勿启用 CORS 。如果需要 CORS ，请将其限制为可信源。
@@ -45,6 +48,7 @@ summary: 除了遵循 StorageGRID 网络和节点的强化准则之外，您还�
 
 
 
+[[external-security-devices]]
 == 外部安全设备
 
 全面强化的解决方案 必须解决 StorageGRID 之外的安全机制问题。使用其他基础架构设备筛选和限制对 StorageGRID 的访问是建立和保持严格安全防护的有效方法。这些外部安全设备包括防火墙，入侵防护系统（ IP ）和其他安全设备。

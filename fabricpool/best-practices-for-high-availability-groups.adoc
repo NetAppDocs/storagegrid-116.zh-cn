@@ -15,6 +15,7 @@ summary: 在将 StorageGRID 附加为 FabricPool 云层之前，您应使用 Sto
 
 
 
+[[what-is-a-high-availability-ha-group]]
 == 什么是高可用性（ HA ）组？
 
 为了确保负载平衡器服务始终可用于管理 FabricPool 数据，您可以将多个管理节点和网关节点的网络接口分组到一个实体中，称为高可用性（ High Availability ， HA ）组。如果 HA 组中的活动节点发生故障，则组中的另一个节点可以继续管理工作负载。
@@ -38,6 +39,7 @@ IMPORTANT: 如果您计划使用 VLAN 接口隔离 FabricPool 流量，则网络
 
 
 
+[[best-practices-for-high-availability-ha-groups]]
 == 高可用性（ HA ）组的最佳实践
 
 为 FabricPool 创建 StorageGRID HA 组的最佳实践取决于工作负载，如下所示：

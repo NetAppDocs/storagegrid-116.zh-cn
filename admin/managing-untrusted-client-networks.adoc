@@ -19,6 +19,7 @@ summary: 如果您使用的是客户端网络，则可以通过仅在显式配�
 
 
 
+[[example-1-gateway-node-only-accepts-https-s3-requests]]
 == 示例 1 ：网关节点仅接受 HTTPS S3 请求
 
 假设您希望网关节点拒绝客户端网络上除 HTTPS S3 请求以外的所有入站流量。您应执行以下常规步骤：
@@ -31,6 +32,7 @@ summary: 如果您使用的是客户端网络，则可以通过仅在显式配�
 
 
 
+[[example-2-storage-node-sends-s3-platform-services-requests]]
 == 示例 2 ：存储节点发送 S3 平台服务请求
 
 假设您要从存储节点启用出站 S3 平台服务流量，但要阻止与客户端网络上的该存储节点建立任何入站连接。您应执行此常规步骤：

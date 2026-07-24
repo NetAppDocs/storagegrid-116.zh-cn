@@ -17,6 +17,7 @@ summary: 您可以将归档节点配置为以 Tivoli Storage Manager （ TSM\ �
 
 
 
+[[tsm-management-classes]]
 == TSM 管理类
 
 TSM 中间件定义的管理类概括了 TSMʹs 备份和归档操作的工作原理，可用于为 TSM 服务器应用的内容指定规则。此类规则独立于 StorageGRID 系统的 ILM 策略运行，并且必须符合 StorageGRID 系统的要求，即对象永久存储，并且始终可供归档节点检索。在归档节点将对象数据发送到 TSM 服务器后，将应用 TSM 生命周期和保留规则，同时将对象数据存储到 TSM 服务器管理的磁带。

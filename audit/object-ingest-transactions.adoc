@@ -17,6 +17,7 @@ summary: 您可以通过查找 API 专用的审核消息（ S3 或 Swift ）来�
 
 
 
+[[s3-ingest-audit-messages]]
 == S3 载入审核消息
 
 |===
@@ -50,6 +51,7 @@ xref:orlm-object-rules-met.adoc[ORLM ：符合对象规则]
 |===
 
 
+[[swift-ingest-audit-messages]]
 == Swift 载入审核消息
 
 |===

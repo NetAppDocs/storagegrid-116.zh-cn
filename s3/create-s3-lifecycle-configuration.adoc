@@ -17,6 +17,7 @@ summary: 您可以创建 S3 生命周期配置，以控制何时从 StorageGRID 
 
 
 
+[[what-lifecycle-configuration-is]]
 == 什么是生命周期配置
 
 生命周期配置是一组应用于特定 S3 分段中的对象的规则。每个规则都指定受影响的对象以及这些对象的到期时间（在特定日期或一定天数后）。
@@ -46,6 +47,7 @@ StorageGRID 支持使用以下存储分段操作来管理生命周期配置：
 
 
 
+[[create-lifecycle-configuration]]
 == 创建生命周期配置
 
 作为创建生命周期配置的第一步，您需要创建一个包含一个或多个规则的 JSON 文件。例如，此 JSON 文件包含三个规则，如下所示：
@@ -106,6 +108,7 @@ IMPORTANT: 指定天数的规则与对象的载入时间相关。如果当前日
 ----
 
 
+[[apply-lifecycle-configuration-to-bucket]]
 == 将生命周期配置应用于存储分段
 
 创建生命周期配置文件后，您可以通过发出 PUT 存储分段生命周期请求将其应用于存储分段。
@@ -128,6 +131,7 @@ aws s3api --endpoint-url <StorageGRID endpoint> get-bucket-lifecycle-configurati
 
 
 
+[[validate-that-bucket-lifecycle-expiration-applies-to-object]]
 == 验证存储分段生命周期到期适用场景 对象
 
 在发出 PUT 对象， HEAD 对象或 GET 对象请求时，您可以确定生命周期配置适用场景 中的到期规则是否为特定对象。如果适用某条规则，响应将包含一个 `Expiration` 参数，用于指示对象何时到期以及匹配的到期规则。

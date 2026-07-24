@@ -45,6 +45,7 @@ image::../media/back_brackets_table_size.gif[SG5760 的背面支架和锁紧螺�
 
 
 
+[[cables-and-connectors]]
 == 缆线和连接器
 
 StorageGRID 设备的发货包括以下缆线和连接器：

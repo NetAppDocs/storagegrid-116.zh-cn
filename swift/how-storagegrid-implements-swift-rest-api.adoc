@@ -15,6 +15,7 @@ summary: 客户端应用程序可以使用 Swift REST API 调用连接到存储�
 
 
 
+[[swift-object-management]]
 == Swift 对象管理
 
 将 Swift 对象载入 StorageGRID 系统后，这些对象将通过系统活动 ILM 策略中的信息生命周期管理（ ILM ）规则进行管理。ILM 规则和策略可确定 StorageGRID 如何创建和分发对象数据副本，以及它如何在一段时间内管理这些副本。例如， ILM 规则可能适用于特定 Swift 容器中的对象，并可能指定在一定年数内将多个对象副本保存到多个数据中心。
@@ -23,12 +24,14 @@ summary: 客户端应用程序可以使用 Swift REST API 调用连接到存储�
 
 
 
+[[conflicting-client-requests]]
 == 客户端请求冲突
 
 冲突的客户端请求（例如，两个客户端写入同一密钥）将以 " 最新成功 " 为基础进行解决。" 最新赢单 " 评估的时间取决于 StorageGRID 系统何时完成给定请求，而不是 Swift 客户端何时开始操作。
 
 
 
+[[consistency-guarantees-and-controls]]
 == 一致性保证和控制
 
 默认情况下， StorageGRID 为新创建的对象提供读写一致性，并为对象更新和机头操作提供最终一致性。成功完成 PUT 后的任何 GET 都将能够读取新写入的数据。对现有对象的覆盖，元数据更新和删除最终保持一致。覆盖通常需要几秒钟或几分钟才能传播，但可能需要长达 15 天的时间。

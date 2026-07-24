@@ -15,18 +15,21 @@ summary: 您可以使用 S3 后对象还原请求还原存储在云存储池中�
 
 
 
+[[supported-request-type]]
 == 支持的请求类型
 
 StorageGRID 仅支持后对象还原请求来还原对象。它不支持 `Select` 类型的还原。选择 Requests return `XNotImplement已 执行` 。
 
 
 
+[[versioning]]
 == 版本控制
 
 或者，指定 `veversionId` 以还原受版本控制的存储分段中特定版本的对象。如果未指定 `veversionId` ，则会还原对象的最新版本
 
 
 
+[[behavior-of-post-object-restore-on-cloud-storage-pool-objects]]
 == 对云存储池对象执行后对象还原的行为
 
 如果某个对象存储在云存储池中（请参见有关通过信息生命周期管理管理来管理对象的说明），则根据对象的状态，后对象还原请求具有以下行为。有关详细信息，请参见 "`head Object` " 。

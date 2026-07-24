@@ -15,6 +15,7 @@ summary: 您可以执行各种维护过程来使 StorageGRID 系统保持最新�
 
 
 
+[[software-updates]]
 == 软件更新
 
 您可以从网格管理器的软件更新页面执行三种类型的软件更新：
@@ -26,6 +27,7 @@ summary: 您可以执行各种维护过程来使 StorageGRID 系统保持最新�
 
 
 
+[[storagegrid-software-upgrades]]
 == StorageGRID 软件升级
 
 如果有新的 StorageGRID 功能版本，软件升级页面将指导您完成上传所需文件和升级 StorageGRID 系统的过程。您必须从主管理节点升级所有数据中心站点的所有网格节点。
@@ -34,6 +36,7 @@ summary: 您可以执行各种维护过程来使 StorageGRID 系统保持最新�
 
 
 
+[[hotfixes]]
 == 修补程序
 
 如果在功能版本之间检测到并解决了软件问题，您可能需要在 StorageGRID 系统中应用修补程序。
@@ -51,6 +54,7 @@ NOTE: 虽然所有网格节点都会使用新的修补程序版本进行更新�
 
 
 
+[[santricity-os-upgrades]]
 == SANtricity 操作系统升级
 
 如果存储设备的存储控制器运行不正常，您可能需要升级 SANtricity 操作系统软件。您可以将 SANtricity OS 文件上传到 StorageGRID 系统中的主管理节点，并从网格管理器应用升级。
@@ -63,6 +67,7 @@ image::../media/santricity_os_upgrade_first.png[StorageGRID 的第一个 SANtric
 
 
 
+[[expansion-procedures]]
 == 扩展过程
 
 您可以通过以下方式扩展 StorageGRID 系统：向存储节点添加存储卷，向现有站点添加新的网格节点或添加新的数据中心站点。如果您的存储节点使用SG6060或SG6060X存储设备、则可以添加一个或两个扩展架、使此节点的存储容量增加一倍或三倍。
@@ -73,6 +78,7 @@ image::../media/grid_expansion_progress.png[此图通过周围的文本进行了
 
 
 
+[[node-recovery-procedures]]
 == 节点恢复过程
 
 如果硬件，虚拟化，操作系统或软件故障导致节点无法运行或不可靠，则网格节点可能会发生故障。
@@ -85,6 +91,7 @@ image::../media/overview_admin_node_recovery.png[概述：管理节点恢复]
 
 
 
+[[decommission-procedures]]
 == 停用过程
 
 您可能需要从 StorageGRID 系统中永久删除网格节点或整个数据中心站点。
@@ -112,6 +119,7 @@ image::../media/decommission_site_step_select_site.png[停用站点步骤 1]
 
 
 
+[[network-maintenance-procedures]]
 == 网络维护过程
 
 您可能需要执行的一些网络维护过程包括：
@@ -125,18 +133,21 @@ image::../media/decommission_site_step_select_site.png[停用站点步骤 1]
 
 
 
+[[host-level-and-middleware-procedures]]
 == 主机级别和中间件过程
 
 某些维护过程特定于在 Linux 或 VMware 上部署的 StorageGRID 节点，或者特定于 StorageGRID 解决方案 的其他组件。例如，您可能希望将网格节点迁移到其他 Linux 主机，或者对连接到 Tivoli Storage Manager （ TSM ）的归档节点执行维护。
 
 
 
+[[appliance-node-cloning]]
 == 设备节点克隆
 
 通过设备节点克隆，您可以轻松地将网格中的现有设备节点替换为同一逻辑 StorageGRID 站点中具有较新设计或增强功能的设备。此过程会将所有数据传输到新设备，从而使其投入使用以更换旧设备节点，并使旧设备处于预安装状态。克隆提供了一个易于执行的硬件升级过程，并提供了替代设备的方法。
 
 
 
+[[grid-node-procedures]]
 == 网格节点过程
 
 您可能需要在特定网格节点上执行某些过程。例如，您可能需要重新启动网格节点或手动停止并重新启动特定网格节点服务。某些网格节点过程可以从网格管理器执行；另一些过程则要求您登录到网格节点并使用该节点的命令行。

@@ -81,6 +81,7 @@ xref:../admin/web-browser-requirements.adoc[支持的 Web 浏览器]
 |===
 
 
+[[download-the-storagegrid-upgrade-files]]
 == 下载 StorageGRID 升级文件
 
 您必须下载一个或多个文件，具体取决于节点的安装位置。
@@ -133,6 +134,7 @@ NOTE: SG100 或 SG1000 不需要其他文件。
 
 
 
+[[download-the-recovery-package]]
 == 下载恢复包
 
 通过恢复包文件，您可以在发生故障时还原 StorageGRID 系统。在对 StorageGRID 系统进行网格拓扑更改之前或升级软件之前，请下载当前的恢复软件包文件。然后，在更改网格拓扑或升级软件后下载恢复包的新副本。

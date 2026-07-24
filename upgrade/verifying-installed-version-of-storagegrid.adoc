@@ -44,6 +44,7 @@ IMPORTANT: NetApp 强烈建议您在升级到下一个版本之前对每个 Stor
 
 
 
+[[example-upgrade-to-storagegrid-11-5-from-version-11-3-0-8]]
 == 示例：从 11.3.0.8 版升级到 StorageGRID 11.5
 
 以下示例显示了从 StorageGRID 11.3.0.8 版升级到 11.5 版以准备 StorageGRID 11.5 版的步骤。

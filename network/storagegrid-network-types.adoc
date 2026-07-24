@@ -15,6 +15,7 @@ StorageGRID 系统中的网格节点处理 _grid traffic ， _admin traffic _ �
 
 
 
+[[traffic-types]]
 == 流量类型
 
 [cols="1a,4a,2a"]
@@ -62,6 +63,7 @@ StorageGRID 系统中的网格节点处理 _grid traffic ， _admin traffic _ �
 
 
 
+[[network-interfaces]]
 == 网络接口
 
 StorageGRID 节点使用以下特定接口连接到每个网络：
@@ -107,6 +109,7 @@ Eth2
 
 
 
+[[network-information-for-each-node]]
 === 每个节点的网络信息
 
 您必须为节点上启用的每个网络配置以下内容：
@@ -120,12 +123,14 @@ Eth2
 
 
 
+[[high-availability-groups]]
 === 高可用性组
 
 通过高可用性（ High Availability ， HA ）组，可以向网格或客户端网络接口添加虚拟 IP （ VIP ）地址。有关详细信息，请参见 xref:../admin/managing-high-availability-groups.adoc[管理高可用性组]。
 
 
 
+[[grid-network]]
 == 网格网络
 
 网格网络为必填项。它用于所有内部 StorageGRID 流量。网格网络可在网格中的所有节点之间以及所有站点和子网之间建立连接。网格网络上的所有节点必须能够与所有其他节点进行通信。网格网络可以包含多个子网。包含 NTP 等关键网格服务的网络也可以添加为网格子网。
@@ -148,6 +153,7 @@ IMPORTANT: 在配置网格网络时，您必须确保网络不受不可信客户
 
 
 
+[[admin-network]]
 == 管理网络
 
 管理网络是可选的。配置后，它可用于系统管理和维护流量。管理网络通常是一个专用网络，不需要在节点之间进行路由。
@@ -172,6 +178,7 @@ IMPORTANT: 在配置网格网络时，您必须确保网络不受不可信客户
 
 
 
+[[client-network]]
 == 客户端网络
 
 客户端网络是可选的。配置后，它可用于为 S3 和 Swift 等客户端应用程序提供对网格服务的访问。如果您计划使外部资源（例如云存储池或 StorageGRID CloudMirror 复制服务）可以访问 StorageGRID 数据，则外部资源也可以使用客户端网络。网格节点可以与可通过客户端网络网关访问的任何子网进行通信。
@@ -195,6 +202,7 @@ IMPORTANT: 在配置网格网络时，您必须确保网络不受不可信客户
 
 
 
+[[optional-vlan-networks]]
 == 可选 VLAN 网络
 
 根据需要，您可以选择使用虚拟 LAN （ VLAN ）网络来处理客户端流量和某些类型的管理流量。但是，网格流量不能使用 VLAN 接口。节点之间的内部 StorageGRID 流量必须始终使用 eth0 上的网格网络。

@@ -15,6 +15,7 @@ summary: 您可以将多个管理节点和网关节点的网络接口分组到�
 
 
 
+[[what-is-an-ha-group]]
 == 什么是 HA 组？
 
 您可以使用高可用性（ High Availability ， HA ）组为 S3 和 Swift 客户端提供高可用性数据连接，或者为 Grid Manager 和租户管理器提供高可用性连接。
@@ -28,6 +29,7 @@ summary: 您可以将多个管理节点和网关节点的网络接口分组到�
 
 
 
+[[how-do-you-create-an-ha-group]]
 == 如何创建 HA 组？
 
 . 您可以为一个或多个管理节点或网关节点选择一个网络接口。您可以使用网格网络（ eth0 ）接口，客户端网络（ eth2 ）接口， VLAN 接口或已添加到节点的访问接口。
@@ -44,6 +46,7 @@ NOTE: 如果 HA 组具有 DHCP 分配的 IP 地址，则不能将接口添加到
 
 
 
+[[what-is-the-active-interface]]
 == 什么是活动接口？
 
 在正常操作期间， HA 组的所有 VIP 地址都会添加到主接口，这是优先级顺序中的第一个接口。只要主接口保持可用，客户端就会连接到组的任何 VIP 地址。也就是说，在正常操作期间，主接口是组的 "`active` " 接口。
@@ -52,6 +55,7 @@ NOTE: 如果 HA 组具有 DHCP 分配的 IP 地址，则不能将接口添加到
 
 
 
+[[view-the-current-ha-group-status-of-a-node]]
 == 查看节点的当前 HA 组状态
 
 要查看节点是否已分配给 HA 组并确定其当前状态，请选择 * 节点 * > * 节点 _节点 _* 。
@@ -76,6 +80,7 @@ image::../media/ha_group_primary_interface.png[HA 组主接口]
 
 
 
+[[what-happens-when-the-active-interface-fails]]
 == 活动接口发生故障时会发生什么情况？
 
 当前托管 VIP 地址的接口是活动接口。如果 HA 组包含多个接口且活动接口发生故障，则 VIP 地址将按优先级顺序移至第一个可用的备份接口。如果该接口发生故障， VIP 地址将移至下一个可用备份接口，依此类推。

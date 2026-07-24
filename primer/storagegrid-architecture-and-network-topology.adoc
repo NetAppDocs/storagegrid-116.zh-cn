@@ -17,12 +17,14 @@ StorageGRID 系统由一个或多个数据中心站点上的多种类型的网�
 
 
 
+[[deployment-topologies]]
 == 部署拓扑
 
 StorageGRID 系统可以部署到一个数据中心站点或多个数据中心站点。
 
 
 
+[[single-site]]
 === 单个站点
 
 在使用单个站点的部署中， StorageGRID 系统的基础架构和操作会集中进行。
@@ -31,6 +33,7 @@ image::../media/data_center_site_single.png[单个数据中心站点]
 
 
 
+[[multiple-sites]]
 === 多个站点
 
 在包含多个站点的部署中，可以在每个站点安装不同类型和数量的 StorageGRID 资源。例如，一个数据中心可能需要比另一个数据中心更多的存储。
@@ -43,12 +46,14 @@ image::../media/data_center_sites_multiple.png[多个数据中心站点]
 
 
 
+[[grid-node-redundancy]]
 === 网格节点冗余
 
 在单站点或多站点部署中，您可以选择包含多个管理节点或网关节点以实现冗余。例如，您可以在一个站点或多个站点上安装多个管理节点。但是，每个 StorageGRID 系统只能有一个主管理节点。
 
 
 
+[[system-architecture]]
 == 系统架构
 
 此图显示了网格节点在 StorageGRID 系统中的排列方式。
@@ -63,6 +68,7 @@ S3 和 Swift 客户端可以连接到网关节点或管理节点，以使用存�
 
 
 
+[[grid-nodes-and-services]]
 == 网格节点和服务
 
 StorageGRID 系统的基本组件是网格节点。节点包含服务，这些服务是为网格节点提供一组功能的软件模块。
@@ -82,6 +88,7 @@ StorageGRID 系统使用四种类型的网格节点：
 
 
 
+[[software-based-nodes]]
 === 基于软件的节点
 
 基于软件的网格节点可以通过以下方式进行部署：
@@ -108,6 +115,7 @@ StorageGRID 系统使用四种类型的网格节点：
 
 
 
+[[storagegrid-appliance-nodes]]
 === StorageGRID 设备节点
 
 StorageGRID 硬件设备经过专门设计，可在 StorageGRID 系统中使用。某些设备可用作存储节点。其他设备可以用作管理节点或网关节点。您可以将设备节点与基于软件的节点结合使用，也可以部署完全设计的全设备网格，这些网格不依赖于外部虚拟机管理程序，存储或计算硬件。
@@ -146,6 +154,7 @@ StorageGRID 硬件设备经过专门设计，可在 StorageGRID 系统中使用�
 
 
 
+[[primary-services-for-admin-nodes]]
 === 管理节点的主服务
 
 下表显示了管理节点的主服务；但是，此表并未列出所有节点服务。
@@ -216,6 +225,7 @@ Prometheus
 |===
 
 
+[[primary-services-for-storage-nodes]]
 === 存储节点的主服务
 
 下表显示了存储节点的主服务；但是，此表并未列出所有节点服务。
@@ -306,6 +316,7 @@ Cassandra Reaper
 |===
 
 
+[[primary-services-for-gateway-nodes]]
 === 网关节点的主要服务
 
 下表显示了网关节点的主服务；但是，此表并未列出所有节点服务。
@@ -350,6 +361,7 @@ Cassandra Reaper
 |===
 
 
+[[primary-services-for-archive-nodes]]
 === 归档节点的主服务
 
 下表显示了归档节点的主服务；但是，此表并未列出所有节点服务。
@@ -374,6 +386,7 @@ Cassandra Reaper
 |===
 
 
+[[storagegrid-services]]
 === StorageGRID 服务
 
 以下是 StorageGRID 服务的完整列表。

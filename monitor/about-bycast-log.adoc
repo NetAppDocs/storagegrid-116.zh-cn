@@ -19,6 +19,7 @@ summary: '/var/local/log/bycast.log 文件是 StorageGRID 软件的主要故障�
 
 
 
+[[file-rotation-for-bycast-log]]
 == bycast.log 的文件轮换
 
 当 `byncast.log` 文件达到 1 GB 时，将保存现有文件并启动新的日志文件。
@@ -39,6 +40,7 @@ xref:collecting-log-files-and-system-data.adoc[收集日志文件和系统数据
 
 
 
+[[messages-in-bycast-log]]
 == bycast.log 中的消息
 
 `byncast.log` 中的消息由 ADE （异步分布式环境）写入。ADE 是每个网格节点的服务所使用的运行时环境。
@@ -99,6 +101,7 @@ message
 |===
 
 
+[[message-severities-in-bycast-log]]
 == bycast.log 中的消息严重性
 
 已为 `byncast.log` 中的消息分配严重性级别。
@@ -113,6 +116,7 @@ message
 
 
 
+[[error-codes-in-bycast-log]]
 == 中的错误代码 `bycast.log`
 
 `byncast.log` 中的大多数错误消息都包含错误代码。

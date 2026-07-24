@@ -15,6 +15,7 @@ summary: 您可以配置一个或多个外部密钥管理服务器（ KMS\ ）�
 
 
 
+[[what-is-a-key-management-server-kms]]
 == 什么是密钥管理服务器（ KMS ）？
 
 密钥管理服务器（ Key Management Server ， KMS ）是一种外部第三方系统，可使用密钥管理互操作性协议（ Key Management Interoperability Protocol ， KMIP ）为关联 StorageGRID 站点上的 StorageGRID 设备节点提供加密密钥。

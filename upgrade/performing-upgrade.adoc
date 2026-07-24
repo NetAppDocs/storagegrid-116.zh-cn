@@ -18,6 +18,7 @@ summary: 准备好执行升级后，请选择 .upgrade 归档并输入配置密�
 
 
 
+[[upload-the-upgrade-file]]
 == 上传升级文件
 
 . 使用登录到网格管理器 xref:../admin/web-browser-requirements.adoc[支持的 Web 浏览器]。
@@ -47,6 +48,7 @@ image::../media/storagegrid_upgrade_buttons_enabled.png[已启用 StorageGRID �
 
 
 
+[[run-prechecks]]
 == 运行预检
 
 您也可以在开始实际升级之前验证系统的状况。选择 * 运行预检 * 可在开始升级之前检测并解决问题。开始升级时，系统会执行相同的预检。预检失败将停止升级过程，某些问题可能需要技术支持参与才能解决。
@@ -62,6 +64,7 @@ IMPORTANT: 如果您已打开任何自定义防火墙端口，则会在预检验
 
 
 
+[[start-upgrade-and-update-primary-admin-node]]
 == 开始升级并更新主管理节点
 
 升级开始时，系统会执行升级预检，并升级主管理节点，其中包括停止服务，升级软件和重新启动服务。在升级主管理节点时，您无法访问网格管理器。审核日志也将不可用。此升级可能需要长达 30 分钟的时间。
@@ -96,6 +99,7 @@ image::../media/software_upgrade_400_error.png[软件升级 400 错误]
 
 
 
+[[clear-browser-cache-and-sign-back-in]]
 == 清除浏览器缓存并重新登录
 
 . 升级主管理节点后，清除 Web 浏览器的缓存并重新登录。
@@ -126,6 +130,7 @@ image::../media/grid_manager_dashboard.png[网格管理器信息板]
 
 
 
+[[download-recovery-package-and-upgrade-all-grid-nodes]]
 == 下载恢复软件包并升级所有网格节点
 
 . 在网格节点状态表中显示网格节点之后，但在批准任何网格节点之前， xref:obtaining-required-materials-for-software-upgrade.adoc#download-the-recovery-package[下载恢复软件包的新副本]。
@@ -178,6 +183,7 @@ NOTE: 当设备节点达到升级基本操作系统软件包阶段时，设备�
 
 
 
+[[complete-upgrade]]
 == 完成升级
 
 当所有网格节点都完成升级阶段后， * 升级网格节点 * 任务将显示为已完成。其余升级任务将在后台自动执行。
@@ -196,6 +202,7 @@ NOTE: 从 StorageGRID 11.5 升级到 11.5 不需要升级 Cassandra 数据库；
 
 
 
+[[confirm-upgrade]]
 == 确认升级
 
 . 确认升级已成功完成。

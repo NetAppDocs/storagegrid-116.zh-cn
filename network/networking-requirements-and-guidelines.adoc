@@ -15,6 +15,7 @@ summary: 您必须验证当前的网络基础架构和配置是否可以支持�
 
 
 
+[[general-networking-requirements]]
 == 一般网络连接要求
 
 所有 StorageGRID 部署都必须能够支持以下连接。
@@ -45,12 +46,14 @@ VLAN 接口仅支持 S3 和 Swift 客户端连接以及 SSH ， Grid Manager 和
 
 
 
+[[wide-area-networks-wans-for-multiple-sites]]
 == 适用于多个站点的广域网（ WAN ）
 
 在为 StorageGRID 系统配置多个站点时，在计算客户端流量之前，站点之间的 WAN 连接的每个方向的最小带宽必须为 25 Mbit/ 秒。站点之间，节点或站点扩展，节点恢复以及其他操作或配置之间的数据复制或纠删编码需要额外的带宽。
 
 
 
+[[connections-for-admin-nodes-and-gateway-nodes]]
 == 管理节点和网关节点的连接
 
 管理节点必须始终受到不可信客户端的保护，例如在开放式 Internet 上的客户端。您必须确保任何不可信的客户端都不能访问网格网络，管理网络或客户端网络上的任何管理节点。
@@ -59,6 +62,7 @@ VLAN 接口仅支持 S3 和 Swift 客户端连接以及 SSH ， Grid Manager 和
 
 
 
+[[using-network-address-translation-nat]]
 == 使用网络地址转换（ Network Address Translation ， NAT ）
 
 请勿在网格节点之间或 StorageGRID 站点之间的网格网络上使用网络地址转换（ Network Address Translation ， NAT ）。如果您对网格网络使用专用 IPv4 地址，则这些地址必须可从每个站点的每个网格节点直接路由。但是，您可以根据需要在外部客户端和网格节点之间使用 NAT ，例如为网关节点提供公有 IP 地址。只有在使用对网格中的所有节点都透明的通道应用程序时，才支持使用 NAT 桥接公有 网段，这意味着网格节点不需要了解公有 IP 地址。

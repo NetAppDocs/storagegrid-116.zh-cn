@@ -15,6 +15,7 @@ summary: 一致性控制可以在对象的可用性与这些对象在不同存�
 
 
 
+[[request]]
 == 请求
 
 |===
@@ -43,6 +44,7 @@ summary: 一致性控制可以在对象的可用性与这些对象在不同存�
 |===
 
 
+[[request-example]]
 == 请求示例
 
 [listing]
@@ -54,6 +56,7 @@ Host: test.com
 ----
 
 
+[[response]]
 == 响应
 
 |===
@@ -106,6 +109,7 @@ Host: test.com
 |===
 
 
+[[response-example]]
 == 响应示例
 
 [listing]

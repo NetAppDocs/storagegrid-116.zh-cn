@@ -19,6 +19,7 @@ image::../media/compliance_workflow.png[S3 对象锁定工作流]
 
 
 
+[[grid-admin-tasks]]
 == 网格管理任务
 
 如工作流图所示，网格管理员必须执行两项高级任务， S3 租户用户才能使用 S3 对象锁定：
@@ -29,6 +30,7 @@ image::../media/compliance_workflow.png[S3 对象锁定工作流]
 
 
 
+[[tenant-user-tasks]]
 == 租户用户任务
 
 启用全局 S3 对象锁定设置后，租户可以执行以下任务：
@@ -42,5 +44,5 @@ image::../media/compliance_workflow.png[S3 对象锁定工作流]
 .相关信息
 * xref:../tenant/index.adoc[使用租户帐户]
 * xref:../s3/index.adoc[使用 S3]
-* xref:../s3/operations-on-buckets.adoc#using-s3-object-lock-default-bucket-retention[使用 S3 对象锁定默认存储分段保留]
+* xref:../s3/use-s3-object-lock-default-bucket-retention.adoc[使用 S3 对象锁定默认存储分段保留]
 

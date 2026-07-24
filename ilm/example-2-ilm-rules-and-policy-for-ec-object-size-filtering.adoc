@@ -18,6 +18,7 @@ CAUTION: 以下 ILM 规则和策略仅为示例。配置 ILM 规则的方法有�
 
 
 
+[[ilm-rule-1-for-example-2-use-ec-for-objects-greater-than-1-mb]]
 == ILM 规则 1 示例 2 ：对大于 1 MB 的对象使用 EC
 
 此示例中的 ILM 规则擦除将对大于 1 MB 的对象进行编码。
@@ -61,6 +62,7 @@ image::../media/policy_2_rule_1_ec_objects_adv_filtering.png[ILM 规则 1 示例
 
 
 
+[[ilm-rule-2-for-example-2-two-replicated-copies]]
 == ILM 规则 2 示例 2 ：两个复制副本
 
 此示例 ILM 规则将创建两个复制副本，而不按对象大小进行筛选。此规则是策略的默认规则。由于第一个规则会筛选出大于 1 MB 的所有对象，因此此规则仅筛选 1 MB 或更小的适用场景 对象。
@@ -99,6 +101,7 @@ image::../media/policy_2_rule_1_ec_objects_adv_filtering.png[ILM 规则 1 示例
 |===
 
 
+[[ilm-policy-for-example-2-use-ec-for-objects-greater-than-1-mb]]
 == 示例 2 中的 ILM 策略：对大于 1 MB 的对象使用 EC
 
 此示例 ILM 策略包括两个 ILM 规则：

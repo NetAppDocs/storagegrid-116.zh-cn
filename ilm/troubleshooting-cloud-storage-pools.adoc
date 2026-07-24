@@ -15,6 +15,7 @@ summary: 如果在创建，编辑或删除云存储池时遇到错误，请使�
 
 
 
+[[determine-if-an-error-has-occurred]]
 == 确定是否发生错误
 
 StorageGRID 每分钟对每个云存储池执行一次简单的运行状况检查，以确保云存储池可以访问并正常运行。如果运行状况检查检测到问题描述 ，则存储池页面上的云存储池表的最后一个错误列将显示一条消息。
@@ -27,6 +28,7 @@ image::../media/cloud_storage_pools_error.png[云存储池错误]
 
 
 
+[[check-if-an-error-has-been-resolved]]
 == 检查错误是否已解决
 
 解决任何底层问题后，您可以确定错误是否已解决。从云存储池页面中，选择端点的单选按钮，然后选择 * 清除错误 * 。确认消息指示 StorageGRID 已清除云存储池的错误。
@@ -37,6 +39,7 @@ image::../media/cloud_storage_pool_clear_error_message.png[Cloud Storage Pool Cl
 
 
 
+[[error-this-cloud-storage-pool-contains-unexpected-content]]
 == 错误：此云存储池包含意外内容
 
 尝试创建，编辑或删除云存储池时，可能会遇到此错误。如果存储分段或容器包含 `x-ntap-sgws-cloud pool-uuid` 标记文件，但该文件没有预期的 UUID ，则会发生此错误。
@@ -51,6 +54,7 @@ image::../media/cloud_storage_pool_clear_error_message.png[Cloud Storage Pool Cl
 
 
 
+[[error-could-not-create-or-update-cloud-storage-pool-error-from-endpoint]]
 == 错误：无法创建或更新云存储池。端点出错
 
 在尝试创建或编辑云存储池时，您可能会遇到此错误。此错误表示某种类型的连接或配置问题描述 正在阻止 StorageGRID 写入云存储池。
@@ -69,6 +73,7 @@ image::../media/cloud_storage_pool_clear_error_message.png[Cloud Storage Pool Cl
 
 
 
+[[error-failed-to-parse-ca-certificate]]
 == 错误：无法解析 CA 证书
 
 在尝试创建或编辑云存储池时，您可能会遇到此错误。如果 StorageGRID 无法解析您在配置云存储池时输入的证书，则会发生此错误。
@@ -77,6 +82,7 @@ image::../media/cloud_storage_pool_clear_error_message.png[Cloud Storage Pool Cl
 
 
 
+[[error-a-cloud-storage-pool-with-this-id-was-not-found]]
 == 错误：未找到具有此 ID 的云存储池
 
 尝试编辑或删除云存储池时，可能会遇到此错误。如果端点返回 404 响应，则会发生此错误，这可能表示以下任一项：
@@ -94,6 +100,7 @@ image::../media/cloud_storage_pool_clear_error_message.png[Cloud Storage Pool Cl
 
 
 
+[[error-could-not-check-the-content-of-the-cloud-storage-pool-error-from-endpoint]]
 == 错误：无法检查云存储池的内容。端点出错
 
 在尝试删除云存储池时，您可能会遇到此错误。此错误表示某种类型的连接或配置问题描述 正在阻止 StorageGRID 读取云存储池存储分段的内容。
@@ -102,6 +109,7 @@ image::../media/cloud_storage_pool_clear_error_message.png[Cloud Storage Pool Cl
 
 
 
+[[error-objects-have-already-been-placed-in-this-bucket]]
 == 错误：对象已放置在此存储分段中
 
 在尝试删除云存储池时，您可能会遇到此错误。如果某个云存储池包含通过 ILM 移动到该存储池的数据，在配置云存储池之前存储在存储分段中的数据或在创建云存储池之后某些其他源放置在存储分段中的数据，则不能删除该存储池。
@@ -118,6 +126,7 @@ NOTE: 切勿手动删除云存储池中可能已由 ILM 放置的对象。如果
 
 
 
+[[error-proxy-encountered-an-external-error-while-trying-to-reach-the-cloud-storage-pool]]
 == 错误：代理尝试访问云存储池时遇到外部错误
 
 如果您在存储节点与用于云存储池的外部 S3 端点之间配置了非透明存储代理，则可能会遇到此错误。如果外部代理服务器无法访问云存储池端点，则会发生此错误。例如， DNS 服务器可能无法解析主机名，或者可能存在外部网络问题描述 。

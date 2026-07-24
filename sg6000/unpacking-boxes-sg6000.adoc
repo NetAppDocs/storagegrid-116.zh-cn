@@ -15,6 +15,7 @@ summary: 安装 StorageGRID 设备之前，请打开所有包装箱的包装，�
 
 
 
+[[sg6060-and-sg6060x]]
 == SG6060和SG6060X
 
 * * SG6000-CN 控制器 *
@@ -49,6 +50,7 @@ image::../media/back_brackets_table_size.gif[SG5760 的背面支架和锁紧螺�
 
 
 
+[[sg6060-and-sg6060x-expansion-shelf]]
 == SG6060和SG6060X扩展架
 
 * * 未安装驱动器的扩展架 *
@@ -79,6 +81,7 @@ image::../media/back_brackets_table_size.gif[SG5760 的背面支架和锁紧螺�
 
 
 
+[[sgf6024]]
 == SGF6024
 
 * * SG6000-CN 控制器 *
@@ -105,6 +108,7 @@ image::../media/endcaps.png[端盖]
 
 
 
+[[cables-and-connectors]]
 == 缆线和连接器
 
 StorageGRID 设备的发货包括以下缆线和连接器：

@@ -18,6 +18,7 @@ NOTE: 虽然传统警报系统仍受支持，但警报系统具有显著优势�
 
 
 
+[[alarm-classes-legacy-system]]
 == 警报类（旧系统）
 
 旧警报可以属于两个相互排斥的警报类之一。
@@ -28,6 +29,7 @@ NOTE: 虽然传统警报系统仍受支持，但警报系统具有显著优势�
 
 
 
+[[alarm-triggering-logic-legacy-system]]
 == 警报触发逻辑（旧系统）
 
 当 StorageGRID 属性达到阈值时，系统将触发传统警报，该阈值将根据警报类（默认或全局自定义）和警报严重性级别的组合计算为 true 。
@@ -94,6 +96,7 @@ image:../media/icon_alert_red_critical.png["红色 x 图标"]
 
 
 
+[[alarm-triggering-example]]
 === 警报触发示例
 
 您可以使用此示例了解如何触发全局自定义警报和默认警报。
@@ -140,6 +143,7 @@ major
 
 
 
+[[alarms-of-same-severity]]
 === 严重性相同的警报
 
 如果同一属性的两个全局自定义警报的严重性相同，则会使用 "`top down` " 优先级对警报进行评估。
@@ -154,6 +158,7 @@ image::../media/alarm_order_reversed.gif[全局自定义警报示例]
 
 
 
+[[notifications]]
 === 通知
 
 通知用于报告警报发生情况或服务状态发生变化。可以通过电子邮件或 SNMP 发送警报通知。
@@ -164,12 +169,14 @@ image::../media/alarm_order_reversed.gif[全局自定义警报示例]
 
 
 
+[[new-services]]
 === 新服务
 
 随着通过添加新网格节点或站点来添加新服务，这些服务将继承默认警报和全局自定义警报。
 
 
 
+[[alarms-and-tables]]
 === 警报和表
 
 表中显示的警报属性可以在系统级别禁用。不能为表中的各个行禁用警报。
@@ -182,6 +189,7 @@ image::../media/disabling_alarms.gif[显示严重警报的卷页面]
 
 
 
+[[acknowledge-current-alarms-legacy-system]]
 == 确认当前警报（旧系统）
 
 当系统属性达到警报阈值时，系统会触发原有警报。或者，如果要减少或清除旧警报列表，您也可以确认这些警报。
@@ -238,6 +246,7 @@ image::../media/current_alarms_page_show_acknowledged.png[当前警报页面显�
 
 
 
+[[view-default-alarms-legacy-system]]
 == 查看默认警报（旧系统）
 
 您可以查看所有默认旧警报的列表。
@@ -265,6 +274,7 @@ image::../media/global_alarms.gif[全局警报页面]
 
 
 
+[[review-historical-alarms-and-alarm-frequency-legacy-system]]
 == 查看历史警报和警报频率（传统系统）
 
 对问题描述 进行故障排除时，您可以查看过去触发传统警报的频率。
@@ -310,6 +320,7 @@ NOTE: 虽然传统警报系统仍受支持，但警报系统具有显著优势�
 
 
 
+[[create-global-custom-alarms-legacy-system]]
 == 创建全局自定义警报（旧系统）
 
 您可能已对旧系统使用全局自定义警报来满足特定监控要求。全局自定义警报可能具有覆盖默认警报的警报级别，或者它们可能会监控没有默认警报的属性。
@@ -436,6 +447,7 @@ message
 
 
 
+[[disable-alarms-legacy-system]]
 == 禁用警报（旧系统）
 
 默认情况下，原有警报系统中的警报处于启用状态，但您可以禁用不需要的警报。您还可以在完全过渡到新警报系统后禁用原有警报。
@@ -445,6 +457,7 @@ NOTE: 虽然传统警报系统仍受支持，但警报系统具有显著优势�
 
 
 
+[[disable-a-default-alarm-legacy-system]]
 === 禁用默认警报（传统系统）
 
 您可以为整个系统禁用一个原有的默认警报。
@@ -492,6 +505,7 @@ image::../media/disable_default_alarm_global.gif[全局警报页面]
 
 
 
+[[disable-global-custom-alarms-legacy-system]]
 === 禁用全局自定义警报（旧系统）
 
 您可以为整个系统禁用旧版全局自定义警报。
@@ -519,6 +533,7 @@ image::../media/disable_global_custom_alarm.gif[全局警报页面]
 
 
 
+[[clear-triggered-alarms-legacy-system]]
 === 清除触发的警报（旧系统）
 
 如果触发了旧警报，您可以清除它，而不是确认它。
@@ -550,6 +565,7 @@ image::../media/disable_global_custom_alarm.gif[全局警报页面]
 
 
 
+[[configure-notifications-for-alarms-legacy-system]]
 == 配置警报通知（旧系统）
 
 StorageGRID 系统可以自动发送电子邮件和 xref:using-snmp-monitoring.adoc[SNMP 通知] 触发警报或服务状态发生变化时。
@@ -558,6 +574,7 @@ StorageGRID 系统可以自动发送电子邮件和 xref:using-snmp-monitoring.a
 
 
 
+[[types-of-alarm-notifications-legacy-system]]
 === 警报通知类型（旧系统）
 
 触发传统警报时， StorageGRID 系统会发送两种类型的警报通知：严重性级别和服务状态。
@@ -590,6 +607,7 @@ StorageGRID 系统可以自动发送电子邮件和 xref:using-snmp-monitoring.a
 
 
 
+[[configure-email-server-settings-for-alarms-legacy-system]]
 === 为警报配置电子邮件服务器设置（旧系统）
 
 如果您希望 StorageGRID 在触发旧警报时发送电子邮件通知，则必须指定 SMTP 邮件服务器设置。StorageGRID 系统仅发送电子邮件，无法接收电子邮件。
@@ -668,6 +686,7 @@ SMTP 邮件服务器的用户名和密码。如果身份验证设置为 on ，�
 
 
 
+[[create-alarm-email-templates-legacy-system]]
 === 创建警报电子邮件模板（旧系统）
 
 通过电子邮件模板，您可以自定义旧警报电子邮件通知的页眉，页脚和主题行。您可以使用电子邮件模板向不同的邮件列表发送包含相同正文的唯一通知。
@@ -731,6 +750,7 @@ image::../media/edit_email_templates.gif[电子邮件模板页面]
 
 
 
+[[create-mailing-lists-for-alarm-notifications-legacy-system]]
 === 为警报通知创建邮件列表（旧系统）
 
 通过邮件列表，您可以在触发旧警报或服务状态发生变化时通知收件人。您必须至少创建一个邮件列表，然后才能发送任何警报电子邮件通知。要向单个收件人发送通知，请使用一个电子邮件地址创建一个邮件列表。
@@ -790,6 +810,7 @@ image::../media/email_lists_page.gif[电子邮件列表页面]
 
 
 
+[[configure-email-notifications-for-alarms-legacy-system]]
 === 配置警报电子邮件通知（旧系统）
 
 要接收旧警报系统的电子邮件通知，收件人必须是邮件列表的成员，并且必须将该列表添加到通知页面。通知配置为仅在触发具有指定严重性级别的警报或服务状态发生更改时才向收件人发送电子邮件。因此，收件人只会收到需要接收的通知。
@@ -819,6 +840,7 @@ image::../media/email_lists_page.gif[电子邮件列表页面]
 
 
 
+[[suppress-alarm-notifications-for-a-mailing-list-legacy-system]]
 === 禁止发送邮件列表的警报通知（旧系统）
 
 如果您不再希望邮件列表接收有关警报的通知，则可以禁止此邮件列表的警报通知。例如，在过渡到使用警报电子邮件通知后，您可能希望禁止有关旧警报的通知。
@@ -846,6 +868,7 @@ NOTE: 虽然传统警报系统仍受支持，但警报系统具有显著优势�
 
 
 
+[[suppress-email-notifications-system-wide]]
 === 在系统范围内禁止电子邮件通知
 
 您可以阻止 StorageGRID 系统针对旧警报和事件触发的 AutoSupport 消息发送电子邮件通知。

@@ -23,6 +23,7 @@ StorageGRID 设备的12驱动器SG5712和SG5712X以及60驱动器SG5760和SG5760
 
 
 
+[[e5700sg-controller]]
 == E5700SG 控制器
 
 * 用作设备的计算服务器。
@@ -116,6 +117,7 @@ image::../media/e5700sg_controller_with_callouts.gif[E5700SG 控制器上的连�
 |===
 
 
+[[e2800-series-storage-controller]]
 == E2800系列存储控制器
 
 SG5700设备中使用了两个版本的E2800存储控制器：E2800A和E2800B。E2800A没有HIC、E2800B有四端口HIC。这两个控制器版本的规格和功能相同、但互连端口的位置除外。

@@ -17,12 +17,14 @@ summary: 可以将归档节点配置为通过 TSM 中间件服务器锁定磁带
 
 
 
+[[fault-with-archival-storage-devices]]
 == 归档存储设备出现故障
 
 如果您确定归档节点通过 Tivoli Storage Manager （ TSM ）访问的归档存储设备存在故障，请使归档节点脱机，以限制 StorageGRID 系统中显示的警报数量。然后，您可以使用 TSM 服务器或存储设备的管理工具或这两者来进一步诊断和解决问题。
 
 
 
+[[take-the-target-component-offline]]
 === 使目标组件脱机
 
 在对 TSM 中间件服务器进行任何可能导致其不可供归档节点使用的维护之前，请使目标组件脱机，以限制在 TSM 中间件服务器不可用时触发的警报数量。
@@ -39,6 +41,7 @@ summary: 可以将归档节点配置为通过 TSM 中间件服务器锁定磁带
 
 
 
+[[tivoli-storage-manager-administrative-tools]]
 == Tivoli Storage Manager 管理工具
 
 dsmadc 工具是安装在归档节点上的 TSM 中间件服务器的管理控制台。您可以通过在服务器的命令行中键入 `dsmadc` 来访问此工具。使用与为 ARC-Service 配置的管理用户名和密码相同的管理用户名和密码登录到管理控制台。
@@ -49,6 +52,7 @@ dsmadc 工具是安装在归档节点上的 TSM 中间件服务器的管理控�
 
 
 
+[[object-permanently-unavailable]]
 == 对象永久不可用
 
 当归档节点从 Tivoli Storage Manager （ TSM ）服务器请求对象而检索失败时，归档节点会在 10 秒间隔后重试此请求。如果对象永久不可用（例如，由于对象在磁带上损坏）， TSM API 无法向归档节点指示此情况，因此归档节点会继续重试此请求。
@@ -63,6 +67,8 @@ dsmadc 工具是安装在归档节点上的 TSM 中间件服务器的管理控�
 
 
 
+[[determining-if-objects-are-permanently-unavailable]]
+[[determining_objects_permanently_unavailable]]
 === 确定对象是否永久不可用
 
 您可以通过使用 TSM 管理控制台发出请求来确定对象是否永久不可用。

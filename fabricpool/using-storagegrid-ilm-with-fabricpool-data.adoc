@@ -38,6 +38,7 @@ NOTE: 不支持将云存储池与 FabricPool 结合使用，因为从云存储�
 
 
 
+[[example-ilm-policy-for-fabricpool-data]]
 == FabricPool 数据的 ILM 策略示例
 
 使用此简单的示例策略作为您自己的 ILM 规则和策略的起点。

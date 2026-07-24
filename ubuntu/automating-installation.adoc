@@ -25,6 +25,7 @@ StorageGRID 主机服务由软件包安装，并由配置文件驱动，这些�
 
 
 
+[[automate-the-installation-and-configuration-of-the-storagegrid-host-service]]
 == 自动安装和配置 StorageGRID 主机服务
 
 您可以使用 Ansible ， Puppet ， Chef ， Fabric 或 SaltStack 等标准业务流程框架自动安装 StorageGRID 主机服务。
@@ -46,12 +47,14 @@ StorageGRID 主机服务打包在 DEB 中，并由配置文件驱动，这些配
 
 
 
+[[example-ansible-role-and-playbook]]
 === Ansible 角色和攻略手册示例
 
 安装归档在 /Extras 文件夹中提供了示例 Ansible 角色和攻略手册。Ansible 攻略手册介绍了 `StorageGRID` 角色如何准备主机并将 StorageGRID 安装到目标服务器上。您可以根据需要自定义角色或攻略手册。
 
 
 
+[[automate-the-configuration-of-storagegrid]]
 == 自动配置 StorageGRID
 
 部署网格节点后，您可以自动配置 StorageGRID 系统。

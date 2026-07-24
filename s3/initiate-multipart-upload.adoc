@@ -104,6 +104,7 @@ NOTE: 有关 StorageGRID 如何处理 UTF-8 字符的信息，请参见 PUT 对�
 
 
 
+[[request-headers-for-server-side-encryption]]
 == 服务器端加密的请求标头
 
 您可以使用以下请求标头通过服务器端加密对多部分对象进行加密。SSE 和 SSI-C 选项是互斥的。
@@ -126,6 +127,7 @@ NOTE: 有关 StorageGRID 如何处理 UTF-8 字符的信息，请参见 PUT 对�
 
 
 
+[[unsupported-request-headers]]
 == 请求标头不受支持
 
 不支持以下请求标头，并返回 `XNotImplemented"`
@@ -135,6 +137,7 @@ NOTE: 有关 StorageGRID 如何处理 UTF-8 字符的信息，请参见 PUT 对�
 
 
 
+[[versioning]]
 == 版本控制
 
 多部分上传包括启动上传，发布上传，上传部件，组装上传的部件以及完成上传的操作。在执行完整的多部件上传操作时，系统会创建对象（如果适用，还会进行版本控制）。

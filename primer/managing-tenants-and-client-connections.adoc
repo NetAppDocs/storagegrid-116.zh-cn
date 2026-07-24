@@ -15,6 +15,7 @@ summary: 作为网格管理员，您可以创建和管理 S3 和 Swift 客户端
 
 
 
+[[tenant-accounts]]
 == 租户帐户
 
 租户帐户允许您指定谁可以使用 StorageGRID 系统存储和检索对象，以及他们可以使用哪些功能。租户帐户允许支持 S3 REST API 或 Swift REST API 的客户端应用程序在 StorageGRID 上存储和检索对象。每个租户帐户都使用 S3 客户端协议或 Swift 客户端协议。
@@ -37,6 +38,7 @@ summary: 作为网格管理员，您可以创建和管理 S3 和 Swift 客户端
 
 
 
+[[client-connections-to-storagegrid-nodes]]
 == 客户端与 StorageGRID 节点的连接
 
 租户用户必须先确定这些客户端如何连接到 StorageGRID 节点，然后才能使用 S3 或 Swift 客户端在 StorageGRID 中存储和检索数据。

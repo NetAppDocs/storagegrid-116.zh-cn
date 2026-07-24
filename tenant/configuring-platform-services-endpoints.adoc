@@ -17,6 +17,7 @@ StorageGRID 管理员可以按租户访问平台服务。要创建或使用平�
 
 
 
+[[what-is-a-platform-services-endpoint]]
 == 什么是平台服务端点？
 
 创建平台服务端点时，您可以指定 StorageGRID 访问外部目标所需的信息。
@@ -29,18 +30,21 @@ StorageGRID 管理员可以按租户访问平台服务。要创建或使用平�
 
 
 
+[[endpoints-for-cloudmirror-replication]]
 == 用于 CloudMirror 复制的端点
 
 StorageGRID 支持表示 S3 存储分段的复制端点。这些存储分段可能托管在 Amazon Web Services ，相同或远程 StorageGRID 部署或其他服务上。
 
 
 
+[[endpoints-for-notifications]]
 == 通知的端点
 
 StorageGRID 支持简单通知服务（ SNS ）端点。不支持简单队列服务（ SQS ）或 AWS Lambda 端点。
 
 
 
+[[endpoints-for-the-search-integration-service]]
 == 搜索集成服务的端点
 
 StorageGRID 支持表示 Elasticsearch 集群的搜索集成端点。这些 Elasticsearch 集群可以位于本地数据中心，也可以托管在 AWS 云或其他位置。

@@ -15,6 +15,7 @@ summary: S3 客户端更新对象的元数据时会生成审核消息。
 
 
 
+[[s3-metadata-update-audit-messages]]
 == S3 元数据更新审核消息
 
 |===

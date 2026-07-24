@@ -19,6 +19,7 @@ summary: 如果 ILM 策略包含创建纠删编码副本的规则，则必须计
 
 
 
+[[general-recommendation-for-adding-storage-capacity-for-erasure-coded-objects]]
 == 有关为经过纠删编码的对象添加存储容量的一般建议
 
 如果要避免详细计算，可以在现有存储节点容量达到 70% 时为每个站点添加两个存储节点。
@@ -29,6 +30,7 @@ summary: 如果 ILM 策略包含创建纠删编码副本的规则，则必须计
 
 
 
+[[calculate-number-of-expansion-storage-nodes-to-add-for-erasure-coded-objects]]
 == 计算要为擦除编码对象添加的扩展存储节点数
 
 要优化存储纠删编码对象的部署扩展方式，您必须考虑许多因素：
@@ -48,6 +50,7 @@ IMPORTANT: 本节中的示例介绍了向 StorageGRID 系统添加存储容量�
 
 
 
+[[example-1-expand-one-site-grid-that-uses-21-erasure-coding]]
 == 示例 1 ：扩展使用 2+1 纠删编码的单站点网格
 
 此示例显示了如何扩展仅包含三个存储节点的简单网格。
@@ -103,6 +106,7 @@ image::../media/node_expansion_example_33_percent.png[节点扩展示例 1 33%]
 
 
 
+[[example-2-expand-three-site-grid-that-uses-63-erasure-coding]]
 == 示例 2 ：扩展使用 6+3 纠删编码的三站点网格
 
 此示例显示了如何为多站点网格制定扩展计划，该网格采用的纠删编码方案包含更多片段。尽管这些示例之间存在差异，但建议的扩展计划非常相似。

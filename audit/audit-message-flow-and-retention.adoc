@@ -15,6 +15,7 @@ summary: 所有 StorageGRID 服务都会在系统正常运行期间生成审核�
 
 
 
+[[audit-message-flow]]
 == 审核消息流
 
 审核消息由管理节点以及具有管理域控制器（ ADO ）服务的存储节点处理。
@@ -29,6 +30,7 @@ image::../media/audit_message_flow.gif[用于汇总通过中继传输的审核�
 
 
 
+[[audit-message-retention]]
 === 审核消息保留
 
 StorageGRID 使用复制和删除过程来确保在将审核消息写入审核日志之前不会丢失任何审核消息。
@@ -59,6 +61,7 @@ NOTE: 如果没有可用于此` 服务的存储节点，则存储节点会将审
 
 
 
+[[large-audit-queue-alert-and-audit-messages-queued-amqs-alarm]]
 === 大型审核队列警报和审核消息已排队（ Audit Messages Queued ， AMQS ）警报
 
 为了帮助您监控一段时间内审核消息队列的大小，当存储节点队列或管理节点队列中的消息数量达到特定阈值时，将触发 * 大型审核队列 * 警报和原有 AMQS 警报。
@@ -69,6 +72,7 @@ NOTE: 如果没有可用于此` 服务的存储节点，则存储节点会将审
 
 
 
+[[duplicate-messages]]
 === 重复的消息
 
 如果发生网络或节点故障， StorageGRID 系统会采取保守的方法。因此，审核日志中可能存在重复的消息。

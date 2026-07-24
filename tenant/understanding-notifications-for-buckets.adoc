@@ -21,6 +21,7 @@ summary: 如果您希望 StorageGRID 向目标 Amazon Simple Notification Servic
 
 
 
+[[supported-notifications-and-messages]]
 == 支持的通知和消息
 
 StorageGRID 事件通知遵循 Amazon S3 API ，但存在以下限制：

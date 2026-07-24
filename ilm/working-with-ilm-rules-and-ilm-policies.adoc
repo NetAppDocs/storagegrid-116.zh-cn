@@ -20,6 +20,7 @@ summary: 创建 ILM 规则和 ILM 策略后，您可以继续使用它们，并�
 
 
 
+[[delete-an-ilm-rule]]
 == 删除 ILM 规则
 
 要使当前 ILM 规则列表易于管理，请删除不可能使用的任何 ILM 规则。
@@ -54,6 +55,7 @@ image::../media/ilm_rule_historical.png[ILM 规则历史记录]
 
 
 
+[[edit-an-ilm-rule]]
 == 编辑 ILM 规则
 
 要更改筛选器或放置指令，您可能需要编辑 ILM 规则。
@@ -95,6 +97,7 @@ image::../media/ilm_rule_historical.png[ILM 规则历史记录]
 
 
 
+[[clone-an-ilm-rule]]
 == 克隆 ILM 规则
 
 如果某个规则正在建议的 ILM 策略或活动 ILM 策略中使用，则无法编辑该规则。而是可以克隆规则并对克隆的副本进行任何必要的更改。然后，如果需要，您可以从建议的策略中删除原始规则，并将其替换为修改后的版本。如果 ILM 规则是使用 StorageGRID 10.2 或更早版本创建的，则无法克隆该规则。
@@ -125,6 +128,7 @@ image::../media/ilm_rules_page_with_edit_and_clone_enabled.png[ILM 规则页面]
 
 
 
+[[view-the-ilm-policy-activity-queue]]
 == 查看 ILM 策略活动队列
 
 您可以随时查看队列中要根据 ILM 策略进行评估的对象数量。您可能需要监控 ILM 处理队列以确定系统性能。队列较大可能表示系统无法跟上载入速率的增长，客户端应用程序的负载过大或存在异常情况。

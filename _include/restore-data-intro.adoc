@@ -18,6 +18,7 @@
 
 
 
+[[about-the-repair-data-script]]
 == 关于 `repair-data` 脚本
 
 要还原对象数据，请运行 `repair-data` 脚本。此脚本将开始还原对象数据的过程，并与 ILM 扫描配合使用以确保满足 ILM 规则。

@@ -15,12 +15,14 @@ summary: 您可以使用 S3 PUT 对象 - 复制请求为已存储在 S3 中的�
 
 
 
+[[resolve-conflicts]]
 == 解决冲突
 
 冲突的客户端请求（例如，两个客户端写入同一密钥）将以 " 最新成功 " 为基础进行解决。" 最新赢单 " 评估的时间取决于 StorageGRID 系统何时完成给定请求，而不是 S3 客户端何时开始操作。
 
 
 
+[[object-size]]
 == 对象大小
 
 单个 PUT 对象操作的最大 _recommended_size 为 5 GiB （ 5 ， 368 ， 709 ， 120 字节）。如果对象大于 5 GiB ，请改用多部分上传。
@@ -30,6 +32,7 @@ IMPORTANT: 在 StorageGRID 11.6 中，单个 PUT 对象操作的最大 _supporte
 
 
 
+[[utf-8-characters-in-user-metadata]]
 == 用户元数据中的 UTF-8 字符
 
 如果某个请求在用户定义的元数据的密钥名称或值中包含（未转义） UTF-8 值，则会未定义 StorageGRID 行为。
@@ -42,6 +45,7 @@ StorageGRID 不会解析或解释用户定义的元数据的密钥名称或值�
 
 
 
+[[supported-request-headers]]
 == 支持的请求标头
 
 支持以下请求标头：
@@ -93,6 +97,7 @@ xref:using-s3-object-lock.adoc[使用 S3 对象锁定]
 
 
 
+[[unsupported-request-headers]]
 == 请求标头不受支持
 
 不支持以下请求标头：
@@ -107,6 +112,7 @@ xref:using-s3-object-lock.adoc[使用 S3 对象锁定]
 
 
 
+[[storage-class-options]]
 == 存储类选项
 
 支持 `x-AMZ-storage-class` 请求标头，如果匹配的 ILM 规则指定了双重提交或平衡的载入行为，则会影响 StorageGRID 创建的对象副本数。
@@ -127,6 +133,7 @@ NOTE: 如果要在启用了 S3 对象锁定的情况下将对象载入存储分�
 
 
 
+[[using-x-amz-copy-source-in-put-object-copy]]
 == 在 PUT 对象中使用 x-AMZ-copy-source —复制
 
 如果在 `x-AMZ-copy-source` 标头中指定的源分段和密钥与目标分段和密钥不同，则会向目标写入源对象数据的副本。
@@ -142,6 +149,7 @@ NOTE: 如果要在启用了 S3 对象锁定的情况下将对象载入存储分�
 
 
 
+[[request-headers-for-server-side-encryption]]
 == 服务器端加密的请求标头
 
 如果使用服务器端加密，则您提供的请求标头取决于源对象是否已加密以及是否计划对目标对象加密。
@@ -175,6 +183,7 @@ NOTE: 如果要在启用了 S3 对象锁定的情况下将对象载入存储分�
 
 
 
+[[versioning]]
 == 版本控制
 
 如果源存储分段已版本控制，则可以使用 `x-AMZ-copy-source` 标头复制对象的最新版本。要复制对象的特定版本，必须使用 `veversionId` Subresource 明确指定要复制的版本。如果目标存储分段已版本控制，则生成的版本将在 `x-AMZ-version-id` 响应标题中返回。如果目标分段的版本控制已暂停，则 `x-AMZ-version-id` 将返回 "`null` " 值。

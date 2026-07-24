@@ -19,6 +19,7 @@ summary: 通过 PUT 分段一致性请求，您可以指定要应用于对分段
 
 
 
+[[request]]
 == 请求
 
 `x-ntap-sg-consistency` 参数必须包含以下值之一：
@@ -67,6 +68,7 @@ summary: 通过 PUT 分段一致性请求，您可以指定要应用于对分段
 
 
 
+[[request-example]]
 == 请求示例
 
 [source, subs="specialcharacters,quotes"]

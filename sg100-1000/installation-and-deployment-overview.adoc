@@ -36,6 +36,7 @@ SG1000
 |===
 
 
+[[installation-and-deployment-tasks]]
 == 安装和部署任务
 
 准备 StorageGRID 设备并将其添加到网格包括四个主要步骤：

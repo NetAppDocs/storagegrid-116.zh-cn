@@ -28,6 +28,7 @@ https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/Sto
 
 
 
+[[request-example]]
 == 请求示例
 
 此示例请求修改名为 `mybucket` 的存储分段的合规性设置。在此示例中， `mybucket` 中的对象现在将保留两年（ 1 ， 051 ， 200 分钟），而不是一年，从将对象载入网格开始。此存储分段没有法律上的保留。每个对象将在两年后自动删除。
@@ -78,6 +79,7 @@ RetentionPeriodMinutes
 |===
 
 
+[[consistency-level-for-compliance-settings]]
 == 合规性设置的一致性级别
 
 当您使用 PUT 存储分段合规性请求更新 S3 存储分段的合规性设置时， StorageGRID 会尝试更新整个网格中存储分段的元数据。默认情况下， StorageGRID 使用 * 强 - 全局 * 一致性级别来保证所有数据中心站点以及包含存储分段元数据的所有存储节点在更改的合规性设置中具有读 - 写一致性。
@@ -100,6 +102,7 @@ Consistency-Control: strong-site
 ----
 
 
+[[error-responses]]
 == 错误响应
 
 * 如果未创建符合要求的存储分段，则响应的 HTTP 状态代码为 `404 not found` 。

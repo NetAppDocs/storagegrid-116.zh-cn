@@ -17,12 +17,14 @@ image::../media/grid_manager_dashboard.png[网格管理器信息板]
 
 
 
+[[search-field]]
 == 搜索字段
 
 通过标题栏中的 * 搜索 * 字段，您可以快速导航到网格管理器中的特定页面或边栏条目。例如，您可以输入 * 密钥 * 以访问密钥管理服务器页面。
 
 
 
+[[health-panel]]
 == 运行状况面板
 
 |===
@@ -51,6 +53,7 @@ image::../media/grid_manager_dashboard.png[网格管理器信息板]
 |===
 
 
+[[available-storage-panel]]
 == 可用存储面板
 
 |===
@@ -76,6 +79,7 @@ image::../media/grid_manager_dashboard.png[网格管理器信息板]
 |===
 
 
+[[information-lifecycle-management-ilm-panel]]
 == 信息生命周期管理（ ILM ）面板
 
 |===
@@ -102,6 +106,7 @@ image::../media/grid_manager_dashboard.png[网格管理器信息板]
 |===
 
 
+[[protocol-operations-panel]]
 == 协议操作面板
 
 |===

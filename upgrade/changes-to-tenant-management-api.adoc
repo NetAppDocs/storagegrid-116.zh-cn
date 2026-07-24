@@ -20,6 +20,7 @@ IMPORTANT: 您可以继续在 StorageGRID 11.6 中使用管理 API 版本 1 和�
 
 
 
+[[patch-method-deprecated]]
 == 已弃用修补方法
 
 此修补程序方法现已弃用，并将在未来版本中删除。根据需要，执行 PUT 操作以替换资源，而不是使用修补程序操作来修改资源。

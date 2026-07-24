@@ -15,6 +15,7 @@ summary: 如果为 S3 租户帐户启用平台服务，则必须配置网格，�
 
 
 
+[[what-are-platform-services]]
 == 什么是平台服务？
 
 平台服务包括 CloudMirror 复制，事件通知和搜索集成服务。
@@ -51,6 +52,7 @@ NOTE: 虽然可以在启用了 S3 对象锁定的情况下在存储分段上配�
 
 
 
+[[recommendations-for-using-platform-services]]
 == 使用平台服务的建议
 
 在使用平台服务之前，请注意以下建议：

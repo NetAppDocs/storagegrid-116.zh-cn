@@ -15,12 +15,14 @@ summary: 您可以使用 S3 PUT 对象请求将对象添加到存储分段中。
 
 
 
+[[resolve-conflicts]]
 == 解决冲突
 
 冲突的客户端请求（例如，两个客户端写入同一密钥）将以 " 最新成功 " 为基础进行解决。" 最新赢单 " 评估的时间取决于 StorageGRID 系统何时完成给定请求，而不是 S3 客户端何时开始操作。
 
 
 
+[[object-size]]
 == 对象大小
 
 单个 PUT 对象操作的最大 _recommended_size 为 5 GiB （ 5 ， 368 ， 709 ， 120 字节）。如果对象大于 5 GiB ，请改用多部分上传。
@@ -30,12 +32,14 @@ IMPORTANT: 在 StorageGRID 11.6 中，单个 PUT 对象操作的最大 _supporte
 
 
 
+[[user-metadata-size]]
 == 用户元数据大小
 
 Amazon S3 将每个 PUT 请求标头中用户定义的元数据的大小限制为 2 KB 。StorageGRID 将用户元数据限制为 24 KiB 。用户定义的元数据的大小是通过采用 UTF-8 编码的每个键和值的字节数之和来衡量的。
 
 
 
+[[utf-8-characters-in-user-metadata]]
 == 用户元数据中的 UTF-8 字符
 
 如果某个请求在用户定义的元数据的密钥名称或值中包含（未转义） UTF-8 值，则会未定义 StorageGRID 行为。
@@ -48,18 +52,21 @@ StorageGRID 不会解析或解释用户定义的元数据的密钥名称或值�
 
 
 
+[[object-tag-limits]]
 == 对象标记限制
 
 您可以在上传新对象时为其添加标记，也可以将其添加到现有对象中。StorageGRID 和 Amazon S3 对每个对象最多支持 10 个标记。与对象关联的标记必须具有唯一的标记密钥。一个标记密钥的长度最多可以是 128 个 Unicode 字符，而标记值的长度最多可以是 256 个 Unicode 字符。密钥和值区分大小写。
 
 
 
+[[object-ownership]]
 == 对象所有权
 
 在 StorageGRID 中，所有对象均归存储分段所有者帐户所有，包括由非所有者帐户或匿名用户创建的对象。
 
 
 
+[[supported-request-headers]]
 == 支持的请求标头
 
 支持以下请求标头：
@@ -137,6 +144,7 @@ xref:using-s3-object-lock.adoc[使用 S3 对象锁定]
 
 
 
+[[unsupported-request-headers]]
 == 请求标头不受支持
 
 不支持以下请求标头：
@@ -147,6 +155,7 @@ xref:using-s3-object-lock.adoc[使用 S3 对象锁定]
 
 
 
+[[storage-class-options]]
 == 存储类选项
 
 支持 `x-AMZ-storage-class` 请求标头。为 `x-AMZ-storage-class` 提交的值会影响 StorageGRID 在载入期间保护对象数据的方式，而不会影响 StorageGRID 系统中存储对象的永久性副本的数量（由 ILM 决定）。
@@ -183,6 +192,7 @@ xref:using-s3-object-lock.adoc[使用 S3 对象锁定]
 
 
 
+[[request-headers-for-server-side-encryption]]
 == 服务器端加密的请求标头
 
 您可以使用以下请求标头通过服务器端加密对对象进行加密。SSE 和 SSI-C 选项是互斥的。
@@ -207,6 +217,7 @@ xref:using-s3-object-lock.adoc[使用 S3 对象锁定]
 
 
 
+[[versioning]]
 == 版本控制
 
 如果为存储分段启用了版本控制，则会自动为所存储的对象版本生成唯一的 `veversionId` 。此 `veversionId` 也会在响应中使用 `x-AMZ-version-id` 响应标头返回。

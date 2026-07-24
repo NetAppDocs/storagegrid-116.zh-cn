@@ -51,6 +51,7 @@ PUT 存储分段元数据通知
 
 
 
+[[recommendations-for-using-platform-services]]
 == 使用平台服务的建议
 
 在使用平台服务之前，您必须了解以下建议：

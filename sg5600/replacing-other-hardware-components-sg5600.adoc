@@ -23,6 +23,7 @@ summary: 您可能需要更换 StorageGRID 设备中的驱动器，风扇，电�
 
 
 
+[[sg5612-component-replacement-instructions]]
 == SG5612 组件更换说明
 
 |===
@@ -51,6 +52,7 @@ E2700 控制器中的电池（需要卸下控制器）
 |===
 
 
+[[sg5660-component-replacement-instructions]]
 == SG5660 组件更换说明
 
 |===

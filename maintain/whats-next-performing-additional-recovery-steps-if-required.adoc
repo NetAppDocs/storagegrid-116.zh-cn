@@ -17,6 +17,7 @@ summary: 根据您为使 StorageGRID 节点在替代主机上运行而采取的�
 
 
 
+[[corrective-actions-and-next-steps]]
 == 更正操作和后续步骤
 
 在更换节点期间，您可能需要执行以下更正操作之一：

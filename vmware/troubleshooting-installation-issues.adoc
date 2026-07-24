@@ -33,6 +33,7 @@ https://mysupport.netapp.com/site/global/dashboard["NetApp 支持"^]
 
 
 
+[[virtual-machine-resource-reservation-requires-adjustment]]
 == 虚拟机资源预留需要调整
 
 OVF 文件包含一个资源预留，用于确保每个网格节点都有足够的 RAM 和 CPU 来高效运行。如果通过在 VMware 上部署这些 OVF 文件来创建虚拟机，但预定义的资源数量不可用，则虚拟机将无法启动。

@@ -27,6 +27,7 @@ NOTE: 如果要创建 ILM 策略来管理非当前对象版本，请注意，要
 
 
 
+[[ilm-rule-1-for-example-4-save-three-copies-for-10-years]]
 == ILM 规则 1 示例 4 ：保存三个副本 10 年
 
 此示例 ILM 规则会将每个对象的一个副本存储在三个数据中心，持续 10 年。
@@ -69,6 +70,7 @@ image::../media/ilm_rule_1_example_4.png[ILM 规则 1 示例 4 ：保存三个�
 
 
 
+[[ilm-rule-2-for-example-4-save-two-copies-of-noncurrent-versions-for-2-years]]
 == ILM 规则 2 示例 4 ：将两个非最新版本副本保存 2 年
 
 此示例 ILM 规则会将 S3 版本对象的两个非最新版本副本存储 2 年。
@@ -113,6 +115,7 @@ image::../media/ilm_rule_2_example_4.png[ILM 规则 2 示例 4 ：将非最新�
 
 
 
+[[ilm-policy-for-example-4-s3-versioned-objects]]
 == ILM 策略示例 4 ： S3 版本对象
 
 如果要以与当前版本不同的方式管理对象的旧版本，则使用 * 非当前时间 * 作为参考时间的规则必须先显示在 ILM 策略中，然后再显示适用于当前对象版本的规则。

@@ -15,6 +15,7 @@ StorageGRID 设备的 SG5612 和 SG5660 型号都包括一个 E2700 控制器和
 
 
 
+[[model-sg5612-2u-rear-view-of-e2700-controller-and-e5600sg-controller]]
 == SG5612 2U 型号： E2700 控制器和 E5600SG 控制器背面图
 
 image::../media/sg5612_2u_rear_view.gif[带有两个控制器的 SG5612 的背面图]
@@ -38,6 +39,7 @@ E5600SG 控制器
 |===
 
 
+[[model-sg5660-4u-rear-view-of-e2700-controller-and-e5600sg-controller]]
 == SG5660 4U 型号： E2700 控制器和 E5600SG 控制器背面图
 
 E2700 控制器位于 E5600SG 控制器之上。
@@ -63,6 +65,7 @@ E5600SG 控制器
 |===
 
 
+[[rear-view-of-e2700-controller]]
 == E2700 控制器背面图
 
 image::../media/sga_controller_2700_diagram_callouts.gif[E2700 图]
@@ -117,6 +120,7 @@ NOTE: 不使用 E2700 控制器背面标记为驱动器扩展（绿色）的两�
 
 
 
+[[rear-view-of-e5600sg-controller]]
 == E5600SG 控制器背面图
 
 image::../media/sga_controller_5600_diagram_callouts.gif[E5600 示意图]

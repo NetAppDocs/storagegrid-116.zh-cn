@@ -15,6 +15,7 @@ StorageGRID 支持以下 Swift API 端点：信息 URL ，身份验证 URL 和�
 
 
 
+[[info-url]]
 == 信息 URL
 
 您可以通过向带有 /info 路径的 Swift 基础 URL 发出 GET 请求来确定 StorageGRID Swift 实施的功能和限制。
@@ -38,6 +39,7 @@ StorageGRID 支持以下 Swift API 端点：信息 URL ，身份验证 URL 和�
 
 
 
+[[auth-url]]
 == 身份验证 URL
 
 客户端可以使用 Swift 身份验证 URL 作为租户帐户用户进行身份验证。
@@ -77,6 +79,7 @@ StorageGRID 支持以下 Swift API 端点：信息 URL ，身份验证 URL 和�
 
 
 
+[[storage-url]]
 == 存储 URL
 
 客户端应用程序可以通过问题描述 Swift REST API 调用对网关节点或存储节点执行支持的帐户，容器和对象操作。存储请求会发送到身份验证响应中返回的存储 URL 。此请求还必须包含从身份验证请求返回的 X-Auth-Token 标头和值。

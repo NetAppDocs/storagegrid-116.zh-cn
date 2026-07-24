@@ -52,6 +52,7 @@ image::../media/appliance_enclosure_handles.gif[机箱手柄]
 
 
 
+[[cables-and-connectors]]
 == 缆线和连接器
 
 StorageGRID 设备的发货包括以下缆线和连接器：

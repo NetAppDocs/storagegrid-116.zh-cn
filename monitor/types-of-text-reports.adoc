@@ -15,6 +15,7 @@ summary: 文本报告以文本形式显示 NMS 服务已处理的属性数据值
 
 
 
+[[raw-text-reports]]
 == 原始文本报告
 
 原始文本报告显示有关选定属性的详细信息：
@@ -28,6 +29,7 @@ image::../media/raw_text_report.gif[显示原始文本报告的屏幕截图]
 
 
 
+[[aggregate-text-reports]]
 == 聚合文本报告
 
 聚合文本报告显示的数据比原始文本报告显示的时间更长（通常为一周）。每个条目都是由 NMS 服务在一段时间内将多个属性值（属性值的聚合）汇总到一个条目中的结果，其中包含从聚合派生的平均值，最大值和最小值。
@@ -44,6 +46,7 @@ image::../media/aggregate_text_report.gif[显示聚合文本报告的屏幕截�
 
 
 
+[[generate-text-reports]]
 == 生成文本报告
 
 文本报告以文本形式显示 NMS 服务已处理的属性数据值。您可以报告数据中心站点，网格节点，组件或服务。
@@ -85,6 +88,7 @@ image::../media/aggregate_text_report.gif[显示聚合文本报告的屏幕截�
 
 
 
+[[export-text-reports]]
 == 导出文本报告
 
 导出的文本报告将打开一个新的浏览器选项卡，在此可以选择和复制数据。

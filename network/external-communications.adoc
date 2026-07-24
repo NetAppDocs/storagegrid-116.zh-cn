@@ -15,12 +15,14 @@ summary: 客户端需要与网格节点进行通信才能载入和检索内容�
 
 
 
+[[restricted-access-to-ports]]
 == 对端口的访问受限
 
 如果企业网络策略限制对任何端口的访问，您可以使用 xref:../admin/configuring-load-balancer-endpoints.adoc[负载平衡器端点] 允许对用户定义的端口进行访问。然后，您可以使用 xref:../admin/managing-untrusted-client-networks.adoc[不可信的客户端网络] 仅允许对负载平衡器端点端口进行访问。
 
 
 
+[[port-remapping]]
 == 端口重新映射
 
 要使用 SMTP ， DNS ， SSH 或 DHCP 等系统和协议，您必须在部署节点时重新映射端口。但是，您不应重新映射负载平衡器端点。有关端口重新映射的信息，请参见适用于您的平台的安装说明：
@@ -40,6 +42,7 @@ summary: 客户端需要与网格节点进行通信才能载入和检索内容�
 
 
 
+[[ports-used-for-external-communications]]
 == 用于外部通信的端口
 
 下表显示了用于向节点进行流量的端口。

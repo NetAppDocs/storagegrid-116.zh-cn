@@ -4,6 +4,7 @@
 
 
 
+[[move-battery-to-the-new-controller]]
 == 将电池移至新控制器
 
 .步骤

@@ -44,6 +44,7 @@ SGF6024
 |===
 
 
+[[installation-and-deployment-tasks]]
 == 安装和部署任务
 
 将 StorageGRID 存储设备添加到 StorageGRID 系统包括四个主要步骤：

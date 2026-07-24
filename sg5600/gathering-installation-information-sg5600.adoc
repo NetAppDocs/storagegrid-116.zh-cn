@@ -18,6 +18,7 @@ summary: 在安装和配置 StorageGRID 设备时，您必须做出决策并收�
 
 
 
+[[information-needed-to-connect-e2700-controller-to-santricity-storage-manager]]
 == 将 E2700 控制器连接到 SANtricity 存储管理器所需的信息
 
 您必须将 E2700 控制器连接到要用于 SANtricity 存储管理器的管理网络。
@@ -89,6 +90,7 @@ IP 地址格式
 |===
 
 
+[[information-needed-to-connect-e5600sg-controller-to-admin-network]]
 == 将 E5600SG 控制器连接到管理网络所需的信息
 
 StorageGRID 管理网络是一个可选网络，用于系统管理和维护。此设备使用 E5600SG 控制器上的 1-GbE 管理端口连接到管理网络。
@@ -166,6 +168,7 @@ DHCP 为管理端口 1 分配的 IP 地址（如果在启动后可用）
 |===
 
 
+[[information-needed-to-connect-and-configure-10-gbe-ports-on-e5600sg-controller]]
 == 在 E5600SG 控制器上连接和配置 10-GbE 端口所需的信息
 
 E5600SG 控制器上的四个 10-GbE 端口连接到 StorageGRID 网格网络和客户端网络。
@@ -213,6 +216,7 @@ NOTE: 有关这些端口选项的详细信息，请参见 "E5600SG 控制器的 
 |===
 
 
+[[information-needed-to-connect-e5600sg-controller-to-grid-network]]
 == 将 E5600SG 控制器连接到网格网络所需的信息
 
 适用于 StorageGRID 的网格网络是一个必需的网络，用于所有内部 StorageGRID 流量。此设备使用 E5600SG 控制器上的 10-GbE 端口连接到网格网络。
@@ -284,6 +288,7 @@ DHCP 为网格网络分配的 IP 地址（如果在启动后可用）
 |===
 
 
+[[information-needed-to-connect-e5600sg-controller-to-client-network]]
 == 将 E5600SG 控制器连接到客户端网络所需的信息
 
 适用于 StorageGRID 的客户端网络是一个可选网络，用于提供对网格的客户端协议访问。此设备使用 E5600SG 控制器上的 10-GbE 端口连接到客户端网络。

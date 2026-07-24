@@ -15,24 +15,28 @@ summary: 在配置要与 FabricPool 结合使用的 StorageGRID 系统时，应�
 
 
 
+[[object-encryption]]
 == 对象加密
 
 配置 StorageGRID 时，如果其他 StorageGRID 客户端需要数据加密，您可以选择启用全局 * 存储对象加密 * 设置（ * 配置 * > * 系统 * > * 网格选项 * ）。从 FabricPool 分层到 StorageGRID 的数据已加密，因此不需要启用 StorageGRID 设置。客户端加密密钥归 ONTAP 所有。
 
 
 
+[[object-compression]]
 == 对象压缩
 
 配置 StorageGRID 时，请勿启用全局 * 压缩存储的对象 * 设置（ * 配置 * > * 系统 * > * 网格选项 * ）。已对从 FabricPool 分层到 StorageGRID 的数据进行压缩。启用 * 压缩存储的对象 * 不会进一步减小对象的大小。
 
 
 
+[[consistency-level]]
 == 一致性级别
 
 对于FabricPool 存储分段、建议的存储分段一致性级别为*读取-后-新-写入*、这是新存储分段的默认设置。请勿将FabricPool 分段编辑为使用*可用*或任何其他一致性级别。
 
 
 
+[[fabricpool-tiering]]
 == FabricPool 分层
 
 如果StorageGRID 节点使用从NetApp ONTAP 系统分配的存储、请确认此卷未启用FabricPool 分层策略。例如，如果 StorageGRID 节点正在 VMware 主机上运行，请确保为 StorageGRID 节点的数据存储库提供支持的卷未启用 FabricPool 分层策略。对 StorageGRID 节点使用的卷禁用 FabricPool 分层可简化故障排除和存储操作。

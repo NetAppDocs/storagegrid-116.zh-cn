@@ -15,6 +15,7 @@ summary: 对对象执行以下 Swift API 操作。
 
 
 
+[[delete-object]]
 == 删除对象
 
 此操作将从 StorageGRID 系统中删除对象的内容和元数据。
@@ -45,6 +46,7 @@ summary: 对对象执行以下 Swift API 操作。
 
 
 
+[[get-object]]
 == 获取对象
 
 此操作将检索对象内容并从 StorageGRID 系统获取对象元数据。
@@ -87,6 +89,7 @@ summary: 对对象执行以下 Swift API 操作。
 
 
 
+[[head-object]]
 == head 对象
 
 此操作将从 StorageGRID 系统检索所载入对象的元数据和属性。
@@ -119,6 +122,7 @@ summary: 对对象执行以下 Swift API 操作。
 
 
 
+[[put-object]]
 == PUT 对象
 
 此操作将使用数据和元数据创建新对象，或者将现有对象替换为 StorageGRID 系统中的数据和元数据。

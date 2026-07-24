@@ -15,6 +15,7 @@ summary: 您可以使用 S3 GET 对象请求从 S3 存储分段检索对象。
 
 
 
+[[get-object-and-multipart-objects]]
 == 获取对象和多部分对象
 
 您可以使用 `partnumber` request 参数检索多部分或分段对象的特定部分。`x-AMZ-MP-parts-count` 响应元素指示对象包含的部件数。
@@ -23,6 +24,7 @@ summary: 您可以使用 S3 GET 对象请求从 S3 存储分段检索对象。
 
 
 
+[[request-headers-for-server-side-encryption-with-customer-provided-encryption-keys-sse-c]]
 == 使用客户提供的加密密钥（ SSI-C ）进行服务器端加密的请求标头
 
 如果使用您提供的唯一密钥对对象进行加密，请使用所有三个标头。
@@ -37,12 +39,14 @@ IMPORTANT: 您提供的加密密钥永远不会存储。如果丢失加密密钥
 
 
 
+[[utf-8-characters-in-user-metadata]]
 == 用户元数据中的 UTF-8 字符
 
 StorageGRID 不会解析或解释用户定义的元数据中的转义 UTF-8 字符。如果密钥名称或值包含不可打印的字符，则对用户定义的元数据中包含转义 UTF-8 字符的对象的获取请求不会返回 `x-AMZ-MISSING-meta` 标头。
 
 
 
+[[unsupported-request-header]]
 == 请求标头不受支持
 
 不支持以下请求标头，并返回 `XNotImplemented"` ：
@@ -52,12 +56,14 @@ StorageGRID 不会解析或解释用户定义的元数据中的转义 UTF-8 字�
 
 
 
+[[versioning]]
 == 版本控制
 
 如果未指定 `veversionId` Subresource ，则此操作将提取受版本控制的存储分段中的对象的最新版本。如果对象的当前版本为删除标记，则返回 "`not found` " 状态，并将 `x-AMZ-delete-marker` response 标头设置为 `true` 。
 
 
 
+[[behavior-of-get-object-for-cloud-storage-pool-objects]]
 == Cloud Storage Pool 对象的 GET 对象行为
 
 如果某个对象已存储在云存储池中（请参见有关通过信息生命周期管理来管理对象的说明），则 GET 对象请求的行为取决于对象的状态。有关详细信息，请参见 "`head Object` " 。
@@ -115,6 +121,7 @@ NOTE: 如果某个对象存储在云存储池中，并且该对象的一个或�
 |===
 
 
+[[multipart-or-segmented-objects-in-a-cloud-storage-pool]]
 == 云存储池中的多部分或分段对象
 
 如果您上传的是多部分对象或 StorageGRID 将一个大型对象拆分为多个区块，则 StorageGRID 会通过取样该对象的部分或区块来确定该对象是否在云存储池中可用。在某些情况下，如果对象的某些部分已过渡到不可检索的状态或对象的某些部分尚未还原，则获取对象请求可能会错误地返回 `200 正常` 。

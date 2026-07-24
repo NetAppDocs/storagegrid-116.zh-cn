@@ -44,6 +44,7 @@ NOTE: 如果存储池包含两个站点，则无法配置擦除编码配置文�
 
 
 
+[[erasure-coding-schemes-for-storage-pools-containing-three-or-more-sites]]
 == 包含三个或更多站点的存储池的纠删编码方案
 
 下表介绍了 StorageGRID 当前支持的纠删编码方案，该方案适用于包含三个或更多站点的存储池。所有这些方案均可提供站点丢失保护。一个站点可能会丢失，但对象仍可访问。
@@ -207,6 +208,7 @@ NOTE: 如果您不确定要使用的方案，请选择 4+2 或 6+3 ，或者联�
 
 
 
+[[erasure-coding-schemes-for-one-site-storage-pools]]
 == 单站点存储池的纠删编码方案
 
 单站点存储池支持为三个或更多站点定义的所有纠删编码方案，但前提是该站点具有足够的存储节点。

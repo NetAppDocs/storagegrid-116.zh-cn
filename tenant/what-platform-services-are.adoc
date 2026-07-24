@@ -50,6 +50,7 @@ IMPORTANT: StorageGRID 管理员必须使用网格管理器或网格管理 API �
 
 
 
+[[how-platform-services-are-configured]]
 == 如何配置平台服务
 
 平台服务与您使用租户管理器或租户管理 API 配置的外部端点进行通信。每个端点都代表一个外部目标，例如 StorageGRID S3 存储分段， Amazon Web 服务分段，简单通知服务（ SNS ）主题或本地托管， AWS 或其他位置的 Elasticsearch 集群。

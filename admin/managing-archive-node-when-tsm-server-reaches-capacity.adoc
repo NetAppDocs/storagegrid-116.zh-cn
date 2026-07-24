@@ -23,6 +23,7 @@ summary: 当 TSM 数据库或 TSM 服务器管理的归档介质存储即将达�
 
 
 
+[[prevent-arc-service-from-sending-content-to-tsm-server]]
 == 阻止应用程序保护服务向 TSM 服务器发送内容
 
 为了防止此 ARC-Service 向 TSM 服务器发送更多内容，您可以使归档节点的 * ARC/ * 组件脱机，从而使其 * 存储 * 组件脱机。此操作步骤 还有助于防止在 TSM 服务器不可维护时发出警报。
@@ -41,6 +42,7 @@ image::../media/tsm_offline.gif[归档节点的配置页面]
 
 
 
+[[set-archive-node-to-read-only-if-tsm-middleware-reaches-capacity]]
 == 如果 TSM 中间件达到容量，请将归档节点设置为只读
 
 如果目标 TSM 中间件服务器达到容量，则可以对归档节点进行优化，使其仅执行检索。

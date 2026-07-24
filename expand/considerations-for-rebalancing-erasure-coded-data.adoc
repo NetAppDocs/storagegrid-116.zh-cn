@@ -19,6 +19,7 @@ summary: 如果要执行扩展以添加存储节点，并且 ILM 策略包含一
 
 
 
+[[what-is-ec-rebalancing]]
 == 什么是 EC 重新平衡？
 
 EC 重新平衡是扩展存储节点后可能需要的 StorageGRID 操作步骤 。操作步骤 将作为主管理节点上的命令行脚本运行。运行 EC 重新平衡操作步骤 时， StorageGRID 会在站点的现有存储节点和新扩展的存储节点之间重新分布经过擦除编码的片段。
@@ -42,6 +43,7 @@ EC 重新平衡操作步骤 ：
 
 
 
+[[when-not-to-perform-ec-rebalance]]
 == 何时不执行 EC 重新平衡
 
 例如，当您不需要执行 EC 重新平衡时，请考虑以下几点：
@@ -62,6 +64,7 @@ image::../media/used_space_after_3_node_expansion.png[3 节点扩展后的已用
 
 
 
+[[when-to-perform-ec-rebalance]]
 == 何时执行 EC 重新平衡
 
 例如，您应在何时执行 EC 重新平衡操作步骤 ，请考虑相同的示例，但假定您只能添加两个存储节点。由于 2+1 纠删编码至少需要三个存储节点，因此新节点不能用于纠删编码的数据。
@@ -74,6 +77,7 @@ image::../media/used_space_after_ec_rebalance.png[在 EC 重新平衡后已用�
 
 
 
+[[requirements-for-ec-rebalancing]]
 == EC 重新平衡的要求
 
 通常，您只能在有限情况下运行 EC 重新平衡操作步骤 。具体而言，只有在以下所有陈述均正确的情况下，才应执行 EC 重新平衡：
@@ -86,6 +90,7 @@ image::../media/used_space_after_ec_rebalance.png[在 EC 重新平衡后已用�
 
 
 
+[[how-ec-rebalance-procedure-interacts-with-other-maintenance-tasks]]
 == EC 重新平衡操作步骤 如何与其他维护任务进行交互
 
 您不能在运行 EC 重新平衡操作步骤 的同时执行某些维护过程。
@@ -163,6 +168,7 @@ EC 数据修复作业
 |===
 
 
+[[how-ec-rebalance-procedure-interacts-with-ilm]]
 == EC 重新平衡操作步骤 如何与 ILM 交互
 
 在运行 EC 重新平衡操作步骤 时，请避免进行可能会更改现有纠删编码对象位置的 ILM 更改。例如，请勿开始使用具有不同擦除编码配置文件的 ILM 规则。如果需要进行此类 ILM 更改，应中止 EC 重新平衡操作步骤 。

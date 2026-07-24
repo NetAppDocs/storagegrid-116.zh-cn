@@ -15,6 +15,7 @@ StorageGRID 系统在 OpenStack Swift API 中支持大多数操作。在将 Swif
 
 
 
+[[operations-supported-in-storagegrid]]
 == StorageGRID 中支持的操作
 
 支持以下 Swift API 操作：
@@ -26,6 +27,7 @@ StorageGRID 系统在 OpenStack Swift API 中支持大多数操作。在将 Swif
 
 
 
+[[common-response-headers-for-all-operations]]
 == 所有操作的通用响应标头
 
 StorageGRID 系统可为 OpenStack Swift 对象存储 API v1 定义的受支持操作实施所有通用标头。

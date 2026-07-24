@@ -21,6 +21,7 @@ StorageGRID 遵循 _NetApp 漏洞处理策略 _ 。报告的漏洞会根据产�
 
 
 
+[[general-considerations-for-hardening-storagegrid-systems]]
 == 强化 StorageGRID 系统的一般注意事项
 
 在强化 StorageGRID 系统时，必须考虑以下几点：

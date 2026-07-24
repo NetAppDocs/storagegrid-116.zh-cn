@@ -15,6 +15,7 @@ summary: 要将 StorageGRID 配置为接受来自客户端应用程序的连接�
 
 
 
+[[create-and-configure-s3-tenant-accounts]]
 == 创建和配置 S3 租户帐户
 
 S3 API 客户端必须先具有 S3 租户帐户，然后才能在 StorageGRID 上存储和检索对象。每个租户帐户都有自己的帐户 ID ，组和用户以及容器和对象。
@@ -47,6 +48,7 @@ xref:../tenant/index.adoc[使用租户帐户]
 
 
 
+[[how-client-connections-can-be-configured]]
 == 如何配置客户端连接
 
 网格管理员可以选择影响 S3 客户端连接到 StorageGRID 以存储和检索数据的配置。建立连接所需的具体信息取决于所选的配置。
@@ -85,6 +87,7 @@ xref:../admin/index.adoc[管理 StorageGRID]
 
 
 
+[[summary-ip-addresses-and-ports-for-client-connections]]
 === 摘要：客户端连接的 IP 地址和端口
 
 客户端应用程序使用网格节点的 IP 地址以及该节点上服务的端口号连接到 StorageGRID 。如果配置了高可用性（ HA ）组，则客户端应用程序可以使用 HA 组的虚拟 IP 地址进行连接。
@@ -206,6 +209,7 @@ xref:../admin/index.adoc[管理 StorageGRID]
 
 
 
+[[decide-to-use-https-or-http-connections]]
 === 决定使用 HTTPS 或 HTTP 连接
 
 使用负载平衡器端点建立客户端连接时，必须使用为此端点指定的协议（ HTTP 或 HTTPS ）进行连接。要使用 HTTP 连接到存储节点或网关节点上的 CLB 服务，必须启用 HTTP 。
@@ -227,6 +231,7 @@ xref:benefits-of-active-idle-and-concurrent-http-connections.adoc[活动，空�
 
 
 
+[[endpoint-domain-names-for-s3-requests]]
 == S3 请求的端点域名
 
 在对客户端请求使用 S3 域名之前， StorageGRID 管理员必须将系统配置为接受在 S3 路径模式和 S3 虚拟托管模式请求中使用 S3 域名的连接。
@@ -263,6 +268,7 @@ xref:configuring-security-for-rest-api.adoc[配置 REST API 的安全性]
 
 
 
+[[test-your-s3-rest-api-configuration]]
 == 测试 S3 REST API 配置
 
 您可以使用 Amazon Web Services 命令行界面（ AWS 命令行界面）测试与系统的连接，并验证是否可以向系统读取和写入对象。

@@ -28,6 +28,7 @@ ILM 规则定义：
 
 
 
+[[example-ilm-rule]]
 == ILM 规则示例
 
 此示例 ILM 规则适用场景 属于租户 A 的对象它会为这些对象创建两个复制副本，并将每个副本存储在不同的站点上。这两个副本会保留 "`Forever ，` " ，这意味着 StorageGRID 不会自动删除它们。相反， StorageGRID 将保留这些对象，直到客户端删除请求或存储分段生命周期到期时将其删除为止。
@@ -38,6 +39,7 @@ image::../media/ilm_example_rule_2_copies_tenant_a.png[示例 ILM 规则 2 复�
 
 
 
+[[how-an-ilm-policy-evaluates-objects]]
 == ILM 策略如何评估对象
 
 StorageGRID 系统的活动 ILM 策略控制所有对象的放置，持续时间和数据保护。
@@ -51,6 +53,7 @@ StorageGRID 系统的活动 ILM 策略控制所有对象的放置，持续时间
 
 
 
+[[example-ilm-policy]]
 == ILM 策略示例
 
 此示例 ILM 策略使用三个 ILM 规则。

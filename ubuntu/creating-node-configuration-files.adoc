@@ -15,12 +15,14 @@ summary: 节点配置文件是一个小型文本文件，用于提供 StorageGRI
 
 
 
+[[where-do-i-put-the-node-configuration-files]]
 == 应将节点配置文件放在何处？
 
 您必须将每个 StorageGRID 节点的配置文件放置在要运行该节点的主机上的 ` /etc/storaggrid/nodes` 目录中。例如，如果您计划在主机 A 上运行一个管理节点，一个网关节点和一个存储节点，则必须将三个节点配置文件放置在主机 A 上的 ` /etc/storaggrid/nodes` 中。您可以使用文本编辑器（例如 vim 或 nanan ）在每个主机上直接创建配置文件，也可以在其他位置创建配置文件并将其移动到每个主机。
 
 
 
+[[what-do-i-name-the-node-configuration-files]]
 == 节点配置文件的名称是什么？
 
 配置文件的名称非常重要。格式为 `node-name.conf` ，其中 `node-name` 是您分配给节点的名称。此名称显示在 StorageGRID 安装程序中，用于节点维护操作，例如节点迁移。
@@ -47,6 +49,7 @@ site-nodetype-nodenumber.conf
 
 
 
+[[what-is-in-a-node-configuration-file]]
 == 节点配置文件中的内容是什么？
 
 配置文件包含密钥 / 值对，每行一个密钥和一个值。对于每个密钥 / 值对，您必须遵循以下规则：

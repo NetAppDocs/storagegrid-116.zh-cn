@@ -4,6 +4,7 @@
 
 
 
+[[remove-the-controller]]
 == 卸下控制器
 
 .步骤

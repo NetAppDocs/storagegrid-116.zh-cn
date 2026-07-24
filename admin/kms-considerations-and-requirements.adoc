@@ -15,6 +15,7 @@ summary: 在配置外部密钥管理服务器（ KMS\ ）之前，您必须了�
 
 
 
+[[what-are-the-kmip-requirements]]
 == KMIP 要求是什么？
 
 StorageGRID 支持 KMIP 1.4 版。
@@ -33,6 +34,7 @@ http://docs.oasis-open.org/kmip/spec/v1.4/os/kmip-spec-v1.4-os.html["密钥管�
 
 
 
+[[which-appliances-are-supported]]
 == 支持哪些设备？
 
 您可以使用密钥管理服务器（ Key Management Server ， KMS ）管理网格中启用了 * 节点加密 * 设置的任何 StorageGRID 设备的加密密钥。只有在使用 StorageGRID 设备安装程序安装设备的硬件配置阶段，才能启用此设置。
@@ -91,6 +93,7 @@ SG5600 存储设备
 
 
 
+[[when-should-i-configure-key-management-servers]]
 == 应在何时配置密钥管理服务器？
 
 对于新安装，通常应在创建租户之前在网格管理器中设置一个或多个密钥管理服务器。此顺序可确保节点在存储任何对象数据之前受到保护。
@@ -99,6 +102,7 @@ SG5600 存储设备
 
 
 
+[[how-many-key-management-servers-do-i-need]]
 == 我需要多少个密钥管理服务器？
 
 您可以配置一个或多个外部密钥管理服务器，以便为 StorageGRID 系统中的设备节点提供加密密钥。每个 KMS 都为单个站点或一组站点上的 StorageGRID 设备节点提供一个加密密钥。
@@ -113,6 +117,7 @@ image::../media/kms_per_site.png[每个站点的公里数]
 
 
 
+[[what-happens-when-a-key-is-rotated]]
 == 轮换密钥时会发生什么情况？
 
 作为安全最佳实践，您应定期轮换每个已配置的 KMS 使用的加密密钥。
@@ -131,6 +136,7 @@ CAUTION: 切勿尝试通过在网格管理器中更改 KMS 的密钥名称（别
 
 
 
+[[can-i-reuse-an-appliance-node-after-it-has-been-encrypted]]
 == 是否可以在设备节点加密后重复使用它？
 
 如果需要将加密设备安装到另一个 StorageGRID 系统中，则必须先停用网格节点，才能将对象数据移动到另一个节点。然后，您可以使用 StorageGRID 设备安装程序清除 KMS 配置。清除 KMS 配置将禁用 * 节点加密 * 设置，并删除设备节点与 StorageGRID 站点的 KMS 配置之间的关联。

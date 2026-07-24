@@ -15,6 +15,7 @@ summary: 如果在使用 StorageGRID 系统时遇到问题，请参阅本节中�
 
 
 
+[[overview-of-problem-determination]]
 == 问题确定概述
 
 如果遇到问题，请执行此操作 xref:../admin/index.adoc[管理 StorageGRID 系统]，您可以使用此图中概述的过程来识别和分析问题描述 。在许多情况下，您可以自行解决问题；但是，您可能需要将某些问题上报给技术支持。
@@ -23,6 +24,7 @@ image::../media/problem_determination_methodology.gif[显示问题确定操作�
 
 
 
+[[define-the-problem]]
 === 定义问题
 
 解决问题的第一步是明确定义问题。
@@ -84,6 +86,7 @@ StorageGRID 系统正在执行什么操作或不执行什么操作？其症状�
 |===
 
 
+[[assess-the-risk-and-impact-on-the-system]]
 === 评估风险和对系统的影响
 
 定义问题后，请评估其对 StorageGRID 系统的风险和影响。例如，存在严重警报并不一定意味着系统不提供核心服务。
@@ -124,6 +127,7 @@ StorageGRID 系统是否可以载入内容？
 |===
 
 
+[[collect-data]]
 === 收集数据
 
 定义问题并评估其风险和影响后，收集数据以供分析。最有用的数据类型取决于问题的性质。
@@ -407,6 +411,7 @@ ILM 扫描速率
 |===
 
 
+[[analyze-data]]
 === 分析数据
 
 使用您收集的信息确定问题的发生原因 以及可能的解决方案。
@@ -420,6 +425,7 @@ ILM 扫描速率
 
 
 
+[[escalation-information-checklist]]
 === 上报信息检查清单
 
 如果您无法自行解决此问题，请联系技术支持。在联系技术支持之前，请收集下表中列出的信息，以便于解决问题。

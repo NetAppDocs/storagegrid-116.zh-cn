@@ -15,6 +15,7 @@ summary: '使用 PUT 容器一致性请求可以指定要应用于对容器执�
 
 
 
+[[request]]
 == 请求
 
 |===
@@ -53,6 +54,7 @@ summary: '使用 PUT 容器一致性请求可以指定要应用于对容器执�
 |===
 
 
+[[how-consistency-controls-and-ilm-rules-interact-to-affect-data-protection]]
 == 一致性控制和 ILM 规则如何交互以影响数据保护
 
 您选择的一致性控制和 ILM 规则都会影响对象的保护方式。这些设置可以进行交互。
@@ -71,6 +73,7 @@ NOTE: 在为 ILM 规则选择载入行为之前，请阅读有关通过信息生
 
 
 
+[[example-of-how-consistency-control-and-ilm-rule-can-interact]]
 == 一致性控制和 ILM 规则如何交互的示例
 
 假设您有一个双站点网格，其中包含以下 ILM 规则和以下一致性级别设置：
@@ -89,6 +92,7 @@ NOTE: 在为 ILM 规则选择载入行为之前，请阅读有关通过信息生
 
 
 
+[[request-example]]
 == 请求示例
 
 [listing]
@@ -100,6 +104,7 @@ Host: test.com
 ----
 
 
+[[response]]
 == 响应
 
 |===
@@ -135,6 +140,7 @@ Host: test.com
 |===
 
 
+[[response-example]]
 == 响应示例
 
 [listing]

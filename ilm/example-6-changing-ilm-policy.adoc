@@ -22,6 +22,7 @@ CAUTION: 以下 ILM 规则和策略仅为示例。配置 ILM 规则的方法有�
 
 
 
+[[how-does-changing-an-ilm-policy-affect-performance]]
 == 更改 ILM 策略如何影响性能
 
 激活新的 ILM 策略时， StorageGRID 系统的性能可能会暂时受到影响，尤其是在新策略中的放置说明要求将许多现有对象移动到新位置时。
@@ -45,6 +46,7 @@ xref:creating-ilm-policy.adoc[创建 ILM 策略]
 
 
 
+[[active-ilm-policy-for-example-6-data-protection-at-two-sites]]
 == 示例 6 中的活动 ILM 策略：两个站点的数据保护
 
 在此示例中，活动 ILM 策略最初是为双站点 StorageGRID 系统设计的，并使用两个 ILM 规则。
@@ -58,6 +60,7 @@ NOTE: 本示例中的第一个规则使用高级筛选器来确保纠删编码�
 
 
 
+[[rule-1-one-site-erasure-coding-for-tenant-a]]
 === 规则 1 ：租户 A 的单站点纠删编码
 
 [cols="1a,2a"]
@@ -94,6 +97,7 @@ NOTE: 本示例中的第一个规则使用高级筛选器来确保纠删编码�
 |===
 
 
+[[rule-2-two-site-replication-for-other-tenants]]
 === 规则 2 ：为其他租户进行双站点复制
 
 [cols="1a,2a"]
@@ -130,6 +134,7 @@ NOTE: 本示例中的第一个规则使用高级筛选器来确保纠删编码�
 |===
 
 
+[[proposed-ilm-policy-for-example-6-data-protection-at-three-sites]]
 == 示例 6 的建议 ILM 策略：三个站点的数据保护
 
 在此示例中，正在为三站点 StorageGRID 系统更新 ILM 策略。
@@ -142,6 +147,7 @@ image::../media/policy_6_proposed_policy.png[ILM 策略 6 建议策略示例]
 
 
 
+[[rule-1-three-site-erasure-coding-for-tenant-a]]
 === 规则 1 ：租户 A 的三站点纠删编码
 
 [cols="1a,2a"]
@@ -178,6 +184,7 @@ image::../media/policy_6_proposed_policy.png[ILM 策略 6 建议策略示例]
 |===
 
 
+[[rule-2-three-site-replication-for-other-tenants]]
 === 规则 2 ：对其他租户进行三站点复制
 
 [cols="1a,2a"]
@@ -214,6 +221,7 @@ image::../media/policy_6_proposed_policy.png[ILM 策略 6 建议策略示例]
 |===
 
 
+[[activating-the-proposed-ilm-policy-for-example-6]]
 == 激活示例 6 的建议 ILM 策略
 
 激活新建议的 ILM 策略时，可能会根据任何新规则或更新的规则中的放置说明将现有对象移动到新位置，或者为现有对象创建新的对象副本。
@@ -226,6 +234,7 @@ CAUTION: 激活新的 ILM 策略时， StorageGRID 会使用它来管理所有�
 
 
 
+[[what-happens-when-erasure-coding-instructions-change]]
 === 擦除编码指令发生变化时会发生什么情况
 
 在本示例的当前活动 ILM 策略中，属于租户 A 的对象将在数据中心 1 使用 2+1 纠删编码进行保护。在新建议的 ILM 策略中，属于租户 A 的对象将在数据中心 1 ， 2 和 3 使用 2+1 纠删编码进行保护。
@@ -242,6 +251,7 @@ NOTE: 不会重复使用 Data Center 1 上的现有 2+1 片段。StorageGRID 认
 
 
 
+[[what-happens-when-replication-instructions-change]]
 === 复制指令发生变化时会发生什么情况
 
 在此示例的当前活动 ILM 策略中，属于其他租户的对象将使用数据中心 1 和 2 的存储池中的两个复制副本进行保护。在新建议的 ILM 策略中，属于其他租户的对象将使用数据中心 1 ， 2 和 3 的存储池中的三个复制副本进行保护。
@@ -254,6 +264,7 @@ NOTE: 不会重复使用 Data Center 1 上的现有 2+1 片段。StorageGRID 认
 
 
 
+[[performance-impact-of-activating-this-policy]]
 === 激活此策略对性能的影响
 
 激活此示例中建议的 ILM 策略后，此 StorageGRID 系统的整体性能将暂时受到影响。要为租户 A 的现有对象创建新的纠删编码片段，并在数据中心 3 为其他租户的现有对象创建新的复制副本，需要的网格资源级别高于正常水平。

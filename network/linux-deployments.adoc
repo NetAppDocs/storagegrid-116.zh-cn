@@ -22,12 +22,14 @@ IMPORTANT: 请勿直接使用绑定或网桥设备作为容器网络接口。这
 
 
 
+[[host-network-configuration-for-container-engine-deployments]]
 == 用于容器引擎部署的主机网络配置
 
 在容器引擎平台上开始 StorageGRID 部署之前，请确定每个节点要使用的网络（网格，管理，客户端）。您必须确保在正确的虚拟或物理主机接口上配置每个节点的网络接口，并且每个网络都有足够的带宽。
 
 
 
+[[physical-hosts]]
 === 物理主机
 
 如果使用物理主机支持网格节点：
@@ -50,6 +52,7 @@ NOTE: 主机本身以及主机上运行的一个或多个节点均可使用主�
 
 
 
+[[minimum-bandwidth-recommendations]]
 === 最小带宽建议
 
 下表提供了每种类型的 StorageGRID 节点和每种网络的最小带宽建议。您必须为每个物理或虚拟主机配置足够的网络带宽，以满足计划在该主机上运行的 StorageGRID 节点总数和类型的聚合最小带宽要求。

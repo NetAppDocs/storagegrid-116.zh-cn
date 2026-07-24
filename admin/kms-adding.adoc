@@ -25,6 +25,7 @@ summary: 您可以使用 StorageGRID 密钥管理服务器向导添加每个 KMS
 
 
 
+[[step-1-enter-kms-details]]
 == 第 1 步：输入 KMS 详细信息
 
 在添加密钥管理服务器向导的步骤 1 （输入 KMS 详细信息）中，您可以提供有关 KMS 或 KMS 集群的详细信息。
@@ -100,6 +101,7 @@ KMS 的完全限定域名或 IP 地址。
 
 
 
+[[step-2-upload-server-certificate]]
 == 第 2 步：上传服务器证书
 
 在添加密钥管理服务器向导的第 2 步（上传服务器证书）中，您可以上传 KMS 的服务器证书（或证书包）。通过服务器证书，外部 KMS 可以向 StorageGRID 进行身份验证。
@@ -125,6 +127,7 @@ NOTE: 如果您上传的是证书捆绑包，则每个证书的元数据将显�
 
 
 
+[[step-3-upload-client-certificates]]
 == 第 3 步：上传客户端证书
 
 在添加密钥管理服务器向导的第 3 步（上传客户端证书）中，您可以上传客户端证书和客户端证书专用密钥。客户端证书允许 StorageGRID 向 KMS 进行身份验证。

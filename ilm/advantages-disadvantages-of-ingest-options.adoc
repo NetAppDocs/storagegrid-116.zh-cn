@@ -15,6 +15,7 @@ summary: 了解在载入时保护数据的三个选项中每一个选项（平�
 
 
 
+[[advantages-of-the-balanced-and-strict-options]]
 == 平衡而严格的选项的优势
 
 与在载入期间创建临时副本的双提交相比，这两个同步放置选项具有以下优势：
@@ -27,6 +28,7 @@ summary: 了解在载入时保护数据的三个选项中每一个选项（平�
 
 
 
+[[disadvantages-of-the-balanced-and-strict-options]]
 == 平衡而严格的选项的缺点
 
 与双提交相比，平衡和严格选项存在一些缺点：
@@ -44,6 +46,7 @@ summary: 了解在载入时保护数据的三个选项中每一个选项（平�
 
 
 
+[[limitations-on-object-placements-with-the-balanced-or-strict-options]]
 == 具有平衡或严格选项的对象放置限制
 
 对于具有以下任一放置说明的 ILM 规则，不能使用平衡或严格选项：
@@ -57,6 +60,7 @@ summary: 了解在载入时保护数据的三个选项中每一个选项（平�
 
 
 
+[[how-ilm-rules-and-consistency-controls-interact-to-affect-data-protection]]
 == ILM 规则和一致性控制如何交互以影响数据保护
 
 ILM 规则和一致性控制选项都会影响对象的保护方式。这些设置可以进行交互。
@@ -77,6 +81,7 @@ NOTE: 在选择一致性级别之前，请阅读的说明中的完整一致性�
 
 
 
+[[example-of-how-the-consistency-control-and-ilm-rule-can-interact]]
 == 一致性控制和 ILM 规则如何交互的示例
 
 假设您有一个双站点网格，其中包含以下 ILM 规则和以下一致性级别设置：

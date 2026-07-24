@@ -29,6 +29,7 @@ summary: 如果需要使用 sn-recovery-postinstall.sh 脚本重新格式化一�
 
 
 
+[[about-the-repair-data-script]]
 == 关于 `repair-data` 脚本
 
 要还原对象数据，请运行 `repair-data` 脚本。此脚本将开始还原对象数据的过程，并与 ILM 扫描配合使用以确保满足 ILM 规则。
@@ -77,6 +78,7 @@ NOTE: EC 修复作业会临时预留大量存储。可能会触发存储警报�
 ====
 
 
+[[find-hostname-for-storage-node]]
 == 查找存储节点的主机名
 
 . 登录到主管理节点：
@@ -95,6 +97,7 @@ NOTE: EC 修复作业会临时预留大量存储。可能会触发存储警报�
 
 
 
+[[repair-data-if-all-volumes-have-failed]]
 == 如果所有卷都发生故障，请修复数据
 
 如果所有存储卷都发生故障，请修复整个节点。根据您是使用复制的数据，还是使用纠删编码（ Erasure-coded ， EC ）数据，或者同时使用这两者，按照有关 * 复制的数据 * ， * 纠删编码（ Erasure-Coded ， EC ）数据 * 或这两者的说明进行操作。
@@ -135,6 +138,7 @@ NOTE: 在某些存储节点脱机时，可以开始修复经过擦除编码的�
 ====
 
 
+[[repair-data-if-only-some-volumes-have-failed]]
 == 如果只有部分卷出现故障，请修复数据
 
 如果只有部分卷出现故障，请修复受影响的卷。根据您是使用复制的数据，还是使用纠删编码（ Erasure-coded ， EC ）数据，或者同时使用这两者，按照有关 * 复制的数据 * ， * 纠删编码（ Erasure-Coded ， EC ）数据 * 或这两者的说明进行操作。
@@ -192,6 +196,7 @@ NOTE: 在某些存储节点脱机时，可以开始修复经过擦除编码的�
 ====
 
 
+[[monitor-repairs]]
 == 监控修复情况
 
 根据您是使用 * 复制数据 * ， * 纠删编码（ EC ）数据 * 还是同时使用这两者来监控修复作业的状态。

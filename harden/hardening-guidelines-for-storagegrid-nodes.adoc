@@ -15,6 +15,7 @@ StorageGRID 节点可以部署在 VMware 虚拟机上， Linux 主机上的容�
 
 
 
+[[firewall-configuration]]
 == 防火墙配置
 
 在系统强化过程中，您必须查看外部防火墙配置并对其进行修改，以便仅接受来自 IP 地址和严格需要的端口的流量。
@@ -25,24 +26,28 @@ StorageGRID 使用自动管理的内部防火墙。虽然此内部防火墙可�
 
 
 
+[[virtualization-containers-and-shared-hardware]]
 == 虚拟化，容器和共享硬件
 
 对于所有 StorageGRID 节点，请避免在与不可信软件相同的物理硬件上运行 StorageGRID 。如果 StorageGRID 和恶意软件都位于同一物理硬件上，则不要假定虚拟机管理程序保护将防止恶意软件访问受 StorageGRID 保护的数据。例如， Meltdown 和 Spectre 攻击会利用现代处理器中的关键漏洞，并允许程序在同一台计算机的内存中窃取数据。
 
 
 
+[[disable-unused-services]]
 == 禁用未使用的服务
 
 对于所有 StorageGRID 节点，您应禁用或阻止对未使用服务的访问。例如，如果您不打算配置客户端对 CIFS 或 NFS 的审核共享的访问权限，请阻止或禁用对这些服务的访问。
 
 
 
+[[protect-nodes-during-installation]]
 == 在安装期间保护节点
 
 安装 StorageGRID 节点时，请勿允许不可信的用户通过网络访问这些节点。节点在加入网格之前不会完全安全。
 
 
 
+[[guidelines-for-admin-nodes]]
 == 管理节点准则
 
 管理节点可提供系统配置，监控和日志记录等管理服务。登录到网格管理器或租户管理器时，您正在连接到管理节点。
@@ -62,6 +67,7 @@ StorageGRID 使用自动管理的内部防火墙。虽然此内部防火墙可�
 
 
 
+[[guidelines-for-storage-nodes]]
 == 存储节点准则
 
 存储节点可管理和存储对象数据和元数据。请按照以下准则保护 StorageGRID 系统中的存储节点。
@@ -75,6 +81,7 @@ StorageGRID 使用自动管理的内部防火墙。虽然此内部防火墙可�
 
 
 
+[[guidelines-for-gateway-nodes]]
 == 网关节点准则
 
 网关节点提供了一个可选的负载平衡接口，客户端应用程序可以使用该接口连接到 StorageGRID 。请按照以下准则保护 StorageGRID 系统中的所有网关节点：
@@ -90,6 +97,7 @@ NOTE: CLB 服务已弃用。
 
 
 
+[[guidelines-for-hardware-appliance-nodes]]
 == 硬件设备节点准则
 
 StorageGRID 硬件设备经过专门设计，可在 StorageGRID 系统中使用。某些设备可用作存储节点。其他设备可以用作管理节点或网关节点。您可以将设备节点与基于软件的节点结合使用，也可以部署经过全面设计的全设备网格。

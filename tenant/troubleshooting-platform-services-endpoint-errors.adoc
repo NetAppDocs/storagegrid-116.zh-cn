@@ -15,6 +15,7 @@ summary: 如果在 StorageGRID 尝试与平台服务端点通信时发生错误�
 
 
 
+[[determine-if-error-has-occurred]]
 == 确定是否发生错误
 
 如果在过去 7 天内发生任何平台服务端点错误，则租户管理器信息板将显示一条警报消息。您可以转到平台服务端点页面以查看有关此错误的更多详细信息。
@@ -32,6 +33,7 @@ image::../media/endpoint_error_on_connection_tab.png[连接选项卡上出现端
 
 
 
+[[check-if-error-is-still-current]]
 == 检查错误是否仍然是最新的
 
 即使解决了某些错误， * 最后一个错误 * 列也可能会继续显示这些错误。要查看错误是否为当前错误或强制从表中删除已解决的错误，请执行以下操作：
@@ -48,6 +50,7 @@ image::../media/endpoint_error_on_connection_tab.png[连接选项卡上出现端
 
 
 
+[[resolve-endpoint-errors]]
 == 解决端点错误
 
 您可以使用端点详细信息页面上的 * 最后一个错误 * 消息来帮助确定导致错误的原因。某些错误可能需要编辑端点才能解决问题描述 。例如，如果 StorageGRID 由于没有正确的访问权限或访问密钥已过期而无法访问目标 S3 存储分段，则可能会发生 CloudMirrorbuc2 错误。消息为 "`需要更新端点凭据或目标访问，` " ，详细信息为 "`AccessDenied` " 或 "`InvalidAccessKeyId 。` "
@@ -63,12 +66,14 @@ image::../media/endpoint_error_on_connection_tab.png[连接选项卡上出现端
 
 
 
+[[endpoint-credentials-with-insufficient-permissions]]
 == 权限不足的端点凭据
 
 当 StorageGRID 验证平台服务端点时，它会确认端点的凭据可用于联系目标资源，并执行基本权限检查。但是， StorageGRID 不会验证某些平台服务操作所需的所有权限。因此，如果您在尝试使用平台服务（例如 "`403 For禁用` " ）时收到错误，请检查与此端点凭据关联的权限。
 
 
 
+[[additional-platform-services-troubleshooting]]
 == 其他平台服务故障排除
 
 有关追加信息 对平台服务进行故障排除的信息，请参见有关管理 StorageGRID 的说明。

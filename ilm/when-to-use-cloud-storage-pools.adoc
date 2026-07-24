@@ -15,6 +15,7 @@ summary: 云存储池可以在多种使用情形下提供显著优势。
 
 
 
+[[backing-up-storagegrid-data-in-an-external-location]]
 == 在外部位置备份 StorageGRID 数据
 
 您可以使用云存储池将 StorageGRID 对象备份到外部位置。
@@ -32,6 +33,7 @@ summary: 云存储池可以在多种使用情形下提供显著优势。
 
 
 
+[[tiering-data-from-storagegrid-to-external-location]]
 == 将数据从 StorageGRID 分层到外部位置
 
 您可以使用云存储池将对象存储在 StorageGRID 系统之外。例如，假设您需要保留大量对象，但您希望很少访问这些对象（如果有）。您可以使用云存储池将对象分层以降低存储成本并释放 StorageGRID 中的空间。
@@ -45,6 +47,7 @@ summary: 云存储池可以在多种使用情形下提供显著优势。
 
 
 
+[[maintain-multiple-cloud-endpoints]]
 == 维护多个云端点
 
 如果要将对象数据分层或备份到多个云，则可以配置多个云存储池。您可以通过 ILM 规则中的筛选器指定存储在每个云存储池中的对象。例如，您可能希望将 Amazon S3 Glacier 中某些租户或分段中的对象以及 Azure Blob 存储中其他租户或分段中的对象存储起来。或者，您可能希望在 Amazon S3 Glacier 和 Azure Blob 存储之间移动数据。使用多个云存储池时，请注意，一个对象一次只能存储在一个云存储池中。

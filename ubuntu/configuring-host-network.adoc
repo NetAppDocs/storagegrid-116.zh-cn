@@ -36,6 +36,7 @@ NOTE: 请勿直接使用绑定或网桥设备作为容器网络接口。这样�
 
 
 
+[[considerations-and-recommendations-for-mac-address-cloning]]
 == MAC 地址克隆的注意事项和建议
 
 .【Mac_address_cloning_Ubuntu】
@@ -43,6 +44,7 @@ MAC 地址克隆会使容器使用主机的 MAC 地址，而主机则使用您�
 
 
 
+[[enabling-mac-cloning]]
 === 启用 MAC 克隆
 
 在某些环境中，可以通过 MAC 地址克隆来增强安全性，因为它使您可以对管理网络，网格网络和客户端网络使用专用虚拟 NIC 。让容器使用主机上专用 NIC 的 MAC 地址可以避免使用混杂模式网络配置。
@@ -69,6 +71,7 @@ IMPORTANT: 在虚拟主机上启用 MAC 克隆而不同时在虚拟机管理程�
 
 
 
+[[mac-cloning-use-cases]]
 === Mac 克隆使用情形
 
 MAC 克隆需要考虑两种使用情形：
@@ -84,6 +87,7 @@ NOTE: 如果您不希望使用 MAC 地址克隆，而希望允许所有接口接
 
 
 
+[[mac-cloning-example]]
 === Mac 克隆示例
 
 在 MAC 地址为 11 ： 22 ： 33 ： 44 ： 55 ： 66 的主机上为接口 ens256 启用 MAC 克隆的示例，以及节点配置文件中的以下密钥：
@@ -97,6 +101,7 @@ NOTE: 如果您不希望使用 MAC 地址克隆，而希望允许所有接口接
 
 
 
+[[example-1-1-to-1-mapping-to-physical-or-virtual-nics]]
 == 示例 1 ：映射到物理或虚拟 NIC 的一对一映射
 
 示例 1 介绍了一个简单的物理接口映射，该映射只需要很少的主机端配置或根本不需要主机端配置。
@@ -111,6 +116,7 @@ Linux 操作系统会在安装或启动期间或热添加接口时自动创建 e
 
 
 
+[[example-2-lacp-bond-carrying-vlans]]
 == 示例 2 ： LACP 绑定传输 VLAN
 
 示例 2 假定您熟悉绑定网络接口以及在所使用的 Linux 分发版上创建 VLAN 接口。

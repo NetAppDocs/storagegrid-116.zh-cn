@@ -15,6 +15,7 @@ summary: 平台服务中使用的端点由租户管理器中的租户用户创�
 
 
 
+[[issues-with-new-endpoints]]
 == 新端点出现问题
 
 租户必须先使用租户管理器创建一个或多个端点，才能使用平台服务。每个端点表示一个平台服务的外部目标，例如 StorageGRID S3 存储分段， Amazon Web 服务分段，简单通知服务主题或本地或 AWS 上托管的 Elasticsearch 集群。每个端点都包括外部资源的位置以及访问该资源所需的凭据。
@@ -28,6 +29,7 @@ NOTE: 如果未为租户帐户启用平台服务，则端点创建将失败。
 
 
 
+[[issues-with-existing-endpoints]]
 == 现有端点存在问题
 
 如果在 StorageGRID 尝试访问现有端点时发生错误，则租户管理器的信息板上将显示一条消息。
@@ -43,18 +45,21 @@ NOTE: * 最后一个错误 * 列中的某些错误消息可能会在圆括号中
 
 
 
+[[issues-related-to-proxy-servers]]
 == 与代理服务器相关的问题
 
 如果您在存储节点和平台服务端点之间配置了存储代理，则如果您的代理服务不允许来自 StorageGRID 的消息，则可能会发生错误。要解决这些问题，请检查代理服务器的设置，以确保不会阻止与平台服务相关的消息。
 
 
 
+[[determine-if-an-error-has-occurred]]
 == 确定是否发生错误
 
 如果在过去 7 天内发生任何端点错误，则租户管理器中的信息板将显示一条警报消息。您可以转到 " 端点 " 页面以查看有关此错误的更多详细信息。
 
 
 
+[[client-operations-fail]]
 == 客户端操作失败
 
 某些平台服务问题可能会导致 S3 存储分段上的发生原因 客户端操作失败。例如，如果内部复制状态计算机（ RSM ）服务停止，或者排队等待传送的平台服务消息太多， S3 客户端操作将失败。
@@ -67,6 +72,7 @@ NOTE: * 最后一个错误 * 列中的某些错误消息可能会在圆括号中
 
 
 
+[[recoverable-and-unrecoverable-endpoint-errors]]
 == 可恢复和不可恢复的端点错误
 
 创建端点后，平台服务请求错误可能会因各种原因而发生。某些错误可通过用户干预进行恢复。例如，可能会发生可恢复的错误，原因如下：
@@ -99,6 +105,7 @@ NOTE: * 最后一个错误 * 列中的某些错误消息可能会在圆括号中
 
 
 
+[[platform-services-messages-cannot-be-delivered]]
 == 无法传送平台服务消息
 
 如果目标遇到的问题描述 阻止其接受平台服务消息，则在存储分段上执行的客户端操作将成功，但不会传送平台服务消息。例如，如果更新了目标上的凭据，使 StorageGRID 无法再向目标服务进行身份验证，则可能会发生此错误。
@@ -107,6 +114,7 @@ NOTE: * 最后一个错误 * 列中的某些错误消息可能会在圆括号中
 
 
 
+[[slower-performance-for-platform-service-requests]]
 == 降低平台服务请求的性能
 
 如果发送请求的速率超过目标端点接收请求的速率， StorageGRID 软件可能会限制传入的存储分段 S3 请求。只有在等待发送到目标端点的请求积压时，才会发生限制。
@@ -117,6 +125,7 @@ CloudMirror 请求更有可能受到目标端点性能的影响，因为这些�
 
 
 
+[[platform-service-requests-fail]]
 == 平台服务请求失败
 
 要查看平台服务的请求失败率，请执行以下操作：
@@ -131,6 +140,7 @@ image::../media/nodes_page_site_level_platform_services.gif[节点页面站点�
 
 
 
+[[platform-services-unavailable-alert]]
 == 平台服务不可用警报
 
 " 平台服务不可用 * " 警报表示无法在站点上执行平台服务操作，因为运行或可用的 RSM 服务存储节点太少。
@@ -144,6 +154,7 @@ NOTE: 如果某个站点上有多个包含 RSM 服务的存储节点出现故障
 
 
 
+[[additional-troubleshooting-guidance-for-platform-services-endpoints]]
 == 有关平台服务端点的其他故障排除指南
 
 有关追加信息 对平台服务端点进行故障排除的信息，请参见的说明 xref:../tenant/index.adoc[使用租户帐户]。

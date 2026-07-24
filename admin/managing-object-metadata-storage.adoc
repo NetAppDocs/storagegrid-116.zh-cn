@@ -15,6 +15,7 @@ StorageGRID 系统的对象元数据容量用于控制可存储在该系统上�
 
 
 
+[[what-is-object-metadata]]
 == 什么是对象元数据？
 
 对象元数据是指描述对象的任何信息。StorageGRID 使用对象元数据跟踪网格中所有对象的位置，并管理每个对象的生命周期。
@@ -32,6 +33,7 @@ StorageGRID 系统的对象元数据容量用于控制可存储在该系统上�
 
 
 
+[[how-is-object-metadata-stored]]
 == 如何存储对象元数据？
 
 StorageGRID 在 Cassandra 数据库中维护对象元数据，该数据库独立于对象数据进行存储。为了提供冗余并防止对象元数据丢失， StorageGRID 会为每个站点的系统中的所有对象存储三个元数据副本。对象元数据的三个副本均匀分布在每个站点的所有存储节点上。
@@ -42,6 +44,7 @@ image::../media/metadata_space_across_sites.png[站点之间的元数据空间]
 
 
 
+[[where-is-object-metadata-stored]]
 == 对象元数据存储在何处？
 
 此图表示单个存储节点的存储卷。
@@ -54,6 +57,7 @@ image::../media/metadata_space_storage_node.png[元数据空间存储节点]
 
 
 
+[[metadata-reserved-space-setting]]
 == 元数据预留空间设置
 
 元数据预留空间 _ 是一个系统范围设置，表示将为每个存储节点的卷 0 上的元数据预留的空间量。如表所示， StorageGRID 11.6 的此设置的默认值如下所示：
@@ -122,6 +126,7 @@ image::../media/metadata_reserved_space_storage_option.png[元数据预留空间
 
 
 
+[[actual-reserved-space-for-metadata]]
 == 元数据的实际预留空间
 
 与系统范围的元数据预留空间设置不同，系统会为每个存储节点确定对象元数据的 _actual reserved space_ 。对于任何给定的存储节点，元数据的实际预留空间取决于节点的卷 0 大小以及系统范围的 * 元数据预留空间 * 设置。
@@ -162,6 +167,7 @@ image::../media/storage_used_object_metadata_actual_reserved.png[已用存储 - 
 
 
 
+[[example-for-actual-reserved-metadata-space]]
 == 实际预留的元数据空间示例
 
 假设您安装的是使用版本 11.6 的新 StorageGRID 系统。在此示例中，假设每个存储节点的 RAM 超过 128 GB ，并且存储节点 1 （ SN1 ）的卷 0 为 6 TB 。基于以下值：
@@ -172,6 +178,7 @@ image::../media/storage_used_object_metadata_actual_reserved.png[已用存储 - 
 
 
 
+[[allowed-metadata-space]]
 == 允许的元数据空间
 
 每个存储节点为元数据实际预留的空间细分为可用于对象元数据的空间（允许的元数据空间 _ ）以及基本数据库操作（如数据缩减和修复）以及未来硬件和软件升级所需的空间。允许的元数据空间用于控制整体对象容量。
@@ -180,6 +187,7 @@ image::../media/metadata_allowed_space_volume_0.png[元数据允许的空间卷 
 
 下表显示了StorageGRID 如何根据不同存储节点的内存量和元数据的实际预留空间计算不同存储节点的*允许元数据空间*。
 
+[[table-allowed-space-for-metadata]]
 [cols="1a,1a,2a,2a"]
 |===
 
@@ -238,6 +246,7 @@ image::../media/storage_used_object_metadata_allowed.png[已用存储 - 对象�
 
 
 
+[[example-for-allowed-metadata-space]]
 == 允许的元数据空间示例
 
 假设您安装的是使用版本 11.6 的 StorageGRID 系统。在此示例中，假设每个存储节点的 RAM 超过 128 GB ，并且存储节点 1 （ SN1 ）的卷 0 为 6 TB 。基于以下值：
@@ -249,6 +258,7 @@ image::../media/storage_used_object_metadata_allowed.png[已用存储 - 对象�
 
 
 
+[[how-storage-nodes-of-different-sizes-affect-object-capacity]]
 == 不同大小的存储节点如何影响对象容量
 
 如上所述， StorageGRID 会在每个站点的存储节点之间均匀分布对象元数据。因此，如果某个站点包含不同大小的存储节点，则该站点上最小的节点将决定该站点的元数据容量。

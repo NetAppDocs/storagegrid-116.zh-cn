@@ -21,6 +21,7 @@ summary: '" 获取存储使用量 " 请求会告知您帐户正在使用的存�
 
 
 
+[[request-example]]
 == 请求示例
 
 [source, subs="specialcharacters,quotes"]
@@ -32,6 +33,7 @@ Host: _host_
 ----
 
 
+[[response-example]]
 == 响应示例
 
 此示例显示了一个帐户，该帐户在两个存储分段中包含四个对象和 12 字节的数据。每个存储分段包含两个对象和六个字节的数据。
@@ -67,6 +69,7 @@ Content-Type: application/xml
 ----
 
 
+[[versioning]]
 == 版本控制
 
 存储的每个对象版本都会在响应中生成 `ObjectCount` 和 `DataBytes` 值。删除标记不会添加到 `ObjectCount` Total 中。

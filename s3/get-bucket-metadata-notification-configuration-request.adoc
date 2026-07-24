@@ -17,6 +17,7 @@ summary: 使用获取分段元数据通知配置请求，您可以检索用于�
 
 
 
+[[request-example]]
 == 请求示例
 
 此请求将检索名为 `bucket` 的存储分段的元数据通知配置。
@@ -30,6 +31,7 @@ Host: _host_
 ----
 
 
+[[response]]
 == 响应
 
 响应正文包括存储分段的元数据通知配置。通过元数据通知配置，您可以确定如何配置存储分段以进行搜索集成。也就是说，您可以通过它确定哪些对象已编制索引，以及将其对象元数据发送到哪些端点。
@@ -152,6 +154,7 @@ urn 包含在目标元素中。
 |===
 
 
+[[response-example]]
 == 响应示例
 
 在 ` <MetadataNotificationConfiguration>/MetadataNotificationConfiguration>` 标记之间包含的 XML 显示了如何为存储分段配置与搜索集成端点的集成。在此示例中，对象元数据将发送到名为 `current` 且类型为 `2017` 的 Elasticsearch 索引，该索引托管在名为 `records` 的 AWS 域中。

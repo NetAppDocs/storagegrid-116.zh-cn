@@ -15,6 +15,7 @@ summary: 此版本已删除或弃用某些功能。查看这些项目，了解�
 
 
 
+[[alarm-system-and-alarm-based-apis-deprecated]]
 == 已弃用警报系统和基于警报的 API
 
 自 StorageGRID 11.6 版起，原有警报系统已弃用。旧警报系统的用户界面和 API 将在未来版本中删除。
@@ -31,6 +32,7 @@ IMPORTANT: 如果您仍在使用传统警报，请计划在升级到 StorageGRID
 
 
 
+[[future-releases-will-not-support-5-tib-maximum-object-size-for-put-object]]
 == 未来版本不支持 PUT 对象的最大对象大小为 5 TiB
 
 在未来的 StorageGRID 版本中，一个 PUT 对象操作的最大大小将为 5 GiB ，而不是 5 TiB 。您可以对大于 5 GiB 的对象使用多部分上传，最大上传量为 5 TiB （ 5 ， 497 ， 556 ， 138 ， 880 字节）。
@@ -39,6 +41,7 @@ IMPORTANT: 如果您仍在使用传统警报，请计划在升级到 StorageGRID
 
 
 
+[[nas-bridge-feature-deprecated]]
 == NAS 网桥功能已弃用
 
 NAS 网桥功能先前在 StorageGRID 11.4 版中进入了有限访问权限。NAS 网桥功能仍受限访问，自 StorageGRID 11.6 之日已弃用。

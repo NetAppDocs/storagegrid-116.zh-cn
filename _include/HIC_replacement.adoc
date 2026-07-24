@@ -4,6 +4,7 @@
 
 
 
+[[move-hic-to-new-controller-if-needed]]
 == 如果需要、将HIC移至新控制器
 
 .步骤

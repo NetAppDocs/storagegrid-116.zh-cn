@@ -15,6 +15,7 @@ summary: 在克隆设备节点之前，您必须了解注意事项和要求。
 
 
 
+[[hardware-requirements-for-the-replacement-appliance]]
 == 更换设备的硬件要求
 
 确保替代设备符合以下标准：
@@ -39,6 +40,7 @@ summary: 在克隆设备节点之前，您必须了解注意事项和要求。
 
 
 
+[[prepare-to-clone-an-appliance-node]]
 == 准备克隆设备节点
 
 克隆设备节点之前，您必须具有以下信息：

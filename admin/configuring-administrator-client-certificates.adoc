@@ -44,6 +44,7 @@ NOTE: 如果您使用密钥管理服务器（ KMS ）保护专门配置的设备
 
 
 
+[[add-client-certificates]]
 == 添加客户端证书
 
 按照适用于您的场景的操作步骤 添加客户端证书：
@@ -55,6 +56,7 @@ NOTE: 如果您使用密钥管理服务器（ KMS ）保护专门配置的设备
 
 
 
+[[management-interface-certificate-already-configured]]
 === 已配置管理接口证书
 
 如果已使用客户提供的CA、客户端证书和专用密钥配置管理接口证书、请使用此操作步骤 添加客户端证书。
@@ -114,6 +116,7 @@ servername 必须与管理接口证书中显示的域名匹配。
 
 
 
+[[ca-issued-client-certificate]]
 === CA颁发的客户端证书
 
 如果未配置管理接口证书、并且您计划为使用CA颁发的客户端证书和专用密钥的Prometheus添加客户端证书、请使用此操作步骤 添加管理员客户端证书。
@@ -174,6 +177,7 @@ servername 必须与管理接口证书中显示的域名匹配。
 
 
 
+[[generated-certificate-from-grid-manager]]
 === 从网格管理器生成的证书
 
 如果未配置管理接口证书、并且您计划为使用网格管理器中的生成证书功能的Prometheus添加客户端证书、请使用此操作步骤 添加管理员客户端证书。
@@ -264,6 +268,7 @@ servername 必须与管理接口证书中显示的域名匹配。
 
 
 
+[[edit-client-certificates]]
 == 编辑客户端证书
 
 您可以编辑管理员客户端证书以更改其名称，启用或禁用 Prometheus 访问，或者在当前证书已过期时上传新证书。
@@ -285,6 +290,7 @@ servername 必须与管理接口证书中显示的域名匹配。
 
 
 
+[[attach-new-client-certificate]]
 == 附加新的客户端证书
 
 您可以在当前证书过期后上传新证书。
@@ -373,6 +379,7 @@ IMPORTANT: 关闭此对话框后，您将无法查看此证书专用密钥。将
 
 
 
+[[download-or-copy-client-certificates]]
 == 下载或复制客户端证书
 
 您可以下载或复制客户端证书以供其他位置使用。
@@ -414,6 +421,7 @@ IMPORTANT: 关闭此对话框后，您将无法查看此证书专用密钥。将
 
 
 
+[[remove-client-certificates]]
 == 删除客户端证书
 
 如果您不再需要管理员客户端证书，可以将其删除。

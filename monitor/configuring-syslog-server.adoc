@@ -43,6 +43,8 @@ NOTE: 如果此操作步骤 中提供的配置选项不够灵活，无法满足�
 
 
 
+[[access-the-syslog-server-configuration-wizard]]
+[[Access-the-syslog-server-configuration-wizard]]
 == 访问系统日志服务器配置向导
 
 .步骤
@@ -55,6 +57,7 @@ image::../media/audit-messages-main-page.png[审核消息主页]
 
 
 
+[[enter-syslog-info]]
 === 输入系统日志信息
 
 image::../media/enter-syslog-info.png[输入系统日志信息]
@@ -105,6 +108,7 @@ NOTE: 如果使用客户端证书，则还必须使用客户端专用密钥。�
 
 
 
+[[manage-syslog-content]]
 === 管理系统日志内容
 
 image::../media/manage-syslog-content.png[管理系统日志内容]
@@ -460,6 +464,7 @@ NTP
 
 
 
+[[send-test-messages]]
 === 发送测试消息
 
 image::../media/send-test-messages.png[发送测试消息]
@@ -500,6 +505,7 @@ NOTE: 除非选择包含外部系统日志服务器的目标，否则不会将 S
 
 
 
+[[select-audit-information-destinations]]
 == 选择审核信息目标
 
 您可以指定将安全事件日志，应用程序日志和审核消息日志发送到何处。

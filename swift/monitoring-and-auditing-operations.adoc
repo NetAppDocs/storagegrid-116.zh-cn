@@ -15,6 +15,7 @@ summary: 您可以通过查看整个网格或特定节点的事务趋势来监�
 
 
 
+[[monitor-object-ingest-and-retrieval-rates]]
 == 监控对象载入和检索速率
 
 您可以监控对象载入和检索速率，以及对象计数，查询和验证的指标。您可以查看客户端应用程序在 StorageGRID 系统中成功尝试读取，写入和修改对象的次数和失败的尝试次数。
@@ -58,6 +59,7 @@ API Operations 部分显示整个网格的摘要信息。
 
 
 
+[[access-and-review-audit-logs]]
 == 访问和查看审核日志
 
 审核消息由 StorageGRID 服务生成并存储在文本日志文件中。审核日志中特定于 API 的审核消息提供关键的安全性，操作和性能监控数据，可帮助您评估系统的运行状况。
@@ -99,6 +101,7 @@ xref:../audit/index.adoc[查看审核日志]
 
 
 
+[[swift-operations-tracked-in-the-audit-logs]]
 === 审核日志中跟踪的 Swift 操作
 
 所有成功的存储删除， GET ， HEAD ， POST 和 PUT 操作都会在 StorageGRID 审核日志中进行跟踪。不会记录故障，也不会记录信息，身份验证或选项请求。

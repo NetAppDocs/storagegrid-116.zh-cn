@@ -15,6 +15,7 @@ summary: 完成安装后，您必须执行一系列集成和配置步骤。某�
 
 
 
+[[required-tasks]]
 == 所需任务
 
 * 配置 VMware vSphere 虚拟机管理程序以自动重新启动。
@@ -47,6 +48,7 @@ NOTE: 如果任何归档节点将使用 Tivoli Storage Manager 作为外部归�
 
 
 
+[[optional-tasks]]
 == 可选任务
 
 * 如果要从（原有）警报系统接收通知，请配置警报的邮件列表和电子邮件通知。

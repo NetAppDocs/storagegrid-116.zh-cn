@@ -30,24 +30,28 @@ summary: 管理节点可提供系统配置，监控和日志记录等管理服�
 
 
 
+[[what-the-ams-service-is]]
 == 什么是 AMS 服务
 
 审核管理系统（ Audit Management System ， AMS ）服务可跟踪系统活动和事件。
 
 
 
+[[what-the-cmn-service-is]]
 == 什么是 CMN 服务
 
 配置管理节点（ CMN ）服务负责管理所有服务所需的连接和协议功能的系统范围配置。此外， CMN 服务还用于运行和监控网格任务。每个 StorageGRID 部署只有一个 CMN 服务。托管 CMN 服务的管理节点称为主管理节点。
 
 
 
+[[what-the-nms-service-is]]
 == 什么是 NMS 服务
 
 网络管理系统（ Network Management System ， NMS ）服务为通过网格管理器（ StorageGRID 系统基于浏览器的界面）显示的监控，报告和配置选项提供支持。
 
 
 
+[[what-the-prometheus-service-is]]
 == 什么是 Prometheus 服务
 
 Prometheus 服务从所有节点上的服务收集时间序列指标。

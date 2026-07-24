@@ -15,6 +15,7 @@ summary: 您必须使 StorageGRID 系统和相关服务保持最新，以抵御�
 
 
 
+[[upgrades-to-storagegrid-software]]
 == 升级到 StorageGRID 软件
 
 您应尽可能将 StorageGRID 软件升级到最新的主要版本或先前的主要版本。使 StorageGRID 保持最新有助于缩短已知漏洞处于活动状态的时间，并减少整体攻击面。此外， StorageGRID 的最新版本通常包含早期版本中不包括的安全强化功能。
@@ -25,6 +26,7 @@ summary: 您必须使 StorageGRID 系统和相关服务保持最新，以抵御�
 
 
 
+[[upgrades-to-external-services]]
 == 升级到外部服务
 
 外部服务可能存在间接影响 StorageGRID 的漏洞。您应确保 StorageGRID 所依赖的服务保持最新。这些服务包括 LDAP ， KMS （或 KMIP 服务器）， DNS 和 NTP 。
@@ -33,6 +35,7 @@ summary: 您必须使 StorageGRID 系统和相关服务保持最新，以抵御�
 
 
 
+[[upgrades-to-hypervisors]]
 == 升级到虚拟机管理程序
 
 如果您的 StorageGRID 节点正在 VMware 或其他虚拟机管理程序上运行，则必须确保虚拟机管理程序软件和固件是最新的。
@@ -41,6 +44,7 @@ summary: 您必须使 StorageGRID 系统和相关服务保持最新，以抵御�
 
 
 
+[[upgrade-to-linux-nodes]]
 == *升级到Linux节点*
 
 如果 StorageGRID 节点使用的是 Linux 主机平台，则必须确保将安全更新和内核更新应用于主机操作系统。此外，如果存在固件更新，则必须将这些更新应用于容易受到影响的硬件。

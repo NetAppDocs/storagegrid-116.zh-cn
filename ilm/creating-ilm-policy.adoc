@@ -18,6 +18,7 @@ CAUTION: 配置不正确的 ILM 策略可能导致无法恢复的数据丢失。
 
 
 
+[[considerations-for-creating-an-ilm-policy]]
 == 创建 ILM 策略的注意事项
 
 * 仅在测试系统中使用系统的内置策略基线 2 副本策略。此策略中的 Make 2 Copies 规则使用包含所有站点的所有存储节点存储池。如果 StorageGRID 系统具有多个站点，则一个对象的两个副本可能会放置在同一站点上。

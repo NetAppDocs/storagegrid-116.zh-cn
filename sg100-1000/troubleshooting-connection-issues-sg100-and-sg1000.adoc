@@ -15,6 +15,7 @@ summary: 如果您在 StorageGRID 设备安装期间遇到连接问题，应执�
 
 
 
+[[unable-to-connect-to-appliance]]
 == 无法连接到设备
 
 如果无法连接到服务设备，则可能存在网络问题描述 ，或者硬件安装可能未成功完成。

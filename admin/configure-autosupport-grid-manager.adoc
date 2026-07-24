@@ -23,6 +23,7 @@ summary: 您可以在首次安装 StorageGRID 时启用 AutoSupport 功能和各
 
 
 
+[[specify-the-protocol-for-autosupport-messages]]
 == 指定 AutoSupport 消息的协议
 
 您可以使用以下任一协议发送 AutoSupport 消息：
@@ -61,6 +62,7 @@ image::../media/autosupport_settings_tab.png[包含设置选项卡 selected.png 
 
 
 
+[[disable-weekly-autosupport-messages]]
 == 禁用每周 AutoSupport 消息
 
 默认情况下， StorageGRID 系统配置为每周向 NetApp 支持发送一次 AutoSupport 消息。
@@ -79,6 +81,7 @@ image::../media/autosupport_weekly_next_scheduled_time.png[每周 AutoSupport �
 
 
 
+[[disable-event-triggered-autosupport-messages]]
 == 禁用事件触发的 AutoSupport 消息
 
 默认情况下， StorageGRID 系统配置为在发生重要警报或其他重要系统事件时向 NetApp 支持发送 AutoSupport 消息。
@@ -96,6 +99,7 @@ NOTE: 在系统范围内禁止电子邮件通知时，也会禁止显示事件�
 
 
 
+[[enable-autosupport-on-demand]]
 == 启用 AutoSupport On Demand
 
 AutoSupport On Demand 可帮助解决技术支持正在积极处理的问题。
@@ -117,6 +121,7 @@ AutoSupport On Demand 可帮助解决技术支持正在积极处理的问题。
 
 
 
+[[disable-checks-for-software-updates]]
 == 禁用软件更新检查
 
 默认情况下， StorageGRID 会联系 NetApp 以确定您的系统是否有可用的软件更新。如果提供了 StorageGRID 修补程序或新版本，则新版本将显示在 StorageGRID 升级页面上。
@@ -131,6 +136,7 @@ AutoSupport On Demand 可帮助解决技术支持正在积极处理的问题。
 
 
 
+[[add-an-additional-autosupport-destination]]
 == 添加其他 AutoSupport 目标
 
 启用 AutoSupport 后，系统会向 NetApp 支持部门发送运行状况和状态消息。您可以为所有 AutoSupport 消息指定一个其他目标。

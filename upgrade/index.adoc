@@ -15,12 +15,14 @@ summary: 按照以下说明将 StorageGRID 系统升级到新版本。
 
 
 
+[[about-these-instructions]]
 == 关于这些说明
 
 这些说明介绍了 StorageGRID 11.6 中的新增功能，并提供了将 StorageGRID 系统中的所有节点升级到新版本的分步说明。
 
 
 
+[[before-you-begin]]
 == 开始之前
 
 查看这些主题，了解 StorageGRID 11.6 中的新增功能和增强功能，确定是否已弃用或删除任何功能，并了解对 StorageGRID API 所做的更改。

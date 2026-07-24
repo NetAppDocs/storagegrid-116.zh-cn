@@ -15,6 +15,7 @@ summary: 您必须查看启用全局 S3 对象锁定设置的要求，创建合�
 
 
 
+[[requirements-for-using-the-global-s3-object-lock-setting]]
 == 使用全局 S3 对象锁定设置的要求
 
 * 您必须先使用网格管理器或网格管理 API 启用全局 S3 对象锁定设置，然后任何 S3 租户才能创建启用了 S3 对象锁定的分段。
@@ -32,6 +33,7 @@ image::../media/compliance_fields_on_ilm_rules_page.png[ILM 规则页面上的�
 
 
 
+[[requirements-for-compliant-ilm-rules]]
 == 符合 ILM 规则的要求
 
 如果要启用全局 S3 对象锁定设置，必须确保活动 ILM 策略中的默认规则合规。合规规则可满足启用了 S3 对象锁定的两个存储分段以及启用了旧合规性的任何现有存储分段的要求：
@@ -50,6 +52,7 @@ image::../media/compliant_rule_two_copies_forever.png[示例符合规则两个�
 
 
 
+[[requirements-for-active-and-proposed-ilm-policies]]
 == 活动的和建议的 ILM 策略的要求
 
 启用全局 S3 对象锁定设置后，活动和建议的 ILM 策略可以同时包含合规和不合规的规则。
@@ -68,6 +71,7 @@ image::../media/compliant_rule_two_copies_forever.png[示例符合规则两个�
 
 
 
+[[requirements-for-buckets-with-s3-object-lock-enabled]]
 == 启用了 S3 对象锁定的存储分段的要求
 
 * 如果为 StorageGRID 系统启用了全局 S3 对象锁定设置，则可以使用租户管理器，租户管理 API 或 S3 REST API 创建启用了 S3 对象锁定的分段。
@@ -87,6 +91,7 @@ image::../media/compliant_bucket.png[合规存储分段示例]
 
 
 
+[[requirements-for-objects-in-buckets-with-s3-object-lock-enabled]]
 == 启用了 S3 对象锁定的分段中的对象的要求
 
 * 要保护对象版本， S3 客户端应用程序必须配置存储分段默认保留，或者在每个上传请求中指定保留设置。
@@ -97,6 +102,7 @@ image::../media/compliant_bucket.png[合规存储分段示例]
 
 
 
+[[lifecycle-of-objects-in-buckets-with-s3-object-lock-enabled]]
 == 启用了 S3 对象锁定的存储分段中的对象生命周期
 
 保存在启用了 S3 对象锁定的存储分段中的每个对象将经历三个阶段：
@@ -127,5 +133,5 @@ image::../media/compliant_bucket.png[合规存储分段示例]
 * xref:managing-objects-with-s3-object-lock.adoc#comparing-s3-object-lock-to-legacy-compliance[比较 S3 对象锁定与原有合规性]
 * xref:example-7-compliant-ilm-policy-for-s3-object-lock.adoc[示例 7 ： S3 对象锁定的兼容 ILM 策略]
 * xref:../audit/index.adoc[查看审核日志]
-* xref:../s3/operations-on-buckets.adoc#using-s3-object-lock-default-bucket-retention[使用 S3 对象锁定默认存储分段保留]。
+* xref:../s3/use-s3-object-lock-default-bucket-retention.adoc[使用 S3 对象锁定默认存储分段保留]。
 

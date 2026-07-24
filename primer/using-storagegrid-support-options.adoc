@@ -15,6 +15,7 @@ summary: 网格管理器提供了一些选项，可帮助您在 StorageGRID 系�
 
 
 
+[[configure-autosupport]]
 == 配置 AutoSupport
 
 通过 AutoSupport 功能， StorageGRID 系统可以向技术支持发送运行状况和状态消息。使用 AutoSupport 可以显著加快问题的确定和解决速度。技术支持还可以监控系统的存储需求，并帮助您确定是否需要添加新节点或站点。您也可以将 AutoSupport 消息配置为发送到另一个目标。
@@ -25,6 +26,7 @@ image::../media/autosupport_accessing_settings.png[网格管理器中的 AutoSup
 
 
 
+[[information-included-in-autosupport-messages]]
 === AutoSupport 消息中包含的信息
 
 AutoSupport 消息包含如下信息：
@@ -51,6 +53,7 @@ image::../media/autosupport_disabled_message.png[AutoSupport 已禁用消息]
 
 
 
+[[use-digital-advisor]]
 === 使用Digital Advisor
 
 Active IQ数字顾问基于云、利用来自NetApp客户群的预测性分析和集体智慧。其持续风险评估，预测性警报，规范化指导和自动化操作可帮助您在问题发生之前防患于未然，从而改善系统运行状况并提高系统可用性。
@@ -61,6 +64,7 @@ https://docs.netapp.com/us-en/active-iq/index.html["Digital Advisor文档"^]
 
 
 
+[[collect-storagegrid-logs]]
 == 收集 StorageGRID 日志
 
 为了帮助解决问题，您可能需要收集日志文件并将其转发给技术支持。
@@ -73,12 +77,14 @@ image::../media/support_logs_select_nodes.png[日志收集 UI 的屏幕截图]
 
 
 
+[[use-metrics-and-run-diagnostics]]
 == 使用指标并运行诊断
 
 对问题描述 进行故障排除时，您可以与技术支持人员一起查看 StorageGRID 系统的详细指标和图表。您还可以运行预构建的诊断查询，主动评估 StorageGRID 系统的关键值。
 
 
 
+[[metrics-page]]
 === 指标页面
 
 您可以通过指标页面访问 Prometheus 和 Grafana 用户界面。Prometheus 是用于收集指标的开源软件。Grafana 是用于可视化指标的开源软件。
@@ -101,6 +107,7 @@ image::../media/metrics_page_grafana.png[指标页面 Grafana]
 
 
 
+[[diagnostics-page]]
 === 诊断页面
 
 " 诊断 " 页面会对网格的当前状态执行一组预先构建的诊断检查。在此示例中，所有诊断均处于正常状态。

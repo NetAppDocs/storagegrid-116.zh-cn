@@ -15,6 +15,7 @@ summary: 您可以执行多项任务来帮助确定与 StorageGRID 网络，硬�
 
 
 
+[[troubleshoot-422-unprocessable-entity-errors]]
 == 对"`422：Unprocessable Entity`"错误进行故障排除
 
 错误 422 ：在许多情况下可能会出现 Unprocessable Entity 。检查错误消息以确定导致问题描述 的原因。
@@ -80,6 +81,7 @@ xref:../admin/index.adoc[管理 StorageGRID]
 
 
 
+[[troubleshootmtualerttroubleshoot-the-grid-network-mtu-mismatch-alert]]
 == 【故障排除_MTU_ALERT]]对网格网络MTU不匹配警报进行故障排除
 
 如果网格网络接口（ eth0 ）的最大传输单元（ MTU ）设置在网格中的各个节点之间差别很大，则会触发 * 网格网络 MTU 不匹配 * 警报。
@@ -165,6 +167,7 @@ xref:../sg5600/index.adoc[SG5600 存储设备]
 
 
 
+[[troubleshoot-the-network-receive-error-nrer-alarm]]
 == 对网络接收错误（ NRER ）警报进行故障排除
 
 StorageGRID 与网络硬件之间的连接问题可能会导致网络接收错误（ NRER ）警报。在某些情况下，无需手动干预即可清除 NRER 错误。如果未清除这些错误，请执行建议的操作。
@@ -253,6 +256,7 @@ xref:../sg100-1000/index.adoc[SG100 和 SG1000 服务设备]
 
 
 
+[[troubleshoot-time-synchronization-errors]]
 == 对时间同步错误进行故障排除
 
 您可能会在网格中看到时间同步问题。
@@ -267,12 +271,14 @@ xref:../maintain/index.adoc[恢复和维护]
 
 
 
+[[linux-network-connectivity-issues]]
 == Linux ：网络连接问题
 
 您可能会看到 Linux 主机上托管的 StorageGRID 网格节点的网络连接问题。
 
 
 
+[[mac-address-cloning]]
 === MAC 地址克隆
 
 在某些情况下，可以使用 MAC 地址克隆来解决网络问题。如果使用的是虚拟主机，请在节点配置文件中将每个网络的 MAC 地址克隆密钥值设置为 "true" 。此设置会使 StorageGRID 容器的 MAC 地址使用主机的 MAC 地址。要创建节点配置文件，请参见适用于您的平台的安装指南中的说明。
@@ -284,6 +290,7 @@ IMPORTANT: 创建单独的虚拟网络接口，以供 Linux 主机操作系统�
 
 
 
+[[promiscuous-mode]]
 === 混杂模式
 
 如果您不希望使用 MAC 地址克隆，而希望允许所有接口接收和传输非虚拟机管理程序分配的 MAC 地址的数据， 对于配置模式， MAC 地址更改和伪造传输，请确保虚拟交换机和端口组级别的安全属性设置为 * 接受 * 。虚拟交换机上设置的值可以被端口组级别的值覆盖，因此请确保这两个位置的设置相同。
@@ -295,6 +302,7 @@ xref:../ubuntu/index.adoc[安装 Ubuntu 或 Debian]
 
 
 
+[[linux-node-status-is-orphaned]]
 == Linux：节点状态为"`孤立`"
 
 处于孤立状态的 Linux 节点通常表示控制节点容器的 StorageGRID 服务或 StorageGRID 节点守护进程意外终止。
@@ -341,6 +349,7 @@ storagegrid node start DC1-S1-172-16-1-172
 
 
 
+[[linux-troubleshoot-ipv6-support]]
 == Linux ：对 IPv6 支持进行故障排除
 
 如果您在 Linux 主机上安装了 StorageGRID 节点，并且注意到尚未按预期为节点容器分配 IPv6 地址，则可能需要在内核中启用 IPv6 支持。

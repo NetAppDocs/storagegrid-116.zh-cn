@@ -15,6 +15,7 @@ summary: 升级到新版本的 StorageGRID 软件后，您可能会看到网格�
 
 
 
+[[web-interface-does-not-respond-as-expected]]
 == Web 界面未按预期响应
 
 升级 StorageGRID 软件后，网格管理器或租户管理器可能无法按预期做出响应。

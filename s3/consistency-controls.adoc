@@ -19,6 +19,7 @@ summary: 一致性控制可以根据应用程序的要求、在对象的可用�
 
 
 
+[[consistency-controls]]
 == 一致性控制
 
 一致性控制会影响 StorageGRID 用于跟踪对象的元数据在节点之间的分布方式，从而影响对象用于客户端请求的可用性。
@@ -34,6 +35,7 @@ summary: 一致性控制可以根据应用程序的要求、在对象的可用�
 
 
 
+[[use-read-after-new-write-and-available-consistency-controls]]
 == 使用"`read-after-new-write`"和"`available`"一致性控制
 
 如果 head 或 get 操作使用 `read-after-new-write` 一致性控制，则 StorageGRID 将执行多个步骤的查找，如下所示：
@@ -48,6 +50,7 @@ summary: 一致性控制可以根据应用程序的要求、在对象的可用�
 
 
 
+[[specify-consistency-control-for-api-operation]]
 == 为 API 操作指定一致性控制
 
 要为单个 API 操作设置一致性控制，此操作必须支持一致性控制，并且必须在请求标题中指定一致性控制。此示例将 GET 对象操作的一致性控制设置为 `strong-site` 。
@@ -65,6 +68,7 @@ NOTE: PUT 对象和 GET 对象操作必须使用相同的一致性控制。
 
 
 
+[[specify-consistency-control-for-bucket]]
 == 为存储分段指定一致性控制
 
 要为存储分段设置一致性控制，您可以使用 StorageGRID PUT 存储分段一致性请求和 GET 存储分段一致性请求。或者，您也可以使用租户管理器或租户管理 API 。
@@ -78,6 +82,7 @@ NOTE: PUT 对象和 GET 对象操作必须使用相同的一致性控制。
 
 
 
+[[how-consistency-controls-and-ilm-rules-interact-to-affect-data-protection]]
 == 一致性控制和 ILM 规则如何交互以影响数据保护
 
 您选择的一致性控制和 ILM 规则都会影响对象的保护方式。这些设置可以进行交互。
@@ -96,6 +101,7 @@ NOTE: 在为ILM规则选择载入行为之前、请阅读中这些设置的完�
 
 
 
+[[example-of-how-the-consistency-control-and-ilm-rule-can-interact]]
 == 一致性控制和 ILM 规则如何交互的示例
 
 假设您有一个双站点网格，其中包含以下 ILM 规则和以下一致性级别设置：

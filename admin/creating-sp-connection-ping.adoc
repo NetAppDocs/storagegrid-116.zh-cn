@@ -19,7 +19,7 @@ summary: 您可以使用 PingFederate 为系统中的每个管理节点创建服
 * 您拥有系统中每个管理节点的 * SP 连接 ID* 。您可以在 StorageGRID 单点登录页面上的管理节点详细信息表中找到这些值。
 * 您已为系统中的每个管理节点下载 * SAML 元数据 * 。
 * 您在 PingFederate 服务器中创建 SP 连接的经验。
-* 您拥有https://docs.pingidentity.com/bundle/pingfederate-103/page/kfj1564002962494.html["《管理员参考指南》"^] PingFederate 服务器。PingFederate 文档提供了详细的分步说明和说明。
+* 您有 https://docs.pingidentity.com/pingfederate/13.1/administrators_reference_guide/pf_administrators_reference_guide.html["《管理员参考指南》"^] for PingFederate Server。PingFederate 文档提供了详细的分步说明和解释。
 * 您具有 PingFederate 服务器的管理员权限。
 
 
@@ -28,12 +28,14 @@ summary: 您可以使用 PingFederate 为系统中的每个管理节点创建服
 
 
 
+[[complete-prerequisites-in-pingfederate]]
 == 完成 PingFederate 中的前提条件
 
 在创建要用于 StorageGRID 的 SP 连接之前，必须先在 PingFederate 中完成前提条件任务。配置 SP 连接时，您将使用这些前提条件中的信息。
 
 
 
+[[create-data-storedata-store]]
 === 创建数据存储库[Data -store]]
 
 如果尚未创建数据存储库，请将 PingFederate 连接到 AD FS LDAP 服务器。使用您在使用时使用的值 xref:../admin/using-identity-federation.adoc[配置身份联合] 在 StorageGRID 中。
@@ -45,6 +47,7 @@ summary: 您可以使用 PingFederate 为系统中的每个管理节点创建服
 
 
 
+[[create-password-credential-validatorpassword-validator]]
 === 创建密码凭据验证器[password-validator]]
 
 如果尚未创建密码凭据验证程序，请创建一个。
@@ -58,6 +61,7 @@ summary: 您可以使用 PingFederate 为系统中的每个管理节点创建服
 
 
 
+[[create-idp-adapter-instanceadapter-instance]]
 === 创建IdP适配器实例[adapter-instance]]
 
 如果尚未创建 IdP 适配器实例，请创建此实例。
@@ -73,6 +77,7 @@ summary: 您可以使用 PingFederate 为系统中的每个管理节点创建服
 
 
 
+[[create-or-import-signing-certificatesigning-certificate]]
 === 创建或导入签名证书[[signing-certificate]]
 
 如果尚未创建，请创建或导入签名证书。
@@ -83,6 +88,7 @@ summary: 您可以使用 PingFederate 为系统中的每个管理节点创建服
 
 
 
+[[create-an-sp-connection-in-pingfederate]]
 == 在 PingFederate 中创建 SP 连接
 
 在 PingFederate 中创建 SP 连接时，您可以导入从 StorageGRID 为管理节点下载的 SAML 元数据。元数据文件包含您需要的许多特定值。
@@ -92,6 +98,7 @@ IMPORTANT: 您必须为 StorageGRID 系统中的每个管理节点创建一个 S
 
 
 
+[[choose-sp-connection-type]]
 === 选择 SP 连接类型
 
 . 转至 * 应用程序 * > * 集成 * > * SP 连接 * 。
@@ -102,6 +109,7 @@ IMPORTANT: 您必须为 StorageGRID 系统中的每个管理节点创建一个 S
 
 
 
+[[import-sp-metadata]]
 === 导入 SP 元数据
 
 . 在导入元数据选项卡上，选择 * 文件 * 。
@@ -115,6 +123,7 @@ IMPORTANT: 您必须为 StorageGRID 系统中的每个管理节点创建一个 S
 
 
 
+[[configure-idp-browser-sso]]
 === 配置 IdP 浏览器 SSO
 
 . 从浏览器 SSO 选项卡中，选择 * 配置浏览器 SSO* 。
@@ -132,6 +141,7 @@ IMPORTANT: 您必须为 StorageGRID 系统中的每个管理节点创建一个 S
 
 
 
+[[map-adapter-instance]]
 === 映射适配器实例
 
 . 在身份验证源映射选项卡上，选择 * 映射新适配器实例 * 。
@@ -157,6 +167,7 @@ IMPORTANT: 您必须为 StorageGRID 系统中的每个管理节点创建一个 S
 
 
 
+[[configure-protocol-settings]]
 === 配置协议设置
 
 . 在 * SP Connection* > * 浏览器 SSO* > * 协议设置 * 选项卡上，选择 * 配置协议设置 * 。
@@ -171,6 +182,7 @@ IMPORTANT: 您必须为 StorageGRID 系统中的每个管理节点创建一个 S
 
 
 
+[[configure-credentials]]
 === 配置凭据
 
 . 从 SP 连接选项卡中，选择 * 凭据 * 。
@@ -187,6 +199,7 @@ IMPORTANT: 您必须为 StorageGRID 系统中的每个管理节点创建一个 S
 
 
 
+[[create-additional-sp-connections]]
 === 创建其他 SP 连接
 
 您可以复制第一个 SP 连接，以便为网格中的每个管理节点创建所需的 SP 连接。您可以为每个副本上传新元数据。

@@ -70,6 +70,7 @@ image::../media/sg6000_cn_front_indicators.gif[正面指示灯— SG6000-CN]
 |===
 
 
+[[general-boot-up-codes]]
 == 常规启动代码
 
 在启动期间或在对 SG6000-CN 控制器进行硬重置后，将发生以下情况：

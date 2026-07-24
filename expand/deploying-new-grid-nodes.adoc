@@ -17,6 +17,7 @@ summary: 在扩展中部署新网格节点的步骤与首次安装网格时使�
 
 
 
+[[vmware-deploy-grid-nodes]]
 == VMware ：部署网格节点
 
 您必须在 VMware vSphere 中为要添加到扩展中的每个 VMware 节点部署一个虚拟机。
@@ -31,6 +32,7 @@ summary: 在扩展中部署新网格节点的步骤与首次安装网格时使�
 
 
 
+[[linux-deploy-grid-nodes]]
 == Linux ：部署网格节点
 
 您可以在新的 Linux 主机或现有的 Linux 主机上部署网格节点。如果您需要更多的 Linux 主机来满足要添加到网格中的 StorageGRID 节点的 CPU ， RAM 和存储要求，请按照首次安装主机时准备主机的方式对其进行准备。然后，按照安装期间部署网格节点的方式部署扩展节点。
@@ -64,6 +66,7 @@ IMPORTANT: 在生产部署中，请勿在一个物理或虚拟主机上运行多
 
 
 
+[[appliances-deploying-storage-gateway-or-non-primary-admin-nodes]]
 == 设备：部署存储，网关或非主管理节点
 
 要在设备节点上安装 StorageGRID 软件，请使用设备中提供的 StorageGRID 设备安装程序。在扩展中，每个存储设备都充当一个存储节点，而每个服务设备则充当一个网关节点或非主管理节点。任何设备都可以连接到网格网络，管理网络和客户端网络。

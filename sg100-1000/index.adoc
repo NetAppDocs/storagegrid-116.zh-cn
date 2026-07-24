@@ -15,6 +15,7 @@ StorageGRID SG100 服务设备和 SG1000 服务设备可以作为网关节点和
 
 
 
+[[appliance-features]]
 == 设备功能
 
 这两种型号的服务设备均可提供以下功能：
@@ -33,6 +34,7 @@ StorageGRID SG100 服务设备和 SG1000 服务设备可以作为网关节点和
 
 
 
+[[sg100-and-sg1000-diagrams]]
 == SG100 和 SG1000 图表
 
 此图显示了 SG100 和 SG1000 的正面，其中已卸下挡板。
@@ -48,6 +50,7 @@ image::../media/sg1000_front_with_ssds.png[正面，带有 SSD SG100 和 SG1000]
 
 
 
+[[connectors-on-the-rear-of-the-sg100]]
 == SG100 背面的连接器
 
 此图显示了 SG100 背面的连接器。
@@ -122,6 +125,7 @@ BMC 管理端口
 |===
 
 
+[[connectors-on-the-rear-of-the-sg1000]]
 == SG1000 背面的连接器
 
 此图显示了 SG1000 背面的连接器。

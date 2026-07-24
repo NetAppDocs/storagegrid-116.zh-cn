@@ -15,6 +15,7 @@ summary: 通过警报，您可以监控 StorageGRID 系统中的各种事件和�
 
 
 
+[[about-storagegrid-alerts]]
 == 关于 StorageGRID 警报
 
 警报系统提供了一个易于使用的界面，用于检测，评估和解决 StorageGRID 运行期间可能发生的问题。
@@ -32,6 +33,7 @@ summary: 通过警报，您可以监控 StorageGRID 系统中的各种事件和�
 
 
 
+[[learn-more]]
 == 了解更多信息。
 
 要了解更多信息，请查看以下视频：

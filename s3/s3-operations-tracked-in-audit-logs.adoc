@@ -15,6 +15,7 @@ StorageGRID 审核日志会跟踪多个存储分段操作和对象操作。
 
 
 
+[[bucket-operations-tracked-in-the-audit-logs]]
 == 审核日志中跟踪的存储分段操作
 
 * 删除存储分段
@@ -32,6 +33,7 @@ StorageGRID 审核日志会跟踪多个存储分段操作和对象操作。
 
 
 
+[[object-operations-tracked-in-the-audit-logs]]
 == 审核日志中跟踪的对象操作
 
 * 完成多部件上传

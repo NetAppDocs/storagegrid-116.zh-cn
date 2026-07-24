@@ -15,6 +15,7 @@ summary: 设备中的指示灯可帮助您确定设备控制器和两个 SSD 的
 
 
 
+[[appliance-indicators-and-buttons]]
 == 设备指示灯和按钮
 
 image::../media/sg6000_cn_front_indicators.gif[正面指示灯— SG1000]
@@ -72,6 +73,7 @@ image::../media/sg6000_cn_front_indicators.gif[正面指示灯— SG1000]
 |===
 
 
+[[general-boot-up-codes]]
 == 常规启动代码
 
 在启动期间或设备硬重置后，将发生以下情况：
@@ -86,6 +88,7 @@ image::../media/sg6000_cn_front_indicators.gif[正面指示灯— SG1000]
 
 
 
+[[ssd-indicators]]
 == SSD 指示灯
 
 image::../media/ssd_indicators.png[SSD 指示灯]

@@ -28,6 +28,7 @@ ILM 规则定义：
 
 
 
+[[elements-of-an-ilm-rule]]
 == ILM 规则的要素
 
 ILM 规则包含三个要素：
@@ -39,6 +40,7 @@ ILM 规则包含三个要素：
 
 
 
+[[what-ilm-rule-filtering-is]]
 == 什么是 ILM 规则筛选
 
 创建 ILM 规则时，您可以指定筛选器来标识规则适用场景 的对象。
@@ -68,6 +70,7 @@ image::../media/ilm_create_ilm_rule_wizard_1.png[ILM 向导：第 1 步，共 3 
 
 
 
+[[what-ilm-rule-placement-instructions-are]]
 == 什么是 ILM 规则放置说明
 
 放置说明用于确定对象数据的存储位置，存储时间和存储方式。一个 ILM 规则可以包含一个或多个放置指令。每个放置指令适用场景 都有一段时间。
@@ -116,6 +119,7 @@ image:../media/icon_number_2.png["图标 2"]
 
 
 
+[[example-ilm-rule]]
 == ILM 规则示例
 
 此示例 ILM 规则适用场景 属于租户 A 的对象它会为这些对象创建两个复制副本，并将每个副本存储在不同的站点上。这两个副本会保留 "`Forever ，` " ，这意味着 StorageGRID 不会自动删除它们。相反， StorageGRID 将保留这些对象，直到客户端删除请求或存储分段生命周期到期时将其删除为止。

@@ -18,6 +18,7 @@ IMPORTANT: 对所有节点执行一次安装比现在安装某些节点以及稍
 
 
 
+[[vmware-information]]
 == VMware 信息
 
 您必须访问部署环境并收集以下信息： VMware 环境；为网格网络，管理网络和客户端网络创建的网络；以及计划用于存储节点的存储卷类型。
@@ -33,6 +34,7 @@ IMPORTANT: VMware Live vMotion 会导致虚拟机时钟时间跳转，任何类�
 
 
 
+[[grid-network-information]]
 == 网格网络信息
 
 您必须收集有关为 StorageGRID 网格网络（必需）创建的 VMware 网络的信息，包括：
@@ -44,6 +46,7 @@ IMPORTANT: VMware Live vMotion 会导致虚拟机时钟时间跳转，任何类�
 
 
 
+[[admin-network-information]]
 == 管理网络信息
 
 对于要连接到可选 StorageGRID 管理网络的节点，您必须收集有关为此网络创建的 VMware 网络的信息，包括：
@@ -56,6 +59,7 @@ IMPORTANT: VMware Live vMotion 会导致虚拟机时钟时间跳转，任何类�
 
 
 
+[[client-network-information]]
 == 客户端网络信息
 
 对于要连接到可选 StorageGRID 客户端网络的节点，您必须收集有关为此网络创建的 VMware 网络的信息，包括：
@@ -67,6 +71,7 @@ IMPORTANT: VMware Live vMotion 会导致虚拟机时钟时间跳转，任何类�
 
 
 
+[[information-about-additional-interfaces]]
 == 有关其他接口的信息
 
 安装节点后，您可以选择在 vCenter 中为虚拟机添加中继或访问接口。例如，您可能希望将中继接口添加到管理节点或网关节点，以便可以使用 VLAN 接口隔离属于不同应用程序或租户的流量。或者，您可能希望添加一个访问接口以在高可用性（ HA ）组中使用。
@@ -79,6 +84,7 @@ IMPORTANT: VMware Live vMotion 会导致虚拟机时钟时间跳转，任何类�
 
 
 
+[[storage-volumes-for-virtual-storage-nodes]]
 == 虚拟存储节点的存储卷
 
 您必须收集基于虚拟机的存储节点的以下信息：
@@ -88,6 +94,7 @@ IMPORTANT: VMware Live vMotion 会导致虚拟机时钟时间跳转，任何类�
 
 
 
+[[grid-configuration-information]]
 == 网格配置信息
 
 您必须收集信息才能配置网格：

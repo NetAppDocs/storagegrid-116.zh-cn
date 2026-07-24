@@ -15,6 +15,7 @@ summary: 作为网格管理员，您可以为 StorageGRID 系统启用 S3 对象
 
 
 
+[[what-is-s3-object-lock]]
 == 什么是 S3 对象锁定？
 
 StorageGRID S3 对象锁定功能是一种对象保护解决方案 ，相当于 Amazon Simple Storage Service （ Amazon S3 ）中的 S3 对象锁定。
@@ -37,6 +38,7 @@ StorageGRID S3 对象锁定功能提供了一种保留模式，相当于 Amazon 
 
 
 
+[[comparing-s3-object-lock-to-legacy-compliance]]
 == 比较 S3 对象锁定与原有合规性
 
 S3 对象锁定取代了早期 StorageGRID 版本中提供的合规性功能。由于 S3 对象锁定功能符合 Amazon S3 要求，因此它会弃用专有的 StorageGRID 合规性功能，现在称为 "`原有合规性 " 。`

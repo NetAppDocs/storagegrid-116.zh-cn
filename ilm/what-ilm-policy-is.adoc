@@ -15,6 +15,7 @@ summary: 信息生命周期管理 \ （ ILM ）策略是一组有序的 ILM 规�
 
 
 
+[[how-does-an-ilm-policy-evaluate-objects]]
 == ILM 策略如何评估对象？
 
 StorageGRID 系统的活动 ILM 策略控制所有对象的放置，持续时间和数据保护。
@@ -28,6 +29,7 @@ StorageGRID 系统的活动 ILM 策略控制所有对象的放置，持续时间
 
 
 
+[[example-ilm-policy]]
 == ILM 策略示例
 
 此示例 ILM 策略使用三个 ILM 规则。
@@ -44,6 +46,7 @@ image::../media/ilm_policy_and_rules.png[ILM 策略和规则]
 
 
 
+[[what-are-proposed-active-and-historical-policies]]
 == 建议的策略，活动策略和历史策略是什么？
 
 每个 StorageGRID 系统都必须有一个活动的 ILM 策略。StorageGRID 系统可能还具有一个建议的 ILM 策略和任意数量的历史策略。

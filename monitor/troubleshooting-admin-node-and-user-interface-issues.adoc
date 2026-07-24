@@ -16,6 +16,7 @@ summary: 您可以执行多项任务来帮助确定与管理节点和 StorageGRI
 
 
 
+[[troubleshoot-sign-on-errors]]
 == 对登录错误进行故障排除
 
 如果您在登录到 StorageGRID 管理节点时遇到错误，则您的系统可能具有身份联合配置的问题描述 ，网络或硬件问题，具有管理节点服务的问题描述 或连接的存储节点上具有 Cassandra 数据库的问题描述 。
@@ -175,12 +176,14 @@ sg snmp agent                  11.4.0         Running
 
 
 
+[[troubleshoot-user-interface-issues]]
 == 对用户界面问题进行故障排除
 
 升级到新版本的 StorageGRID 软件后，您可能会看到网格管理器或租户管理器出现问题。
 
 
 
+[[web-interface-does-not-respond-as-expected]]
 === Web 界面未按预期响应
 
 升级 StorageGRID 软件后，网格管理器或租户管理器可能无法按预期做出响应。
@@ -200,6 +203,7 @@ NOTE: StorageGRID 11.5 的浏览器支持已更改。确认您使用的是受支
 
 
 
+[[check-the-status-of-an-unavailable-admin-node]]
 == 检查不可用管理节点的状态
 
 如果 StorageGRID 系统包含多个管理节点，则可以使用另一个管理节点检查不可用管理节点的状态。

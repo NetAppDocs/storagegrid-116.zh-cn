@@ -28,6 +28,7 @@ IMPORTANT: 除非文档中有明确说明，否则在修改任何存储节点配
 
 
 
+[[ldr]]
 == LDR
 
 [cols="2a,1a,3a"]
@@ -60,6 +61,7 @@ HTA
 |===
 
 
+[[ldr-data-store]]
 == LDR > 数据存储
 
 [cols="2a,1a,3a"]
@@ -77,6 +79,7 @@ RCOR
 |===
 
 
+[[ldr-storage]]
 == LDR > 存储
 
 [cols="2a,1a,3a"]
@@ -112,6 +115,7 @@ SHCT
 |===
 
 
+[[ldr-verification]]
 == LDR > 验证
 
 [cols="2a,1a,3a"]
@@ -158,6 +162,7 @@ OQRT
 |===
 
 
+[[ldr-erasure-coding]]
 == LDR > 擦除编码
 
 [cols="2a,1a,3a"]
@@ -220,6 +225,7 @@ R贴 片式
 |===
 
 
+[[ldr-replication]]
 == LDR > 复制
 
 [cols="2a,1a,3a"]

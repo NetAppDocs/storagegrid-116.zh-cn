@@ -15,6 +15,7 @@ summary: 安装 StorageGRID 设备之前，请打开所有包装箱的包装，�
 
 
 
+[[appliance-hardware]]
 == 设备硬件
 
 * * SG100 或 SG1000*
@@ -29,6 +30,7 @@ image::../media/rail_kit.gif[导轨套件]
 
 
 
+[[power-cords]]
 == 电源线
 
 StorageGRID 设备的发货包括以下电源线：

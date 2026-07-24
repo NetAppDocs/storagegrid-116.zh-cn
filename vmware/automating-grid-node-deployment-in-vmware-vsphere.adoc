@@ -15,6 +15,7 @@ summary: 您可以使用 VMware vSphere 自动部署网格节点。您还可以�
 
 
 
+[[automate-grid-node-deployment]]
 == 自动部署网格节点
 
 使用 VMware vSphere 自动部署网格节点。
@@ -84,6 +85,7 @@ Bash shell 脚本，用于自动部署虚拟网格节点。
 |===
 
 
+[[define-the-configuration-file-for-your-deployment]]
 === 定义部署的配置文件
 
 您可以在配置文件中指定为 StorageGRID 部署虚拟网格节点所需的信息，此配置文件由 `dedeploy-vsphere-ovftool.sh` Bash 脚本使用。您可以修改配置文件示例，这样就不必从头创建文件了。
@@ -100,6 +102,7 @@ Bash shell 脚本，用于自动部署虚拟网格节点。
 
 
 
+[[configuration-file-settings]]
 === 配置文件设置
 
 `deploy-vsphere-ovftool.ini` 配置文件包含部署虚拟网格节点所需的设置。
@@ -479,6 +482,7 @@ NOTE: 对于管理节点，实例必须始终等于 2 。
 
 
 
+[[run-the-bash-script]]
 == 运行 Bash 脚本
 
 您可以使用 `dedeploy-vsphere-ovftool.sh` Bash 脚本和您修改的 deploy-vsphere-ovftool.ini 配置文件在 VMware vSphere 中自动部署 StorageGRID 网格节点。
@@ -547,6 +551,7 @@ Deployment Summary
 ----
 
 
+[[automate-the-configuration-of-storagegrid]]
 == 自动配置 StorageGRID
 
 部署网格节点后，您可以自动配置 StorageGRID 系统。

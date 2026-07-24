@@ -23,6 +23,7 @@ NOTE: 如果为 StorageGRID 系统启用了单点登录（ SSO ），则本地�
 
 
 
+[[access-users-page]]
 == 访问用户页面
 
 选择 * 访问管理 * > * 用户 * 。
@@ -31,6 +32,7 @@ image::../media/tenant_users_list.png[租户用户列表]
 
 
 
+[[create-local-users]]
 == 创建本地用户
 
 您可以创建本地用户并将其分配给一个或多个本地组以控制其访问权限。
@@ -66,6 +68,7 @@ image::../media/tenant_users_list.png[租户用户列表]
 
 
 
+[[edit-user-details]]
 == 编辑用户详细信息
 
 编辑用户的详细信息时，您可以更改用户的全名和密码，将用户添加到不同的组并阻止用户访问租户。
@@ -94,6 +97,7 @@ image::../media/tenant_users_list.png[租户用户列表]
 
 
 
+[[duplicate-local-users]]
 == 本地用户重复
 
 您可以复制本地用户以更快地创建新用户。
@@ -126,6 +130,7 @@ image::../media/tenant_users_list.png[租户用户列表]
 
 
 
+[[delete-local-users]]
 == 删除本地用户
 
 您可以永久删除不再需要访问 StorageGRID 租户帐户的本地用户。

@@ -138,6 +138,7 @@ urn 包含在目标元素中。
 
 
 
+[[metadata-notification-configuration-that-applies-to-all-objects]]
 == 用于适用场景 所有对象的元数据通知配置
 
 在此示例中，所有对象的对象元数据都将发送到同一目标。
@@ -157,6 +158,7 @@ urn 包含在目标元素中。
 ----
 
 
+[[metadata-notification-configuration-with-two-rules]]
 == 具有两个规则的元数据通知配置
 
 在此示例中，与前缀 ` /images` 匹配的对象的对象元数据将发送到一个目标，而与前缀 ` /videos` 匹配的对象的对象元数据则发送到另一个目标。

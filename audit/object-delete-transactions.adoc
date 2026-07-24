@@ -17,6 +17,7 @@ summary: 您可以通过查找 API 专用的 \ （ S3 和 Swift\ ）审核消息
 
 
 
+[[s3-delete-audit-messages]]
 == S3 删除审核消息
 
 |===
@@ -37,6 +38,7 @@ xref:sdel-s3-delete.adoc[SDEL ： S3 delete]
 |===
 
 
+[[swift-delete-audit-messages]]
 == Swift 删除审核消息
 
 |===

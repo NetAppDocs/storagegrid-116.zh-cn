@@ -26,6 +26,7 @@ CAUTION: 以下 ILM 规则和策略仅为示例。配置 ILM 规则的方法有�
 
 
 
+[[bucket-and-objects-for-s3-object-lock-example]]
 == S3 对象锁定的分段和对象示例
 
 在此示例中，名为 Bank of ABC 的 S3 租户帐户使用租户管理器创建了一个启用了 S3 对象锁定的存储分段，用于存储重要的银行记录。
@@ -83,6 +84,7 @@ image::../media/compliant_bucket.png[兼容存储分段示例的屏幕截图]
 |===
 
 
+[[ilm-rule-1-for-s3-object-lock-example-erasure-coding-profile-with-bucket-matching]]
 == 适用于 S3 对象锁定的 ILM 规则 1 示例：使用存储分段匹配的纠删编码配置文件
 
 此示例 ILM 规则仅适用于名为 ABC 银行的 S3 租户帐户。它与 `银行记录` 存储分段中的任何对象匹配，然后使用纠删编码，使用 6+3 擦除编码配置文件将对象存储在三个数据中心站点的存储节点上。此规则满足启用了 S3 对象锁定的存储分段的要求：从 0 天到永久，存储节点上会保留经过擦除编码的副本，并使用载入时间作为参考时间。
@@ -154,6 +156,7 @@ image::../media/compliant_rule_ec_copy_step_2.png[合规规则 EC 复制步骤 2
 
 
 
+[[ilm-rule-2-for-s3-object-lock-example-non-compliant-rule]]
 == 适用于 S3 对象锁定的 ILM 规则 2 示例：不合规规则
 
 此示例 ILM 规则最初会将两个复制的对象副本存储在存储节点上。一年后，它会将一个副本永久存储在云存储池中。由于此规则使用云存储池，因此它不符合要求，并且不会应用于启用了 S3 对象锁定的分段中的对象。
@@ -214,6 +217,7 @@ image::../media/ilm_example_non_compliant_rule_step_1.png[不合规规则步骤 
 |===
 
 
+[[ilm-rule-3-for-s3-object-lock-example-default-rule]]
 == 适用于 S3 对象锁定的 ILM 规则 3 示例：默认规则
 
 此示例 ILM 规则会将对象数据复制到两个数据中心中的存储池。此合规规则是 ILM 策略中的默认规则。它不包括任何筛选器，不使用非当前参考时间，并满足启用了 S3 对象锁定的存储分段的要求：从 0 天到永久，存储节点上保留两个对象副本，并使用 Ingest 作为参考时间。
@@ -274,12 +278,14 @@ image::../media/compliant_rule_2_copies_2_data_centers_2.png[显示为合规性�
 
 
 
+[[compliant-ilm-policy-for-s3-object-lock-example]]
 == S3 对象锁定的兼容 ILM 策略示例
 
 要创建有效保护系统中所有对象的 ILM 策略，包括启用了 S3 对象锁定的分段中的对象，您必须选择满足所有对象存储要求的 ILM 规则。然后，您必须模拟并激活建议的策略。
 
 
 
+[[add-rules-to-the-policy]]
 === 向策略中添加规则
 
 在此示例中， ILM 策略包括三个 ILM 规则，其顺序如下：
@@ -293,6 +299,7 @@ image::../media/compliant_policy.png[合规策略示例]
 
 
 
+[[simulate-the-proposed-policy]]
 === 模拟建议的策略
 
 在建议的策略中添加规则，选择默认合规规则并排列其他规则后，您应通过测试启用了 S3 对象锁定的存储分段和其他存储分段中的对象来模拟此策略。例如，在模拟示例策略时，您希望按如下所示评估测试对象：
@@ -309,6 +316,7 @@ image::../media/compliant_policy.png[合规策略示例]
 
 
 
+[[activate-the-policy]]
 === 激活策略
 
 如果您完全确信新策略会按预期保护对象数据，则可以激活此策略。

@@ -19,6 +19,7 @@ StorageGRID S3 对象锁定功能提供了一种保留模式，相当于 Amazon 
 
 
 
+[[enable-s3-object-lock-for-bucket]]
 == 为存储分段启用 S3 对象锁定
 
 如果为 StorageGRID 系统启用了全局 S3 对象锁定设置，则可以选择在创建每个分段时启用 S3 对象锁定。您可以使用以下任一方法：
@@ -39,12 +40,14 @@ xref:operations-on-buckets.adoc[对存储分段执行的操作]
 
 
 
+[[determining-if-s3-object-lock-is-enabled-for-bucket]]
 == 确定是否为存储分段启用了 S3 对象锁定
 
 要确定是否已启用 S3 对象锁定，请使用 xref:../s3/use-s3-object-lock-default-bucket-retention.adoc#get-object-lock-configuration[获取对象锁定配置] 请求。
 
 
 
+[[create-object-with-s3-object-lock-settings]]
 == 使用 S3 对象锁定设置创建对象
 
 要在将对象版本添加到启用了 S3 对象锁定的存储分段时指定 S3 对象锁定设置，请问题描述 对 PUT 对象， PUT 对象 - 复制或启动多部件上传请求。请使用以下请求标头。
@@ -80,6 +83,7 @@ NOTE: 如果指定 `x-AMZ-object-lock-mode` ，则还必须指定 `x-AMZ-object-
 
 
 
+[[update-s3-object-lock-settings]]
 == 更新 S3 对象锁定设置
 
 如果需要更新现有对象版本的合法保留或保留设置，可以执行以下对象子资源操作：

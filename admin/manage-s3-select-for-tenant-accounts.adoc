@@ -17,12 +17,14 @@ S3 Select 可以高效地搜索大量数据，而无需部署数据库和相关�
 
 
 
+[[what-is-s3-select]]
 == 什么是 S3 Select ？
 
 S3 Select 允许 S3 客户端使用 SelectObjectContent 请求仅筛选和检索对象所需的数据。S3 Select 的 StorageGRID 实施包括部分 S3 Select 命令和功能。
 
 
 
+[[considerations-and-requirements-for-using-s3-select]]
 == 使用 S3 Select 的注意事项和要求
 
 对于 S3 Select 查询， StorageGRID 需要满足以下要求：

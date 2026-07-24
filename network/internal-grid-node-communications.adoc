@@ -20,6 +20,7 @@ NOTE: NetApp 建议您在网格节点之间启用 Internet 控制消息协议（
 
 
 
+[[guidelines-for-linux-based-nodes]]
 == 基于 Linux 的节点的准则
 
 如果企业网络策略限制对其中任何端口的访问，则可以在部署时使用部署配置参数重新映射端口。有关端口重新映射和部署配置参数的详细信息，请参见：
@@ -30,6 +31,7 @@ NOTE: NetApp 建议您在网格节点之间启用 Internet 控制消息协议（
 
 
 
+[[guidelines-for-vmware-based-nodes]]
 == 基于 VMware 的节点的准则
 
 只有在需要定义 VMware 网络外部的防火墙限制时，才配置以下端口。
@@ -38,6 +40,7 @@ NOTE: NetApp 建议您在网格节点之间启用 Internet 控制消息协议（
 
 
 
+[[guidelines-for-appliance-nodes]]
 == 设备节点准则
 
 如果企业网络策略限制对其中任何端口的访问，则可以使用 StorageGRID 设备安装程序重新映射端口。有关设备端口重新映射的详细信息，请参见：
@@ -50,6 +53,7 @@ NOTE: NetApp 建议您在网格节点之间启用 Internet 控制消息协议（
 
 
 
+[[storagegrid-internal-ports]]
 == StorageGRID 内部端口
 
 |===

@@ -137,6 +137,7 @@ StorageGRID 外部的对象加密
 |===
 
 
+[[use-multiple-encryption-methods]]
 == 使用多种加密方法
 
 根据您的要求，您一次可以使用多种加密方法。例如：

@@ -15,6 +15,7 @@ summary: 对帐户执行以下 Swift API 操作。
 
 
 
+[[get-account]]
 == 获取帐户
 
 此操作将检索与帐户和帐户使用情况统计信息关联的容器列表。
@@ -54,6 +55,7 @@ summary: 对帐户执行以下 Swift API 操作。
 
 
 
+[[head-account]]
 == 主帐户
 
 此操作将从 Swift 帐户检索帐户信息和统计信息。

@@ -26,6 +26,7 @@ https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/Sto
 
 
 
+[[request-example]]
 == 请求示例
 
 通过此示例请求，您可以确定名为 `mybucket` 的存储分段的合规性设置。
@@ -39,6 +40,7 @@ Host: _host_
 ----
 
 
+[[response-example]]
 == 响应示例
 
 在响应 XML 中， ` <SGCompliance>` 列出了对存储分段有效的合规性设置。此示例响应显示了一个存储分段的合规性设置，从将对象载入网格开始，每个对象将保留一年（ 525600 分钟）。此存储分段当前没有法律上的保留。每个对象将在一年后自动删除。
@@ -89,6 +91,7 @@ RetentionPeriodMinutes
 |===
 
 
+[[error-responses]]
 == 错误响应
 
 如果未创建符合要求的存储分段，则响应的 HTTP 状态代码为 `404 Not Found` ， S3 错误代码为 `XNoSuchBucketCompliance` 。

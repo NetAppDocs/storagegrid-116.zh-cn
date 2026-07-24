@@ -18,6 +18,7 @@ summary: 在安装和配置 StorageGRID 设备时，您必须做出决策并收�
 
 
 
+[[information-needed-to-connect-to-santricity-system-manager-on-storage-controllers]]
 == 连接到存储控制器上的 SANtricity System Manager 所需的信息
 
 您必须将设备中的两个存储控制器(E2800系列控制器或EF570控制器)连接到要用于SANtricity System Manager的管理网络。控制器位于每个设备中，如下所示：
@@ -121,6 +122,7 @@ IP 地址格式
 |===
 
 
+[[information-needed-to-connect-sg6000-cn-controller-to-admin-network]]
 == 将 SG6000-CN 控制器连接到管理网络所需的信息
 
 StorageGRID 管理网络是一个可选网络，用于系统管理和维护。此设备使用 SG6000-CN 控制器上的以下 1-GbE 管理端口连接到管理网络。
@@ -202,6 +204,7 @@ DHCP 为管理网络端口分配的 IP 地址（如果在启动后可用）
 |===
 
 
+[[information-needed-to-connect-and-configure-1025-gbe-ports-on-sg6000-cn-controller]]
 == 在 SG6000-CN 控制器上连接和配置 10/225-GbE 端口所需的信息
 
 SG6000-CN 控制器上的四个 10/225-GbE 端口连接到 StorageGRID 网格网络和可选客户端网络。
@@ -258,6 +261,7 @@ SG6000-CN 控制器上的四个 10/225-GbE 端口连接到 StorageGRID 网格网
 |===
 
 
+[[information-needed-to-connect-sg6000-cn-controller-to-grid-network]]
 == 将 SG6000-CN 控制器连接到网格网络所需的信息
 
 适用于 StorageGRID 的网格网络是一个必需的网络，用于所有内部 StorageGRID 流量。此设备使用 SG6000-CN 控制器上的 10/225-GbE 端口连接到网格网络。
@@ -322,6 +326,7 @@ DHCP 为网格网络分配的 IP 地址（如果在启动后可用）
 |===
 
 
+[[information-needed-to-connect-sg6000-cn-controller-to-client-network]]
 == 将 SG6000-CN 控制器连接到客户端网络所需的信息
 
 适用于 StorageGRID 的客户端网络是一个可选网络，通常用于提供对网格的客户端协议访问。设备使用 SG6000-CN 控制器上的 10/225-GbE 端口连接到客户端网络。
@@ -391,6 +396,7 @@ DHCP 为客户端网络分配的 IP 地址（如果在启动后可用）
 |===
 
 
+[[information-needed-to-connect-sg6000-cn-controller-to-bmc-management-network]]
 == 将 SG6000-CN 控制器连接到 BMC 管理网络所需的信息
 
 您可以使用以下 1-GbE 管理端口访问 SG6000-CN 控制器上的 BMC 接口。此端口支持使用智能平台管理接口（ Intelligent Platform Management Interface ， IPMI ）标准通过以太网远程管理控制器硬件。

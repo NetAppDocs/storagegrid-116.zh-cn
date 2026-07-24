@@ -15,6 +15,7 @@ summary: 如果您的对象必须符合保留方面的法规要求，则可以�
 
 
 
+[[what-is-s3-object-lock]]
 == 什么是 S3 对象锁定？
 
 StorageGRID S3 对象锁定功能是一种对象保护解决方案 ，相当于 Amazon Simple Storage Service （ Amazon S3 ）中的 S3 对象锁定。
@@ -31,12 +32,13 @@ StorageGRID S3 对象锁定功能提供了一种保留模式，相当于 Amazon 
 * * 合法保留 * ：对对象版本应用合法保留时，会立即锁定该对象。例如，您可能需要对与调查或法律争议相关的对象进行法律保留。合法保留没有到期日期，但在明确删除之前始终有效。合法保留与保留日期无关。
 
 
-您也可以 xref:../s3/operations-on-buckets.adoc#using-s3-object-lock-default-bucket-retention[指定存储分段的默认保留模式和默认保留期限]。这些设置将应用于添加到存储分段中但不指定其自身保留设置的每个对象。
+您也可以xref:../s3/use-s3-object-lock-default-bucket-retention.adoc[指定存储分段的默认保留模式和默认保留期限]。这些设置将应用于添加到存储桶中未指定自身保留设置的每个对象。
 
 有关这些设置的详细信息，请参见 xref:../s3/using-s3-object-lock.adoc[使用 S3 对象锁定]。
 
 
 
+[[manage-legacy-compliant-buckets]]
 == 管理旧版合规存储分段
 
 S3 对象锁定功能取代了先前 StorageGRID 版本中提供的合规性功能。如果您使用早期版本的 StorageGRID 创建了合规的存储分段，则可以继续管理这些存储分段的设置；但是，您无法再创建新的合规存储分段。有关说明，请参见 NetApp 知识库文章。
@@ -45,6 +47,7 @@ https://kb.netapp.com/Advice_and_Troubleshooting/Hybrid_Cloud_Infrastructure/Sto
 
 
 
+[[s3-object-lock-workflow]]
 == S3 对象锁定工作流
 
 工作流图显示了在 StorageGRID 中使用 S3 对象锁定功能的高级步骤。
@@ -57,12 +60,14 @@ image::../media/s3_object_lock_workflow_tenant.png[S3 对象锁定工作流租�
 
 
 
+[[requirements-for-s3-object-lock]]
 == S3 对象锁定的要求
 
 在为存储分段启用 S3 对象锁定之前，请查看 S3 对象锁定存储分段和对象的要求以及启用了 S3 对象锁定的存储分段中对象的生命周期。
 
 
 
+[[requirements-for-buckets-with-s3-object-lock-enabled]]
 === 启用了 S3 对象锁定的存储分段的要求
 
 * 如果为 StorageGRID 系统启用了全局 S3 对象锁定设置，则可以使用租户管理器，租户管理 API 或 S3 REST API 创建启用了 S3 对象锁定的分段。
@@ -82,6 +87,7 @@ image::../media/compliant_bucket.png[合规存储分段示例]
 
 
 
+[[requirements-for-objects-in-buckets-with-s3-object-lock-enabled]]
 === 启用了 S3 对象锁定的分段中的对象的要求
 
 * 要保护对象版本， S3 客户端应用程序必须配置存储分段默认保留，或者在每个上传请求中指定保留设置。
@@ -92,6 +98,7 @@ image::../media/compliant_bucket.png[合规存储分段示例]
 
 
 
+[[lifecycle-of-objects-in-buckets-with-s3-object-lock-enabled]]
 === 启用了 S3 对象锁定的存储分段中的对象生命周期
 
 保存在启用了 S3 对象锁定的存储分段中的每个对象将经历三个阶段：
